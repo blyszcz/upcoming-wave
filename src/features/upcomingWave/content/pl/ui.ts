@@ -1,9 +1,11 @@
 import type { SceneStatus } from '@features/upcomingWave/types/scene.types';
 
+import { paths } from '@routes/paths';
+
 export const ui = {
   lang: 'pl',
   brand: 'Upcoming Wave',
-  langSwitch: { label: 'EN', href: '/', ariaLabel: 'English version' } as null | { label: string; href: string; ariaLabel: string },
+  langSwitch: { label: 'EN', href: paths.en, ariaLabel: 'English version' } as null | { label: string; href: string; ariaLabel: string },
   dominoAria: 'Łańcuch skutków',
   status: {
     today: 'DZIŚ',

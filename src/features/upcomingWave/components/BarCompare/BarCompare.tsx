@@ -1,9 +1,8 @@
-import type { BarItem, Source } from '@features/upcomingWave/types/scene.types';
+import type { BarCompareProps } from './BarCompare.types';
 
 import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
 
 
-type BarCompareProps = { title: string; subtitle: string; bars: BarItem[]; caption: string; source: Source };
 
 export const BarCompare = ({ title, subtitle, bars, caption, source }: BarCompareProps) => {
   const max = Math.max(...bars.map((bar) => bar.value));

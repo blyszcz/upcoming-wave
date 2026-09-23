@@ -1,31 +1,25 @@
 'use client';
 
 import clsx from 'clsx';
-import { useEffect, useState } from 'react';
+
+import type { LoopDiagramProps } from './LoopDiagram.types';
 
 import { useInView } from '@features/upcomingWave/hooks/useInView';
+import { useLoopTicker } from '@features/upcomingWave/hooks/useLoopTicker';
+import { formatIndex } from '@features/upcomingWave/utils/formatIndex';
 
-type LoopDiagramProps = { title: string; steps: string[]; caption: string };
-
-const STEP_MS = 1400;
 const RADIUS = 42;
 
 export const LoopDiagram = ({ title, steps, caption }: LoopDiagramProps) => {
   const { ref, isInView } = useInView<HTMLDivElement>(0.4);
-  const [active, setActive] = useState(0);
-
-  useEffect(() => {
-    if (!isInView || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const timer = window.setInterval(() => setActive((index) => (index + 1) % steps.length), STEP_MS);
-    return () => window.clearInterval(timer);
-  }, [isInView, steps.length]);
+  const active = useLoopTicker(steps.length, isInView);
 
   return (
     <div ref={ref} className="uw-loop">
       <div className="uw-loop-copy">
         <h3 className="uw-block-title">{title}</h3>
         <ol>
-          {steps.map((step, index) => <li key={step} className={clsx(index === active && 'is-active')}><span>{String(index + 1).padStart(2, '0')}</span>{step}</li>)}
+          {steps.map((step, index) => <li key={step} className={clsx(index === active && 'is-active')}><span>{formatIndex(index + 1)}</span>{step}</li>)}
         </ol>
         <p>{caption}</p>
       </div>

@@ -2,10 +2,11 @@
 
 import clsx from 'clsx';
 
+import type { ScissorsProps } from './Scissors.types';
+
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 import { useInView } from '@features/upcomingWave/hooks/useInView';
 
-type ScissorsProps = { title: string; income: string; spending: string; caption: string };
 
 export const Scissors = ({ title, income, spending, caption }: ScissorsProps) => {
   const { ui } = useContent();

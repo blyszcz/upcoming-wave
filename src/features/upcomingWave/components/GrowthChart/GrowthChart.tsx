@@ -1,49 +1,30 @@
 'use client';
 
 import clsx from 'clsx';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useMemo, useState } from 'react';
 
-import type { HorizonPoint } from '@features/upcomingWave/content/pl/acceleration';
-import type { Source } from '@features/upcomingWave/types/scene.types';
+import type { GrowthChartProps } from './GrowthChart.types';
 
 import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
+import { useElementWidth } from '@features/upcomingWave/hooks/useElementWidth';
 import { useInView } from '@features/upcomingWave/hooks/useInView';
+import { formatMinutes as formatDuration } from '@features/upcomingWave/utils/formatMinutes';
+import { toYear } from '@features/upcomingWave/utils/toYear';
 
-
-type GrowthChartProps = { title: string; subtitle: string; note: string; source: Source; points: HorizonPoint[]; doublingMonths: number };
 
 const START = 2022;
 const END = 2027.25;
 const MAX_HOURS = 46;
 const MARGIN = { top: 28, right: 20, bottom: 40, left: 20 };
 
-const toYear = (date: string) => { const [year, month] = date.split('-').map(Number); return year + (month - 1) / 12; };
-const makeFormatter = (separator: string) => {
-  const decimal = (value: number) => (Number.isInteger(value) ? String(value) : value.toFixed(1).replace('.', separator));
-  return (minutes: number) => {
-    if (minutes < 60) return `${minutes < 10 ? decimal(minutes) : Math.round(minutes)} min`;
-    const hours = minutes / 60;
-    return `${hours < 10 ? decimal(Math.round(hours * 10) / 10) : Math.round(hours)} h`;
-  };
-};
-
 export const GrowthChart = ({ title, subtitle, note, source, points, doublingMonths }: GrowthChartProps) => {
   const { ui } = useContent();
-  const formatMinutes = useMemo(() => makeFormatter(ui.chart.decimal), [ui.chart.decimal]);
+  const formatMinutes = (minutes: number) => formatDuration(minutes, ui.chart.decimal);
   const references = [{ hours: 8, label: ui.chart.day }, { hours: 40, label: ui.chart.week }];
   const { ref, isInView } = useInView<HTMLDivElement>(0.3);
-  const plotRef = useRef<HTMLDivElement>(null);
-  const [width, setWidth] = useState(900);
+  const { ref: plotRef, width } = useElementWidth<HTMLDivElement>(900);
   const [hovered, setHovered] = useState<number | null>(null);
-
-  useEffect(() => {
-    const node = plotRef.current;
-    if (!node) return;
-    const observer = new ResizeObserver(([entry]) => setWidth(entry.contentRect.width));
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, []);
 
   const isNarrow = width < 600;
   const height = isNarrow ? 380 : 480;

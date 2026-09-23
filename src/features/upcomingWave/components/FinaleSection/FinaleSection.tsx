@@ -1,8 +1,10 @@
 'use client';
 
+import type { NumberedSectionProps } from '@features/upcomingWave/types/section.types';
+
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
-export const FinaleSection = ({ number }: { number: string }) => {
+export const FinaleSection = ({ number }: NumberedSectionProps) => {
   const { finale, ui } = useContent();
 
   return (

@@ -1,71 +1,23 @@
 'use client';
 
 import clsx from 'clsx';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 
 import type { ExplainSliderProps } from './ExplainSlider.types';
 
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
-
-
-const SWIPE_THRESHOLD_PX = 50;
+import { useSliderControls } from '@features/upcomingWave/hooks/useSliderControls';
+import { formatIndex } from '@features/upcomingWave/utils/formatIndex';
 
 export const ExplainSlider = ({ scene, onClose }: ExplainSliderProps) => {
   const { ui } = useContent();
-  const [active, setActive] = useState(0);
   const dialogRef = useRef<HTMLDivElement>(null);
-  const pointerStartX = useRef<number | null>(null);
-  const lastIndex = scene.explain.length - 1;
-
-  const go = useCallback((index: number) => setActive(Math.min(Math.max(index, 0), lastIndex)), [lastIndex]);
-
-  useEffect(() => {
-    const dialog = dialogRef.current;
-    dialog?.focus();
-    document.body.style.overflow = 'hidden';
-
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose();
-      if (event.key === 'ArrowRight') setActive((index) => Math.min(index + 1, lastIndex));
-      if (event.key === 'ArrowLeft') setActive((index) => Math.max(index - 1, 0));
-      if (event.key === 'Home') setActive(0);
-      if (event.key === 'End') setActive(lastIndex);
-      if (event.key === 'Tab' && dialog) {
-        const focusable = dialog.querySelectorAll<HTMLElement>('button:not([disabled])');
-        const first = focusable[0];
-        const last = focusable[focusable.length - 1];
-        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
-        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
-      }
-    };
-
-    window.addEventListener('keydown', onKeyDown);
-    return () => {
-      window.removeEventListener('keydown', onKeyDown);
-      document.body.style.overflow = '';
-    };
-  }, [onClose, lastIndex]);
-
-  const onPointerUp = (clientX: number) => {
-    if (pointerStartX.current === null) return;
-    const delta = clientX - pointerStartX.current;
-    pointerStartX.current = null;
-    if (Math.abs(delta) > SWIPE_THRESHOLD_PX) go(active + (delta < 0 ? 1 : -1));
-  };
-
+  const total = scene.explain.length;
+  const { active, isFirst, isLast, goTo, handlePointerDown, handlePointerUp } = useSliderControls({ count: total, dialogRef, onClose });
   const titleId = `${scene.id}-explain-title`;
 
   return (
-    <div
-      ref={dialogRef}
-      className="uw-explain"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby={titleId}
-      tabIndex={-1}
-      onPointerDown={(event) => { pointerStartX.current = event.clientX; }}
-      onPointerUp={(event) => onPointerUp(event.clientX)}
-    >
+    <div ref={dialogRef} className="uw-explain" role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} onPointerDown={handlePointerDown} onPointerUp={handlePointerUp}>
       <div className="uw-explain-top">
         <p id={titleId} className="uw-eyebrow">{ui.explain.eyebrow} · {scene.title.lead} {scene.title.accent}</p>
         <button type="button" className="uw-round-button" onClick={onClose} aria-label={ui.explain.close}>×</button>
@@ -82,11 +34,11 @@ export const ExplainSlider = ({ scene, onClose }: ExplainSliderProps) => {
             className={clsx('uw-explain-slide', index === active && 'is-active')}
             aria-hidden={index !== active}
             aria-roledescription={ui.explain.slide}
-            aria-label={ui.explain.stepOf(index + 1, scene.explain.length)}
+            aria-label={ui.explain.stepOf(index + 1, total)}
           >
             <div className="uw-explain-media"><img src={step.image} alt={step.alt} draggable={false} /></div>
             <div className="uw-explain-copy">
-              <p className="uw-step-number">{ui.explain.step} {String(index + 1).padStart(2, '0')}<span> / {String(scene.explain.length).padStart(2, '0')}</span></p>
+              <p className="uw-step-number">{ui.explain.step} {formatIndex(index + 1)}<span> / {formatIndex(total)}</span></p>
               <h3>{step.title}</h3>
               <p>{step.copy}</p>
               <ol className="uw-chain" aria-label={ui.explain.chainAria}>
@@ -100,11 +52,11 @@ export const ExplainSlider = ({ scene, onClose }: ExplainSliderProps) => {
       </div>
 
       <div className="uw-explain-controls">
-        <button type="button" className="uw-round-button" onClick={() => go(active - 1)} disabled={active === 0} aria-label={ui.explain.prev}>←</button>
-        <span aria-live="polite">{String(active + 1).padStart(2, '0')} / {String(scene.explain.length).padStart(2, '0')}</span>
-        {active < lastIndex
-          ? <button type="button" className="uw-round-button is-primary" onClick={() => go(active + 1)} aria-label={ui.explain.next}>→</button>
-          : <button type="button" className="uw-pill-button" onClick={onClose}>{ui.explain.done} <span aria-hidden="true">↓</span></button>}
+        <button type="button" className="uw-round-button" onClick={() => goTo(active - 1)} disabled={isFirst} aria-label={ui.explain.prev}>←</button>
+        <span aria-live="polite">{formatIndex(active + 1)} / {formatIndex(total)}</span>
+        {isLast
+          ? <button type="button" className="uw-pill-button" onClick={onClose}>{ui.explain.done} <span aria-hidden="true">↓</span></button>
+          : <button type="button" className="uw-round-button is-primary" onClick={() => goTo(active + 1)} aria-label={ui.explain.next}>→</button>}
       </div>
     </div>
   );

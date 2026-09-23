@@ -1,9 +1,9 @@
-import type { EvidenceItem } from '@features/upcomingWave/types/scene.types';
+import type { EvidenceGridProps } from './EvidenceGrid.types';
 
 import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
 
 
-export const EvidenceGrid = ({ title, items }: { title: string; items: EvidenceItem[] }) => (
+export const EvidenceGrid = ({ title, items }: EvidenceGridProps) => (
   <div className="uw-evidence">
     <h3 className="uw-block-title">{title}</h3>
     <ul data-count={items.length}>

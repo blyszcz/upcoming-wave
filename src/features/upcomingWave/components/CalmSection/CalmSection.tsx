@@ -1,10 +1,12 @@
 'use client';
 
+import type { NumberedSectionProps } from '@features/upcomingWave/types/section.types';
+
 import { BandBlocks } from '@features/upcomingWave/components/SceneBand/SceneBand';
 import { SectionAnchor } from '@features/upcomingWave/components/SectionAnchor/SectionAnchor';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
-export const CalmSection = ({ number }: { number: string }) => {
+export const CalmSection = ({ number }: NumberedSectionProps) => {
   const { calm } = useContent();
 
   return (

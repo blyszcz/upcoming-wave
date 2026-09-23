@@ -1,6 +1,7 @@
 'use client';
 
-import type { BandBlock, ChainStepId } from '@features/upcomingWave/types/scene.types';
+import type { BandBlocksProps, SceneBandProps } from './SceneBand.types';
+import type { BandBlock } from '@features/upcomingWave/types/scene.types';
 
 import { BarCompare } from '@features/upcomingWave/components/BarCompare/BarCompare';
 import { Contrast } from '@features/upcomingWave/components/Contrast/Contrast';
@@ -14,9 +15,8 @@ import { Timeline } from '@features/upcomingWave/components/Timeline/Timeline';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
 
-type SceneBandProps = { id: string; chain?: ChainStepId; blocks: BandBlock[] };
 
-export const BandBlocks = ({ blocks }: { blocks: BandBlock[] }) => (
+export const BandBlocks = ({ blocks }: BandBlocksProps) => (
   <>{blocks.map((block, index) => <div key={`${block.kind}-${index}`} className={`uw-block is-${block.kind}`}>{renderBlock(block)}</div>)}</>
 );
 

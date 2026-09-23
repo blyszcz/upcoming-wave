@@ -1,27 +1,19 @@
 'use client';
 
-import { useState } from 'react';
+import type { SectionAnchorProps } from './SectionAnchor.types';
 
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
-
-const COPIED_MS = 1500;
+import { useCopyLink } from '@features/upcomingWave/hooks/useCopyLink';
+import { paths } from '@routes/paths';
 
 // Small '#' that appears on hover: updates the URL to this section and copies it.
-export const SectionAnchor = ({ sectionId }: { sectionId: string }) => {
+export const SectionAnchor = ({ sectionId }: SectionAnchorProps) => {
   const { ui } = useContent();
-  const [copied, setCopied] = useState(false);
-
-  const copy = () => {
-    const url = `${window.location.origin}${window.location.pathname}#${sectionId}`;
-    navigator.clipboard?.writeText(url).then(() => {
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), COPIED_MS);
-    }).catch(() => undefined);
-  };
+  const { isCopied, copyLink } = useCopyLink(sectionId);
 
   return (
-    <a className="uw-anchor" href={`#${sectionId}`} onClick={copy} aria-label={ui.copyLink} title={ui.copyLink}>
-      {copied ? '✓' : '#'}
+    <a className="uw-anchor" href={paths.section(sectionId)} onClick={copyLink} aria-label={ui.copyLink} title={ui.copyLink}>
+      {isCopied ? '✓' : '#'}
     </a>
   );
 };

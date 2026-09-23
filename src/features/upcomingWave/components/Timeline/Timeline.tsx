@@ -1,9 +1,8 @@
-import type { Source, TimelineStep } from '@features/upcomingWave/types/scene.types';
+import type { TimelineProps } from './Timeline.types';
 
 import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
 
 
-type TimelineProps = { title: string; steps: TimelineStep[]; footnote: string; sources: Source[] };
 
 export const Timeline = ({ title, steps, footnote, sources }: TimelineProps) => (
   <div className="uw-timeline">

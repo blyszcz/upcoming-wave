@@ -1,5 +1,7 @@
 'use client';
 
+import type { NumberedSectionProps } from '@features/upcomingWave/types/section.types';
+
 import { EvidenceGrid } from '@features/upcomingWave/components/EvidenceGrid/EvidenceGrid';
 import { GrowthChart } from '@features/upcomingWave/components/GrowthChart/GrowthChart';
 import { LilyPond } from '@features/upcomingWave/components/LilyPond/LilyPond';
@@ -7,7 +9,7 @@ import { QuoteBand } from '@features/upcomingWave/components/QuoteBand/QuoteBand
 import { SectionAnchor } from '@features/upcomingWave/components/SectionAnchor/SectionAnchor';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
-export const AccelerationSection = ({ number }: { number: string }) => {
+export const AccelerationSection = ({ number }: NumberedSectionProps) => {
   const { acceleration, horizonPoints, ui } = useContent();
 
   return (

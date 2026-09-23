@@ -2,6 +2,8 @@
 
 import clsx from 'clsx';
 
+import type { NumberedSectionProps } from '@features/upcomingWave/types/section.types';
+
 import { SceneBand } from '@features/upcomingWave/components/SceneBand/SceneBand';
 import { SectionAnchor } from '@features/upcomingWave/components/SectionAnchor/SectionAnchor';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
@@ -20,7 +22,7 @@ const Half = ({ side, align }: { side: Side; align: 'left' | 'right' }) => (
   </figure>
 );
 
-export const SplitScene = ({ number }: { number: string }) => {
+export const SplitScene = ({ number }: NumberedSectionProps) => {
   const { split, ui } = useContent();
   const { ref, isInView } = useInView<HTMLElement>(0.25);
 

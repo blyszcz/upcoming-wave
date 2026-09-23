@@ -1,44 +1,35 @@
 'use client';
 
-import { useCallback, useRef, useState } from 'react';
+import { useMemo } from 'react';
 
-import type { Locale } from '@features/upcomingWave/content/locales';
+import type { UpcomingWaveExperienceProps } from './UpcomingWaveExperience.types';
 import type { StoryItem } from '@features/upcomingWave/content/pl/story';
-import type { Scene } from '@features/upcomingWave/types/scene.types';
 
 import { AccelerationSection } from '@features/upcomingWave/components/AccelerationSection/AccelerationSection';
 import { CalmSection } from '@features/upcomingWave/components/CalmSection/CalmSection';
 import { ExplainSlider } from '@features/upcomingWave/components/ExplainSlider/ExplainSlider';
 import { FinaleSection } from '@features/upcomingWave/components/FinaleSection/FinaleSection';
 import { HeroScene } from '@features/upcomingWave/components/HeroScene/HeroScene';
+import { SiteFooter } from '@features/upcomingWave/components/SiteFooter/SiteFooter';
 import { SplitScene } from '@features/upcomingWave/components/SplitScene/SplitScene';
 import { StoryHeader } from '@features/upcomingWave/components/StoryHeader/StoryHeader';
 import { StoryScene } from '@features/upcomingWave/components/StoryScene/StoryScene';
 import { VoicesSection } from '@features/upcomingWave/components/VoicesSection/VoicesSection';
+import { WhyNote } from '@features/upcomingWave/components/WhyNote/WhyNote';
 import { ContentProvider, useContent } from '@features/upcomingWave/content/ContentProvider';
 import { locales } from '@features/upcomingWave/content/locales';
+import { useExplainDialog } from '@features/upcomingWave/hooks/useExplainDialog';
 import { useSectionHash } from '@features/upcomingWave/hooks/useSectionHash';
-
+import { formatIndex } from '@features/upcomingWave/utils/formatIndex';
 
 const Story = () => {
   const { scenes, site, story } = useContent();
-  const sceneById = new Map(scenes.map((scene) => [scene.id, scene]));
-  const [explainScene, setExplainScene] = useState<Scene | null>(null);
-  const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const sceneById = useMemo(() => new Map(scenes.map((scene) => [scene.id, scene])), [scenes]);
+  const { explainScene, openExplain, closeExplain } = useExplainDialog();
   useSectionHash();
 
-  const openExplain = useCallback((scene: Scene, trigger: HTMLButtonElement) => {
-    triggerRef.current = trigger;
-    setExplainScene(scene);
-  }, []);
-
-  const closeExplain = useCallback(() => {
-    setExplainScene(null);
-    triggerRef.current?.focus();
-  }, []);
-
   const renderItem = (item: StoryItem, index: number) => {
-    const number = String(index + 1).padStart(2, '0');
+    const number = formatIndex(index + 1);
     switch (item.kind) {
       case 'scene': {
         const scene = sceneById.get(item.id);
@@ -51,32 +42,20 @@ const Story = () => {
     }
   };
 
-
   return (
     <main id="top" className="uw">
       <StoryHeader />
       <HeroScene />
       <VoicesSection />
       {story.map(renderItem)}
-      <aside className="uw-why" aria-labelledby="why-title">
-        <h2 id="why-title">{site.footer.why.title}</h2>
-        <p>{site.footer.why.text}</p>
-      </aside>
-      <footer className="uw-footer">
-        <div>
-          <p>{site.footer.sources}</p>
-          <p>{site.footer.independence}</p>
-        </div>
-        <p className="uw-footer-author">
-          {site.footer.author.label} <a href={site.footer.author.url} target="_blank" rel="noopener noreferrer">{site.footer.author.handle} ↗</a>
-        </p>
-      </footer>
+      <WhyNote {...site.footer.why} />
+      <SiteFooter />
       {explainScene && <ExplainSlider scene={explainScene} onClose={closeExplain} />}
     </main>
   );
 };
 
-export const UpcomingWaveExperience = ({ locale = 'en' }: { locale?: Locale }) => (
+export const UpcomingWaveExperience = ({ locale = 'en' }: UpcomingWaveExperienceProps) => (
   <ContentProvider content={locales[locale]}>
     <Story />
   </ContentProvider>

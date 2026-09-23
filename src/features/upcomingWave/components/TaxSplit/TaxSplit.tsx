@@ -1,11 +1,10 @@
 import clsx from 'clsx';
 
-import type { Source, TaxPart } from '@features/upcomingWave/types/scene.types';
+import type { TaxSplitProps } from './TaxSplit.types';
 
 import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
 
 
-type TaxSplitProps = { title: string; subtitle: string; parts: TaxPart[]; caption: string; countries: { name: string; value: number }[]; countriesLabel: string; source: Source };
 
 export const TaxSplit = ({ title, subtitle, parts, caption, countries, countriesLabel, source }: TaxSplitProps) => (
   <figure className="uw-tax">
