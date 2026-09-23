@@ -18,7 +18,7 @@ const PanelImage = ({ panel }: { panel: ScenePanel }) => (
   </div>
 );
 
-export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
+export const StoryScene = ({ scene, number, featured, onExplain }: StorySceneProps) => {
   const { ui } = useContent();
   const { ref, isInView } = useInView<HTMLElement>(0.2);
   const isMosaic = scene.layout === 'mosaic';
@@ -55,7 +55,7 @@ export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
           </ol>
         )}
       </section>
-      {scene.band && <SceneBand id={`${scene.id}-facts`} chain={scene.chain} blocks={scene.band} />}
+      {scene.band && <SceneBand id={`${scene.id}-facts`} chain={scene.chain} blocks={scene.band} featured={featured} />}
     </>
   );
 };

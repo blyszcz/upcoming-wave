@@ -405,6 +405,7 @@ export const scenes: Scene[] = [
     band: [
       {
         kind: 'timeline',
+        highlights: [0, 1, 6],
         title: 'Lipiec 2026: co się stało',
         steps: [
           { title: 'Test bez części zabezpieczeń', text: 'OpenAI testuje swoje najnowsze modele w zamkniętym środowisku. To test umiejętności hakerskich, więc część zabezpieczeń celowo wyłączono.' },

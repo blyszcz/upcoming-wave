@@ -262,6 +262,7 @@ export const scenes: Scene[] = [
     band: [
       {
         kind: 'timeline',
+        highlights: [0, 1, 6],
         title: 'July 2026: what happened',
         steps: [
           { title: 'A test with some safeguards off', text: 'OpenAI tests its newest models in a closed environment. It’s a hacking-skills test, so some safeguards were deliberately switched off.' },

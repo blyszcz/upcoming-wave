@@ -3,6 +3,7 @@
 import type { NumberedSectionProps } from '@features/upcomingWave/types/section.types';
 
 import { EvidenceGrid } from '@features/upcomingWave/components/EvidenceGrid/EvidenceGrid';
+import { FactsDisclosure } from '@features/upcomingWave/components/FactsDisclosure/FactsDisclosure';
 import { GrowthChart } from '@features/upcomingWave/components/GrowthChart/GrowthChart';
 import { LilyPond } from '@features/upcomingWave/components/LilyPond/LilyPond';
 import { QuoteBand } from '@features/upcomingWave/components/QuoteBand/QuoteBand';
@@ -20,8 +21,10 @@ export const AccelerationSection = ({ number }: NumberedSectionProps) => {
     </header>
     <div className="uw-block"><LilyPond {...acceleration.pond} /></div>
     <div className="uw-block"><GrowthChart {...acceleration.chart} points={horizonPoints} /></div>
-    <div className="uw-block"><EvidenceGrid {...acceleration.evidence} /></div>
-    {acceleration.quotes.map((quote) => <div key={quote.person} className="uw-block"><QuoteBand {...quote} /></div>)}
+    <FactsDisclosure label={ui.facts.show(acceleration.evidence.items.length + acceleration.quotes.length)} hideLabel={ui.facts.hide}>
+      <div className="uw-block"><EvidenceGrid {...acceleration.evidence} /></div>
+      {acceleration.quotes.map((quote) => <div key={quote.person} className="uw-block"><QuoteBand {...quote} /></div>)}
+    </FactsDisclosure>
   </section>
   );
 };

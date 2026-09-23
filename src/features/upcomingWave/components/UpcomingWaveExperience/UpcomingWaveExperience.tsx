@@ -19,6 +19,7 @@ import { VoicesSection } from '@features/upcomingWave/components/VoicesSection/V
 import { WhyNote } from '@features/upcomingWave/components/WhyNote/WhyNote';
 import { ContentProvider, useContent } from '@features/upcomingWave/content/ContentProvider';
 import { locales } from '@features/upcomingWave/content/locales';
+import { ReadingModeProvider } from '@features/upcomingWave/context/ReadingModeContext';
 import { useExplainDialog } from '@features/upcomingWave/hooks/useExplainDialog';
 import { useSectionHash } from '@features/upcomingWave/hooks/useSectionHash';
 import { formatIndex } from '@features/upcomingWave/utils/formatIndex';
@@ -34,11 +35,11 @@ const Story = () => {
     switch (item.kind) {
       case 'scene': {
         const scene = sceneById.get(item.id);
-        return scene ? <StoryScene key={scene.id} scene={scene} number={number} onExplain={openExplain} /> : null;
+        return scene ? <StoryScene key={scene.id} scene={scene} number={number} featured={item.featured} onExplain={openExplain} /> : null;
       }
       case 'acceleration': return <AccelerationSection key="acceleration" number={number} />;
-      case 'split': return <SplitScene key="split" number={number} />;
-      case 'calm': return <CalmSection key="calm" number={number} />;
+      case 'split': return <SplitScene key="split" number={number} featured={item.featured} />;
+      case 'calm': return <CalmSection key="calm" number={number} featured={item.featured} />;
       case 'finale': return <FinaleSection key="finale" number={number} />;
     }
   };
@@ -59,6 +60,8 @@ const Story = () => {
 
 export const UpcomingWaveExperience = ({ locale = 'en' }: UpcomingWaveExperienceProps) => (
   <ContentProvider content={locales[locale]}>
-    <Story />
+    <ReadingModeProvider>
+      <Story />
+    </ReadingModeProvider>
   </ContentProvider>
 );

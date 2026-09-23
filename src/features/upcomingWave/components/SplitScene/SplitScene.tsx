@@ -2,7 +2,7 @@
 
 import clsx from 'clsx';
 
-import type { NumberedSectionProps } from '@features/upcomingWave/types/section.types';
+import type { FoldableSectionProps } from '@features/upcomingWave/types/section.types';
 
 import { SceneBand } from '@features/upcomingWave/components/SceneBand/SceneBand';
 import { SectionAnchor } from '@features/upcomingWave/components/SectionAnchor/SectionAnchor';
@@ -22,7 +22,7 @@ const Half = ({ side, align }: { side: Side; align: 'left' | 'right' }) => (
   </figure>
 );
 
-export const SplitScene = ({ number }: NumberedSectionProps) => {
+export const SplitScene = ({ number, featured }: FoldableSectionProps) => {
   const { split, ui } = useContent();
   const { ref, isInView } = useInView<HTMLElement>(0.25);
 
@@ -39,7 +39,7 @@ export const SplitScene = ({ number }: NumberedSectionProps) => {
           <a className="uw-split-path" href={split.path.href}><span>{split.path.label}</span> ↓</a>
         </div>
       </section>
-      <SceneBand id={`${split.id}-facts`} chain="state" blocks={split.band} />
+      <SceneBand id={`${split.id}-facts`} chain="state" blocks={split.band} featured={featured} />
     </>
   );
 };

@@ -19,6 +19,8 @@ export const ui = {
   quoteMarks: { open: '“', close: '”' },
   why: 'Why?',
   copyLink: 'Copy link to this section',
+  facts: { show: (count: number) => `Show facts and sources (${count})`, hide: 'Hide facts and sources', moreVoices: (count: number) => `+${count} more voices`, lessVoices: 'Show fewer voices', allSteps: (count: number) => `Show all steps (${count})`, fewerSteps: 'Show less' },
+  readingMode: { toShort: 'Short version', toFull: 'Full version', aria: 'Switch between the short and the full version' },
   stepsAria: 'What happens, step by step',
   factsAria: 'Facts and sources',
   explain: {
