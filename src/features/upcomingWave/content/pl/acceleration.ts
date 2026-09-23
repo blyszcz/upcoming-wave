@@ -21,7 +21,7 @@ export const horizonPoints: HorizonPoint[] = [
 ];
 
 export const acceleration = {
-  id: 'przyspieszenie',
+  id: 'ai-builds-ai',
   number: '08',
   label: 'JAK SZYBKO TO IDZIE',
   status: 'today' as SceneStatus,

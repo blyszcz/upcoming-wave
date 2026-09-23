@@ -16,8 +16,7 @@ export const ui = {
     answer: 'ODPOWIEDŹ',
   } satisfies Record<SceneStatus, string>,
   why: 'Dlaczego?',
-  share: 'Udostępnij ↗',
-  copied: 'Skopiowano link ✓',
+  copyLink: 'Kopiuj link do tej sekcji',
   stepsAria: 'Co się dzieje, krok po kroku',
   factsAria: 'Fakty i źródła',
   explain: {

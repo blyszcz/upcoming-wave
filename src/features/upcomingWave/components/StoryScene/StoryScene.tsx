@@ -4,7 +4,7 @@ import clsx from '../../lib/clsx';
 import { useContent } from '../../content/ContentProvider';
 import { useInView } from '../../hooks/useInView';
 import { SceneBand } from '../SceneBand/SceneBand';
-import { ShareButton } from '../ShareButton/ShareButton';
+import { SectionAnchor } from '../SectionAnchor/SectionAnchor';
 
 import type { CSSProperties } from 'react';
 import type { ScenePanel } from '../../types/scene.types';
@@ -25,14 +25,11 @@ export const StoryScene = ({ scene, onExplain }: StorySceneProps) => {
     <>
       <section ref={ref} id={scene.id} data-chain={scene.chain} className={clsx('uw-scene', isMosaic && 'is-mosaic', isInView && 'is-in-view')} aria-labelledby={`${scene.id}-title`}>
         <div className="uw-scene-copy">
-          <p className="uw-eyebrow">{scene.number} / {scene.label}<b>{ui.status[scene.status]}</b></p>
+          <p className="uw-eyebrow"><SectionAnchor sectionId={scene.id} />{scene.number} / {scene.label}<b>{ui.status[scene.status]}</b></p>
           <h2 id={`${scene.id}-title`} className="uw-title">{scene.title.lead} <em>{scene.title.accent}</em></h2>
-          <div className="uw-scene-actions">
-            <button type="button" className="uw-explain-button" onClick={(event) => onExplain(scene, event.currentTarget)}>
-              {ui.why} <span aria-hidden="true">→</span>
-            </button>
-            <ShareButton sectionId={scene.id} title={`${scene.title.lead} ${scene.title.accent}`} />
-          </div>
+          <button type="button" className="uw-explain-button" onClick={(event) => onExplain(scene, event.currentTarget)}>
+            {ui.why} <span aria-hidden="true">→</span>
+          </button>
         </div>
 
         {isMosaic ? (
@@ -56,7 +53,7 @@ export const StoryScene = ({ scene, onExplain }: StorySceneProps) => {
           </ol>
         )}
       </section>
-      {scene.band && <SceneBand id={`${scene.id}-fakty`} chain={scene.chain} blocks={scene.band} />}
+      {scene.band && <SceneBand id={`${scene.id}-facts`} chain={scene.chain} blocks={scene.band} />}
     </>
   );
 };

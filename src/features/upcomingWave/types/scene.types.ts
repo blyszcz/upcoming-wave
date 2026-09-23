@@ -1,6 +1,6 @@
 export type SceneStatus = 'today' | 'history' | 'incident' | 'possible' | 'possibleMany' | 'extreme' | 'answer';
 
-export type ChainStepId = 'praca' | 'dochod' | 'zakupy' | 'podatki' | 'zaufanie' | 'ai' | 'kontrola' | 'ludzie' | 'panstwo' | 'zasady';
+export type ChainStepId = 'work' | 'income' | 'shopping' | 'taxes' | 'trust' | 'ai' | 'control' | 'people' | 'state' | 'rules';
 
 export type Source = { label: string; url?: string };
 

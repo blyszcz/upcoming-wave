@@ -90,7 +90,7 @@ const sources = {
 
 export const scenes: Scene[] = [
   {
-    id: 'zagrozenia',
+    id: 'three-risks',
     number: '01',
     label: 'CO MOŻE PÓJŚĆ NIE TAK',
     status: 'possibleMany',
@@ -141,11 +141,11 @@ export const scenes: Scene[] = [
     ],
   },
   {
-    id: 'praca',
+    id: 'who-will-resist',
     number: '02',
     label: 'JAK TO SIĘ ZACZYNA',
     status: 'today',
-    chain: 'praca',
+    chain: 'work',
     layout: 'triptych',
     title: { lead: 'AI robi to szybciej i\u00a0taniej.', accent: 'Kto się oprze?' },
     panels: [
@@ -194,11 +194,11 @@ export const scenes: Scene[] = [
   },
 
   {
-    id: 'zawody',
+    id: 'not-just-code',
     number: '03',
     label: 'KTO JEST NASTĘPNY',
     status: 'today',
-    chain: 'praca',
+    chain: 'work',
     layout: 'mosaic',
     title: { lead: 'Nie tylko kod.', accent: 'Także twoja praca.' },
     panels: [
@@ -236,11 +236,11 @@ export const scenes: Scene[] = [
     ],
   },
   {
-    id: 'hydraulik',
+    id: 'become-a-plumber',
     number: '04',
     label: 'TO SIĘ PRZEBRANŻOWIĘ',
     status: 'possible',
-    chain: 'dochod',
+    chain: 'income',
     layout: 'triptych',
     title: { lead: 'Zostań hydraulikiem.', accent: 'Wszyscy naraz?' },
     panels: [
@@ -278,11 +278,11 @@ export const scenes: Scene[] = [
     ],
   },
   {
-    id: 'popyt',
+    id: 'no-paycheck',
     number: '05',
     label: 'CO DZIEJE SIĘ DALEJ',
     status: 'possible',
-    chain: 'zakupy',
+    chain: 'shopping',
     layout: 'triptych',
     title: { lead: 'Nie masz pensji.', accent: 'Nie kupujesz.' },
     panels: [
@@ -311,11 +311,11 @@ export const scenes: Scene[] = [
   },
 
   {
-    id: 'panstwo',
+    id: 'state-lives-on-work',
     number: '06',
     label: 'CO Z TEGO MA PAŃSTWO',
     status: 'possible',
-    chain: 'podatki',
+    chain: 'taxes',
     layout: 'triptych',
     title: { lead: 'Państwo żyje z twojej pracy.', accent: 'Co, jeśli jej nie będzie?' },
     panels: [
@@ -350,11 +350,11 @@ export const scenes: Scene[] = [
     ],
   },
   {
-    id: 'historia',
+    id: 'it-happened-before',
     number: '07',
     label: 'CZY LUDZIE SIĘ ZBUNTUJĄ',
     status: 'history',
-    chain: 'zaufanie',
+    chain: 'trust',
     layout: 'triptych',
     title: { lead: 'To już było.', accent: 'Wtedy nie było AI.' },
     panels: [
@@ -390,11 +390,11 @@ export const scenes: Scene[] = [
     ],
   },
   {
-    id: 'wyrwala',
+    id: 'out-of-the-test',
     number: '09',
     label: 'CZY UMIEMY JĄ ZATRZYMAĆ?',
     status: 'incident',
-    chain: 'kontrola',
+    chain: 'control',
     layout: 'triptych',
     title: { lead: 'Już raz wyszła poza test.', accent: 'Kolejne modele są mocniejsze.' },
     panels: [
@@ -447,11 +447,11 @@ export const scenes: Scene[] = [
     ],
   },
   {
-    id: 'niepotrzebni',
+    id: 'not-needed',
     number: '10',
     label: 'Z CZEGO BĘDZIEMY ŻYĆ',
     status: 'extreme',
-    chain: 'ludzie',
+    chain: 'people',
     layout: 'triptych',
     title: { lead: 'A jeśli nie będziemy', accent: 'potrzebni?' },
     panels: [
@@ -488,11 +488,11 @@ export const scenes: Scene[] = [
     ],
   },
   {
-    id: 'zasady',
+    id: 'rules',
     number: '13',
     label: 'TO CO ROBIĆ',
     status: 'answer',
-    chain: 'zasady',
+    chain: 'rules',
     layout: 'triptych',
     title: { lead: 'Zasady, zanim szkoda', accent: 'się skaluje.' },
     panels: [
@@ -544,7 +544,7 @@ export const scenes: Scene[] = [
   },
 
   {
-    id: 'druga-strona',
+    id: 'the-other-side',
     number: '12',
     label: 'UCZCIWIE',
     status: 'today',

@@ -3,7 +3,7 @@ import type { BandBlock, SceneStatus } from '../../types/scene.types';
 const book = { label: '„Nadchodząca fala”' };
 
 export const split = {
-  id: 'dwie-drogi',
+  id: 'two-roads',
   number: '11',
   label: 'KTO WTEDY RZĄDZI',
   status: 'possibleMany' as SceneStatus,
@@ -22,7 +22,7 @@ export const split = {
     text: 'Zaczyna się niewinnie: kamery dla bezpieczeństwa, AI do łapania przestępców. Krok po kroku władza wie o nas wszystko.',
     quote: '„Mnożące się awarie technologii na mniejszą skalę pociągną za sobą apele o zacieśnienie nadzoru.”',
   },
-  path: { label: 'Wąska ścieżka', href: '#zasady' },
+  path: { label: 'Wąska ścieżka', href: '#rules' },
   band: [
     { kind: 'quote', quote: 'Z czasem skutki tych technologii popchną ludzkość w stan zawieszenia pomiędzy biegunami katastrofy i dystopii. Oto wielki dylemat naszych czasów.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 12', source: book },
     {
@@ -35,7 +35,7 @@ export const split = {
 };
 
 export const finale = {
-  id: 'final',
+  id: 'finale',
   image: '/images/v2/finale-boundaries-v2.jpg',
   alt: 'Ludzie z różnych stron świata stoją wokół okrągłego stołu o zmierzchu i układają świetliste pierścienie wokół jasnego rdzenia.',
   label: 'CO JA MOGĘ',

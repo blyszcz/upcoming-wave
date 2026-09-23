@@ -4,7 +4,7 @@ import clsx from '../../lib/clsx';
 import { useContent } from '../../content/ContentProvider';
 import { useInView } from '../../hooks/useInView';
 import { SceneBand } from '../SceneBand/SceneBand';
-import { ShareButton } from '../ShareButton/ShareButton';
+import { SectionAnchor } from '../SectionAnchor/SectionAnchor';
 
 type Side = { image: string; alt: string; label: string; text: string; quote: string };
 
@@ -25,11 +25,10 @@ export const SplitScene = () => {
 
   return (
     <>
-      <section ref={ref} id={split.id} data-chain="panstwo" className={clsx('uw-split', isInView && 'is-in-view')} aria-labelledby={`${split.id}-title`}>
+      <section ref={ref} id={split.id} data-chain="state" className={clsx('uw-split', isInView && 'is-in-view')} aria-labelledby={`${split.id}-title`}>
         <div className="uw-split-copy">
-          <p className="uw-eyebrow">{split.number} / {split.label}<b>{ui.status[split.status]}</b></p>
+          <p className="uw-eyebrow"><SectionAnchor sectionId={split.id} />{split.number} / {split.label}<b>{ui.status[split.status]}</b></p>
           <h2 id={`${split.id}-title`} className="uw-title">{split.title.lead} <em>{split.title.accent}</em></h2>
-          <ShareButton sectionId={split.id} title={`${split.title.lead} ${split.title.accent}`} />
         </div>
         <div className="uw-split-halves">
           <Half side={split.left} align="left" />
@@ -37,7 +36,7 @@ export const SplitScene = () => {
           <a className="uw-split-path" href={split.path.href}><span>{split.path.label}</span> ↓</a>
         </div>
       </section>
-      <SceneBand id={`${split.id}-fakty`} chain="panstwo" blocks={split.band} />
+      <SceneBand id={`${split.id}-facts`} chain="state" blocks={split.band} />
     </>
   );
 };

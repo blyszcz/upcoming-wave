@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-const FACTS_SUFFIX = '-fakty';
+const FACTS_SUFFIX = '-facts';
 const TOP_SECTION = 'start';
 
 // Keeps the address bar in sync with the section in view, so a copied URL opens that section.

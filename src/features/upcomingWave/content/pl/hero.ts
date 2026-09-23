@@ -6,5 +6,5 @@ export const hero = {
   threatsLabel: 'Ostrzegają przed',
   threats: ['Masowymi zwolnieniami', 'Utratą kontroli nad AI', 'Maszynami mądrzejszymi od nas', 'Wirusami projektowanymi przez AI'],
   closing: 'I sami proszą, żeby ich regulować.',
-  cta: { label: 'Zobacz ich słowa', href: '#glosy' },
+  cta: { label: 'Zobacz ich słowa', href: '#voices' },
 };

@@ -9,7 +9,7 @@ export const FinaleSection = () => {
   const [isSubscribed, setIsSubscribed] = useState(false);
 
   return (
-    <section id={finale.id} data-chain="zasady" className="uw-finale" aria-labelledby={`${finale.id}-title`}>
+    <section id={finale.id} data-chain="rules" className="uw-finale" aria-labelledby={`${finale.id}-title`}>
       <img className="uw-hero-image" src={finale.image} alt={finale.alt} loading="lazy" />
       <div className="uw-finale-shade" aria-hidden="true" />
       <div className="uw-finale-copy">

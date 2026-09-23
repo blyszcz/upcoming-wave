@@ -43,7 +43,7 @@ export const VoicesSection = () => {
   const { voices, ui } = useContent();
 
   return (
-  <section id="glosy" className="uw-voices" aria-labelledby="voices-title">
+  <section id="voices" className="uw-voices" aria-labelledby="voices-title">
     <header className="uw-voices-header">
       <p className="uw-eyebrow">{ui.voices.eyebrow}</p>
       <h2 id="voices-title" className="uw-title">{ui.voices.titleLead} <em>{ui.voices.titleAccent}</em></h2>
