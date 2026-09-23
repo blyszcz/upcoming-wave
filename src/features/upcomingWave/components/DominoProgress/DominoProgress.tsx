@@ -5,8 +5,11 @@ import { useEffect, useState } from 'react';
 import clsx from '../../lib/clsx';
 import { chain } from '../../content/pl/chain';
 
+const SHOW_AFTER_PX = 80;
+
 export const DominoProgress = () => {
   const [activeIndex, setActiveIndex] = useState(-1);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const nodes = Array.from(document.querySelectorAll<HTMLElement>('[data-chain]'));
@@ -19,15 +22,19 @@ export const DominoProgress = () => {
     }, { rootMargin: '-50% 0px -50% 0px' });
     nodes.forEach((node) => observer.observe(node));
 
-    const hideAbove = () => { if (nodes[0] && nodes[0].getBoundingClientRect().top > window.innerHeight / 2) setActiveIndex(-1); };
-    window.addEventListener('scroll', hideAbove, { passive: true });
-    return () => { observer.disconnect(); window.removeEventListener('scroll', hideAbove); };
+    const onScroll = () => {
+      setIsScrolled(window.scrollY > SHOW_AFTER_PX);
+      if (nodes[0] && nodes[0].getBoundingClientRect().top > window.innerHeight / 2) setActiveIndex(-1);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => { observer.disconnect(); window.removeEventListener('scroll', onScroll); };
   }, []);
 
   const current = chain[activeIndex];
 
   return (
-    <nav className={clsx('uw-domino', activeIndex >= 0 && 'is-visible')} aria-label="Łańcuch skutków">
+    <nav className={clsx('uw-domino', isScrolled && 'is-visible')} aria-label="Łańcuch skutków">
       <ol>
         {chain.map((step, index) => (
           <li key={step.id} className={clsx(index < activeIndex && 'is-past', index === activeIndex && 'is-current')} aria-current={index === activeIndex ? 'step' : undefined}>
@@ -36,7 +43,7 @@ export const DominoProgress = () => {
         ))}
       </ol>
       <p className="uw-domino-compact" aria-hidden="true">
-        {current && <><span>{String(activeIndex + 1).padStart(2, '0')}/{chain.length}</span>{current.label}</>}
+        {current ? <><span>{String(activeIndex + 1).padStart(2, '0')}/{chain.length}</span>{current.label}</> : <><span>00/{chain.length}</span>{chain[0].label}</>}
         <i style={{ width: `${((activeIndex + 1) / chain.length) * 100}%` }} />
       </p>
     </nav>
