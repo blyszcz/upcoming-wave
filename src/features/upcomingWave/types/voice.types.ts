@@ -3,6 +3,8 @@ export type VoiceSource = { label: string; url?: string };
 export type Voice = {
   id: string;
   variant: 'statement' | 'figure' | 'wide' | 'plain';
+  // Shown in the short version; the others fold behind '+n more voices'.
+  featured?: boolean;
   image: string;
   imageAlt: string;
   figure?: string;

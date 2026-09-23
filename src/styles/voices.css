@@ -36,3 +36,6 @@
 .uw-voice-person div span { color: var(--muted); font-size: 14px; }
 .uw-voice-person a, .uw-voice-source { color: var(--dim); font: 500 11px/1 var(--font-mono), monospace; letter-spacing: 0.08em; text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 3px; transition: color 0.2s ease, border-color 0.2s ease; }
 .uw-voice-person a:hover { color: var(--paper); border-color: var(--paper); }
+
+.uw-voices-more { margin-top: 40px; }
+.uw-voices-more .uw-disclosure { gap: 40px; }

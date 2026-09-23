@@ -5,6 +5,7 @@ import type { Voice } from '@features/upcomingWave/types/voice.types';
 export const voices: Voice[] = [
   {
     id: 'cais',
+    featured: true,
     variant: 'statement',
     image: '/images/v2/voice-cais-v1.jpg',
     imageAlt: 'Sala kryzysowa: trzy ekrany obok siebie — wirus, grzyb atomowy i sieć neuronowa.',
@@ -18,6 +19,7 @@ export const voices: Voice[] = [
   },
   {
     id: 'hinton',
+    featured: true,
     variant: 'figure',
     image: '/images/v2/voice-hinton-v1.jpg',
     imageAlt: 'Mały człowiek stoi przed ogromną, świetlistą strukturą inteligencji.',
@@ -60,6 +62,7 @@ export const voices: Voice[] = [
   },
   {
     id: 'altman',
+    featured: true,
     variant: 'wide',
     image: '/images/v2/voice-altman-v1.jpg',
     imageAlt: 'Pusta sala przesłuchań Senatu USA: stolik świadka z mikrofonem naprzeciw ławy senatorów.',

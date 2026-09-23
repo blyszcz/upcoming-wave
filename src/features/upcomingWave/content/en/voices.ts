@@ -5,6 +5,7 @@ import type { Voice } from '@features/upcomingWave/types/voice.types';
 export const voices: Voice[] = [
   {
     id: 'cais',
+    featured: true,
     variant: 'statement',
     image: '/images/v2/voice-cais-v1.jpg',
     imageAlt: 'A crisis room: three screens side by side — a virus, a mushroom cloud and a neural network.',
@@ -17,6 +18,7 @@ export const voices: Voice[] = [
   },
   {
     id: 'hinton',
+    featured: true,
     variant: 'figure',
     image: '/images/v2/voice-hinton-v1.jpg',
     imageAlt: 'A small person stands before a huge, glowing structure of intelligence.',
@@ -56,6 +58,7 @@ export const voices: Voice[] = [
   },
   {
     id: 'altman',
+    featured: true,
     variant: 'wide',
     image: '/images/v2/voice-altman-v1.jpg',
     imageAlt: 'An empty US Senate hearing room: a witness table with a microphone facing the senators’ dais.',
