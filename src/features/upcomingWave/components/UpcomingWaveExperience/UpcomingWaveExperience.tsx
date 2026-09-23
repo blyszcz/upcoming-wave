@@ -57,6 +57,10 @@ const Story = () => {
       <HeroScene />
       <VoicesSection />
       {story.map(renderItem)}
+      <aside className="uw-why" aria-labelledby="why-title">
+        <h2 id="why-title">{site.footer.why.title}</h2>
+        <p>{site.footer.why.text}</p>
+      </aside>
       <footer className="uw-footer">
         <div>
           <p>{site.footer.sources}</p>
