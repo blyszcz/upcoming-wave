@@ -1,10 +1,12 @@
 import { BarCompare } from '../BarCompare/BarCompare';
+import { Contrast } from '../Contrast/Contrast';
 import { EvidenceGrid } from '../EvidenceGrid/EvidenceGrid';
 import { LoopDiagram } from '../LoopDiagram/LoopDiagram';
 import { QuoteBand } from '../QuoteBand/QuoteBand';
 import { Scissors } from '../Scissors/Scissors';
 import { StatRow } from '../StatRow/StatRow';
 import { TaxSplit } from '../TaxSplit/TaxSplit';
+import { Timeline } from '../Timeline/Timeline';
 
 import type { BandBlock, ChainStepId } from '../../types/scene.types';
 
@@ -23,6 +25,9 @@ const renderBlock = (block: BandBlock) => {
     case 'bars': return <BarCompare {...block} />;
     case 'taxSplit': return <TaxSplit {...block} />;
     case 'scissors': return <Scissors {...block} />;
+    case 'timeline': return <Timeline {...block} />;
+    case 'contrast': return <Contrast {...block} />;
+    case 'statement': return <p className="uw-statement">{block.text}</p>;
   }
 };
 
