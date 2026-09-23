@@ -3,7 +3,7 @@ import type { SceneStatus } from '../../types/scene.types';
 export const ui = {
   lang: 'pl',
   brand: 'Nadchodząca fala',
-  langSwitch: null as null | { label: string; href: string; ariaLabel: string },
+  langSwitch: { label: 'EN', href: '/', ariaLabel: 'English version' } as null | { label: string; href: string; ariaLabel: string },
   dominoAria: 'Łańcuch skutków',
   heroBasis: 'Na podstawie „Nadchodzącej fali” i słów twórców AI',
   status: {

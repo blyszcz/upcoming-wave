@@ -67,7 +67,7 @@ const Story = () => {
   );
 };
 
-export const UpcomingWaveExperience = ({ locale = 'pl' }: { locale?: Locale }) => (
+export const UpcomingWaveExperience = ({ locale = 'en' }: { locale?: Locale }) => (
   <ContentProvider content={locales[locale]}>
     <Story />
   </ContentProvider>

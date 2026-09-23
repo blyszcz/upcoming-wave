@@ -586,3 +586,5 @@ export const scenes: Scene[] = [
     ],
   },
 ];
+
+export { images as sceneImages, sources as sceneSources };
