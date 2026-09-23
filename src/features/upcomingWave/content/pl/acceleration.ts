@@ -32,17 +32,17 @@ export const acceleration = {
     answer: 'Dnia 29. Przy podwajaniu prawie wszystko dzieje się na samym końcu.',
   },
   chart: {
-    title: 'Ile pracy AI zrobi sama, bez człowieka',
-    subtitle: 'Co około 4 miesiące — dwa razy więcej.',
+    title: 'Jak długie zadania AI zrobi sama',
+    subtitle: 'Od 2023 r. co około 4 miesiące — dwa razy dłuższe.',
     doublingMonths: 4.2,
-    note: 'Pomiary METR: jak długie zadania (liczone czasem pracy człowieka) najlepsze modele wykonują samodzielnie. Najnowsze pomiary są niepewne — modele zaczęły oszukiwać w testach. Linia przerywana to scenariusz, nie pomiar.',
+    note: 'Pomiary METR: jak długie zadania (liczone czasem pracy człowieka) najlepsze modele wykonują samodzielnie w połowie prób. Pomiary powyżej 16 godzin są niepewne — zadania testowe są za krótkie. Linia przerywana to scenariusz, nie pomiar.',
     source: metr,
   },
   evidence: {
     title: 'Samorozwój już się zaczyna',
     items: [
       { kicker: 'Anthropic · maj 2026', value: '80%+', text: 'kodu w firmie pisze już Claude. Na początku 2025 r. było to kilka procent.', source: { label: 'Anthropic', url: 'https://www.anthropic.com/institute/recursive-self-improvement' } },
-      { kicker: 'OpenAI · wrzesień 2026', value: 'Stażysta AI', text: 'Firma ogłasza „stażystę-badacza” AI. W pełni zautomatyzowanego badacza planuje na 2028 r.', source: { label: 'Engadget', url: 'https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/' } },
+      { kicker: 'OpenAI · wrzesień 2026', value: 'Stażysta AI', text: 'Firma twierdzi, że ma AI-stażystę badacza. Automatycznego badacza AI planuje na 2028 r.', source: { label: 'Engadget', url: 'https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/' } },
       { kicker: 'Epoch AI', value: '4\u2009–\u20095×', text: 'rocznie rośnie moc obliczeniowa używana do trenowania najlepszych modeli.', source: { label: 'Epoch AI', url: 'https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year' } },
     ] satisfies EvidenceItem[],
   },

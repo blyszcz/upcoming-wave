@@ -12,7 +12,7 @@ export const split = {
     image: '/images/v2/split-zombie-v2.jpg',
     alt: 'Opuszczony urząd: zamknięte okienka, puste krzesła, papiery na podłodze.',
     label: 'Puste państwo',
-    text: 'Urzędy i wybory niby są, ale nic od nich nie zależy. Naprawdę decydują ci, którzy mają AI.',
+    text: 'Urzędy i wybory są, ale państwo przestaje działać. Usługi kurczą się do minimum, rośnie chaos.',
     quote: '„twory podobne do zombie”',
   },
   right: {
@@ -24,11 +24,11 @@ export const split = {
   },
   path: { label: 'Wąska ścieżka', href: '#zasady' },
   band: [
-    { kind: 'quote', quote: 'Skutki tych technologii popchną ludzkość w stan zawieszenia pomiędzy biegunami katastrofy i dystopii. Oto wielki dylemat naszych czasów.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 12', source: book },
+    { kind: 'quote', quote: 'Z czasem skutki tych technologii popchną ludzkość w stan zawieszenia pomiędzy biegunami katastrofy i dystopii. Oto wielki dylemat naszych czasów.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 12', source: book },
     {
       kind: 'stats',
       items: [
-        { value: '44%', label: 'światowego PKB — tyle wynoszą łączne przychody 500 największych firm świata', source: book },
+        { value: '44%', label: 'światowego PKB — tyle wynoszą łączne przychody firm z listy Fortune Global 500 (rozdz. 11)', source: book },
       ],
     },
   ] satisfies BandBlock[],
@@ -44,7 +44,9 @@ export const counterpoint = {
     items: [
       { kicker: 'Daron Acemoglu · MIT, noblista', value: '~1%', text: 'tyle AI doda do PKB w ciągu 10 lat — ewolucja, nie rewolucja.', source: { label: 'NBER', url: 'https://www.nber.org/papers/w32487' } },
       { kicker: 'Nowojorski Fed · 2026', text: 'AI nie jest na razie głównym powodem słabszych rekrutacji.', source: { label: 'NY Fed', url: 'https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/' } },
-      { kicker: 'Światowe Forum Ekonomiczne', value: '+170 / −92 mln', text: 'miejsc pracy do 2030 r. — nowe i utracone, według badania pracodawców.', source: { label: 'WEF', url: 'https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf' } },
+      { kicker: 'Światowe Forum Ekonomiczne', value: '+170 / −92 mln', text: 'miejsc pracy do 2030 r. — nowe i utracone, według badania pracodawców (wszystkie trendy, nie tylko AI).', source: { label: 'WEF', url: 'https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf' } },
+      { kicker: 'Dario Amodei · 2026', text: '„Jeśli zautomatyzujesz 90% pracy, wszyscy robią pozostałe 10%” — a te 10% rozrasta się do całej pracy.', source: { label: 'Fortune', url: 'https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/' } },
+      { kicker: 'Mustafa Suleyman · rozdz. 12', text: '„Nie łudźmy się: zastój równa się katastrofie.” Autor podkreśla, że technologia obiecuje korzyści daleko przewyższające koszty.', source: book },
       { kicker: 'Sam Altman · 2026', text: '„Cieszę się, że się myliłem” — zwolnień jest na razie mniej, niż sam przewidywał.', source: { label: 'Fortune', url: 'https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/' } },
     ] satisfies EvidenceItem[],
   },

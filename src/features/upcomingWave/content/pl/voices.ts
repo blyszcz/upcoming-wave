@@ -36,7 +36,7 @@ export const voices: Voice[] = [
     image: '/images/v2/voice-amodei-v1.jpg',
     imageAlt: 'Puste biuro o świcie, na biurkach kartony z rzeczami zwolnionych pracowników.',
     figure: '50%',
-    figureCaption: 'początkowych stanowisk biurowych może zniknąć w ciągu 5 lat, a bezrobocie skoczyć do 10–20% — ostrzega.',
+    figureCaption: 'początkowych stanowisk biurowych może zniknąć w ciągu 5 lat, a bezrobocie skoczyć do 10–20% — mówił w 2025 r. W 2026 r. złagodził tę prognozę.',
     quotes: ['Jako twórcy tej technologii mamy obowiązek uczciwie mówić o tym, co nadchodzi.'],
     originals: ['We, as the producers of this technology, have a duty and an obligation to be honest about what is coming.'],
     person: 'Dario Amodei',
@@ -65,7 +65,7 @@ export const voices: Voice[] = [
     imageAlt: 'Pusta sala przesłuchań Senatu USA: stolik świadka z mikrofonem naprzeciw ławy senatorów.',
     quotes: [
       'Jeśli ta technologia pójdzie w złą stronę, może pójść bardzo źle.',
-      'Interwencja regulacyjna rządów będzie kluczowa, by ograniczać ryzyko coraz potężniejszych modeli.',
+      'Uważamy, że interwencja regulacyjna rządów będzie kluczowa, by ograniczać ryzyko coraz potężniejszych modeli.',
     ],
     originals: [
       'If this technology goes wrong, it can go quite wrong.',
@@ -84,7 +84,7 @@ export const voices: Voice[] = [
     quotes: ['Jeden eksperyment z patogenami, niewinne dłubanie w materii na poziomie cząsteczkowym, może wywołać pandemię o globalnych konsekwencjach.'],
     person: 'Mustafa Suleyman',
     role: 'Współzałożyciel DeepMind, autor książki',
-    context: '„Nadchodząca fala” · 2023',
+    context: '„Nadchodząca fala”, rozdz. 7 · 2023',
     source: { label: 'polskie wydanie książki' },
   },
 ];
