@@ -406,27 +406,39 @@ export const scenes: Scene[] = [
     number: '12',
     label: 'TO BE FAIR',
     status: 'today',
-    layout: 'triptych',
-    title: { lead: 'The other side.', accent: 'The same AI helps heal.' },
+    layout: 'mosaic',
+    title: { lead: 'The other side.', accent: 'If we get it right.' },
     panels: [
-      { image: images.medicine, label: 'Earlier diagnosis', alt: 'A doctor and a patient look at a scan on which AI has gently marked one spot.', focus: 'center 65%' },
-      { image: images.science, label: 'Science speeds up', alt: 'A scientist in a lab looks at a glowing 3D model of a protein.', focus: 'center 65%' },
-      { image: images.time, label: 'More time for people', alt: 'A teacher kneels beside a child and helps them, while a laptop handles paperwork in the background.', focus: 'center 65%' },
+      { image: images.medicine, label: 'Earlier diagnosis', caption: 'AI catches what’s easy to miss', alt: 'A doctor and a patient look at a scan on which AI has gently marked one spot.', focus: 'center 55%' },
+      { image: images.science, label: 'New medicines', caption: 'An antibiotic found among 100M molecules', alt: 'A scientist in a lab looks at a glowing 3D model of a protein.', focus: 'center 40%' },
+      { image: images.energy, label: 'Clean energy', caption: 'Cheaper sun, wind and batteries', alt: 'Solar fields and wind turbines at dawn; an engineer checks the grid on a tablet.' },
+      { image: images.food, label: 'Food', caption: 'Crops that survive the heat', alt: 'Farmers inspect healthy crops in a hot summer while a drone hovers over the field.' },
+      { image: images.forecast, label: 'Warnings in time', caption: 'Floods and fires predicted earlier', alt: 'A forecasting centre: meteorologists look at a river map with a flood risk highlighted.' },
+      { image: images.time, label: 'School', caption: 'Support for teachers', alt: 'A teacher kneels beside a child and helps them, while a laptop handles paperwork in the background.', focus: 'center 60%' },
     ],
     explain: [
-      { image: images.medicine, alt: 'A doctor discussing an AI-assisted scan with a patient.', label: 'Medicine', title: 'AI sees what’s easy to miss.', copy: 'In a large Swedish trial, doctors helped by AI found 29% more breast cancers — without more false alarms.' },
-      { image: images.science, alt: 'A protein model in a lab.', label: 'Science', title: 'Discoveries in months, not years.', copy: 'AlphaFold predicted the shape of about 200 million proteins — work awarded the 2024 Nobel Prize and a key to new drugs.' },
-      { image: images.time, alt: 'A teacher helping a child.', label: 'Time', title: 'Less paperwork, more people.', copy: 'If AI takes over tedious tasks, doctors and teachers could have more time for people — as long as the gains reach everyone.' },
+      { image: images.medicine, alt: 'A doctor discussing an AI-assisted scan with a patient.', label: 'Health', title: 'Better, cheaper care.', copy: 'Doctors helped by AI find more cancers, and AI searches millions of molecules for new medicines.' },
+      { image: images.energy, alt: 'Solar and wind farms at dawn.', label: 'The planet', title: 'Help where politics is stuck.', copy: 'The book’s author hopes AI will help us switch to renewable energy, grow food in a hotter climate and predict floods and fires.' },
+      { image: images.time, alt: 'A teacher helping a child.', label: 'On one condition', title: 'These benefits won’t come by themselves.', copy: 'They reach everyone only if we set the rules: who is responsible for harm and how the gains are shared.' },
     ],
     band: [
+      { kind: 'quote', quote: 'They will improve the quality of healthcare and lower its costs. They will help us invent tools for the transition to renewable energy and the fight against climate change amid political deadlock. They will support teachers, making underfunded education systems more effective.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 9 — on AI and synthetic biology', source: sources.book },
       {
         kind: 'stats',
         items: [
           { value: '29%', label: 'more breast cancers detected with AI-supported screening — with no rise in false alarms', source: sources.masai },
-          { value: '44%', label: 'less reading work for radiologists', source: sources.masai },
+          { value: '100M', label: 'molecules searched by an AI system to find halicin — the first antibiotic discovered with machine learning (ch. 7)', source: sources.book },
           { value: '200M', label: 'protein structures predicted by AlphaFold — 2024 Nobel Prize in Chemistry', source: sources.nobel },
         ],
       },
+      {
+        kind: 'stats',
+        items: [
+          { value: '−82%', label: 'drop in the cost of solar power over a decade — and it keeps falling (ch. 11)', source: sources.book },
+          { value: '~9%', label: 'of people live below the poverty line today. In the early 1800s almost everyone lived in extreme poverty — that’s what technology changed (ch. 8)', source: sources.book },
+        ],
+      },
+      { kind: 'quote', quote: 'With AI we could unlock the secrets of the universe, cure diseases that have long eluded science, and create new forms of art and culture that stretch the limits of imagination.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, prologue', source: sources.book },
       { kind: 'quote', quote: 'If containing it proves impossible, the consequences for our species will be dramatic, perhaps even tragic. And yet without its benefits we are weak and defenceless.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 1', source: sources.book },
       {
         kind: 'evidence',

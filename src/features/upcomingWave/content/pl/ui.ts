@@ -15,6 +15,7 @@ export const ui = {
     extreme: 'SKRAJNY SCENARIUSZ',
     answer: 'ODPOWIEDŹ',
   } satisfies Record<SceneStatus, string>,
+  quoteMarks: { open: '„', close: '”' },
   why: 'Dlaczego?',
   copyLink: 'Kopiuj link do tej sekcji',
   stepsAria: 'Co się dzieje, krok po kroku',

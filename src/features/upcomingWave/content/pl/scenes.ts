@@ -37,6 +37,9 @@ const images = {
   medicine: '/images/v2/benefit-01-medicine-v1.jpg',
   science: '/images/v2/benefit-02-science-v1.jpg',
   time: '/images/v2/benefit-03-time-v1.jpg',
+  energy: '/images/v2/benefit-04-energy-v1.jpg',
+  food: '/images/v2/benefit-05-food-v1.jpg',
+  forecast: '/images/v2/benefit-06-forecast-v1.jpg',
 };
 
 const sources = {
@@ -548,27 +551,39 @@ export const scenes: Scene[] = [
     number: '12',
     label: 'UCZCIWIE',
     status: 'today',
-    layout: 'triptych',
-    title: { lead: 'Druga strona.', accent: 'Ta\u00a0sama AI pomaga leczyć.' },
+    layout: 'mosaic',
+    title: { lead: 'Druga strona.', accent: 'Jeśli zrobimy to dobrze.' },
     panels: [
-      { image: images.medicine, label: 'Wcześniejsza diagnoza', alt: 'Lekarz i pacjentka patrzą na obraz z badania, na którym AI delikatnie zaznaczyła jedno miejsce.', focus: 'center 65%' },
-      { image: images.science, label: 'Nauka przyspiesza', alt: 'Naukowiec w laboratorium patrzy na świetlisty trójwymiarowy model białka.', focus: 'center 65%' },
-      { image: images.time, label: 'Więcej czasu dla ludzi', alt: 'Nauczycielka klęczy przy dziecku i pomaga mu, a w tle laptop zajmuje się papierami.', focus: 'center 65%' },
+      { image: images.medicine, label: 'Wcześniejsza diagnoza', caption: 'AI wyłapuje to, co łatwo przeoczyć', alt: 'Lekarz i pacjentka patrzą na obraz z badania, na którym AI delikatnie zaznaczyła jedno miejsce.', focus: 'center 55%' },
+      { image: images.science, label: 'Nowe leki', caption: 'Antybiotyk znaleziony wśród 100 mln cząsteczek', alt: 'Naukowczyni w laboratorium patrzy na świetlisty trójwymiarowy model białka.', focus: 'center 40%' },
+      { image: images.energy, label: 'Czysta energia', caption: 'Tańsze słońce, wiatr i baterie', alt: 'Pola paneli słonecznych i wiatraki o świcie; inżynier sprawdza sieć na tablecie.' },
+      { image: images.food, label: 'Żywność', caption: 'Uprawy odporne na upały', alt: 'Rolnicy oglądają zdrowe uprawy w upalne lato, nad polem unosi się dron.' },
+      { image: images.forecast, label: 'Ostrzeżenia na czas', caption: 'Powodzie i pożary przewidziane wcześniej', alt: 'Centrum prognoz: synoptycy patrzą na mapę rzeki z zaznaczonym zagrożeniem powodzią.' },
+      { image: images.time, label: 'Szkoła', caption: 'Wsparcie dla nauczycieli', alt: 'Nauczycielka klęczy przy dziecku i pomaga mu, a w tle laptop zajmuje się papierami.', focus: 'center 60%' },
     ],
     explain: [
-      { image: images.medicine, alt: 'Lekarz omawia z pacjentką badanie wspierane przez AI.', label: 'Medycyna', title: 'AI widzi to, co łatwo przeoczyć.', copy: 'W dużym badaniu w Szwecji lekarze z pomocą AI wykryli o 29% więcej nowotworów piersi — bez więcej fałszywych alarmów.' },
-      { image: images.science, alt: 'Model białka w laboratorium.', label: 'Nauka', title: 'Odkrycia w miesiące zamiast lat.', copy: 'AlphaFold przewidział kształt ok. 200 mln białek — to praca nagrodzona Noblem w 2024 r. i klucz do nowych leków.' },
-      { image: images.time, alt: 'Nauczycielka pomaga dziecku.', label: 'Czas', title: 'Mniej papierów, więcej człowieka.', copy: 'Jeśli AI przejmie żmudne zadania, lekarz i nauczyciel mogą mieć więcej czasu dla ludzi — pod warunkiem, że zyski trafią do wszystkich.' },
+      { image: images.medicine, alt: 'Lekarz omawia z pacjentką badanie wspierane przez AI.', label: 'Zdrowie', title: 'Lepsze i tańsze leczenie.', copy: 'Lekarze z pomocą AI wykrywają więcej nowotworów, a AI przeszukuje miliony cząsteczek w poszukiwaniu nowych leków.' },
+      { image: images.energy, alt: 'Farmy słoneczne i wiatrowe o świcie.', label: 'Planeta', title: 'Pomoc tam, gdzie polityka utknęła.', copy: 'Autor książki liczy, że AI pomoże przejść na energię odnawialną, uprawiać żywność w cieplejszym klimacie i przewidywać powodzie czy pożary.' },
+      { image: images.time, alt: 'Nauczycielka pomaga dziecku.', label: 'Pod warunkiem', title: 'Te korzyści nie przyjdą same.', copy: 'Trafią do wszystkich tylko wtedy, gdy ustalimy zasady: kto odpowiada za szkody i jak dzielimy zyski.' },
     ],
     band: [
+      { kind: 'quote', quote: 'Zwiększą jakość opieki zdrowotnej i obniżą jej koszty. Pomogą nam wynaleźć narzędzia umożliwiające przechodzenie na energię odnawialną i walkę ze zmianami klimatycznymi w warunkach politycznego impasu. Wesprą nauczycieli, zwiększając efektywność niedofinansowanych systemów edukacji.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 9 — o AI i biologii syntetycznej', source: sources.book },
       {
         kind: 'stats',
         items: [
           { value: '29%', label: 'więcej wykrytych nowotworów piersi w badaniu wspieranym przez AI — bez wzrostu fałszywych alarmów', source: sources.masai },
-          { value: '44%', label: 'mniej pracy radiologów przy odczytywaniu badań', source: sources.masai },
+          { value: '100 mln', label: 'cząsteczek przeszukał system AI, by znaleźć halicynę — pierwszy antybiotyk odkryty z pomocą uczenia maszynowego (rozdz. 7)', source: sources.book },
           { value: '200 mln', label: 'struktur białek przewidział AlphaFold — Nagroda Nobla z chemii 2024', source: sources.nobel },
         ],
       },
+      {
+        kind: 'stats',
+        items: [
+          { value: '−82%', label: 'tyle w ciągu dekady spadły koszty fotowoltaiki — i wciąż spadają (rozdz. 11)', source: sources.book },
+          { value: '~9%', label: 'ludzi żyje dziś poniżej granicy ubóstwa. Na początku XIX w. w skrajnej nędzy żyli prawie wszyscy — tyle zmieniła technologia (rozdz. 8)', source: sources.book },
+        ],
+      },
+      { kind: 'quote', quote: 'Dzięki sztucznej inteligencji moglibyśmy rozszyfrować tajemnice wszechświata, leczyć choroby, które przez długi czas wymykały się nauce, tworzyć nowe formy sztuki i kultury, poszerzające granice wyobraźni.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, prolog', source: sources.book },
       { kind: 'quote', quote: 'Jeśli jej powstrzymanie okaże się niemożliwe, konsekwencje dla naszego gatunku będą dramatyczne, a nawet być może tragiczne. Zarazem jednak bez jej dobrodziejstw jesteśmy słabi i bezbronni.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 1', source: sources.book },
       {
         kind: 'evidence',

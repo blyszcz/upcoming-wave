@@ -20,7 +20,7 @@ const VoiceCard = ({ voice }: { voice: Voice }) => {
         </div>
       )}
       <div className="uw-voice-quotes">
-        {voice.quotes.map((quote) => <blockquote key={quote}>„{quote}”</blockquote>)}
+        {voice.quotes.map((quote) => <blockquote key={quote}>{ui.quoteMarks.open}{quote}{ui.quoteMarks.close}</blockquote>)}
       </div>
       {voice.signatories && (
         <div className="uw-signatories">
