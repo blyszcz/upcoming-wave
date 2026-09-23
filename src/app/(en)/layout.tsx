@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 
+import { localeRedirectScript } from '@/features/upcomingWave/lib/localePreference';
+
 import { fontVariables } from '../fonts';
 import '../globals.css';
 
@@ -14,6 +16,9 @@ export const viewport: Viewport = { themeColor: '#070b10' };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={fontVariables}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: localeRedirectScript }} />
+      </head>
       <body>{children}</body>
     </html>
   );
