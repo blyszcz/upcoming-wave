@@ -1,0 +1,38 @@
+/* ---------- voices ---------- */
+.uw-voices { padding: 150px var(--gutter) 120px; border-top: 1px solid var(--line); }
+.uw-voices-header { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); align-items: flex-end; gap: 26px 6vw; margin-bottom: 64px; }
+.uw-voices-header .uw-eyebrow { grid-column: 1 / -1; }
+.uw-voices-header .uw-title { font-size: clamp(2.6rem, 5vw, 5.8rem); }
+.uw-voices-header > p:last-child { max-width: 38ch; margin: 0; color: var(--muted); font-size: 17px; line-height: 1.55; }
+
+.uw-voices-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; border: 1px solid var(--line); background: var(--line); }
+.uw-voice { display: flex; flex-direction: column; min-width: 0; background: var(--ink); }
+.uw-voice-media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: var(--ink-2); }
+.uw-voice-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease-out); }
+.uw-voice:hover .uw-voice-media img { transform: scale(1.04); }
+.uw-voice-body { display: flex; flex: 1; flex-direction: column; gap: 26px; padding: clamp(26px, 2.6vw, 40px); }
+.uw-voice.is-statement { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
+.uw-voice.is-statement .uw-voice-media { order: 2; aspect-ratio: auto; min-height: 100%; }
+.uw-voice.is-wide { grid-column: span 2; }
+.uw-voice.is-wide .uw-voice-media { aspect-ratio: 21 / 9; }
+.uw-voice-context { margin: 0; color: var(--muted); font: 500 11px/1 var(--font-mono), monospace; letter-spacing: 0.16em; text-transform: uppercase; }
+
+.uw-voice-figure strong { display: block; color: var(--signal); font: 600 clamp(3rem, 4.6vw, 5.2rem)/0.9 var(--font-sans); letter-spacing: -0.05em; font-variant-numeric: tabular-nums; }
+.uw-voice-figure p { max-width: 34ch; margin: 14px 0 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
+
+.uw-voice-quotes { display: grid; gap: 26px; }
+.uw-voice-quotes blockquote { margin: 0; font: 400 clamp(1.4rem, 1.8vw, 1.9rem)/1.2 var(--font-serif), serif; letter-spacing: -0.01em; text-wrap: pretty; }
+.uw-voice.is-statement .uw-voice-quotes blockquote { max-width: 24ch; font-size: clamp(2rem, 3.4vw, 3.6rem); line-height: 1.08; }
+.uw-voice.is-wide .uw-voice-quotes { grid-template-columns: 1fr 1fr; gap: 4vw; }
+.uw-voice.is-wide .uw-voice-quotes blockquote { font-size: clamp(1.6rem, 2.3vw, 2.5rem); line-height: 1.12; }
+
+.uw-signatories p { margin: 0 0 14px; color: var(--muted); font: 500 11px/1 var(--font-mono), monospace; letter-spacing: 0.16em; text-transform: uppercase; }
+.uw-signatories ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.uw-signatories li { padding: 9px 14px; border: 1px solid var(--line); border-radius: 99px; font-size: 14px; }
+
+.uw-voice-person { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 14px 30px; margin-top: auto; padding-top: 22px; border-top: 1px solid var(--line); }
+.uw-voice-person div { display: grid; gap: 6px; }
+.uw-voice-person b { font-size: 16px; font-weight: 600; }
+.uw-voice-person div span { color: var(--muted); font-size: 14px; }
+.uw-voice-person a, .uw-voice-source { color: var(--dim); font: 500 11px/1 var(--font-mono), monospace; letter-spacing: 0.08em; text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 3px; transition: color 0.2s ease, border-color 0.2s ease; }
+.uw-voice-person a:hover { color: var(--paper); border-color: var(--paper); }

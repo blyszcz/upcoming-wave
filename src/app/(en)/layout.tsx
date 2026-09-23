@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from 'next';
 import { fontVariables } from '@/app/fonts';
 import { localeRedirectScript } from '@features/upcomingWave/lib/localePreference';
 
-import '../globals.css';
+import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Why AI’s own creators are asking for rules',

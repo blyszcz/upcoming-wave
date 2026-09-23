@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 
 import { fontVariables } from '@/app/fonts';
-import '../../globals.css';
+import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Dlaczego twórcy AI sami proszą o zasady',
