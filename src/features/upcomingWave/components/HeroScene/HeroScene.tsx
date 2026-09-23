@@ -1,14 +1,22 @@
 'use client';
 
 import { useContent } from '../../content/ContentProvider';
+import { HeroCompare } from '../HeroCompare/HeroCompare';
 
 export const HeroScene = () => {
   const { hero } = useContent();
 
   return (
   <section id="start" className="uw-hero" aria-labelledby="hero-title">
-    <img className="uw-hero-image" src={hero.image} alt={hero.alt} fetchPriority="high" />
-    <div className="uw-hero-shade" aria-hidden="true" />
+    <HeroCompare
+      darkImage={hero.image}
+      darkAlt={hero.alt}
+      hopeImage={hero.compare.image}
+      hopeAlt={hero.compare.alt}
+      darkLabel={hero.compare.darkLabel}
+      hopeLabel={hero.compare.hopeLabel}
+      aria={hero.compare.aria}
+    />
     <div className="uw-hero-copy">
       <h1 id="hero-title" className="uw-title uw-hero-title">{hero.title.lead} <em>{hero.title.accent}</em></h1>
       <div className="uw-hero-threats">
