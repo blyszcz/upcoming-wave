@@ -19,7 +19,10 @@ export const HeroScene = () => {
         </ol>
       </div>
       <p className="uw-hero-closing">{hero.closing}</p>
-      <a className="uw-cta" href={hero.cta.href}>{hero.cta.label} <span aria-hidden="true">↓</span></a>
+      <div className="uw-hero-actions">
+        <a className="uw-cta" href={hero.cta.href}>{hero.cta.label} <span aria-hidden="true">↓</span></a>
+        <p className="uw-hero-note">{hero.note} <a href={hero.noteLink.href}>{hero.noteLink.label} →</a></p>
+      </div>
     </div>
   </section>
   );
