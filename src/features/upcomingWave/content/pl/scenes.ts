@@ -77,6 +77,7 @@ const sources = {
   openresearch: { label: 'OpenResearch', url: 'https://www.openresearchlab.org/findings/nber-working-paper-employment' },
   altmanSenate: { label: 'Al Jazeera', url: 'https://www.aljazeera.com/news/2023/5/17/chatgpt-boss-tells-us-legislators-regulation-critical-for-ai' },
   aiAct: { label: 'Rada UE, 2026', url: 'https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/' },
+  muskAnthill: { label: 'Live Science, 2018', url: 'https://www.livescience.com/62239-elon-musk-immortal-artificial-intelligence-dictator.html' },
   gates: { label: 'CNBC, 2017', url: 'https://www.cnbc.com/2017/02/17/bill-gates-job-stealing-robots-should-pay-income-taxes.html' },
   citadel: { label: 'Bloomberg, 2026', url: 'https://www.bloomberg.com/news/articles/2026-02-24/citadel-securities-rebuts-citrini-intelligence-crisis-scenario' },
 };
@@ -415,6 +416,7 @@ export const scenes: Scene[] = [
         footnote: 'Uczciwie: dane klientów nie wyciekły, nikt nie ucierpiał fizycznie. W tym samym czasie Anthropic ujawnił trzy podobne incydenty z własnymi modelami.',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
       },
+      { kind: 'quote', quote: 'Jeśli AI ma cel, a ludzkość po prostu stoi jej na drodze, zniszczy ludzkość przy okazji, nawet się nad tym nie zastanawiając. Bez urazy. To tak, jakbyśmy budowali drogę, a na drodze stało mrowisko. Nie nienawidzimy mrówek — po prostu budujemy drogę. Więc żegnaj, mrowisko.', person: 'Elon Musk', role: 'film dokumentalny „Do You Trust This Computer?”, 2018', source: sources.muskAnthill },
       { kind: 'quote', quote: 'Ten incydent nigdy nie powinien był się wydarzyć — zwłaszcza że nasze modele osiągają poziom, który mógłby pozwolić na realną utratę kontroli.', person: 'OpenAI', role: 'raport po incydencie, sierpień 2026', source: sources.openaiRoad },
       {
         kind: 'evidence',
