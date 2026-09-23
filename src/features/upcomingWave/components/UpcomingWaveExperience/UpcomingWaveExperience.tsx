@@ -3,6 +3,7 @@
 import { useCallback, useRef, useState } from 'react';
 
 import { scenes } from '../../content/pl/scenes';
+import { site } from '../../content/pl/site';
 import { story } from '../../content/pl/story';
 import { AccelerationSection } from '../AccelerationSection/AccelerationSection';
 import { CounterpointSection } from '../CounterpointSection/CounterpointSection';
@@ -53,8 +54,13 @@ export const UpcomingWaveExperience = () => {
       <VoicesSection />
       {story.map(renderItem)}
       <footer className="uw-footer">
-        <p>Na podstawie książki „Nadchodząca fala” (M. Suleyman, M. Bhaskar) oraz wypowiedzi i danych, do których linki podajemy przy każdym fakcie.</p>
-        <p>Scenariusze to możliwe ryzyka, nie prognozy.</p>
+        <div>
+          <p>{site.footer.sources}</p>
+          <p>{site.footer.independence}</p>
+        </div>
+        <p className="uw-footer-author">
+          {site.footer.author.label} <a href={site.footer.author.url} target="_blank" rel="noopener noreferrer">{site.footer.author.handle} ↗</a>
+        </p>
       </footer>
       {explainScene && <ExplainSlider scene={explainScene} onClose={closeExplain} />}
     </main>

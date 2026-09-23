@@ -371,6 +371,10 @@ a.uw-source:hover { color: var(--paper); border-color: var(--paper); }
 .uw-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 40px; padding: 36px var(--gutter); border-top: 1px solid var(--line); color: var(--muted); font: 400 11px/1.6 var(--font-mono), monospace; letter-spacing: 0.08em; }
 .uw-footer p { margin: 0; }
 .uw-footer b { color: var(--paper); font-weight: 500; }
+.uw-footer div { display: grid; gap: 6px; max-width: 80ch; }
+.uw-footer-author { align-self: end; white-space: nowrap; }
+.uw-footer-author a { color: var(--paper); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 2px; transition: border-color 0.2s ease; }
+.uw-footer-author a:hover { border-color: var(--paper); }
 
 @keyframes uw-fade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes uw-grow { from { transform: scaleX(0); } }
