@@ -2,8 +2,8 @@ export const hero = {
   image: '/images/v2/hero-wave-v2.jpg',
   alt: 'Gigantyczna fala nad nocnym miastem, spleciona z helis DNA i wirusów, na jej szczycie zimna maszyna. Na ulicy zwolnieni ludzie z kartonami, obok przewrócony posąg człowieka.',
   compare: {
-    image: '/images/v2/hero-wave-hope-v2.jpg',
-    alt: 'Ta sama fala i to samo miasto o świcie: fala świeci ciepłym, złotym światłem, a ludzie na ulicy patrzą w górę z nadzieją.',
+    image: '/images/v2/hero-wave-hope-v4.jpg',
+    alt: 'Ta sama fala i to samo miasto o świcie: złota fala nad zielonym bulwarem pełnym targowisk z jedzeniem. Roboty noszą skrzynki i obsługują stoiska, a ludzie spokojnie spacerują i robią zakupy.',
     darkLabel: 'Jeśli nic nie zrobimy',
     hopeLabel: 'Jeśli ustalimy zasady',
     aria: 'Przesuń, by porównać dwie przyszłości',
