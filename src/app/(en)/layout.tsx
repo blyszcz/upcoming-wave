@@ -1,15 +1,16 @@
 import type { Metadata, Viewport } from 'next';
 
 import { fontVariables } from '@/app/fonts';
+import { buildMetadata } from '@/app/siteMetadata';
 import { localeRedirectScript } from '@features/upcomingWave/lib/localePreference';
 
 import '@/styles/globals.css';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
+  locale: 'en',
   title: 'Why AI’s own creators are asking for rules',
   description: 'A visual story of how AI could change work, money and the state faster than we can adapt — and why the people building it are asking to be regulated.',
-  alternates: { languages: { pl: '/pl/' } },
-};
+});
 
 export const viewport: Viewport = { themeColor: '#070b10' };
 
