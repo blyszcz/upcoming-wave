@@ -58,5 +58,6 @@ export const ui = {
     columns: ['Model', 'Data', 'Zadania do'],
     aria: (title: string, last: string, subtitle: string) => `${title}: od 4 minut w 2023 r. do około ${last} w 2026 r. ${subtitle}`,
   },
+  consent: { text: 'Używamy Google Analytics, żeby wiedzieć, które sekcje ludzie czytają. Bez reklam i bez sprzedawania danych.', accept: 'Zgoda', decline: 'Nie, dziękuję' },
   scissorsShock: 'fala zwolnień',
 };

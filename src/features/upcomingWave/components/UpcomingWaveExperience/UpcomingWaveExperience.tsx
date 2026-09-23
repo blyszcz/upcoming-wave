@@ -5,6 +5,7 @@ import { useMemo } from 'react';
 import type { UpcomingWaveExperienceProps } from './UpcomingWaveExperience.types';
 import type { StoryItem } from '@features/upcomingWave/content/pl/story';
 
+import { AnalyticsConsent } from '@features/analytics/components/AnalyticsConsent/AnalyticsConsent';
 import { AccelerationSection } from '@features/upcomingWave/components/AccelerationSection/AccelerationSection';
 import { CalmSection } from '@features/upcomingWave/components/CalmSection/CalmSection';
 import { ExplainSlider } from '@features/upcomingWave/components/ExplainSlider/ExplainSlider';
@@ -23,7 +24,7 @@ import { useSectionHash } from '@features/upcomingWave/hooks/useSectionHash';
 import { formatIndex } from '@features/upcomingWave/utils/formatIndex';
 
 const Story = () => {
-  const { scenes, site, story } = useContent();
+  const { scenes, site, story, ui } = useContent();
   const sceneById = useMemo(() => new Map(scenes.map((scene) => [scene.id, scene])), [scenes]);
   const { explainScene, openExplain, closeExplain } = useExplainDialog();
   useSectionHash();
@@ -51,6 +52,7 @@ const Story = () => {
       <WhyNote {...site.footer.why} />
       <SiteFooter />
       {explainScene && <ExplainSlider scene={explainScene} onClose={closeExplain} />}
+      <AnalyticsConsent {...ui.consent} />
     </main>
   );
 };
