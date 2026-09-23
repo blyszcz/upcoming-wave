@@ -34,7 +34,7 @@ type BandBlockBody =
   | { kind: 'bars'; title: string; subtitle: string; bars: BarItem[]; caption: string; source: Source }
   | { kind: 'taxSplit'; title: string; subtitle: string; parts: TaxPart[]; caption: string; countries: { name: string; value: number }[]; countriesLabel: string; source: Source }
   | { kind: 'scissors'; title: string; income: string; spending: string; caption: string }
-  | { kind: 'timeline'; title: string; steps: TimelineStep[]; footnote: string; sources: Source[]; highlights?: number[] }
+  | { kind: 'timeline'; title: string; steps: TimelineStep[]; footnote: string; sources: Source[] }
   | { kind: 'contrast'; title: string; left: { label: string; steps: string[] }; right: { label: string; steps: string[] } }
   | { kind: 'statement'; text: string };
 

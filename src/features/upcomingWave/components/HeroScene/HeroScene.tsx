@@ -1,12 +1,11 @@
 'use client';
 
-import type { HeroSceneProps } from './HeroScene.types';
 
 import { HeroCompare } from '@features/upcomingWave/components/HeroCompare/HeroCompare';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
-export const HeroScene = ({ onOpenStories }: HeroSceneProps) => {
-  const { hero, ui } = useContent();
+export const HeroScene = () => {
+  const { hero } = useContent();
 
   return (
   <section id="start" className="uw-hero" aria-labelledby="hero-title">
@@ -30,7 +29,6 @@ export const HeroScene = ({ onOpenStories }: HeroSceneProps) => {
       <p className="uw-hero-closing">{hero.closing}</p>
       <div className="uw-hero-actions">
         <a className="uw-cta" href={hero.cta.href}>{hero.cta.label} <span aria-hidden="true">↓</span></a>
-        <button type="button" className="uw-story-trigger" onClick={onOpenStories}><span aria-hidden="true">▶</span>{ui.stories.open}</button>
         <p className="uw-hero-note">{hero.note} <a href={hero.noteLink.href}>{hero.noteLink.label} →</a></p>
       </div>
     </div>

@@ -29,9 +29,6 @@ export const POND_DAY_MS = 260;
 // Demand-spiral loop diagram
 export const LOOP_STEP_MS = 1400;
 
-// 30-second story mode
-export const STORY_SLIDE_MS = 2200;
-
 // Feedback
 export const COPIED_FEEDBACK_MS = 1500;
 
