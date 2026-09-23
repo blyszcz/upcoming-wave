@@ -1,7 +1,6 @@
 export const hero = {
   image: '/images/v2/hero-wave-v2.jpg',
   alt: 'A giant wave over a city at night, woven from DNA helices and viruses, with a cold machine on its crest. Laid-off people with cardboard boxes stand in the street next to a toppled statue of a man.',
-  status: 'WARNING',
   title: { lead: 'The people building AI are warning about', accent: 'losing control.' },
   threatsLabel: 'They warn about',
   threats: ['Mass layoffs', 'Losing control of AI', 'Machines smarter than us', 'Viruses designed with AI'],

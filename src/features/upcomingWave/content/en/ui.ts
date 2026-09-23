@@ -5,7 +5,6 @@ export const ui = {
   brand: 'The Coming Wave',
   langSwitch: { label: 'PL', href: '/pl/', ariaLabel: 'Wersja polska' } as null | { label: string; href: string; ariaLabel: string },
   dominoAria: 'Chain of consequences',
-  heroBasis: 'In the words of AI’s creators, with research and data — every fact sourced',
   status: {
     today: 'TODAY',
     history: 'HISTORY',

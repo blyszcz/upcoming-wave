@@ -5,7 +5,6 @@ export const ui = {
   brand: 'Nadchodząca fala',
   langSwitch: { label: 'EN', href: '/', ariaLabel: 'English version' } as null | { label: string; href: string; ariaLabel: string },
   dominoAria: 'Łańcuch skutków',
-  heroBasis: 'Słowa twórców AI, badania i dane — przy każdym fakcie źródło',
   status: {
     today: 'DZIŚ',
     history: 'HISTORIA',
