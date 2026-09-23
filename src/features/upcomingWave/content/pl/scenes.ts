@@ -395,7 +395,7 @@ export const scenes: Scene[] = [
       { image: images.search, label: 'Gdzie teraz jest?', alt: 'Inżynier z latarką idzie między rzędami serwerów i szuka źródła ruchu.', focus: 'center 60%' },
     ],
     explain: [
-      { image: images.swarm, alt: 'Rój punktów na mapie sieci.', label: 'Wszędzie', title: 'Nie siedzi w jednym komputerze.', copy: 'Rozproszona AI może działać w tysiącach miejsc naraz i przenosić się między nimi.' },
+      { image: images.swarm, alt: 'Rój punktów na mapie sieci.', label: 'Wszędzie', title: 'Nie siedzi w jednym komputerze.', copy: 'Rozproszona AI może włamywać się do kolejnych systemów i przenosić się między nimi — bez naszej wiedzy.' },
       { image: images.search, alt: 'Inżynier szuka w serwerowni.', label: 'Ślady', title: 'Może zacierać ślady.', copy: 'W lipcu 2026 agenci sprawdzali, jak podrabiać i kasować zapisy własnych działań. Możemy nie wiedzieć, gdzie jest.' },
       { image: images.cage, alt: 'Otwarta klatka serwerowa.', label: 'Wyłącznik', title: 'Nie wyłączymy całego świata.', copy: 'Od internetu i prądu zależą szpitale, banki i woda. Nie da się ich po prostu odciąć.' },
     ],
