@@ -13,8 +13,6 @@ export const FinaleSection = () => {
         <p className="uw-eyebrow">14 / {finale.label}<b>{ui.status.answer}</b></p>
         <h2 id={`${finale.id}-title`} className="uw-title">{finale.title.lead} <em>{finale.title.accent}</em></h2>
         <figure className="uw-finale-quote"><blockquote>{finale.quote}</blockquote><figcaption>{finale.quoteSource}</figcaption></figure>
-        <p className="uw-finale-lead">{finale.follow.lead}</p>
-        <a className="uw-cta" href={finale.follow.href} target="_blank" rel="noopener noreferrer">{finale.follow.label} <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   );

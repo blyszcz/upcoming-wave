@@ -42,9 +42,4 @@ export const finale = {
   title: { lead: 'Nie zatrzymać postępu.', accent: 'Ustalić granice.' },
   quote: '„To nie jej los właśnie się decyduje, tylko nasz.”',
   quoteSource: 'Mustafa Suleyman, „Nadchodząca fala”',
-  follow: {
-    lead: 'Chcesz wiedzieć, co dalej? Nowe dane, incydenty i zasady — piszę o tym na X.',
-    label: 'Obserwuj @blyzbyte na X',
-    href: 'https://x.com/blyzbyte',
-  },
 };

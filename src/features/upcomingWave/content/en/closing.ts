@@ -43,9 +43,4 @@ export const finale = {
   title: { lead: 'Don’t stop progress.', accent: 'Set its limits.' },
   quote: '“It is not its fate that is being decided, but ours.”',
   quoteSource: 'Mustafa Suleyman, “The Coming Wave”',
-  follow: {
-    lead: 'Want to know what happens next? New data, incidents and rules — I post about it on X.',
-    label: 'Follow @blyzbyte on X',
-    href: 'https://x.com/blyzbyte',
-  },
 };
