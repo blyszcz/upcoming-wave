@@ -14,6 +14,7 @@ import { SplitScene } from '../SplitScene/SplitScene';
 import { StoryHeader } from '../StoryHeader/StoryHeader';
 import { StoryScene } from '../StoryScene/StoryScene';
 import { VoicesSection } from '../VoicesSection/VoicesSection';
+import { useSectionHash } from '../../hooks/useSectionHash';
 
 import type { StoryItem } from '../../content/pl/story';
 import type { Scene } from '../../types/scene.types';
@@ -23,6 +24,7 @@ const sceneById = new Map(scenes.map((scene) => [scene.id, scene]));
 export const UpcomingWaveExperience = () => {
   const [explainScene, setExplainScene] = useState<Scene | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
+  useSectionHash();
 
   const openExplain = useCallback((scene: Scene, trigger: HTMLButtonElement) => {
     triggerRef.current = trigger;

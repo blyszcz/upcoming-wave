@@ -4,6 +4,7 @@ import clsx from '../../lib/clsx';
 import { split } from '../../content/pl/closing';
 import { useInView } from '../../hooks/useInView';
 import { SceneBand } from '../SceneBand/SceneBand';
+import { ShareButton } from '../ShareButton/ShareButton';
 
 const Half = ({ side, align }: { side: typeof split.left; align: 'left' | 'right' }) => (
   <figure className={clsx('uw-split-half', `is-${align}`)}>
@@ -25,6 +26,7 @@ export const SplitScene = () => {
         <div className="uw-split-copy">
           <p className="uw-eyebrow">{split.number} / {split.label}<b>{split.status}</b></p>
           <h2 id={`${split.id}-title`} className="uw-title">{split.title.lead} <em>{split.title.accent}</em></h2>
+          <ShareButton sectionId={split.id} title={`${split.title.lead} ${split.title.accent}`} />
         </div>
         <div className="uw-split-halves">
           <Half side={split.left} align="left" />

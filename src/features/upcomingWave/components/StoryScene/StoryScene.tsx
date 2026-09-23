@@ -3,6 +3,7 @@
 import clsx from '../../lib/clsx';
 import { useInView } from '../../hooks/useInView';
 import { SceneBand } from '../SceneBand/SceneBand';
+import { ShareButton } from '../ShareButton/ShareButton';
 
 import type { CSSProperties } from 'react';
 import type { ScenePanel } from '../../types/scene.types';
@@ -24,9 +25,12 @@ export const StoryScene = ({ scene, onExplain }: StorySceneProps) => {
         <div className="uw-scene-copy">
           <p className="uw-eyebrow">{scene.number} / {scene.label}<b>{scene.status}</b></p>
           <h2 id={`${scene.id}-title`} className="uw-title">{scene.title.lead} <em>{scene.title.accent}</em></h2>
-          <button type="button" className="uw-explain-button" onClick={(event) => onExplain(scene, event.currentTarget)}>
-            Dlaczego? <span aria-hidden="true">→</span>
-          </button>
+          <div className="uw-scene-actions">
+            <button type="button" className="uw-explain-button" onClick={(event) => onExplain(scene, event.currentTarget)}>
+              Dlaczego? <span aria-hidden="true">→</span>
+            </button>
+            <ShareButton sectionId={scene.id} title={`${scene.title.lead} ${scene.title.accent}`} />
+          </div>
         </div>
 
         {isMosaic ? (

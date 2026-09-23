@@ -1,7 +1,7 @@
 import { hero } from '../../content/pl/hero';
 
 export const HeroScene = () => (
-  <section className="uw-hero" aria-labelledby="hero-title">
+  <section id="start" className="uw-hero" aria-labelledby="hero-title">
     <img className="uw-hero-image" src={hero.image} alt={hero.alt} fetchPriority="high" />
     <div className="uw-hero-shade" aria-hidden="true" />
     <div className="uw-hero-copy">

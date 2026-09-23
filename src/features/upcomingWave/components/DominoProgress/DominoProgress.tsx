@@ -31,7 +31,7 @@ export const DominoProgress = () => {
       <ol>
         {chain.map((step, index) => (
           <li key={step.id} className={clsx(index < activeIndex && 'is-past', index === activeIndex && 'is-current')} aria-current={index === activeIndex ? 'step' : undefined}>
-            {step.label}
+            <a href={`#${step.target}`}>{step.label}</a>
           </li>
         ))}
       </ol>
