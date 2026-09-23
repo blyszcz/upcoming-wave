@@ -2,7 +2,6 @@ export type StoryItem =
   | { kind: 'scene'; id: string }
   | { kind: 'acceleration' }
   | { kind: 'split' }
-  | { kind: 'counterpoint' }
   | { kind: 'finale' };
 
 export const story: StoryItem[] = [
@@ -17,7 +16,7 @@ export const story: StoryItem[] = [
   { kind: 'scene', id: 'wyrwala' },
   { kind: 'scene', id: 'niepotrzebni' },
   { kind: 'split' },
-  { kind: 'counterpoint' },
+  { kind: 'scene', id: 'druga-strona' },
   { kind: 'scene', id: 'zasady' },
   { kind: 'finale' },
 ];

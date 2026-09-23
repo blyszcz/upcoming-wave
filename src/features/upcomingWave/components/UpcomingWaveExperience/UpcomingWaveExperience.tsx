@@ -6,7 +6,6 @@ import { scenes } from '../../content/pl/scenes';
 import { site } from '../../content/pl/site';
 import { story } from '../../content/pl/story';
 import { AccelerationSection } from '../AccelerationSection/AccelerationSection';
-import { CounterpointSection } from '../CounterpointSection/CounterpointSection';
 import { ExplainSlider } from '../ExplainSlider/ExplainSlider';
 import { FinaleSection } from '../FinaleSection/FinaleSection';
 import { HeroScene } from '../HeroScene/HeroScene';
@@ -44,7 +43,6 @@ export const UpcomingWaveExperience = () => {
       }
       case 'acceleration': return <AccelerationSection key="acceleration" />;
       case 'split': return <SplitScene key="split" />;
-      case 'counterpoint': return <CounterpointSection key="counterpoint" />;
       case 'finale': return <FinaleSection key="finale" />;
     }
   };

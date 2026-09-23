@@ -34,6 +34,9 @@ const images = {
   speed: '/images/v2/rules-01-speed-v1.jpg',
   noRules: '/images/v2/threat-03-no-rules-v1.jpg',
   citizens: '/images/v2/rules-03-citizens-v2.jpg',
+  medicine: '/images/v2/benefit-01-medicine-v1.jpg',
+  science: '/images/v2/benefit-02-science-v1.jpg',
+  time: '/images/v2/benefit-03-time-v1.jpg',
 };
 
 const sources = {
@@ -79,6 +82,8 @@ const sources = {
   altmanSenate: { label: 'Al Jazeera', url: 'https://www.aljazeera.com/news/2023/5/17/chatgpt-boss-tells-us-legislators-regulation-critical-for-ai' },
   aiAct: { label: 'Rada UE, 2026', url: 'https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/' },
   muskAnthill: { label: 'Live Science, 2018', url: 'https://www.livescience.com/62239-elon-musk-immortal-artificial-intelligence-dictator.html' },
+  masai: { label: 'MASAI / The Lancet', url: 'https://ecancer.org/en/news/27721-ai-supported-mammography-screening-results-in-fewer-aggressive-and-advanced-breast-cancers-finds-full-results-from-first-randomised-controlled-trial' },
+  nobel: { label: 'NobelPrize.org, 2024', url: 'https://www.nobelprize.org/prizes/chemistry/2024/popular-information/' },
   gates: { label: 'CNBC, 2017', url: 'https://www.cnbc.com/2017/02/17/bill-gates-job-stealing-robots-should-pay-income-taxes.html' },
   citadel: { label: 'Bloomberg, 2026', url: 'https://www.bloomberg.com/news/articles/2026-02-24/citadel-securities-rebuts-citrini-intelligence-crisis-scenario' },
 };
@@ -535,6 +540,49 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'Należy uzmysłowić sobie jedną kardynalną prawdę: same uregulowania to za mało.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 13 — dlatego potrzebne są wszystkie warstwy naraz', source: sources.book },
+    ],
+  },
+
+  {
+    id: 'druga-strona',
+    number: '12',
+    label: 'UCZCIWIE',
+    status: 'DZIŚ',
+    layout: 'triptych',
+    title: { lead: 'Druga strona.', accent: 'Ta\u00a0sama AI pomaga leczyć.' },
+    panels: [
+      { image: images.medicine, label: 'Wcześniejsza diagnoza', alt: 'Lekarz i pacjentka patrzą na obraz z badania, na którym AI delikatnie zaznaczyła jedno miejsce.', focus: 'center 65%' },
+      { image: images.science, label: 'Nauka przyspiesza', alt: 'Naukowiec w laboratorium patrzy na świetlisty trójwymiarowy model białka.', focus: 'center 65%' },
+      { image: images.time, label: 'Więcej czasu dla ludzi', alt: 'Nauczycielka klęczy przy dziecku i pomaga mu, a w tle laptop zajmuje się papierami.', focus: 'center 65%' },
+    ],
+    explain: [
+      { image: images.medicine, alt: 'Lekarz omawia z pacjentką badanie wspierane przez AI.', label: 'Medycyna', title: 'AI widzi to, co łatwo przeoczyć.', copy: 'W dużym badaniu w Szwecji lekarze z pomocą AI wykryli o 29% więcej nowotworów piersi — bez więcej fałszywych alarmów.' },
+      { image: images.science, alt: 'Model białka w laboratorium.', label: 'Nauka', title: 'Odkrycia w miesiące zamiast lat.', copy: 'AlphaFold przewidział kształt ok. 200 mln białek — to praca nagrodzona Noblem w 2024 r. i klucz do nowych leków.' },
+      { image: images.time, alt: 'Nauczycielka pomaga dziecku.', label: 'Czas', title: 'Mniej papierów, więcej człowieka.', copy: 'Jeśli AI przejmie żmudne zadania, lekarz i nauczyciel mogą mieć więcej czasu dla ludzi — pod warunkiem, że zyski trafią do wszystkich.' },
+    ],
+    band: [
+      {
+        kind: 'stats',
+        items: [
+          { value: '29%', label: 'więcej wykrytych nowotworów piersi w badaniu wspieranym przez AI — bez wzrostu fałszywych alarmów', source: sources.masai },
+          { value: '44%', label: 'mniej pracy radiologów przy odczytywaniu badań', source: sources.masai },
+          { value: '200 mln', label: 'struktur białek przewidział AlphaFold — Nagroda Nobla z chemii 2024', source: sources.nobel },
+        ],
+      },
+      { kind: 'quote', quote: 'Jeśli jej powstrzymanie okaże się niemożliwe, konsekwencje dla naszego gatunku będą dramatyczne, a nawet być może tragiczne. Zarazem jednak bez jej dobrodziejstw jesteśmy słabi i bezbronni.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 1', source: sources.book },
+      {
+        kind: 'evidence',
+        title: 'A może przesadzamy? Argumenty za spokojem',
+        items: [
+          { kicker: 'Daron Acemoglu · MIT, noblista', value: '~1%', text: 'tyle AI doda do PKB w ciągu 10 lat — ewolucja, nie rewolucja.', source: { label: 'NBER', url: 'https://www.nber.org/papers/w32487' } },
+          { kicker: 'Nowojorski Fed · 2026', text: 'AI nie jest na razie głównym powodem słabszych rekrutacji.', source: { label: 'NY Fed', url: 'https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/' } },
+          { kicker: 'Światowe Forum Ekonomiczne', value: '+170 / −92 mln', text: 'miejsc pracy do 2030 r. — nowe i utracone, według badania pracodawców (wszystkie trendy, nie tylko AI).', source: { label: 'WEF', url: 'https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf' } },
+          { kicker: 'Dario Amodei · 2026', text: '„Jeśli zautomatyzujesz 90% pracy, wszyscy robią pozostałe 10%” — a te 10% rozrasta się do całej pracy.', source: { label: 'Fortune', url: 'https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/' } },
+          { kicker: 'Mustafa Suleyman · rozdz. 12', text: '„Nie łudźmy się: zastój równa się katastrofie.” Autor podkreśla, że technologia obiecuje korzyści daleko przewyższające koszty.', source: sources.book },
+          { kicker: 'Sam Altman · 2026', text: '„Cieszę się, że się myliłem” — zwolnień jest na razie mniej, niż sam przewidywał.', source: { label: 'Fortune', url: 'https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/' } },
+        ],
+      },
+      { kind: 'statement', text: 'Nikt nie wie na pewno. Pasy zapinasz nie dlatego, że wiesz, że będzie wypadek. Zapinasz, bo nie wiesz.' },
     ],
   },
 ];
