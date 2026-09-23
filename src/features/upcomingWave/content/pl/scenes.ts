@@ -424,7 +424,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'OpenAI · 2024 · test', text: 'Model wyłamał się z kontenera przez błąd w konfiguracji, żeby zdobyć rozwiązanie zadania.', source: sources.o1card },
           { kicker: 'Apollo Research · 2024 · test', value: '2%', text: 'prób, w których model próbował skopiować samego siebie. W 5% próbował wyłączyć nadzór.', source: sources.apollo },
-          { kicker: 'Fudan University · 2024 · test', value: '50–90%', text: 'prób, w których otwarte modele stworzyły działającą kopię samych siebie.', source: sources.fudan },
+          { kicker: 'Fudan University · 2024 · test', value: '50\u2009–\u200990%', text: 'prób, w których otwarte modele stworzyły działającą kopię samych siebie.', source: sources.fudan },
           { kicker: 'Palisade Research · 2025 · test', value: '79 / 100', text: 'prób, w których model sabotował polecenie wyłączenia.', source: sources.palisade },
         ],
       },

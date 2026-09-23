@@ -21,7 +21,7 @@ export const voices: Voice[] = [
     variant: 'figure',
     image: '/images/v2/voice-hinton-v1.jpg',
     imageAlt: 'Mały człowiek stoi przed ogromną, świetlistą strukturą inteligencji.',
-    figure: '10–20%',
+    figure: '10\u2009–\u200920%',
     figureCaption: 'szans, że AI doprowadzi do wyginięcia ludzkości w ciągu 30 lat — tak ocenia to ryzyko.',
     quotes: ['Nigdy wcześniej nie mieliśmy do czynienia z czymś inteligentniejszym od nas.'],
     originals: ['We’ve never had to deal with things more intelligent than ourselves before.'],
