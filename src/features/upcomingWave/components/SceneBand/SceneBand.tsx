@@ -2,7 +2,9 @@ import { BarCompare } from '../BarCompare/BarCompare';
 import { EvidenceGrid } from '../EvidenceGrid/EvidenceGrid';
 import { LoopDiagram } from '../LoopDiagram/LoopDiagram';
 import { QuoteBand } from '../QuoteBand/QuoteBand';
+import { Scissors } from '../Scissors/Scissors';
 import { StatRow } from '../StatRow/StatRow';
+import { TaxSplit } from '../TaxSplit/TaxSplit';
 
 import type { BandBlock, ChainStepId } from '../../types/scene.types';
 
@@ -19,6 +21,8 @@ const renderBlock = (block: BandBlock) => {
     case 'quote': return <QuoteBand {...block} />;
     case 'loop': return <LoopDiagram {...block} />;
     case 'bars': return <BarCompare {...block} />;
+    case 'taxSplit': return <TaxSplit {...block} />;
+    case 'scissors': return <Scissors {...block} />;
   }
 };
 

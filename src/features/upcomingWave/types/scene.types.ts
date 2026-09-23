@@ -23,13 +23,16 @@ export type ExplainStep = {
 export type StatItem = { value: string; label: string; source: Source };
 export type EvidenceItem = { kicker: string; value?: string; text: string; source: Source };
 export type BarItem = { label: string; value: number; display: string; highlight?: boolean };
+export type TaxPart = { label: string; detail?: string; value: number; highlight?: boolean };
 
 export type BandBlock =
   | { kind: 'stats'; items: StatItem[] }
   | { kind: 'evidence'; title: string; items: EvidenceItem[] }
   | { kind: 'quote'; quote: string; person: string; role: string; source: Source }
   | { kind: 'loop'; title: string; steps: string[]; caption: string }
-  | { kind: 'bars'; title: string; subtitle: string; bars: BarItem[]; caption: string; source: Source };
+  | { kind: 'bars'; title: string; subtitle: string; bars: BarItem[]; caption: string; source: Source }
+  | { kind: 'taxSplit'; title: string; subtitle: string; parts: TaxPart[]; caption: string; countries: { name: string; value: number }[]; countriesLabel: string; source: Source }
+  | { kind: 'scissors'; title: string; income: string; spending: string; caption: string };
 
 export type Scene = {
   id: string;

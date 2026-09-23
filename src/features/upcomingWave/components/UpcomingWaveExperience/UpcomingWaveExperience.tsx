@@ -34,7 +34,7 @@ export const UpcomingWaveExperience = () => {
       {scenes.map((scene) => <StoryScene key={scene.id} scene={scene} onExplain={openExplain} />)}
       <AccelerationSection />
       <footer className="uw-footer">
-        <p>W przygotowaniu: <b>06–07</b> oraz <b>09–14</b></p>
+        <p>W przygotowaniu: <b>09–14</b></p>
         <p>Na podstawie książki „Nadchodząca fala” (M. Suleyman, M. Bhaskar). Scenariusze to możliwe ryzyka, nie prognozy.</p>
       </footer>
       {explainScene && <ExplainSlider scene={explainScene} onClose={closeExplain} />}
