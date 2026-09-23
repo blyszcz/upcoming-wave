@@ -4,7 +4,7 @@ import { fontVariables } from '../fonts';
 import '../globals.css';
 
 export const metadata: Metadata = {
-  title: 'The Coming Wave — why AI’s own creators are asking for rules',
+  title: 'Why AI’s own creators are asking for rules',
   description: 'A visual story of how AI could change work, money and the state faster than we can adapt — and why the people building it are asking to be regulated.',
   alternates: { languages: { pl: '/pl/' } },
 };
