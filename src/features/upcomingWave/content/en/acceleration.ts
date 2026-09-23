@@ -20,7 +20,6 @@ export const horizonPoints: HorizonPoint[] = [
 
 export const acceleration = {
   id: 'ai-builds-ai',
-  number: '08',
   label: 'HOW FAST IS IT MOVING',
   status: 'today' as SceneStatus,
   title: { lead: 'AI is learning to build AI.', accent: 'And it’s speeding up.' },

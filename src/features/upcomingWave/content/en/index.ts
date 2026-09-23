@@ -1,4 +1,5 @@
 import { acceleration, horizonPoints } from './acceleration';
+import { calm } from './calm';
 import { chain } from './chain';
 import { finale, split } from './closing';
 import { hero } from './hero';
@@ -10,4 +11,4 @@ import { voices } from './voices';
 
 import type { Content } from '../pl';
 
-export const en: Content = { acceleration, horizonPoints, chain, finale, split, hero, scenes, site, story, ui, voices };
+export const en: Content = { acceleration, horizonPoints, calm, chain, finale, split, hero, scenes, site, story, ui, voices };

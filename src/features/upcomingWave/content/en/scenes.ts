@@ -18,7 +18,6 @@ const sources = {
 export const scenes: Scene[] = [
   {
     id: 'three-risks',
-    number: '01',
     label: 'WHAT COULD GO WRONG',
     status: 'possibleMany',
     layout: 'triptych',
@@ -36,7 +35,6 @@ export const scenes: Scene[] = [
   },
   {
     id: 'who-will-resist',
-    number: '02',
     label: 'HOW IT STARTS',
     status: 'today',
     chain: 'work',
@@ -55,7 +53,6 @@ export const scenes: Scene[] = [
   },
   {
     id: 'not-just-code',
-    number: '03',
     label: 'WHO’S NEXT',
     status: 'today',
     chain: 'work',
@@ -97,7 +94,6 @@ export const scenes: Scene[] = [
   },
   {
     id: 'become-a-plumber',
-    number: '04',
     label: 'I’LL JUST RETRAIN',
     status: 'possible',
     chain: 'income',
@@ -139,7 +135,6 @@ export const scenes: Scene[] = [
   },
   {
     id: 'no-paycheck',
-    number: '05',
     label: 'WHAT HAPPENS NEXT',
     status: 'possible',
     chain: 'shopping',
@@ -171,7 +166,6 @@ export const scenes: Scene[] = [
   },
   {
     id: 'state-lives-on-work',
-    number: '06',
     label: 'WHAT IT MEANS FOR THE STATE',
     status: 'possible',
     chain: 'taxes',
@@ -210,7 +204,6 @@ export const scenes: Scene[] = [
   },
   {
     id: 'it-happened-before',
-    number: '07',
     label: 'WILL PEOPLE REVOLT',
     status: 'history',
     chain: 'trust',
@@ -250,7 +243,6 @@ export const scenes: Scene[] = [
   },
   {
     id: 'out-of-the-test',
-    number: '09',
     label: 'CAN WE STOP IT?',
     status: 'incident',
     chain: 'control',
@@ -307,7 +299,6 @@ export const scenes: Scene[] = [
   },
   {
     id: 'not-needed',
-    number: '10',
     label: 'WHAT WILL WE LIVE ON',
     status: 'extreme',
     chain: 'people',
@@ -348,7 +339,6 @@ export const scenes: Scene[] = [
   },
   {
     id: 'rules',
-    number: '13',
     label: 'SO WHAT DO WE DO',
     status: 'answer',
     chain: 'rules',
@@ -402,12 +392,11 @@ export const scenes: Scene[] = [
     ],
   },
   {
-    id: 'the-other-side',
-    number: '12',
-    label: 'TO BE FAIR',
+    id: 'the-stakes',
+    label: 'FIRST, THE STAKES',
     status: 'today',
     layout: 'mosaic',
-    title: { lead: 'The other side.', accent: 'If we get it right.' },
+    title: { lead: 'First, the stakes.', accent: 'The same AI could heal, feed and teach.' },
     panels: [
       { image: images.medicine, label: 'Earlier diagnosis', caption: 'AI catches what’s easy to miss', alt: 'A doctor and a patient look at a scan on which AI has gently marked one spot.', focus: 'center 55%' },
       { image: images.science, label: 'New medicines', caption: 'An antibiotic found among 100M molecules', alt: 'A scientist in a lab looks at a glowing 3D model of a protein.', focus: 'center 40%' },
@@ -439,20 +428,6 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'With AI we could unlock the secrets of the universe, cure diseases that have long eluded science, and create new forms of art and culture that stretch the limits of imagination.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, prologue', source: sources.book },
-      { kind: 'quote', quote: 'If containing it proves impossible, the consequences for our species will be dramatic, perhaps even tragic. And yet without its benefits we are weak and defenceless.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 1', source: sources.book },
-      {
-        kind: 'evidence',
-        title: 'Are we exaggerating? The case for calm',
-        items: [
-          { kicker: 'Daron Acemoglu · MIT, Nobel laureate', value: '~1%', text: 'is how much AI will add to GDP over 10 years — evolution, not revolution.', source: { label: 'NBER', url: 'https://www.nber.org/papers/w32487' } },
-          { kicker: 'New York Fed · 2026', text: 'AI is not yet the main driver of the slowdown in hiring.', source: { label: 'NY Fed', url: 'https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/' } },
-          { kicker: 'World Economic Forum', value: '+170 / −92M', text: 'jobs by 2030 — created and lost, according to an employer survey (all trends, not just AI).', source: { label: 'WEF', url: 'https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf' } },
-          { kicker: 'Dario Amodei · 2026', text: '“If you automate 90% of the job, then everyone does the 10% of the job” — and that 10% expands to become the whole job.', source: { label: 'Fortune', url: 'https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/' } },
-          { kicker: 'Mustafa Suleyman · ch. 12', text: '“Make no mistake: stagnation equals catastrophe.” The author stresses that technology promises benefits far outweighing its costs.', source: sources.book },
-          { kicker: 'Sam Altman · 2026', text: '“I’m delighted to be wrong about this” — fewer layoffs so far than he had predicted.', source: { label: 'Fortune', url: 'https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/' } },
-        ],
-      },
-      { kind: 'statement', text: 'Nobody knows for sure. You don’t buckle up because you know there will be a crash. You buckle up because you don’t know.' },
     ],
   },
 ];

@@ -40,7 +40,6 @@ export type BandBlock =
 
 export type Scene = {
   id: string;
-  number: string;
   label: string;
   status: SceneStatus;
   chain?: ChainStepId;

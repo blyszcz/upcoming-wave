@@ -4,7 +4,6 @@ const book = { label: '„Nadchodząca fala”' };
 
 export const split = {
   id: 'two-roads',
-  number: '11',
   label: 'KTO WTEDY RZĄDZI',
   status: 'possibleMany' as SceneStatus,
   title: { lead: 'Kto wtedy rządzi?', accent: 'Dwie drogi.' },

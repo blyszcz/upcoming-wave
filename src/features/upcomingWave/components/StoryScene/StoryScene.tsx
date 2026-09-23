@@ -16,7 +16,7 @@ const PanelImage = ({ panel }: { panel: ScenePanel }) => (
   </div>
 );
 
-export const StoryScene = ({ scene, onExplain }: StorySceneProps) => {
+export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
   const { ui } = useContent();
   const { ref, isInView } = useInView<HTMLElement>(0.2);
   const isMosaic = scene.layout === 'mosaic';
@@ -25,7 +25,7 @@ export const StoryScene = ({ scene, onExplain }: StorySceneProps) => {
     <>
       <section ref={ref} id={scene.id} data-chain={scene.chain} className={clsx('uw-scene', isMosaic && 'is-mosaic', isInView && 'is-in-view')} aria-labelledby={`${scene.id}-title`}>
         <div className="uw-scene-copy">
-          <p className="uw-eyebrow"><SectionAnchor sectionId={scene.id} />{scene.number} / {scene.label}<b>{ui.status[scene.status]}</b></p>
+          <p className="uw-eyebrow"><SectionAnchor sectionId={scene.id} />{number} / {scene.label}<b>{ui.status[scene.status]}</b></p>
           <h2 id={`${scene.id}-title`} className="uw-title">{scene.title.lead} <em>{scene.title.accent}</em></h2>
           <button type="button" className="uw-explain-button" onClick={(event) => onExplain(scene, event.currentTarget)}>
             {ui.why} <span aria-hidden="true">→</span>

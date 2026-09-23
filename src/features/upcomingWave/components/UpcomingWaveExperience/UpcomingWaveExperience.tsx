@@ -5,6 +5,7 @@ import { useCallback, useRef, useState } from 'react';
 import { ContentProvider, useContent } from '../../content/ContentProvider';
 import { locales } from '../../content/locales';
 import { AccelerationSection } from '../AccelerationSection/AccelerationSection';
+import { CalmSection } from '../CalmSection/CalmSection';
 import { ExplainSlider } from '../ExplainSlider/ExplainSlider';
 import { FinaleSection } from '../FinaleSection/FinaleSection';
 import { HeroScene } from '../HeroScene/HeroScene';
@@ -35,17 +36,20 @@ const Story = () => {
     triggerRef.current?.focus();
   }, []);
 
-  const renderItem = (item: StoryItem) => {
+  const renderItem = (item: StoryItem, index: number) => {
+    const number = String(index + 1).padStart(2, '0');
     switch (item.kind) {
       case 'scene': {
         const scene = sceneById.get(item.id);
-        return scene ? <StoryScene key={scene.id} scene={scene} onExplain={openExplain} /> : null;
+        return scene ? <StoryScene key={scene.id} scene={scene} number={number} onExplain={openExplain} /> : null;
       }
-      case 'acceleration': return <AccelerationSection key="acceleration" />;
-      case 'split': return <SplitScene key="split" />;
-      case 'finale': return <FinaleSection key="finale" />;
+      case 'acceleration': return <AccelerationSection key="acceleration" number={number} />;
+      case 'split': return <SplitScene key="split" number={number} />;
+      case 'calm': return <CalmSection key="calm" number={number} />;
+      case 'finale': return <FinaleSection key="finale" number={number} />;
     }
   };
+
 
   return (
     <main id="top" className="uw">

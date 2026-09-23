@@ -19,7 +19,7 @@ const Half = ({ side, align }: { side: Side; align: 'left' | 'right' }) => (
   </figure>
 );
 
-export const SplitScene = () => {
+export const SplitScene = ({ number }: { number: string }) => {
   const { split, ui } = useContent();
   const { ref, isInView } = useInView<HTMLElement>(0.25);
 
@@ -27,7 +27,7 @@ export const SplitScene = () => {
     <>
       <section ref={ref} id={split.id} data-chain="state" className={clsx('uw-split', isInView && 'is-in-view')} aria-labelledby={`${split.id}-title`}>
         <div className="uw-split-copy">
-          <p className="uw-eyebrow"><SectionAnchor sectionId={split.id} />{split.number} / {split.label}<b>{ui.status[split.status]}</b></p>
+          <p className="uw-eyebrow"><SectionAnchor sectionId={split.id} />{number} / {split.label}<b>{ui.status[split.status]}</b></p>
           <h2 id={`${split.id}-title`} className="uw-title">{split.title.lead} <em>{split.title.accent}</em></h2>
         </div>
         <div className="uw-split-halves">

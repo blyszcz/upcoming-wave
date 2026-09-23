@@ -5,7 +5,6 @@ const book = { label: '“The Coming Wave”' };
 
 export const split = {
   id: 'two-roads',
-  number: '11',
   label: 'WHO RULES THEN',
   status: 'possibleMany' as SceneStatus,
   title: { lead: 'Who rules then?', accent: 'Two roads.' },

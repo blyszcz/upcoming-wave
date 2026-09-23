@@ -6,6 +6,6 @@ export const hero = {
   threats: ['Mass layoffs', 'Losing control of AI', 'Machines smarter than us', 'Viruses designed with AI'],
   closing: 'And they are asking to be regulated.',
   note: 'We are not here to scare you — we explain. Because if we set good rules, AI can do an enormous amount of good.',
-  noteLink: { label: 'See the other side', href: '#the-other-side' },
+  noteLink: { label: 'See the other side', href: '#the-stakes' },
   cta: { label: 'Read their words', href: '#voices' },
 };
