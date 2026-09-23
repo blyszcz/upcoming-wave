@@ -1,0 +1,18 @@
+/* ---------- sources page ---------- */
+.uw-sources .uw-header { justify-content: space-between; }
+.uw-sources-body { display: grid; gap: 34px; max-width: 860px; padding: 130px var(--gutter) 100px; }
+.uw-sources-body > .uw-text-button { justify-self: start; }
+.uw-sources-lead { max-width: 60ch; margin: 0; color: var(--muted); font-size: clamp(1.05rem, 1.4vw, 1.25rem); line-height: 1.5; }
+.uw-sources-method { display: grid; gap: 12px; margin: 0; padding-left: 20px; color: rgba(238, 236, 230, 0.86); font-size: 16px; line-height: 1.55; }
+.uw-sources-meta { margin: 18px 0 0; color: var(--muted); font-size: 14px; }
+.uw-sources-meta a, .uw-footer-link { color: var(--paper); text-decoration: none; border-bottom: 1px solid var(--line); }
+.uw-sources-group { padding: 26px 0; border-top: 1px solid var(--line); }
+.uw-sources-group h3 { margin: 0 0 14px; font-size: 18px; font-weight: 600; letter-spacing: -0.01em; }
+.uw-sources-group h3 a { color: inherit; text-decoration: none; }
+.uw-sources-group h3 a:hover { color: var(--signal); }
+.uw-sources-group ol { display: grid; gap: 8px; margin: 0; padding-left: 34px; color: var(--muted); font: 500 12px/1.5 var(--font-mono), monospace; }
+.uw-sources-group li { scroll-margin-top: 90px; }
+.uw-sources-group li:target { color: var(--signal); }
+.uw-sources-group li a, .uw-sources-group li > span { color: var(--paper); font: 400 15px/1.5 var(--font-sans); text-decoration: none; }
+.uw-sources-group li a:hover { color: var(--signal); }
+.uw-sources-group li span span { margin-left: 8px; color: var(--dim); font: 500 11px var(--font-mono), monospace; }

@@ -8,7 +8,7 @@ export const StatRow = ({ items }: StatRowProps) => (
     {items.map((item) => (
       <div key={item.value + item.label} className="uw-stat">
         <dt>{item.value}</dt>
-        <dd>{item.label}<SourceLink source={item.source} /></dd>
+        <dd><span>{item.label}<SourceLink source={item.source} /></span></dd>
       </div>
     ))}
   </dl>

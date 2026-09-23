@@ -11,8 +11,7 @@ export const EvidenceGrid = ({ title, items }: EvidenceGridProps) => (
         <li key={item.kicker}>
           <p className="uw-evidence-kicker">{item.kicker}</p>
           {item.value && <strong>{item.value}</strong>}
-          <p>{item.text}</p>
-          <SourceLink source={item.source} />
+          <p>{item.text}<SourceLink source={item.source} /></p>
         </li>
       ))}
     </ul>

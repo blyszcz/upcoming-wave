@@ -4,6 +4,7 @@ import clsx from 'clsx';
 
 import type { VoiceCardProps } from './VoiceCard.types';
 
+import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
 export const VoiceCard = ({ voice }: VoiceCardProps) => {
@@ -30,10 +31,7 @@ export const VoiceCard = ({ voice }: VoiceCardProps) => {
         </div>
       )}
       <footer className="uw-voice-person">
-        <div><b>{voice.person}</b><span>{voice.role}</span></div>
-        {voice.source.url
-          ? <a href={voice.source.url} target="_blank" rel="noopener noreferrer">{ui.voices.source} {voice.source.label} ↗</a>
-          : <span className="uw-voice-source">{ui.voices.source} {voice.source.label}</span>}
+        <div><b>{voice.person}<SourceLink source={voice.source} /></b><span>{voice.role}</span></div>
       </footer>
     </div>
   </article>

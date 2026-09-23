@@ -12,6 +12,7 @@ import { ExplainSlider } from '@features/upcomingWave/components/ExplainSlider/E
 import { FinaleSection } from '@features/upcomingWave/components/FinaleSection/FinaleSection';
 import { HeroScene } from '@features/upcomingWave/components/HeroScene/HeroScene';
 import { SiteFooter } from '@features/upcomingWave/components/SiteFooter/SiteFooter';
+import { SourcesPage } from '@features/upcomingWave/components/SourcesPage/SourcesPage';
 import { SplitScene } from '@features/upcomingWave/components/SplitScene/SplitScene';
 import { StoryHeader } from '@features/upcomingWave/components/StoryHeader/StoryHeader';
 import { StoryScene } from '@features/upcomingWave/components/StoryScene/StoryScene';
@@ -57,6 +58,12 @@ const Story = () => {
     </main>
   );
 };
+
+export const UpcomingWaveSources = ({ locale = 'en' }: UpcomingWaveExperienceProps) => (
+  <ContentProvider content={locales[locale]}>
+    <SourcesPage />
+  </ContentProvider>
+);
 
 export const UpcomingWaveExperience = ({ locale = 'en' }: UpcomingWaveExperienceProps) => (
   <ContentProvider content={locales[locale]}>

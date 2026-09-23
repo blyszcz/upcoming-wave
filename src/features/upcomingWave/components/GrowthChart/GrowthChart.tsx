@@ -115,7 +115,7 @@ export const GrowthChart = ({ title, subtitle, note, source, points, doublingMon
         )}
       </div>
 
-      <p className="uw-growth-note">{note}</p>
+      <p className="uw-growth-note">{note}<SourceLink source={source} /></p>
       <details className="uw-growth-table">
         <summary>{ui.chart.showAll}</summary>
         <table>
@@ -123,7 +123,6 @@ export const GrowthChart = ({ title, subtitle, note, source, points, doublingMon
           <tbody>{points.map((point) => <tr key={point.model}><td>{point.model}</td><td>{point.date}</td><td>{formatMinutes(point.minutes)}{point.uncertain ? ' *' : ''}</td></tr>)}</tbody>
         </table>
       </details>
-      <SourceLink source={source} />
     </figure>
   );
 };
