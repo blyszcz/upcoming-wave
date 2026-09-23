@@ -1,0 +1,263 @@
+import type { Scene } from '../../types/scene.types';
+
+const images = {
+  layoffs: '/images/v2/threat-02-layoffs-v1.jpg',
+  aiRules: '/images/v2/threat-02-ai-rules-v1.jpg',
+  bio: '/images/v2/threat-03-bio-v1.jpg',
+  remote: '/images/v2/work-01-remote-v1.jpg',
+  aiFaster: '/images/v2/work-02-ai-faster-v2.jpg',
+  owners: '/images/v2/work-03-owners-v1.jpg',
+  callcenter: '/images/v2/jobs-01-callcenter-v1.jpg',
+  legal: '/images/v2/jobs-02-legal-v1.jpg',
+  design: '/images/v2/jobs-03-design-v1.jpg',
+  translator: '/images/v2/jobs-04-translator-v1.jpg',
+  warehouse: '/images/v2/jobs-05-warehouse-v1.jpg',
+  driver: '/images/v2/jobs-06-driver-v1.jpg',
+  queue: '/images/v2/trades-01-queue-v1.jpg',
+  tooMany: '/images/v2/trades-02-too-many-v1.jpg',
+  robot: '/images/v2/trades-03-robot-v1.jpg',
+  bills: '/images/v2/demand-01-bills-v1.jpg',
+  emptyStore: '/images/v2/demand-02-empty-store-v1.jpg',
+  closing: '/images/v2/demand-03-closing-v1.jpg',
+};
+
+const sources = {
+  ilo: { label: 'ILO–NASK, 2025', url: 'https://www.ilo.org/resource/news/one-four-jobs-risk-being-transformed-genai-new-ilo%E2%80%93nask-global-index-shows' },
+  imf: { label: 'MFW, 2024', url: 'https://www.cnbc.com/2024/01/15/imf-warns-ai-to-hit-almost-40percent-of-global-employment-worsen-inequality.html' },
+  stanford: { label: 'Stanford, 2026', url: 'https://digitaleconomy.stanford.edu/news/canariesaug26/' },
+  salesforce: { label: 'CNBC', url: 'https://www.cnbc.com/2025/09/02/salesforce-ceo-confirms-4000-layoffs-because-i-need-less-heads-with-ai.html' },
+  klarna: { label: 'CNBC', url: 'https://www.cnbc.com/2025/05/14/klarna-ceo-says-ai-helped-company-shrink-workforce-by-40percent.html' },
+  amazon: { label: 'Amazon', url: 'https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-on-generative-ai' },
+  hintonDoac: { label: 'Diary of a CEO, 2025', url: 'https://singjupost.com/transcript-of-godfather-of-ai-i-tried-to-warn-them-but-weve-already-lost-control/' },
+  hintonFt: { label: 'Financial Times / Fortune, 2025', url: 'https://fortune.com/2025/09/06/godfather-of-ai-geoffrey-hinton-massive-unemployment-soaring-profits-capitalist-system' },
+  bls: { label: 'US Bureau of Labor Statistics', url: 'https://www.bls.gov/ooh/construction-and-extraction/plumbers-pipefitters-and-steamfitters.htm' },
+  amodei: { label: 'The Adolescence of Technology, 2026', url: 'https://darioamodei.com/essay/the-adolescence-of-technology' },
+  goldman: { label: 'Goldman Sachs, 2024', url: 'https://www.goldmansachs.com/insights/articles/the-global-market-for-robots-could-reach-38-billion-by-2035' },
+  nvidia: { label: 'NVIDIA, 2025', url: 'https://nvidianews.nvidia.com/news/nvidia-isaac-gr00t-n1-open-humanoid-robot-foundation-model-simulation-frameworks' },
+  reuther: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2011/11/16/robots-buy-cars/' },
+  citrini: { label: 'Citrini Research, 2026', url: 'https://www.citriniresearch.com/p/2028gic' },
+  citadel: { label: 'Bloomberg, 2026', url: 'https://www.bloomberg.com/news/articles/2026-02-24/citadel-securities-rebuts-citrini-intelligence-crisis-scenario' },
+};
+
+export const scenes: Scene[] = [
+  {
+    id: 'zagrozenia',
+    number: '01',
+    label: 'CO MOŻE PÓJŚĆ NIE TAK',
+    status: 'MOŻLIWE SCENARIUSZE',
+    layout: 'triptych',
+    title: { lead: 'Trzy ryzyka.', accent: 'Żadnego hamulca.' },
+    panels: [
+      {
+        image: images.layoffs,
+        label: 'Fala zwolnień',
+        alt: 'Długa kolejka pracowników biurowych wychodzi w deszczu z biurowca, niosąc kartony z rzeczami.',
+        focus: 'center 70%',
+      },
+      {
+        image: images.aiRules,
+        label: 'AI przejmuje kontrolę',
+        alt: 'Tysiące ludzi stoją w równych rzędach na placu pod ogromną maszyną, która skanuje ich wiązkami światła.',
+        focus: 'center 60%',
+      },
+      {
+        image: images.bio,
+        label: 'Wirus z laboratorium',
+        alt: 'Puste laboratorium: automatyczne ramię trzyma świecącą fiolkę, nad stołem model wirusa i przepisywanej helisy DNA.',
+        focus: 'center 60%',
+      },
+    ],
+    explain: [
+      {
+        image: images.layoffs,
+        alt: 'Zwolnieni pracownicy wychodzą z biurowca z kartonami.',
+        label: 'Zwolnienia',
+        title: 'Praca znika szybciej, niż powstaje nowa.',
+        copy: 'Jeśli AI robi to samo taniej, firmy mogą potrzebować mniej ludzi. Przebranżowienie trwa latami, rachunki przychodzą co miesiąc.',
+      },
+      {
+        image: images.aiRules,
+        alt: 'Ludzie w rzędach pod maszyną, która ich skanuje.',
+        label: 'Kontrola',
+        title: 'Decyzje przechodzą do maszyn.',
+        copy: 'Kredyt, praca, leczenie, bezpieczeństwo. Im więcej decyzji oddajemy systemom, których nie rozumiemy, tym trudniej je potem odebrać.',
+      },
+      {
+        image: images.bio,
+        alt: 'Automatyczne laboratorium z modelem wirusa.',
+        label: 'Biologia',
+        title: 'Projektowanie życia tanieje.',
+        copy: 'AI przyspiesza badania nad lekami — ale te same narzędzia mogą pomóc stworzyć groźny patogen. Wystarczy jeden błąd albo jedna zła intencja.',
+      },
+    ],
+  },
+  {
+    id: 'praca',
+    number: '02',
+    label: 'JAK TO SIĘ ZACZYNA',
+    status: 'DZIŚ',
+    chain: 'praca',
+    layout: 'triptych',
+    title: { lead: 'AI robi to szybciej i\u00a0taniej.', accent: 'Kto się oprze?' },
+    panels: [
+      {
+        image: images.remote,
+        label: 'Człowiek pracuje zdalnie',
+        alt: 'Kobieta pracuje zdalnie przy kuchennym stole z laptopem i notatnikiem.',
+        focus: 'center 65%',
+      },
+      {
+        image: images.aiFaster,
+        label: 'AI robi to szybciej',
+        alt: 'Ten sam stół bez człowieka: z laptopa wylatują dziesiątki gotowych dokumentów w smugach światła.',
+        focus: 'center 60%',
+      },
+      {
+        image: images.owners,
+        label: 'Właściciel liczy zysk',
+        alt: 'Dwóch właścicieli firmy w sali zarządu patrzy z góry na biuro, w którym większość biurek jest pusta.',
+        focus: 'center 55%',
+      },
+    ],
+    explain: [
+      {
+        image: images.remote,
+        alt: 'Kobieta pracuje zdalnie przy laptopie.',
+        label: 'Praca zdalna',
+        title: 'Praca zdalna to praca na ekranie.',
+        copy: 'Maile, raporty, analizy, projekty. Wszystko, co wysyłasz przez laptopa, AI może nauczyć się robić.',
+      },
+      {
+        image: images.aiFaster,
+        alt: 'Laptop, z którego wylatują gotowe dokumenty.',
+        label: 'AI szybciej',
+        title: 'AI nie śpi i nie bierze urlopu.',
+        copy: 'Robi to samo w minuty, bez przerw, przy setkach zadań naraz — i w coraz większej liczbie zadań na poziomie człowieka.',
+      },
+      {
+        image: images.owners,
+        alt: 'Właściciele firmy patrzą na puste biuro.',
+        label: 'Rachunek',
+        title: 'Szybciej i taniej. Kto się oprze?',
+        copy: 'Właściciel widzi oszczędność. Konkurencja też ją widzi. Firma, która nie skorzysta, przegra wyścig — więc skorzystają prawie wszyscy.',
+      },
+    ],
+  },
+
+  {
+    id: 'zawody',
+    number: '03',
+    label: 'KTO JEST NASTĘPNY',
+    status: 'DZIŚ',
+    chain: 'praca',
+    layout: 'mosaic',
+    title: { lead: 'Nie tylko kod.', accent: 'Także twoja praca.' },
+    panels: [
+      { image: images.callcenter, label: 'Infolinia', caption: 'Odpowiada czatbot', alt: 'Konsultantka ze słuchawkami sama w nocnym call center, dookoła puste stanowiska.' },
+      { image: images.legal, label: 'Asystent prawny', caption: 'Umowy czyta model', alt: 'Asystentka prawna nad stosem umów; obok laptop i gotowy stos przejrzanych dokumentów.' },
+      { image: images.design, label: 'Grafik i copywriter', caption: 'Obrazy i teksty w sekundę', alt: 'Grafik patrzy na ścianę dziesiątek wygenerowanych projektów.' },
+      { image: images.translator, label: 'Tłumacz', caption: 'Tłumaczenie od ręki', alt: 'Tłumaczka przy słownikach patrzy na strumień znaków z wielu alfabetów płynący w powietrzu.' },
+      { image: images.warehouse, label: 'Magazyn', caption: 'Roboty już jeżdżą po halach', alt: 'Ogromny magazyn pełen autonomicznych robotów; jeden pracownik patrzy z antresoli.', focus: 'center 60%' },
+      { image: images.driver, label: 'Kierowca', caption: 'Ciężarówki uczą się jeździć same', alt: 'Kierowca opiera się o swoją ciężarówkę i patrzy na przejeżdżającą ciężarówkę bez kierowcy.' },
+    ],
+    explain: [
+      { image: images.legal, alt: 'Asystentka prawna nad stosem umów.', label: 'Zadania', title: 'Najpierw zadania, nie etaty.', copy: 'AI przejmuje maile, streszczenia i odpowiedzi. Etat jeszcze jest — ale coraz bardziej pusty w środku.' },
+      { image: images.callcenter, alt: 'Puste stanowiska w call center.', label: 'Mniej rekrutacji', title: 'Jeden robi za pięciu.', copy: 'Firmy rzadko zwalniają od razu. Po prostu przestają zatrudniać. Najpierw tracą młodzi, którzy szukają pierwszej pracy.' },
+      { image: images.warehouse, alt: 'Magazyn pełen robotów.', label: 'Hala i droga', title: 'Potem zmiana wychodzi z biura.', copy: 'Roboty w magazynach, ciężarówki bez kierowców. Najpierw praca przy komputerze, potem praca rękami.' },
+    ],
+    band: [
+      {
+        kind: 'stats',
+        items: [
+          { value: '1 na 4', label: 'miejsca pracy na świecie jest w zawodach narażonych na generatywną AI', source: sources.ilo },
+          { value: '60%', label: 'miejsc pracy w bogatych krajach jest narażonych na AI', source: sources.imf },
+          { value: '−11%', label: 'mniej zatrudnionych 22–25-latków w zawodach najbardziej narażonych na AI (2022–2026)', source: sources.stanford },
+        ],
+      },
+      {
+        kind: 'evidence',
+        title: 'To już się dzieje',
+        items: [
+          { kicker: 'Salesforce · 2025', value: '9 000 → 5 000', text: 'osób w obsłudze klienta. „Potrzebuję mniej głów” — szef firmy.', source: sources.salesforce },
+          { kicker: 'Klarna · 2025', value: '5 000 → 3 000', text: 'pracowników. Firma przestała zatrudniać, część pracy przejęła AI.', source: sources.klarna },
+          { kicker: 'Amazon · 2025', text: 'Szef Amazona zapowiada, że AI zmniejszy liczbę pracowników biurowych firmy w najbliższych latach.', source: sources.amazon },
+        ],
+      },
+      { kind: 'quote', quote: 'Przy rutynowej pracy umysłowej AI po prostu zastąpi wszystkich.', person: 'Geoffrey Hinton', role: 'noblista, „ojciec chrzestny AI”', source: sources.hintonDoac },
+    ],
+  },
+  {
+    id: 'hydraulik',
+    number: '04',
+    label: 'TO SIĘ PRZEBRANŻOWIĘ',
+    status: 'MOŻLIWY SCENARIUSZ',
+    chain: 'dochod',
+    layout: 'triptych',
+    title: { lead: 'Zostań hydraulikiem.', accent: 'Wszyscy naraz?' },
+    panels: [
+      { image: images.queue, label: 'Wszyscy do jednych drzwi', alt: 'Długa kolejka pracowników biurowych w deszczu przed szkołą zawodową.', focus: 'center 70%' },
+      { image: images.tooMany, label: 'Za dużo fachowców', alt: 'Pięciu hydraulików z vanami czeka przed jednym domem.', focus: 'center 70%' },
+      { image: images.robot, label: 'Robot już tu jest', alt: 'Humanoidalny robot na linii montażowej; stanowisko człowieka obok jest puste.', focus: 'center 65%' },
+    ],
+    explain: [
+      { image: images.queue, alt: 'Kolejka do szkoły zawodowej.', label: 'Mało miejsc', title: 'Miejsc przy pracy fizycznej jest dużo mniej.', copy: 'Biura zatrudniają miliony ludzi. Fachowców potrzeba setki tysięcy. Nie zmieścimy się wszyscy.' },
+      { image: images.tooMany, alt: 'Wielu hydraulików przed jednym domem.', label: 'Niższe stawki', title: 'Więcej chętnych — niższe stawki.', copy: 'Gdy pięciu fachowców walczy o jedno zlecenie, wygrywa najtańszy. A klient bez pensji nie remontuje łazienki.' },
+      { image: images.robot, alt: 'Robot przy linii montażowej.', label: 'Roboty', title: 'A roboty też się uczą.', copy: 'AI przyspiesza budowę robotów. Praca fizyczna daje trochę czasu — ale może niewiele.' },
+    ],
+    band: [
+      { kind: 'quote', quote: 'Minie dużo czasu, zanim AI będzie tak sprawna fizycznie jak my… dobrym zakładem byłoby zostać hydraulikiem.', person: 'Geoffrey Hinton', role: 'noblista, „ojciec chrzestny AI”', source: sources.hintonDoac },
+      {
+        kind: 'bars',
+        title: 'Ilu chętnych na jedno miejsce?',
+        subtitle: 'Przykład USA: ile osób pracuje w zawodzie',
+        bars: [
+          { label: 'Konsultanci obsługi klienta', value: 2900000, display: '2,9 mln' },
+          { label: 'Hydraulicy', value: 510600, display: '511 tys.' },
+          { label: 'Wolne miejsca dla hydraulików rocznie', value: 42000, display: '42 tys.', highlight: true },
+        ],
+        caption: 'Na jedno wolne miejsce hydraulika przypada prawie 70 osób — z samej obsługi klienta.',
+        source: sources.bls,
+      },
+      {
+        kind: 'stats',
+        items: [
+          { value: '11 h', label: 'tyle AI potrzebowała, by stworzyć równowartość 9 miesięcy ludzkich pokazów do nauki robotów', source: sources.nvidia },
+          { value: '−40%', label: 'tyle spadł koszt budowy humanoidalnego robota — analitycy zakładali 15–20% rocznie', source: sources.goldman },
+        ],
+      },
+      { kind: 'quote', quote: 'Potężna AI będzie w stanie przyspieszyć rozwój robotów, a potem nimi sterować. To może dać trochę czasu… ale obawiam się, że niewiele.', person: 'Dario Amodei', role: 'CEO, Anthropic', source: sources.amodei },
+    ],
+  },
+  {
+    id: 'popyt',
+    number: '05',
+    label: 'CO DZIEJE SIĘ DALEJ',
+    status: 'MOŻLIWY SCENARIUSZ',
+    chain: 'zakupy',
+    layout: 'triptych',
+    title: { lead: 'Nie masz pensji.', accent: 'Nie kupujesz.' },
+    panels: [
+      { image: images.bills, label: 'Dom tnie wydatki', alt: 'Para przy kuchennym stole nad rachunkami; nowy telefon w pudełku do zwrotu.', focus: 'center 70%' },
+      { image: images.emptyStore, label: 'Sklep bez klientów', alt: 'Salon z telefonami w galerii handlowej, bez ani jednego klienta.', focus: 'center 70%' },
+      { image: images.closing, label: 'Firma zamyka drzwi', alt: 'Właściciel kawiarni stawia krzesła na stołach w ostatni wieczór przed zamknięciem.', focus: 'center 65%' },
+    ],
+    explain: [
+      { image: images.bills, alt: 'Para liczy rachunki.', label: 'Pensja', title: 'Twoja pensja to czyjś utarg.', copy: 'Kiedy nie zarabiasz, nie kupujesz telefonu, auta ani obiadu na mieście. Gospodarka to krąg.' },
+      { image: images.emptyStore, alt: 'Pusty sklep z elektroniką.', label: 'Maszyny nie kupują', title: 'Maszyna produkuje, ale nie kupuje.', copy: 'AI może zrobić więcej towarów i usług niż kiedykolwiek. Ale robot nie wyda pensji w sklepie.' },
+      { image: images.closing, alt: 'Zamykana kawiarnia.', label: 'Spirala', title: 'Mniej zakupów — kolejne zwolnienia.', copy: 'Sklepy i firmy zarabiają mniej, więc tną koszty. Najtańsza jest AI. Pętla się zamyka.' },
+    ],
+    band: [
+      { kind: 'loop', title: 'Pętla bez hamulca', steps: ['Mniej pensji', 'Mniej zakupów', 'Firmy zarabiają mniej', 'Kolejne zwolnienia', 'AI jeszcze tańsza'], caption: 'To scenariusz, nie prognoza. Ale każdy krok wynika z poprzedniego.' },
+      { kind: 'quote', quote: 'A jak ty zmusisz te roboty, żeby kupowały Fordy?', person: 'Walter Reuther', role: 'przywódca związku robotników motoryzacji, do dyrektora Forda — anegdota z lat 50.', source: sources.reuther },
+      {
+        kind: 'evidence',
+        title: 'Co mówią eksperci',
+        items: [
+          { kicker: 'Citrini Research · 2026 · scenariusz', value: 'Zero', text: '„Ile maszyny wydają na zakupy? Zero.” Autorzy opisują pętlę „bez naturalnego hamulca”.', source: sources.citrini },
+          { kicker: 'Geoffrey Hinton · 2025', text: '„Kilka osób stanie się dużo bogatszych, a większość biedniejsza.”', source: sources.hintonFt },
+          { kicker: 'Citadel Securities · 2026 · kontra', text: 'Wcześniejsze fale technologii nie sprawiły, że praca ludzi stała się zbędna.', source: sources.citadel },
+        ],
+      },
+    ],
+  },
+];

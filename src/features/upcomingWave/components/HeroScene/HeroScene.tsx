@@ -1,4 +1,4 @@
-import { hero } from '../../content/hero';
+import { hero } from '../../content/pl/hero';
 
 export const HeroScene = () => (
   <section className="uw-hero" aria-labelledby="hero-title">

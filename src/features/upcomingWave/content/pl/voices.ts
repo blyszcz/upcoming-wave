@@ -1,4 +1,4 @@
-import type { Voice } from '../types/voice.types';
+import type { Voice } from '../../types/voice.types';
 
 // Every quote is verified against the linked source; Polish text is our translation
 // unless it comes from the Polish edition of the book.

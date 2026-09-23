@@ -87,8 +87,8 @@ export const ExplainSlider = ({ scene, onClose }: ExplainSliderProps) => {
               <h3>{step.title}</h3>
               <p>{step.copy}</p>
               <ol className="uw-chain" aria-label="Łańcuch przyczyn">
-                {scene.panels.map((panel, chainIndex) => (
-                  <li key={panel.label} className={clsx(chainIndex === index && 'is-current', chainIndex < index && 'is-past')}>{panel.label}</li>
+                {scene.explain.map((chainStep, chainIndex) => (
+                  <li key={chainStep.label} className={clsx(chainIndex === index && 'is-current', chainIndex < index && 'is-past')}>{chainStep.label}</li>
                 ))}
               </ol>
             </div>

@@ -1,5 +1,5 @@
 import clsx from '../../lib/clsx';
-import { voices } from '../../content/voices';
+import { voices } from '../../content/pl/voices';
 
 import type { Voice } from '../../types/voice.types';
 

@@ -1,25 +1,45 @@
-export type SceneStatus = 'DZIŚ' | 'MOŻLIWY SCENARIUSZ' | 'MOŻLIWE SCENARIUSZE' | 'SKRAJNY SCENARIUSZ' | 'ODPOWIEDŹ';
+export type SceneStatus = 'DZIŚ' | 'HISTORIA' | 'INCYDENT' | 'MOŻLIWY SCENARIUSZ' | 'MOŻLIWE SCENARIUSZE' | 'SKRAJNY SCENARIUSZ' | 'ODPOWIEDŹ';
+
+export type ChainStepId = 'praca' | 'dochod' | 'zakupy' | 'podatki' | 'zaufanie' | 'ai' | 'kontrola' | 'ludzie' | 'panstwo' | 'zasady';
+
+export type Source = { label: string; url?: string };
 
 export type ScenePanel = {
   image: string;
   label: string;
   alt: string;
+  caption?: string;
   focus?: string;
 };
 
 export type ExplainStep = {
   image: string;
   alt: string;
+  label: string;
   title: string;
   copy: string;
 };
+
+export type StatItem = { value: string; label: string; source: Source };
+export type EvidenceItem = { kicker: string; value?: string; text: string; source: Source };
+export type BarItem = { label: string; value: number; display: string; highlight?: boolean };
+
+export type BandBlock =
+  | { kind: 'stats'; items: StatItem[] }
+  | { kind: 'evidence'; title: string; items: EvidenceItem[] }
+  | { kind: 'quote'; quote: string; person: string; role: string; source: Source }
+  | { kind: 'loop'; title: string; steps: string[]; caption: string }
+  | { kind: 'bars'; title: string; subtitle: string; bars: BarItem[]; caption: string; source: Source };
 
 export type Scene = {
   id: string;
   number: string;
   label: string;
   status: SceneStatus;
+  chain?: ChainStepId;
+  layout: 'triptych' | 'mosaic';
   title: { lead: string; accent: string };
   panels: ScenePanel[];
   explain: ExplainStep[];
+  band?: BandBlock[];
 };
