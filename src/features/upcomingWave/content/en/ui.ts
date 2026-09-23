@@ -21,6 +21,7 @@ export const ui = {
   copyLink: 'Copy link to this section',
   facts: { show: (count: number) => `Show facts and sources (${count})`, hide: 'Hide facts and sources', moreVoices: (count: number) => `+${count} more voices`, lessVoices: 'Show fewer voices', allSteps: (count: number) => `Show all steps (${count})`, fewerSteps: 'Show less' },
   readingMode: { toShort: 'Short version', toFull: 'Full version', aria: 'Switch between the short and the full version' },
+  stories: { open: 'Watch in 30 seconds', aria: 'The whole page in 30 seconds', close: 'Close' },
   stepsAria: 'What happens, step by step',
   factsAria: 'Facts and sources',
   explain: {

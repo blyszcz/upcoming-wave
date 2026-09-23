@@ -21,6 +21,7 @@ export const ui = {
   copyLink: 'Kopiuj link do tej sekcji',
   facts: { show: (count: number) => `Pokaż fakty i źródła (${count})`, hide: 'Zwiń fakty i źródła', moreVoices: (count: number) => `+${count} kolejne głosy`, lessVoices: 'Zwiń głosy', allSteps: (count: number) => `Pokaż wszystkie kroki (${count})`, fewerSteps: 'Pokaż mniej' },
   readingMode: { toShort: 'Skrót', toFull: 'Pełna wersja', aria: 'Przełącz między skrótem a pełną wersją' },
+  stories: { open: 'Obejrzyj w 30 sekund', aria: 'Cała strona w 30 sekund', close: 'Zamknij' },
   stepsAria: 'Co się dzieje, krok po kroku',
   factsAria: 'Fakty i źródła',
   explain: {

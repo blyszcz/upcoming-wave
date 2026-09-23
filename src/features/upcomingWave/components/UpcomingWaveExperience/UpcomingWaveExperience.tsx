@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 
 import type { UpcomingWaveExperienceProps } from './UpcomingWaveExperience.types';
 import type { StoryItem } from '@features/upcomingWave/content/pl/story';
@@ -15,6 +15,7 @@ import { SiteFooter } from '@features/upcomingWave/components/SiteFooter/SiteFoo
 import { SourcesPage } from '@features/upcomingWave/components/SourcesPage/SourcesPage';
 import { SplitScene } from '@features/upcomingWave/components/SplitScene/SplitScene';
 import { StoryHeader } from '@features/upcomingWave/components/StoryHeader/StoryHeader';
+import { StoryMode } from '@features/upcomingWave/components/StoryMode/StoryMode';
 import { StoryScene } from '@features/upcomingWave/components/StoryScene/StoryScene';
 import { VoicesSection } from '@features/upcomingWave/components/VoicesSection/VoicesSection';
 import { WhyNote } from '@features/upcomingWave/components/WhyNote/WhyNote';
@@ -29,6 +30,7 @@ const Story = () => {
   const { scenes, site, story, ui } = useContent();
   const sceneById = useMemo(() => new Map(scenes.map((scene) => [scene.id, scene])), [scenes]);
   const { explainScene, openExplain, closeExplain } = useExplainDialog();
+  const [isStoryOpen, setIsStoryOpen] = useState(false);
   useSectionHash();
 
   const renderItem = (item: StoryItem, index: number) => {
@@ -48,12 +50,13 @@ const Story = () => {
   return (
     <main id="top" className="uw">
       <StoryHeader />
-      <HeroScene />
+      <HeroScene onOpenStories={() => setIsStoryOpen(true)} />
       <VoicesSection />
       {story.map(renderItem)}
       <WhyNote {...site.footer.why} />
       <SiteFooter />
       {explainScene && <ExplainSlider scene={explainScene} onClose={closeExplain} />}
+      {isStoryOpen && <StoryMode onClose={() => setIsStoryOpen(false)} />}
       <AnalyticsConsent {...ui.consent} />
     </main>
   );
