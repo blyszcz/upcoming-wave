@@ -2,7 +2,7 @@ import type { SceneStatus } from '../../types/scene.types';
 
 export const ui = {
   lang: 'pl',
-  brand: 'Nadchodząca fala',
+  brand: 'Upcoming Wave',
   langSwitch: { label: 'EN', href: '/', ariaLabel: 'English version' } as null | { label: string; href: string; ariaLabel: string },
   dominoAria: 'Łańcuch skutków',
   status: {
