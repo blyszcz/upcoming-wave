@@ -427,6 +427,15 @@ export const scenes: Scene[] = [
           { value: '~9%', label: 'of people live below the poverty line today. In the early 1800s almost everyone lived in extreme poverty — that’s what technology changed (ch. 8)', source: sources.book },
         ],
       },
+      {
+        kind: 'evidence',
+        title: 'What AI’s creators hope for',
+        items: [
+          { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'An end to disease?', text: '“One day maybe we can cure all disease with the help of AI… Maybe within the next decade or so.” He also talks of “radical abundance” — the elimination of scarcity.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
+          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 years → 10', text: '50–100 years of medical progress compressed into 5–10, the healthy lifespan doubled, billions lifted out of poverty — his vision if AI goes well.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
+          { kicker: 'Sam Altman · OpenAI · 2024', value: 'Shared prosperity', text: '“In the future, everyone’s lives can be better than anyone’s life is now.” And every child with a personal virtual tutor.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
+        ],
+      },
       { kind: 'quote', quote: 'With AI we could unlock the secrets of the universe, cure diseases that have long eluded science, and create new forms of art and culture that stretch the limits of imagination.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, prologue', source: sources.book },
     ],
   },

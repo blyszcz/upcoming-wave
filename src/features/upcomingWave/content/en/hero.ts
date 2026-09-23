@@ -2,8 +2,8 @@ export const hero = {
   image: '/images/v2/hero-wave-v2.jpg',
   alt: 'A giant wave over a city at night, woven from DNA helices and viruses, with a cold machine on its crest. Laid-off people with cardboard boxes stand in the street next to a toppled statue of a man.',
   compare: {
-    image: '/images/v2/hero-wave-hope-v4.jpg',
-    alt: 'The same wave and city at dawn: a golden wave over a green boulevard full of food markets. Robots carry crates and serve at stalls while people stroll and shop at ease.',
+    image: '/images/v2/hero-wave-hope-v5.jpg',
+    alt: 'The same wave and city at dawn: a golden wave over a green park. A family with a dog picnics, children play football, people jog, cycle and relax on the grass.',
     darkLabel: 'If we do nothing',
     hopeLabel: 'If we set the rules',
     aria: 'Drag to compare two futures',

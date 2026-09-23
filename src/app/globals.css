@@ -68,7 +68,7 @@ section[id] { scroll-margin-top: 0; }
 .uw-compare .uw-hero-image { z-index: 0; }
 .uw-compare-hope { clip-path: inset(0 0 0 var(--pos)); }
 .uw-hero-shade { pointer-events: none; }
-.uw-compare-divider { position: absolute; z-index: 2; top: 0; bottom: 0; left: var(--pos); width: 0; pointer-events: none; }
+.uw-compare-divider { position: absolute; z-index: 4; top: 0; bottom: 0; left: var(--pos); width: 0; pointer-events: none; }
 .uw-compare-divider::before { content: ''; position: absolute; top: 0; bottom: 0; left: -1px; width: 2px; background: linear-gradient(180deg, transparent, rgba(238, 236, 230, 0.85) 18%, rgba(238, 236, 230, 0.85) 82%, transparent); box-shadow: 0 0 18px rgba(255, 190, 120, 0.5); }
 .uw-compare-handle { position: absolute; top: 50%; left: 0; display: grid; place-items: center; width: 54px; height: 54px; border: 1px solid rgba(238, 236, 230, 0.7); border-radius: 50%; background: rgba(7, 11, 16, 0.55); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color: var(--paper); font: 500 18px/1 var(--font-sans); letter-spacing: 0.1em; cursor: ew-resize; pointer-events: auto; touch-action: none; transform: translate(-50%, -50%); transition: background 0.2s ease, border-color 0.2s ease; }
 .uw-compare-handle:hover, .uw-compare-handle:focus-visible { border-color: var(--paper); background: rgba(7, 11, 16, 0.75); }

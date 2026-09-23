@@ -572,6 +572,15 @@ export const scenes: Scene[] = [
           { value: '~9%', label: 'ludzi żyje dziś poniżej granicy ubóstwa. Na początku XIX w. w skrajnej nędzy żyli prawie wszyscy — tyle zmieniła technologia (rozdz. 8)', source: sources.book },
         ],
       },
+      {
+        kind: 'evidence',
+        title: 'Na co liczą twórcy AI',
+        items: [
+          { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'Koniec chorób?', text: '„Pewnego dnia może uda nam się wyleczyć wszystkie choroby z pomocą AI… może w ciągu najbliższej dekady.” Mówi też o „radykalnej obfitości” — końcu niedoboru.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
+          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 lat → 10', text: 'Postęp medycyny z kilkudziesięciu, a nawet stu lat skompresowany do 5–10 lat, podwojenie zdrowej długości życia, miliardy ludzi wyciągnięte z biedy — jego wizja, jeśli AI pójdzie dobrze.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
+          { kicker: 'Sam Altman · OpenAI · 2024', value: 'Wspólny dobrobyt', text: '„W przyszłości życie każdego może być lepsze niż dziś życie kogokolwiek.” I każde dziecko z własnym wirtualnym nauczycielem.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
+        ],
+      },
       { kind: 'quote', quote: 'Dzięki sztucznej inteligencji moglibyśmy rozszyfrować tajemnice wszechświata, leczyć choroby, które przez długi czas wymykały się nauce, tworzyć nowe formy sztuki i kultury, poszerzające granice wyobraźni.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, prolog', source: sources.book },
     ],
   },

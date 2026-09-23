@@ -18,6 +18,7 @@ const MIN = 4;
 const MAX = 96;
 const KEY_STEP = 5;
 const LABEL_EDGE = 26;
+const TEXT_COLUMN = 50;
 const INTRO_DELAY_MS = 900;
 const INTRO_MS = 1600;
 const clamp = (value: number) => Math.min(MAX, Math.max(MIN, value));
@@ -30,6 +31,15 @@ export const HeroCompare = ({ darkImage, darkAlt, hopeImage, hopeAlt, darkLabel,
   const touched = useRef(false);
   const frame = useRef<number | null>(null);
   const dividerRef = useRef<HTMLDivElement>(null);
+  const [isNarrow, setIsNarrow] = useState(false);
+
+  useEffect(() => {
+    const query = window.matchMedia('(max-width: 820px)');
+    const update = () => setIsNarrow(query.matches);
+    update();
+    query.addEventListener('change', update);
+    return () => query.removeEventListener('change', update);
+  }, []);
 
   useEffect(() => {
     const target = restingPosition();
@@ -71,6 +81,8 @@ export const HeroCompare = ({ darkImage, darkAlt, hopeImage, hopeAlt, darkLabel,
     setPosition(clamp(moves[event.key]));
   };
 
+  // Labels would cover the headline while the handle sits over the text column.
+  const overText = position < TEXT_COLUMN && !isNarrow;
   const style = { '--pos': `${position}%` } as CSSProperties;
 
   return (
@@ -81,7 +93,7 @@ export const HeroCompare = ({ darkImage, darkAlt, hopeImage, hopeAlt, darkLabel,
       </div>
       <div className="uw-hero-shade" aria-hidden="true" />
       <div ref={dividerRef} className="uw-compare-divider" style={style}>
-        <span className="uw-compare-label is-dark" data-hidden={position < LABEL_EDGE} aria-hidden="true">{darkLabel}</span>
+        <span className="uw-compare-label is-dark" data-hidden={position < LABEL_EDGE || overText} aria-hidden="true">{darkLabel}</span>
         <div
           className="uw-compare-handle"
           role="slider"
@@ -99,7 +111,7 @@ export const HeroCompare = ({ darkImage, darkAlt, hopeImage, hopeAlt, darkLabel,
         >
           <span aria-hidden="true">‹ ›</span>
         </div>
-        <span className="uw-compare-label is-hope" data-hidden={position > 100 - LABEL_EDGE} aria-hidden="true">{hopeLabel}</span>
+        <span className="uw-compare-label is-hope" data-hidden={position > 100 - LABEL_EDGE || overText} aria-hidden="true">{hopeLabel}</span>
       </div>
     </>
   );
