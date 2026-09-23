@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 import clsx from '../../lib/clsx';
+import { useContent } from '../../content/ContentProvider';
 import { useInView } from '../../hooks/useInView';
 import { SourceLink } from '../SceneBand/SourceLink';
 
@@ -15,17 +16,21 @@ const START = 2022;
 const END = 2027.25;
 const MAX_HOURS = 46;
 const MARGIN = { top: 28, right: 20, bottom: 40, left: 20 };
-const REFERENCES = [{ hours: 8, label: '1 dzień pracy' }, { hours: 40, label: '1 tydzień pracy' }];
 
 const toYear = (date: string) => { const [year, month] = date.split('-').map(Number); return year + (month - 1) / 12; };
-const decimal = (value: number) => (Number.isInteger(value) ? String(value) : value.toFixed(1).replace('.', ','));
-const formatMinutes = (minutes: number) => {
-  if (minutes < 60) return `${minutes < 10 ? decimal(minutes) : Math.round(minutes)} min`;
-  const hours = minutes / 60;
-  return `${hours < 10 ? decimal(Math.round(hours * 10) / 10) : Math.round(hours)} h`;
+const makeFormatter = (separator: string) => {
+  const decimal = (value: number) => (Number.isInteger(value) ? String(value) : value.toFixed(1).replace('.', separator));
+  return (minutes: number) => {
+    if (minutes < 60) return `${minutes < 10 ? decimal(minutes) : Math.round(minutes)} min`;
+    const hours = minutes / 60;
+    return `${hours < 10 ? decimal(Math.round(hours * 10) / 10) : Math.round(hours)} h`;
+  };
 };
 
 export const GrowthChart = ({ title, subtitle, note, source, points, doublingMonths }: GrowthChartProps) => {
+  const { ui } = useContent();
+  const formatMinutes = useMemo(() => makeFormatter(ui.chart.decimal), [ui.chart.decimal]);
+  const references = [{ hours: 8, label: ui.chart.day }, { hours: 40, label: ui.chart.week }];
   const { ref, isInView } = useInView<HTMLDivElement>(0.3);
   const plotRef = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(900);
@@ -71,9 +76,9 @@ export const GrowthChart = ({ title, subtitle, note, source, points, doublingMon
       </figcaption>
 
       <div ref={plotRef} className="uw-growth-plot" onMouseLeave={() => setHovered(null)}>
-        <svg width={width} height={height} role="img" aria-label={`${title}: od 4 minut w 2023 r. do około ${formatMinutes(last.minutes)} w 2026 r. ${subtitle}`}>
+        <svg width={width} height={height} role="img" aria-label={ui.chart.aria(title, formatMinutes(last.minutes), subtitle)}>
           <clipPath id="uw-growth-clip"><rect x={MARGIN.left} y={MARGIN.top} width={innerW} height={innerH} /></clipPath>
-          {REFERENCES.map((reference) => (
+          {references.map((reference) => (
             <g key={reference.label} className="uw-ref">
               <line x1={MARGIN.left} x2={width - MARGIN.right} y1={y(reference.hours * 60)} y2={y(reference.hours * 60)} />
               <text x={MARGIN.left} y={y(reference.hours * 60) - 10}>{reference.label}</text>
@@ -87,7 +92,7 @@ export const GrowthChart = ({ title, subtitle, note, source, points, doublingMon
           <path className="uw-growth-area" d={areaPath} />
           <path className="uw-growth-line" d={measuredPath} pathLength={1} />
           <path className="uw-growth-scenario" d={line(scenario)} clipPath="url(#uw-growth-clip)" />
-          {exit && <text className="uw-exit-label" x={x(exit.year) - 12} y={MARGIN.top + 16} textAnchor="end">jeśli tak dalej ↑</text>}
+          {exit && <text className="uw-exit-label" x={x(exit.year) - 12} y={MARGIN.top + 16} textAnchor="end">{ui.chart.ifContinues}</text>}
 
           {points.map((point, index) => {
             const cx = x(toYear(point.date));
@@ -109,7 +114,7 @@ export const GrowthChart = ({ title, subtitle, note, source, points, doublingMon
                   cy={cy}
                   r={14}
                   tabIndex={0}
-                  aria-label={`${point.model}, ${point.date}: ${formatMinutes(point.minutes)}${point.uncertain ? ', pomiar niepewny' : ''}`}
+                  aria-label={`${point.model}, ${point.date}: ${formatMinutes(point.minutes)}${point.uncertain ? `, ${ui.chart.uncertain}` : ''}`}
                   onMouseEnter={() => setHovered(index)}
                   onFocus={() => setHovered(index)}
                   onBlur={() => setHovered(null)}
@@ -123,16 +128,16 @@ export const GrowthChart = ({ title, subtitle, note, source, points, doublingMon
           <div className="uw-tooltip" style={{ left: x(toYear(active.date)), top: y(active.minutes) }}>
             <b>{active.model}</b>
             <span>{active.date.replace('-', '.')} · {formatMinutes(active.minutes)}</span>
-            {active.uncertain && <em>pomiar niepewny</em>}
+            {active.uncertain && <em>{ui.chart.uncertain}</em>}
           </div>
         )}
       </div>
 
       <p className="uw-growth-note">{note}</p>
       <details className="uw-growth-table">
-        <summary>Pokaż wszystkie pomiary</summary>
+        <summary>{ui.chart.showAll}</summary>
         <table>
-          <thead><tr><th>Model</th><th>Data</th><th>Zadania do</th></tr></thead>
+          <thead><tr>{ui.chart.columns.map((column) => <th key={column}>{column}</th>)}</tr></thead>
           <tbody>{points.map((point) => <tr key={point.model}><td>{point.model}</td><td>{point.date}</td><td>{formatMinutes(point.minutes)}{point.uncertain ? ' *' : ''}</td></tr>)}</tbody>
         </table>
       </details>

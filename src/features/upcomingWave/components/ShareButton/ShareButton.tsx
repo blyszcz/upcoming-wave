@@ -2,11 +2,14 @@
 
 import { useState } from 'react';
 
+import { useContent } from '../../content/ContentProvider';
+
 type ShareButtonProps = { sectionId: string; title: string };
 
 const COPIED_MS = 2000;
 
 export const ShareButton = ({ sectionId, title }: ShareButtonProps) => {
+  const { ui } = useContent();
   const [copied, setCopied] = useState(false);
 
   const share = async () => {
@@ -22,7 +25,7 @@ export const ShareButton = ({ sectionId, title }: ShareButtonProps) => {
 
   return (
     <button type="button" className="uw-share-button" onClick={share} aria-live="polite">
-      {copied ? 'Skopiowano link ✓' : 'Udostępnij ↗'}
+      {copied ? ui.copied : ui.share}
     </button>
   );
 };

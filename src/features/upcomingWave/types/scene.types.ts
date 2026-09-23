@@ -1,4 +1,4 @@
-export type SceneStatus = 'DZIŚ' | 'HISTORIA' | 'INCYDENT' | 'MOŻLIWY SCENARIUSZ' | 'MOŻLIWE SCENARIUSZE' | 'SKRAJNY SCENARIUSZ' | 'ODPOWIEDŹ';
+export type SceneStatus = 'today' | 'history' | 'incident' | 'possible' | 'possibleMany' | 'extreme' | 'answer';
 
 export type ChainStepId = 'praca' | 'dochod' | 'zakupy' | 'podatki' | 'zaufanie' | 'ai' | 'kontrola' | 'ludzie' | 'panstwo' | 'zasady';
 

@@ -43,6 +43,9 @@ section[id] { scroll-margin-top: 0; }
 .uw-header a { pointer-events: auto; }
 .uw-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .uw-brand span { width: 18px; height: 18px; border: 1px solid var(--paper); border-radius: 50%; background: radial-gradient(circle, var(--signal) 0 3px, transparent 4px); }
+.uw-header-right { display: flex; align-items: center; gap: 22px; }
+.uw-lang { pointer-events: auto; padding: 5px 9px; border: 1px solid rgba(238, 236, 230, 0.3); border-radius: 99px; color: var(--paper); text-decoration: none; transition: border-color 0.2s ease; }
+.uw-lang:hover { border-color: var(--paper); }
 .uw-domino { opacity: 0; transition: opacity 0.4s ease; pointer-events: none; }
 .uw-domino.is-visible { opacity: 1; pointer-events: auto; }
 .uw-domino ol { display: flex; gap: 6px; margin: 0; padding: 0; list-style: none; }

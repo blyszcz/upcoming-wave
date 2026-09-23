@@ -1,12 +1,14 @@
 'use client';
 
 import clsx from '../../lib/clsx';
-import { split } from '../../content/pl/closing';
+import { useContent } from '../../content/ContentProvider';
 import { useInView } from '../../hooks/useInView';
 import { SceneBand } from '../SceneBand/SceneBand';
 import { ShareButton } from '../ShareButton/ShareButton';
 
-const Half = ({ side, align }: { side: typeof split.left; align: 'left' | 'right' }) => (
+type Side = { image: string; alt: string; label: string; text: string; quote: string };
+
+const Half = ({ side, align }: { side: Side; align: 'left' | 'right' }) => (
   <figure className={clsx('uw-split-half', `is-${align}`)}>
     <img src={side.image} alt={side.alt} loading="lazy" />
     <figcaption>
@@ -18,13 +20,14 @@ const Half = ({ side, align }: { side: typeof split.left; align: 'left' | 'right
 );
 
 export const SplitScene = () => {
+  const { split, ui } = useContent();
   const { ref, isInView } = useInView<HTMLElement>(0.25);
 
   return (
     <>
       <section ref={ref} id={split.id} data-chain="panstwo" className={clsx('uw-split', isInView && 'is-in-view')} aria-labelledby={`${split.id}-title`}>
         <div className="uw-split-copy">
-          <p className="uw-eyebrow">{split.number} / {split.label}<b>{split.status}</b></p>
+          <p className="uw-eyebrow">{split.number} / {split.label}<b>{ui.status[split.status]}</b></p>
           <h2 id={`${split.id}-title`} className="uw-title">{split.title.lead} <em>{split.title.accent}</em></h2>
           <ShareButton sectionId={split.id} title={`${split.title.lead} ${split.title.accent}`} />
         </div>

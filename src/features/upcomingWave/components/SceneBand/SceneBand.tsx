@@ -1,3 +1,6 @@
+'use client';
+
+import { useContent } from '../../content/ContentProvider';
 import { BarCompare } from '../BarCompare/BarCompare';
 import { Contrast } from '../Contrast/Contrast';
 import { EvidenceGrid } from '../EvidenceGrid/EvidenceGrid';
@@ -31,8 +34,12 @@ const renderBlock = (block: BandBlock) => {
   }
 };
 
-export const SceneBand = ({ id, chain, blocks }: SceneBandProps) => (
-  <section id={id} data-chain={chain} className="uw-band" aria-label="Fakty i źródła">
+export const SceneBand = ({ id, chain, blocks }: SceneBandProps) => {
+  const { ui } = useContent();
+
+  return (
+  <section id={id} data-chain={chain} className="uw-band" aria-label={ui.factsAria}>
     <BandBlocks blocks={blocks} />
   </section>
-);
+  );
+};

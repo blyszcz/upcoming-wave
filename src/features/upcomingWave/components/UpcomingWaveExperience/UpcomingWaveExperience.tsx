@@ -2,9 +2,8 @@
 
 import { useCallback, useRef, useState } from 'react';
 
-import { scenes } from '../../content/pl/scenes';
-import { site } from '../../content/pl/site';
-import { story } from '../../content/pl/story';
+import { ContentProvider, useContent } from '../../content/ContentProvider';
+import { locales } from '../../content/locales';
 import { AccelerationSection } from '../AccelerationSection/AccelerationSection';
 import { ExplainSlider } from '../ExplainSlider/ExplainSlider';
 import { FinaleSection } from '../FinaleSection/FinaleSection';
@@ -15,12 +14,13 @@ import { StoryScene } from '../StoryScene/StoryScene';
 import { VoicesSection } from '../VoicesSection/VoicesSection';
 import { useSectionHash } from '../../hooks/useSectionHash';
 
+import type { Locale } from '../../content/locales';
 import type { StoryItem } from '../../content/pl/story';
 import type { Scene } from '../../types/scene.types';
 
-const sceneById = new Map(scenes.map((scene) => [scene.id, scene]));
-
-export const UpcomingWaveExperience = () => {
+const Story = () => {
+  const { scenes, site, story } = useContent();
+  const sceneById = new Map(scenes.map((scene) => [scene.id, scene]));
   const [explainScene, setExplainScene] = useState<Scene | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
   useSectionHash();
@@ -66,3 +66,9 @@ export const UpcomingWaveExperience = () => {
     </main>
   );
 };
+
+export const UpcomingWaveExperience = ({ locale = 'pl' }: { locale?: Locale }) => (
+  <ContentProvider content={locales[locale]}>
+    <Story />
+  </ContentProvider>
+);

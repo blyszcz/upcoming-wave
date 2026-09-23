@@ -3,12 +3,14 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import clsx from '../../lib/clsx';
+import { useContent } from '../../content/ContentProvider';
 
 import type { ExplainSliderProps } from './ExplainSlider.types';
 
 const SWIPE_THRESHOLD_PX = 50;
 
 export const ExplainSlider = ({ scene, onClose }: ExplainSliderProps) => {
+  const { ui } = useContent();
   const [active, setActive] = useState(0);
   const dialogRef = useRef<HTMLDivElement>(null);
   const pointerStartX = useRef<number | null>(null);
@@ -64,8 +66,8 @@ export const ExplainSlider = ({ scene, onClose }: ExplainSliderProps) => {
       onPointerUp={(event) => onPointerUp(event.clientX)}
     >
       <div className="uw-explain-top">
-        <p id={titleId} className="uw-eyebrow">Dlaczego? · {scene.title.lead} {scene.title.accent}</p>
-        <button type="button" className="uw-round-button" onClick={onClose} aria-label="Zamknij wyjaśnienie">×</button>
+        <p id={titleId} className="uw-eyebrow">{ui.explain.eyebrow} · {scene.title.lead} {scene.title.accent}</p>
+        <button type="button" className="uw-round-button" onClick={onClose} aria-label={ui.explain.close}>×</button>
       </div>
 
       <div className="uw-explain-progress" aria-hidden="true">
@@ -78,15 +80,15 @@ export const ExplainSlider = ({ scene, onClose }: ExplainSliderProps) => {
             key={step.title}
             className={clsx('uw-explain-slide', index === active && 'is-active')}
             aria-hidden={index !== active}
-            aria-roledescription="slajd"
-            aria-label={`Krok ${index + 1} z ${scene.explain.length}`}
+            aria-roledescription={ui.explain.slide}
+            aria-label={ui.explain.stepOf(index + 1, scene.explain.length)}
           >
             <div className="uw-explain-media"><img src={step.image} alt={step.alt} draggable={false} /></div>
             <div className="uw-explain-copy">
-              <p className="uw-step-number">Krok {String(index + 1).padStart(2, '0')}<span> / {String(scene.explain.length).padStart(2, '0')}</span></p>
+              <p className="uw-step-number">{ui.explain.step} {String(index + 1).padStart(2, '0')}<span> / {String(scene.explain.length).padStart(2, '0')}</span></p>
               <h3>{step.title}</h3>
               <p>{step.copy}</p>
-              <ol className="uw-chain" aria-label="Łańcuch przyczyn">
+              <ol className="uw-chain" aria-label={ui.explain.chainAria}>
                 {scene.explain.map((chainStep, chainIndex) => (
                   <li key={chainStep.label} className={clsx(chainIndex === index && 'is-current', chainIndex < index && 'is-past')}>{chainStep.label}</li>
                 ))}
@@ -97,11 +99,11 @@ export const ExplainSlider = ({ scene, onClose }: ExplainSliderProps) => {
       </div>
 
       <div className="uw-explain-controls">
-        <button type="button" className="uw-round-button" onClick={() => go(active - 1)} disabled={active === 0} aria-label="Poprzedni krok">←</button>
+        <button type="button" className="uw-round-button" onClick={() => go(active - 1)} disabled={active === 0} aria-label={ui.explain.prev}>←</button>
         <span aria-live="polite">{String(active + 1).padStart(2, '0')} / {String(scene.explain.length).padStart(2, '0')}</span>
         {active < lastIndex
-          ? <button type="button" className="uw-round-button is-primary" onClick={() => go(active + 1)} aria-label="Następny krok">→</button>
-          : <button type="button" className="uw-pill-button" onClick={onClose}>Rozumiem <span aria-hidden="true">↓</span></button>}
+          ? <button type="button" className="uw-round-button is-primary" onClick={() => go(active + 1)} aria-label={ui.explain.next}>→</button>
+          : <button type="button" className="uw-pill-button" onClick={onClose}>{ui.explain.done} <span aria-hidden="true">↓</span></button>}
       </div>
     </div>
   );

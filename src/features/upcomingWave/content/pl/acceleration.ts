@@ -1,4 +1,4 @@
-import type { EvidenceItem, Source } from '../../types/scene.types';
+import type { EvidenceItem, SceneStatus, Source } from '../../types/scene.types';
 
 export type HorizonPoint = { model: string; date: string; minutes: number; uncertain?: boolean; milestone?: { value: string; note: string } };
 
@@ -24,7 +24,7 @@ export const acceleration = {
   id: 'przyspieszenie',
   number: '08',
   label: 'JAK SZYBKO TO IDZIE',
-  status: 'DZIŚ' as const,
+  status: 'today' as SceneStatus,
   title: { lead: 'AI uczy się budować AI.', accent: 'I przyspiesza.' },
   pond: {
     title: 'Zagadka o stawie',

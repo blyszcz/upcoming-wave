@@ -1,4 +1,4 @@
-import type { BandBlock } from '../../types/scene.types';
+import type { BandBlock, SceneStatus } from '../../types/scene.types';
 
 const book = { label: '„Nadchodząca fala”' };
 
@@ -6,7 +6,7 @@ export const split = {
   id: 'dwie-drogi',
   number: '11',
   label: 'KTO WTEDY RZĄDZI',
-  status: 'MOŻLIWE SCENARIUSZE',
+  status: 'possibleMany' as SceneStatus,
   title: { lead: 'Kto wtedy rządzi?', accent: 'Dwie drogi.' },
   left: {
     image: '/images/v2/split-zombie-v2.jpg',

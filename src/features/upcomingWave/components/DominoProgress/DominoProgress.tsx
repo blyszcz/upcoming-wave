@@ -3,11 +3,12 @@
 import { useEffect, useState } from 'react';
 
 import clsx from '../../lib/clsx';
-import { chain } from '../../content/pl/chain';
+import { useContent } from '../../content/ContentProvider';
 
 const SHOW_AFTER_PX = 80;
 
 export const DominoProgress = () => {
+  const { chain, ui } = useContent();
   const [activeIndex, setActiveIndex] = useState(-1);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -29,12 +30,12 @@ export const DominoProgress = () => {
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => { observer.disconnect(); window.removeEventListener('scroll', onScroll); };
-  }, []);
+  }, [chain]);
 
   const current = chain[activeIndex];
 
   return (
-    <nav className={clsx('uw-domino', isScrolled && 'is-visible')} aria-label="Łańcuch skutków">
+    <nav className={clsx('uw-domino', isScrolled && 'is-visible')} aria-label={ui.dominoAria}>
       <ol>
         {chain.map((step, index) => (
           <li key={step.id} className={clsx(index < activeIndex && 'is-past', index === activeIndex && 'is-current')} aria-current={index === activeIndex ? 'step' : undefined}>
