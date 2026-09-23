@@ -42,10 +42,9 @@ export const finale = {
   title: { lead: 'Nie zatrzymać postępu.', accent: 'Ustalić granice.' },
   quote: '„To nie jej los właśnie się decyduje, tylko nasz.”',
   quoteSource: 'Mustafa Suleyman, „Nadchodząca fala”',
-  newsletter: {
-    lead: 'Raz w miesiącu, 5 minut czytania: co ważnego zmieniło się w AI i jakie zasady powstają. Bez spamu, wypiszesz się jednym kliknięciem.',
-    placeholder: 'Twój e-mail',
-    button: 'Zapisz mnie',
-    done: 'Zapisano ✓',
+  follow: {
+    lead: 'Chcesz wiedzieć, co dalej? Nowe dane, incydenty i zasady — piszę o tym na X.',
+    label: 'Obserwuj @blyzbyte na X',
+    href: 'https://x.com/blyzbyte',
   },
 };
