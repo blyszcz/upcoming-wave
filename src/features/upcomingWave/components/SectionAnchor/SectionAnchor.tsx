@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import { useContent } from '../../content/ContentProvider';
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
 const COPIED_MS = 1500;
 

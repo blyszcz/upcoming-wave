@@ -1,8 +1,8 @@
 'use client';
 
-import { useContent } from '../../content/ContentProvider';
-import { LOCALE_STORAGE_KEY } from '../../lib/localePreference';
-import { DominoProgress } from '../DominoProgress/DominoProgress';
+import { DominoProgress } from '@features/upcomingWave/components/DominoProgress/DominoProgress';
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
+import { LOCALE_STORAGE_KEY } from '@features/upcomingWave/lib/localePreference';
 
 export const StoryHeader = () => {
   const { ui } = useContent();

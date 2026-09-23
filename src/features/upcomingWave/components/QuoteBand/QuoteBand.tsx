@@ -1,9 +1,10 @@
 'use client';
 
-import { useContent } from '../../content/ContentProvider';
-import { SourceLink } from '../SceneBand/SourceLink';
+import type { Source } from '@features/upcomingWave/types/scene.types';
 
-import type { Source } from '../../types/scene.types';
+import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
+
 
 type QuoteBandProps = { quote: string; person: string; role: string; source: Source };
 

@@ -1,9 +1,9 @@
 'use client';
 
+import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 
-import clsx from '../../lib/clsx';
-import { useContent } from '../../content/ContentProvider';
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
 const SHOW_AFTER_PX = 80;
 

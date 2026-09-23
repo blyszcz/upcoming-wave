@@ -1,4 +1,4 @@
-import type { Source } from '../../types/scene.types';
+import type { Source } from '@features/upcomingWave/types/scene.types';
 
 export const SourceLink = ({ source }: { source: Source }) => (
   source.url

@@ -1,4 +1,4 @@
-import type { EvidenceItem, SceneStatus, Source } from '../../types/scene.types';
+import type { EvidenceItem, SceneStatus, Source } from '@features/upcomingWave/types/scene.types';
 
 export type HorizonPoint = { model: string; date: string; minutes: number; uncertain?: boolean; milestone?: { value: string; note: string } };
 

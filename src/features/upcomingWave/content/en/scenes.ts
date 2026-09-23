@@ -1,6 +1,7 @@
-import { sceneImages as images, sceneSources as plSources } from '../pl/scenes';
+import type { Scene } from '@features/upcomingWave/types/scene.types';
 
-import type { Scene } from '../../types/scene.types';
+import { sceneImages as images, sceneSources as plSources } from '@features/upcomingWave/content/pl/scenes';
+
 
 // Expert quotes use their original English wording. Book quotes are translated from the
 // Polish edition — verify against the English edition of “The Coming Wave” before publishing.

@@ -1,9 +1,9 @@
 'use client';
 
+import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 
-import clsx from '../../lib/clsx';
-import { useInView } from '../../hooks/useInView';
+import { useInView } from '@features/upcomingWave/hooks/useInView';
 
 type LoopDiagramProps = { title: string; steps: string[]; caption: string };
 

@@ -1,7 +1,9 @@
-import clsx from '../../lib/clsx';
-import { SourceLink } from '../SceneBand/SourceLink';
+import clsx from 'clsx';
 
-import type { Source, TaxPart } from '../../types/scene.types';
+import type { Source, TaxPart } from '@features/upcomingWave/types/scene.types';
+
+import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
+
 
 type TaxSplitProps = { title: string; subtitle: string; parts: TaxPart[]; caption: string; countries: { name: string; value: number }[]; countriesLabel: string; source: Source };
 

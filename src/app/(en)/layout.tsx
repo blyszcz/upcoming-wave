@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 
-import { localeRedirectScript } from '@/features/upcomingWave/lib/localePreference';
+import { fontVariables } from '@/app/fonts';
+import { localeRedirectScript } from '@features/upcomingWave/lib/localePreference';
 
-import { fontVariables } from '../fonts';
 import '../globals.css';
 
 export const metadata: Metadata = {

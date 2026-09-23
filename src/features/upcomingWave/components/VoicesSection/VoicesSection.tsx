@@ -1,9 +1,11 @@
 'use client';
 
-import clsx from '../../lib/clsx';
-import { useContent } from '../../content/ContentProvider';
+import clsx from 'clsx';
 
-import type { Voice } from '../../types/voice.types';
+import type { Voice } from '@features/upcomingWave/types/voice.types';
+
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
+
 
 const VoiceCard = ({ voice }: { voice: Voice }) => {
   const { ui } = useContent();

@@ -1,6 +1,7 @@
-import { SourceLink } from '../SceneBand/SourceLink';
+import type { BarItem, Source } from '@features/upcomingWave/types/scene.types';
 
-import type { BarItem, Source } from '../../types/scene.types';
+import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
+
 
 type BarCompareProps = { title: string; subtitle: string; bars: BarItem[]; caption: string; source: Source };
 

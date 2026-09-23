@@ -1,4 +1,4 @@
-import type { ChainStepId } from '../../types/scene.types';
+import type { ChainStepId } from '@features/upcomingWave/types/scene.types';
 
 export const chain: { id: ChainStepId; label: string; target: string }[] = [
   { id: 'work', target: 'who-will-resist', label: 'Work' },

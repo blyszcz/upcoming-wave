@@ -1,4 +1,4 @@
-import type { BandBlock } from '../../types/scene.types';
+import type { BandBlock } from '@features/upcomingWave/types/scene.types';
 
 const sources = { book: { label: '„Nadchodząca fala”' } };
 

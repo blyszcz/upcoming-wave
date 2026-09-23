@@ -1,7 +1,7 @@
 'use client';
 
-import { useContent } from '../../content/ContentProvider';
-import { HeroCompare } from '../HeroCompare/HeroCompare';
+import { HeroCompare } from '@features/upcomingWave/components/HeroCompare/HeroCompare';
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
 export const HeroScene = () => {
   const { hero } = useContent();

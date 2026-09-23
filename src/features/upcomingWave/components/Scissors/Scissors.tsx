@@ -1,8 +1,9 @@
 'use client';
 
-import clsx from '../../lib/clsx';
-import { useContent } from '../../content/ContentProvider';
-import { useInView } from '../../hooks/useInView';
+import clsx from 'clsx';
+
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
+import { useInView } from '@features/upcomingWave/hooks/useInView';
 
 type ScissorsProps = { title: string; income: string; spending: string; caption: string };
 

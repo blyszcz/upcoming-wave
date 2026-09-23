@@ -1,11 +1,12 @@
 'use client';
 
+import clsx from 'clsx';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-import clsx from '../../lib/clsx';
-import { useContent } from '../../content/ContentProvider';
-
 import type { ExplainSliderProps } from './ExplainSlider.types';
+
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
+
 
 const SWIPE_THRESHOLD_PX = 50;
 

@@ -1,11 +1,11 @@
 'use client';
 
-import { useContent } from '../../content/ContentProvider';
-import { EvidenceGrid } from '../EvidenceGrid/EvidenceGrid';
-import { GrowthChart } from '../GrowthChart/GrowthChart';
-import { LilyPond } from '../LilyPond/LilyPond';
-import { QuoteBand } from '../QuoteBand/QuoteBand';
-import { SectionAnchor } from '../SectionAnchor/SectionAnchor';
+import { EvidenceGrid } from '@features/upcomingWave/components/EvidenceGrid/EvidenceGrid';
+import { GrowthChart } from '@features/upcomingWave/components/GrowthChart/GrowthChart';
+import { LilyPond } from '@features/upcomingWave/components/LilyPond/LilyPond';
+import { QuoteBand } from '@features/upcomingWave/components/QuoteBand/QuoteBand';
+import { SectionAnchor } from '@features/upcomingWave/components/SectionAnchor/SectionAnchor';
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
 export const AccelerationSection = ({ number }: { number: string }) => {
   const { acceleration, horizonPoints, ui } = useContent();

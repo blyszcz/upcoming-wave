@@ -1,14 +1,15 @@
 'use client';
 
+import clsx from 'clsx';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
-import clsx from '../../lib/clsx';
-import { useContent } from '../../content/ContentProvider';
-import { useInView } from '../../hooks/useInView';
-import { SourceLink } from '../SceneBand/SourceLink';
+import type { HorizonPoint } from '@features/upcomingWave/content/pl/acceleration';
+import type { Source } from '@features/upcomingWave/types/scene.types';
 
-import type { HorizonPoint } from '../../content/pl/acceleration';
-import type { Source } from '../../types/scene.types';
+import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
+import { useInView } from '@features/upcomingWave/hooks/useInView';
+
 
 type GrowthChartProps = { title: string; subtitle: string; note: string; source: Source; points: HorizonPoint[]; doublingMonths: number };
 

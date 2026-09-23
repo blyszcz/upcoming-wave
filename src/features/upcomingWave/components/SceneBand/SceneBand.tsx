@@ -1,17 +1,18 @@
 'use client';
 
-import { useContent } from '../../content/ContentProvider';
-import { BarCompare } from '../BarCompare/BarCompare';
-import { Contrast } from '../Contrast/Contrast';
-import { EvidenceGrid } from '../EvidenceGrid/EvidenceGrid';
-import { LoopDiagram } from '../LoopDiagram/LoopDiagram';
-import { QuoteBand } from '../QuoteBand/QuoteBand';
-import { Scissors } from '../Scissors/Scissors';
-import { StatRow } from '../StatRow/StatRow';
-import { TaxSplit } from '../TaxSplit/TaxSplit';
-import { Timeline } from '../Timeline/Timeline';
+import type { BandBlock, ChainStepId } from '@features/upcomingWave/types/scene.types';
 
-import type { BandBlock, ChainStepId } from '../../types/scene.types';
+import { BarCompare } from '@features/upcomingWave/components/BarCompare/BarCompare';
+import { Contrast } from '@features/upcomingWave/components/Contrast/Contrast';
+import { EvidenceGrid } from '@features/upcomingWave/components/EvidenceGrid/EvidenceGrid';
+import { LoopDiagram } from '@features/upcomingWave/components/LoopDiagram/LoopDiagram';
+import { QuoteBand } from '@features/upcomingWave/components/QuoteBand/QuoteBand';
+import { Scissors } from '@features/upcomingWave/components/Scissors/Scissors';
+import { StatRow } from '@features/upcomingWave/components/StatRow/StatRow';
+import { TaxSplit } from '@features/upcomingWave/components/TaxSplit/TaxSplit';
+import { Timeline } from '@features/upcomingWave/components/Timeline/Timeline';
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
+
 
 type SceneBandProps = { id: string; chain?: ChainStepId; blocks: BandBlock[] };
 

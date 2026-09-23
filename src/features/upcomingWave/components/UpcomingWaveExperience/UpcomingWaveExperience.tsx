@@ -2,22 +2,23 @@
 
 import { useCallback, useRef, useState } from 'react';
 
-import { ContentProvider, useContent } from '../../content/ContentProvider';
-import { locales } from '../../content/locales';
-import { AccelerationSection } from '../AccelerationSection/AccelerationSection';
-import { CalmSection } from '../CalmSection/CalmSection';
-import { ExplainSlider } from '../ExplainSlider/ExplainSlider';
-import { FinaleSection } from '../FinaleSection/FinaleSection';
-import { HeroScene } from '../HeroScene/HeroScene';
-import { SplitScene } from '../SplitScene/SplitScene';
-import { StoryHeader } from '../StoryHeader/StoryHeader';
-import { StoryScene } from '../StoryScene/StoryScene';
-import { VoicesSection } from '../VoicesSection/VoicesSection';
-import { useSectionHash } from '../../hooks/useSectionHash';
+import type { Locale } from '@features/upcomingWave/content/locales';
+import type { StoryItem } from '@features/upcomingWave/content/pl/story';
+import type { Scene } from '@features/upcomingWave/types/scene.types';
 
-import type { Locale } from '../../content/locales';
-import type { StoryItem } from '../../content/pl/story';
-import type { Scene } from '../../types/scene.types';
+import { AccelerationSection } from '@features/upcomingWave/components/AccelerationSection/AccelerationSection';
+import { CalmSection } from '@features/upcomingWave/components/CalmSection/CalmSection';
+import { ExplainSlider } from '@features/upcomingWave/components/ExplainSlider/ExplainSlider';
+import { FinaleSection } from '@features/upcomingWave/components/FinaleSection/FinaleSection';
+import { HeroScene } from '@features/upcomingWave/components/HeroScene/HeroScene';
+import { SplitScene } from '@features/upcomingWave/components/SplitScene/SplitScene';
+import { StoryHeader } from '@features/upcomingWave/components/StoryHeader/StoryHeader';
+import { StoryScene } from '@features/upcomingWave/components/StoryScene/StoryScene';
+import { VoicesSection } from '@features/upcomingWave/components/VoicesSection/VoicesSection';
+import { ContentProvider, useContent } from '@features/upcomingWave/content/ContentProvider';
+import { locales } from '@features/upcomingWave/content/locales';
+import { useSectionHash } from '@features/upcomingWave/hooks/useSectionHash';
+
 
 const Story = () => {
   const { scenes, site, story } = useContent();

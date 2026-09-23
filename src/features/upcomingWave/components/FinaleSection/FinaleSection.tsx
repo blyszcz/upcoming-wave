@@ -1,6 +1,6 @@
 'use client';
 
-import { useContent } from '../../content/ContentProvider';
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
 export const FinaleSection = ({ number }: { number: string }) => {
   const { finale, ui } = useContent();

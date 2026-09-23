@@ -2,8 +2,8 @@
 
 import { createContext, useContext } from 'react';
 
-import type { ReactNode } from 'react';
 import type { Content } from './pl';
+import type { ReactNode } from 'react';
 
 const ContentContext = createContext<Content | null>(null);
 

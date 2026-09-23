@@ -1,3 +1,5 @@
+import type { Content } from '@features/upcomingWave/content/pl';
+
 import { acceleration, horizonPoints } from './acceleration';
 import { calm } from './calm';
 import { chain } from './chain';
@@ -9,6 +11,5 @@ import { story } from './story';
 import { ui } from './ui';
 import { voices } from './voices';
 
-import type { Content } from '../pl';
 
 export const en: Content = { acceleration, horizonPoints, calm, chain, finale, split, hero, scenes, site, story, ui, voices };

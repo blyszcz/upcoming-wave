@@ -1,6 +1,7 @@
-import { SourceLink } from '../SceneBand/SourceLink';
+import type { Source, TimelineStep } from '@features/upcomingWave/types/scene.types';
 
-import type { Source, TimelineStep } from '../../types/scene.types';
+import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
+
 
 type TimelineProps = { title: string; steps: TimelineStep[]; footnote: string; sources: Source[] };
 

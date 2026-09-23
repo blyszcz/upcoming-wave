@@ -1,4 +1,4 @@
-import type { Voice } from '../../types/voice.types';
+import type { Voice } from '@features/upcomingWave/types/voice.types';
 
 // Original English wording of every quote (verified against the linked source).
 // The Suleyman line is translated from the Polish edition — verify against the English edition.

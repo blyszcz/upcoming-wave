@@ -1,5 +1,5 @@
-import type { HorizonPoint } from '../pl/acceleration';
-import type { EvidenceItem, SceneStatus, Source } from '../../types/scene.types';
+import type { HorizonPoint } from '@features/upcomingWave/content/pl/acceleration';
+import type { EvidenceItem, SceneStatus, Source } from '@features/upcomingWave/types/scene.types';
 
 const metr: Source = { label: 'METR Time Horizons', url: 'https://metr.org/time-horizons/' };
 

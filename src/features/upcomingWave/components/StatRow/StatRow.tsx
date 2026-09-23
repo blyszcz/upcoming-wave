@@ -1,6 +1,7 @@
-import { SourceLink } from '../SceneBand/SourceLink';
+import type { StatItem } from '@features/upcomingWave/types/scene.types';
 
-import type { StatItem } from '../../types/scene.types';
+import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
+
 
 export const StatRow = ({ items }: { items: StatItem[] }) => (
   <dl className="uw-stats">

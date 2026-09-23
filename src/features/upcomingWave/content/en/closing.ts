@@ -1,4 +1,4 @@
-import type { BandBlock, SceneStatus } from '../../types/scene.types';
+import type { BandBlock, SceneStatus } from '@features/upcomingWave/types/scene.types';
 
 // Book quotes below are translated from the Polish edition — verify against the English edition before publishing.
 const book = { label: '“The Coming Wave”' };

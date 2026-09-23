@@ -2,8 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-import { useContent } from '../../content/ContentProvider';
-import { useInView } from '../../hooks/useInView';
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
+import { useInView } from '@features/upcomingWave/hooks/useInView';
 
 type LilyPondProps = { title: string; copy: string; answer: string };
 

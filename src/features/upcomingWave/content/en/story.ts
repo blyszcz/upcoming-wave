@@ -1,1 +1,1 @@
-export { story } from '../pl/story';
+export { story } from '@features/upcomingWave/content/pl/story';

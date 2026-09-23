@@ -1,14 +1,16 @@
 'use client';
 
-import clsx from '../../lib/clsx';
-import { useContent } from '../../content/ContentProvider';
-import { useInView } from '../../hooks/useInView';
-import { SceneBand } from '../SceneBand/SceneBand';
-import { SectionAnchor } from '../SectionAnchor/SectionAnchor';
+import clsx from 'clsx';
 
-import type { CSSProperties } from 'react';
-import type { ScenePanel } from '../../types/scene.types';
 import type { StorySceneProps } from './StoryScene.types';
+import type { ScenePanel } from '@features/upcomingWave/types/scene.types';
+import type { CSSProperties } from 'react';
+
+import { SceneBand } from '@features/upcomingWave/components/SceneBand/SceneBand';
+import { SectionAnchor } from '@features/upcomingWave/components/SectionAnchor/SectionAnchor';
+import { useContent } from '@features/upcomingWave/content/ContentProvider';
+import { useInView } from '@features/upcomingWave/hooks/useInView';
+
 
 const PanelImage = ({ panel }: { panel: ScenePanel }) => (
   <div className="uw-panel-media">

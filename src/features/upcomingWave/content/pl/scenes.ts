@@ -1,4 +1,4 @@
-import type { Scene } from '../../types/scene.types';
+import type { Scene } from '@features/upcomingWave/types/scene.types';
 
 const images = {
   layoffs: '/images/v2/threat-02-layoffs-v1.jpg',

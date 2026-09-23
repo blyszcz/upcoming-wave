@@ -1,4 +1,4 @@
-import type { SceneStatus } from '../../types/scene.types';
+import type { SceneStatus } from '@features/upcomingWave/types/scene.types';
 
 export const ui = {
   lang: 'pl',
