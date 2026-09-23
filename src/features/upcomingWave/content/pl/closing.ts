@@ -60,7 +60,7 @@ export const finale = {
   quote: '„To nie jej los właśnie się decyduje, tylko nasz.”',
   quoteSource: 'Mustafa Suleyman, „Nadchodząca fala”',
   newsletter: {
-    lead: 'Krótko i po ludzku: co zmienia AI i jakie zasady powstają. Raz w miesiącu.',
+    lead: 'Raz w miesiącu, 5 minut czytania: co ważnego zmieniło się w AI i jakie zasady powstają. Bez spamu, wypiszesz się jednym kliknięciem.',
     placeholder: 'Twój e-mail',
     button: 'Zapisz mnie',
     done: 'Zapisano ✓',
