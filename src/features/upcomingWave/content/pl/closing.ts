@@ -6,7 +6,7 @@ export const split = {
   id: 'dwie-drogi',
   number: '11',
   label: 'KTO WTEDY RZĄDZI',
-  status: 'SKRAJNY SCENARIUSZ',
+  status: 'MOŻLIWE SCENARIUSZE',
   title: { lead: 'Kto wtedy rządzi?', accent: 'Dwie drogi.' },
   left: {
     image: '/images/v2/split-zombie-v2.jpg',
@@ -19,8 +19,8 @@ export const split = {
     image: '/images/v2/split-leviathan-v1.jpg',
     alt: 'Miasto nocą pod kamerami i dronami, które skanują tłum.',
     label: 'Państwo pełnej kontroli',
-    text: 'Władza utrzymuje porządek, śledząc każdego z nas. Kamery i AI na każdym kroku.',
-    quote: '„władza poza najbardziej drastyczne rządy totalitarne w historii”',
+    text: 'Zaczyna się niewinnie: kamery dla bezpieczeństwa, AI do łapania przestępców. Krok po kroku władza wie o nas wszystko.',
+    quote: '„Mnożące się awarie technologii na mniejszą skalę pociągną za sobą apele o zacieśnienie nadzoru.”',
   },
   path: { label: 'Wąska ścieżka', href: '#zasady' },
   band: [
