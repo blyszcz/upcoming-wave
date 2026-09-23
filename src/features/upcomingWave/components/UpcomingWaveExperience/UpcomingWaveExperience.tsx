@@ -3,6 +3,7 @@
 import { useCallback, useRef, useState } from 'react';
 
 import { scenes } from '../../content/pl/scenes';
+import { AccelerationSection } from '../AccelerationSection/AccelerationSection';
 import { ExplainSlider } from '../ExplainSlider/ExplainSlider';
 import { HeroScene } from '../HeroScene/HeroScene';
 import { StoryHeader } from '../StoryHeader/StoryHeader';
@@ -31,8 +32,9 @@ export const UpcomingWaveExperience = () => {
       <HeroScene />
       <VoicesSection />
       {scenes.map((scene) => <StoryScene key={scene.id} scene={scene} onExplain={openExplain} />)}
+      <AccelerationSection />
       <footer className="uw-footer">
-        <p>Dalej: <b>06 / Państwo żyje z twojej pracy</b> — w przygotowaniu</p>
+        <p>W przygotowaniu: <b>06–07</b> oraz <b>09–14</b></p>
         <p>Na podstawie książki „Nadchodząca fala” (M. Suleyman, M. Bhaskar). Scenariusze to możliwe ryzyka, nie prognozy.</p>
       </footer>
       {explainScene && <ExplainSlider scene={explainScene} onClose={closeExplain} />}
