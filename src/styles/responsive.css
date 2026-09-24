@@ -32,7 +32,7 @@
   .uw-bars li { grid-template-columns: 1fr; gap: 8px; }
   .uw-loop-ring { display: none; }
   /* Hero on phones: the two-futures photo is a band on top, the copy sits below it on ink. */
-  .uw-hero { --hero-band: max(300px, 46svh); display: block; min-height: 0; }
+  .uw-hero { --hero-band: max(300px, 50svh); display: block; min-height: 100svh; }
   .uw-compare, .uw-hero-shade { bottom: auto; height: var(--hero-band); }
   .uw-hero-shade { background: linear-gradient(0deg, var(--ink) 0%, rgba(7, 11, 16, 0) 38%); }
   .uw-compare-divider { bottom: auto; height: var(--hero-band); }
@@ -41,7 +41,9 @@
   .uw-compare-label { top: auto; bottom: 26px; font-size: 9.5px; padding: 6px 9px; transform: none; }
   .uw-compare-label.is-dark { right: 30px; }
   .uw-compare-label.is-hope { left: 30px; }
-  .uw-hero-copy { gap: 20px; max-width: none; padding: calc(var(--hero-band) - 18px) var(--gutter) 44px; }
+  /* At least one full screen: the copy fills the space under the photo and the button sits near the bottom. */
+  .uw-hero-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 22px; max-width: none; min-height: 100svh; padding: calc(var(--hero-band) + 6px) var(--gutter) max(36px, env(safe-area-inset-bottom)); }
+  .uw-hero-actions { margin-top: auto; padding-top: 10px; }
   .uw-hero-title { font-size: clamp(2.2rem, 9.8vw, 3.4rem); }
   .uw-hero-subtitle { margin-top: -6px; font-size: 1.05rem; }
   /* First screen on phones: headline, one line, the ask, and one button. The threats are covered in the chapters. */
