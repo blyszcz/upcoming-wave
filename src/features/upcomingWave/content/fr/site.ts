@@ -36,7 +36,7 @@ export const site = {
     code: { label: 'GitHub', issue: 'Signaler une erreur' },
     why: { title: 'Pourquoi cette page ?', text: 'Je parle beaucoup d’IA avec les gens, et je constate toujours la même chose : ce qui manque, ce ne sont pas les opinions, c’est le contexte - comprendre ce qui est réellement en jeu. J’ai donc décidé d’agir et de l’expliquer simplement, en images. Chaque fait renvoie à sa source.' },
     sources: 'Chaque fait renvoie à sa source. Les scénarios sont des risques, pas des prévisions.',
-    independence: 'Indépendant - sans lien avec les auteurs ni l’éditeur de « The Coming Wave ».',
+    independence: 'Projet indépendant et non commercial - sans lien avec aucune entreprise d’IA, aucun auteur ni éditeur.',
     author: { label: 'Réalisé par', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };

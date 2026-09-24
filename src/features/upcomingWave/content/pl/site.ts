@@ -36,7 +36,7 @@ export const site = {
     code: { label: 'GitHub', issue: 'Zgłoś błąd' },
     why: { title: 'Dlaczego ta strona?', text: 'Dużo rozmawiam z ludźmi o AI i ciągle widzę to samo: nie brakuje opinii, brakuje kontekstu - zrozumienia, o co naprawdę toczy się gra. Postanowiłem więc coś z tym zrobić i wytłumaczyć to prosto, obrazami. Przy każdym fakcie jest źródło.' },
     sources: 'Przy każdym fakcie jest źródło. Scenariusze to ryzyka, nie prognozy.',
-    independence: 'Niezależny projekt - niepowiązany z autorami ani wydawcą „Nadchodzącej fali”.',
+    independence: 'Niezależny, niekomercyjny projekt - niepowiązany z żadną firmą AI, autorem ani wydawcą.',
     author: { label: 'Zrobił', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };

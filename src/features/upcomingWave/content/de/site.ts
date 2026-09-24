@@ -36,7 +36,7 @@ export const site = {
     code: { label: 'GitHub', issue: 'Fehler melden' },
     why: { title: 'Warum diese Seite?', text: 'Ich spreche viel mit Menschen über KI und sehe immer wieder dasselbe: Es fehlen keine Meinungen, es fehlt Kontext - ein Verständnis dafür, was wirklich auf dem Spiel steht. Also wollte ich etwas dagegen tun und es einfach erklären, in Bildern. Jeder Fakt ist mit seiner Quelle verlinkt.' },
     sources: 'Jede Angabe verlinkt ihre Quelle. Szenarien sind Risiken, keine Prognosen.',
-    independence: 'Unabhängig - nicht verbunden mit den Autoren oder dem Verlag von „The Coming Wave“.',
+    independence: 'Unabhängiges, nichtkommerzielles Projekt - nicht verbunden mit KI-Unternehmen, Autoren oder Verlagen.',
     author: { label: 'Gemacht von', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };

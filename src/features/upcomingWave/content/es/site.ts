@@ -36,7 +36,7 @@ export const site = {
     code: { label: 'GitHub', issue: 'Informar de un error' },
     why: { title: '¿Por qué esta página?', text: 'Hablo mucho de IA con la gente y siempre veo lo mismo: no faltan opiniones, falta contexto - entender qué está realmente en juego. Así que decidí hacer algo al respecto y explicarlo de forma sencilla, con imágenes. Cada dato enlaza a su fuente.' },
     sources: 'Cada dato enlaza a su fuente. Los escenarios son riesgos, no predicciones.',
-    independence: 'Independiente: sin vínculo con los autores ni la editorial de «The Coming Wave».',
+    independence: 'Proyecto independiente y sin ánimo de lucro, sin vínculo con ninguna empresa de IA, autor ni editorial.',
     author: { label: 'Hecho por', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };

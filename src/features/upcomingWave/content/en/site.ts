@@ -37,7 +37,7 @@ export const site = {
     code: { label: 'GitHub', issue: 'Report a mistake' },
     why: { title: 'Why this page?', text: 'I talk to people about AI a lot, and I keep seeing the same thing: what’s missing isn’t opinions, it’s context - an understanding of what’s actually at stake. So I decided to do something about it and explain it simply, in pictures. Every fact links to its source.' },
     sources: 'Every fact links to its source. Scenarios are risks, not predictions.',
-    independence: 'Independent - not affiliated with the authors or publisher of “The Coming Wave”.',
+    independence: 'Independent, non-commercial project - not affiliated with any AI company, author or publisher.',
     author: { label: 'Made by', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };
