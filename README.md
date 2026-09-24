@@ -20,13 +20,13 @@ A short, image-driven explainer of what AI could do to work, money and power, wh
 3. **Four chapters:** Work · Money & the state · Speed & control · Who decides. Each chapter pairs a risk with its upside.
 4. **Rules**, then **What you can do**.
 
-English is the default (`/`); Polish lives at `/pl/`. Polish-language browsers are redirected on their first visit, and an explicit choice is remembered.
+English is the default (`/`). Polish, Spanish, Portuguese (Brazil), German, French and Japanese live under `/pl/`, `/es/`, `/pt/`, `/de/`, `/fr/` and `/ja/`. On the first visit, browsers are redirected to the first supported language they prefer, and a choice made in the language menu is remembered.
 
 ## Tech
 
 - [Next.js 15](https://nextjs.org) App Router with **static export** (`output: 'export'`). The build is plain HTML, CSS and JS in `out/` and needs no server.
 - React 19, TypeScript, plain CSS (no UI framework), `zod` for env validation.
-- Separate root layouts per language: `src/app/(en)` and `src/app/(pl)/pl`. Each has its own `lang`, metadata, hreflang and JSON-LD.
+- Root layouts: `src/app/(en)` for English and `src/app/(intl)/[locale]` for every other language, statically generated. Each has its own `lang`, metadata, hreflang and JSON-LD.
 - Photos: WebP in two widths plus `srcset`. They were generated for this project with OpenAI image models.
 
 ## Getting started
@@ -58,7 +58,7 @@ Copy `.env.example` to `.env.local` if you need to override the defaults.
 ```
 src/
   app/                    routes, layouts, metadata, sitemap, robots, 404
-    (en)/  (pl)/pl/       one root layout per language
+    (en)/  (intl)/[locale]/   English at /, other languages under /<code>/
   features/
     upcomingWave/
       components/         one folder per component (+ .types.ts)
@@ -66,6 +66,7 @@ src/
       content/archive/    frozen pre-restructure copy (dev-only /archive/)
       hooks/ context/ utils/ lib/ types/
     analytics/            GA4, loaded only after consent
+  routes/locales.ts       the list of languages
   routes/paths.ts         every URL in one place
   styles/                 plain CSS, one file per area
 public/
@@ -83,7 +84,10 @@ All text lives in `src/features/upcomingWave/content/{en,pl}/`:
 - `story.ts` sets the order of sections, `chain.ts` the progress bar in the header;
 - every fact carries a `source: { label, url? }`. The small source captions and the Sources page are generated from these fields. A source without a URL, such as the book, links to its entry on the Sources page.
 
-**Adding a language:** copy `content/en/` to `content/<lang>/`, translate it, register it in `content/locales.ts`, and add a root layout under `src/app/(<lang>)/<lang>/`, modelled on `(pl)/pl`.
+**Adding a language:**
+1. Add the code to `LOCALES` and `LOCALE_INFO` in `src/routes/locales.ts`. Routes, hreflang, the sitemap, the language menu and the browser-language redirect all follow from this list.
+2. Copy `content/en/` to `content/<code>/`, fix its imports, set `ui.lang`, translate the strings, and register it in `content/locales.ts`.
+3. Generate its link-preview card with `python3 scripts/og-cards.py` (see the script header).
 
 ## Deploy
 
