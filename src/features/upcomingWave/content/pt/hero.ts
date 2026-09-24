@@ -13,7 +13,7 @@ export const hero = {
   threatsLabel: 'Os próprios criadores da IA alertam para',
   threats: ['Demissões em massa', 'Cofres públicos vazios', 'Perda de controle sobre a IA', 'Armas biológicas feitas com ajuda da IA'],
   closing: 'Vários criadores da IA já pediram regras aos governos.',
-  note: 'Não estou aqui para assustar ninguém - estou aqui para explicar. Porque, com boas regras, a IA pode fazer um bem enorme.',
-  noteLink: { label: 'Veja o outro lado', href: '#the-stakes' },
+  note: '',
+  noteLink: { label: 'Veja o que pode dar certo', href: '#the-stakes' },
   cta: { label: 'Leia o que eles dizem', shortLabel: 'Veja por quê', href: '#voices' },
 };

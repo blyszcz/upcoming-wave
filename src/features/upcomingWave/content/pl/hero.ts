@@ -13,7 +13,7 @@ export const hero = {
   threatsLabel: 'Sami twórcy AI ostrzegają przed',
   threats: ['Masowymi zwolnieniami', 'Pustą kasą państwa', 'Utratą kontroli nad AI', 'Bronią biologiczną tworzoną z pomocą AI'],
   closing: 'Część twórców AI już poprosiła rządy o zasady.',
-  note: 'Nie straszę - tłumaczę. Bo jeśli ustalimy dobre zasady, AI może zdziałać ogromnie dużo dobrego.',
-  noteLink: { label: 'Zobacz drugą stronę', href: '#the-stakes' },
+  note: '',
+  noteLink: { label: 'Zobacz, co może pójść dobrze', href: '#the-stakes' },
   cta: { label: 'Przeczytaj ich słowa', shortLabel: 'Zobacz, dlaczego', href: '#voices' },
 };

@@ -13,7 +13,7 @@ export const hero = {
   threatsLabel: 'AI’s own builders warn about',
   threats: ['Mass layoffs', 'Empty public budgets', 'Losing control of AI', 'Bioweapons built with AI’s help'],
   closing: 'Several of AI’s own builders have asked governments for rules.',
-  note: 'I’m not here to scare you - I’m here to explain. Because if we set good rules, AI can do an enormous amount of good.',
-  noteLink: { label: 'See the other side', href: '#the-stakes' },
+  note: '',
+  noteLink: { label: 'See what could go right', href: '#the-stakes' },
   cta: { label: 'Read their words', shortLabel: 'See why', href: '#voices' },
 };

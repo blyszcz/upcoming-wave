@@ -13,7 +13,7 @@ export const hero = {
   threatsLabel: 'Ceux qui construisent l’IA mettent en garde contre',
   threats: ['Des licenciements massifs', 'Des caisses publiques vides', 'La perte de contrôle de l’IA', 'Des armes biologiques conçues avec l’aide de l’IA'],
   closing: 'Plusieurs créateurs d’IA ont déjà demandé des règles aux gouvernements.',
-  note: 'Je ne suis pas là pour vous faire peur - je suis là pour expliquer. Car si nous fixons de bonnes règles, l’IA peut faire énormément de bien.',
-  noteLink: { label: 'Voir l’autre versant', href: '#the-stakes' },
+  note: '',
+  noteLink: { label: 'Voir ce qui peut bien tourner', href: '#the-stakes' },
   cta: { label: 'Lire leurs propos', shortLabel: 'Voir pourquoi', href: '#voices' },
 };

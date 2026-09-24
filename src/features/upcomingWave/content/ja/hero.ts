@@ -13,7 +13,7 @@ export const hero = {
   threatsLabel: 'AIを作る当事者たちが警告しているのは',
   threats: ['大量解雇', '公的財政の枯渇', 'AIの制御を失うこと', 'AIの助けで作られる生物兵器'],
   closing: 'AIの開発者の中には、すでに政府にルールづくりを求めている人もいます。',
-  note: '怖がらせたいのではありません。説明したいのです。良いルールがあれば、AIは計り知れないほどの良いことができるからです。',
-  noteLink: { label: 'もう一つの面を見る', href: '#the-stakes' },
+  note: '',
+  noteLink: { label: 'うまくいけば何が変わるか', href: '#the-stakes' },
   cta: { label: '彼らの言葉を読む', shortLabel: '理由を見る', href: '#voices' },
 };

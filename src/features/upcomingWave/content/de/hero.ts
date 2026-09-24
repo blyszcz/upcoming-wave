@@ -13,7 +13,7 @@ export const hero = {
   threatsLabel: 'Die KI-Entwickler selbst warnen vor',
   threats: ['Massenentlassungen', 'Leeren Staatskassen', 'Kontrollverlust über KI', 'Biowaffen, gebaut mit Hilfe von KI'],
   closing: 'Einige KI-Entwickler haben Regierungen bereits um Regeln gebeten.',
-  note: 'Ich will dir keine Angst machen - ich will erklären. Denn wenn wir gute Regeln setzen, kann KI enorm viel Gutes bewirken.',
-  noteLink: { label: 'Die andere Seite ansehen', href: '#the-stakes' },
+  note: '',
+  noteLink: { label: 'Was gut gehen kann', href: '#the-stakes' },
   cta: { label: 'Lies, was sie sagen', shortLabel: 'Warum?', href: '#voices' },
 };
