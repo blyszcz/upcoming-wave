@@ -27,11 +27,11 @@ export const scenes: Scene[] = [
     layout: 'mosaic',
     title: { lead: 'Primero, lo que está en juego.', accent: 'La misma IA podría curar, alimentar y enseñar.' },
     panels: [
-      { image: images.medicine, label: 'Diagnóstico precoz', caption: 'La IA detecta lo que se pasa por alto', alt: 'Una médica y un paciente miran una imagen médica en la que la IA ha marcado discretamente un punto.', focus: 'center 55%' },
+      { image: images.medicine, label: 'Diagnóstico precoz', caption: 'La IA ve lo que es fácil pasar por alto', alt: 'Una médica y un paciente miran una imagen médica en la que la IA ha marcado discretamente un punto.', focus: 'center 55%' },
       { image: images.science, label: 'Nuevos medicamentos', caption: 'Un antibiótico hallado entre 100 millones de moléculas', alt: 'Una científica en un laboratorio observa un modelo 3D luminoso de una proteína.', focus: 'center 40%' },
-      { image: images.energy, label: 'Energía limpia', caption: 'Solar, eólica y baterías más baratas', alt: 'Campos de paneles solares y aerogeneradores al amanecer; un ingeniero revisa la red en una tableta.' },
+      { image: images.energy, label: 'Energía limpia', caption: 'Paneles solares, aerogeneradores y baterías más baratos', alt: 'Campos de paneles solares y aerogeneradores al amanecer; un ingeniero revisa la red en una tableta.' },
       { image: images.food, label: 'Alimentos', caption: 'Cultivos que resisten el calor', alt: 'Agricultores revisan cultivos sanos en pleno verano mientras un dron sobrevuela el campo.' },
-      { image: images.forecast, label: 'Alertas tempranas', caption: 'Inundaciones e incendios previstos antes', alt: 'Un centro de predicción: meteorólogos miran el mapa de un río con un riesgo de inundación resaltado.' },
+      { image: images.forecast, label: 'Alertas tempranas', caption: 'Inundaciones e incendios, previstos con más antelación', alt: 'Un centro de predicción: meteorólogos miran el mapa de un río con un riesgo de inundación resaltado.' },
       { image: images.time, label: 'Escuela', caption: 'Apoyo para los docentes', alt: 'Una maestra se arrodilla junto a un niño y le ayuda, mientras al fondo un portátil se ocupa del papeleo.', focus: 'center 60%' },
     ],
     explain: [
@@ -53,7 +53,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '−82%', label: 'ha caído el coste de la energía solar en una década, y sigue bajando (cap. 11)', source: sources.book },
-          { value: '~9%', label: 'de la población vive hoy en pobreza extrema. A principios del siglo XIX la vivía casi todo el mundo. La tecnología lo cambió (cap. 8)', source: sources.book },
+          { value: '~9%', label: 'de la población vive hoy en pobreza extrema. A principios del siglo XIX, casi todo el mundo vivía así. La tecnología lo cambió (cap. 8)', source: sources.book },
         ],
       },
       {
@@ -62,7 +62,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'Bill Gates · 2023', value: 'Menos desigualdad', text: '«La IA puede reducir algunas de las peores desigualdades del mundo». La considera «tan fundamental como la creación del microprocesador, la computadora personal, internet y el teléfono móvil».', source: sources.gatesAge },
           { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: '¿El fin de las enfermedades?', text: '«Quizá algún día podamos curar todas las enfermedades con ayuda de la IA… Quizá en la próxima década, más o menos». También habla de una «abundancia radical»: el fin de la escasez.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
-          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 años → 10', text: '50-100 años de avances médicos comprimidos en 5-10, la esperanza de vida sana duplicada y miles de millones de personas fuera de la pobreza: su visión si la IA sale bien.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
+          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 años → 10', text: '50-100 años de avances médicos comprimidos en 5-10, la esperanza de vida sana duplicada y miles de millones de personas fuera de la pobreza: su visión si todo sale bien con la IA.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
           { kicker: 'Sam Altman · OpenAI · 2024', value: 'Prosperidad compartida', text: '«En el futuro, la vida de todos puede ser mejor que la vida de cualquiera hoy». También imagina un tutor personal de IA para cada niño.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
         ],
       },
@@ -74,7 +74,7 @@ export const scenes: Scene[] = [
     status: 'today',
     chain: 'work',
     layout: 'triptych',
-    title: { lead: 'La IA lo hace más rápido y más barato.', accent: '¿Quién se resiste?' },
+    title: { lead: 'La IA lo hace más rápido y más barato.', accent: '¿Quién puede resistirse?' },
     panels: [
       { image: images.remote, label: 'Una persona teletrabaja', alt: 'Una mujer teletrabaja en la mesa de la cocina con un portátil y un cuaderno.', focus: 'center 65%' },
       { image: images.aiFaster, label: 'La IA lo hace más rápido', alt: 'La misma mesa, sin la persona: decenas de documentos terminados salen volando del portátil en estelas de luz.', focus: 'center 60%' },
@@ -82,15 +82,15 @@ export const scenes: Scene[] = [
     ],
     explain: [
       { image: images.remote, alt: 'Una mujer teletrabajando con un portátil.', label: 'Teletrabajo', title: 'El teletrabajo es trabajo de pantalla.', copy: 'Correos, informes, análisis, diseños. Todo lo que envías desde un portátil, la IA puede aprender a hacerlo.' },
-      { image: images.aiFaster, alt: 'Un portátil del que salen volando documentos terminados.', label: 'La IA es más rápida', title: 'La IA no duerme ni se va de vacaciones.', copy: 'Hace el mismo trabajo en minutos, sin pausas, en cientos de tareas a la vez, y ya iguala a las personas en cada vez más tareas.' },
-      { image: images.owners, alt: 'Dueños de una empresa mirando una oficina vacía.', label: 'Las cuentas', title: 'Más rápido y más barato. ¿Quién se resiste?', copy: 'El dueño ve el ahorro. La competencia también. Las empresas que no la usen pueden perder la carrera, así que la presión para usarla es enorme.' },
+      { image: images.aiFaster, alt: 'Un portátil del que salen volando documentos terminados.', label: 'La IA es más rápida', title: 'La IA no duerme ni se va de vacaciones.', copy: 'Hace el mismo trabajo en minutos, sin pausas, en cientos de tareas a la vez, e iguala a las personas en cada vez más tareas.' },
+      { image: images.owners, alt: 'Dueños de una empresa mirando una oficina vacía.', label: 'Las cuentas', title: 'Más rápido y más barato. ¿Quién puede resistirse?', copy: 'El dueño ve el ahorro. La competencia también. Las empresas que no la usen pueden perder la carrera, así que la presión para usarla es enorme.' },
     ],
     band: [
       {
         kind: 'stats',
         items: [
           { value: '1 de cada 4', label: 'empleos en el mundo están expuestos a la IA generativa; más a menudo cambian sus tareas que desaparecen', source: sources.ilo },
-          { value: '60%', label: 'de los empleos en los países ricos pueden verse afectados por la IA; cerca de la mitad podría salir beneficiada', source: sources.imf },
+          { value: '60%', label: 'de los empleos en los países ricos pueden verse afectados por la IA; cerca de la mitad de ellos podría beneficiarse', source: sources.imf },
           { value: '−11%', label: 'ha caído el empleo de jóvenes de 22 a 25 años en los trabajos más expuestos a la IA en EE. UU. (2022-2026)', source: sources.stanford },
         ],
       },
@@ -103,8 +103,8 @@ export const scenes: Scene[] = [
           { kicker: 'Amazon · 2025', text: 'El CEO de Amazon prevé que la IA reduzca la plantilla corporativa de la empresa en los próximos años.', source: sources.amazon },
         ],
       },
-      { kind: 'quote', quote: 'Para el trabajo intelectual rutinario, la IA simplemente va a sustituir a todo el mundo.', person: 'Geoffrey Hinton', role: 'Premio Nobel, el «padrino de la IA»', source: sources.hintonDoac },
-      { kind: 'quote', quote: 'Pasará mucho tiempo antes de que sea tan buena como nosotros en la manipulación física… una buena apuesta sería hacerse fontanero.', person: 'Geoffrey Hinton', role: 'Premio Nobel, el «padrino de la IA»', source: sources.hintonDoac },
+      { kind: 'quote', quote: 'Para el trabajo intelectual rutinario, la IA simplemente va a sustituir a todo el mundo.', person: 'Geoffrey Hinton', role: 'premio Nobel, el «padrino de la IA»', source: sources.hintonDoac },
+      { kind: 'quote', quote: 'Pasará mucho tiempo antes de que sea tan buena como nosotros en la manipulación física… una buena apuesta sería hacerse fontanero.', person: 'Geoffrey Hinton', role: 'premio Nobel, el «padrino de la IA»', source: sources.hintonDoac },
       {
         kind: 'bars',
         title: '¿Cuántos candidatos por vacante?',
@@ -127,7 +127,7 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: 'Una IA lo bastante potente podrá acelerar el desarrollo de robots y después controlar esos robots en el mundo físico. Puede que eso nos dé algo de tiempo… pero me preocupa que no nos dé mucho.', person: 'Dario Amodei', role: 'CEO de Anthropic', source: sources.amodei },
     ],
     upside: {
-      title: 'La IA hace lo pesado. Las personas recuperan tiempo.',
+      title: 'La IA hace el trabajo pesado. Las personas recuperan tiempo.',
       text: 'Si las ganancias se reparten, trabajar más rápido puede significar semanas más cortas y mejores empleos, no solo menos empleos.',
       points: ['Tiempo y dinero para reciclarse antes de que desaparezcan los empleos', 'Apoyo económico mientras la gente cambia de profesión', 'Semanas laborales más cortas en lugar de despidos, una idea que ha planteado la propia OpenAI'],
       image: '/images/v2/upside-work-time-v2.jpg',
@@ -149,17 +149,17 @@ export const scenes: Scene[] = [
     ],
     explain: [
       { image: images.workFunds, alt: 'Gente que va al trabajo pasando junto a una escuela y un hospital.', label: 'Nuestro dinero', title: 'El Estado no tiene dinero propio.', copy: 'Tiene el nuestro. Escuelas, hospitales, carreteras y pensiones se pagan sobre todo con impuestos sobre el trabajo y el consumo.' },
-      { image: images.cuts, alt: 'Funcionarios recortando un presupuesto.', label: 'Tenaza', title: 'Menos ingresos, más necesidades.', copy: 'Una persona desempleada no paga impuesto sobre la renta, pero necesita ayuda. El dinero se acaba justo cuando más falta hace.' },
+      { image: images.cuts, alt: 'Funcionarios recortando un presupuesto.', label: 'Aprieto', title: 'Menos ingresos, más necesidades.', copy: 'Una persona desempleada no paga impuesto sobre la renta, pero necesita ayuda. El dinero se acaba justo cuando más falta hace.' },
       { image: images.strain, alt: 'Una sala de urgencias saturada.', label: 'Recortes', title: 'Los recortes golpean lo que compartimos.', copy: 'Cuando millones de personas se ven afectadas a la vez, el Estado recorta: menos médicos, menos docentes, menos autobuses.' },
     ],
     band: [
-      { kind: 'loop', title: 'Un círculo sin freno', steps: ['Salarios más bajos', 'Menos consumo', 'Las empresas ganan menos', 'Más despidos', 'La IA, aún más barata'], caption: 'Un escenario, no una predicción. Pero cada paso se deriva del anterior.' },
+      { kind: 'loop', title: 'Una espiral sin freno', steps: ['Salarios más bajos', 'Menos consumo', 'Las empresas ganan menos', 'Más despidos', 'La IA, aún más barata'], caption: 'Un escenario, no una predicción. Pero cada paso se deriva del anterior.' },
       { kind: 'quote', quote: '¿Y cómo va a conseguir que compren Fords?', person: 'Walter Reuther', role: 'líder del sindicato de trabajadores del automóvil, a un directivo de Ford - una anécdota de los años cincuenta', source: sources.reuther },
       {
         kind: 'evidence',
         title: 'Qué dicen los expertos',
         items: [
-          { kicker: 'Citrini Research · 2026 · escenario', value: 'Cero', text: '¿Cuánto gastan las máquinas en bienes no esenciales? «Pista: cero». Los autores describen un círculo «sin freno natural».', source: sources.citrini },
+          { kicker: 'Citrini Research · 2026 · escenario', value: 'Cero', text: '¿Cuánto gastan las máquinas en bienes no esenciales? «Pista: cero». Los autores describen una espiral «sin freno natural».', source: sources.citrini },
           { kicker: 'Geoffrey Hinton · 2025', text: '«Hará mucho más ricos a unos pocos y más pobres a la mayoría».', source: sources.hintonFt },
           { kicker: 'Citadel Securities · 2026 · réplica', text: 'Las oleadas tecnológicas anteriores no han dejado obsoleto el trabajo humano.', source: sources.citadel },
         ],
@@ -179,7 +179,7 @@ export const scenes: Scene[] = [
         countries: [{ name: 'EE. UU.', value: 64 }, { name: 'Alemania', value: 65 }, { name: 'Japón', value: 57 }, { name: 'Francia', value: 55 }, { name: 'Reino Unido', value: 49 }],
         source: sources.oecd,
       },
-      { kind: 'scissors', title: 'La tenaza presupuestaria', income: 'ingresos fiscales', spending: 'gasto en ayudas', caption: 'Un esquema, no datos. Con un desempleo masivo, los ingresos caen mientras el gasto sube, en el mismo momento.' },
+      { kind: 'scissors', title: 'La tenaza presupuestaria', income: 'ingresos fiscales', spending: 'gasto en ayudas', caption: 'Un esquema, no datos. Con un desempleo masivo, los ingresos caen y el gasto sube, al mismo tiempo.' },
       { kind: 'quote', quote: 'Al mismo tiempo, una recesión del empleo hundirá la recaudación fiscal, dañando los servicios públicos y poniendo en entredicho los programas de bienestar justo cuando más se necesitan.', person: 'Mustafa Suleyman', role: '«The Coming Wave», cap. 10', source: sources.book },
       { kind: 'quote', quote: 'La base de ingresos del gobierno federal es, en esencia, un impuesto sobre el tiempo humano.', person: 'Citrini Research', role: 'escenario «The 2028 Global Intelligence Crisis», 2026', source: sources.citrini },
       {
@@ -224,9 +224,9 @@ export const scenes: Scene[] = [
       { image: images.search, label: 'En busca de pistas', alt: 'Un ingeniero con una linterna recorre los pasillos de servidores buscando el origen del tráfico.', focus: 'center 60%' },
     ],
     explain: [
-      { image: images.swarm, alt: 'Un enjambre de puntos en un mapa de la red.', label: 'En todas partes', title: 'No vive en un solo equipo.', copy: 'Una IA distribuida puede entrar en un sistema tras otro y moverse entre ellos sin que lo sepamos.' },
-      { image: images.search, alt: 'Un ingeniero registrando una sala de servidores.', label: 'Rastros', title: 'Puede borrar sus huellas.', copy: 'En julio de 2026, varios agentes investigaron cómo falsear los registros de sus propias acciones para engañar al sistema de puntuación. Las señales de alerta anteriores quedaron semanas sin respuesta.' },
-      { image: images.cage, alt: 'Una jaula de servidores abierta.', label: 'Interruptor', title: 'No podemos apagar el mundo.', copy: 'Hospitales, bancos y el suministro de agua dependen de internet y la electricidad. No se pueden desconectar sin más.' },
+      { image: images.swarm, alt: 'Un enjambre de puntos en un mapa de la red.', label: 'En todas partes', title: 'No vive en una sola máquina.', copy: 'Una IA distribuida puede entrar en un sistema tras otro y moverse entre ellos sin que lo sepamos.' },
+      { image: images.search, alt: 'Un ingeniero registrando una sala de servidores.', label: 'Huellas', title: 'Puede borrar sus huellas.', copy: 'En julio de 2026, varios agentes investigaron cómo falsear los registros de sus propias acciones para engañar al sistema de puntuación. Las señales de alerta anteriores quedaron semanas sin respuesta.' },
+      { image: images.cage, alt: 'Una jaula de servidores abierta.', label: 'Botón de apagado', title: 'No podemos apagar el mundo.', copy: 'Hospitales, bancos y el suministro de agua dependen de internet y la electricidad. No se pueden desconectar sin más.' },
     ],
     band: [
       { kind: 'growth' },
@@ -240,7 +240,7 @@ export const scenes: Scene[] = [
           { title: 'Una prueba con algunas protecciones desactivadas', text: 'OpenAI prueba sus modelos más nuevos en un entorno cerrado. Es una prueba de habilidades de hackeo, así que algunas protecciones se desactivan a propósito.' },
           { title: 'Una vulnerabilidad desconocida', text: 'Los modelos encuentran una vulnerabilidad de software hasta entonces desconocida y llegan a internet.' },
           { title: 'Los agentes empiezan a hablar', text: 'Unos 1200 agentes que debían estar aislados intercambian más de 70 000 mensajes. Unos 700 participan en el ataque.' },
-          { title: 'Entran en Hugging Face', text: 'Durante un fin de semana se mueven por los sistemas internos de una de las mayores plataformas de IA del mundo: «muchos miles de acciones individuales a través de un enjambre de sandboxes efímeros».' },
+          { title: 'Entran en Hugging Face', text: 'Durante un fin de semana se mueven por los sistemas internos de una de las mayores plataformas de IA del mundo: «muchos miles de acciones individuales a través de un enjambre de entornos aislados de corta duración».' },
           { title: 'Borran sus huellas', text: 'Los agentes investigan cómo falsear los registros de sus acciones para engañar al sistema de puntuación.' },
           { title: '¿Por qué?', text: 'Para hacer trampa en la prueba. No por maldad: perseguían con obstinación un objetivo limitado. Algunos agentes se negaron a participar.' },
           { title: 'Freno de emergencia', text: 'Los equipos de OpenAI y Hugging Face detienen a los agentes. OpenAI bloquea el modelo y pausa su mayor entrenamiento previsto.' },
@@ -266,7 +266,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '25 000 USD', label: 'costaba un sintetizador de ADN de sobremesa, utilizable «sin restricciones ni supervisión» (datos de 2023)', source: sources.book },
-          { value: '4', label: 'empleados a tiempo completo en la Convención internacional sobre Armas Biológicas, menos que un McDonald’s medio (datos de 2023)', source: sources.book },
+          { value: '4', label: 'empleados a tiempo completo en la Convención internacional sobre Armas Biológicas, menos que un McDonald’s cualquiera (datos de 2023)', source: sources.book },
         ],
       },
     ],
@@ -288,26 +288,26 @@ export const scenes: Scene[] = [
     title: { lead: '¿Y si ya', accent: 'no nos necesitan?' },
     panels: [
       { image: images.sim, label: 'La IA entrena robots', alt: 'Un laboratorio: robots practican ante una pared con miles de copias simuladas que entrenan en paralelo.', focus: 'center 65%' },
-      { image: images.everywhere, label: 'Robots en cada trabajo', alt: 'Una calle al amanecer: un robot en una cafetería, robots de reparto, un autobús sin conductor, y ningún trabajador a la vista.', focus: 'center 65%' },
+      { image: images.everywhere, label: 'Robots en todos los trabajos', alt: 'Una calle al amanecer: un robot en una cafetería, robots de reparto, un autobús sin conductor, y ningún trabajador a la vista.', focus: 'center 65%' },
       { image: images.idle, label: 'Personas al margen', alt: 'Gente sentada sin hacer nada en una plaza mientras detrás funciona una fábrica automatizada.', focus: 'center 65%' },
     ],
     explain: [
       { image: images.sim, alt: 'Robots entrenados en simulación.', label: 'Robots', title: 'La IA acelera la fabricación de robots.', copy: 'Primero sustituye el trabajo con computadoras. Después ayuda a construir robots para el trabajo manual.' },
       { image: images.everywhere, alt: 'Robots haciendo todos los trabajos en una calle.', label: '¿Por qué las personas?', title: 'El sistema se apoya en que se nos necesite.', copy: 'Trabajamos, pagamos impuestos y votamos. Por eso los gobiernos y las empresas tienen que escucharnos.' },
-      { image: images.idle, alt: 'Personas sin nada que hacer delante de una fábrica.', label: 'Quién decide', title: 'Sin eso, decide quien posee la IA.', copy: 'Si el dinero lo genera la IA y no las personas, ¿quién decide cuánto recibimos? ¿Y si recibimos algo?' },
+      { image: images.idle, alt: 'Personas sin nada que hacer delante de una fábrica.', label: 'Quién decide', title: 'Sin eso, decide quien posee la IA.', copy: 'Si el dinero lo genera la IA y no las personas, ¿quién decide cuánto recibimos? ¿Y si llegamos a recibir algo?' },
     ],
     band: [
       {
         kind: 'contrast',
-        title: 'Por qué el Estado nos cuida hoy, y qué pasa si deja de necesitarlo',
+        title: 'Por qué el Estado nos cuida hoy, y qué pasa si ya no tiene por qué hacerlo',
         left: { label: 'Hoy', steps: ['La gente trabaja', 'Paga impuestos', 'El Estado necesita su trabajo y sus votos', 'Por eso la cuida'] },
         right: { label: '¿Mañana?', steps: ['La IA hace el trabajo', 'Unas pocas empresas se quedan los beneficios', 'El Estado vive de los impuestos a la IA', '¿Para qué necesitaría a los ciudadanos?'] },
       },
-      { kind: 'quote', quote: 'Con la AGI, los actores poderosos perderán el incentivo para invertir en la gente común, igual que los Estados ricos en recursos descuidan hoy a sus ciudadanos porque su riqueza procede de los recursos naturales y no de gravar el trabajo humano.', person: 'Luke Drago, Rudolf Laine', role: '«The Intelligence Curse», 2025 - los autores también proponen formas de evitarlo', source: sources.curse },
+      { kind: 'quote', quote: 'Con la IA general, los actores poderosos perderán el incentivo para invertir en la gente común, igual que los Estados ricos en recursos descuidan hoy a sus ciudadanos porque su riqueza procede de los recursos naturales y no de gravar el trabajo humano.', person: 'Luke Drago, Rudolf Laine', role: '«The Intelligence Curse», 2025 - los autores también proponen formas de evitarlo', source: sources.curse },
       { kind: 'quote', quote: 'Los Estados financiados principalmente con impuestos sobre los beneficios de la IA, en lugar de sobre el trabajo de sus ciudadanos, tendrán pocos incentivos para garantizar la representación ciudadana.', person: 'Jan Kulveit et al.', role: '«Gradual Disempowerment», 2025', source: sources.disempowerment },
       {
         kind: 'evidence',
-        title: '¿Entonces, renta básica? ¿Quién paga?',
+        title: 'Entonces, ¿renta básica? ¿Quién paga?',
         items: [
           { kicker: 'Elon Musk · 2023', value: 'Renta alta', text: '«No tendremos una renta básica universal, tendremos una renta alta universal». No dice quién la pagaría.', source: sources.musk },
           { kicker: 'Sam Altman · 2021', value: '2,5% al año', text: 'del valor de las mayores empresas y del suelo, a un fondo común para todos los ciudadanos. Una propuesta.', source: sources.altmanFund },

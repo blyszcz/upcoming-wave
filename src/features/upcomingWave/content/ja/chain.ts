@@ -1,7 +1,7 @@
 import type { ChainStepId } from '@features/upcomingWave/types/scene.types';
 
 export const chain: { id: ChainStepId; label: string; target: string }[] = [
-  { id: 'stakes', target: 'the-stakes', label: '懸かるもの' },
+  { id: 'stakes', target: 'the-stakes', label: '懸かっているもの' },
   { id: 'work', target: 'who-will-resist', label: '仕事' },
   { id: 'money', target: 'state-lives-on-work', label: 'お金' },
   { id: 'speed', target: 'out-of-the-test', label: 'スピード' },

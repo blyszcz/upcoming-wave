@@ -46,7 +46,7 @@ export const ui = {
     swipe: 'Wischen für mehr →',
   },
   pond: {
-    replay: 'Nochmal ↻',
+    replay: 'Noch einmal ↻',
     day: 'Tag',
     nothing: 'fast nichts',
     percentOfPond: (percent: number) => `${percent}\u00a0% des Teichs`,

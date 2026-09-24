@@ -27,26 +27,26 @@ export const acceleration = {
   title: { lead: 'AI uczy się budować AI.', accent: 'I przyspiesza.' },
   pond: {
     title: 'Zagadka o stawie',
-    copy: 'Lilie na stawie podwajają się każdego dnia. Po 30 dniach pokrywają cały staw. Którego dnia pokrywały połowę?',
-    answer: 'Dnia 29. Przy podwajaniu prawie wszystko dzieje się na samym końcu.',
+    copy: 'Lilii na stawie co dzień jest dwa razy więcej. Po 30 dniach pokrywają cały staw. Którego dnia pokrywały połowę?',
+    answer: '29. dnia. Przy podwajaniu prawie wszystko dzieje się na samym końcu.',
   },
   chart: {
     title: 'Jak długie zadania AI zrobi sama',
-    subtitle: 'Od 2023 r. co około 4 miesiące - dwa razy dłuższe.',
+    subtitle: 'Od 2023 r.: dwa razy dłuższe mniej więcej co 4 miesiące.',
     doublingMonths: 4.2,
     note: 'Pomiary METR: jak długie zadania (liczone czasem pracy człowieka) najlepsze modele wykonują samodzielnie w połowie prób. Pomiary powyżej 16 godzin są niepewne - zadania testowe są za krótkie. Linia przerywana to scenariusz, nie pomiar.',
     source: metr,
   },
   evidence: {
-    title: 'Samorozwój już się zaczyna',
+    title: 'Samodoskonalenie już się zaczęło',
     items: [
       { kicker: 'Anthropic · maj 2026', value: '80%+', text: 'kodu w firmie pisze już Claude. Na początku 2025 r. było to kilka procent.', source: { label: 'Anthropic', url: 'https://www.anthropic.com/institute/recursive-self-improvement' } },
-      { kicker: 'OpenAI · wrzesień 2026', value: 'Stażysta AI', text: 'Firma twierdzi, że ma AI-stażystę badacza. Automatycznego badacza AI planuje na 2028 r.', source: { label: 'Engadget', url: 'https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/' } },
+      { kicker: 'OpenAI · wrzesień 2026', value: 'Stażysta AI', text: 'Firma twierdzi, że ma już stażystę AI do badań. Na 2028 r. planuje zautomatyzowanego badacza AI.', source: { label: 'Engadget', url: 'https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/' } },
       { kicker: 'Epoch AI', value: '4\u2009–\u20095×', text: 'rocznie rośnie moc obliczeniowa używana do trenowania najlepszych modeli.', source: { label: 'Epoch AI', url: 'https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year' } },
     ] satisfies EvidenceItem[],
   },
   quotes: [
-    { quote: 'Od mniej więcej tego lata AI rozwija się drastycznie szybciej - głównie dlatego, że coraz lepiej buduje kolejną generację AI. To rekurencyjne samodoskonalenie i zaczyna się w całej branży.', person: 'Dario Amodei', role: 'CEO, Anthropic · wrzesień 2026', source: { label: 'We Must Pace the Frontier', url: 'https://darioamodei.com/post/we-must-pace-the-frontier' } },
-    { quote: 'Pierwsza ultrainteligentna maszyna będzie ostatnim wynalazkiem, jakiego człowiek potrzebuje - pod warunkiem, że będzie na tyle posłuszna, by powiedzieć nam, jak utrzymać ją pod kontrolą.', person: 'I. J. Good', role: 'matematyk, współpracownik Alana Turinga · 1965', source: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2022/01/04/ultraintelligent/' } },
+    { quote: 'Od mniej więcej tego lata AI rozwija się drastycznie szybciej - głównie dlatego, że AI coraz lepiej potrafi budować kolejną generację AI. To zjawisko nazywa się rekurencyjnym samodoskonaleniem i zaczyna występować w całej branży.', person: 'Dario Amodei', role: 'CEO, Anthropic · wrzesień 2026', source: { label: 'We Must Pace the Frontier', url: 'https://darioamodei.com/post/we-must-pace-the-frontier' } },
+    { quote: 'Pierwsza ultrainteligentna maszyna będzie ostatnim wynalazkiem, jakiego człowiek kiedykolwiek będzie musiał dokonać - pod warunkiem, że będzie na tyle posłuszna, by powiedzieć nam, jak utrzymać ją pod kontrolą.', person: 'I. J. Good', role: 'matematyk, współpracownik Alana Turinga · 1965', source: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2022/01/04/ultraintelligent/' } },
   ],
 };

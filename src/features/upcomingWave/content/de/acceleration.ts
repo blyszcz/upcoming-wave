@@ -10,7 +10,7 @@ export const horizonPoints: HorizonPoint[] = [
   { model: 'o1-preview', date: '2024-09', minutes: 20.3 },
   { model: 'o1', date: '2024-12', minutes: 38.8 },
   { model: 'Claude 3.7 Sonnet', date: '2025-02', minutes: 60 },
-  { model: 'o3', date: '2025-04', minutes: 120, milestone: { value: '2 Stunden', note: 'ein langes Meeting' } },
+  { model: 'o3', date: '2025-04', minutes: 120, milestone: { value: '2 Stunden', note: 'eine lange Besprechung' } },
   { model: 'GPT-5', date: '2025-08', minutes: 203 },
   { model: 'Claude Opus 4.5', date: '2025-11', minutes: 293 },
   { model: 'GPT-5.2', date: '2025-12', minutes: 352 },
@@ -26,7 +26,7 @@ export const acceleration = {
   pond: {
     title: 'Das Seerosen-Rätsel',
     copy: 'Seerosen auf einem Teich verdoppeln sich jeden Tag. Nach 30 Tagen bedecken sie den ganzen Teich. An welchem Tag war er zur Hälfte bedeckt?',
-    answer: 'An Tag 29. Beim Verdoppeln passiert fast alles ganz am Ende.',
+    answer: 'Am 29. Tag. Beim Verdoppeln passiert fast alles ganz am Ende.',
   },
   chart: {
     title: 'Wie lange KI allein an einer Aufgabe arbeiten kann',
@@ -36,7 +36,7 @@ export const acceleration = {
     source: metr,
   },
   evidence: {
-    title: 'Die Selbstverbesserung hat begonnen',
+    title: 'Die Selbstverbesserung hat schon begonnen',
     items: [
       { kicker: 'Anthropic · Mai 2026', value: '80 %+', text: 'des Codes im Unternehmen schreibt inzwischen Claude. Anfang 2025 waren es wenige Prozent.', source: { label: 'Anthropic', url: 'https://www.anthropic.com/institute/recursive-self-improvement' } },
       { kicker: 'OpenAI · September 2026', value: 'KI-Praktikant', text: 'Das Unternehmen sagt, es habe einen KI-Forschungspraktikanten. Für 2028 plant es einen automatisierten KI-Forscher.', source: { label: 'Engadget', url: 'https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/' } },
@@ -45,6 +45,6 @@ export const acceleration = {
   },
   quotes: [
     { quote: 'Seit etwa diesem Sommer entwickelt sich KI drastisch schneller, vor allem angetrieben von der wachsenden Fähigkeit der KI, die nächste Generation von KI zu bauen. Diese Dynamik nennt man rekursive Selbstverbesserung, und sie setzt gerade in der ganzen Branche ein.', person: 'Dario Amodei', role: 'CEO, Anthropic · September 2026', source: { label: 'We Must Pace the Frontier', url: 'https://darioamodei.com/post/we-must-pace-the-frontier' } },
-    { quote: 'Die erste ultraintelligente Maschine ist die letzte Erfindung, die der Mensch je machen muss - vorausgesetzt, die Maschine ist fügsam genug, uns zu sagen, wie wir sie unter Kontrolle halten.', person: 'I. J. Good', role: 'Mathematiker, arbeitete mit Alan Turing · 1965', source: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2022/01/04/ultraintelligent/' } },
+    { quote: 'Die erste ultraintelligente Maschine ist die letzte Erfindung, die der Mensch je machen muss - vorausgesetzt, die Maschine ist fügsam genug, uns zu sagen, wie wir sie unter Kontrolle halten.', person: 'I. J. Good', role: 'Mathematiker, der mit Alan Turing zusammenarbeitete · 1965', source: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2022/01/04/ultraintelligent/' } },
   ],
 };

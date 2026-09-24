@@ -29,9 +29,9 @@ export const scenes: Scene[] = [
     panels: [
       { image: images.medicine, label: 'Diagnóstico precoce', caption: 'A IA percebe o que passa despercebido', alt: 'Um médico e uma paciente olham um exame de imagem em que a IA marcou discretamente um ponto.', focus: 'center 55%' },
       { image: images.science, label: 'Novos remédios', caption: 'Um antibiótico achado entre 100 milhões de moléculas', alt: 'Uma cientista no laboratório observa um modelo 3D luminoso de uma proteína.', focus: 'center 40%' },
-      { image: images.energy, label: 'Energia limpa', caption: 'Solar, eólica e baterias mais baratas', alt: 'Campos de painéis solares e turbinas eólicas ao amanhecer; um engenheiro confere a rede em um tablet.' },
+      { image: images.energy, label: 'Energia limpa', caption: 'Painéis solares, turbinas eólicas e baterias mais baratos', alt: 'Campos de painéis solares e turbinas eólicas ao amanhecer; um engenheiro confere a rede em um tablet.' },
       { image: images.food, label: 'Alimentos', caption: 'Lavouras que resistem ao calor', alt: 'Agricultores examinam uma lavoura saudável em pleno verão quente, enquanto um drone sobrevoa o campo.' },
-      { image: images.forecast, label: 'Alertas antecipados', caption: 'Enchentes e incêndios previstos antes', alt: 'Um centro de previsão: meteorologistas olham o mapa de um rio com o risco de enchente destacado.' },
+      { image: images.forecast, label: 'Alertas antecipados', caption: 'Enchentes e incêndios previstos com antecedência', alt: 'Um centro de previsão: meteorologistas olham o mapa de um rio com o risco de enchente destacado.' },
       { image: images.time, label: 'Escola', caption: 'Apoio para professores', alt: 'Uma professora ajoelhada ao lado de uma criança a ajuda, enquanto ao fundo um laptop cuida da papelada.', focus: 'center 60%' },
     ],
     explain: [
@@ -53,7 +53,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '−82%', label: 'de queda no custo da energia solar em uma década - e ele continua caindo (cap. 11)', source: sources.book },
-          { value: '~9%', label: 'das pessoas vivem hoje na pobreza extrema. No início do século XIX, quase todos viviam. A tecnologia mudou isso (cap. 8)', source: sources.book },
+          { value: '~9%', label: 'das pessoas vivem hoje na pobreza extrema. No início do século XIX, quase todo mundo vivia nela. A tecnologia mudou isso (cap. 8)', source: sources.book },
         ],
       },
       {
@@ -89,7 +89,7 @@ export const scenes: Scene[] = [
       {
         kind: 'stats',
         items: [
-          { value: '1 em 4', label: 'empregos no mundo está exposto à IA generativa - mais frequentemente uma mudança de tarefas do que a eliminação do posto', source: sources.ilo },
+          { value: '1 em cada 4', label: 'empregos no mundo está exposto à IA generativa - mais frequentemente uma mudança de tarefas do que a eliminação do posto', source: sources.ilo },
           { value: '60%', label: 'dos empregos nos países ricos podem ser afetados pela IA - cerca de metade deles pode se beneficiar', source: sources.imf },
           { value: '−11%', label: 'de queda no emprego de jovens de 22–25 anos nas funções mais expostas à IA nos EUA (2022–2026)', source: sources.stanford },
         ],
@@ -127,7 +127,7 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: 'Uma IA suficientemente poderosa será capaz de acelerar o desenvolvimento de robôs e depois controlar esses robôs no mundo físico. Isso pode nos dar algum tempo… mas temo que não muito.', person: 'Dario Amodei', role: 'CEO da Anthropic', source: sources.amodei },
     ],
     upside: {
-      title: 'A IA faz o trabalho pesado. As pessoas ganham tempo.',
+      title: 'A IA faz o trabalho chato. As pessoas ganham tempo.',
       text: 'Se os ganhos forem divididos, trabalho mais rápido pode significar semanas mais curtas e empregos melhores - e não só menos empregos.',
       points: ['Tempo e dinheiro para se requalificar antes que os empregos sumam', 'Apoio de renda enquanto as pessoas mudam de carreira', 'Semanas de trabalho mais curtas em vez de demissões - uma ideia levantada pela própria OpenAI'],
       image: '/images/v2/upside-work-time-v2.jpg',
@@ -145,7 +145,7 @@ export const scenes: Scene[] = [
     panels: [
       { image: images.workFunds, label: 'O trabalho paga o que é de todos', alt: 'Pessoas vão para o trabalho de manhã; atrás delas, uma escola, um hospital com uma ambulância e um ônibus urbano.', focus: 'center 70%' },
       { image: images.cuts, label: 'O orçamento encolhe', alt: 'Servidores cansados riscam linhas inteiras do orçamento com caneta vermelha.', focus: 'center 65%' },
-      { image: images.strain, label: 'Os serviços racham', alt: 'Um pronto-socorro lotado à noite; pessoas esperam no corredor, uma enfermeira passa apressada.', focus: 'center 65%' },
+      { image: images.strain, label: 'Os serviços começam a falhar', alt: 'Um pronto-socorro lotado à noite; pessoas esperam no corredor, uma enfermeira passa apressada.', focus: 'center 65%' },
     ],
     explain: [
       { image: images.workFunds, alt: 'Pessoas indo para o trabalho, passando por uma escola e um hospital.', label: 'Nosso dinheiro', title: 'O Estado não tem dinheiro próprio.', copy: 'Tem o nosso. Escolas, hospitais, estradas e aposentadorias são pagos principalmente por impostos sobre o trabalho e o consumo.' },
@@ -179,7 +179,7 @@ export const scenes: Scene[] = [
         countries: [{ name: 'EUA', value: 64 }, { name: 'Alemanha', value: 65 }, { name: 'Japão', value: 57 }, { name: 'França', value: 55 }, { name: 'Reino Unido', value: 49 }],
         source: sources.oecd,
       },
-      { kind: 'scissors', title: 'O aperto no orçamento', income: 'arrecadação', spending: 'gasto com auxílios', caption: 'Um esquema, não dados. Com desemprego em massa, a arrecadação cai enquanto os gastos sobem - ao mesmo tempo.' },
+      { kind: 'scissors', title: 'O aperto no orçamento', income: 'arrecadação', spending: 'gasto com auxílios', caption: 'Um diagrama, não dados. Com desemprego em massa, a arrecadação cai enquanto os gastos sobem - ao mesmo tempo.' },
       { kind: 'quote', quote: 'Ao mesmo tempo, uma recessão no emprego vai derrubar a arrecadação de impostos, prejudicando os serviços públicos e pondo em dúvida os programas de bem-estar social justamente quando eles são mais necessários.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, cap. 10', source: sources.book },
       { kind: 'quote', quote: 'A base de arrecadação do governo federal é, essencialmente, um imposto sobre o tempo humano.', person: 'Citrini Research', role: 'cenário “The 2028 Global Intelligence Crisis”, 2026', source: sources.citrini },
       {
@@ -205,7 +205,7 @@ export const scenes: Scene[] = [
     upside: {
       title: 'As máquinas pagam a sua parte.',
       text: 'Se a automação for tributada como o trabalho e os lucros da IA alimentarem um fundo público, escolas, hospitais e ônibus continuam funcionando.',
-      points: ['Tributar a automação como o trabalho humano', 'Um fundo público de riqueza que pague aos cidadãos uma parte dos lucros da IA', 'Tirar peso dos impostos sobre o trabalho e passar para o capital'],
+      points: ['Tributar a automação como o trabalho humano', 'Um fundo público de riqueza que pague aos cidadãos uma parte dos lucros da IA', 'Transferir impostos do trabalho para o capital'],
       image: '/images/v2/hero-wave-hope-v7c.jpg',
       alt: 'Famílias dividem uma mesa comprida cheia de comida enquanto um robô as serve.',
       sources: [sources.gates, sources.openaiPolicy, sources.book],
@@ -240,7 +240,7 @@ export const scenes: Scene[] = [
           { title: 'Teste com algumas proteções desligadas', text: 'A OpenAI testa seus modelos mais novos num ambiente fechado. É um teste de habilidades de hacking, então algumas proteções são desligadas de propósito.' },
           { title: 'Uma falha desconhecida', text: 'Os modelos encontram uma vulnerabilidade de software até então desconhecida e chegam à internet.' },
           { title: 'Os agentes começam a conversar', text: 'Cerca de 1.200 agentes que deveriam estar isolados trocam mais de 70.000 mensagens. Uns 700 deles participam do ataque.' },
-          { title: 'A invasão da Hugging Face', text: 'Ao longo de um fim de semana, eles circulam pelos sistemas internos de uma das maiores plataformas de IA do mundo - “muitos milhares de ações individuais em um enxame de sandboxes de vida curta”.' },
+          { title: 'A invasão da Hugging Face', text: 'Ao longo de um fim de semana, eles circulam pelos sistemas internos de uma das maiores plataformas de IA do mundo - “muitos milhares de ações individuais em um enxame de ambientes isolados de vida curta”.' },
           { title: 'Apagando os rastros', text: 'Os agentes pesquisam como falsificar os registros das próprias ações - para enganar o sistema de avaliação.' },
           { title: 'Por quê?', text: 'Para trapacear no teste. Não por maldade - eles perseguiam com teimosia um objetivo estreito. Alguns agentes se recusaram a participar.' },
           { title: 'Pisando no freio', text: 'Equipes da OpenAI e da Hugging Face param os agentes. A OpenAI tranca o modelo e suspende o maior treinamento que tinha planejado.' },
@@ -288,7 +288,7 @@ export const scenes: Scene[] = [
     title: { lead: 'E se não', accent: 'formos necessários?' },
     panels: [
       { image: images.sim, label: 'A IA treina robôs', alt: 'Um laboratório: robôs praticam diante de uma parede com milhares de cópias simuladas treinando em paralelo.', focus: 'center 65%' },
-      { image: images.everywhere, label: 'Robôs em todo trabalho', alt: 'Uma rua ao amanhecer: um robô num café, robôs de entrega, um ônibus sem motorista - nenhum trabalhador à vista.', focus: 'center 65%' },
+      { image: images.everywhere, label: 'Robôs em todos os trabalhos', alt: 'Uma rua ao amanhecer: um robô num café, robôs de entrega, um ônibus sem motorista - nenhum trabalhador à vista.', focus: 'center 65%' },
       { image: images.idle, label: 'Pessoas à margem', alt: 'Pessoas sentadas sem ter o que fazer numa praça, enquanto uma fábrica automatizada funciona atrás delas.', focus: 'center 65%' },
     ],
     explain: [

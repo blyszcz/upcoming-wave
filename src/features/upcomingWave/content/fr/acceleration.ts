@@ -26,7 +26,7 @@ export const acceleration = {
   pond: {
     title: 'L’énigme de l’étang',
     copy: 'Sur un étang, les nénuphars doublent chaque jour. Au bout de 30 jours, ils couvrent tout l’étang. Quel jour en couvraient-ils la moitié ?',
-    answer: 'Le 29e jour. Avec un doublement, presque tout se joue à la toute fin.',
+    answer: 'Le 29e jour. Quand la surface double chaque jour, l’essentiel se joue à la toute fin.',
   },
   chart: {
     title: 'La durée des tâches que l’IA réalise seule',
@@ -38,7 +38,7 @@ export const acceleration = {
   evidence: {
     title: 'L’auto-amélioration a déjà commencé',
     items: [
-      { kicker: 'Anthropic · mai 2026', value: '80 %+', text: 'du code de l’entreprise est désormais écrit par Claude. Début 2025, c’était quelques pour cent.', source: { label: 'Anthropic', url: 'https://www.anthropic.com/institute/recursive-self-improvement' } },
+      { kicker: 'Anthropic · mai 2026', value: 'Plus de 80 %', text: 'du code de l’entreprise est désormais écrit par Claude. Début 2025, c’était quelques pour cent.', source: { label: 'Anthropic', url: 'https://www.anthropic.com/institute/recursive-self-improvement' } },
       { kicker: 'OpenAI · septembre 2026', value: 'Stagiaire IA', text: 'L’entreprise dit disposer d’un stagiaire de recherche IA. Elle prévoit un chercheur IA automatisé pour 2028.', source: { label: 'Engadget', url: 'https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/' } },
       { kicker: 'Epoch AI', value: '4-5×', text: 'par an - la croissance de la puissance de calcul utilisée pour entraîner les meilleurs modèles.', source: { label: 'Epoch AI', url: 'https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year' } },
     ] satisfies EvidenceItem[],

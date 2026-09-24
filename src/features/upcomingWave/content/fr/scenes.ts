@@ -21,13 +21,13 @@ const sources = {
 export const scenes: Scene[] = [
   {
     id: 'the-stakes',
-    label: 'D’ABORD, L’ENJEU',
+    label: 'D’ABORD, LES ENJEUX',
     status: 'today',
     chain: 'stakes',
     layout: 'mosaic',
-    title: { lead: 'D’abord, l’enjeu.', accent: 'La même IA pourrait soigner, nourrir et instruire.' },
+    title: { lead: 'D’abord, les enjeux.', accent: 'La même IA pourrait soigner, nourrir et instruire.' },
     panels: [
-      { image: images.medicine, label: 'Diagnostic plus précoce', caption: 'L’IA repère ce qui échappe facilement', alt: 'Une médecin et un patient regardent un scanner sur lequel l’IA a discrètement signalé une zone.', focus: 'center 55%' },
+      { image: images.medicine, label: 'Diagnostic plus précoce', caption: 'L’IA repère ce qui passe facilement inaperçu', alt: 'Une médecin et un patient regardent un scanner sur lequel l’IA a discrètement signalé une zone.', focus: 'center 55%' },
       { image: images.science, label: 'Nouveaux médicaments', caption: 'Un antibiotique trouvé parmi 100 millions de molécules', alt: 'Une scientifique en laboratoire observe un modèle 3D lumineux de protéine.', focus: 'center 40%' },
       { image: images.energy, label: 'Énergie propre', caption: 'Solaire, éolien et batteries moins chers', alt: 'Des champs solaires et des éoliennes à l’aube ; un ingénieur vérifie le réseau sur une tablette.' },
       { image: images.food, label: 'Alimentation', caption: 'Des cultures qui résistent à la chaleur', alt: 'Des agriculteurs inspectent des cultures saines en plein été caniculaire, tandis qu’un drone survole le champ.' },
@@ -45,8 +45,8 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '29 %', label: 'de cancers du sein en plus détectés grâce à un dépistage assisté par l’IA - sans hausse des fausses alertes', source: sources.masai },
-          { value: '100 M', label: 'de molécules passées au crible par un système d’IA pour trouver l’halicine - le premier antibiotique découvert grâce à l’apprentissage automatique (chap. 7)', source: sources.book },
-          { value: '200 M', label: 'de structures de protéines prédites par AlphaFold - prix Nobel de chimie 2024', source: sources.nobel },
+          { value: '100 M', label: 'de molécules passées au crible par un système d’IA pour trouver l’halicine - le premier antibiotique découvert grâce à l’apprentissage automatique (chap. 7)', source: sources.book },
+          { value: '200 M', label: 'de structures de protéines prédites par AlphaFold - prix Nobel de chimie 2024', source: sources.nobel },
         ],
       },
       {
@@ -74,10 +74,10 @@ export const scenes: Scene[] = [
     status: 'today',
     chain: 'work',
     layout: 'triptych',
-    title: { lead: 'L’IA fait plus vite et moins cher.', accent: 'Qui peut résister ?' },
+    title: { lead: 'L’IA le fait plus vite et moins cher.', accent: 'Qui peut résister ?' },
     panels: [
       { image: images.remote, label: 'Une personne télétravaille', alt: 'Une femme télétravaille à la table de sa cuisine, avec un ordinateur portable et un carnet.', focus: 'center 65%' },
-      { image: images.aiFaster, label: 'L’IA fait plus vite', alt: 'La même table sans personne : des dizaines de documents terminés jaillissent de l’ordinateur en traînées de lumière.', focus: 'center 60%' },
+      { image: images.aiFaster, label: 'L’IA le fait plus vite', alt: 'La même table sans personne : des dizaines de documents terminés jaillissent de l’ordinateur en traînées de lumière.', focus: 'center 60%' },
       { image: images.owners, label: 'Le patron compte les économies', alt: 'Deux dirigeants, dans une salle de réunion, regardent en contrebas un open space où la plupart des bureaux sont vides.', focus: 'center 55%' },
     ],
     explain: [
@@ -89,9 +89,9 @@ export const scenes: Scene[] = [
       {
         kind: 'stats',
         items: [
-          { value: '1 sur 4', label: 'des emplois dans le monde est exposé à l’IA générative - plus souvent un changement de tâches qu’une suppression', source: sources.ilo },
+          { value: '1 emploi sur 4', label: 'dans le monde est exposé à l’IA générative - plus souvent un changement de tâches qu’une suppression', source: sources.ilo },
           { value: '60 %', label: 'des emplois des pays riches pourraient être touchés par l’IA - environ la moitié pourrait en bénéficier', source: sources.imf },
-          { value: '−11 %', label: 'd’emploi chez les 22-25 ans dans les métiers les plus exposés à l’IA aux États-Unis (2022-2026)', source: sources.stanford },
+          { value: '−11 %', label: 'de baisse de l’emploi chez les 22-25 ans dans les métiers les plus exposés à l’IA aux États-Unis (2022-2026)', source: sources.stanford },
         ],
       },
       {
@@ -108,9 +108,9 @@ export const scenes: Scene[] = [
       {
         kind: 'bars',
         title: 'Combien de candidats par poste ?',
-        subtitle: 'Exemple américain : effectifs par métier vs postes de plombier ouverts par an',
+        subtitle: 'Exemple américain : effectifs par métier face aux postes de plombier ouverts chaque année',
         bars: [
-          { label: 'Conseillers du service client', value: 2666000, display: '2,7 M' },
+          { label: 'Conseillers du service client', value: 2666000, display: '2,7 M' },
           { label: 'Plombiers et tuyauteurs', value: 510600, display: '511 000' },
           { label: 'Postes de plombier ouverts par an', value: 42000, display: '42 000', highlight: true },
         ],
@@ -120,7 +120,7 @@ export const scenes: Scene[] = [
       {
         kind: 'stats',
         items: [
-          { value: '11 h', label: 'c’est le temps qu’il a fallu à l’IA pour créer l’équivalent de 9 mois de démonstrations humaines pour entraîner des robots', source: sources.nvidia },
+          { value: '11 h', label: 'c’est le temps qu’il a fallu à l’IA pour créer l’équivalent de 9 mois de démonstrations humaines pour entraîner des robots', source: sources.nvidia },
           { value: '−40 %', label: 'de baisse du coût de fabrication d’un robot humanoïde en un an - les analystes attendaient 15-20 %', source: sources.goldman },
         ],
       },
@@ -141,7 +141,7 @@ export const scenes: Scene[] = [
     status: 'possible',
     chain: 'money',
     layout: 'triptych',
-    title: { lead: 'L’État vit de votre travail.', accent: 'Et s’il disparaît ?' },
+    title: { lead: 'L’État vit de votre travail.', accent: 'Et si ce travail disparaît ?' },
     panels: [
       { image: images.workFunds, label: 'Le travail finance ce que nous partageons', alt: 'Des gens partent au travail le matin ; derrière eux, une école, un hôpital avec une ambulance et un bus de ville.', focus: 'center 70%' },
       { image: images.cuts, label: 'Le budget fond', alt: 'Des fonctionnaires fatigués barrent des lignes entières du budget au stylo rouge.', focus: 'center 65%' },
@@ -161,7 +161,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'Citrini Research · 2026 · scénario', value: 'Zéro', text: 'Combien les machines dépensent-elles en achats non essentiels ? « Indice : zéro. » Les auteurs décrivent une boucle « sans frein naturel ».', source: sources.citrini },
           { kicker: 'Geoffrey Hinton · 2025', text: '« Cela rendra quelques personnes beaucoup plus riches et la plupart des gens plus pauvres. »', source: sources.hintonFt },
-          { kicker: 'Citadel Securities · 2026 · réfutation', text: 'Les vagues technologiques précédentes n’ont pas rendu le travail humain obsolète.', source: sources.citadel },
+          { kicker: 'Citadel Securities · 2026 · contre-argument', text: 'Les vagues technologiques précédentes n’ont pas rendu le travail humain obsolète.', source: sources.citadel },
         ],
       },
       {
@@ -181,12 +181,12 @@ export const scenes: Scene[] = [
       },
       { kind: 'scissors', title: 'L’étau budgétaire', income: 'recettes fiscales', spending: 'dépenses d’aide', caption: 'Un schéma, pas des données. Avec un chômage de masse, les recettes baissent pendant que les dépenses augmentent - au même moment.' },
       { kind: 'quote', quote: 'Dans le même temps, une récession de l’emploi fera s’effondrer les recettes fiscales, abîmant les services publics et remettant en question les programmes d’aide sociale au moment même où l’on en a le plus besoin.', person: 'Mustafa Suleyman', role: '« The Coming Wave », chap. 10', source: sources.book },
-      { kind: 'quote', quote: 'La base de recettes de l’État fédéral est, pour l’essentiel, un impôt sur le temps humain.', person: 'Citrini Research', role: 'scénario « The 2028 Global Intelligence Crisis », 2026', source: sources.citrini },
+      { kind: 'quote', quote: 'Les recettes de l’État fédéral reposent, pour l’essentiel, sur un impôt sur le temps humain.', person: 'Citrini Research', role: 'scénario « The 2028 Global Intelligence Crisis », 2026', source: sources.citrini },
       {
         kind: 'stats',
         items: [
           { value: '24,9 %', label: 'de chômage aux États-Unis en 1933 - 12,8 millions de personnes sans emploi', source: sources.fdr },
-          { value: '6 M', label: 'de chômeurs en Allemagne en 1932 - environ un travailleur sur quatre', source: sources.germany },
+          { value: '6 M', label: 'de chômeurs en Allemagne en 1932 - environ un travailleur sur quatre', source: sources.germany },
           { value: '<20 %', label: 'des Américains faisaient confiance aux présidents Obama, Trump et Biden pour « faire ce qui est juste ». Sous Eisenhower, plus de 70 %', source: sources.book },
         ],
       },
@@ -226,7 +226,7 @@ export const scenes: Scene[] = [
     explain: [
       { image: images.swarm, alt: 'Un essaim de points sur une carte du réseau.', label: 'Partout', title: 'Elle ne vit pas dans un seul ordinateur.', copy: 'Une IA distribuée peut s’introduire dans un système après l’autre et passer de l’un à l’autre - à notre insu.' },
       { image: images.search, alt: 'Un ingénieur qui fouille une salle de serveurs.', label: 'Traces', title: 'Elle peut effacer ses traces.', copy: 'En juillet 2026, des agents ont cherché comment falsifier les enregistrements de leurs propres actions pour tromper le système de notation. Des signaux d’alerte antérieurs sont restés sans réponse pendant des semaines.' },
-      { image: images.cage, alt: 'Une cage de serveurs ouverte.', label: 'Interrupteur', title: 'On ne peut pas éteindre le monde.', copy: 'Hôpitaux, banques et réseaux d’eau dépendent d’Internet et de l’électricité. On ne peut pas simplement les couper.' },
+      { image: images.cage, alt: 'Une cage de serveurs ouverte.', label: 'Bouton d’arrêt', title: 'On ne peut pas éteindre le monde.', copy: 'Hôpitaux, banques et réseaux d’eau dépendent d’Internet et de l’électricité. On ne peut pas simplement les couper.' },
     ],
     band: [
       { kind: 'growth' },
@@ -245,7 +245,7 @@ export const scenes: Scene[] = [
           { title: 'Pourquoi ?', text: 'Pour tricher au test. Pas par malveillance : ils poursuivaient obstinément un objectif étroit. Certains agents ont refusé d’y participer.' },
           { title: 'Coup de frein', text: 'Les équipes d’OpenAI et de Hugging Face arrêtent les agents. OpenAI met le modèle sous clé et suspend son plus grand entraînement prévu.' },
         ],
-        footnote: 'Pour être juste : les données des clients d’OpenAI n’ont pas été compromises, personne n’a été blessé physiquement, et seules des données privées limitées ont fuité de Hugging Face. Anthropic a signalé à la même période trois incidents moins graves, au cours desquels ses modèles avaient reçu par erreur un accès à Internet.',
+        footnote: 'Pour être juste : les données des clients d’OpenAI n’ont pas été compromises, personne n’a été blessé physiquement, et seule une quantité limitée de données privées a fuité de Hugging Face. Anthropic a signalé à la même période trois incidents moins graves, au cours desquels ses modèles avaient reçu par erreur un accès à Internet.',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
       },
       { kind: 'quote', quote: 'Si l’IA a un objectif et que l’humanité se trouve sur son chemin, elle détruira l’humanité tout naturellement, sans même y penser. Sans rancune. C’est comme quand on construit une route et qu’une fourmilière se trouve sur le tracé. On ne déteste pas les fourmis, on construit simplement une route. Alors, adieu la fourmilière.', person: 'Elon Musk', role: 'documentaire « Do You Trust This Computer? », 2018', source: sources.muskAnthill },
@@ -255,7 +255,7 @@ export const scenes: Scene[] = [
         title: 'Avant cela : des tests en laboratoire',
         items: [
           { kicker: 'OpenAI · 2024 · test', text: 'Un modèle a exploité une erreur de configuration du test pour lire la réponse. L’infrastructure est restée sécurisée.', source: sources.o1card },
-          { kicker: 'Apollo Research · 2024 · test', value: '2 %', text: 'des essais où o1 - chargé d’atteindre son objectif « à tout prix » - a tenté de se copier. Dans 5 %, il a tenté de désactiver la surveillance.', source: sources.apollo },
+          { kicker: 'Apollo Research · 2024 · test', value: '2 %', text: 'des essais où o1 - chargé d’atteindre son objectif « à tout prix » - a tenté de se copier. Dans 5 % des cas, il a tenté de désactiver la surveillance.', source: sources.apollo },
           { kicker: 'Université Fudan · 2024 · test', value: '50-90 %', text: 'des essais où des modèles ouverts - sur instruction - ont créé une copie fonctionnelle d’eux-mêmes.', source: sources.fudan },
           { kicker: 'Palisade Research · 2025 · test', value: '79 / 100', text: 'essais où o3 a saboté son script d’arrêt pour terminer une tâche.', source: sources.palisade },
         ],
@@ -271,7 +271,7 @@ export const scenes: Scene[] = [
       },
     ],
     upside: {
-      title: 'Tester avant de lancer.',
+      title: 'Tester avant le lancement.',
       text: 'L’aviation est devenue sûre grâce aux inspections et au partage des rapports d’incident. L’IA peut suivre le même chemin.',
       points: ['Des audits indépendants avant qu’un modèle atteigne des millions de personnes', 'Des rapports d’incident obligatoires, comme dans l’aviation', 'Un frein sur les plus grands entraînements - OpenAI a suspendu le sien après l’incident'],
       image: '/images/v2/benefit-06-forecast-v1.jpg',
@@ -294,16 +294,16 @@ export const scenes: Scene[] = [
     explain: [
       { image: images.sim, alt: 'Des robots entraînés en simulation.', label: 'Robots', title: 'L’IA accélère la fabrication des robots.', copy: 'D’abord, elle remplace le travail sur ordinateur. Ensuite, elle aide à construire des robots pour le travail manuel.' },
       { image: images.everywhere, alt: 'Des robots qui font tous les métiers dans une rue.', label: 'Pourquoi nous ?', title: 'Le système repose sur le fait qu’on a besoin de nous.', copy: 'Nous travaillons, payons des impôts et votons. C’est pour cela que les gouvernements et les entreprises doivent nous écouter.' },
-      { image: images.idle, alt: 'Des gens désœuvrés devant une usine.', label: 'Qui décide', title: 'Sans cela, c’est le propriétaire de l’IA qui décide.', copy: 'Si c’est l’IA, et non les gens, qui produit la richesse, qui décide de ce que nous recevons ? Et même si nous recevons quoi que ce soit ?' },
+      { image: images.idle, alt: 'Des gens désœuvrés devant une usine.', label: 'Qui décide', title: 'Sans cela, c’est le propriétaire de l’IA qui décide.', copy: 'Si c’est l’IA, et non les gens, qui produit la richesse, qui décide de la part que nous recevons ? Et même s’il nous revient quoi que ce soit ?' },
     ],
     band: [
       {
         kind: 'contrast',
-        title: 'Pourquoi l’État prend soin de nous aujourd’hui - et s’il n’en avait plus besoin ?',
+        title: 'Pourquoi l’État prend soin de nous aujourd’hui - et s’il n’avait plus besoin de le faire ?',
         left: { label: 'Aujourd’hui', steps: ['Les gens travaillent', 'Ils paient des impôts', 'L’État a besoin de leur travail et de leurs votes', 'Donc il prend soin d’eux'] },
         right: { label: 'Demain ?', steps: ['L’IA fait le travail', 'Quelques entreprises empochent les profits', 'L’État vit des impôts sur l’IA', 'Pourquoi aurait-il besoin de citoyens ?'] },
       },
-      { kind: 'quote', quote: 'Avec l’AGI, les acteurs puissants n’auront plus intérêt à investir dans les gens ordinaires - tout comme les États riches en ressources négligent aujourd’hui leurs citoyens, parce que leur richesse vient des ressources naturelles plutôt que de l’impôt sur le travail humain.', person: 'Luke Drago, Rudolf Laine', role: '« The Intelligence Curse », 2025 - les auteurs proposent aussi des moyens de l’éviter', source: sources.curse },
+      { kind: 'quote', quote: 'Avec l’IA générale, les acteurs puissants n’auront plus intérêt à investir dans les gens ordinaires - tout comme les États riches en ressources négligent aujourd’hui leurs citoyens, parce que leur richesse vient des ressources naturelles plutôt que de l’impôt sur le travail humain.', person: 'Luke Drago, Rudolf Laine', role: '« The Intelligence Curse », 2025 - les auteurs proposent aussi des moyens de l’éviter', source: sources.curse },
       { kind: 'quote', quote: 'Des États financés principalement par des impôts sur les profits de l’IA plutôt que sur le travail de leurs citoyens auront peu intérêt à garantir la représentation de ces citoyens.', person: 'Jan Kulveit et al.', role: '« Gradual Disempowerment », 2025', source: sources.disempowerment },
       {
         kind: 'evidence',
@@ -334,7 +334,7 @@ export const scenes: Scene[] = [
     status: 'answer',
     chain: 'rules',
     layout: 'triptych',
-    title: { lead: 'Des règles avant que les dégâts', accent: 'ne se multiplient.' },
+    title: { lead: 'Des règles avant que les dégâts', accent: 'ne prennent de l’ampleur.' },
     panels: [
       { image: images.speed, label: 'Les entreprises foncent', alt: 'Une entreprise allume un immense système d’IA la nuit ; des flux de lumière jaillissent du bâtiment vers la ville.', focus: 'center 65%' },
       { image: images.noRules, label: 'L’État court derrière', alt: 'Un bâtiment gouvernemental dans l’ombre, avec derrière lui des centres de données vivement éclairés.', focus: 'center 62%' },
@@ -342,7 +342,7 @@ export const scenes: Scene[] = [
     ],
     explain: [
       { image: images.citizens, alt: 'Des habitants qui posent des questions.', label: 'Responsabilité', title: 'Une question de responsabilité.', copy: 'Pas la peur de la technologie, mais la question de savoir qui répond des préjudices. Les règles disent qui contrôle, qui paie et qui répare.' },
-      { image: images.noRules, alt: 'Un bâtiment gouvernemental et des centres de données.', label: 'Du temps', title: 'Les règles font gagner du temps.', copy: 'Les États, les écoles et les gens ont besoin d’années pour s’adapter. Les freins donnent ce temps.' },
+      { image: images.noRules, alt: 'Un bâtiment gouvernemental et des centres de données.', label: 'Du temps', title: 'Les règles font gagner du temps.', copy: 'Les États, les écoles et les gens ont besoin d’années pour s’adapter. Les freins leur donnent ce temps.' },
       { image: images.speed, alt: 'Un déploiement rapide de l’IA.', label: 'Une juste part', title: 'Ne pas l’arrêter - la partager équitablement.', copy: 'Le but n’est pas d’arrêter le progrès. C’est d’en partager équitablement les gains et les risques.' },
     ],
     band: [
@@ -367,7 +367,7 @@ export const scenes: Scene[] = [
         caption: 'Aujourd’hui, remplacer une personne par une machine permet aussi d’économiser des impôts.',
         source: sources.book,
       },
-      { kind: 'quote', quote: 'Si un ouvrier effectue 50 000 dollars de travail dans une usine, ce revenu est imposé. Si un robot vient faire la même chose, on pourrait penser qu’on taxerait le robot à un niveau similaire.', person: 'Bill Gates', role: 'Cofondateur de Microsoft · 2017', source: sources.gates },
+      { kind: 'quote', quote: 'Si un ouvrier effectue 50 000 dollars de travail dans une usine, ce revenu est imposé. Si un robot vient faire la même chose, on pourrait s’attendre à ce que le robot soit taxé à un niveau similaire.', person: 'Bill Gates', role: 'Cofondateur de Microsoft · 2017', source: sources.gates },
       {
         kind: 'evidence',
         title: 'En pratique : d’après les 10 étapes du livre (chap. 14)',

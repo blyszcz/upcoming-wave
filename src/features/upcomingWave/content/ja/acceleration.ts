@@ -14,7 +14,7 @@ export const horizonPoints: HorizonPoint[] = [
   { model: 'GPT-5', date: '2025-08', minutes: 203 },
   { model: 'Claude Opus 4.5', date: '2025-11', minutes: 293 },
   { model: 'GPT-5.2', date: '2025-12', minutes: 352 },
-  { model: 'Claude Opus 4.6', date: '2026-02', minutes: 719, uncertain: true, milestone: { value: '12時間', note: '1日の勤務時間以上' } },
+  { model: 'Claude Opus 4.6', date: '2026-02', minutes: 719, uncertain: true, milestone: { value: '12時間', note: '1日の勤務時間を超える' } },
   { model: 'Claude Mythos Preview', date: '2026-04', minutes: 1045, uncertain: true },
 ];
 
@@ -22,7 +22,7 @@ export const acceleration = {
   id: 'ai-builds-ai',
   label: '進歩の速さ',
   status: 'today' as SceneStatus,
-  title: { lead: 'AIがAIを作り始めた。', accent: 'しかも加速している。' },
+  title: { lead: 'AIが、AIづくりを覚え始めた。', accent: 'しかも加速している。' },
   pond: {
     title: '池のなぞなぞ',
     copy: '池のスイレンは毎日2倍に増えます。30日で池全体を覆いました。では、池の半分を覆ったのは何日目でしょう？',
@@ -44,7 +44,7 @@ export const acceleration = {
     ] satisfies EvidenceItem[],
   },
   quotes: [
-    { quote: 'この夏ごろから、AIは劇的に速く進歩しています。その主な原動力は、次世代のAIを作るAI自身の能力の高まりです。この力学は再帰的自己改良と呼ばれ、業界全体で起こり始めています。', person: 'ダリオ・アモデイ', role: 'Anthropic CEO · 2026年9月', source: { label: 'We Must Pace the Frontier', url: 'https://darioamodei.com/post/we-must-pace-the-frontier' } },
+    { quote: 'この夏ごろから、AIは劇的に速く進歩している。その主な原動力は、次世代のAIを作るAI自身の能力の高まりだ。この力学は再帰的自己改良と呼ばれ、業界全体で起こり始めている。', person: 'ダリオ・アモデイ', role: 'Anthropic CEO · 2026年9月', source: { label: 'We Must Pace the Frontier', url: 'https://darioamodei.com/post/we-must-pace-the-frontier' } },
     { quote: '最初の超知能機械は、人類が作る必要のある最後の発明となる。ただし、その機械が、自らを制御下に置く方法を私たちに教えてくれるほど従順であればの話だが。', person: 'I・J・グッド', role: 'アラン・チューリングと共に働いた数学者 · 1965年', source: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2022/01/04/ultraintelligent/' } },
   ],
 };

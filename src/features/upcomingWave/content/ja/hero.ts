@@ -14,6 +14,6 @@ export const hero = {
   threats: ['大量解雇', 'AIの制御を失うこと', '人間より賢い機械', 'AIの助けで作られる生物兵器'],
   closing: 'そして彼ら自身が、規制を求めています。',
   note: '怖がらせたいのではありません。説明したいのです。良いルールがあれば、AIは計り知れないほどの良いことができるからです。',
-  noteLink: { label: 'もう一つの側面を見る', href: '#the-stakes' },
-  cta: { label: '彼らの言葉を読む', shortLabel: 'その理由', href: '#voices' },
+  noteLink: { label: 'もう一つの面を見る', href: '#the-stakes' },
+  cta: { label: '彼らの言葉を読む', shortLabel: '理由を見る', href: '#voices' },
 };

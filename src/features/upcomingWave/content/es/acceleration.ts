@@ -29,7 +29,7 @@ export const acceleration = {
     answer: 'El día 29. Cuando algo se duplica, casi todo ocurre al final.',
   },
   chart: {
-    title: 'Cuánto dura la tarea que la IA hace sola',
+    title: 'Cuánto puede durar una tarea que la IA hace sola',
     subtitle: 'Desde 2023: se duplica aproximadamente cada 4 meses.',
     doublingMonths: 4.2,
     note: 'Mediciones de METR: la duración de la tarea (en tiempo de trabajo humano) que los mejores modelos completan solos en la mitad de los intentos. Las mediciones por encima de 16 horas son inciertas: las tareas de prueba son demasiado cortas. La línea discontinua es un escenario, no una medición.',
@@ -38,8 +38,8 @@ export const acceleration = {
   evidence: {
     title: 'La automejora ya ha empezado',
     items: [
-      { kicker: 'Anthropic · mayo de 2026', value: '80%+', text: 'del código de la empresa ya lo escribe Claude. A principios de 2025 era un pequeño porcentaje.', source: { label: 'Anthropic', url: 'https://www.anthropic.com/institute/recursive-self-improvement' } },
-      { kicker: 'OpenAI · septiembre de 2026', value: 'Becario IA', text: 'La empresa dice que ya tiene un becario de investigación basado en IA. Planea un investigador de IA automatizado para 2028.', source: { label: 'Engadget', url: 'https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/' } },
+      { kicker: 'Anthropic · mayo de 2026', value: '80%+', text: 'del código de la empresa ya lo escribe Claude. A principios de 2025 era apenas un pequeño porcentaje.', source: { label: 'Anthropic', url: 'https://www.anthropic.com/institute/recursive-self-improvement' } },
+      { kicker: 'OpenAI · septiembre de 2026', value: 'Becario de IA', text: 'La empresa dice que ya tiene un becario de investigación basado en IA. Planea un investigador de IA automatizado para 2028.', source: { label: 'Engadget', url: 'https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/' } },
       { kicker: 'Epoch AI', value: '4-5×', text: 'al año: así crece la potencia de cálculo usada para entrenar los mejores modelos.', source: { label: 'Epoch AI', url: 'https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year' } },
     ] satisfies EvidenceItem[],
   },

@@ -43,7 +43,7 @@ export const ui = {
     text: 'Les dirigeants des entreprises qui construisent l’IA et les scientifiques qui en ont été les pionniers. Chaque citation renvoie à sa source.',
     signedBy: 'Signataires, entre autres',
     source: 'Source :',
-    swipe: 'Glissez pour voir plus →',
+    swipe: 'Faites glisser pour en voir plus →',
   },
   pond: {
     replay: 'Rejouer ↻',

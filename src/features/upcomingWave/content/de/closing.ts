@@ -20,7 +20,7 @@ export const split = {
     alt: 'Eine Stadt bei Nacht unter Kameras und Drohnen, die die Menge scannen.',
     label: 'Der Überwachungsstaat',
     text: 'Es beginnt harmlos: Kameras für die Sicherheit, KI, um Kriminelle zu fassen. Schritt für Schritt wissen die Behörden alles über uns.',
-    quote: '„Je mehr kleinere technische Pannen sich häufen, desto lauter wird der Ruf nach Kontrolle.“',
+    quote: '„Wenn sich kleinere technische Pannen häufen, wird der Ruf nach Kontrolle lauter.“',
   },
   path: { label: 'Der schmale Pfad', href: '#rules' },
   band: [
@@ -42,7 +42,7 @@ export const finale = {
   title: { lead: 'Fortschritt nicht stoppen.', accent: 'Ihm Grenzen setzen.' },
   quote: 'Man schnallt sich nicht an, weil man weiß, dass es kracht. Man schnallt sich an, weil man es nicht weiß.',
   rules: { title: 'So sehen gute Regeln aus', items: ['Unabhängige Tests, bevor KI Millionen Menschen erreicht', 'Klare Verantwortung, wenn ein KI-System Schaden anrichtet', 'Faire Verteilung der KI-Gewinne - über Steuern und ein echtes soziales Netz'] },
-  actions: { title: 'Was du tun kannst', items: ['Teile das mit einer Person, die noch nicht darüber nachgedacht hat', 'Frag deine gewählten Vertreter, wie sie zu Regeln für KI stehen', 'Wenn KI-Firmen Sicherheitspläne veröffentlichen, lies sie - und stell Fragen'] },
+  actions: { title: 'Was du tun kannst', items: ['Teile das mit einer Person, die noch nicht darüber nachgedacht hat', 'Frag deine Abgeordneten, wie sie zu Regeln für KI stehen', 'Wenn KI-Firmen Sicherheitspläne veröffentlichen, lies sie - und stell Fragen'] },
   // Empty: the closing line is the page's own voice, not a quote.
   quoteSource: '',
 };

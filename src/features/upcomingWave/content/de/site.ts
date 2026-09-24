@@ -18,7 +18,7 @@ export const site = {
     methodTitle: 'Wie ich arbeite',
     method: [
       'Jeder Fakt hat eine Quelle. Zitate prüfe ich an der Primärquelle; wo sie nicht zugänglich ist, stütze ich mich auf seriöse Medien, die darüber berichten.',
-      'Die Abschnittsmarken sagen, was etwas ist: „heute“ - passiert bereits; „Geschichte“ - ist schon einmal passiert; „Vorfall“ - ein echtes Ereignis; „mögliches“ und „Extremszenario“ - Risiken, keine Vorhersagen.',
+      'Die Markierungen über den Abschnitten zeigen, worum es sich handelt: „heute“ - passiert bereits; „Geschichte“ - ist schon einmal passiert; „Vorfall“ - ein echtes Ereignis; „mögliches Szenario“ und „Extremszenario“ - Risiken, keine Vorhersagen.',
       'Labortests sind als Tests gekennzeichnet und werden nie mit echten Vorfällen vermischt.',
       'Zitate aus „The Coming Wave“ sind unsere Übersetzung der englischen Ausgabe (Crown, 2023). Andere Zitate sind aus ihrer Originalsprache übersetzt.',
       'Ich zeige auch die andere Seite: den Nutzen von KI und die Argumente dafür, dass die Risiken überschätzt sein könnten.',
@@ -32,7 +32,7 @@ export const site = {
   footer: {
     sourcesLink: 'Quellen & Methode',
     why: { title: 'Warum diese Seite?', text: 'Ich spreche viel mit Menschen über KI und sehe immer wieder dasselbe: Es fehlen keine Meinungen, es fehlt Kontext - ein Verständnis dafür, was wirklich auf dem Spiel steht. Also wollte ich etwas dagegen tun und es einfach erklären, in Bildern. Jeder Fakt ist mit seiner Quelle verlinkt.' },
-    sources: 'Zitate von den Entwicklern der KI und von Forschenden, Studien und das Buch „The Coming Wave“ (M. Suleyman, M. Bhaskar) - jeder Fakt ist mit seiner Quelle verlinkt.',
+    sources: 'Zitate von Menschen, die KI entwickeln, und von Forschenden, dazu Studien und das Buch „The Coming Wave“ (M. Suleyman, M. Bhaskar) - jeder Fakt ist mit seiner Quelle verlinkt.',
     independence: 'Die Szenarien sind mögliche Risiken, keine Vorhersagen. Ein unabhängiges Projekt - nicht verbunden mit den Autoren oder dem Verlag des Buches.',
     author: { label: 'Gemacht von', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '& KI' },
   },

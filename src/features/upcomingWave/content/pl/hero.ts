@@ -3,7 +3,7 @@ export const hero = {
   alt: 'Gigantyczna fala nad nocnym miastem, spleciona z helis DNA i wirusów, na jej szczycie zimna maszyna. Na ulicy zwolnieni ludzie z kartonami, obok przewrócony posąg człowieka.',
   compare: {
     image: '/images/v2/hero-wave-hope-v7c.jpg',
-    alt: 'Ta sama fala i to samo miasto o świcie: złota fala nad zielonym parkiem. Przy długim stole pełnym jedzenia rodziny jedzą razem, a robot podaje im danie. Drugi robot podaje ramię starszej pani, starsza para tańczy, rodzina z psem ma piknik.',
+    alt: 'Ta sama fala i to samo miasto o świcie: złota fala nad zielonym parkiem. Przy długim stole pełnym jedzenia rodziny jedzą razem, a robot podaje im danie. Drugi robot podaje ramię starszej pani, para seniorów tańczy, rodzina z psem ma piknik.',
     darkLabel: 'Jeśli nic nie zrobimy',
     hopeLabel: 'Jeśli ustalimy zasady',
     aria: 'Przesuń, by porównać dwie przyszłości',
@@ -13,7 +13,7 @@ export const hero = {
   threatsLabel: 'Ostrzegają przed',
   threats: ['Masowymi zwolnieniami', 'Utratą kontroli nad AI', 'Maszynami mądrzejszymi od nas', 'Bronią biologiczną tworzoną z pomocą AI'],
   closing: 'I sami proszą, żeby ich regulować.',
-  note: 'Nie straszę - tłumaczę. Bo jeśli ustalimy dobre zasady, AI może dać nam ogromnie dużo dobrego.',
+  note: 'Nie straszę - tłumaczę. Bo jeśli ustalimy dobre zasady, AI może zdziałać ogromnie dużo dobrego.',
   noteLink: { label: 'Zobacz drugą stronę', href: '#the-stakes' },
-  cta: { label: 'Zobacz ich słowa', shortLabel: 'Zobacz dlaczego', href: '#voices' },
+  cta: { label: 'Przeczytaj ich słowa', shortLabel: 'Zobacz, dlaczego', href: '#voices' },
 };

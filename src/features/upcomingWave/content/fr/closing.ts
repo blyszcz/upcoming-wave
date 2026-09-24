@@ -40,9 +40,9 @@ export const finale = {
   alt: 'Des gens du monde entier, autour d’une table ronde au crépuscule, posent des anneaux lumineux autour d’un noyau brillant.',
   label: 'QUE PUIS-JE FAIRE',
   title: { lead: 'N’arrêtons pas le progrès.', accent: 'Fixons-lui des limites.' },
-  quote: 'Vous n’attachez pas votre ceinture parce que vous savez qu’il y aura un accident. Vous l’attachez parce que vous ne le savez pas.',
+  quote: 'On n’attache pas sa ceinture parce qu’on sait qu’il y aura un accident. On l’attache parce qu’on ne le sait pas.',
   rules: { title: 'À quoi ressemblent de bonnes règles', items: ['Des tests indépendants avant que l’IA n’atteigne des millions de personnes', 'Une responsabilité claire quand un système d’IA cause un préjudice', 'Des gains de l’IA partagés équitablement - par l’impôt et un vrai filet de sécurité'] },
-  actions: { title: 'Ce que vous pouvez faire', items: ['Partagez ceci avec une personne qui n’y a pas encore réfléchi', 'Demandez à vos élus quelle est leur position sur les règles de l’IA', 'Quand les entreprises d’IA publient leurs plans de sécurité, lisez-les - et posez des questions'] },
+  actions: { title: 'Ce que vous pouvez faire', items: ['Partagez cette page avec quelqu’un qui n’y a pas encore réfléchi', 'Demandez à vos élus quelle est leur position sur les règles de l’IA', 'Quand les entreprises d’IA publient leurs plans de sécurité, lisez-les - et posez des questions'] },
   // Empty: the closing line is the page's own voice, not a quote.
   quoteSource: '',
 };

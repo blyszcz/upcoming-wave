@@ -21,23 +21,23 @@ const sources = {
 export const scenes: Scene[] = [
   {
     id: 'the-stakes',
-    label: 'まず、懸かるもの',
+    label: 'まず、懸かっているもの',
     status: 'today',
     chain: 'stakes',
     layout: 'mosaic',
-    title: { lead: 'まず、何が懸かっているか。', accent: '同じAIが、治し、養い、教えうる。' },
+    title: { lead: 'まず、何が懸かっているか。', accent: '同じAIが、病を治し、食を支え、学びを助けうる。' },
     panels: [
-      { image: images.medicine, label: 'より早い診断', caption: '見落としやすいものをAIが捉える', alt: '医師と患者が検査画像を見ている。画像にはAIが一か所を控えめに示している。', focus: 'center 55%' },
+      { image: images.medicine, label: '早期診断', caption: '見落としやすいものをAIが捉える', alt: '医師と患者が検査画像を見ている。画像にはAIが一か所を控えめに示している。', focus: 'center 55%' },
       { image: images.science, label: '新しい薬', caption: '1億の分子の中から見つかった抗生物質', alt: '研究室で、科学者が光るタンパク質の3Dモデルを見つめている。', focus: 'center 40%' },
-      { image: images.energy, label: 'クリーンエネルギー', caption: 'より安い太陽光、風力、蓄電池', alt: '夜明けの太陽光発電所と風車。技術者がタブレットで送電網を確認している。' },
+      { image: images.energy, label: 'クリーンエネルギー', caption: '太陽光・風力・蓄電池のコストを下げる', alt: '夜明けの太陽光発電所と風車。技術者がタブレットで送電網を確認している。' },
       { image: images.food, label: '食料', caption: '暑さに耐える作物', alt: '暑い夏、農家の人々が元気な作物を確かめ、畑の上をドローンが飛んでいる。' },
-      { image: images.forecast, label: '早期警報', caption: '洪水や火災をより早く予測', alt: '予報センター。気象予報士たちが、洪水の危険が強調された河川の地図を見ている。' },
+      { image: images.forecast, label: '早期警報', caption: '洪水や山火事をいち早く予測', alt: '予報センター。気象予報士たちが、洪水の危険が強調された河川の地図を見ている。' },
       { image: images.time, label: '学校', caption: '教師を支える', alt: '教師が子どものそばにひざまずいて手伝い、奥ではノートパソコンが事務作業を片づけている。', focus: 'center 60%' },
     ],
     explain: [
       { image: images.medicine, alt: 'AIが支援した検査画像について、医師が患者と話している。', label: '健康', title: 'より良く、より安い医療。', copy: 'AIの支援を受けた医師はより多くのがんを見つけ、AIは新薬を求めて何百万もの分子を調べます。' },
-      { image: images.energy, alt: '夜明けの太陽光発電所と風力発電所。', label: '地球', title: '政治が行き詰まる分野での助け。', copy: '本書の著者は、AIが再生可能エネルギーへの移行、より暑い気候での食料生産、洪水や火災の予測を助けることを期待しています。' },
-      { image: images.time, alt: '子どもを手伝う教師。', label: 'ただし条件がある', title: 'この恩恵は、自然には届かない。', copy: 'すべての人に届くのは、ルールを決めたときだけです。誰が損害に責任を負い、利益をどう分けるのかというルールです。' },
+      { image: images.energy, alt: '夜明けの太陽光発電所と風力発電所。', label: '地球', title: '政治が停滞するところに、助けを。', copy: '本書の著者は、AIが再生可能エネルギーへの移行、より暑い気候での食料生産、洪水や山火事の予測を助けることを期待しています。' },
+      { image: images.time, alt: '子どもを手伝う教師。', label: '条件がひとつ', title: 'この恩恵は、自然には届かない。', copy: 'すべての人に届くのは、ルールを決めたときだけです。誰が損害に責任を負い、利益をどう分けるのかというルールです。' },
     ],
     band: [
       { kind: 'quote', quote: 'それらは医療をより質の高いものにし、同時により手頃なものにするだろう。政治が停滞しているこの時期に、再生可能エネルギーへの移行を実現し、気候変動と闘うための道具の発明を助けるだろう。そして教師を支え、資金不足の教育制度の効果を高める助けとなるだろう。', person: 'ムスタファ・スレイマン', role: '『The Coming Wave』第9章（AIと合成生物学について）', source: sources.book },
@@ -46,7 +46,7 @@ export const scenes: Scene[] = [
         items: [
           { value: '29%', label: 'AIを活用した検診で増えた、乳がんの発見数。誤検出は増えていません', source: sources.masai },
           { value: '1億', label: 'AIシステムがハリシンを見つけるために調べた分子の数。ハリシンは機械学習で発見された最初の抗生物質です（第7章）', source: sources.book },
-          { value: '2億', label: 'AlphaFoldが予測したタンパク質構造の数。2024年のノーベル化学賞', source: sources.nobel },
+          { value: '2億', label: 'AlphaFoldが予測したタンパク質構造の数。2024年ノーベル化学賞の受賞研究です', source: sources.nobel },
         ],
       },
       {
@@ -61,7 +61,7 @@ export const scenes: Scene[] = [
         title: 'テック業界のリーダーたちの期待',
         items: [
           { kicker: 'ビル・ゲイツ · 2023年', value: '不平等の縮小', text: '「AIは、世界で最も深刻な不平等のいくつかを減らすことができる」。彼はAIを「マイクロプロセッサ、パソコン、インターネット、携帯電話の誕生と同じくらい根本的なもの」と呼んでいます。', source: sources.gatesAge },
-          { kicker: 'デミス・ハサビス · Google DeepMind · 2025年', value: '病気の終わり？', text: '「いつの日か、AIの助けを借りて、あらゆる病気を治せるかもしれない…おそらく今後10年ほどのうちに」。彼は「根本的な豊かさ」、つまり欠乏の解消についても語っています。', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
+          { kicker: 'デミス・ハサビス · Google DeepMind · 2025年', value: '病気のない世界？', text: '「いつの日か、AIの助けを借りて、あらゆる病気を治せるかもしれない…おそらく今後10年ほどのうちに」。彼は「根本的な豊かさ」、つまり欠乏の解消についても語っています。', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
           { kicker: 'ダリオ・アモデイ · Anthropic · 2024年', value: '100年 → 10年', text: '50〜100年分の医学の進歩を5〜10年に凝縮し、健康寿命を2倍にし、何十億人もの人を貧困から救い出す。AIがうまくいった場合の彼のビジョンです。', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
           { kicker: 'サム・アルトマン · OpenAI · 2024年', value: '共に豊かに', text: '「未来には、誰もが、今の誰の暮らしよりも良い暮らしを送れるようになる」。彼はすべての子どもに専属のAI家庭教師がつく未来も描いています。', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
         ],
@@ -76,14 +76,14 @@ export const scenes: Scene[] = [
     layout: 'triptych',
     title: { lead: 'AIの方が速くて安い。', accent: '誰が抗えるだろう？' },
     panels: [
-      { image: images.remote, label: '人がリモートで働く', alt: '女性がキッチンのテーブルで、ノートパソコンとノートを使ってリモートで働いている。', focus: 'center 65%' },
+      { image: images.remote, label: 'リモートで働く人', alt: '女性がキッチンのテーブルで、ノートパソコンとノートを使ってリモートで働いている。', focus: 'center 65%' },
       { image: images.aiFaster, label: 'AIの方が速い', alt: '同じテーブルに人の姿はない。ノートパソコンから何十もの完成した書類が光の筋となって飛び出している。', focus: 'center 60%' },
-      { image: images.owners, label: 'オーナーは節約額を数える', alt: '役員室にいる二人の経営者が、ほとんどの机が空いたオフィスを見下ろしている。', focus: 'center 55%' },
+      { image: images.owners, label: '経営者は浮いたコストを数える', alt: '役員室にいる二人の経営者が、ほとんどの机が空いたオフィスを見下ろしている。', focus: 'center 55%' },
     ],
     explain: [
-      { image: images.remote, alt: 'ノートパソコンでリモートワークをする女性。', label: 'リモートワーク', title: 'リモートワークは画面の仕事。', copy: 'メール、報告書、分析、デザイン。ノートパソコンから送れるものなら、AIはこなせるようになりえます。' },
+      { image: images.remote, alt: 'ノートパソコンでリモートワークをする女性。', label: 'リモートワーク', title: 'リモートワークは画面の仕事。', copy: 'メール、報告書、分析、デザイン。ノートパソコンから送れる仕事なら、AIも身につけられます。' },
       { image: images.aiFaster, alt: '完成した書類が飛び出すノートパソコン。', label: 'AIの方が速い', title: 'AIは眠らず、休暇も取らない。', copy: '同じ仕事を数分で、休みなく、何百ものタスクを同時にこなします。しかも人間に並ぶタスクは増え続けています。' },
-      { image: images.owners, alt: '空っぽのオフィスを見る経営者たち。', label: '損得勘定', title: '速くて安い。誰が抗えるだろう？', copy: 'オーナーには節約が見えます。競合にも見えています。使わない企業は競争に負けるかもしれません。だから使えという圧力は非常に大きいのです。' },
+      { image: images.owners, alt: '空っぽのオフィスを見る経営者たち。', label: '損得勘定', title: '速くて安い。誰が抗えるだろう？', copy: '経営者は浮くコストに気づきます。競合他社も気づいています。使わない企業は競争に負けるかもしれません。だから導入への圧力は非常に大きいのです。' },
     ],
     band: [
       {
@@ -107,7 +107,7 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: '物理的な操作で人間並みになるには、まだ長い時間がかかる…だから配管工になるのは良い賭けだろう。', person: 'ジェフリー・ヒントン', role: 'ノーベル賞受賞者、「AIのゴッドファーザー」', source: sources.hintonDoac },
       {
         kind: 'bars',
-        title: '求人1件に何人の応募者？',
+        title: '求人1件に何人が応募する？',
         subtitle: '米国の例：職種ごとの就業者数と、配管工の年間求人数',
         bars: [
           { label: 'カスタマーサービス担当者', value: 2666000, display: '270万' },
@@ -128,7 +128,7 @@ export const scenes: Scene[] = [
     ],
     upside: {
       title: '単調な仕事はAIに。人は時間を取り戻す。',
-      text: '利益が分かち合われれば、仕事が速くなることは、仕事が減ることだけでなく、労働時間の短縮やより良い仕事を意味しえます。',
+      text: '利益を分かち合えば、仕事の効率化は「仕事が減る」だけで終わらず、労働時間の短縮や仕事の質の向上にもつながりえます。',
       points: ['仕事がなくなる前に、学び直すための時間とお金', 'キャリアを変える間の所得支援', '解雇の代わりに週の労働時間を短縮する。OpenAI自身も提案した考えです'],
       image: '/images/v2/upside-work-time-v2.jpg',
       alt: '午後の日が差すキッチン。母親と息子が笑いながらパン生地をこね、庭では父親と祖母が野菜の世話をしている。奥では、洗濯かごの横でロボットが食洗機に食器を入れている。',
@@ -149,7 +149,7 @@ export const scenes: Scene[] = [
     ],
     explain: [
       { image: images.workFunds, alt: '学校と病院の前を通って仕事に向かう人々。', label: '私たちのお金', title: '国に自分のお金はない。', copy: 'あるのは私たちのお金です。学校、病院、道路、年金は、主に労働と消費にかかる税でまかなわれています。' },
-      { image: images.cuts, alt: '予算を削る職員たち。', label: '板挟み', title: '収入は減り、必要は増える。', copy: '失業した人は所得税を払いませんが、支援は必要です。お金が尽きるのは、まさに多くのお金が必要なときです。' },
+      { image: images.cuts, alt: '予算を削る職員たち。', label: '圧迫', title: '収入は減り、必要は増える。', copy: '失業した人は所得税を払いませんが、支援は必要です。お金が尽きるのは、まさに多くのお金が必要なときです。' },
       { image: images.strain, alt: '混雑した救急外来。', label: '削減', title: '削られるのはみんなのもの。', copy: '何百万人もが同時に影響を受けると、国は削減します。医師が減り、教師が減り、バスが減ります。' },
     ],
     band: [
@@ -159,7 +159,7 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: '専門家の見方',
         items: [
-          { kicker: 'Citrini Research · 2026年 · シナリオ', value: 'ゼロ', text: '機械は裁量的な消費財にいくら使うのか？「ヒント：ゼロだ」。著者たちは「自然なブレーキのない」悪循環を描いています。', source: sources.citrini },
+          { kicker: 'Citrini Research · 2026年 · シナリオ', value: 'ゼロ', text: '機械は、生活必需品以外のものにいくら使うのか？「ヒント：ゼロだ」。著者たちは「自然なブレーキのない」悪循環を描いています。', source: sources.citrini },
           { kicker: 'ジェフリー・ヒントン · 2025年', text: '「一部の人をはるかに豊かにし、大半の人を貧しくするだろう」', source: sources.hintonFt },
           { kicker: 'Citadel Securities · 2026年 · 反論', text: 'これまでの技術の波は、人間の労働を時代遅れにはしませんでした。', source: sources.citadel },
         ],
@@ -179,7 +179,7 @@ export const scenes: Scene[] = [
         countries: [{ name: '米国', value: 64 }, { name: 'ドイツ', value: 65 }, { name: '日本', value: 57 }, { name: 'フランス', value: 55 }, { name: '英国', value: 49 }],
         source: sources.oecd,
       },
-      { kind: 'scissors', title: '予算の板挟み', income: '税収', spending: '支援のための支出', caption: 'データではなく概念図です。大量失業が起きると、税収が減ると同時に支出が増えます。' },
+      { kind: 'scissors', title: '圧迫される予算', income: '税収', spending: '支援のための支出', caption: 'データではなく概念図です。大量失業が起きると、税収が減ると同時に支出が増えます。' },
       { kind: 'quote', quote: '同時に、雇用不況は税収を激減させ、公共サービスを損ない、福祉制度が最も必要とされるまさにそのときに、その存続を危うくするだろう。', person: 'ムスタファ・スレイマン', role: '『The Coming Wave』第10章', source: sources.book },
       { kind: 'quote', quote: '連邦政府の税収基盤は、本質的には人間の時間への課税である。', person: 'Citrini Research', role: 'シナリオ「The 2028 Global Intelligence Crisis」、2026年', source: sources.citrini },
       {
@@ -205,7 +205,7 @@ export const scenes: Scene[] = [
     upside: {
       title: '機械にも応分の負担を。',
       text: '自動化に労働と同じように課税し、AIの利益を公的基金に回せば、学校も病院もバスも動き続けます。',
-      points: ['自動化に人間の労働と同じように課税する', 'AIの利益の一部を市民に分配する公的な財産基金', '税の重心を労働から資本へ移す'],
+      points: ['自動化に人間の労働と同じように課税する', 'AIの利益の一部を市民に分配する公的資産ファンド', '税の重心を労働から資本へ移す'],
       image: '/images/v2/hero-wave-hope-v7c.jpg',
       alt: '料理の並ぶ長いテーブルを家族が囲み、ロボットが給仕をしている。',
       sources: [sources.gates, sources.openaiPolicy, sources.book],
@@ -266,7 +266,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '2万5,000ドル', label: '卓上型DNA合成装置の価格。「制限も監視もなく」使えるものでした（2023年時点）', source: sources.book },
-          { value: '4', label: '国際的な生物兵器禁止条約の常勤職員数。平均的なマクドナルドの店舗より少ない人数です（2023年時点）', source: sources.book },
+          { value: '4', label: '国際的な生物兵器禁止条約の常勤職員数。平均的なマクドナルド1店舗の従業員より少ない人数です（2023年時点）', source: sources.book },
         ],
       },
     ],
@@ -300,8 +300,8 @@ export const scenes: Scene[] = [
       {
         kind: 'contrast',
         title: '国が今、私たちの面倒を見る理由と、その必要がなくなったら',
-        left: { label: '今日', steps: ['人々が働く', '税を納める', '国はその労働と票を必要とする', 'だから人々の面倒を見る'] },
-        right: { label: '明日は？', steps: ['AIが働く', '一握りの企業が利益を得る', '国はAIからの税で成り立つ', '市民が必要な理由は？'] },
+        left: { label: '今', steps: ['人々が働く', '税を納める', '国はその労働と票を必要とする', 'だから人々の面倒を見る'] },
+        right: { label: 'これからは？', steps: ['AIが働く', '一握りの企業が利益を得る', '国はAIからの税で成り立つ', '市民が必要な理由は？'] },
       },
       { kind: 'quote', quote: 'AGIが実現すれば、権力を持つ者たちは普通の人々に投資する動機を失うだろう。今日、資源に恵まれた国家が、富を人間の労働への課税ではなく天然資源から得ているために、自国の市民をないがしろにしているのと同じように。', person: 'ルーク・ドラゴ、ルドルフ・レイン', role: '『The Intelligence Curse』2025年。著者らはそれを防ぐ方法も提案しています', source: sources.curse },
       { kind: 'quote', quote: '市民の労働ではなく、主にAIの利益への課税で財源をまかなう国家には、市民の代表性を確保する動機がほとんどなくなるだろう。', person: 'ヤン・クルヴェイトほか', role: '「Gradual Disempowerment」2025年', source: sources.disempowerment },
@@ -309,9 +309,9 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'では、ベーシックインカム？誰が払う？',
         items: [
-          { kicker: 'イーロン・マスク · 2023年', value: '高額所得', text: '「ユニバーサル・ベーシックインカムではなく、ユニバーサル・ハイインカムになる」。誰が払うのかは語っていません。', source: sources.musk },
+          { kicker: 'イーロン・マスク · 2023年', value: '高所得', text: '「ユニバーサル・ベーシックインカムではなく、ユニバーサル・ハイインカムになる」。誰が払うのかは語っていません。', source: sources.musk },
           { kicker: 'サム・アルトマン · 2021年', value: '年2.5%', text: '最大級の企業と土地の価値のうち、この割合を全市民のための共同基金に。提案です。', source: sources.altmanFund },
-          { kicker: 'OpenAI · 2026年', value: '公的な財産基金', text: 'AIの収益を市民に直接分配し、資本への課税を強化する。提案です。', source: sources.openaiPolicy },
+          { kicker: 'OpenAI · 2026年', value: '公的資産ファンド', text: 'AIの収益を市民に直接分配し、資本への課税を強化する。提案です。', source: sources.openaiPolicy },
           { kicker: 'バーニー・サンダース · 2026年', value: '約1,000ドル', text: 'AI企業の株式による基金から、1人あたり年間に受け取る額。成立の見込みが薄い法案です。', source: sources.sanders },
           { kicker: 'OpenResearchの実証実験 · 3年間', value: '月1,000ドル', text: '人々の労働時間はわずかに減りました（平均で週1.3時間）。仕事の質は変わりませんでした。', source: sources.openresearch },
         ],
@@ -350,7 +350,7 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'AIの開発者自身もルールが必要だと言う',
         items: [
-          { kicker: 'ビル・ゲイツ · 2023年', text: '「世界は、人工知能のどんな弊害もその恩恵がはるかに上回るよう、交通ルールのようなルールを定める必要がある」', source: sources.gatesAge },
+          { kicker: 'ビル・ゲイツ · 2023年', text: '「世界は、人工知能にどんな弊害があっても、その恩恵がはるかに上回るよう、基本的なルールを定める必要がある」', source: sources.gatesAge },
           { kicker: 'サム・アルトマン · 米上院 · 2023年', text: '「ますます強力になるモデルのリスクを軽減するには、政府による規制介入が不可欠だと考えている」', source: sources.altmanSenate },
           { kicker: 'OpenAI · 2026年', value: '一時停止', text: '一部の安全策と監視が外されていたHugging Faceのインシデントの後、同社は自ら、計画していた最大規模の訓練を一時停止しました。', source: sources.openaiRoad },
           { kicker: '法の空白', text: '最も進んだAI法であるEUのAI法でさえ、雇用の喪失や税は扱っていません。採用におけるAIのルールは2027年末まで先送りされました。', source: sources.aiAct },

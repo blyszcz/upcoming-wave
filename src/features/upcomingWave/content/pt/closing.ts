@@ -39,7 +39,7 @@ export const finale = {
   image: '/images/v2/finale-boundaries-v2.jpg',
   alt: 'Pessoas do mundo todo em volta de uma mesa redonda ao entardecer colocam anéis luminosos ao redor de um núcleo brilhante.',
   label: 'O QUE EU POSSO FAZER',
-  title: { lead: 'Não pare o progresso.', accent: 'Defina seus limites.' },
+  title: { lead: 'Não pare o progresso.', accent: 'Ponha limites nele.' },
   quote: 'Você não usa o cinto porque sabe que vai bater. Você usa o cinto porque não sabe.',
   rules: { title: 'Como são boas regras', items: ['Testes independentes antes que a IA chegue a milhões de pessoas', 'Responsabilidade clara quando um sistema de IA causa danos', 'Ganhos da IA divididos de forma justa - por meio de impostos e de uma rede de proteção de verdade'] },
   actions: { title: 'O que você pode fazer', items: ['Compartilhe isto com uma pessoa que ainda não pensou no assunto', 'Pergunte aos seus representantes qual é a posição deles sobre regras para a IA', 'Quando empresas de IA publicarem planos de segurança, leia-os - e faça perguntas'] },

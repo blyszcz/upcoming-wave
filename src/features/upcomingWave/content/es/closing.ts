@@ -42,7 +42,7 @@ export const finale = {
   title: { lead: 'No frenemos el progreso.', accent: 'Pongámosle límites.' },
   quote: 'No te abrochas el cinturón porque sepas que habrá un accidente. Te lo abrochas porque no lo sabes.',
   rules: { title: 'Cómo son las buenas reglas', items: ['Pruebas independientes antes de que la IA llegue a millones de personas', 'Responsabilidad clara cuando un sistema de IA causa daños', 'Que las ganancias de la IA se repartan de forma justa: con impuestos y una red de protección real'] },
-  actions: { title: 'Qué puedes hacer tú', items: ['Compártelo con una persona que aún no haya pensado en esto', 'Pregunta a tus representantes qué opinan de las reglas para la IA', 'Cuando las empresas de IA publiquen sus planes de seguridad, léelos y haz preguntas'] },
+  actions: { title: 'Qué puedes hacer tú', items: ['Compártelo con alguien que aún no haya pensado en esto', 'Pregunta a tus representantes qué opinan de las reglas para la IA', 'Cuando las empresas de IA publiquen sus planes de seguridad, léelos y haz preguntas'] },
   // Empty: the closing line is the page's own voice, not a quote.
   quoteSource: '',
 };
