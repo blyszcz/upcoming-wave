@@ -66,4 +66,5 @@ export const ui = {
   },
   consent: { text: 'I use Google Analytics to see which sections people read. No ads, no selling data.', accept: 'Accept', decline: 'No thanks' },
   scissorsShock: 'wave of layoffs',
+  scissorsAria: (income: string, spending: string, caption: string) => `${income} fall, ${spending} rise. ${caption}`,
 };

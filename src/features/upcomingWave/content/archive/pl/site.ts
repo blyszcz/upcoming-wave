@@ -1,4 +1,17 @@
 export const site = {
+  // Page titles, descriptions and link-preview text (used by src/app metadata).
+  meta: {
+    siteName: 'Nadchodząca fala',
+    home: {
+      title: 'AI może być najlepszą rzeczą, jaką stworzyliśmy — albo najgorszą',
+      description: 'Krótki wizualny przewodnik: co AI może zrobić z pracą, pieniędzmi i władzą, co może pójść dobrze i dlaczego jej twórcy proszą o zasady. Przy każdym fakcie źródło.',
+    },
+    sources: {
+      title: 'Źródła i metoda — Nadchodząca fala',
+      description: 'Wszystkie źródła liczb i cytatów na stronie „Nadchodząca fala” oraz to, jak je sprawdzamy.',
+    },
+    ogAlt: 'AI może być najlepszą rzeczą, jaką stworzyliśmy — albo najgorszą. Ta sama fala, dwie przyszłości: ciemna nad miastem, złota nad parkiem.',
+  },
   sourcesPage: {
     title: 'Źródła i metoda',
     lead: 'Każda liczba i każdy cytat na stronie ma numer przypisu. Tutaj jest pełna lista — w kolejności, w jakiej pojawiają się na stronie.',

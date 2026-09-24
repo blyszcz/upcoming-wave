@@ -15,7 +15,7 @@ export const Scissors = ({ title, income, spending, caption }: ScissorsProps) =>
   return (
     <figure ref={ref} className={clsx('uw-scissors', isInView && 'is-in-view')}>
       <h3 className="uw-growth-title">{title}</h3>
-      <svg viewBox="0 0 600 260" role="img" aria-label={`${income} spadają, ${spending} rosną. ${caption}`}>
+      <svg viewBox="0 0 600 260" role="img" aria-label={ui.scissorsAria(income, spending, caption)}>
         <line className="uw-baseline" x1="0" x2="600" y1="240" y2="240" />
         <line className="uw-scissors-shock" x1="220" x2="220" y1="20" y2="240" />
         <text className="uw-ref-text" x="228" y="34">{ui.scissorsShock}</text>

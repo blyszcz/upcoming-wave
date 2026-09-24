@@ -1,4 +1,17 @@
 export const site = {
+  // Page titles, descriptions and link-preview text (used by src/app metadata).
+  meta: {
+    siteName: 'Upcoming Wave',
+    home: {
+      title: 'AI could be the best thing we ever built — or the worst',
+      description: 'A short visual guide to what AI could do to work, money and power, what could go right, and why the people building it are asking for rules. Every fact is sourced.',
+    },
+    sources: {
+      title: 'Sources & method — Upcoming Wave',
+      description: 'Every source behind the numbers and quotes on Upcoming Wave, and how we check them.',
+    },
+    ogAlt: 'AI could be the best thing we ever built — or the worst. The same wave, two futures: dark over a city, golden over a park.',
+  },
   sourcesPage: {
     title: 'Sources & method',
     lead: 'Every number and quote on the page is footnoted. Here is the full list, in order of appearance.',

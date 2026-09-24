@@ -6,13 +6,7 @@ import { localeRedirectScript } from '@features/upcomingWave/lib/localePreferenc
 
 import '@/styles/globals.css';
 
-const page = {
-  locale: 'en' as const,
-  title: 'AI could be the best thing we ever built — or the worst',
-  description: 'A short visual guide to what AI could do to work, money and power, what could go right, and why the people building it are asking for rules. Every fact is sourced.',
-};
-
-export const metadata: Metadata = buildMetadata(page);
+export const metadata: Metadata = buildMetadata({ locale: 'en' });
 
 export const viewport: Viewport = { themeColor: '#070b10' };
 
@@ -21,7 +15,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={fontVariables}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: localeRedirectScript }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildJsonLd(page) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: buildJsonLd('en') }} />
       </head>
       <body>{children}</body>
     </html>

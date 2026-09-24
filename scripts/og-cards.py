@@ -2,16 +2,23 @@
 # 1. npm run build:verify   2. python3 scripts/og-cards.py   3. serve .next-verify and screenshot og-en.html / og-pl.html
 #    at 1200x630, save as public/og/upcoming-wave-og-{en,pl}.jpg, then delete the og-*.html files.
 # The background is public/og/upcoming-wave-og.jpg; fonts and CSS come from the build so the card matches the site.
-import re, sys
+import html as htmlmod
 import os
+import re
+
 root=os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '.next-verify')
 idx=open(f'{root}/index.html').read()
 cls=re.search(r'<html[^>]*class="([^"]*)"',idx).group(1)
 css=re.search(r'<link rel="stylesheet" href="([^"]*)"',idx).group(1)
-variants={
- 'en':dict(lead='AI could be the best thing we ever built —',accent='or the worst.',brand='Upcoming Wave',size=62),
- 'pl':dict(lead='AI może być najlepszą rzeczą, jaką stworzyliśmy —',accent='albo najgorszą.',brand='Nadchodząca fala',size=56),
-}
+def page_copy(path):
+    # Headline and site name come from the built page, so the cards always match content/<locale>/site.ts.
+    page=open(path).read()
+    title=htmlmod.unescape(re.search(r'<title>([^<]*)</title>',page).group(1))
+    name=htmlmod.unescape(re.search(r'property="og:site_name" content="([^"]*)"',page).group(1))
+    lead,accent=title.split(' — ',1)
+    return dict(lead=lead+' —',accent=accent+'.',brand=name,size=62 if len(title)<60 else 56)
+
+variants={'en':page_copy(f'{root}/index.html'),'pl':page_copy(f'{root}/pl/index.html')}
 for k,v in variants.items():
     html=f'''<!doctype html><html class="{cls}"><head><meta charset="utf-8"><link rel="stylesheet" href="{css}">
 <style>
