@@ -73,10 +73,9 @@ export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
       {isOpen && scene.band && (
         <div className="uw-chapter-body">
           <SceneBand id={factsId} chain={scene.chain} blocks={scene.band} />
-          <div className="uw-chapter-end">
-            <p>{ui.chapterEnd} {number} · {scene.label}</p>
-            <ExpandButton isOpen={isOpen} controls={factsId} onToggle={collapse} />
-          </div>
+          <div className="uw-chapter-end"><p>{ui.chapterEnd} {number} · {scene.label}</p></div>
+          {/* Rides the bottom of the screen while the chapter is open, then docks into the end row. */}
+          <div className="uw-chapter-dock"><ExpandButton isOpen={isOpen} controls={factsId} onToggle={collapse} /></div>
         </div>
       )}
       {scene.upside && <UpsideStrip upside={scene.upside} />}
