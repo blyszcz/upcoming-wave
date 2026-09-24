@@ -1,23 +1,23 @@
 import type { BandBlock } from '@features/upcomingWave/types/scene.types';
 
-const sources = { book: { label: '“The Coming Wave”' } };
+const sources = { book: { label: '« The Coming Wave »' } };
 
 export const calm = {
   id: 'are-we-exaggerating',
-  label: 'TO BE FAIR',
-  title: { lead: 'Are we exaggerating?', accent: 'Maybe. That’s why we buckle up.' },
+  label: 'POUR ÊTRE HONNÊTE',
+  title: { lead: 'Exagérons-nous ?', accent: 'Peut-être. C’est pour ça qu’on attache sa ceinture.' },
   blocks: [
-      { kind: 'quote', quote: 'If containing it is impossible, the consequences for our species are dramatic, potentially dire. Equally, without its fruits we are exposed and precarious.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 1', source: sources.book },
+      { kind: 'quote', quote: 'S’il est impossible de l’endiguer, les conséquences pour notre espèce sont dramatiques, potentiellement terribles. Mais sans ses fruits, nous sommes tout aussi exposés et vulnérables.', person: 'Mustafa Suleyman', role: '« The Coming Wave », chap. 1', source: sources.book },
       {
         kind: 'evidence',
-        title: 'The case for calm',
+        title: 'Des raisons de rester calme',
         items: [
-          { kicker: 'Daron Acemoglu · MIT, Nobel laureate', value: '~1%', text: 'is his estimate of how much AI will add to GDP over 10 years - evolution, not revolution.', source: { label: 'NBER', url: 'https://www.nber.org/papers/w32487' } },
-          { kicker: 'New York Fed · 2026', text: 'AI is not yet the main driver of the slowdown in hiring.', source: { label: 'NY Fed', url: 'https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/' } },
-          { kicker: 'World Economic Forum', value: '+170 / −92M', text: 'jobs created and lost by 2030, according to an employer survey (all trends, not just AI).', source: { label: 'WEF', url: 'https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf' } },
-          { kicker: 'Dario Amodei · 2026', text: '“If you automate 90% of the job, then everyone does the 10% of the job” - and that 10% expands to become the whole job.', source: { label: 'Fortune', url: 'https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/' } },
-          { kicker: 'Mustafa Suleyman · ch. 12', text: '“Make no mistake: standstill in itself spells disaster.” The promise of technology, he writes, is that “it improves lives, the benefits far outweighing the costs and downsides.”', source: sources.book },
-          { kicker: 'Sam Altman · 2026', text: '“I’m delighted to be wrong about this” - fewer layoffs so far than he had predicted.', source: { label: 'Fortune', url: 'https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/' } },
+          { kicker: 'Daron Acemoglu · MIT, prix Nobel', value: '~1 %', text: 'c’est son estimation de ce que l’IA ajoutera au PIB en 10 ans - une évolution, pas une révolution.', source: { label: 'NBER', url: 'https://www.nber.org/papers/w32487' } },
+          { kicker: 'Fed de New York · 2026', text: 'L’IA n’est pas encore le principal moteur du ralentissement des embauches.', source: { label: 'NY Fed', url: 'https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/' } },
+          { kicker: 'Forum économique mondial', value: '+170 / −92 M', text: 'emplois créés et supprimés d’ici 2030, selon une enquête auprès des employeurs (toutes tendances confondues, pas seulement l’IA).', source: { label: 'WEF', url: 'https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf' } },
+          { kicker: 'Dario Amodei · 2026', text: '« Si vous automatisez 90 % d’un métier, alors tout le monde fait les 10 % restants » - et ces 10 % s’étendent jusqu’à devenir le métier entier.', source: { label: 'Fortune', url: 'https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/' } },
+          { kicker: 'Mustafa Suleyman · chap. 12', text: '« Ne vous y trompez pas : l’immobilisme, en soi, est synonyme de désastre. » La promesse de la technologie, écrit-il, est qu’« elle améliore la vie, les bénéfices l’emportant de loin sur les coûts et les inconvénients ».', source: sources.book },
+          { kicker: 'Sam Altman · 2026', text: '« Je suis ravi d’avoir tort sur ce point » - jusqu’ici, moins de licenciements qu’il ne l’avait prédit.', source: { label: 'Fortune', url: 'https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/' } },
         ],
       },
   ] satisfies BandBlock[] as BandBlock[],

@@ -1,34 +1,34 @@
 import type { BandBlock, SceneStatus } from '@features/upcomingWave/types/scene.types';
 
-// Book quotes use the English edition's wording (Crown, 2023), checked via Google Books.
+// Book quotes are our translation of the English edition (Crown, 2023).
 const book = { label: '“The Coming Wave”' };
 
 export const split = {
   id: 'two-roads',
-  label: 'WHO’S IN CHARGE',
+  label: 'QUEM MANDA',
   status: 'possibleMany' as SceneStatus,
-  title: { lead: 'Who’s in charge then?', accent: 'Two roads.' },
+  title: { lead: 'Então, quem manda?', accent: 'Dois caminhos.' },
   left: {
     image: '/images/v2/split-zombie-v2.jpg',
-    alt: 'An abandoned government office: closed counters, empty chairs, papers on the floor.',
-    label: 'The hollow state',
-    text: 'Offices and elections still exist, but the state stops working. Services shrink to the bare minimum and chaos grows.',
-    quote: '“a kind of zombie government”',
+    alt: 'Uma repartição pública abandonada: guichês fechados, cadeiras vazias, papéis pelo chão.',
+    label: 'O Estado oco',
+    text: 'Repartições e eleições continuam existindo, mas o Estado para de funcionar. Os serviços encolhem ao mínimo e o caos cresce.',
+    quote: '“uma espécie de governo zumbi”',
   },
   right: {
     image: '/images/v2/split-leviathan-v1.jpg',
-    alt: 'A city at night under cameras and drones scanning the crowd.',
-    label: 'The total-control state',
-    text: 'It starts innocently: cameras for safety, AI to catch criminals. Step by step, the authorities come to know everything about us.',
-    quote: '“As smaller-scale technology failures mount, calls for control increase.”',
+    alt: 'Uma cidade à noite sob câmeras e drones que vasculham a multidão.',
+    label: 'O Estado do controle total',
+    text: 'Começa de forma inocente: câmeras por segurança, IA para pegar criminosos. Passo a passo, as autoridades passam a saber tudo sobre nós.',
+    quote: '“À medida que se acumulam falhas tecnológicas de menor escala, aumentam os pedidos de controle.”',
   },
-  path: { label: 'The narrow path', href: '#rules' },
+  path: { label: 'O caminho estreito', href: '#rules' },
   band: [
-    { kind: 'quote', quote: 'Over time, then, the implications of these technologies will push humanity to navigate a path between the poles of catastrophe and dystopia. This is the essential dilemma of our age.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 12', source: book },
+    { kind: 'quote', quote: 'Com o tempo, portanto, as implicações dessas tecnologias vão obrigar a humanidade a percorrer um caminho entre os polos da catástrofe e da distopia. Este é o dilema essencial da nossa era.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, cap. 12', source: book },
     {
       kind: 'stats',
       items: [
-        { value: '44%', label: 'of world GDP - where Fortune’s Global 500 companies already are (ch. 11)', source: book },
+        { value: '44%', label: 'do PIB mundial - é onde já estão as empresas da Fortune Global 500 (cap. 11)', source: book },
       ],
     },
   ] satisfies BandBlock[],
@@ -37,12 +37,12 @@ export const split = {
 export const finale = {
   id: 'finale',
   image: '/images/v2/finale-boundaries-v2.jpg',
-  alt: 'People from around the world stand around a round table at dusk, placing glowing rings around a bright core.',
-  label: 'WHAT CAN I DO',
-  title: { lead: 'Don’t stop progress.', accent: 'Set its limits.' },
-  quote: 'You don’t buckle up because you know there will be a crash. You buckle up because you don’t know.',
-  rules: { title: 'What good rules look like', items: ['Independent testing before AI reaches millions of people', 'Clear responsibility when an AI system causes harm', 'AI’s gains shared fairly - through taxes and a real safety net'] },
-  actions: { title: 'What you can do', items: ['Share this with one person who hasn’t thought about it yet', 'Ask the people who represent you where they stand on AI rules', 'When AI companies publish safety plans, read them - and ask questions'] },
+  alt: 'Pessoas do mundo todo em volta de uma mesa redonda ao entardecer colocam anéis luminosos ao redor de um núcleo brilhante.',
+  label: 'O QUE EU POSSO FAZER',
+  title: { lead: 'Não pare o progresso.', accent: 'Defina seus limites.' },
+  quote: 'Você não usa o cinto porque sabe que vai bater. Você usa o cinto porque não sabe.',
+  rules: { title: 'Como são boas regras', items: ['Testes independentes antes que a IA chegue a milhões de pessoas', 'Responsabilidade clara quando um sistema de IA causa danos', 'Ganhos da IA divididos de forma justa - por meio de impostos e de uma rede de proteção de verdade'] },
+  actions: { title: 'O que você pode fazer', items: ['Compartilhe isto com uma pessoa que ainda não pensou no assunto', 'Pergunte aos seus representantes qual é a posição deles sobre regras para a IA', 'Quando empresas de IA publicarem planos de segurança, leia-os - e faça perguntas'] },
   // Empty: the closing line is the page's own voice, not a quote.
   quoteSource: '',
 };

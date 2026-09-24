@@ -5,46 +5,46 @@ const metr: Source = { label: 'METR Time Horizons', url: 'https://metr.org/time-
 
 export const horizonPoints: HorizonPoint[] = [
   { model: 'GPT-3.5', date: '2022-03', minutes: 0.6 },
-  { model: 'GPT-4', date: '2023-03', minutes: 4, milestone: { value: '4 minutes', note: 'making coffee' } },
+  { model: 'GPT-4', date: '2023-03', minutes: 4, milestone: { value: '4分', note: 'コーヒーを淹れる時間' } },
   { model: 'Claude 3.5 Sonnet', date: '2024-06', minutes: 11.4 },
   { model: 'o1-preview', date: '2024-09', minutes: 20.3 },
   { model: 'o1', date: '2024-12', minutes: 38.8 },
   { model: 'Claude 3.7 Sonnet', date: '2025-02', minutes: 60 },
-  { model: 'o3', date: '2025-04', minutes: 120, milestone: { value: '2 hours', note: 'a long meeting' } },
+  { model: 'o3', date: '2025-04', minutes: 120, milestone: { value: '2時間', note: '長い会議' } },
   { model: 'GPT-5', date: '2025-08', minutes: 203 },
   { model: 'Claude Opus 4.5', date: '2025-11', minutes: 293 },
   { model: 'GPT-5.2', date: '2025-12', minutes: 352 },
-  { model: 'Claude Opus 4.6', date: '2026-02', minutes: 719, uncertain: true, milestone: { value: '12 hours', note: 'more than a working day' } },
+  { model: 'Claude Opus 4.6', date: '2026-02', minutes: 719, uncertain: true, milestone: { value: '12時間', note: '1日の勤務時間以上' } },
   { model: 'Claude Mythos Preview', date: '2026-04', minutes: 1045, uncertain: true },
 ];
 
 export const acceleration = {
   id: 'ai-builds-ai',
-  label: 'HOW FAST IS IT MOVING',
+  label: '進歩の速さ',
   status: 'today' as SceneStatus,
-  title: { lead: 'AI is learning to build AI.', accent: 'And it’s speeding up.' },
+  title: { lead: 'AIがAIを作り始めた。', accent: 'しかも加速している。' },
   pond: {
-    title: 'The pond riddle',
-    copy: 'Lilies on a pond double every day. After 30 days they cover the whole pond. On which day did they cover half of it?',
-    answer: 'Day 29. With doubling, almost everything happens at the very end.',
+    title: '池のなぞなぞ',
+    copy: '池のスイレンは毎日2倍に増えます。30日で池全体を覆いました。では、池の半分を覆ったのは何日目でしょう？',
+    answer: '29日目です。倍々で増えるとき、ほとんどの変化は最後の最後に起こります。',
   },
   chart: {
-    title: 'How long a task AI can do on its own',
-    subtitle: 'Since 2023: doubling roughly every 4 months.',
+    title: 'AIが単独でこなせるタスクの長さ',
+    subtitle: '2023年以降、約4か月ごとに倍増。',
     doublingMonths: 4.2,
-    note: 'METR measurements: the length of task (in human working time) that the best models complete on their own in half of attempts. Measurements above 16 hours are uncertain - the test tasks are too short. The dashed line is a scenario, not a measurement.',
+    note: 'METRの測定：最先端のモデルが、試行の半数で単独で完了できるタスクの長さ（人間の作業時間に換算）。16時間を超える測定値は不確かです。テスト課題が短すぎるためです。破線は測定値ではなく、シナリオです。',
     source: metr,
   },
   evidence: {
-    title: 'Self-improvement has already started',
+    title: '自己改良はすでに始まっている',
     items: [
-      { kicker: 'Anthropic · May 2026', value: '80%+', text: 'of the company’s code is now written by Claude. In early 2025 it was a few percent.', source: { label: 'Anthropic', url: 'https://www.anthropic.com/institute/recursive-self-improvement' } },
-      { kicker: 'OpenAI · September 2026', value: 'AI intern', text: 'The company says it has an AI research intern. It plans an automated AI researcher for 2028.', source: { label: 'Engadget', url: 'https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/' } },
-      { kicker: 'Epoch AI', value: '4 – 5×', text: 'per year - growth in the computing power used to train the best models.', source: { label: 'Epoch AI', url: 'https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year' } },
+      { kicker: 'Anthropic · 2026年5月', value: '80%以上', text: '同社のコードのうち、今ではClaudeが書いている割合。2025年初めには数%でした。', source: { label: 'Anthropic', url: 'https://www.anthropic.com/institute/recursive-self-improvement' } },
+      { kicker: 'OpenAI · 2026年9月', value: 'AIインターン', text: '同社は「AI研究インターン」を実現したと発表しています。2028年には自動化されたAI研究者を目指す計画です。', source: { label: 'Engadget', url: 'https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/' } },
+      { kicker: 'Epoch AI', value: '4〜5倍', text: '最先端モデルの訓練に使われる計算量の、1年あたりの伸び。', source: { label: 'Epoch AI', url: 'https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year' } },
     ] satisfies EvidenceItem[],
   },
   quotes: [
-    { quote: 'Since roughly this summer, AI has been advancing drastically faster, driven primarily by AI’s growing ability to build the next generation of AI. This dynamic is called recursive self-improvement, and it is starting to happen across the industry.', person: 'Dario Amodei', role: 'CEO, Anthropic · September 2026', source: { label: 'We Must Pace the Frontier', url: 'https://darioamodei.com/post/we-must-pace-the-frontier' } },
-    { quote: 'The first ultraintelligent machine is the last invention that man need ever make, provided that the machine is docile enough to tell us how to keep it under control.', person: 'I. J. Good', role: 'mathematician who worked with Alan Turing · 1965', source: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2022/01/04/ultraintelligent/' } },
+    { quote: 'この夏ごろから、AIは劇的に速く進歩しています。その主な原動力は、次世代のAIを作るAI自身の能力の高まりです。この力学は再帰的自己改良と呼ばれ、業界全体で起こり始めています。', person: 'ダリオ・アモデイ', role: 'Anthropic CEO · 2026年9月', source: { label: 'We Must Pace the Frontier', url: 'https://darioamodei.com/post/we-must-pace-the-frontier' } },
+    { quote: '最初の超知能機械は、人類が作る必要のある最後の発明となる。ただし、その機械が、自らを制御下に置く方法を私たちに教えてくれるほど従順であればの話だが。', person: 'I・J・グッド', role: 'アラン・チューリングと共に働いた数学者 · 1965年', source: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2022/01/04/ultraintelligent/' } },
   ],
 };

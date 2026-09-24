@@ -5,46 +5,46 @@ const metr: Source = { label: 'METR Time Horizons', url: 'https://metr.org/time-
 
 export const horizonPoints: HorizonPoint[] = [
   { model: 'GPT-3.5', date: '2022-03', minutes: 0.6 },
-  { model: 'GPT-4', date: '2023-03', minutes: 4, milestone: { value: '4 minutes', note: 'making coffee' } },
+  { model: 'GPT-4', date: '2023-03', minutes: 4, milestone: { value: '4 minutos', note: 'fazer um café' } },
   { model: 'Claude 3.5 Sonnet', date: '2024-06', minutes: 11.4 },
   { model: 'o1-preview', date: '2024-09', minutes: 20.3 },
   { model: 'o1', date: '2024-12', minutes: 38.8 },
   { model: 'Claude 3.7 Sonnet', date: '2025-02', minutes: 60 },
-  { model: 'o3', date: '2025-04', minutes: 120, milestone: { value: '2 hours', note: 'a long meeting' } },
+  { model: 'o3', date: '2025-04', minutes: 120, milestone: { value: '2 horas', note: 'uma reunião longa' } },
   { model: 'GPT-5', date: '2025-08', minutes: 203 },
   { model: 'Claude Opus 4.5', date: '2025-11', minutes: 293 },
   { model: 'GPT-5.2', date: '2025-12', minutes: 352 },
-  { model: 'Claude Opus 4.6', date: '2026-02', minutes: 719, uncertain: true, milestone: { value: '12 hours', note: 'more than a working day' } },
+  { model: 'Claude Opus 4.6', date: '2026-02', minutes: 719, uncertain: true, milestone: { value: '12 horas', note: 'mais que um dia de trabalho' } },
   { model: 'Claude Mythos Preview', date: '2026-04', minutes: 1045, uncertain: true },
 ];
 
 export const acceleration = {
   id: 'ai-builds-ai',
-  label: 'HOW FAST IS IT MOVING',
+  label: 'EM QUE VELOCIDADE',
   status: 'today' as SceneStatus,
-  title: { lead: 'AI is learning to build AI.', accent: 'And it’s speeding up.' },
+  title: { lead: 'A IA está aprendendo a construir IA.', accent: 'E está acelerando.' },
   pond: {
-    title: 'The pond riddle',
-    copy: 'Lilies on a pond double every day. After 30 days they cover the whole pond. On which day did they cover half of it?',
-    answer: 'Day 29. With doubling, almost everything happens at the very end.',
+    title: 'O enigma do lago',
+    copy: 'As vitórias-régias de um lago dobram a cada dia. Depois de 30 dias, cobrem o lago inteiro. Em que dia cobriam a metade?',
+    answer: 'No dia 29. Quando algo dobra, quase tudo acontece no finalzinho.',
   },
   chart: {
-    title: 'How long a task AI can do on its own',
-    subtitle: 'Since 2023: doubling roughly every 4 months.',
+    title: 'Qual o tamanho da tarefa que a IA faz sozinha',
+    subtitle: 'Desde 2023: dobra a cada 4 meses, aproximadamente.',
     doublingMonths: 4.2,
-    note: 'METR measurements: the length of task (in human working time) that the best models complete on their own in half of attempts. Measurements above 16 hours are uncertain - the test tasks are too short. The dashed line is a scenario, not a measurement.',
+    note: 'Medições do METR: a duração da tarefa (em tempo de trabalho humano) que os melhores modelos concluem sozinhos em metade das tentativas. Medições acima de 16 horas são incertas - as tarefas do teste são curtas demais. A linha tracejada é um cenário, não uma medição.',
     source: metr,
   },
   evidence: {
-    title: 'Self-improvement has already started',
+    title: 'O autoaperfeiçoamento já começou',
     items: [
-      { kicker: 'Anthropic · May 2026', value: '80%+', text: 'of the company’s code is now written by Claude. In early 2025 it was a few percent.', source: { label: 'Anthropic', url: 'https://www.anthropic.com/institute/recursive-self-improvement' } },
-      { kicker: 'OpenAI · September 2026', value: 'AI intern', text: 'The company says it has an AI research intern. It plans an automated AI researcher for 2028.', source: { label: 'Engadget', url: 'https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/' } },
-      { kicker: 'Epoch AI', value: '4 – 5×', text: 'per year - growth in the computing power used to train the best models.', source: { label: 'Epoch AI', url: 'https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year' } },
+      { kicker: 'Anthropic · maio de 2026', value: '80%+', text: 'do código da empresa hoje é escrito pelo Claude. No início de 2025, eram alguns por cento.', source: { label: 'Anthropic', url: 'https://www.anthropic.com/institute/recursive-self-improvement' } },
+      { kicker: 'OpenAI · setembro de 2026', value: 'Estagiário de IA', text: 'A empresa diz que já tem um estagiário de pesquisa de IA. Planeja um pesquisador de IA automatizado para 2028.', source: { label: 'Engadget', url: 'https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/' } },
+      { kicker: 'Epoch AI', value: '4 – 5×', text: 'por ano - é o crescimento do poder computacional usado para treinar os melhores modelos.', source: { label: 'Epoch AI', url: 'https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year' } },
     ] satisfies EvidenceItem[],
   },
   quotes: [
-    { quote: 'Since roughly this summer, AI has been advancing drastically faster, driven primarily by AI’s growing ability to build the next generation of AI. This dynamic is called recursive self-improvement, and it is starting to happen across the industry.', person: 'Dario Amodei', role: 'CEO, Anthropic · September 2026', source: { label: 'We Must Pace the Frontier', url: 'https://darioamodei.com/post/we-must-pace-the-frontier' } },
-    { quote: 'The first ultraintelligent machine is the last invention that man need ever make, provided that the machine is docile enough to tell us how to keep it under control.', person: 'I. J. Good', role: 'mathematician who worked with Alan Turing · 1965', source: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2022/01/04/ultraintelligent/' } },
+    { quote: 'Desde mais ou menos este verão, a IA vem avançando drasticamente mais rápido, impulsionada principalmente pela crescente capacidade da IA de construir a próxima geração de IA. Essa dinâmica se chama autoaperfeiçoamento recursivo, e está começando a acontecer em todo o setor.', person: 'Dario Amodei', role: 'CEO da Anthropic · setembro de 2026', source: { label: 'We Must Pace the Frontier', url: 'https://darioamodei.com/post/we-must-pace-the-frontier' } },
+    { quote: 'A primeira máquina ultrainteligente é a última invenção que o homem precisará fazer, desde que a máquina seja dócil o bastante para nos dizer como mantê-la sob controle.', person: 'I. J. Good', role: 'matemático que trabalhou com Alan Turing · 1965', source: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2022/01/04/ultraintelligent/' } },
   ],
 };
