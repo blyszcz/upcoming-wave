@@ -13,7 +13,7 @@
 .uw-upside li::before { content: '→'; color: #ffcf8a; }
 @media (max-width: 820px) {
   .uw-upside { grid-template-columns: 1fr; }
-  .uw-upside-media { height: 200px; }
+  .uw-upside-media { height: 200px; aspect-ratio: auto; }
   .uw-upside-media::after { background: linear-gradient(0deg, #15110a, transparent 60%); }
   .uw-upside-copy { padding: 28px var(--gutter) 40px; }
 }
