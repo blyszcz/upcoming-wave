@@ -20,6 +20,5 @@ export const calm = {
           { kicker: 'Sam Altman · 2026', text: '„Cieszę się, że się myliłem” - zwolnień jest na razie mniej, niż sam przewidywał.', source: { label: 'Fortune', url: 'https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/' } },
         ],
       },
-      { kind: 'statement', text: 'Nikt nie wie na pewno. Pasy zapinasz nie dlatego, że wiesz, że będzie wypadek. Zapinasz, bo nie wiesz.' },
-  ] satisfies BandBlock[],
+  ] satisfies BandBlock[] as BandBlock[],
 };

@@ -55,6 +55,7 @@
 .uw-finale-copy { display: grid; justify-items: start; gap: 26px; max-width: 760px; padding: 120px var(--gutter) 90px; }
 .uw-finale-quote { margin: 0; padding-left: 16px; border-left: 2px solid var(--signal); }
 .uw-finale-quote blockquote { margin: 0; font: italic 400 clamp(1.4rem, 2.2vw, 2rem)/1.2 var(--font-serif), serif; }
+.uw-finale-line { max-width: 30ch; font: italic 400 clamp(1.5rem, 2.6vw, 2.4rem)/1.2 var(--font-serif), serif; text-wrap: balance; }
 .uw-finale-quote figcaption { margin-top: 8px; color: var(--muted); font-size: 14px; }
 .uw-finale-lead { max-width: 44ch; margin: 10px 0 0; color: var(--muted); font-size: 17px; line-height: 1.5; }
 .uw-newsletter { display: flex; flex-wrap: wrap; gap: 10px; width: min(560px, 100%); }

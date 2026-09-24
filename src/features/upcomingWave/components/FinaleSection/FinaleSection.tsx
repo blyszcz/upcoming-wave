@@ -15,7 +15,9 @@ export const FinaleSection = ({ number }: NumberedSectionProps) => {
       <div className="uw-finale-copy">
         <p className="uw-eyebrow">{number} / {finale.label}<b>{ui.status.answer}</b></p>
         <h2 id={`${finale.id}-title`} className="uw-title">{finale.title.lead} <em>{finale.title.accent}</em></h2>
-        <figure className="uw-finale-quote"><blockquote>{finale.quote}</blockquote><figcaption>{finale.quoteSource}</figcaption></figure>
+        {finale.quoteSource
+          ? <figure className="uw-finale-quote"><blockquote>{finale.quote}</blockquote><figcaption>{finale.quoteSource}</figcaption></figure>
+          : <p className="uw-finale-quote uw-finale-line">{finale.quote}</p>}
         <div className="uw-finale-lists">
           {[finale.rules, finale.actions].map((list) => (
             <div key={list.title}>

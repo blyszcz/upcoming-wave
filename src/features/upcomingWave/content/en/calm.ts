@@ -20,6 +20,5 @@ export const calm = {
           { kicker: 'Sam Altman · 2026', text: '“I’m delighted to be wrong about this” - fewer layoffs so far than he had predicted.', source: { label: 'Fortune', url: 'https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/' } },
         ],
       },
-      { kind: 'statement', text: 'Nobody knows for sure. You don’t buckle up because you know there will be a crash. You buckle up because you don’t know.' },
-  ] satisfies BandBlock[],
+  ] satisfies BandBlock[] as BandBlock[],
 };

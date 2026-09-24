@@ -39,8 +39,9 @@ export const finale = {
   alt: 'Ludzie z różnych stron świata stoją wokół okrągłego stołu o zmierzchu i układają świetliste pierścienie wokół jasnego rdzenia.',
   label: 'CO JA MOGĘ',
   title: { lead: 'Nie zatrzymać postępu.', accent: 'Ustalić granice.' },
-  quote: '„To nie jej los właśnie się decyduje, tylko nasz.”',
+  quote: 'Pasy zapinasz nie dlatego, że wiesz, że będzie wypadek. Zapinasz, bo nie wiesz.',
   rules: { title: 'Jak wyglądają dobre zasady', items: ['Niezależne testy, zanim AI trafi do milionów ludzi', 'Jasna odpowiedzialność, gdy system AI wyrządzi szkodę', 'Uczciwy podział zysków z AI - przez podatki i prawdziwą siatkę bezpieczeństwa'] },
   actions: { title: 'Co możesz zrobić', items: ['Wyślij to jednej osobie, która jeszcze się nad tym nie zastanawiała', 'Zapytaj swoich przedstawicieli, co myślą o zasadach dla AI', 'Gdy firmy AI publikują plany bezpieczeństwa - czytaj je i zadawaj pytania'] },
-  quoteSource: 'Mustafa Suleyman, „Nadchodząca fala”',
+  // Empty: the closing line is the page's own voice, not a quote.
+  quoteSource: '',
 };

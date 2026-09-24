@@ -40,8 +40,9 @@ export const finale = {
   alt: 'People from around the world stand around a round table at dusk, placing glowing rings around a bright core.',
   label: 'WHAT CAN I DO',
   title: { lead: 'Don’t stop progress.', accent: 'Set its limits.' },
-  quote: '“Technology is not the point of the future, or what’s really at stake. We are.”',
+  quote: 'You don’t buckle up because you know there will be a crash. You buckle up because you don’t know.',
   rules: { title: 'What good rules look like', items: ['Independent testing before AI reaches millions of people', 'Clear responsibility when an AI system causes harm', 'AI’s gains shared fairly - through taxes and a real safety net'] },
   actions: { title: 'What you can do', items: ['Share this with one person who hasn’t thought about it yet', 'Ask the people who represent you where they stand on AI rules', 'When AI companies publish safety plans, read them - and ask questions'] },
-  quoteSource: 'Mustafa Suleyman, “The Coming Wave”',
+  // Empty: the closing line is the page's own voice, not a quote.
+  quoteSource: '',
 };
