@@ -14,6 +14,7 @@ export const imageWidths: Record<string, number> = {
   '/images/v2/demand-03-closing-v1.jpg': 1024,
   '/images/v2/finale-boundaries-v2.jpg': 1536,
   '/images/v2/hero-wave-hope-v5.jpg': 1536,
+  '/images/v2/upside-work-time-v2.jpg': 1536,
   '/images/v2/hero-wave-hope-v6.jpg': 1536,
   '/images/v2/hero-wave-hope-v7a.jpg': 1536,
   '/images/v2/hero-wave-hope-v7b.jpg': 1536,
