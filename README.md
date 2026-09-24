@@ -40,7 +40,7 @@ npm run dev            # http://localhost:3000
 |---|---|
 | `npm run dev` | Dev server, including the unpublished archive at `/archive/` |
 | `npm run build` | Clean static export to `out/` |
-| `npm run build:verify` | Same build into `.next-verify/`, safe to run next to a running `dev` |
+| `npm run build:verify` | Same build in a copy under `/tmp` (output in `/tmp/upcoming-wave-verify/out`), safe to run next to `dev` |
 | `npm start` | Serve `out/` locally |
 | `npm run lint` | ESLint (typescript-eslint, import order, feature boundaries) |
 
