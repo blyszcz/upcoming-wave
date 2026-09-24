@@ -4,15 +4,16 @@ import type { MouseEvent } from 'react';
 
 import { LOCALE_STORAGE_KEY } from '@/constants';
 
-// Remembers the explicit language choice and keeps the current #section when switching.
-export const useLanguageSwitch = (targetLocale: string, targetHref: string) => {
+// Remembers the explicit language choice (read by the redirect script) and keeps the current #section.
+export const useLanguageSwitch = () => {
   const handleSwitch = (event: MouseEvent<HTMLAnchorElement>) => {
+    const link = event.currentTarget;
     try {
-      localStorage.setItem(LOCALE_STORAGE_KEY, targetLocale);
+      localStorage.setItem(LOCALE_STORAGE_KEY, link.dataset.locale ?? '');
     } catch (error) {
       console.warn('Could not store the language choice', error);
     }
-    event.currentTarget.href = `${targetHref}${window.location.hash}`;
+    link.href = `${link.getAttribute('href')?.split('#')[0] ?? ''}${window.location.hash}`;
   };
 
   return { handleSwitch };

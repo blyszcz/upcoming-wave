@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 
 import { env } from '@/env';
-import { locales, type Locale } from '@features/upcomingWave/content/locales';
+import { locales } from '@features/upcomingWave/content/locales';
+import { DEFAULT_LOCALE, LOCALE_INFO, LOCALES, type Locale } from '@routes/locales';
 import { paths } from '@routes/paths';
 
 type Page = 'home' | 'sources';
@@ -24,7 +25,7 @@ export const buildMetadata = ({ locale, page = 'home' }: PageMetadata): Metadata
     applicationName: meta.siteName,
     alternates: {
       canonical: pathFor(locale, page),
-      languages: { en: pathFor('en', page), pl: pathFor('pl', page), 'x-default': pathFor('en', page) },
+      languages: { ...Object.fromEntries(LOCALES.map((code) => [LOCALE_INFO[code].htmlLang, pathFor(code, page)])), 'x-default': pathFor(DEFAULT_LOCALE, page) },
     },
     openGraph: {
       type: 'website',
@@ -32,8 +33,8 @@ export const buildMetadata = ({ locale, page = 'home' }: PageMetadata): Metadata
       title,
       description,
       url: pathFor(locale, page),
-      locale: locale === 'pl' ? 'pl_PL' : 'en_US',
-      alternateLocale: locale === 'pl' ? ['en_US'] : ['pl_PL'],
+      locale: LOCALE_INFO[locale].ogLocale,
+      alternateLocale: LOCALES.filter((code) => code !== locale).map((code) => LOCALE_INFO[code].ogLocale),
       images: [image],
     },
     twitter: { card: 'summary_large_image', title, description, images: [image.url], creator: '@blyzbyte' },
@@ -49,13 +50,13 @@ export const buildJsonLd = (locale: Locale): string => {
   return JSON.stringify({
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'WebSite', name: meta.siteName, url, inLanguage: locale },
+      { '@type': 'WebSite', name: meta.siteName, url, inLanguage: LOCALE_INFO[locale].htmlLang },
       {
         '@type': 'Article',
         headline: meta.home.title,
         description: meta.home.description,
         url,
-        inLanguage: locale,
+        inLanguage: LOCALE_INFO[locale].htmlLang,
         image: new URL(ogImageUrl(locale), env.NEXT_PUBLIC_SITE_URL).toString(),
         author,
         publisher: author,

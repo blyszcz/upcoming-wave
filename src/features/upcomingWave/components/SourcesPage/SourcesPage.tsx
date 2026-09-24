@@ -1,8 +1,9 @@
 'use client';
 
-import { LanguageSwitch } from '@features/upcomingWave/components/LanguageSwitch/LanguageSwitch';
+import { LanguagePicker } from '@features/upcomingWave/components/LanguagePicker/LanguagePicker';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 import { collectSources, getSourceNumber } from '@features/upcomingWave/utils/collectSources';
+import { DEFAULT_LOCALE, isLocale } from '@routes/locales';
 import { paths } from '@routes/paths';
 
 // Show the domain only when the label doesn't already name it.
@@ -15,14 +16,13 @@ export const SourcesPage = () => {
   const content = useContent();
   const { site, ui } = content;
   const page = site.sourcesPage;
-  const locale = ui.lang === 'pl' ? 'pl' : 'en';
-  const otherLocale = locale === 'pl' ? 'en' : 'pl';
+  const locale = isLocale(ui.lang) ? ui.lang : DEFAULT_LOCALE;
 
   return (
     <main className="uw uw-sources">
       <header className="uw-header">
         <a href={paths.home(locale)} className="uw-brand"><span aria-hidden="true" />{ui.brand}</a>
-        {ui.langSwitch && <LanguageSwitch {...ui.langSwitch} href={paths.sources(otherLocale)} />}
+        <LanguagePicker locale={locale} page="sources" label={ui.languagePicker} />
       </header>
 
       <article className="uw-sources-body">

@@ -6,6 +6,16 @@
 .uw-header-right { display: flex; align-items: center; gap: 22px; }
 .uw-lang { pointer-events: auto; padding: 5px 9px; border: 1px solid rgba(238, 236, 230, 0.3); border-radius: 99px; color: var(--paper); text-decoration: none; transition: border-color 0.2s ease; }
 .uw-lang:hover { border-color: var(--paper); }
+.uw-lang-picker { position: relative; pointer-events: auto; }
+.uw-lang-picker summary { display: inline-flex; align-items: center; gap: 6px; list-style: none; cursor: pointer; }
+.uw-lang-picker summary::-webkit-details-marker { display: none; }
+.uw-lang-picker summary span { font-size: 9px; opacity: 0.7; transition: transform 0.2s ease; }
+.uw-lang-picker[open] summary span { transform: rotate(180deg); }
+.uw-lang-picker ul { position: absolute; top: calc(100% + 10px); right: 0; z-index: 70; display: grid; min-width: 190px; margin: 0; padding: 6px; list-style: none; border: 1px solid var(--line); border-radius: 12px; background: rgba(13, 19, 26, 0.97); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45); }
+.uw-lang-picker ul a { display: block; padding: 10px 12px; border-radius: 8px; color: var(--muted); font: 400 15px/1.2 var(--font-sans); letter-spacing: 0; text-transform: none; text-decoration: none; }
+.uw-lang-picker ul a:hover, .uw-lang-picker ul a:focus-visible { background: rgba(238, 236, 230, 0.06); color: var(--paper); }
+.uw-lang-picker ul a[aria-current] { color: var(--paper); }
+.uw-lang-picker ul a[aria-current]::after { content: ' ✓'; color: var(--signal); }
 .uw-domino { opacity: 0; transition: opacity 0.4s ease; pointer-events: none; }
 .uw-domino.is-visible { opacity: 1; pointer-events: auto; }
 .uw-domino ol { display: flex; gap: 6px; margin: 0; padding: 0; list-style: none; }

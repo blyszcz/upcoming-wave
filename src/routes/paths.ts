@@ -1,10 +1,10 @@
-type LocaleKey = 'en' | 'pl';
+import { DEFAULT_LOCALE, type Locale } from '@routes/locales';
+
+const prefix = (locale: Locale) => (locale === DEFAULT_LOCALE ? '' : `/${locale}`);
 
 export const paths = {
-  en: '/',
-  pl: '/pl/',
-  home: (locale: LocaleKey) => (locale === 'pl' ? '/pl/' : '/'),
-  sources: (locale: LocaleKey) => (locale === 'pl' ? '/pl/sources/' : '/sources/'),
+  home: (locale: Locale) => `${prefix(locale)}/`,
+  sources: (locale: Locale) => `${prefix(locale)}/sources/`,
   section: (id: string) => `#${id}`,
   sourceAnchor: (number: number) => `#source-${number}`,
 } as const;

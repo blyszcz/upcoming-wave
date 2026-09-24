@@ -1,6 +1,7 @@
 'use client';
 
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
+import { DEFAULT_LOCALE, isLocale } from '@routes/locales';
 import { paths } from '@routes/paths';
 
 export const SiteFooter = () => {
@@ -10,7 +11,7 @@ export const SiteFooter = () => {
   return (
     <footer className="uw-footer">
       <div>
-        <p>{sources} <a className="uw-footer-inline" href={paths.sources(ui.lang === 'pl' ? 'pl' : 'en')}>{site.footer.sourcesLink}</a></p>
+        <p>{sources} <a className="uw-footer-inline" href={paths.sources(isLocale(ui.lang) ? ui.lang : DEFAULT_LOCALE)}>{site.footer.sourcesLink}</a></p>
         <p>{independence}</p>
       </div>
       <p className="uw-footer-author">

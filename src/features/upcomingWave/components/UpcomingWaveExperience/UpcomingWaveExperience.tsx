@@ -2,7 +2,7 @@
 
 import { useMemo } from 'react';
 
-import type { UpcomingWaveExperienceProps } from './UpcomingWaveExperience.types';
+import type { UpcomingWaveArchiveProps, UpcomingWaveExperienceProps } from './UpcomingWaveExperience.types';
 import type { StoryItem } from '@features/upcomingWave/content/pl/story';
 
 import { AnalyticsConsent } from '@features/analytics/components/AnalyticsConsent/AnalyticsConsent';
@@ -60,7 +60,7 @@ const Story = () => {
   );
 };
 
-export const UpcomingWaveArchive = ({ locale = 'en' }: UpcomingWaveExperienceProps) => (
+export const UpcomingWaveArchive = ({ locale = 'en' }: UpcomingWaveArchiveProps) => (
   <ContentProvider content={archive[locale]}>
     <ReadingModeProvider>
       <p className="uw-archive-banner">ARCHIVE — full pre-restructure page, not published</p>
