@@ -1,0 +1,19 @@
+# Cloudflare Pages / Netlify: caching and basic security headers for the static export.
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  X-Frame-Options: SAMEORIGIN
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# Hashed build assets never change.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Photos are versioned by name (-v1, -v2…), so a month is safe.
+/images/*
+  Cache-Control: public, max-age=2592000
+
+/og/*
+  Cache-Control: public, max-age=86400
