@@ -103,9 +103,21 @@ Every push to `main` redeploys automatically.
 
 Without Git integration: `npm run build && npx wrangler pages deploy out --project-name upcoming-wave`.
 
+## Contributing
+
+Fixes, better sources, translations and design improvements are welcome. Fork the repo, make your change, and open a pull request against `main`. Before you do:
+
+- run `npm run lint` and `npm run build:verify`;
+- make sure every new fact has a `source` with a link;
+- keep code, comments and commit messages in English. Only `content/<locale>/` holds translated copy.
+
 ## Corrections
 
 Spotted a wrong number, a misquote or a broken source? Open an issue or write to [@blyzbyte](https://x.com/blyzbyte) on X. Corrections are fixed quickly and the Sources page is updated.
+
+## License
+
+Source-available, **not** open source: see [LICENSE](LICENSE). You may fork and modify the code to contribute back through pull requests. You may not deploy, host or redistribute the site or modified versions of it without permission.
 
 ## Author
 
