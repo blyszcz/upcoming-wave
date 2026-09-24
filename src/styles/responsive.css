@@ -39,7 +39,9 @@
   .uw-compare-divider { bottom: auto; height: var(--hero-band); }
   .uw-compare-divider::before { background: linear-gradient(180deg, transparent, rgba(238, 236, 230, 0.85) 20%, rgba(238, 236, 230, 0.85) 70%, transparent); }
   .uw-compare-handle { top: 52%; width: 46px; height: 46px; }
-  .uw-compare-label { top: auto; bottom: 26px; font-size: 9.5px; padding: 6px 9px; transform: none; }
+  /* Long translations wrap onto two lines instead of running past the screen edge (the handle rests at 50%). */
+  .uw-compare-label { top: auto; bottom: 26px; width: max-content; max-width: calc(50vw - 42px); font-size: 9.5px; line-height: 1.35; padding: 6px 9px; transform: none; white-space: normal; }
+  .uw-compare-label.is-dark { text-align: right; }
   .uw-compare-label.is-dark { right: 30px; }
   .uw-compare-label.is-hope { left: 30px; }
   /* At least one full screen: the copy fills the space under the photo and the button sits near the bottom. */

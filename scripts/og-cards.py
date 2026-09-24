@@ -33,6 +33,9 @@ def page_copy(locale):
         if dash in title:
             lead, accent = title.split(dash, 1)
             return dict(lead=lead + dash.rstrip(), accent=accent, brand=name, title=title)
+    if '、' in title:  # Japanese: accent the second clause
+        lead, accent = title.split('、', 1)
+        return dict(lead=lead + '、', accent=accent, brand=name, title=title)
     return dict(lead=title, accent='', brand=name, title=title)
 
 
