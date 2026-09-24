@@ -27,6 +27,7 @@
 .uw-hero-note { max-width: 40ch; margin: 0; color: rgba(238, 236, 230, 0.78); text-shadow: 0 1px 12px rgba(7, 11, 16, 0.9); font-size: 15px; line-height: 1.45; }
 .uw-hero-note a { color: var(--paper); text-decoration: none; border-bottom: 1px solid rgba(238, 236, 230, 0.35); white-space: nowrap; }
 .uw-hero-note a:hover { border-color: var(--paper); }
+.uw-cta-short { display: none; }
 .uw-hero-closing { margin: 0; padding-left: 16px; border-left: 2px solid var(--signal); font-size: clamp(1.1rem, 1.5vw, 1.4rem); font-weight: 600; letter-spacing: -0.015em; }
 
 .uw-hero-subtitle { max-width: 36ch; margin: -10px 0 0; color: var(--paper); font-size: clamp(1.15rem, 1.6vw, 1.45rem); font-weight: 500; line-height: 1.35; letter-spacing: -0.01em; }

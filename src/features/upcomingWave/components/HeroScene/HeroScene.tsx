@@ -29,7 +29,10 @@ export const HeroScene = () => {
       </div>
       <p className="uw-hero-closing">{hero.closing}</p>
       <div className="uw-hero-actions">
-        <a className="uw-cta" href={hero.cta.href}>{hero.cta.label} <span aria-hidden="true">↓</span></a>
+        {/* Phones show the short label (responsive.css); the hidden one is skipped by screen readers too. */}
+        <a className="uw-cta" href={hero.cta.href}>
+          <span className="uw-cta-long">{hero.cta.label}</span><span className="uw-cta-short">{hero.cta.shortLabel}</span> <span aria-hidden="true">↓</span>
+        </a>
         <p className="uw-hero-note">{hero.note} <a href={hero.noteLink.href}>{hero.noteLink.label} →</a></p>
       </div>
     </div>

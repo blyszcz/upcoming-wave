@@ -15,5 +15,5 @@ export const hero = {
   closing: 'I sami proszą, żeby ich regulować.',
   note: 'Nie straszę — tłumaczę. Bo jeśli ustalimy dobre zasady, AI może dać nam ogromnie dużo dobrego.',
   noteLink: { label: 'Zobacz drugą stronę', href: '#the-stakes' },
-  cta: { label: 'Zobacz ich słowa', href: '#voices' },
+  cta: { label: 'Zobacz ich słowa', shortLabel: 'Zobacz dlaczego', href: '#voices' },
 };

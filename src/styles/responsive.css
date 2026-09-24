@@ -38,10 +38,10 @@
   .uw-hero-copy { gap: 20px; max-width: none; padding: calc(var(--hero-band) - 18px) var(--gutter) 44px; }
   .uw-hero-title { font-size: clamp(2.2rem, 9.8vw, 3.4rem); }
   .uw-hero-subtitle { margin-top: -6px; font-size: 1.05rem; }
-  .uw-hero-threats { gap: 10px; }
-  .uw-hero-threats ol { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px; }
-  .uw-hero-threats li { gap: 8px; font-size: 14px; }
-  .uw-hero-threats li span { font-size: 10px; }
+  /* First screen on phones: headline, one line, the ask, and one button. The threats are covered in the chapters. */
+  .uw-hero-threats { display: none; }
+  .uw-cta-long { display: none; }
+  .uw-cta-short { display: inline; }
   .uw-hero-closing { font-size: 1.02rem; }
   .uw-hero-note { display: none; }
   .uw-hero-image { object-position: 72% center; }
