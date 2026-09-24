@@ -25,9 +25,9 @@
   .uw-bars li { grid-template-columns: 1fr; gap: 8px; }
   .uw-loop-ring { display: none; }
   .uw-hero { align-items: flex-end; }
-  .uw-compare-handle { top: 30%; width: 46px; height: 46px; }
+  .uw-compare-handle { top: 17%; width: 46px; height: 46px; }
   .uw-compare-divider::before { background: linear-gradient(180deg, transparent, rgba(238, 236, 230, 0.85) 12%, rgba(238, 236, 230, 0.85) 38%, transparent 52%); }
-  .uw-compare-label { top: 30%; font-size: 10px; padding: 6px 9px; }
+  .uw-compare-label { top: 17%; font-size: 10px; padding: 6px 9px; }
   .uw-compare-label.is-dark { right: 32px; }
   .uw-compare-label.is-hope { left: 32px; }
   .uw-hero-image { object-position: 72% center; }

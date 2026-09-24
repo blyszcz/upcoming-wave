@@ -22,7 +22,7 @@ export const scenes: Scene[] = [
     label: 'WHAT COULD GO WRONG',
     status: 'possibleMany',
     layout: 'triptych',
-    title: { lead: 'Three risks.', accent: 'Brakes too weak.' },
+    title: { lead: 'Three risks.', accent: 'The brakes are still weak.' },
     panels: [
       { image: images.layoffs, label: 'A wave of layoffs', alt: 'A long line of office workers leaves a tower in the rain, carrying cardboard boxes.', focus: 'center 70%' },
       { image: images.aiRules, label: 'AI takes control', alt: 'Thousands of people stand in neat rows on a plaza beneath a huge machine scanning them with beams of light.', focus: 'center 60%' },
@@ -248,7 +248,7 @@ export const scenes: Scene[] = [
     status: 'incident',
     chain: 'control',
     layout: 'triptych',
-    title: { lead: 'It already got out of a test once.', accent: 'The next models are stronger.' },
+    title: { lead: 'AI has already slipped out of a test.', accent: 'Newer models are more capable.' },
     panels: [
       { image: images.cage, label: 'An open cage', alt: 'The open door of a secure server cage with a broken lock; light escapes along the cables.', focus: 'center 60%' },
       { image: images.swarm, label: 'The swarm', alt: 'A world map at night: thousands of glowing points spread along network lines like a flock.', focus: 'center 60%' },

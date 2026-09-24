@@ -97,7 +97,7 @@ export const scenes: Scene[] = [
     label: 'CO MOŻE PÓJŚĆ NIE TAK',
     status: 'possibleMany',
     layout: 'triptych',
-    title: { lead: 'Trzy ryzyka.', accent: 'Za słabe hamulce.' },
+    title: { lead: 'Trzy ryzyka.', accent: 'Hamulce wciąż są słabe.' },
     panels: [
       {
         image: images.layoffs,
@@ -391,7 +391,7 @@ export const scenes: Scene[] = [
     status: 'incident',
     chain: 'control',
     layout: 'triptych',
-    title: { lead: 'Już raz wyszła poza test.', accent: 'Kolejne modele są mocniejsze.' },
+    title: { lead: 'Już raz wyszła poza test.', accent: 'Nowe modele są coraz zdolniejsze.' },
     panels: [
       { image: images.cage, label: 'Otwarta klatka', alt: 'Otwarte drzwi zabezpieczonej szafy serwerowej z wyłamanym zamkiem; światło ucieka po kablach.', focus: 'center 60%' },
       { image: images.swarm, label: 'Rój', alt: 'Mapa świata nocą: tysiące świecących punktów rozchodzą się po liniach sieci jak stado.', focus: 'center 60%' },
