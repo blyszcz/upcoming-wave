@@ -4,3 +4,7 @@ out/
 *.tsbuildinfo
 .env
 .env.local
+
+# Local-only: the copyrighted book used for research, and raw generator output (PNG)
+docs/books/
+output/
