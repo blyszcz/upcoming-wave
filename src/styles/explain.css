@@ -1,6 +1,7 @@
 /* ---------- explain slider ---------- */
-.uw-explain { position: fixed; z-index: 50; inset: 0; display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; overflow: hidden; background: var(--ink); outline: none; touch-action: pan-y; animation: uw-fade 0.4s ease; }
+.uw-explain { position: fixed; z-index: 50; inset: 0; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto minmax(0, 1fr) auto; overflow: hidden; background: var(--ink); outline: none; touch-action: pan-y; animation: uw-fade 0.4s ease; }
 .uw-explain-top { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 18px var(--gutter); }
+.uw-explain-top .uw-eyebrow { min-width: 0; }
 .uw-explain-progress { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 0 var(--gutter); }
 .uw-explain-progress span { height: 2px; background: var(--line); transition: background 0.5s ease; }
 .uw-explain-progress span.is-done { background: var(--paper); }

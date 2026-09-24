@@ -23,13 +23,16 @@
 .uw-split-copy .uw-expand { justify-self: start; }
 .uw-acceleration > .uw-expand { justify-self: start; }
 @media (max-width: 820px) {
-  .uw-scene.is-collapsed .uw-panels { display: grid; grid-template-columns: repeat(3, 1fr); height: 34svh; min-height: 220px; }
-  .uw-scene.is-collapsed .uw-panel { height: auto; }
-  .uw-scene.is-collapsed .uw-panel-label, .uw-scene.is-collapsed .uw-arrow { display: none; }
-  .uw-scene.is-collapsed .uw-panel-media::after { display: none; }
-  .uw-scene.is-collapsed .uw-mosaic { grid-template-columns: repeat(3, 1fr); height: 34svh; }
-  .uw-scene.is-collapsed .uw-tile { aspect-ratio: auto; }
-  .uw-scene.is-collapsed .uw-tile-label { display: none; }
+  /* Collapsed chapters on phones: labelled tiles in two columns (a third step spans the full width). */
+  .uw-scene.is-collapsed .uw-panels { grid-template-columns: repeat(2, minmax(0, 1fr)); height: auto; min-height: 0; }
+  .uw-scene.is-collapsed .uw-panel { height: auto; aspect-ratio: 3 / 4; }
+  .uw-scene.is-collapsed .uw-panel:nth-child(odd):last-child { grid-column: 1 / -1; aspect-ratio: 16 / 10; }
+  .uw-scene.is-collapsed .uw-panel-label { top: 14px; left: 12px; right: 12px; font-size: 1.12rem; }
+  .uw-scene.is-collapsed .uw-panel-label span { margin-bottom: 8px; font-size: 10px; }
+  .uw-scene.is-collapsed .uw-arrow { display: none; }
+  .uw-scene.is-collapsed .uw-mosaic { height: auto; min-height: 0; grid-template-rows: none; }
+  .uw-scene.is-collapsed .uw-mosaic .uw-tile:nth-child(4) { display: list-item; }
+  .uw-scene.is-collapsed .uw-mosaic .uw-tile:nth-child(n + 5) { display: none; }
   .uw-split.is-collapsed .uw-split-halves { grid-template-columns: 1fr 1fr; height: 40svh; }
   .uw-split.is-collapsed .uw-split-half { height: auto; }
   .uw-split.is-collapsed .uw-split-half figcaption p, .uw-split.is-collapsed .uw-split-half q, .uw-split.is-collapsed .uw-split-path { display: none; }
