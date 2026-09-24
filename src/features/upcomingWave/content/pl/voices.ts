@@ -107,7 +107,7 @@ export const voices: Voice[] = [
   },
   {
     id: 'suleyman',
-    variant: 'wide',
+    variant: 'plain',
     image: '/images/v2/voice-suleyman-v1.jpg',
     imageAlt: 'Otwarta książka w laboratorium; z jej stron unosi się helisa DNA zmieniająca się w wirusa.',
     quotes: ['Jeden eksperyment z patogenami, niewinne dłubanie w materii na poziomie cząsteczkowym, może wywołać pandemię o globalnych konsekwencjach.'],

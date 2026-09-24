@@ -99,7 +99,7 @@ export const voices: Voice[] = [
   },
   {
     id: 'suleyman',
-    variant: 'wide',
+    variant: 'plain',
     image: '/images/v2/voice-suleyman-v1.jpg',
     imageAlt: 'An open book in a lab; a DNA helix rises from its pages and turns into a virus.',
     quotes: ['A single pathogenic experiment could spark a pandemic, a tiny molecular event with global ramifications.'],
