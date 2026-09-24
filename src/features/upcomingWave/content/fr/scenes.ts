@@ -302,6 +302,7 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'Si ce levier économique disparaît, le contrat social implicite de la démocratie pourrait cesser de fonctionner.', person: 'Dario Amodei', role: 'PDG d’Anthropic · 2026', source: sources.amodei },
+      { kind: 'quote', quote: 'Si je parle avec quelqu’un et que je ne peux pas savoir s’il s’agit d’un humain ou d’une IA, c’est la fin de la démocratie.', person: 'Yuval Noah Harari', role: 'historien, auteur de « Sapiens »', source: sources.harari },
       ...split.band,
     ],
     upside: {

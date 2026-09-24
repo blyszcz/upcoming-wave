@@ -302,6 +302,7 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'Wenn dieser wirtschaftliche Hebel wegfällt, könnte der unausgesprochene Gesellschaftsvertrag der Demokratie aufhören zu funktionieren.', person: 'Dario Amodei', role: 'CEO, Anthropic · 2026', source: sources.amodei },
+      { kind: 'quote', quote: 'Wenn ich mich mit jemandem unterhalte und nicht erkennen kann, ob es ein Mensch oder eine KI ist, ist das das Ende der Demokratie.', person: 'Yuval Noah Harari', role: 'Historiker, Autor von „Sapiens“', source: sources.harari },
       ...split.band,
     ],
     upside: {

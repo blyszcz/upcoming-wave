@@ -74,6 +74,7 @@ const sources = {
   openaiRoad: { label: 'OpenAI, sierpień 2026', url: 'https://openai.com/index/hugging-face-incident-and-the-road-ahead/' },
   metrIncident: { label: 'METR', url: 'https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/' },
   anthropicIncidents: { label: 'Anthropic', url: 'https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals' },
+  harari: { label: 'The Economist, 2023', url: 'https://www.economist.com/by-invitation/2023/04/28/yuval-noah-harari-argues-that-ai-has-hacked-the-operating-system-of-human-civilisation' },
   amodeiPace: { label: 'We Must Pace the Frontier', url: 'https://darioamodei.com/post/we-must-pace-the-frontier' },
   o1card: { label: 'OpenAI o1 System Card', url: 'https://cdn.openai.com/o1-system-card.pdf' },
   apollo: { label: 'OpenAI o1 System Card / Apollo Research', url: 'https://cdn.openai.com/o1-system-card-20241205.pdf' },
@@ -413,6 +414,7 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'Jeśli ta siła ekonomiczna zwykłych ludzi zniknie, niepisana umowa społeczna demokracji może przestać działać.', person: 'Dario Amodei', role: 'CEO, Anthropic · 2026', source: sources.amodei },
+      { kind: 'quote', quote: 'Jeśli rozmawiam z kimś i nie potrafię powiedzieć, czy to człowiek, czy AI, to koniec demokracji.', person: 'Yuval Noah Harari', role: 'historyk, autor „Sapiens”', source: sources.harari },
       ...split.band,
     ],
     upside: {

@@ -302,6 +302,7 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'Si esa palanca económica desaparece, el contrato social implícito de la democracia puede dejar de funcionar.', person: 'Dario Amodei', role: 'CEO de Anthropic · 2026', source: sources.amodei },
+      { kind: 'quote', quote: 'Si estoy conversando con alguien y no puedo saber si es un humano o una IA, ese es el fin de la democracia.', person: 'Yuval Noah Harari', role: 'historiador, autor de «Sapiens»', source: sources.harari },
       ...split.band,
     ],
     upside: {

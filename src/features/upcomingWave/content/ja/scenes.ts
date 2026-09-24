@@ -302,6 +302,7 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'その経済的な交渉力が失われれば、民主主義の暗黙の社会契約は機能しなくなるかもしれない。', person: 'ダリオ・アモデイ', role: 'Anthropic CEO · 2026年', source: sources.amodei },
+      { kind: 'quote', quote: '会話の相手が人間なのかAIなのか見分けられないなら、それは民主主義の終わりだ。', person: 'ユヴァル・ノア・ハラリ', role: '歴史学者、『サピエンス全史』著者', source: sources.harari },
       ...split.band,
     ],
     upside: {

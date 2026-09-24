@@ -302,6 +302,7 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'If that economic leverage goes away, then the implicit social contract of democracy may stop working.', person: 'Dario Amodei', role: 'CEO, Anthropic · 2026', source: sources.amodei },
+      { kind: 'quote', quote: 'If I am having a conversation with someone, and I cannot tell whether it is a human or an AI - that’s the end of democracy.', person: 'Yuval Noah Harari', role: 'historian, author of “Sapiens”', source: sources.harari },
       ...split.band,
     ],
     upside: {
