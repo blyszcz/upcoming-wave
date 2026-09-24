@@ -87,21 +87,15 @@ All text lives in `src/features/upcomingWave/content/{en,pl}/`:
 
 ## Deploy
 
-The site is a static folder, so any static host works. Recommended: **Cloudflare Pages** (free, no bandwidth limit, supports `public/_headers`).
+The site is a static folder, so any static host works. Production runs on **Cloudflare Workers** (static assets only, configured in `wrangler.jsonc`). Workers serve `out/`, apply `public/_headers`, and use `404.html` for unknown paths.
 
-1. Push the repo to GitHub.
-2. Cloudflare → Workers & Pages → Create → **Pages** → Connect to Git.
-3. Build settings:
-   - Framework preset: **None**
-   - Build command: `npm run build`
-   - Output directory: `out`
-   - Variables: `NODE_VERSION=22`, `NEXT_PUBLIC_SITE_URL=https://upcomingwave.org`, and optionally `NEXT_PUBLIC_GA_ID`
-4. Custom domains → add `upcomingwave.org` and `www.upcomingwave.org`. Then add a Redirect Rule from `www` to the root domain (301).
+1. Cloudflare → Compute → Workers & Pages → Create → import the GitHub repo.
+2. Build command: `npm run build`. Deploy command: `npx wrangler deploy`.
+3. Production values (`NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_GA_ID`) come from `.env.production`, and the Node version from `.node-version`, so no dashboard variables are needed.
+4. Worker → Settings → Domains & Routes → add `upcomingwave.org` and `www.upcomingwave.org`.
 5. Add the domain in Google Search Console and submit `/sitemap.xml`. Import it into Bing Webmaster Tools.
 
 Every push to `main` redeploys automatically.
-
-Without Git integration: `npm run build && npx wrangler pages deploy out --project-name upcoming-wave`.
 
 ## Contributing
 
