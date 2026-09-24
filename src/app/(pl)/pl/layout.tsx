@@ -6,8 +6,8 @@ import '@/styles/globals.css';
 
 export const metadata: Metadata = buildMetadata({
   locale: 'pl',
-  title: 'Dlaczego twórcy AI sami proszą o zasady',
-  description: 'Wizualna opowieść o tym, jak AI może zmienić pracę, pieniądze i państwo szybciej, niż zdążymy się dostosować — i dlaczego jej twórcy proszą o regulacje.',
+  title: 'AI może być najlepszą rzeczą, jaką stworzyliśmy — albo najgorszą',
+  description: 'Krótki wizualny przewodnik: co AI może zrobić z pracą, pieniędzmi i władzą, co może pójść dobrze i dlaczego jej twórcy proszą o zasady. Przy każdym fakcie źródło.',
 });
 
 export const viewport: Viewport = { themeColor: '#070b10' };
