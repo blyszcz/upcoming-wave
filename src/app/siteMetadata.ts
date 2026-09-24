@@ -36,3 +36,27 @@ export const buildMetadata = ({ locale, title, description, page = 'home' }: Loc
   robots: { index: true, follow: true },
   };
 };
+
+// Structured data for search engines: the site, and the page as an article citing the book.
+export const buildJsonLd = ({ locale, title, description }: LocaleMetadata): string => {
+  const url = new URL(paths.home(locale), env.NEXT_PUBLIC_SITE_URL).toString();
+  const author = { '@type': 'Person', name: '@blyzbyte', url: 'https://x.com/blyzbyte' };
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@graph': [
+      { '@type': 'WebSite', name: SITE_NAME[locale], url, inLanguage: locale },
+      {
+        '@type': 'Article',
+        headline: title,
+        description,
+        url,
+        inLanguage: locale,
+        image: new URL(OG_IMAGE.url, env.NEXT_PUBLIC_SITE_URL).toString(),
+        author,
+        publisher: author,
+        isAccessibleForFree: true,
+        citation: { '@type': 'Book', name: 'The Coming Wave', author: ['Mustafa Suleyman', 'Michael Bhaskar'], datePublished: '2023' },
+      },
+    ],
+  }).replace(/</g, '\\u003c');
+};
