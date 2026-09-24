@@ -5,9 +5,8 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import type { KeyboardEvent, PointerEvent } from 'react';
 
 import {
-  COMPARE_HINT_DELAY_MS,
-  COMPARE_HINT_MS,
-  COMPARE_HINT_SWING,
+  COMPARE_INTRO_DELAY_MS,
+  COMPARE_INTRO_MS,
   COMPARE_KEY_STEP,
   COMPARE_MAX,
   COMPARE_MIN,
@@ -19,32 +18,27 @@ import {
 
 const clamp = (value: number) => Math.min(COMPARE_MAX, Math.max(COMPARE_MIN, value));
 
-// Position of the before/after divider: both photos visible from the first paint, one small nudge
-// to show the handle moves, then pointer drag and keyboard.
+// Position of the before/after divider: a one-time intro sweep, then pointer drag and keyboard.
 export const useCompareSlider = () => {
-  const [position, setPosition] = useState(COMPARE_REST_DESKTOP);
-  // Until mounted the CSS default (--pos, with a mobile override) places the divider, so there is no jump.
-  const [isReady, setIsReady] = useState(false);
+  const [position, setPosition] = useState(COMPARE_MAX);
   const trackRef = useRef<HTMLDivElement>(null);
   const isDragging = useRef(false);
   const hasInteracted = useRef(false);
 
   useEffect(() => {
-    const rest = window.matchMedia(MOBILE_QUERY).matches ? COMPARE_REST_MOBILE : COMPARE_REST_DESKTOP;
-    setPosition(rest);
-    setIsReady(true);
-    if (window.matchMedia(REDUCED_MOTION_QUERY).matches) return;
+    const target = window.matchMedia(MOBILE_QUERY).matches ? COMPARE_REST_MOBILE : COMPARE_REST_DESKTOP;
+    if (window.matchMedia(REDUCED_MOTION_QUERY).matches) { setPosition(target); return; }
     let frame = 0;
     const timeout = window.setTimeout(() => {
       const start = performance.now();
       const tick = (now: number) => {
         if (hasInteracted.current) return;
-        const progress = Math.min(1, (now - start) / COMPARE_HINT_MS);
-        setPosition(rest - COMPARE_HINT_SWING * Math.sin(progress * Math.PI));
+        const progress = Math.min(1, (now - start) / COMPARE_INTRO_MS);
+        setPosition(COMPARE_MAX - (COMPARE_MAX - target) * (1 - (1 - progress) ** 3));
         if (progress < 1) frame = requestAnimationFrame(tick);
       };
       frame = requestAnimationFrame(tick);
-    }, COMPARE_HINT_DELAY_MS);
+    }, COMPARE_INTRO_DELAY_MS);
     return () => { window.clearTimeout(timeout); cancelAnimationFrame(frame); };
   }, []);
 
@@ -70,5 +64,5 @@ export const useCompareSlider = () => {
     setPosition(clamp(moves[event.key]));
   };
 
-  return { position, isReady, trackRef, handlePointerDown, handlePointerMove, handlePointerUp, handleKeyDown };
+  return { position, trackRef, handlePointerDown, handlePointerMove, handlePointerUp, handleKeyDown };
 };
