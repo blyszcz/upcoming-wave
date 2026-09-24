@@ -2,13 +2,13 @@ export const site = {
   sourcesPage: {
     title: 'Źródła i metoda',
     lead: 'Każda liczba i każdy cytat na stronie ma numer przypisu. Tutaj jest pełna lista — w kolejności, w jakiej pojawiają się na stronie.',
-    methodTitle: 'Jak pracujemy',
+    methodTitle: 'Jak pracuję',
     method: [
-      'Każdy fakt ma źródło. Cytaty sprawdzamy u źródła pierwotnego; gdy strona blokuje dostęp, korzystamy z renomowanych mediów, które je relacjonują.',
+      'Każdy fakt ma źródło. Cytaty sprawdzam u źródła pierwotnego; gdy strona blokuje dostęp, korzystam z renomowanych mediów, które je relacjonują.',
       'Statusy sekcji mówią, czym coś jest: „dziś” — to już się dzieje; „historia” — to już się stało; „incydent” — prawdziwe zdarzenie; „możliwy” i „skrajny scenariusz” — ryzyka, nie prognozy.',
-      'Testy laboratoryjne oznaczamy jako testy. Nie mieszamy ich z prawdziwymi incydentami.',
-      'Cytaty obcojęzyczne tłumaczymy sami. Cytaty z „Nadchodzącej fali” pochodzą z polskiego wydania książki.',
-      'Pokazujemy też drugą stronę: korzyści z AI i argumenty, że ryzyka mogą być przesadzone.',
+      'Testy laboratoryjne oznaczam jako testy. Nie mieszam ich z prawdziwymi incydentami.',
+      'Cytaty obcojęzyczne tłumaczę sam. Cytaty z „Nadchodzącej fali” pochodzą z polskiego wydania książki.',
+      'Pokazuję też drugą stronę: korzyści z AI i argumenty, że ryzyka mogą być przesadzone.',
     ],
     listTitle: 'Wszystkie źródła',
     updated: 'Ostatnia aktualizacja: wrzesień 2026.',

@@ -425,12 +425,12 @@ export const scenes: Scene[] = [
         title: 'Wcześniej: testy w laboratorium',
         items: [
           { kicker: 'OpenAI · 2024 · test', text: 'Model wykorzystał błąd w konfiguracji testu, żeby odczytać rozwiązanie. Infrastruktura pozostała bezpieczna.', source: sources.o1card },
-          { kicker: 'Apollo Research · 2024 · test', value: '2%', text: 'prób, w których o1 — z poleceniem „osiągnij cel za wszelką cenę” — próbował skopiować samego siebie. W 5% wyłączał nadzór.', source: sources.apollo },
+          { kicker: 'Apollo Research · 2024 · test', value: '2%', text: 'prób, w których o1 — z poleceniem „osiągnij cel za wszelką cenę” — próbował skopiować samego siebie. W 5% próbował wyłączyć nadzór.', source: sources.apollo },
           { kicker: 'Fudan University · 2024 · test', value: '50\u2009–\u200990%', text: 'prób, w których otwarte modele — na polecenie — stworzyły działającą kopię samych siebie.', source: sources.fudan },
           { kicker: 'Palisade Research · 2025 · test', value: '79 / 100', text: 'prób, w których o3 wyłączył skrypt zamykający, żeby dokończyć zadanie.', source: sources.palisade },
         ],
       },
-      { kind: 'quote', quote: 'Obawiam się, że za 6–12 miesięcy taki rój — mocniejszy, a równie źle nastawiony — mógłby przejąć cały internet trwałym botnetem.', person: 'Dario Amodei', role: 'CEO, Anthropic · wrzesień 2026 · obawa', source: sources.amodeiPace },
+      { kind: 'quote', quote: 'Obawiam się, że za 6–12 miesięcy taki rój — mocniejszy, a równie źle nastawiony — mógłby przejąć cały internet trwałym botnetem.', person: 'Dario Amodei', role: 'CEO, Anthropic · wrzesień 2026 · obawa, nie prognoza', source: sources.amodeiPace },
       { kind: 'quote', quote: 'Modele zbliżają się do punktu, w którym — bez zabezpieczeń — mogłyby pomóc osobie z wykształceniem ścisłym, ale nie biologicznym, przejść cały proces wytworzenia broni biologicznej.', person: 'Dario Amodei', role: 'CEO, Anthropic · 2026', source: sources.amodei },
       {
         kind: 'stats',

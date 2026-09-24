@@ -5,7 +5,7 @@ const metr: Source = { label: 'METR Time Horizons', url: 'https://metr.org/time-
 
 export const horizonPoints: HorizonPoint[] = [
   { model: 'GPT-3.5', date: '2022-03', minutes: 0.6 },
-  { model: 'GPT-4', date: '2023-03', minutes: 4, milestone: { value: '4 minutes', note: 'making a coffee' } },
+  { model: 'GPT-4', date: '2023-03', minutes: 4, milestone: { value: '4 minutes', note: 'making coffee' } },
   { model: 'Claude 3.5 Sonnet', date: '2024-06', minutes: 11.4 },
   { model: 'o1-preview', date: '2024-09', minutes: 20.3 },
   { model: 'o1', date: '2024-12', minutes: 38.8 },
@@ -30,9 +30,9 @@ export const acceleration = {
   },
   chart: {
     title: 'How long a task AI can do on its own',
-    subtitle: 'Since 2023: twice as long roughly every 4 months.',
+    subtitle: 'Since 2023: doubling roughly every 4 months.',
     doublingMonths: 4.2,
-    note: 'METR measurements: how long a task (measured in human working time) the best models complete on their own in half of attempts. Measurements above 16 hours are uncertain — the test tasks are too short. The dashed line is a scenario, not a measurement.',
+    note: 'METR measurements: the length of task (in human working time) that the best models complete on their own in half of attempts. Measurements above 16 hours are uncertain — the test tasks are too short. The dashed line is a scenario, not a measurement.',
     source: metr,
   },
   evidence: {
@@ -40,11 +40,11 @@ export const acceleration = {
     items: [
       { kicker: 'Anthropic · May 2026', value: '80%+', text: 'of the company’s code is now written by Claude. In early 2025 it was a few percent.', source: { label: 'Anthropic', url: 'https://www.anthropic.com/institute/recursive-self-improvement' } },
       { kicker: 'OpenAI · September 2026', value: 'AI intern', text: 'The company says it has an AI research intern. It plans an automated AI researcher for 2028.', source: { label: 'Engadget', url: 'https://www.engadget.com/2251859/openai-says-it-reached-its-goal-of-creating-an-automated-research-intern/' } },
-      { kicker: 'Epoch AI', value: '4 – 5×', text: 'per year — the growth of computing power used to train the best models.', source: { label: 'Epoch AI', url: 'https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year' } },
+      { kicker: 'Epoch AI', value: '4 – 5×', text: 'per year — growth in the computing power used to train the best models.', source: { label: 'Epoch AI', url: 'https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year' } },
     ] satisfies EvidenceItem[],
   },
   quotes: [
     { quote: 'Since roughly this summer, AI has been advancing drastically faster, driven primarily by AI’s growing ability to build the next generation of AI. This dynamic is called recursive self-improvement, and it is starting to happen across the industry.', person: 'Dario Amodei', role: 'CEO, Anthropic · September 2026', source: { label: 'We Must Pace the Frontier', url: 'https://darioamodei.com/post/we-must-pace-the-frontier' } },
-    { quote: 'The first ultraintelligent machine is the last invention that man need ever make, provided that the machine is docile enough to tell us how to keep it under control.', person: 'I. J. Good', role: 'mathematician, Alan Turing’s colleague · 1965', source: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2022/01/04/ultraintelligent/' } },
+    { quote: 'The first ultraintelligent machine is the last invention that man need ever make, provided that the machine is docile enough to tell us how to keep it under control.', person: 'I. J. Good', role: 'mathematician who worked with Alan Turing · 1965', source: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2022/01/04/ultraintelligent/' } },
   ],
 };

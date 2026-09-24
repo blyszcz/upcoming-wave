@@ -9,6 +9,6 @@ export const chain: { id: ChainStepId; label: string; target: string }[] = [
   { id: 'ai', target: 'ai-builds-ai', label: 'AI builds AI' },
   { id: 'control', target: 'out-of-the-test', label: 'Control' },
   { id: 'people', target: 'not-needed', label: 'People' },
-  { id: 'state', target: 'two-roads', label: 'The state' },
+  { id: 'state', target: 'two-roads', label: 'State' },
   { id: 'rules', target: 'rules', label: 'Rules' },
 ];
