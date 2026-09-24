@@ -7,7 +7,7 @@ export const site = {
       'Every fact has a source. I check quotes against the primary source; where that isn’t accessible, I rely on reputable outlets that report them.',
       'Section labels say what something is: “today” — already happening; “history” — it happened before; “incident” — a real event; “possible” and “extreme scenario” — risks, not predictions.',
       'Lab tests are labeled as tests and never mixed with real incidents.',
-      'Quotes from “The Coming Wave” are translated from the Polish edition and will be replaced with the English edition’s wording.',
+      'Quotes from “The Coming Wave” use the wording of the English edition (Crown, 2023).',
       'I show the other side too: AI’s benefits and the arguments that the risks may be overstated.',
     ],
     listTitle: 'All sources',

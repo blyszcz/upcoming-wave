@@ -1,6 +1,6 @@
 import type { BandBlock, SceneStatus } from '@features/upcomingWave/types/scene.types';
 
-// Book quotes below are translated from the Polish edition — verify against the English edition before publishing.
+// Book quotes use the English edition's wording (Crown, 2023), checked via Google Books.
 const book = { label: '“The Coming Wave”' };
 
 export const split = {
@@ -13,22 +13,22 @@ export const split = {
     alt: 'An abandoned government office: closed counters, empty chairs, papers on the floor.',
     label: 'The hollow state',
     text: 'Offices and elections still exist, but the state stops working. Services shrink to the bare minimum and chaos grows.',
-    quote: '“zombie-like” states',
+    quote: '“a kind of zombie government”',
   },
   right: {
     image: '/images/v2/split-leviathan-v1.jpg',
     alt: 'A city at night under cameras and drones scanning the crowd.',
     label: 'The total-control state',
     text: 'It starts innocently: cameras for safety, AI to catch criminals. Step by step, the authorities come to know everything about us.',
-    quote: '“A proliferation of smaller-scale technology failures will lead to calls for tighter surveillance.”',
+    quote: '“As smaller-scale technology failures mount, calls for control increase.”',
   },
   path: { label: 'The narrow path', href: '#rules' },
   band: [
-    { kind: 'quote', quote: 'Over time, these technologies will push humanity into a place between the poles of catastrophe and dystopia. This is the great dilemma of our age.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 12', source: book },
+    { kind: 'quote', quote: 'Over time, then, the implications of these technologies will push humanity to navigate a path between the poles of catastrophe and dystopia. This is the essential dilemma of our age.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 12', source: book },
     {
       kind: 'stats',
       items: [
-        { value: '44%', label: 'of world GDP — the combined revenue of the Fortune Global 500 companies (ch. 11)', source: book },
+        { value: '44%', label: 'of world GDP — where Fortune’s Global 500 companies already are (ch. 11)', source: book },
       ],
     },
   ] satisfies BandBlock[],
@@ -40,7 +40,7 @@ export const finale = {
   alt: 'People from around the world stand around a round table at dusk, placing glowing rings around a bright core.',
   label: 'WHAT CAN I DO',
   title: { lead: 'Don’t stop progress.', accent: 'Set its limits.' },
-  quote: '“It is not its fate that is being decided, but ours.”',
+  quote: '“Technology is not the point of the future, or what’s really at stake. We are.”',
   rules: { title: 'What good rules look like', items: ['Independent testing before AI reaches millions of people', 'Clear responsibility when an AI system causes harm', 'AI’s gains shared fairly — through taxes and a real safety net'] },
   actions: { title: 'What you can do', items: ['Share this with one person who hasn’t thought about it yet', 'Ask the people who represent you where they stand on AI rules', 'When AI companies publish safety plans, read them — and ask questions'] },
   quoteSource: 'Mustafa Suleyman, “The Coming Wave”',

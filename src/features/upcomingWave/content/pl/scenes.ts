@@ -87,6 +87,7 @@ const sources = {
   muskAnthill: { label: 'Live Science, 2018', url: 'https://www.livescience.com/62239-elon-musk-immortal-artificial-intelligence-dictator.html' },
   masai: { label: 'MASAI / The Lancet', url: 'https://ecancer.org/en/news/27721-ai-supported-mammography-screening-results-in-fewer-aggressive-and-advanced-breast-cancers-finds-full-results-from-first-randomised-controlled-trial' },
   nobel: { label: 'NobelPrize.org, 2024', url: 'https://www.nobelprize.org/prizes/chemistry/2024/popular-information/' },
+  gatesAge: { label: 'GatesNotes, 2023', url: 'https://www.gatesnotes.com/The-Age-of-AI-Has-Begun' },
   gates: { label: 'CNBC, 2017', url: 'https://www.cnbc.com/2017/02/17/bill-gates-job-stealing-robots-should-pay-income-taxes.html' },
   citadel: { label: 'Bloomberg, 2026', url: 'https://www.bloomberg.com/news/articles/2026-02-24/citadel-securities-rebuts-citrini-intelligence-crisis-scenario' },
 };
@@ -435,7 +436,7 @@ export const scenes: Scene[] = [
       {
         kind: 'stats',
         items: [
-          { value: '$25 000', label: 'kosztowało podręczne urządzenie do syntezy DNA — do użytku „bez ograniczeń i nadzoru” (stan na 2023)', source: sources.book },
+          { value: '$25 000', label: 'kosztowało stacjonarne urządzenie do syntezy DNA — do użytku „bez ograniczeń i nadzoru” (stan na 2023)', source: sources.book },
           { value: '4', label: 'pełnoetatowych pracowników miała międzynarodowa konwencja o broni biologicznej — mniej niż przeciętny McDonald’s (stan na 2023)', source: sources.book },
         ],
       },
@@ -503,6 +504,7 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'Nawet twórcy AI mówią: potrzebujemy zasad',
         items: [
+          { kicker: 'Bill Gates · 2023', text: '„Świat musi ustalić zasady ruchu drogowego, żeby ewentualne minusy sztucznej inteligencji były z nawiązką zrównoważone przez jej korzyści.”', source: sources.gatesAge },
           { kicker: 'Sam Altman · Senat USA · 2023', text: '„Uważamy, że interwencja regulacyjna rządów będzie kluczowa, by ograniczać ryzyko coraz potężniejszych modeli.”', source: sources.altmanSenate },
           { kicker: 'OpenAI · 2026', value: 'Stop', text: 'Po incydencie z Hugging Face — gdy część zabezpieczeń i monitoringu była wyłączona — firma sama wstrzymała swój największy planowany trening.', source: sources.openaiRoad },
           { kicker: 'Luka w prawie', text: 'Nawet najbardziej zaawansowane prawo o AI — unijny AI Act — nie zajmuje się utratą pracy ani podatkami. Zasady dla AI w rekrutacji przesunięto na koniec 2027 r.', source: sources.aiAct },
@@ -569,19 +571,19 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '−82%', label: 'tyle w ciągu dekady spadły koszty fotowoltaiki — i wciąż spadają (rozdz. 11)', source: sources.book },
-          { value: '~9%', label: 'ludzi żyje dziś poniżej granicy ubóstwa. Na początku XIX w. w skrajnej nędzy żyli prawie wszyscy — tyle zmieniła technologia (rozdz. 8)', source: sources.book },
+          { value: '~9%', label: 'ludzi żyje dziś w skrajnej nędzy. Na początku XIX w. w skrajnej nędzy żyli prawie wszyscy — tyle zmieniła technologia (rozdz. 8)', source: sources.book },
         ],
       },
       {
         kind: 'evidence',
-        title: 'Na co liczą twórcy AI',
+        title: 'Na co liczą liderzy technologii',
         items: [
+          { kicker: 'Bill Gates · 2023', value: 'Mniej nierówności', text: '„AI może zmniejszyć niektóre z największych nierówności na świecie.” Nazywa ją przełomem „tak fundamentalnym jak mikroprocesor, komputer osobisty, internet i telefon komórkowy”.', source: sources.gatesAge },
           { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'Koniec chorób?', text: '„Pewnego dnia może uda nam się wyleczyć wszystkie choroby z pomocą AI… może w ciągu najbliższej dekady.” Mówi też o „radykalnej obfitości” — końcu niedoboru.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
           { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 lat → 10', text: 'Postęp medycyny z kilkudziesięciu, a nawet stu lat skompresowany do 5–10 lat, podwojenie zdrowej długości życia, miliardy ludzi wyciągnięte z biedy — jego wizja, jeśli AI pójdzie dobrze.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
           { kicker: 'Sam Altman · OpenAI · 2024', value: 'Wspólny dobrobyt', text: '„W przyszłości życie każdego może być lepsze niż dziś życie kogokolwiek.” I każde dziecko z własnym wirtualnym nauczycielem.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
         ],
       },
-      { kind: 'quote', quote: 'Dzięki sztucznej inteligencji moglibyśmy rozszyfrować tajemnice wszechświata, leczyć choroby, które przez długi czas wymykały się nauce, tworzyć nowe formy sztuki i kultury, poszerzające granice wyobraźni.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, prolog', source: sources.book },
     ],
   },
 ];

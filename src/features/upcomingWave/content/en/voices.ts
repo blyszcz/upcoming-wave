@@ -1,7 +1,7 @@
 import type { Voice } from '@features/upcomingWave/types/voice.types';
 
 // Original English wording of every quote (verified against the linked source).
-// The Suleyman line is translated from the Polish edition — verify against the English edition.
+// The Suleyman line uses the English edition's wording (ch. 7).
 export const voices: Voice[] = [
   {
     id: 'cais',
@@ -76,7 +76,7 @@ export const voices: Voice[] = [
     variant: 'plain',
     image: '/images/v2/voice-suleyman-v1.jpg',
     imageAlt: 'An open book in a lab; a DNA helix rises from its pages and turns into a virus.',
-    quotes: ['A single experiment with pathogens, innocent tinkering with matter at the molecular level, could trigger a pandemic with global consequences.'],
+    quotes: ['A single pathogenic experiment could spark a pandemic, a tiny molecular event with global ramifications.'],
     person: 'Mustafa Suleyman',
     role: 'DeepMind co-founder, author of the book',
     context: '“The Coming Wave”, ch. 7 · 2023',

@@ -3,8 +3,7 @@ import type { Scene } from '@features/upcomingWave/types/scene.types';
 import { sceneImages as images, sceneSources as plSources } from '@features/upcomingWave/content/pl/scenes';
 
 
-// Expert quotes use their original English wording. Book quotes are translated from the
-// Polish edition — verify against the English edition of “The Coming Wave” before publishing.
+// All quotes use their original English wording; book quotes follow the English edition (Crown, 2023).
 const sources = {
   ...plSources,
   imf: { ...plSources.imf, label: 'IMF, 2024' },
@@ -199,7 +198,7 @@ export const scenes: Scene[] = [
         source: sources.oecd,
       },
       { kind: 'scissors', title: 'The budget squeeze', income: 'tax revenue', spending: 'support spending', caption: 'A diagram, not data. With mass unemployment, revenue falls while spending rises — at the same moment.' },
-      { kind: 'quote', quote: 'A recession in the labour market will cause a collapse in tax revenue, weakening public services and threatening welfare programmes just when they are needed most.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 10', source: sources.book },
+      { kind: 'quote', quote: 'At the same time, a jobs recession will crater tax receipts, damaging public services and calling into question welfare programs just as they are most needed.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 10', source: sources.book },
       { kind: 'quote', quote: 'The federal government’s revenue base is essentially a tax on human time.', person: 'Citrini Research', role: 'scenario “The 2028 Global Intelligence Crisis”, 2026', source: sources.citrini },
     ],
   },
@@ -226,7 +225,7 @@ export const scenes: Scene[] = [
         items: [
           { value: '24.9%', label: 'US unemployment in 1933 — 12.8 million people out of work', source: sources.fdr },
           { value: '6M', label: 'unemployed in Germany in 1932 — roughly one in four workers', source: sources.germany },
-          { value: '<20%', label: 'of Americans trusted the federal government under Obama, Trump and Biden. Under Eisenhower, over 70% did', source: sources.book },
+          { value: '<20%', label: 'of Americans trusted Presidents Obama, Trump and Biden to do “what is right.” For Eisenhower, over 70% did', source: sources.book },
         ],
       },
       {
@@ -239,7 +238,7 @@ export const scenes: Scene[] = [
           { kicker: 'The Luddites · 19th century · the other side', text: 'Their suffering was real. Their children and grandchildren lived better — but it took a generation.', source: sources.book },
         ],
       },
-      { kind: 'quote', quote: 'Trust is the foundation of democracy.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 9', source: sources.book },
+      { kind: 'quote', quote: 'Democracies are built on trust.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 9', source: sources.book },
     ],
   },
   {
@@ -292,7 +291,7 @@ export const scenes: Scene[] = [
       {
         kind: 'stats',
         items: [
-          { value: '$25,000', label: 'was the price of a handheld DNA synthesizer — usable “without limits or oversight” (as of 2023)', source: sources.book },
+          { value: '$25,000', label: 'was the price of a benchtop DNA synthesizer — usable “without restriction or oversight” (as of 2023)', source: sources.book },
           { value: '4', label: 'full-time staff at the international Biological Weapons Convention — fewer than an average McDonald’s (as of 2023)', source: sources.book },
         ],
       },
@@ -360,6 +359,7 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'Even AI’s creators say we need rules',
         items: [
+          { kicker: 'Bill Gates · 2023', text: '“The world needs to establish the rules of the road so that any downsides of artificial intelligence are far outweighed by its benefits.”', source: sources.gatesAge },
           { kicker: 'Sam Altman · US Senate · 2023', text: '“We think that regulatory intervention by governments will be critical to mitigate the risks of increasingly powerful models.”', source: sources.altmanSenate },
           { kicker: 'OpenAI · 2026', value: 'Pause', text: 'After the Hugging Face incident — when some safeguards and monitoring were off — the company itself paused its largest planned training run.', source: sources.openaiRoad },
           { kicker: 'A gap in the law', text: 'Even the most advanced AI law — the EU AI Act — doesn’t deal with job losses or taxes. Rules for AI in hiring were pushed back to late 2027.', source: sources.aiAct },
@@ -389,7 +389,7 @@ export const scenes: Scene[] = [
           { kicker: '06', value: 'Cooperation', text: 'Treaties and shared rules — because AI knows no borders.', source: sources.book },
         ],
       },
-      { kind: 'quote', quote: 'We must grasp one cardinal truth: regulation alone is not enough.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 13 — which is why all the steps are needed at once', source: sources.book },
+      { kind: 'quote', quote: 'Before we do that, however, it’s vital to acknowledge a central truth: regulation alone is not enough.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 13 — which is why all the steps are needed at once', source: sources.book },
     ],
   },
   {
@@ -412,7 +412,7 @@ export const scenes: Scene[] = [
       { image: images.time, alt: 'A teacher helping a child.', label: 'On one condition', title: 'These benefits won’t come by themselves.', copy: 'They reach everyone only if we set the rules: who is responsible for harm and how the gains are shared.' },
     ],
     band: [
-      { kind: 'quote', quote: 'They will improve the quality of healthcare and lower its costs. They will help us invent tools for the transition to renewable energy and the fight against climate change amid political deadlock. They will support teachers, making underfunded education systems more effective.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 9 — on AI and synthetic biology', source: sources.book },
+      { kind: 'quote', quote: 'They will make health care both higher-quality and more affordable. They will help us invent tools to bring about the transition to renewable energy and combat climate change at a time when politics has stalled, and support teachers, helping to increase the effectiveness of underfunded education systems.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 9 — on AI and synthetic biology', source: sources.book },
       {
         kind: 'stats',
         items: [
@@ -430,14 +430,14 @@ export const scenes: Scene[] = [
       },
       {
         kind: 'evidence',
-        title: 'What AI’s creators hope for',
+        title: 'What tech leaders hope for',
         items: [
+          { kicker: 'Bill Gates · 2023', value: 'Less inequity', text: '“AI can reduce some of the world’s worst inequities.” He calls it “as fundamental as the creation of the microprocessor, the personal computer, the Internet, and the mobile phone.”', source: sources.gatesAge },
           { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'An end to disease?', text: '“One day maybe we can cure all disease with the help of AI… Maybe within the next decade or so.” He also talks of “radical abundance” — the elimination of scarcity.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
           { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 years → 10', text: '50–100 years of medical progress compressed into 5–10, the healthy lifespan doubled, billions lifted out of poverty — his vision if AI goes well.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
           { kicker: 'Sam Altman · OpenAI · 2024', value: 'Shared prosperity', text: '“In the future, everyone’s lives can be better than anyone’s life is now.” He also envisions a personal AI tutor for every child.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
         ],
       },
-      { kind: 'quote', quote: 'With AI we could unlock the secrets of the universe, cure diseases that have long eluded science, and create new forms of art and culture that stretch the limits of imagination.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, prologue', source: sources.book },
     ],
   },
 ];
