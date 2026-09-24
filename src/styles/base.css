@@ -6,6 +6,8 @@
   --paper-2: #bdb8ad;
   --muted: rgba(238, 236, 230, 0.62);
   --dim: rgba(238, 236, 230, 0.34);
+  /* Small captions that must stay readable (WCAG AA 4.5:1 on --ink). */
+  --caption: rgba(238, 236, 230, 0.52);
   --signal: #ff6b3d;
   --gutter: 4vw;
   --ease-out: cubic-bezier(0.2, 0.7, 0.1, 1);
