@@ -28,9 +28,12 @@ export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
   const isMosaic = scene.layout === 'mosaic';
   const { isOpen, toggle } = useDisclosure();
   const factsId = `${scene.id}-facts`;
+  // Scroll back only after the facts are gone: scrolling while the page shrinks lands in the wrong place on phones.
   const collapse = () => {
     toggle();
-    document.getElementById(scene.id)?.scrollIntoView({ behavior: 'smooth' });
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      document.getElementById(scene.id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }));
   };
 
   return (

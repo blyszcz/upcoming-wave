@@ -107,7 +107,7 @@ export const scenes: Scene[] = [
     panels: [
       { image: images.medicine, label: 'Wcześniejsza diagnoza', caption: 'AI wyłapuje to, co łatwo przeoczyć', alt: 'Lekarz i pacjentka patrzą na obraz z badania, na którym AI delikatnie zaznaczyła jedno miejsce.', focus: 'center 55%' },
       { image: images.science, label: 'Nowe leki', caption: 'Antybiotyk znaleziony wśród 100 mln cząsteczek', alt: 'Naukowczyni w laboratorium patrzy na świetlisty trójwymiarowy model białka.', focus: 'center 40%' },
-      { image: images.energy, label: 'Czysta energia', caption: 'Tańsze słońce, wiatr i baterie', alt: 'Pola paneli słonecznych i wiatraki o świcie; inżynier sprawdza sieć na tablecie.' },
+      { image: images.energy, label: 'Czysta energia', caption: 'Tańsze panele, wiatraki i baterie', alt: 'Pola paneli słonecznych i wiatraki o świcie; inżynier sprawdza sieć na tablecie.' },
       { image: images.food, label: 'Żywność', caption: 'Uprawy odporne na upały', alt: 'Rolnicy oglądają zdrowe uprawy w upalne lato, nad polem unosi się dron.' },
       { image: images.forecast, label: 'Ostrzeżenia na czas', caption: 'Powodzie i pożary przewidziane wcześniej', alt: 'Centrum prognoz: synoptycy patrzą na mapę rzeki z zaznaczonym zagrożeniem powodzią.' },
       { image: images.time, label: 'Szkoła', caption: 'Wsparcie dla nauczycieli', alt: 'Nauczycielka klęczy przy dziecku i pomaga mu, a w tle laptop zajmuje się papierami.', focus: 'center 60%' },
