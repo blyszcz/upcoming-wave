@@ -58,7 +58,6 @@ export const voices: Voice[] = [
   },
   {
     id: 'altman',
-    featured: true,
     variant: 'statement',
     image: '/images/v2/voice-altman-v1.jpg',
     imageAlt: 'Une salle d’audition vide du Sénat américain : une table de témoin avec un micro, face à l’estrade des sénateurs.',

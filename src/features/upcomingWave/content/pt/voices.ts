@@ -58,7 +58,6 @@ export const voices: Voice[] = [
   },
   {
     id: 'altman',
-    featured: true,
     variant: 'statement',
     image: '/images/v2/voice-altman-v1.jpg',
     imageAlt: 'Uma sala de audiências vazia do Senado dos EUA: a mesa da testemunha, com microfone, de frente para a bancada dos senadores.',

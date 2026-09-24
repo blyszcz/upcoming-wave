@@ -18,7 +18,7 @@ export const VoicesSection = () => {
       </header>
       {/* Phones show the cards as a swipeable row (responsive.css); the hint is visible only there. */}
       <p className="uw-voices-swipe" aria-hidden="true">{ui.voices.swipe}</p>
-      <div className="uw-voices-grid">
+      <div className="uw-voices-grid is-featured">
         {featured.map((voice) => <VoiceCard key={voice.id} voice={voice} />)}
       </div>
       {more.length > 0 && (

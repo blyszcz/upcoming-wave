@@ -58,7 +58,6 @@ export const voices: Voice[] = [
   },
   {
     id: 'altman',
-    featured: true,
     variant: 'statement',
     image: '/images/v2/voice-altman-v1.jpg',
     imageAlt: '誰もいない米上院の公聴会室。マイクの置かれた証人席が、上院議員の壇席と向き合っている。',

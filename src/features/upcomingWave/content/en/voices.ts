@@ -58,7 +58,6 @@ export const voices: Voice[] = [
   },
   {
     id: 'altman',
-    featured: true,
     variant: 'statement',
     image: '/images/v2/voice-altman-v1.jpg',
     imageAlt: 'An empty US Senate hearing room: a witness table with a microphone facing the senators’ dais.',

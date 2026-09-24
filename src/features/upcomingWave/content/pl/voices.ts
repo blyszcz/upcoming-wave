@@ -60,7 +60,6 @@ export const voices: Voice[] = [
   },
   {
     id: 'altman',
-    featured: true,
     variant: 'statement',
     image: '/images/v2/voice-altman-v1.jpg',
     imageAlt: 'Pusta sala przesłuchań Senatu USA: stolik świadka z mikrofonem naprzeciw ławy senatorów.',

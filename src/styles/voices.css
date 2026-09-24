@@ -40,3 +40,19 @@
 .uw-voices-more { margin-top: 40px; }
 .uw-voices-swipe { display: none; }
 .uw-voices-more .uw-disclosure { gap: 40px; }
+
+/* Short version on desktop: three equal cards, then a slimmer horizontal card below. */
+@media (min-width: 821px) {
+  .uw-voices-grid.is-featured > .uw-voice { grid-column: auto; display: flex; flex-direction: column; }
+  .uw-voices-grid.is-featured > .uw-voice.is-statement .uw-voice-media { order: 0; min-height: 0; aspect-ratio: 16 / 10; }
+  .uw-voices-grid.is-featured .uw-voice-quotes blockquote { max-width: none; font-size: clamp(1.3rem, 1.7vw, 1.75rem); line-height: 1.2; }
+  .uw-voices-grid.is-featured .uw-voice-quotes blockquote:nth-child(n + 2) { display: none; }
+  .uw-voices-grid.is-featured .uw-signatories ul { display: block; color: rgba(238, 236, 230, 0.86); font-size: 14px; line-height: 1.6; }
+  .uw-voices-grid.is-featured .uw-signatories li { display: inline; padding: 0; border: 0; }
+  .uw-voices-grid.is-featured .uw-signatories li:not(:last-child)::after { content: ', '; }
+  .uw-voices-grid.is-featured > .uw-voice:nth-child(4) { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
+  .uw-voices-grid.is-featured > .uw-voice:nth-child(4) .uw-voice-media { position: relative; aspect-ratio: auto; min-height: 220px; }
+  .uw-voices-grid.is-featured > .uw-voice:nth-child(4) .uw-voice-media img { position: absolute; inset: 0; }
+  .uw-voices-grid.is-featured > .uw-voice:nth-child(4) .uw-voice-body { gap: 18px; padding: clamp(22px, 2vw, 32px); }
+  .uw-voices-grid.is-featured > .uw-voice:nth-child(4) .uw-voice-quotes blockquote { font-size: clamp(1.2rem, 1.5vw, 1.5rem); }
+}
