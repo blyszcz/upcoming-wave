@@ -27,11 +27,13 @@ export const site = {
     listTitle: 'Wszystkie źródła',
     updated: 'Ostatnia aktualizacja: wrzesień 2026.',
     correction: 'Widzisz błąd? Napisz na X:',
+    correctionAlt: 'albo zgłoś go na GitHubie',
     back: '← Wróć do strony',
     noLink: 'książka - bez linku',
   },
   footer: {
     sourcesLink: 'Źródła i metoda',
+    code: { label: 'Kod na GitHubie', issue: 'zgłoś błąd' },
     why: { title: 'Dlaczego ta strona?', text: 'Dużo rozmawiam z ludźmi o AI i ciągle widzę to samo: nie brakuje opinii, brakuje kontekstu - zrozumienia, o co naprawdę toczy się gra. Postanowiłem więc coś z tym zrobić i wytłumaczyć to prosto, obrazami. Przy każdym fakcie jest źródło.' },
     sources: 'Cytaty twórców AI i naukowców, badania oraz książka „Nadchodząca fala” (M. Suleyman, M. Bhaskar) - przy każdym fakcie link do źródła.',
     independence: 'Scenariusze to możliwe ryzyka, nie prognozy. Niezależny projekt - niepowiązany z autorami ani wydawcą książki.',

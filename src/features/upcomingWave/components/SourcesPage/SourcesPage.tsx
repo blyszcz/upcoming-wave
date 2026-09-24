@@ -1,5 +1,6 @@
 'use client';
 
+import { REPO_ISSUE_URL } from '@/constants';
 import { LanguagePicker } from '@features/upcomingWave/components/LanguagePicker/LanguagePicker';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 import { collectSources, getSourceNumber } from '@features/upcomingWave/utils/collectSources';
@@ -33,7 +34,7 @@ export const SourcesPage = () => {
         <section aria-labelledby="method-title">
           <h2 id="method-title" className="uw-block-title">{page.methodTitle}</h2>
           <ul className="uw-sources-method">{page.method.map((line) => <li key={line}>{line}</li>)}</ul>
-          <p className="uw-sources-meta">{page.updated} {page.correction} <a href={site.footer.author.url} target="_blank" rel="noopener noreferrer">{site.footer.author.handle}</a></p>
+          <p className="uw-sources-meta">{page.updated} {page.correction} <a href={site.footer.author.url} target="_blank" rel="noopener noreferrer">{site.footer.author.handle}</a>, <a href={REPO_ISSUE_URL} target="_blank" rel="noopener noreferrer">{page.correctionAlt}</a>.</p>
         </section>
 
         <section aria-labelledby="list-title">

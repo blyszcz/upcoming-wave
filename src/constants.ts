@@ -1,5 +1,9 @@
 // App-wide tunables. Anything worth naming lives here instead of as a magic number.
 
+// Public repository (footer and sources page)
+export const REPO_URL = 'https://github.com/blyszcz/upcoming-wave';
+export const REPO_ISSUE_URL = `${REPO_URL}/issues/new`;
+
 // Storage keys
 export const LOCALE_STORAGE_KEY = 'uw-locale';
 export const CONSENT_STORAGE_KEY = 'uw-analytics-consent';

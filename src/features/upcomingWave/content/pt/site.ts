@@ -27,11 +27,13 @@ export const site = {
     listTitle: 'Todas as fontes',
     updated: 'Última atualização: setembro de 2026.',
     correction: 'Encontrou um erro? Me avise no X:',
+    correctionAlt: 'ou abra uma issue no GitHub',
     back: '← Voltar para a página',
     noLink: 'livro - sem link',
   },
   footer: {
     sourcesLink: 'Fontes e método',
+    code: { label: 'Código aberto no GitHub', issue: 'reporte um erro' },
     why: { title: 'Por que esta página?', text: 'Converso muito com as pessoas sobre IA e vejo sempre a mesma coisa: o que falta não são opiniões, é contexto - entender o que realmente está em jogo. Então decidi fazer algo a respeito e explicar isso de forma simples, com imagens. Cada fato leva à sua fonte.' },
     sources: 'Citações de criadores da IA e de cientistas, pesquisas e o livro “The Coming Wave” (M. Suleyman, M. Bhaskar) - cada fato leva à sua fonte.',
     independence: 'Os cenários são riscos possíveis, não previsões. Um projeto independente - sem vínculo com os autores ou a editora do livro.',
