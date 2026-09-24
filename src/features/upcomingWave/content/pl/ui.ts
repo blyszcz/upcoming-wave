@@ -4,7 +4,7 @@ import { paths } from '@routes/paths';
 
 export const ui = {
   lang: 'pl',
-  brand: 'Upcoming Wave',
+  brand: 'Nadchodząca fala',
   langSwitch: { label: 'EN', href: paths.en, ariaLabel: 'English version' } as null | { label: string; href: string; ariaLabel: string },
   dominoAria: 'Łańcuch skutków',
   status: {

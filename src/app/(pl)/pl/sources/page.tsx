@@ -6,8 +6,8 @@ import { UpcomingWaveSources } from '@features/upcomingWave/components/UpcomingW
 export const metadata: Metadata = buildMetadata({
   locale: 'pl',
   page: 'sources',
-  title: 'Źródła i metoda — Upcoming Wave',
-  description: 'Wszystkie źródła liczb i cytatów na stronie Upcoming Wave oraz to, jak je sprawdzamy.',
+  title: 'Źródła i metoda — Nadchodząca fala',
+  description: 'Wszystkie źródła liczb i cytatów na stronie „Nadchodząca fala” oraz to, jak je sprawdzamy.',
 });
 
 export default function Page() {
