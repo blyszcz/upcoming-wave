@@ -6,6 +6,6 @@ out/
 .env
 .env.local
 
-# Local-only: the copyrighted book used for research, and raw generator output (PNG)
-docs/books/
+# Local-only: research notes, plans, drafts and the book used for research; raw generator output (PNG)
+docs/
 output/
