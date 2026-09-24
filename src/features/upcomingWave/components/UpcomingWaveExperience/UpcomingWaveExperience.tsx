@@ -19,6 +19,7 @@ import { StoryScene } from '@features/upcomingWave/components/StoryScene/StorySc
 import { VoicesSection } from '@features/upcomingWave/components/VoicesSection/VoicesSection';
 import { WhyNote } from '@features/upcomingWave/components/WhyNote/WhyNote';
 import { ContentProvider, useContent } from '@features/upcomingWave/content/ContentProvider';
+import { archive } from '@features/upcomingWave/content/archive';
 import { locales } from '@features/upcomingWave/content/locales';
 import { ReadingModeProvider } from '@features/upcomingWave/context/ReadingModeContext';
 import { useExplainDialog } from '@features/upcomingWave/hooks/useExplainDialog';
@@ -58,6 +59,15 @@ const Story = () => {
     </main>
   );
 };
+
+export const UpcomingWaveArchive = ({ locale = 'en' }: UpcomingWaveExperienceProps) => (
+  <ContentProvider content={archive[locale]}>
+    <ReadingModeProvider>
+      <p className="uw-archive-banner">ARCHIVE — full pre-restructure page, not published</p>
+      <Story />
+    </ReadingModeProvider>
+  </ContentProvider>
+);
 
 export const UpcomingWaveSources = ({ locale = 'en' }: UpcomingWaveExperienceProps) => (
   <ContentProvider content={locales[locale]}>
