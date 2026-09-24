@@ -6,6 +6,7 @@
     "dev": "next dev",
     "clean": "rm -rf .next out",
     "build": "npm run clean && next build",
+    "build:verify": "rm -rf .next-verify out && NEXT_DIST_DIR=.next-verify next build",
     "start": "npx serve out",
     "lint": "eslint ."
   },
