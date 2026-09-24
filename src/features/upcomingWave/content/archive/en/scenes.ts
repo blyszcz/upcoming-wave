@@ -1,6 +1,6 @@
 import type { Scene } from '@features/upcomingWave/types/scene.types';
 
-import { sceneImages as images, sceneSources as plSources } from '@features/upcomingWave/content/pl/scenes';
+import { sceneImages as images, sceneSources as plSources } from '@features/upcomingWave/content/archive/pl/scenes';
 
 
 // All quotes use their original English wording; book quotes follow the English edition (Crown, 2023).
