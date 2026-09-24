@@ -45,6 +45,7 @@ export const ui = {
     text: 'Szefowie firm, które budują AI, i naukowcy, którzy ją współtworzyli. Każdy cytat ma link do źródła.',
     signedBy: 'Podpisali m.in.',
     source: 'Źródło:',
+    swipe: 'Przesuń, by zobaczyć więcej →',
   },
   pond: {
     replay: 'Jeszcze raz ↻',

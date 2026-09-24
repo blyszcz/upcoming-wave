@@ -38,4 +38,5 @@
 .uw-voice-person a:hover { color: var(--paper); border-color: var(--paper); }
 
 .uw-voices-more { margin-top: 40px; }
+.uw-voices-swipe { display: none; }
 .uw-voices-more .uw-disclosure { gap: 40px; }

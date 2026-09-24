@@ -45,6 +45,7 @@ export const ui = {
     text: 'The heads of the companies building AI and the scientists who pioneered it. Every quote links to its source.',
     signedBy: 'Signed by, among others',
     source: 'Source:',
+    swipe: 'Swipe for more →',
   },
   pond: {
     replay: 'Play again ↻',
