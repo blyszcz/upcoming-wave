@@ -5,6 +5,7 @@ import { useRef } from 'react';
 
 import type { ExplainSliderProps } from './ExplainSlider.types';
 
+import { ResponsiveImage } from '@features/upcomingWave/components/ResponsiveImage/ResponsiveImage';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 import { useSliderControls } from '@features/upcomingWave/hooks/useSliderControls';
 import { formatIndex } from '@features/upcomingWave/utils/formatIndex';
@@ -36,7 +37,7 @@ export const ExplainSlider = ({ scene, onClose }: ExplainSliderProps) => {
             aria-roledescription={ui.explain.slide}
             aria-label={ui.explain.stepOf(index + 1, total)}
           >
-            <div className="uw-explain-media"><img src={step.image} alt={step.alt} draggable={false} /></div>
+            <div className="uw-explain-media"><ResponsiveImage src={step.image} alt={step.alt} sizes="(max-width: 820px) 100vw, 45vw" draggable={false} /></div>
             <div className="uw-explain-copy">
               <p className="uw-step-number">{ui.explain.step} {formatIndex(index + 1)}<span> / {formatIndex(total)}</span></p>
               <h3>{step.title}</h3>

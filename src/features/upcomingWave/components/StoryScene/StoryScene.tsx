@@ -7,6 +7,7 @@ import type { ScenePanel } from '@features/upcomingWave/types/scene.types';
 import type { CSSProperties } from 'react';
 
 import { ExpandButton } from '@features/upcomingWave/components/ExpandButton/ExpandButton';
+import { ResponsiveImage } from '@features/upcomingWave/components/ResponsiveImage/ResponsiveImage';
 import { SceneBand } from '@features/upcomingWave/components/SceneBand/SceneBand';
 import { SectionAnchor } from '@features/upcomingWave/components/SectionAnchor/SectionAnchor';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
@@ -16,7 +17,7 @@ import { useInView } from '@features/upcomingWave/hooks/useInView';
 
 const PanelImage = ({ panel }: { panel: ScenePanel }) => (
   <div className="uw-panel-media">
-    <img src={panel.image} alt={panel.alt} loading="lazy" style={panel.focus ? { objectPosition: panel.focus } : undefined} />
+    <ResponsiveImage src={panel.image} alt={panel.alt} sizes="(max-width: 820px) 100vw, 34vw" loading="lazy" style={panel.focus ? { objectPosition: panel.focus } : undefined} />
   </div>
 );
 

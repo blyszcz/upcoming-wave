@@ -4,6 +4,7 @@ import clsx from 'clsx';
 
 import type { VoiceCardProps } from './VoiceCard.types';
 
+import { ResponsiveImage } from '@features/upcomingWave/components/ResponsiveImage/ResponsiveImage';
 import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
@@ -12,7 +13,7 @@ export const VoiceCard = ({ voice }: VoiceCardProps) => {
 
   return (
   <article className={clsx('uw-voice', `is-${voice.variant}`)}>
-    <div className="uw-voice-media"><img src={voice.image} alt={voice.imageAlt} loading="lazy" /></div>
+    <div className="uw-voice-media"><ResponsiveImage src={voice.image} alt={voice.imageAlt} sizes="(max-width: 1000px) 100vw, 45vw" loading="lazy" /></div>
     <div className="uw-voice-body">
       <p className="uw-voice-context">{voice.context}</p>
       {voice.figure && (

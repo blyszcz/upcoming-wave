@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import type { NumberedSectionProps } from '@features/upcomingWave/types/section.types';
 
 import { ExpandButton } from '@features/upcomingWave/components/ExpandButton/ExpandButton';
+import { ResponsiveImage } from '@features/upcomingWave/components/ResponsiveImage/ResponsiveImage';
 import { SceneBand } from '@features/upcomingWave/components/SceneBand/SceneBand';
 import { SectionAnchor } from '@features/upcomingWave/components/SectionAnchor/SectionAnchor';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
@@ -15,7 +16,7 @@ type Side = { image: string; alt: string; label: string; text: string; quote: st
 
 const Half = ({ side, align }: { side: Side; align: 'left' | 'right' }) => (
   <figure className={clsx('uw-split-half', `is-${align}`)}>
-    <img src={side.image} alt={side.alt} loading="lazy" />
+    <ResponsiveImage src={side.image} alt={side.alt} sizes="(max-width: 820px) 100vw, 50vw" loading="lazy" />
     <figcaption>
       <b>{side.label}</b>
       <p>{side.text}</p>

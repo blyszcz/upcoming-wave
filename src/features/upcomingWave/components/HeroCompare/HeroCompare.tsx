@@ -4,6 +4,7 @@ import type { HeroCompareProps } from './HeroCompare.types';
 import type { CSSProperties } from 'react';
 
 import { COMPARE_LABEL_EDGE, COMPARE_MAX, COMPARE_MIN, COMPARE_TEXT_COLUMN, MOBILE_QUERY } from '@/constants';
+import { ResponsiveImage } from '@features/upcomingWave/components/ResponsiveImage/ResponsiveImage';
 import { useCompareSlider } from '@features/upcomingWave/hooks/useCompareSlider';
 import { useMediaQuery } from '@features/upcomingWave/hooks/useMediaQuery';
 
@@ -19,8 +20,8 @@ export const HeroCompare = ({ darkImage, darkAlt, hopeImage, hopeAlt, darkLabel,
   return (
     <>
       <div className="uw-compare" style={style}>
-        <img className="uw-hero-image" src={darkImage} alt={darkAlt} fetchPriority="high" />
-        <img className="uw-hero-image uw-compare-hope" src={hopeImage} alt={hopeAlt} />
+        <ResponsiveImage className="uw-hero-image" src={darkImage} alt={darkAlt} sizes="100vw" fetchPriority="high" />
+        <ResponsiveImage className="uw-hero-image uw-compare-hope" src={hopeImage} alt={hopeAlt} sizes="100vw" />
       </div>
       <div className="uw-hero-shade" aria-hidden="true" />
       <div ref={trackRef} className="uw-compare-divider" style={style}>
