@@ -23,6 +23,7 @@ export const ui = {
   upside: { label: 'If we get it right' },
   readMore: 'Read more',
   showLess: 'Show less',
+  chapterEnd: 'End of chapter',
   readingMode: { toShort: 'Short version', toFull: 'Full version', aria: 'Switch between the short and the full version' },
   stepsAria: 'What happens, step by step',
   factsAria: 'Facts and sources',

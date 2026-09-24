@@ -28,6 +28,10 @@ export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
   const isMosaic = scene.layout === 'mosaic';
   const { isOpen, toggle } = useDisclosure();
   const factsId = `${scene.id}-facts`;
+  const collapse = () => {
+    toggle();
+    document.getElementById(scene.id)?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <>
@@ -66,7 +70,15 @@ export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
           </ol>
         )}
       </section>
-      {isOpen && scene.band && <SceneBand id={factsId} chain={scene.chain} blocks={scene.band} />}
+      {isOpen && scene.band && (
+        <div className="uw-chapter-body">
+          <SceneBand id={factsId} chain={scene.chain} blocks={scene.band} />
+          <div className="uw-chapter-end">
+            <p>{ui.chapterEnd} {number} · {scene.label}</p>
+            <ExpandButton isOpen={isOpen} controls={factsId} onToggle={collapse} />
+          </div>
+        </div>
+      )}
       {scene.upside && <UpsideStrip upside={scene.upside} />}
     </>
   );
