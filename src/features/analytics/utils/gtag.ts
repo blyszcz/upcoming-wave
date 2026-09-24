@@ -12,7 +12,11 @@ export const loadAnalytics = () => {
   if (!measurementId || w.gtag) return;
 
   w.dataLayer = w.dataLayer ?? [];
-  w.gtag = (...args: unknown[]) => { w.dataLayer?.push(args); };
+  // gtag.js only processes the `arguments` object; a plain array (e.g. rest params) is silently ignored.
+  w.gtag = function gtag() {
+    // eslint-disable-next-line prefer-rest-params
+    w.dataLayer?.push(arguments);
+  };
   w.gtag('js', new Date());
   w.gtag('config', measurementId);
 
