@@ -32,7 +32,8 @@ export const VoiceCard = ({ voice }: VoiceCardProps) => {
         </div>
       )}
       <footer className="uw-voice-person">
-        <div><b>{voice.person}<SourceLink source={voice.source} /></b><span>{voice.role}</span></div>
+        <div><b>{voice.person}</b><span>{voice.role}</span></div>
+        <SourceLink source={voice.source} />
       </footer>
     </div>
   </article>

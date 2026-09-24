@@ -24,7 +24,8 @@ export const BarCompare = ({ title, subtitle, bars, caption, source }: BarCompar
           </li>
         ))}
       </ul>
-      <p className="uw-bars-caption">{caption}<SourceLink source={source} /></p>
+      <p className="uw-bars-caption">{caption}</p>
+      <SourceLink source={source} />
     </figure>
   );
 };

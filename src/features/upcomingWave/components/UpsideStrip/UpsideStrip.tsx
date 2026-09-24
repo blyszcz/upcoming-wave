@@ -20,7 +20,7 @@ export const UpsideStrip = ({ upside }: UpsideStripProps) => {
         <ul>
           {upside.points.map((point) => <li key={point}>{point}</li>)}
         </ul>
-        <p className="uw-upside-sources">{upside.sources.map((source) => <SourceLink key={source.url ?? source.label} source={source} />)}</p>
+        <div className="uw-source-list">{upside.sources.map((source) => <SourceLink key={source.url ?? source.label} source={source} />)}</div>
       </div>
     </aside>
   );

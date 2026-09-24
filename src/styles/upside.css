@@ -11,7 +11,6 @@
 .uw-upside ul { display: grid; gap: 8px; margin: 4px 0 0; padding: 0; list-style: none; }
 .uw-upside li { display: flex; gap: 10px; color: var(--paper); font-size: 15px; line-height: 1.4; }
 .uw-upside li::before { content: '→'; color: #ffcf8a; }
-.uw-upside-sources { margin: 0; }
 @media (max-width: 820px) {
   .uw-upside { grid-template-columns: 1fr; }
   .uw-upside-media { height: 200px; }

@@ -14,6 +14,7 @@ export const Timeline = ({ title, steps, footnote, sources }: TimelineProps) => 
         </li>
       ))}
     </ol>
-    <p className="uw-growth-note">{footnote} {sources.map((source) => <SourceLink key={source.label} source={source} />)}</p>
+    <p className="uw-growth-note">{footnote}</p>
+    <div className="uw-source-list">{sources.map((source) => <SourceLink key={source.label} source={source} />)}</div>
   </div>
 );

@@ -115,7 +115,8 @@ export const GrowthChart = ({ title, subtitle, note, source, points, doublingMon
         )}
       </div>
 
-      <p className="uw-growth-note">{note}<SourceLink source={source} /></p>
+      <p className="uw-growth-note">{note}</p>
+      <SourceLink source={source} />
       <details className="uw-growth-table">
         <summary>{ui.chart.showAll}</summary>
         <table>

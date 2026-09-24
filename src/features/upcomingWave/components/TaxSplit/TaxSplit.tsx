@@ -27,7 +27,8 @@ export const TaxSplit = ({ title, subtitle, parts, caption, countries, countries
         </li>
       ))}
     </ul>
-    <p className="uw-bars-caption">{caption}<SourceLink source={source} /></p>
+    <p className="uw-bars-caption">{caption}</p>
+    <SourceLink source={source} />
     <p className="uw-tax-countries"><span>{countriesLabel}</span>{countries.map((country) => <b key={country.name}>{country.name} {country.value}</b>)}</p>
   </figure>
 );
