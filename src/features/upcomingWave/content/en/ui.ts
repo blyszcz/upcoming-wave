@@ -39,8 +39,8 @@ export const ui = {
   },
   voices: {
     eyebrow: 'Voices · from inside the industry',
-    titleLead: 'It’s not us saying this.',
-    titleAccent: 'It’s them.',
+    titleLead: 'They agree on two things.',
+    titleAccent: 'It could be huge. It needs rules.',
     text: 'The heads of the companies building AI and the scientists who pioneered it. Every quote links to its source.',
     signedBy: 'Signed by, among others',
     source: 'Source:',

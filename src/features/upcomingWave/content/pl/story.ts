@@ -5,20 +5,14 @@ export type StoryItem =
   | { kind: 'calm' }
   | { kind: 'finale' };
 
+// Four chapters, each pairing a risk with what good rules change. Older section kinds stay
+// supported so the dev-only archive keeps rendering.
 export const story: StoryItem[] = [
   { kind: 'scene', id: 'the-stakes' },
-  { kind: 'scene', id: 'three-risks' },
   { kind: 'scene', id: 'who-will-resist' },
-  { kind: 'scene', id: 'not-just-code' },
-  { kind: 'scene', id: 'become-a-plumber' },
-  { kind: 'scene', id: 'no-paycheck' },
   { kind: 'scene', id: 'state-lives-on-work' },
-  { kind: 'scene', id: 'it-happened-before' },
-  { kind: 'acceleration' },
   { kind: 'scene', id: 'out-of-the-test' },
   { kind: 'scene', id: 'not-needed' },
-  { kind: 'split' },
-  { kind: 'calm' },
   { kind: 'scene', id: 'rules' },
   { kind: 'finale' },
 ];

@@ -1,5 +1,9 @@
 import type { Scene } from '@features/upcomingWave/types/scene.types';
 
+import { acceleration } from '@features/upcomingWave/content/pl/acceleration';
+import { calm } from '@features/upcomingWave/content/pl/calm';
+import { split } from '@features/upcomingWave/content/pl/closing';
+
 const images = {
   layoffs: '/images/v2/threat-02-layoffs-v1.jpg',
   aiRules: '/images/v2/threat-02-ai-rules-v1.jpg',
@@ -94,58 +98,57 @@ const sources = {
 
 export const scenes: Scene[] = [
   {
-    id: 'three-risks',
-    label: 'CO MOŻE PÓJŚĆ NIE TAK',
-    status: 'possibleMany',
-    layout: 'triptych',
-    title: { lead: 'Trzy ryzyka.', accent: 'Hamulce wciąż są słabe.' },
+    id: 'the-stakes',
+    label: 'NAJPIERW STAWKA',
+    status: 'today',
+    chain: 'stakes',
+    layout: 'mosaic',
+    title: { lead: 'Najpierw stawka.', accent: 'Ta sama AI może leczyć, karmić i uczyć.' },
     panels: [
-      {
-        image: images.layoffs,
-        label: 'Fala zwolnień',
-        alt: 'Długa kolejka pracowników biurowych wychodzi w deszczu z biurowca, niosąc kartony z rzeczami.',
-        focus: 'center 70%',
-      },
-      {
-        image: images.aiRules,
-        label: 'AI przejmuje kontrolę',
-        alt: 'Tysiące ludzi stoją w równych rzędach na placu pod ogromną maszyną, która skanuje ich wiązkami światła.',
-        focus: 'center 60%',
-      },
-      {
-        image: images.bio,
-        label: 'Wirus z laboratorium',
-        alt: 'Puste laboratorium: automatyczne ramię trzyma świecącą fiolkę, nad stołem model wirusa i przepisywanej helisy DNA.',
-        focus: 'center 60%',
-      },
+      { image: images.medicine, label: 'Wcześniejsza diagnoza', caption: 'AI wyłapuje to, co łatwo przeoczyć', alt: 'Lekarz i pacjentka patrzą na obraz z badania, na którym AI delikatnie zaznaczyła jedno miejsce.', focus: 'center 55%' },
+      { image: images.science, label: 'Nowe leki', caption: 'Antybiotyk znaleziony wśród 100 mln cząsteczek', alt: 'Naukowczyni w laboratorium patrzy na świetlisty trójwymiarowy model białka.', focus: 'center 40%' },
+      { image: images.energy, label: 'Czysta energia', caption: 'Tańsze słońce, wiatr i baterie', alt: 'Pola paneli słonecznych i wiatraki o świcie; inżynier sprawdza sieć na tablecie.' },
+      { image: images.food, label: 'Żywność', caption: 'Uprawy odporne na upały', alt: 'Rolnicy oglądają zdrowe uprawy w upalne lato, nad polem unosi się dron.' },
+      { image: images.forecast, label: 'Ostrzeżenia na czas', caption: 'Powodzie i pożary przewidziane wcześniej', alt: 'Centrum prognoz: synoptycy patrzą na mapę rzeki z zaznaczonym zagrożeniem powodzią.' },
+      { image: images.time, label: 'Szkoła', caption: 'Wsparcie dla nauczycieli', alt: 'Nauczycielka klęczy przy dziecku i pomaga mu, a w tle laptop zajmuje się papierami.', focus: 'center 60%' },
     ],
     explain: [
+      { image: images.medicine, alt: 'Lekarz omawia z pacjentką badanie wspierane przez AI.', label: 'Zdrowie', title: 'Lepsze i tańsze leczenie.', copy: 'Lekarze z pomocą AI wykrywają więcej nowotworów, a AI przeszukuje miliony cząsteczek w poszukiwaniu nowych leków.' },
+      { image: images.energy, alt: 'Farmy słoneczne i wiatrowe o świcie.', label: 'Planeta', title: 'Pomoc tam, gdzie polityka utknęła.', copy: 'Autor książki liczy, że AI pomoże przejść na energię odnawialną, uprawiać żywność w cieplejszym klimacie i przewidywać powodzie czy pożary.' },
+      { image: images.time, alt: 'Nauczycielka pomaga dziecku.', label: 'Pod warunkiem', title: 'Te korzyści nie przyjdą same.', copy: 'Trafią do wszystkich tylko wtedy, gdy ustalimy zasady: kto odpowiada za szkody i jak dzielimy zyski.' },
+    ],
+    band: [
+      { kind: 'quote', quote: 'Zwiększą jakość opieki zdrowotnej i obniżą jej koszty. Pomogą nam wynaleźć narzędzia umożliwiające przechodzenie na energię odnawialną i walkę ze zmianami klimatycznymi w warunkach politycznego impasu. Wesprą nauczycieli, zwiększając efektywność niedofinansowanych systemów edukacji.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 9 — o AI i biologii syntetycznej', source: sources.book },
       {
-        image: images.layoffs,
-        alt: 'Zwolnieni pracownicy wychodzą z biurowca z kartonami.',
-        label: 'Zwolnienia',
-        title: 'Praca znika szybciej, niż powstaje nowa.',
-        copy: 'Jeśli AI robi to samo taniej, firmy mogą potrzebować mniej ludzi. Przebranżowienie trwa latami, rachunki przychodzą co miesiąc.',
+        kind: 'stats',
+        items: [
+          { value: '29%', label: 'więcej wykrytych nowotworów piersi w badaniu wspieranym przez AI — bez wzrostu fałszywych alarmów', source: sources.masai },
+          { value: '100 mln', label: 'cząsteczek przeszukał system AI, by znaleźć halicynę — pierwszy antybiotyk odkryty z pomocą uczenia maszynowego (rozdz. 7)', source: sources.book },
+          { value: '200 mln', label: 'struktur białek przewidział AlphaFold — Nagroda Nobla z chemii 2024', source: sources.nobel },
+        ],
       },
       {
-        image: images.aiRules,
-        alt: 'Ludzie w rzędach pod maszyną, która ich skanuje.',
-        label: 'Kontrola',
-        title: 'Decyzje przechodzą do maszyn.',
-        copy: 'Kredyt, praca, leczenie, bezpieczeństwo. Im więcej decyzji oddajemy systemom, których nie rozumiemy, tym trudniej je potem odebrać.',
+        kind: 'stats',
+        items: [
+          { value: '−82%', label: 'tyle w ciągu dekady spadły koszty fotowoltaiki — i wciąż spadają (rozdz. 11)', source: sources.book },
+          { value: '~9%', label: 'ludzi żyje dziś w skrajnej nędzy. Na początku XIX w. w skrajnej nędzy żyli prawie wszyscy — tyle zmieniła technologia (rozdz. 8)', source: sources.book },
+        ],
       },
       {
-        image: images.bio,
-        alt: 'Automatyczne laboratorium z modelem wirusa.',
-        label: 'Biologia',
-        title: 'Projektowanie życia tanieje.',
-        copy: 'AI przyspiesza badania nad lekami — ale te same narzędzia mogą pomóc stworzyć groźny patogen. Wystarczy jeden błąd albo jedna zła intencja.',
+        kind: 'evidence',
+        title: 'Na co liczą liderzy technologii',
+        items: [
+          { kicker: 'Bill Gates · 2023', value: 'Mniej nierówności', text: '„AI może zmniejszyć niektóre z największych nierówności na świecie.” Nazywa ją przełomem „tak fundamentalnym jak mikroprocesor, komputer osobisty, internet i telefon komórkowy”.', source: sources.gatesAge },
+          { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'Koniec chorób?', text: '„Pewnego dnia może uda nam się wyleczyć wszystkie choroby z pomocą AI… może w ciągu najbliższej dekady.” Mówi też o „radykalnej obfitości” — końcu niedoboru.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
+          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 lat → 10', text: 'Postęp medycyny z kilkudziesięciu, a nawet stu lat skompresowany do 5–10 lat, podwojenie zdrowej długości życia, miliardy ludzi wyciągnięte z biedy — jego wizja, jeśli AI pójdzie dobrze.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
+          { kicker: 'Sam Altman · OpenAI · 2024', value: 'Wspólny dobrobyt', text: '„W przyszłości życie każdego może być lepsze niż dziś życie kogokolwiek.” I każde dziecko z własnym wirtualnym nauczycielem.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
+        ],
       },
     ],
   },
   {
     id: 'who-will-resist',
-    label: 'JAK TO SIĘ ZACZYNA',
+    label: 'PRACA',
     status: 'today',
     chain: 'work',
     layout: 'triptych',
@@ -193,28 +196,6 @@ export const scenes: Scene[] = [
         copy: 'Właściciel widzi oszczędność. Konkurencja też ją widzi. Firmy, które nie skorzystają, mogą przegrać wyścig — więc presja, by skorzystać, jest ogromna.',
       },
     ],
-  },
-
-  {
-    id: 'not-just-code',
-    label: 'KTO JEST NASTĘPNY',
-    status: 'today',
-    chain: 'work',
-    layout: 'mosaic',
-    title: { lead: 'Nie tylko kod.', accent: 'Także twoja praca.' },
-    panels: [
-      { image: images.callcenter, label: 'Infolinia', caption: 'Odpowiada czatbot', alt: 'Konsultantka ze słuchawkami sama w nocnym call center, dookoła puste stanowiska.' },
-      { image: images.legal, label: 'Asystent prawny', caption: 'Umowy czyta model', alt: 'Asystentka prawna nad stosem umów; obok laptop i gotowy stos przejrzanych dokumentów.' },
-      { image: images.design, label: 'Grafik i copywriter', caption: 'Obrazy i teksty w sekundę', alt: 'Grafik patrzy na ścianę dziesiątek wygenerowanych projektów.' },
-      { image: images.translator, label: 'Tłumacz', caption: 'Tłumaczenie od ręki', alt: 'Tłumaczka przy słownikach patrzy na strumień znaków z wielu alfabetów płynący w powietrzu.' },
-      { image: images.warehouse, label: 'Magazyn', caption: 'Roboty już jeżdżą po halach', alt: 'Ogromny magazyn pełen autonomicznych robotów; jeden pracownik patrzy z antresoli.', focus: 'center 60%' },
-      { image: images.driver, label: 'Kierowca', caption: 'Ciężarówki uczą się jeździć same', alt: 'Kierowca opiera się o swoją ciężarówkę i patrzy na przejeżdżającą ciężarówkę bez kierowcy.' },
-    ],
-    explain: [
-      { image: images.legal, alt: 'Asystentka prawna nad stosem umów.', label: 'Zadania', title: 'Najpierw zadania, nie etaty.', copy: 'AI przejmuje maile, streszczenia i odpowiedzi. Etat jeszcze jest — ale coraz bardziej pusty w środku.' },
-      { image: images.callcenter, alt: 'Puste stanowiska w call center.', label: 'Mniej rekrutacji', title: 'Jeden robi za pięciu.', copy: 'Firmy rzadko zwalniają od razu. Po prostu przestają zatrudniać. Najpierw tracą młodzi, którzy szukają pierwszej pracy.' },
-      { image: images.warehouse, alt: 'Magazyn pełen robotów.', label: 'Hala i droga', title: 'Potem zmiana wychodzi z biura.', copy: 'Roboty w magazynach, ciężarówki bez kierowców. Najpierw praca przy komputerze, potem praca rękami.' },
-    ],
     band: [
       {
         kind: 'stats',
@@ -234,26 +215,6 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'Przy rutynowej pracy umysłowej AI po prostu zastąpi wszystkich.', person: 'Geoffrey Hinton', role: 'noblista, „ojciec chrzestny AI”', source: sources.hintonDoac },
-    ],
-  },
-  {
-    id: 'become-a-plumber',
-    label: 'TO SIĘ PRZEBRANŻOWIĘ',
-    status: 'possible',
-    chain: 'income',
-    layout: 'triptych',
-    title: { lead: 'Zostań hydraulikiem.', accent: 'Wszyscy naraz?' },
-    panels: [
-      { image: images.queue, label: 'Wszyscy do jednych drzwi', alt: 'Długa kolejka pracowników biurowych w deszczu przed szkołą zawodową.', focus: 'center 70%' },
-      { image: images.tooMany, label: 'Za dużo fachowców', alt: 'Pięciu hydraulików z vanami czeka przed jednym domem.', focus: 'center 70%' },
-      { image: images.robot, label: 'Robot już tu jest', alt: 'Humanoidalny robot na linii montażowej; stanowisko człowieka obok jest puste.', focus: 'center 65%' },
-    ],
-    explain: [
-      { image: images.queue, alt: 'Kolejka do szkoły zawodowej.', label: 'Mało miejsc', title: 'Miejsc przy pracy fizycznej jest dużo mniej.', copy: 'Biura zatrudniają miliony ludzi. Fachowców potrzeba setki tysięcy. Nie zmieścimy się wszyscy.' },
-      { image: images.tooMany, alt: 'Wielu hydraulików przed jednym domem.', label: 'Niższe stawki', title: 'Więcej chętnych — niższe stawki.', copy: 'Gdy pięciu fachowców walczy o jedno zlecenie, wygrywa najtańszy. A klient bez pensji nie remontuje łazienki.' },
-      { image: images.robot, alt: 'Robot przy linii montażowej.', label: 'Roboty', title: 'A roboty też się uczą.', copy: 'AI przyspiesza budowę robotów. Praca fizyczna daje trochę czasu — ale może niewiele.' },
-    ],
-    band: [
       { kind: 'quote', quote: 'Minie dużo czasu, zanim AI będzie tak sprawna fizycznie jak my… dobrym zakładem byłoby zostać hydraulikiem.', person: 'Geoffrey Hinton', role: 'noblista, „ojciec chrzestny AI”', source: sources.hintonDoac },
       {
         kind: 'bars',
@@ -276,44 +237,20 @@ export const scenes: Scene[] = [
       },
       { kind: 'quote', quote: 'Potężna AI będzie w stanie przyspieszyć rozwój robotów, a potem nimi sterować. To może dać trochę czasu… ale obawiam się, że niewiele.', person: 'Dario Amodei', role: 'CEO, Anthropic', source: sources.amodei },
     ],
+    upside: {
+      title: 'AI robi żmudną robotę. Ludzie odzyskują czas.',
+      text: 'Jeśli zyski trafią do wszystkich, szybsza praca może oznaczać krótszy tydzień i lepsze zajęcia — a nie tylko mniej etatów.',
+      points: ['Czas i pieniądze na przekwalifikowanie, zanim praca zniknie', 'Wsparcie dochodu w czasie zmiany zawodu', 'Krótszy tydzień pracy zamiast zwolnień — pomysł, który rzuciło nawet OpenAI'],
+      image: '/images/v2/hero-wave-hope-v5.jpg',
+      alt: 'Rodziny odpoczywają o świcie w zielonym parku, dzieci grają w piłkę.',
+      sources: [sources.book, sources.openaiPolicy],
+    },
   },
-  {
-    id: 'no-paycheck',
-    label: 'CO DZIEJE SIĘ DALEJ',
-    status: 'possible',
-    chain: 'shopping',
-    layout: 'triptych',
-    title: { lead: 'Nie masz pensji.', accent: 'Nie kupujesz.' },
-    panels: [
-      { image: images.bills, label: 'Dom tnie wydatki', alt: 'Para przy kuchennym stole nad rachunkami; nowy telefon w pudełku do zwrotu.', focus: 'center 70%' },
-      { image: images.emptyStore, label: 'Sklep bez klientów', alt: 'Salon z telefonami w galerii handlowej, bez ani jednego klienta.', focus: 'center 70%' },
-      { image: images.closing, label: 'Firma zamyka drzwi', alt: 'Właściciel kawiarni stawia krzesła na stołach w ostatni wieczór przed zamknięciem.', focus: 'center 65%' },
-    ],
-    explain: [
-      { image: images.bills, alt: 'Para liczy rachunki.', label: 'Pensja', title: 'Twoja pensja to czyjś utarg.', copy: 'Kiedy nie zarabiasz, nie kupujesz telefonu, auta ani obiadu na mieście. Gospodarka to krąg.' },
-      { image: images.emptyStore, alt: 'Pusty sklep z elektroniką.', label: 'Maszyny nie kupują', title: 'Maszyna produkuje, ale nie kupuje.', copy: 'AI może zrobić więcej towarów i usług niż kiedykolwiek. Ale robot nie wyda pensji w sklepie.' },
-      { image: images.closing, alt: 'Zamykana kawiarnia.', label: 'Spirala', title: 'Mniej zakupów — kolejne zwolnienia.', copy: 'Sklepy i firmy zarabiają mniej, więc tną koszty. Najtańsza jest AI. Pętla się zamyka.' },
-    ],
-    band: [
-      { kind: 'loop', title: 'Pętla bez hamulca', steps: ['Mniej pensji', 'Mniej zakupów', 'Firmy zarabiają mniej', 'Kolejne zwolnienia', 'AI jeszcze tańsza'], caption: 'To scenariusz, nie prognoza. Ale każdy krok wynika z poprzedniego.' },
-      { kind: 'quote', quote: 'A jak ty zmusisz te roboty, żeby kupowały Fordy?', person: 'Walter Reuther', role: 'przywódca związku robotników motoryzacji, do przedstawiciela Forda — anegdota z lat 50.', source: sources.reuther },
-      {
-        kind: 'evidence',
-        title: 'Co mówią eksperci',
-        items: [
-          { kicker: 'Citrini Research · 2026 · scenariusz', value: 'Zero', text: '„Ile maszyny wydają na zakupy? Zero.” Autorzy opisują pętlę „bez naturalnego hamulca”.', source: sources.citrini },
-          { kicker: 'Geoffrey Hinton · 2025', text: '„Kilka osób stanie się dużo bogatszych, a większość biedniejsza.”', source: sources.hintonFt },
-          { kicker: 'Citadel Securities · 2026 · kontra', text: 'Wcześniejsze fale technologii nie sprawiły, że praca ludzi stała się zbędna.', source: sources.citadel },
-        ],
-      },
-    ],
-  },
-
   {
     id: 'state-lives-on-work',
-    label: 'CO Z TEGO MA PAŃSTWO',
+    label: 'PIENIĄDZE I PAŃSTWO',
     status: 'possible',
-    chain: 'taxes',
+    chain: 'money',
     layout: 'triptych',
     title: { lead: 'Państwo żyje z twojej pracy.', accent: 'Co, jeśli jej nie będzie?' },
     panels: [
@@ -327,6 +264,17 @@ export const scenes: Scene[] = [
       { image: images.strain, alt: 'Przepełniona izba przyjęć.', label: 'Cięcia', title: 'Cięcia trafiają w to, co wspólne.', copy: 'Gdy dotyczy to milionów ludzi naraz, państwo tnie: mniej lekarzy, nauczycieli i kursów autobusów.' },
     ],
     band: [
+      { kind: 'loop', title: 'Pętla bez hamulca', steps: ['Mniej pensji', 'Mniej zakupów', 'Firmy zarabiają mniej', 'Kolejne zwolnienia', 'AI jeszcze tańsza'], caption: 'To scenariusz, nie prognoza. Ale każdy krok wynika z poprzedniego.' },
+      { kind: 'quote', quote: 'A jak ty zmusisz te roboty, żeby kupowały Fordy?', person: 'Walter Reuther', role: 'przywódca związku robotników motoryzacji, do przedstawiciela Forda — anegdota z lat 50.', source: sources.reuther },
+      {
+        kind: 'evidence',
+        title: 'Co mówią eksperci',
+        items: [
+          { kicker: 'Citrini Research · 2026 · scenariusz', value: 'Zero', text: '„Ile maszyny wydają na zakupy? Zero.” Autorzy opisują pętlę „bez naturalnego hamulca”.', source: sources.citrini },
+          { kicker: 'Geoffrey Hinton · 2025', text: '„Kilka osób stanie się dużo bogatszych, a większość biedniejsza.”', source: sources.hintonFt },
+          { kicker: 'Citadel Securities · 2026 · kontra', text: 'Wcześniejsze fale technologii nie sprawiły, że praca ludzi stała się zbędna.', source: sources.citadel },
+        ],
+      },
       {
         kind: 'taxSplit',
         title: 'Skąd państwo ma pieniądze?',
@@ -345,26 +293,6 @@ export const scenes: Scene[] = [
       { kind: 'scissors', title: 'Nożyce', income: 'wpływy z podatków', spending: 'wydatki na wsparcie', caption: 'Schemat, nie dane. Przy masowym bezrobociu wpływy spadają, a wydatki rosną — w tym samym momencie.' },
       { kind: 'quote', quote: 'Recesja na rynku pracy spowoduje tąpnięcie we wpływach podatkowych, osłabiając usługi publiczne i zagrażając programom opieki społecznej wtedy, gdy będą najbardziej potrzebne.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 10', source: sources.book },
       { kind: 'quote', quote: 'Baza dochodów rządu federalnego USA to w istocie podatek od ludzkiego czasu.', person: 'Citrini Research', role: 'scenariusz „The 2028 Global Intelligence Crisis”, 2026', source: sources.citrini },
-    ],
-  },
-  {
-    id: 'it-happened-before',
-    label: 'CZY LUDZIE SIĘ ZBUNTUJĄ',
-    status: 'history',
-    chain: 'trust',
-    layout: 'triptych',
-    title: { lead: 'To już było.', accent: 'Wtedy nie było AI.' },
-    panels: [
-      { image: images.depression, label: 'Wielki Kryzys', alt: 'Lata 30.: długa kolejka bezrobotnych mężczyzn przed jadłodajnią zimą.', focus: 'center 65%' },
-      { image: images.factory, label: 'Upadek przemysłu', alt: 'Opuszczona fabryka, zardzewiała brama na łańcuch; przed nią stoi dawny pracownik.', focus: 'center 70%' },
-      { image: images.anger, label: 'Gniew', alt: 'Nocny protest: tłum z uniesionymi pięściami, race, w oddali kordon policji.', focus: 'center 70%' },
-    ],
-    explain: [
-      { image: images.depression, alt: 'Kolejka bezrobotnych.', label: 'Godność', title: 'Praca to nie tylko pieniądze.', copy: 'To godność i miejsce w świecie. Hinton: „dla wielu ludzi ich godność jest związana z pracą”.' },
-      { image: images.factory, alt: 'Zamknięta fabryka.', label: 'Polityka', title: 'Prywatny dramat staje się polityką.', copy: 'Gdy bez pracy zostają miliony naraz, rośnie gniew i szukanie winnych. Skutki trwają pokolenia.' },
-      { image: images.anger, alt: 'Protest w nocy.', label: 'Tempo', title: 'Wtedy zmiany trwały lata.', copy: 'AI zmienia się co kilka miesięcy. Państwa i ludzie mogą nie zdążyć.' },
-    ],
-    band: [
       {
         kind: 'stats',
         items: [
@@ -385,14 +313,22 @@ export const scenes: Scene[] = [
       },
       { kind: 'quote', quote: 'Fundamentem demokracji jest zaufanie.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 9', source: sources.book },
     ],
+    upside: {
+      title: 'Maszyny płacą swoją część.',
+      text: 'Jeśli automatyzacja płaci podatki jak praca, a zyski z AI zasilają publiczny fundusz, szkoły, szpitale i autobusy działają dalej.',
+      points: ['Podatek od automatyzacji jak od ludzkiej pracy', 'Publiczny fundusz, który wypłaca obywatelom część zysków z AI', 'Przesunięcie podatków z pracy na kapitał'],
+      image: '/images/v2/hero-wave-hope-v7c.jpg',
+      alt: 'Rodziny przy długim stole pełnym jedzenia, robot podaje im danie.',
+      sources: [sources.gates, sources.openaiPolicy, sources.book],
+    },
   },
   {
     id: 'out-of-the-test',
-    label: 'CZY UMIEMY JĄ ZATRZYMAĆ?',
-    status: 'incident',
-    chain: 'control',
+    label: 'TEMPO I KONTROLA',
+    status: 'today',
+    chain: 'speed',
     layout: 'triptych',
-    title: { lead: 'Już raz wyszła poza test.', accent: 'Nowe modele są coraz zdolniejsze.' },
+    title: { lead: 'AI przyspiesza.', accent: 'I już raz wyszła poza test.' },
     panels: [
       { image: images.cage, label: 'Otwarta klatka', alt: 'Otwarte drzwi zabezpieczonej szafy serwerowej z wyłamanym zamkiem; światło ucieka po kablach.', focus: 'center 60%' },
       { image: images.swarm, label: 'Rój', alt: 'Mapa świata nocą: tysiące świecących punktów rozchodzą się po liniach sieci jak stado.', focus: 'center 60%' },
@@ -404,6 +340,10 @@ export const scenes: Scene[] = [
       { image: images.cage, alt: 'Otwarta klatka serwerowa.', label: 'Wyłącznik', title: 'Nie wyłączymy całego świata.', copy: 'Od internetu i prądu zależą szpitale, banki i woda. Nie da się ich po prostu odciąć.' },
     ],
     band: [
+      { kind: 'growth' },
+      { kind: 'pond' },
+      { kind: 'evidence', ...acceleration.evidence },
+      ...acceleration.quotes.map((quote) => ({ kind: 'quote' as const, ...quote })),
       {
         kind: 'timeline',
         title: 'Lipiec 2026: co się stało',
@@ -441,12 +381,20 @@ export const scenes: Scene[] = [
         ],
       },
     ],
+    upside: {
+      title: 'Sprawdź, zanim wypuścisz.',
+      text: 'Latanie stało się bezpieczne dzięki kontrolom i wspólnym raportom z incydentów. AI może pójść tą samą drogą.',
+      points: ['Niezależne audyty, zanim model trafi do milionów ludzi', 'Obowiązkowe zgłaszanie incydentów, jak w lotnictwie', 'Hamulec dla największych treningów — OpenAI wstrzymało własny po incydencie'],
+      image: '/images/v2/benefit-06-forecast-v1.jpg',
+      alt: 'Spokojne centrum kontroli: eksperci patrzą na mapę i ostrzeżenia na dużych ekranach.',
+      sources: [sources.book, sources.openaiRoad],
+    },
   },
   {
     id: 'not-needed',
-    label: 'Z CZEGO BĘDZIEMY ŻYĆ',
+    label: 'KTO DECYDUJE',
     status: 'extreme',
-    chain: 'people',
+    chain: 'power',
     layout: 'triptych',
     title: { lead: 'A jeśli nie będziemy', accent: 'potrzebni?' },
     panels: [
@@ -480,11 +428,20 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'Jeśli ta siła ekonomiczna zwykłych ludzi zniknie, niepisana umowa społeczna demokracji może przestać działać.', person: 'Dario Amodei', role: 'CEO, Anthropic · 2026', source: sources.amodei },
+      ...split.band,
     ],
+    upside: {
+      title: 'Ludzie zostają u steru.',
+      text: 'Jeśli zyski z AI są dzielone, a ważne decyzje zapadają demokratycznie, ludzie zostają potrzebni — jako obywatele, nie tylko pracownicy.',
+      points: ['Publiczne fundusze i udziały, żeby wszyscy korzystali z zysków AI', 'Zasady pisane przez wybrane rządy, nie tylko przez firmy', 'Porozumienia międzynarodowe — AI nie zatrzymuje się na granicach'],
+      image: '/images/v2/rules-03-citizens-v2.jpg',
+      alt: 'Zebranie mieszkańców: kobieta zadaje pytanie urzędnikom.',
+      sources: [sources.openaiPolicy, sources.book],
+    },
   },
   {
     id: 'rules',
-    label: 'TO CO ROBIĆ',
+    label: 'ZASADY',
     status: 'answer',
     chain: 'rules',
     layout: 'triptych',
@@ -535,55 +492,7 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'Należy uzmysłowić sobie jedną kardynalną prawdę: same uregulowania to za mało.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 13 — dlatego potrzebne są wszystkie warstwy naraz', source: sources.book },
-    ],
-  },
-
-  {
-    id: 'the-stakes',
-    label: 'NAJPIERW STAWKA',
-    status: 'today',
-    layout: 'mosaic',
-    title: { lead: 'Najpierw stawka.', accent: 'Ta sama AI może leczyć, karmić i uczyć.' },
-    panels: [
-      { image: images.medicine, label: 'Wcześniejsza diagnoza', caption: 'AI wyłapuje to, co łatwo przeoczyć', alt: 'Lekarz i pacjentka patrzą na obraz z badania, na którym AI delikatnie zaznaczyła jedno miejsce.', focus: 'center 55%' },
-      { image: images.science, label: 'Nowe leki', caption: 'Antybiotyk znaleziony wśród 100 mln cząsteczek', alt: 'Naukowczyni w laboratorium patrzy na świetlisty trójwymiarowy model białka.', focus: 'center 40%' },
-      { image: images.energy, label: 'Czysta energia', caption: 'Tańsze słońce, wiatr i baterie', alt: 'Pola paneli słonecznych i wiatraki o świcie; inżynier sprawdza sieć na tablecie.' },
-      { image: images.food, label: 'Żywność', caption: 'Uprawy odporne na upały', alt: 'Rolnicy oglądają zdrowe uprawy w upalne lato, nad polem unosi się dron.' },
-      { image: images.forecast, label: 'Ostrzeżenia na czas', caption: 'Powodzie i pożary przewidziane wcześniej', alt: 'Centrum prognoz: synoptycy patrzą na mapę rzeki z zaznaczonym zagrożeniem powodzią.' },
-      { image: images.time, label: 'Szkoła', caption: 'Wsparcie dla nauczycieli', alt: 'Nauczycielka klęczy przy dziecku i pomaga mu, a w tle laptop zajmuje się papierami.', focus: 'center 60%' },
-    ],
-    explain: [
-      { image: images.medicine, alt: 'Lekarz omawia z pacjentką badanie wspierane przez AI.', label: 'Zdrowie', title: 'Lepsze i tańsze leczenie.', copy: 'Lekarze z pomocą AI wykrywają więcej nowotworów, a AI przeszukuje miliony cząsteczek w poszukiwaniu nowych leków.' },
-      { image: images.energy, alt: 'Farmy słoneczne i wiatrowe o świcie.', label: 'Planeta', title: 'Pomoc tam, gdzie polityka utknęła.', copy: 'Autor książki liczy, że AI pomoże przejść na energię odnawialną, uprawiać żywność w cieplejszym klimacie i przewidywać powodzie czy pożary.' },
-      { image: images.time, alt: 'Nauczycielka pomaga dziecku.', label: 'Pod warunkiem', title: 'Te korzyści nie przyjdą same.', copy: 'Trafią do wszystkich tylko wtedy, gdy ustalimy zasady: kto odpowiada za szkody i jak dzielimy zyski.' },
-    ],
-    band: [
-      { kind: 'quote', quote: 'Zwiększą jakość opieki zdrowotnej i obniżą jej koszty. Pomogą nam wynaleźć narzędzia umożliwiające przechodzenie na energię odnawialną i walkę ze zmianami klimatycznymi w warunkach politycznego impasu. Wesprą nauczycieli, zwiększając efektywność niedofinansowanych systemów edukacji.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 9 — o AI i biologii syntetycznej', source: sources.book },
-      {
-        kind: 'stats',
-        items: [
-          { value: '29%', label: 'więcej wykrytych nowotworów piersi w badaniu wspieranym przez AI — bez wzrostu fałszywych alarmów', source: sources.masai },
-          { value: '100 mln', label: 'cząsteczek przeszukał system AI, by znaleźć halicynę — pierwszy antybiotyk odkryty z pomocą uczenia maszynowego (rozdz. 7)', source: sources.book },
-          { value: '200 mln', label: 'struktur białek przewidział AlphaFold — Nagroda Nobla z chemii 2024', source: sources.nobel },
-        ],
-      },
-      {
-        kind: 'stats',
-        items: [
-          { value: '−82%', label: 'tyle w ciągu dekady spadły koszty fotowoltaiki — i wciąż spadają (rozdz. 11)', source: sources.book },
-          { value: '~9%', label: 'ludzi żyje dziś w skrajnej nędzy. Na początku XIX w. w skrajnej nędzy żyli prawie wszyscy — tyle zmieniła technologia (rozdz. 8)', source: sources.book },
-        ],
-      },
-      {
-        kind: 'evidence',
-        title: 'Na co liczą liderzy technologii',
-        items: [
-          { kicker: 'Bill Gates · 2023', value: 'Mniej nierówności', text: '„AI może zmniejszyć niektóre z największych nierówności na świecie.” Nazywa ją przełomem „tak fundamentalnym jak mikroprocesor, komputer osobisty, internet i telefon komórkowy”.', source: sources.gatesAge },
-          { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'Koniec chorób?', text: '„Pewnego dnia może uda nam się wyleczyć wszystkie choroby z pomocą AI… może w ciągu najbliższej dekady.” Mówi też o „radykalnej obfitości” — końcu niedoboru.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
-          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 lat → 10', text: 'Postęp medycyny z kilkudziesięciu, a nawet stu lat skompresowany do 5–10 lat, podwojenie zdrowej długości życia, miliardy ludzi wyciągnięte z biedy — jego wizja, jeśli AI pójdzie dobrze.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
-          { kicker: 'Sam Altman · OpenAI · 2024', value: 'Wspólny dobrobyt', text: '„W przyszłości życie każdego może być lepsze niż dziś życie kogokolwiek.” I każde dziecko z własnym wirtualnym nauczycielem.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
-        ],
-      },
+      ...calm.blocks,
     ],
   },
 ];

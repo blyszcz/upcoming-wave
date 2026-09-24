@@ -39,8 +39,8 @@ export const ui = {
   },
   voices: {
     eyebrow: 'Głosy · z wnętrza branży',
-    titleLead: 'To nie my to mówimy.',
-    titleAccent: 'Mówią to oni.',
+    titleLead: 'Zgadzają się w dwóch sprawach.',
+    titleAccent: 'To może być ogromne dobro. I potrzebuje zasad.',
     text: 'Szefowie firm, które budują AI, i naukowcy, którzy ją współtworzyli. Każdy cytat ma link do źródła.',
     signedBy: 'Podpisali m.in.',
     source: 'Źródło:',

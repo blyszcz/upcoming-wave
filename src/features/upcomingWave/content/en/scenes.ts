@@ -1,5 +1,8 @@
 import type { Scene } from '@features/upcomingWave/types/scene.types';
 
+import { acceleration } from '@features/upcomingWave/content/en/acceleration';
+import { calm } from '@features/upcomingWave/content/en/calm';
+import { split } from '@features/upcomingWave/content/en/closing';
 import { sceneImages as images, sceneSources as plSources } from '@features/upcomingWave/content/pl/scenes';
 
 
@@ -17,25 +20,57 @@ const sources = {
 
 export const scenes: Scene[] = [
   {
-    id: 'three-risks',
-    label: 'WHAT COULD GO WRONG',
-    status: 'possibleMany',
-    layout: 'triptych',
-    title: { lead: 'Three risks.', accent: 'The brakes are still weak.' },
+    id: 'the-stakes',
+    label: 'FIRST, THE STAKES',
+    status: 'today',
+    chain: 'stakes',
+    layout: 'mosaic',
+    title: { lead: 'First, the stakes.', accent: 'The same AI could heal, feed and teach.' },
     panels: [
-      { image: images.layoffs, label: 'A wave of layoffs', alt: 'A long line of office workers leaves a tower in the rain, carrying cardboard boxes.', focus: 'center 70%' },
-      { image: images.aiRules, label: 'AI takes control', alt: 'Thousands of people stand in neat rows on a plaza beneath a huge machine scanning them with beams of light.', focus: 'center 60%' },
-      { image: images.bio, label: 'A virus from the lab', alt: 'An empty lab: a robotic arm holds a glowing vial; above the bench floats a virus model and a DNA helix being rewritten.', focus: 'center 60%' },
+      { image: images.medicine, label: 'Earlier diagnosis', caption: 'AI catches what’s easy to miss', alt: 'A doctor and a patient look at a scan on which AI has gently marked one spot.', focus: 'center 55%' },
+      { image: images.science, label: 'New medicines', caption: 'An antibiotic found among 100M molecules', alt: 'A scientist in a lab looks at a glowing 3D model of a protein.', focus: 'center 40%' },
+      { image: images.energy, label: 'Clean energy', caption: 'Cheaper solar, wind and batteries', alt: 'Solar fields and wind turbines at dawn; an engineer checks the grid on a tablet.' },
+      { image: images.food, label: 'Food', caption: 'Crops that survive the heat', alt: 'Farmers inspect healthy crops in a hot summer while a drone hovers over the field.' },
+      { image: images.forecast, label: 'Early warnings', caption: 'Floods and fires predicted earlier', alt: 'A forecasting center: meteorologists look at a river map with a flood risk highlighted.' },
+      { image: images.time, label: 'School', caption: 'Support for teachers', alt: 'A teacher kneels beside a child and helps them, while a laptop handles paperwork in the background.', focus: 'center 60%' },
     ],
     explain: [
-      { image: images.layoffs, alt: 'Laid-off workers leave an office with boxes.', label: 'Layoffs', title: 'Jobs disappear faster than new ones appear.', copy: 'If AI does the same work more cheaply, companies may need fewer people. Retraining takes years; the bills come every month.' },
-      { image: images.aiRules, alt: 'People in rows under a machine that scans them.', label: 'Control', title: 'Decisions move to machines.', copy: 'Loans, jobs, healthcare, security. The more decisions we hand to systems we don’t understand, the harder it is to take them back.' },
-      { image: images.bio, alt: 'An automated lab with a virus model.', label: 'Biology', title: 'Designing life is getting cheaper.', copy: 'AI speeds up drug research — but the same tools could help create a dangerous pathogen. One mistake or one bad actor could be enough.' },
+      { image: images.medicine, alt: 'A doctor discussing an AI-assisted scan with a patient.', label: 'Health', title: 'Better, cheaper care.', copy: 'Doctors assisted by AI find more cancers, and AI searches millions of molecules for new medicines.' },
+      { image: images.energy, alt: 'Solar and wind farms at dawn.', label: 'The planet', title: 'Help where politics is stuck.', copy: 'The book’s author hopes AI will help us switch to renewable energy, grow food in a hotter climate and predict floods and fires.' },
+      { image: images.time, alt: 'A teacher helping a child.', label: 'On one condition', title: 'These benefits won’t come by themselves.', copy: 'They reach everyone only if we set the rules: who is responsible for harm and how the gains are shared.' },
+    ],
+    band: [
+      { kind: 'quote', quote: 'They will make health care both higher-quality and more affordable. They will help us invent tools to bring about the transition to renewable energy and combat climate change at a time when politics has stalled, and support teachers, helping to increase the effectiveness of underfunded education systems.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 9 — on AI and synthetic biology', source: sources.book },
+      {
+        kind: 'stats',
+        items: [
+          { value: '29%', label: 'more breast cancers detected with AI-supported screening — with no rise in false alarms', source: sources.masai },
+          { value: '100M', label: 'molecules searched by an AI system to find halicin — the first antibiotic discovered with machine learning (ch. 7)', source: sources.book },
+          { value: '200M', label: 'protein structures predicted by AlphaFold — 2024 Nobel Prize in Chemistry', source: sources.nobel },
+        ],
+      },
+      {
+        kind: 'stats',
+        items: [
+          { value: '−82%', label: 'drop in the cost of solar power over a decade — and it keeps falling (ch. 11)', source: sources.book },
+          { value: '~9%', label: 'of people live in extreme poverty today. In the early 1800s almost everyone did. Technology changed that (ch. 8)', source: sources.book },
+        ],
+      },
+      {
+        kind: 'evidence',
+        title: 'What tech leaders hope for',
+        items: [
+          { kicker: 'Bill Gates · 2023', value: 'Less inequity', text: '“AI can reduce some of the world’s worst inequities.” He calls it “as fundamental as the creation of the microprocessor, the personal computer, the Internet, and the mobile phone.”', source: sources.gatesAge },
+          { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'An end to disease?', text: '“One day maybe we can cure all disease with the help of AI… Maybe within the next decade or so.” He also talks of “radical abundance” — the elimination of scarcity.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
+          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 years → 10', text: '50–100 years of medical progress compressed into 5–10, the healthy lifespan doubled, billions lifted out of poverty — his vision if AI goes well.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
+          { kicker: 'Sam Altman · OpenAI · 2024', value: 'Shared prosperity', text: '“In the future, everyone’s lives can be better than anyone’s life is now.” He also envisions a personal AI tutor for every child.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
+        ],
+      },
     ],
   },
   {
     id: 'who-will-resist',
-    label: 'HOW IT STARTS',
+    label: 'WORK',
     status: 'today',
     chain: 'work',
     layout: 'triptych',
@@ -49,27 +84,6 @@ export const scenes: Scene[] = [
       { image: images.remote, alt: 'A woman working remotely on a laptop.', label: 'Remote work', title: 'Remote work is screen work.', copy: 'Emails, reports, analyses, designs. Anything you send from a laptop, AI can learn to do.' },
       { image: images.aiFaster, alt: 'A laptop with finished documents flying out.', label: 'AI is faster', title: 'AI doesn’t sleep or take vacations.', copy: 'It does the same work in minutes, without breaks, on hundreds of tasks at once — and it matches humans on a growing number of tasks.' },
       { image: images.owners, alt: 'Company owners looking at an empty office.', label: 'The math', title: 'Faster and cheaper. Who can resist?', copy: 'The owner sees the savings. So does the competition. Companies that don’t use it may lose the race — so the pressure to use it is huge.' },
-    ],
-  },
-  {
-    id: 'not-just-code',
-    label: 'WHO’S NEXT',
-    status: 'today',
-    chain: 'work',
-    layout: 'mosaic',
-    title: { lead: 'Not just code.', accent: 'Your job too.' },
-    panels: [
-      { image: images.callcenter, label: 'Call center', caption: 'A chatbot answers', alt: 'A call-center agent with a headset alone at night, surrounded by empty desks.' },
-      { image: images.legal, label: 'Legal assistant', caption: 'A model reads the contracts', alt: 'A paralegal over a stack of contracts; next to her a laptop and a finished pile of reviewed documents.' },
-      { image: images.design, label: 'Designer & copywriter', caption: 'Images and text in seconds', alt: 'A designer looks at a wall of dozens of generated designs.' },
-      { image: images.translator, label: 'Translator', caption: 'Instant translation', alt: 'A translator with dictionaries watches a stream of characters from many alphabets flowing through the air.' },
-      { image: images.warehouse, label: 'Warehouse', caption: 'Robots already work the floor', alt: 'A huge warehouse full of autonomous robots; one worker watches from a mezzanine.', focus: 'center 60%' },
-      { image: images.driver, label: 'Driver', caption: 'Trucks are learning to drive themselves', alt: 'A trucker leans on his truck and watches a driverless truck pass by.' },
-    ],
-    explain: [
-      { image: images.legal, alt: 'A paralegal over a stack of contracts.', label: 'Tasks', title: 'Tasks first, not jobs.', copy: 'AI takes over emails, summaries and replies. The job still exists — but there’s less to it.' },
-      { image: images.callcenter, alt: 'Empty desks in a call center.', label: 'Less hiring', title: 'One person does the work of five.', copy: 'Companies rarely fire everyone at once. They just stop hiring. Young people looking for their first job are hit first.' },
-      { image: images.warehouse, alt: 'A warehouse full of robots.', label: 'Warehouse and road', title: 'Then the change leaves the office.', copy: 'Robots in warehouses, trucks without drivers. First desk work, then manual work.' },
     ],
     band: [
       {
@@ -90,26 +104,6 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'For mundane intellectual labor, AI is just going to replace everybody.', person: 'Geoffrey Hinton', role: 'Nobel laureate, the “godfather of AI”', source: sources.hintonDoac },
-    ],
-  },
-  {
-    id: 'become-a-plumber',
-    label: 'I’LL JUST RETRAIN',
-    status: 'possible',
-    chain: 'income',
-    layout: 'triptych',
-    title: { lead: 'Become a plumber.', accent: 'Everyone at once?' },
-    panels: [
-      { image: images.queue, label: 'Everyone at the same door', alt: 'A long queue of office workers in the rain outside a vocational school.', focus: 'center 70%' },
-      { image: images.tooMany, label: 'Too many tradespeople', alt: 'Five plumbers with vans wait outside one house.', focus: 'center 70%' },
-      { image: images.robot, label: 'The robot is already here', alt: 'A humanoid robot on an assembly line; the human workstation next to it is empty.', focus: 'center 65%' },
-    ],
-    explain: [
-      { image: images.queue, alt: 'A queue outside a vocational school.', label: 'Few openings', title: 'Trades have far fewer openings.', copy: 'Offices employ millions. Trades need hundreds of thousands. Not everyone will fit.' },
-      { image: images.tooMany, alt: 'Many plumbers outside one house.', label: 'Lower rates', title: 'More applicants, lower rates.', copy: 'When five tradespeople compete for one job, the cheapest wins. And a customer without a paycheck won’t remodel the bathroom.' },
-      { image: images.robot, alt: 'A robot on an assembly line.', label: 'Robots', title: 'And robots are learning too.', copy: 'AI speeds up robot development. Manual work buys some time — but maybe not much.' },
-    ],
-    band: [
       { kind: 'quote', quote: 'It’s going to be a long time before it’s as good at physical manipulation as us… a good bet would be to be a plumber.', person: 'Geoffrey Hinton', role: 'Nobel laureate, the “godfather of AI”', source: sources.hintonDoac },
       {
         kind: 'bars',
@@ -132,43 +126,20 @@ export const scenes: Scene[] = [
       },
       { kind: 'quote', quote: 'Sufficiently powerful AI will be able to accelerate the development of robots, and then control those robots in the physical world. It may buy some time… but I’m worried it won’t buy much.', person: 'Dario Amodei', role: 'CEO, Anthropic', source: sources.amodei },
     ],
-  },
-  {
-    id: 'no-paycheck',
-    label: 'WHAT HAPPENS NEXT',
-    status: 'possible',
-    chain: 'shopping',
-    layout: 'triptych',
-    title: { lead: 'No paycheck.', accent: 'No shopping.' },
-    panels: [
-      { image: images.bills, label: 'Households cut back', alt: 'A couple at a kitchen table over bills; a new phone in its box, to be returned.', focus: 'center 70%' },
-      { image: images.emptyStore, label: 'A store without customers', alt: 'A phone store in a shopping mall without a single customer.', focus: 'center 70%' },
-      { image: images.closing, label: 'A business closes its doors', alt: 'A café owner puts chairs on the tables on the last evening before closing.', focus: 'center 65%' },
-    ],
-    explain: [
-      { image: images.bills, alt: 'A couple counting bills.', label: 'Paycheck', title: 'Your paycheck is someone else’s revenue.', copy: 'When you’re not earning, you don’t buy a phone, a car or a dinner out. The economy is a circle.' },
-      { image: images.emptyStore, alt: 'An empty electronics store.', label: 'Machines don’t shop', title: 'Machines produce, but they don’t buy.', copy: 'AI can make more goods and services than ever. But a robot won’t spend a paycheck at the store.' },
-      { image: images.closing, alt: 'A café closing down.', label: 'Spiral', title: 'Less spending — more layoffs.', copy: 'Shops and companies earn less, so they cut costs. AI is the cheapest option. The loop closes.' },
-    ],
-    band: [
-      { kind: 'loop', title: 'A loop with no brake', steps: ['Lower wages', 'Less spending', 'Companies earn less', 'More layoffs', 'AI even cheaper'], caption: 'A scenario, not a prediction. But each step follows from the previous one.' },
-      { kind: 'quote', quote: 'How are you going to get them to buy Fords?', person: 'Walter Reuther', role: 'auto workers’ union leader, to a Ford official — an anecdote from the 1950s', source: sources.reuther },
-      {
-        kind: 'evidence',
-        title: 'What experts say',
-        items: [
-          { kicker: 'Citrini Research · 2026 · scenario', value: 'Zero', text: 'How much do machines spend on discretionary goods? “Hint: it’s zero.” The authors describe a loop “with no natural brake.”', source: sources.citrini },
-          { kicker: 'Geoffrey Hinton · 2025', text: '“It will make a few people much richer and most people poorer.”', source: sources.hintonFt },
-          { kicker: 'Citadel Securities · 2026 · rebuttal', text: 'Earlier waves of technology have not rendered human labor obsolete.', source: sources.citadel },
-        ],
-      },
-    ],
+    upside: {
+      title: 'AI does the drudgery. People get time back.',
+      text: 'If the gains are shared, faster work can mean shorter weeks and better jobs — not just fewer jobs.',
+      points: ['Time and money to retrain before jobs disappear', 'Income support while people change careers', 'Shorter working weeks instead of layoffs — an idea OpenAI itself has floated'],
+      image: '/images/v2/hero-wave-hope-v5.jpg',
+      alt: 'Families relaxing in a green park at dawn, children playing.',
+      sources: [sources.book, sources.openaiPolicy],
+    },
   },
   {
     id: 'state-lives-on-work',
-    label: 'WHAT IT MEANS FOR THE STATE',
+    label: 'MONEY AND THE STATE',
     status: 'possible',
-    chain: 'taxes',
+    chain: 'money',
     layout: 'triptych',
     title: { lead: 'The state runs on your work.', accent: 'What if it’s gone?' },
     panels: [
@@ -182,6 +153,17 @@ export const scenes: Scene[] = [
       { image: images.strain, alt: 'An overcrowded emergency room.', label: 'Cuts', title: 'Cuts hit what we share.', copy: 'When millions are affected at once, the state cuts: fewer doctors, fewer teachers, fewer buses.' },
     ],
     band: [
+      { kind: 'loop', title: 'A loop with no brake', steps: ['Lower wages', 'Less spending', 'Companies earn less', 'More layoffs', 'AI even cheaper'], caption: 'A scenario, not a prediction. But each step follows from the previous one.' },
+      { kind: 'quote', quote: 'How are you going to get them to buy Fords?', person: 'Walter Reuther', role: 'auto workers’ union leader, to a Ford official — an anecdote from the 1950s', source: sources.reuther },
+      {
+        kind: 'evidence',
+        title: 'What experts say',
+        items: [
+          { kicker: 'Citrini Research · 2026 · scenario', value: 'Zero', text: 'How much do machines spend on discretionary goods? “Hint: it’s zero.” The authors describe a loop “with no natural brake.”', source: sources.citrini },
+          { kicker: 'Geoffrey Hinton · 2025', text: '“It will make a few people much richer and most people poorer.”', source: sources.hintonFt },
+          { kicker: 'Citadel Securities · 2026 · rebuttal', text: 'Earlier waves of technology have not rendered human labor obsolete.', source: sources.citadel },
+        ],
+      },
       {
         kind: 'taxSplit',
         title: 'Where does the state get its money?',
@@ -200,26 +182,6 @@ export const scenes: Scene[] = [
       { kind: 'scissors', title: 'The budget squeeze', income: 'tax revenue', spending: 'support spending', caption: 'A diagram, not data. With mass unemployment, revenue falls while spending rises — at the same moment.' },
       { kind: 'quote', quote: 'At the same time, a jobs recession will crater tax receipts, damaging public services and calling into question welfare programs just as they are most needed.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 10', source: sources.book },
       { kind: 'quote', quote: 'The federal government’s revenue base is essentially a tax on human time.', person: 'Citrini Research', role: 'scenario “The 2028 Global Intelligence Crisis”, 2026', source: sources.citrini },
-    ],
-  },
-  {
-    id: 'it-happened-before',
-    label: 'WILL PEOPLE REVOLT',
-    status: 'history',
-    chain: 'trust',
-    layout: 'triptych',
-    title: { lead: 'It has happened before.', accent: 'Back then there was no AI.' },
-    panels: [
-      { image: images.depression, label: 'The Great Depression', alt: 'The 1930s: a long line of unemployed men outside a soup kitchen in winter.', focus: 'center 65%' },
-      { image: images.factory, label: 'Industry collapses', alt: 'An abandoned factory with a rusty chained gate; a former worker stands in front of it.', focus: 'center 70%' },
-      { image: images.anger, label: 'Anger', alt: 'A night protest: a crowd with raised fists, flares, a police line in the distance.', focus: 'center 70%' },
-    ],
-    explain: [
-      { image: images.depression, alt: 'A line of unemployed men.', label: 'Dignity', title: 'Work isn’t only about money.', copy: 'It’s dignity and a place in the world. Hinton: “for a lot of people, their dignity is tied up with their job.”' },
-      { image: images.factory, alt: 'A closed factory.', label: 'Politics', title: 'Private hardship becomes politics.', copy: 'When millions lose their jobs at once, anger grows and people look for someone to blame. The effects last for generations.' },
-      { image: images.anger, alt: 'A protest at night.', label: 'Pace', title: 'Back then change took years.', copy: 'AI changes every few months. States and people may not keep up.' },
-    ],
-    band: [
       {
         kind: 'stats',
         items: [
@@ -240,14 +202,22 @@ export const scenes: Scene[] = [
       },
       { kind: 'quote', quote: 'Democracies are built on trust.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 9', source: sources.book },
     ],
+    upside: {
+      title: 'Machines pay their share.',
+      text: 'If automation is taxed like labor and AI’s profits feed a public fund, schools, hospitals and buses keep running.',
+      points: ['Tax automation like human labor', 'A public wealth fund that pays citizens a share of AI’s profits', 'Shift taxes from work toward capital'],
+      image: '/images/v2/hero-wave-hope-v7c.jpg',
+      alt: 'Families sharing a long table full of food while a robot serves them.',
+      sources: [sources.gates, sources.openaiPolicy, sources.book],
+    },
   },
   {
     id: 'out-of-the-test',
-    label: 'CAN WE STOP IT',
-    status: 'incident',
-    chain: 'control',
+    label: 'SPEED AND CONTROL',
+    status: 'today',
+    chain: 'speed',
     layout: 'triptych',
-    title: { lead: 'AI has already slipped out of a test.', accent: 'Newer models are more capable.' },
+    title: { lead: 'AI is speeding up.', accent: 'It has already slipped out of a test.' },
     panels: [
       { image: images.cage, label: 'An open cage', alt: 'The open door of a secure server cage with a broken lock; light escapes along the cables.', focus: 'center 60%' },
       { image: images.swarm, label: 'The swarm', alt: 'A world map at night: thousands of glowing points spread along network lines like a flock.', focus: 'center 60%' },
@@ -259,6 +229,10 @@ export const scenes: Scene[] = [
       { image: images.cage, alt: 'An open server cage.', label: 'Off switch', title: 'We can’t switch off the world.', copy: 'Hospitals, banks and water supplies depend on the internet and electricity. They can’t simply be cut off.' },
     ],
     band: [
+      { kind: 'growth' },
+      { kind: 'pond' },
+      { kind: 'evidence', ...acceleration.evidence },
+      ...acceleration.quotes.map((quote) => ({ kind: 'quote' as const, ...quote })),
       {
         kind: 'timeline',
         title: 'July 2026: what happened',
@@ -296,12 +270,20 @@ export const scenes: Scene[] = [
         ],
       },
     ],
+    upside: {
+      title: 'Test it before it ships.',
+      text: 'Flying became safe through inspections and shared incident reports. AI can follow the same path.',
+      points: ['Independent audits before a model reaches millions', 'Mandatory incident reports, as in aviation', 'A brake on the largest training runs — OpenAI paused its own after the incident'],
+      image: '/images/v2/benefit-06-forecast-v1.jpg',
+      alt: 'A calm control room where experts watch a map and warnings on large screens.',
+      sources: [sources.book, sources.openaiRoad],
+    },
   },
   {
     id: 'not-needed',
-    label: 'WHAT WILL WE LIVE ON',
+    label: 'WHO DECIDES',
     status: 'extreme',
-    chain: 'people',
+    chain: 'power',
     layout: 'triptych',
     title: { lead: 'What if we’re', accent: 'not needed?' },
     panels: [
@@ -335,11 +317,20 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'If that economic leverage goes away, then the implicit social contract of democracy may stop working.', person: 'Dario Amodei', role: 'CEO, Anthropic · 2026', source: sources.amodei },
+      ...split.band,
     ],
+    upside: {
+      title: 'Keep people in charge.',
+      text: 'If AI’s profits are shared and big decisions stay democratic, people stay needed — as citizens, not just workers.',
+      points: ['Public funds and stakes so everyone shares AI’s gains', 'Rules written by elected governments, not only by companies', 'International agreements — AI doesn’t stop at borders'],
+      image: '/images/v2/rules-03-citizens-v2.jpg',
+      alt: 'A town hall meeting where a woman asks officials a question.',
+      sources: [sources.openaiPolicy, sources.book],
+    },
   },
   {
     id: 'rules',
-    label: 'SO WHAT DO WE DO',
+    label: 'THE RULES',
     status: 'answer',
     chain: 'rules',
     layout: 'triptych',
@@ -390,54 +381,7 @@ export const scenes: Scene[] = [
         ],
       },
       { kind: 'quote', quote: 'Before we do that, however, it’s vital to acknowledge a central truth: regulation alone is not enough.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 13 — which is why all the steps are needed at once', source: sources.book },
-    ],
-  },
-  {
-    id: 'the-stakes',
-    label: 'FIRST, THE STAKES',
-    status: 'today',
-    layout: 'mosaic',
-    title: { lead: 'First, the stakes.', accent: 'The same AI could heal, feed and teach.' },
-    panels: [
-      { image: images.medicine, label: 'Earlier diagnosis', caption: 'AI catches what’s easy to miss', alt: 'A doctor and a patient look at a scan on which AI has gently marked one spot.', focus: 'center 55%' },
-      { image: images.science, label: 'New medicines', caption: 'An antibiotic found among 100M molecules', alt: 'A scientist in a lab looks at a glowing 3D model of a protein.', focus: 'center 40%' },
-      { image: images.energy, label: 'Clean energy', caption: 'Cheaper solar, wind and batteries', alt: 'Solar fields and wind turbines at dawn; an engineer checks the grid on a tablet.' },
-      { image: images.food, label: 'Food', caption: 'Crops that survive the heat', alt: 'Farmers inspect healthy crops in a hot summer while a drone hovers over the field.' },
-      { image: images.forecast, label: 'Early warnings', caption: 'Floods and fires predicted earlier', alt: 'A forecasting center: meteorologists look at a river map with a flood risk highlighted.' },
-      { image: images.time, label: 'School', caption: 'Support for teachers', alt: 'A teacher kneels beside a child and helps them, while a laptop handles paperwork in the background.', focus: 'center 60%' },
-    ],
-    explain: [
-      { image: images.medicine, alt: 'A doctor discussing an AI-assisted scan with a patient.', label: 'Health', title: 'Better, cheaper care.', copy: 'Doctors assisted by AI find more cancers, and AI searches millions of molecules for new medicines.' },
-      { image: images.energy, alt: 'Solar and wind farms at dawn.', label: 'The planet', title: 'Help where politics is stuck.', copy: 'The book’s author hopes AI will help us switch to renewable energy, grow food in a hotter climate and predict floods and fires.' },
-      { image: images.time, alt: 'A teacher helping a child.', label: 'On one condition', title: 'These benefits won’t come by themselves.', copy: 'They reach everyone only if we set the rules: who is responsible for harm and how the gains are shared.' },
-    ],
-    band: [
-      { kind: 'quote', quote: 'They will make health care both higher-quality and more affordable. They will help us invent tools to bring about the transition to renewable energy and combat climate change at a time when politics has stalled, and support teachers, helping to increase the effectiveness of underfunded education systems.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 9 — on AI and synthetic biology', source: sources.book },
-      {
-        kind: 'stats',
-        items: [
-          { value: '29%', label: 'more breast cancers detected with AI-supported screening — with no rise in false alarms', source: sources.masai },
-          { value: '100M', label: 'molecules searched by an AI system to find halicin — the first antibiotic discovered with machine learning (ch. 7)', source: sources.book },
-          { value: '200M', label: 'protein structures predicted by AlphaFold — 2024 Nobel Prize in Chemistry', source: sources.nobel },
-        ],
-      },
-      {
-        kind: 'stats',
-        items: [
-          { value: '−82%', label: 'drop in the cost of solar power over a decade — and it keeps falling (ch. 11)', source: sources.book },
-          { value: '~9%', label: 'of people live in extreme poverty today. In the early 1800s almost everyone did. Technology changed that (ch. 8)', source: sources.book },
-        ],
-      },
-      {
-        kind: 'evidence',
-        title: 'What tech leaders hope for',
-        items: [
-          { kicker: 'Bill Gates · 2023', value: 'Less inequity', text: '“AI can reduce some of the world’s worst inequities.” He calls it “as fundamental as the creation of the microprocessor, the personal computer, the Internet, and the mobile phone.”', source: sources.gatesAge },
-          { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'An end to disease?', text: '“One day maybe we can cure all disease with the help of AI… Maybe within the next decade or so.” He also talks of “radical abundance” — the elimination of scarcity.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
-          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 years → 10', text: '50–100 years of medical progress compressed into 5–10, the healthy lifespan doubled, billions lifted out of poverty — his vision if AI goes well.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
-          { kicker: 'Sam Altman · OpenAI · 2024', value: 'Shared prosperity', text: '“In the future, everyone’s lives can be better than anyone’s life is now.” He also envisions a personal AI tutor for every child.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
-        ],
-      },
+      ...calm.blocks,
     ],
   },
 ];
