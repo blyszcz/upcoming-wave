@@ -32,7 +32,8 @@
   .uw-bars li { grid-template-columns: 1fr; gap: 8px; }
   .uw-loop-ring { display: none; }
   /* Hero on phones: the two-futures photo is a band on top, the copy sits below it on ink. */
-  .uw-hero { --hero-band: max(300px, 50svh); display: block; min-height: 100svh; }
+  /* The photo takes whatever the copy leaves free: ~54% on a 390x844 phone, more on taller screens, never under 300px. */
+  .uw-hero { --hero-band: max(300px, min(60svh, calc(100svh - 390px))); display: block; min-height: 100svh; }
   .uw-compare, .uw-hero-shade { bottom: auto; height: var(--hero-band); }
   .uw-hero-shade { background: linear-gradient(0deg, var(--ink) 0%, rgba(7, 11, 16, 0) 38%); }
   .uw-compare-divider { bottom: auto; height: var(--hero-band); }
