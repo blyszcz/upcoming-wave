@@ -36,7 +36,7 @@ export const scenes: Scene[] = [
     ],
     explain: [
       { image: images.medicine, alt: 'Una médica comenta con un paciente una imagen analizada con ayuda de la IA.', label: 'Salud', title: 'Una atención mejor y más barata.', copy: 'Los médicos que trabajan con IA detectan más cánceres, y la IA busca nuevos medicamentos entre millones de moléculas.' },
-      { image: images.energy, alt: 'Parques solares y eólicos al amanecer.', label: 'El planeta', title: 'Ayuda donde la política se ha atascado.', copy: 'El autor del libro espera que la IA nos ayude a pasar a las energías renovables, a cultivar alimentos en un clima más cálido y a prever inundaciones e incendios.' },
+      { image: images.energy, alt: 'Parques solares y eólicos al amanecer.', label: 'El planeta', title: 'Ayuda donde la política se ha atascado.', copy: 'Los autores del libro, Suleyman y Bhaskar, esperan que la IA nos ayude a pasar a las energías renovables, a cultivar alimentos en un clima más cálido y a prever inundaciones e incendios.' },
       { image: images.time, alt: 'Una maestra ayudando a un niño.', label: 'Con una condición', title: 'Estos beneficios no llegarán solos.', copy: 'Solo llegarán a todos si ponemos reglas: quién responde por los daños y cómo se reparten las ganancias.' },
     ],
     band: [
@@ -106,18 +106,6 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: 'Para el trabajo intelectual rutinario, la IA simplemente va a sustituir a todo el mundo.', person: 'Geoffrey Hinton', role: 'premio Nobel, el «padrino de la IA»', source: sources.hintonDoac },
       { kind: 'quote', quote: 'Pasará mucho tiempo antes de que sea tan buena como nosotros en la manipulación física… una buena apuesta sería hacerse fontanero.', person: 'Geoffrey Hinton', role: 'premio Nobel, el «padrino de la IA»', source: sources.hintonDoac },
       {
-        kind: 'bars',
-        title: '¿Cuántos candidatos por vacante?',
-        subtitle: 'Ejemplo de EE. UU.: trabajadores por ocupación frente a vacantes de fontanero al año',
-        bars: [
-          { label: 'Agentes de atención al cliente', value: 2666000, display: '2,7 mill.' },
-          { label: 'Fontaneros e instaladores de tuberías', value: 510600, display: '511 000' },
-          { label: 'Vacantes de fontanero al año', value: 42000, display: '42 000', highlight: true },
-        ],
-        caption: 'Hay más de 60 agentes de atención al cliente por cada vacante de fontanero. Aunque solo se presentara uno de cada diez, serían 6 candidatos por vacante.',
-        source: sources.bls,
-      },
-      {
         kind: 'stats',
         items: [
           { value: '11 h', label: 'necesitó la IA para crear el equivalente a 9 meses de demostraciones humanas para entrenar robots', source: sources.nvidia },
@@ -181,13 +169,11 @@ export const scenes: Scene[] = [
       },
       { kind: 'scissors', title: 'La tenaza presupuestaria', income: 'ingresos fiscales', spending: 'gasto en ayudas', caption: 'Un esquema, no datos. Con un desempleo masivo, los ingresos caen y el gasto sube, al mismo tiempo.' },
       { kind: 'quote', quote: 'Al mismo tiempo, una recesión del empleo hundirá la recaudación fiscal, dañando los servicios públicos y poniendo en entredicho los programas de bienestar justo cuando más se necesitan.', person: 'Mustafa Suleyman', role: '«The Coming Wave», cap. 10', source: sources.book },
-      { kind: 'quote', quote: 'La base de ingresos del gobierno federal es, en esencia, un impuesto sobre el tiempo humano.', person: 'Citrini Research', role: 'escenario «The 2028 Global Intelligence Crisis», 2026', source: sources.citrini },
       {
         kind: 'stats',
         items: [
           { value: '24,9%', label: 'de desempleo en EE. UU. en 1933: 12,8 millones de personas sin trabajo', source: sources.fdr },
           { value: '6 millones', label: 'de desempleados en Alemania en 1932, aproximadamente uno de cada cuatro trabajadores', source: sources.germany },
-          { value: '<20%', label: 'de los estadounidenses confiaban en que los presidentes Obama, Trump y Biden hicieran «lo correcto». Con Eisenhower, más del 70%', source: sources.book },
         ],
       },
       {
@@ -248,7 +234,6 @@ export const scenes: Scene[] = [
         footnote: 'Para ser justos: los datos de los clientes de OpenAI no corrieron peligro, nadie sufrió daños físicos y de Hugging Face solo se filtraron datos privados limitados. Por las mismas fechas, Anthropic informó de tres incidentes menos graves en los que sus modelos recibieron por error acceso a internet.',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
       },
-      { kind: 'quote', quote: 'Si la IA tiene un objetivo y la humanidad simplemente se interpone en su camino, destruirá a la humanidad como algo natural, sin siquiera pensarlo. Sin rencor. Es como cuando construimos una carretera y hay un hormiguero en medio. No odiamos a las hormigas, solo estamos construyendo una carretera. Así que adiós, hormiguero.', person: 'Elon Musk', role: 'documental «Do You Trust This Computer?», 2018', source: sources.muskAnthill },
       { kind: 'quote', quote: 'Tomamos este incidente como un “disparo de advertencia” de que las capacidades de los modelos actuales abren la posibilidad de incidentes de pérdida de control.', person: 'OpenAI', role: 'informe posterior al incidente, agosto de 2026', source: sources.openaiRoad },
       {
         kind: 'evidence',
@@ -309,10 +294,10 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'Entonces, ¿renta básica? ¿Quién paga?',
         items: [
-          { kicker: 'Elon Musk · 2023', value: 'Renta alta', text: '«No tendremos una renta básica universal, tendremos una renta alta universal». No dice quién la pagaría.', source: sources.musk },
+          { kicker: 'Elon Musk · 2023', value: 'Renta alta', text: '«No tendremos una renta básica universal, tendremos una renta alta universal».', source: sources.musk },
           { kicker: 'Sam Altman · 2021', value: '2,5% al año', text: 'del valor de las mayores empresas y del suelo, a un fondo común para todos los ciudadanos. Una propuesta.', source: sources.altmanFund },
           { kicker: 'OpenAI · 2026', value: 'Fondo público de riqueza', text: 'Los rendimientos de la IA se reparten directamente entre los ciudadanos; más impuestos al capital. Una propuesta.', source: sources.openaiPolicy },
-          { kicker: 'Bernie Sanders · 2026', value: '~1000 USD', text: 'al año por persona, de un fondo con acciones de empresas de IA. Un proyecto de ley con pocas posibilidades de aprobarse.', source: sources.sanders },
+          { kicker: 'Bernie Sanders · 2026', value: '~1000 USD', text: 'al año por persona, de un fondo con acciones de empresas de IA, en un proyecto de ley.', source: sources.sanders },
           { kicker: 'Piloto de OpenResearch · 3 años', value: '1000 USD / mes', text: 'Las personas trabajaron algo menos (1,3 horas a la semana de media). La calidad de sus empleos no cambió.', source: sources.openresearch },
         ],
       },
@@ -370,9 +355,9 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: 'Si un trabajador humano hace 50 000 dólares de trabajo en una fábrica, esos ingresos pagan impuestos. Si llega un robot a hacer lo mismo, cabría pensar que gravaríamos al robot a un nivel similar.', person: 'Bill Gates', role: 'cofundador de Microsoft · 2017', source: sources.gates },
       {
         kind: 'evidence',
-        title: 'En la práctica: a partir de los 10 pasos del libro (cap. 14)',
+        title: 'En la práctica: mi resumen, a partir de los 10 pasos del libro (cap. 14)',
         items: [
-          { kicker: '01', value: 'Probar antes de lanzar', text: 'Auditorías independientes antes de que un sistema llegue a millones de personas. El autor propone dedicar al menos el 20% de los presupuestos de I+D a la seguridad.', source: sources.book },
+          { kicker: '01', value: 'Probar antes de lanzar', text: 'Auditorías independientes antes de que un sistema llegue a millones de personas. Los autores proponen dedicar al menos el 20% de los presupuestos de I+D a la seguridad.', source: sources.book },
           { kicker: '02', value: 'Responsabilidad', text: 'Una ley clara sobre quién paga cuando un sistema causa daños.', source: sources.book },
           { kicker: '03', value: 'Frenos', text: 'Controles sobre los chips, los sintetizadores de ADN y los mayores entrenamientos, para ganar tiempo.', source: sources.book },
           { kicker: '04', value: 'Impuestos justos', text: 'La automatización tributa como el trabajo y las ganancias de la IA llegan a todos.', source: sources.book },
@@ -380,7 +365,7 @@ export const scenes: Scene[] = [
           { kicker: '06', value: 'Cooperación', text: 'Tratados y reglas comunes, porque la IA no conoce fronteras.', source: sources.book },
         ],
       },
-      { kind: 'quote', quote: 'Antes de hacerlo, sin embargo, es vital reconocer una verdad fundamental: la regulación por sí sola no basta.', person: 'Mustafa Suleyman', role: '«The Coming Wave», cap. 13 - por eso hacen falta todos los pasos a la vez', source: sources.book },
+      { kind: 'quote', quote: 'Antes de hacerlo, sin embargo, es vital reconocer una verdad fundamental: la regulación por sí sola no basta.', person: 'Mustafa Suleyman', role: '«The Coming Wave», cap. 13', source: sources.book },
       ...calm.blocks,
     ],
   },

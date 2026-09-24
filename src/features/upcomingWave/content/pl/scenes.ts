@@ -114,7 +114,7 @@ export const scenes: Scene[] = [
     ],
     explain: [
       { image: images.medicine, alt: 'Lekarz omawia z pacjentką badanie wspierane przez AI.', label: 'Zdrowie', title: 'Lepsze i tańsze leczenie.', copy: 'Lekarze z pomocą AI wykrywają więcej nowotworów, a AI przeszukuje miliony cząsteczek w poszukiwaniu nowych leków.' },
-      { image: images.energy, alt: 'Farmy słoneczne i wiatrowe o świcie.', label: 'Planeta', title: 'Pomoc tam, gdzie polityka utknęła.', copy: 'Autor książki liczy, że AI pomoże przejść na energię odnawialną, uprawiać żywność w cieplejszym klimacie i przewidywać powodzie czy pożary.' },
+      { image: images.energy, alt: 'Farmy słoneczne i wiatrowe o świcie.', label: 'Planeta', title: 'Pomoc tam, gdzie polityka utknęła.', copy: 'Autorzy książki, Suleyman i Bhaskar, liczą, że AI pomoże przejść na energię odnawialną, uprawiać żywność w cieplejszym klimacie i przewidywać powodzie czy pożary.' },
       { image: images.time, alt: 'Nauczycielka pomaga dziecku.', label: 'Pod warunkiem', title: 'Te korzyści nie przyjdą same.', copy: 'Trafią do wszystkich tylko wtedy, gdy ustalimy zasady: kto odpowiada za szkody i jak dzielimy zyski.' },
     ],
     band: [
@@ -217,18 +217,6 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: 'Przy rutynowej pracy umysłowej AI po prostu zastąpi wszystkich.', person: 'Geoffrey Hinton', role: 'noblista, „ojciec chrzestny AI”', source: sources.hintonDoac },
       { kind: 'quote', quote: 'Minie dużo czasu, zanim AI będzie tak sprawna fizycznie jak my… dobrym zakładem byłoby zostać hydraulikiem.', person: 'Geoffrey Hinton', role: 'noblista, „ojciec chrzestny AI”', source: sources.hintonDoac },
       {
-        kind: 'bars',
-        title: 'Ilu chętnych na jedno miejsce?',
-        subtitle: 'Przykład USA: liczba pracowników a wolne miejsca dla hydraulików',
-        bars: [
-          { label: 'Konsultanci obsługi klienta', value: 2666000, display: '2,7 mln' },
-          { label: 'Hydraulicy i instalatorzy', value: 510600, display: '511 tys.' },
-          { label: 'Wolne miejsca dla hydraulików rocznie', value: 42000, display: '42 tys.', highlight: true },
-        ],
-        caption: 'Na jedno wolne miejsce hydraulika przypada ponad 60 konsultantów. Nawet gdyby zgłosił się tylko co dziesiąty - to 6 chętnych na miejsce.',
-        source: sources.bls,
-      },
-      {
         kind: 'stats',
         items: [
           { value: '11 h', label: 'tyle AI potrzebowała, by stworzyć równowartość 9 miesięcy ludzkich demonstracji do trenowania robotów', source: sources.nvidia },
@@ -292,13 +280,11 @@ export const scenes: Scene[] = [
       },
       { kind: 'scissors', title: 'Nożyce budżetowe', income: 'wpływy z podatków', spending: 'wydatki na wsparcie', caption: 'Schemat, nie dane. Przy masowym bezrobociu wpływy spadają, a wydatki rosną - w tym samym momencie.' },
       { kind: 'quote', quote: 'Recesja na rynku pracy spowoduje tąpnięcie we wpływach podatkowych, osłabiając usługi publiczne i zagrażając programom opieki społecznej wtedy, gdy będą najbardziej potrzebne.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 10', source: sources.book },
-      { kind: 'quote', quote: 'Baza dochodów rządu federalnego USA to w istocie podatek od ludzkiego czasu.', person: 'Citrini Research', role: 'scenariusz „The 2028 Global Intelligence Crisis”, 2026', source: sources.citrini },
       {
         kind: 'stats',
         items: [
           { value: '24,9%', label: 'bezrobocia w USA w 1933 r. - 12,8 mln ludzi bez pracy', source: sources.fdr },
           { value: '6 mln', label: 'bezrobotnych w Niemczech w 1932 r. - mniej więcej co czwarty pracownik', source: sources.germany },
-          { value: '<20%', label: 'Amerykanów ufało, że prezydenci Obama, Trump i Biden postępują słusznie. Za Eisenhowera - ponad 70%', source: sources.book },
         ],
       },
       {
@@ -359,7 +345,6 @@ export const scenes: Scene[] = [
         footnote: 'Uczciwie mówiąc: dane klientów OpenAI były bezpieczne, nikt nie ucierpiał fizycznie, a z Hugging Face wyciekło niewiele prywatnych danych. Anthropic ujawnił w tym czasie trzy mniej poważne incydenty, w których jego modele przez pomyłkę dostały dostęp do internetu.',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
       },
-      { kind: 'quote', quote: 'Jeśli AI ma cel, a ludzkość po prostu stoi jej na drodze, zniszczy ludzkość przy okazji, nawet się nad tym nie zastanawiając. Bez urazy. To tak, jakbyśmy budowali drogę, a na drodze stało mrowisko. Nie nienawidzimy mrówek - po prostu budujemy drogę. Więc żegnaj, mrowisko.', person: 'Elon Musk', role: 'film dokumentalny „Do You Trust This Computer?”, 2018', source: sources.muskAnthill },
       { kind: 'quote', quote: 'Traktujemy ten incydent jako „strzał ostrzegawczy”, że możliwości dzisiejszych modeli stwarzają ryzyko incydentów z utratą kontroli.', person: 'OpenAI', role: 'raport po incydencie, sierpień 2026', source: sources.openaiRoad },
       {
         kind: 'evidence',
@@ -420,10 +405,10 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'To może dochód podstawowy? Kto za niego zapłaci?',
         items: [
-          { kicker: 'Elon Musk · 2023', value: 'Wysoki dochód', text: '„Nie będziemy mieć powszechnego dochodu podstawowego, będziemy mieć powszechny wysoki dochód.” Nie mówi, kto za niego zapłaci.', source: sources.musk },
+          { kicker: 'Elon Musk · 2023', value: 'Wysoki dochód', text: '„Nie będziemy mieć powszechnego dochodu podstawowego, będziemy mieć powszechny wysoki dochód.”', source: sources.musk },
           { kicker: 'Sam Altman · 2021', value: '2,5% rocznie', text: 'wartości największych firm i ziemi - do wspólnego funduszu dla wszystkich obywateli. Propozycja.', source: sources.altmanFund },
           { kicker: 'OpenAI · 2026', value: 'Fundusz publiczny', text: 'Zyski z AI trafiają wprost do obywateli; wyższe podatki od kapitału. Propozycja.', source: sources.openaiPolicy },
-          { kicker: 'Bernie Sanders · 2026', value: '~1\u00a0000 $', text: 'rocznie na osobę z funduszu udziałów firm AI. Projekt ustawy, małe szanse na przyjęcie.', source: sources.sanders },
+          { kicker: 'Bernie Sanders · 2026', value: '~1\u00a0000 $', text: 'rocznie na osobę z funduszu udziałów firm AI - w projekcie ustawy.', source: sources.sanders },
           { kicker: 'Pilotaż OpenResearch · 3 lata', value: '1\u00a0000 $ / mies.', text: 'Ludzie pracowali nieco mniej (średnio −1,3 h tygodniowo). Jakość ich zatrudnienia się nie zmieniła.', source: sources.openresearch },
         ],
       },
@@ -481,9 +466,9 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: 'Jeśli pracownik wykonuje w fabryce pracę wartą 50\u00a0000 dolarów, ten dochód jest opodatkowany. Jeśli robot robi to samo, można by oczekiwać, że opodatkujemy go na podobnym poziomie.', person: 'Bill Gates', role: 'współzałożyciel Microsoftu · 2017', source: sources.gates },
       {
         kind: 'evidence',
-        title: 'W praktyce: na podstawie 10 kroków z książki (rozdz. 14)',
+        title: 'W praktyce: moje podsumowanie na podstawie 10 kroków z książki (rozdz. 14)',
         items: [
-          { kicker: '01', value: 'Testy przed wdrożeniem', text: 'Niezależne audyty, zanim system trafi do milionów ludzi. Autor proponuje, by co najmniej 20% budżetów na badania i rozwój szło na bezpieczeństwo.', source: sources.book },
+          { kicker: '01', value: 'Testy przed wdrożeniem', text: 'Niezależne audyty, zanim system trafi do milionów ludzi. Autorzy proponują, by co najmniej 20% budżetów na badania i rozwój szło na bezpieczeństwo.', source: sources.book },
           { kicker: '02', value: 'Odpowiedzialność', text: 'Jasne prawo: kto płaci, gdy system wyrządzi szkodę.', source: sources.book },
           { kicker: '03', value: 'Hamulce', text: 'Kontrola chipów, syntezatorów DNA i największych treningów - żeby zyskać czas.', source: sources.book },
           { kicker: '04', value: 'Uczciwe podatki', text: 'Automatyzacja jest opodatkowana jak praca, a zyski z AI trafiają do wszystkich.', source: sources.book },
@@ -491,7 +476,7 @@ export const scenes: Scene[] = [
           { kicker: '06', value: 'Współpraca państw', text: 'Traktaty i wspólne zasady - bo AI nie zna granic.', source: sources.book },
         ],
       },
-      { kind: 'quote', quote: 'Należy uzmysłowić sobie jedną kardynalną prawdę: same uregulowania to za mało.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 13 - dlatego potrzebne są wszystkie kroki naraz', source: sources.book },
+      { kind: 'quote', quote: 'Należy uzmysłowić sobie jedną kardynalną prawdę: same uregulowania to za mało.', person: 'Mustafa Suleyman', role: '„Nadchodząca fala”, rozdz. 13', source: sources.book },
       ...calm.blocks,
     ],
   },

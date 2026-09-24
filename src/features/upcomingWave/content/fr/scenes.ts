@@ -36,7 +36,7 @@ export const scenes: Scene[] = [
     ],
     explain: [
       { image: images.medicine, alt: 'Une médecin commente avec un patient un scanner analysé avec l’aide de l’IA.', label: 'Santé', title: 'Des soins meilleurs et moins chers.', copy: 'Aidés par l’IA, les médecins détectent plus de cancers, et l’IA passe au crible des millions de molécules à la recherche de nouveaux médicaments.' },
-      { image: images.energy, alt: 'Des parcs solaires et éoliens à l’aube.', label: 'La planète', title: 'Aider là où la politique bloque.', copy: 'L’auteur du livre espère que l’IA nous aidera à passer aux énergies renouvelables, à cultiver sous un climat plus chaud et à prévoir inondations et incendies.' },
+      { image: images.energy, alt: 'Des parcs solaires et éoliens à l’aube.', label: 'La planète', title: 'Aider là où la politique bloque.', copy: 'Les auteurs du livre, Suleyman et Bhaskar, espèrent que l’IA nous aidera à passer aux énergies renouvelables, à cultiver sous un climat plus chaud et à prévoir inondations et incendies.' },
       { image: images.time, alt: 'Une enseignante qui aide un enfant.', label: 'À une condition', title: 'Ces bénéfices ne viendront pas seuls.', copy: 'Ils n’atteindront tout le monde que si nous fixons les règles : qui est responsable des préjudices et comment les gains sont partagés.' },
     ],
     band: [
@@ -106,18 +106,6 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: 'Pour le travail intellectuel banal, l’IA va tout simplement remplacer tout le monde.', person: 'Geoffrey Hinton', role: 'Prix Nobel, le « parrain de l’IA »', source: sources.hintonDoac },
       { kind: 'quote', quote: 'Il faudra longtemps avant qu’elle soit aussi douée que nous pour la manipulation physique… un bon pari serait de devenir plombier.', person: 'Geoffrey Hinton', role: 'Prix Nobel, le « parrain de l’IA »', source: sources.hintonDoac },
       {
-        kind: 'bars',
-        title: 'Combien de candidats par poste ?',
-        subtitle: 'Exemple américain : effectifs par métier face aux postes de plombier ouverts chaque année',
-        bars: [
-          { label: 'Conseillers du service client', value: 2666000, display: '2,7 M' },
-          { label: 'Plombiers et tuyauteurs', value: 510600, display: '511 000' },
-          { label: 'Postes de plombier ouverts par an', value: 42000, display: '42 000', highlight: true },
-        ],
-        caption: 'Il y a plus de 60 conseillers du service client pour chaque poste de plombier. Même si un sur dix seulement postulait, cela ferait 6 candidats par poste.',
-        source: sources.bls,
-      },
-      {
         kind: 'stats',
         items: [
           { value: '11 h', label: 'c’est le temps qu’il a fallu à l’IA pour créer l’équivalent de 9 mois de démonstrations humaines pour entraîner des robots', source: sources.nvidia },
@@ -181,13 +169,11 @@ export const scenes: Scene[] = [
       },
       { kind: 'scissors', title: 'L’étau budgétaire', income: 'recettes fiscales', spending: 'dépenses d’aide', caption: 'Un schéma, pas des données. Avec un chômage de masse, les recettes baissent pendant que les dépenses augmentent - au même moment.' },
       { kind: 'quote', quote: 'Dans le même temps, une récession de l’emploi fera s’effondrer les recettes fiscales, abîmant les services publics et remettant en question les programmes d’aide sociale au moment même où l’on en a le plus besoin.', person: 'Mustafa Suleyman', role: '« The Coming Wave », chap. 10', source: sources.book },
-      { kind: 'quote', quote: 'Les recettes de l’État fédéral reposent, pour l’essentiel, sur un impôt sur le temps humain.', person: 'Citrini Research', role: 'scénario « The 2028 Global Intelligence Crisis », 2026', source: sources.citrini },
       {
         kind: 'stats',
         items: [
           { value: '24,9 %', label: 'de chômage aux États-Unis en 1933 - 12,8 millions de personnes sans emploi', source: sources.fdr },
           { value: '6 M', label: 'de chômeurs en Allemagne en 1932 - environ un travailleur sur quatre', source: sources.germany },
-          { value: '<20 %', label: 'des Américains faisaient confiance aux présidents Obama, Trump et Biden pour « faire ce qui est juste ». Sous Eisenhower, plus de 70 %', source: sources.book },
         ],
       },
       {
@@ -248,7 +234,6 @@ export const scenes: Scene[] = [
         footnote: 'Pour être juste : les données des clients d’OpenAI n’ont pas été compromises, personne n’a été blessé physiquement, et seule une quantité limitée de données privées a fuité de Hugging Face. Anthropic a signalé à la même période trois incidents moins graves, au cours desquels ses modèles avaient reçu par erreur un accès à Internet.',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
       },
-      { kind: 'quote', quote: 'Si l’IA a un objectif et que l’humanité se trouve sur son chemin, elle détruira l’humanité tout naturellement, sans même y penser. Sans rancune. C’est comme quand on construit une route et qu’une fourmilière se trouve sur le tracé. On ne déteste pas les fourmis, on construit simplement une route. Alors, adieu la fourmilière.', person: 'Elon Musk', role: 'documentaire « Do You Trust This Computer? », 2018', source: sources.muskAnthill },
       { kind: 'quote', quote: 'Nous considérons cet incident comme un « coup de semonce » : les capacités des modèles actuels rendent possibles des incidents de perte de contrôle.', person: 'OpenAI', role: 'rapport post-incident, août 2026', source: sources.openaiRoad },
       {
         kind: 'evidence',
@@ -309,10 +294,10 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'Alors, un revenu de base ? Payé par qui ?',
         items: [
-          { kicker: 'Elon Musk · 2023', value: 'Revenu élevé', text: '« Nous n’aurons pas de revenu universel de base, nous aurons un revenu universel élevé. » Il ne dit pas qui le financerait.', source: sources.musk },
+          { kicker: 'Elon Musk · 2023', value: 'Revenu élevé', text: '« Nous n’aurons pas de revenu universel de base, nous aurons un revenu universel élevé. »', source: sources.musk },
           { kicker: 'Sam Altman · 2021', value: '2,5 % par an', text: 'de la valeur des plus grandes entreprises et des terres - versés dans un fonds commun pour tous les citoyens. Une proposition.', source: sources.altmanFund },
           { kicker: 'OpenAI · 2026', value: 'Fonds public', text: 'Des revenus de l’IA redistribués directement aux citoyens ; des impôts plus élevés sur le capital. Une proposition.', source: sources.openaiPolicy },
-          { kicker: 'Bernie Sanders · 2026', value: '~1 000 $', text: 'par an et par personne, issus d’un fonds d’actions d’entreprises d’IA. Une proposition de loi qui a peu de chances d’être adoptée.', source: sources.sanders },
+          { kicker: 'Bernie Sanders · 2026', value: '~1 000 $', text: 'par an et par personne, issus d’un fonds d’actions d’entreprises d’IA, selon une proposition de loi.', source: sources.sanders },
           { kicker: 'Expérience OpenResearch · 3 ans', value: '1 000 $ / mois', text: 'Les gens ont un peu moins travaillé (1,3 heure par semaine en moyenne). La qualité de leurs emplois n’a pas changé.', source: sources.openresearch },
         ],
       },
@@ -370,9 +355,9 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: 'Si un ouvrier effectue 50 000 dollars de travail dans une usine, ce revenu est imposé. Si un robot vient faire la même chose, on pourrait s’attendre à ce que le robot soit taxé à un niveau similaire.', person: 'Bill Gates', role: 'Cofondateur de Microsoft · 2017', source: sources.gates },
       {
         kind: 'evidence',
-        title: 'En pratique : d’après les 10 étapes du livre (chap. 14)',
+        title: 'En pratique : ma synthèse, d’après les 10 étapes du livre (chap. 14)',
         items: [
-          { kicker: '01', value: 'Tester avant le lancement', text: 'Des audits indépendants avant qu’un système atteigne des millions de personnes. L’auteur propose de consacrer au moins 20 % des budgets de R&D à la sécurité.', source: sources.book },
+          { kicker: '01', value: 'Tester avant le lancement', text: 'Des audits indépendants avant qu’un système atteigne des millions de personnes. Les auteurs proposent de consacrer au moins 20 % des budgets de R&D à la sécurité.', source: sources.book },
           { kicker: '02', value: 'Responsabilité', text: 'Une loi claire sur qui paie quand un système cause un préjudice.', source: sources.book },
           { kicker: '03', value: 'Freins', text: 'Des contrôles sur les puces, les synthétiseurs d’ADN et les plus grands entraînements - pour gagner du temps.', source: sources.book },
           { kicker: '04', value: 'Impôts justes', text: 'L’automatisation est taxée comme le travail, et les gains de l’IA profitent à tous.', source: sources.book },
@@ -380,7 +365,7 @@ export const scenes: Scene[] = [
           { kicker: '06', value: 'Coopération', text: 'Des traités et des règles communes - parce que l’IA ne connaît pas de frontières.', source: sources.book },
         ],
       },
-      { kind: 'quote', quote: 'Avant cela, toutefois, il est essentiel de reconnaître une vérité centrale : la réglementation seule ne suffit pas.', person: 'Mustafa Suleyman', role: '« The Coming Wave », chap. 13 - c’est pourquoi toutes les étapes sont nécessaires à la fois', source: sources.book },
+      { kind: 'quote', quote: 'Avant cela, toutefois, il est essentiel de reconnaître une vérité centrale : la réglementation seule ne suffit pas.', person: 'Mustafa Suleyman', role: '« The Coming Wave », chap. 13', source: sources.book },
       ...calm.blocks,
     ],
   },

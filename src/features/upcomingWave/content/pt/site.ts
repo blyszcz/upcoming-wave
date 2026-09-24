@@ -3,15 +3,15 @@ export const site = {
   meta: {
     siteName: 'Upcoming Wave',
     home: {
-      title: 'A IA pode ser a melhor coisa que já criamos - ou a pior',
-      description: 'Um guia visual curto sobre o que a IA pode fazer com o trabalho, o dinheiro e o poder, o que pode dar certo e por que quem a constrói está pedindo regras. Todos os fatos têm fonte.',
+      title: 'Quem paga as escolas quando a IA faz o trabalho?',
+      description: 'Um guia visual de 5 minutos baseado em “The Coming Wave”: o que a IA pode consertar, quais empregos e impostos ela pode apagar, o teste de julho de 2026 que escapou e as regras que decidem qual futuro teremos. Todos os fatos têm fonte.',
     },
     sources: {
       title: 'Fontes e método - Upcoming Wave',
-      description: 'Todas as fontes por trás dos números e citações do Upcoming Wave, e como as verificamos.',
+      description: 'Todas as fontes por trás dos números e citações do Upcoming Wave, e como as verifico.',
     },
-    card: { lead: 'Who pays for schools', accent: 'when AI does the work?' },
-    ogAlt: 'A IA pode ser a melhor coisa que já criamos - ou a pior. A mesma onda, dois futuros: escura sobre uma cidade, dourada sobre um parque.',
+    card: { lead: 'Quem paga as escolas', accent: 'quando a IA faz o trabalho?' },
+    ogAlt: 'Quem paga as escolas quando a IA faz o trabalho? A mesma onda, dois futuros: escura sobre uma cidade, dourada sobre um parque.',
   },
   sourcesPage: {
     title: 'Fontes e método',

@@ -3,15 +3,15 @@ export const site = {
   meta: {
     siteName: 'Upcoming Wave',
     home: {
-      title: 'AIは人類最高の発明にも、最悪の発明にもなりうる',
-      description: 'AIが仕事、お金、権力に何をもたらしうるのか、何がうまくいきうるのか、そしてAIを作る人々がなぜルールを求めているのかを、短くビジュアルで解説します。すべての事実に出典があります。',
+      title: 'AIが仕事をする時代、学校の費用は誰が払うのか？',
+      description: '『The Coming Wave』をもとにした5分のビジュアルガイド。AIが解決しうること、消しうる仕事と税収、2026年7月に外へ抜け出したテスト、そしてどの未来になるかを決めるルールを解説します。すべての事実に出典があります。',
     },
     sources: {
       title: '出典と検証方法 | Upcoming Wave',
       description: 'Upcoming Waveに掲載した数字と引用のすべての出典と、その確認方法。',
     },
-    card: { lead: 'Who pays for schools', accent: 'when AI does the work?' },
-    ogAlt: 'AIは人類最高の発明にも、最悪の発明にもなりうる。同じ波と二つの未来。都市を覆う暗い波と、公園の上の黄金色の波。',
+    card: { lead: 'AIが仕事をする時代、', accent: '学校の費用は誰が払う？' },
+    ogAlt: 'AIが仕事をする時代、学校の費用は誰が払うのか？同じ波と二つの未来。都市を覆う暗い波と、公園の上の黄金色の波。',
   },
   sourcesPage: {
     title: '出典と検証方法',

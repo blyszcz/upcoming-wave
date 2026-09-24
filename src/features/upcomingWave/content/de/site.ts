@@ -3,15 +3,15 @@ export const site = {
   meta: {
     siteName: 'Upcoming Wave',
     home: {
-      title: 'KI könnte das Beste werden, was wir je gebaut haben - oder das Schlimmste',
-      description: 'Ein kurzer, bebilderter Überblick: was KI mit Arbeit, Geld und Macht machen könnte, was gut laufen könnte und warum die Menschen, die sie bauen, selbst nach Regeln rufen. Jeder Fakt mit Quelle.',
+      title: 'Wer zahlt für Schulen, wenn KI die Arbeit macht?',
+      description: 'Ein bebilderter 5-Minuten-Überblick nach „The Coming Wave“: was KI lösen könnte, welche Jobs und Steuern sie auslöschen könnte, der Test vom Juli 2026, bei dem KI ausbrach, und die Regeln, die entscheiden, welche Zukunft wir bekommen. Jeder Fakt mit Quelle.',
     },
     sources: {
       title: 'Quellen & Methode - Upcoming Wave',
-      description: 'Alle Quellen hinter den Zahlen und Zitaten auf Upcoming Wave - und wie wir sie prüfen.',
+      description: 'Alle Quellen hinter den Zahlen und Zitaten auf Upcoming Wave - und wie ich sie prüfe.',
     },
-    card: { lead: 'Who pays for schools', accent: 'when AI does the work?' },
-    ogAlt: 'KI könnte das Beste werden, was wir je gebaut haben - oder das Schlimmste. Dieselbe Welle, zwei Zukünfte: dunkel über einer Stadt, golden über einem Park.',
+    card: { lead: 'Wer zahlt für Schulen,', accent: 'wenn KI die Arbeit macht?' },
+    ogAlt: 'Wer zahlt für Schulen, wenn KI die Arbeit macht? Dieselbe Welle, zwei Zukünfte: dunkel über einer Stadt, golden über einem Park.',
   },
   sourcesPage: {
     title: 'Quellen & Methode',

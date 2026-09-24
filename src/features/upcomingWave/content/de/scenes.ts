@@ -36,7 +36,7 @@ export const scenes: Scene[] = [
     ],
     explain: [
       { image: images.medicine, alt: 'Eine Ärztin bespricht mit einem Patienten eine von KI unterstützte Aufnahme.', label: 'Gesundheit', title: 'Bessere, günstigere Versorgung.', copy: 'Ärzte mit KI-Unterstützung finden mehr Krebsfälle, und KI durchsucht Millionen Moleküle nach neuen Medikamenten.' },
-      { image: images.energy, alt: 'Solar- und Windparks im Morgenlicht.', label: 'Unser Planet', title: 'Hilfe, wo die Politik feststeckt.', copy: 'Der Autor des Buches hofft, dass KI uns hilft, auf erneuerbare Energie umzusteigen, Nahrung in einem heißeren Klima anzubauen und Hochwasser und Brände vorherzusagen.' },
+      { image: images.energy, alt: 'Solar- und Windparks im Morgenlicht.', label: 'Unser Planet', title: 'Hilfe, wo die Politik feststeckt.', copy: 'Die Autoren des Buches, Suleyman und Bhaskar, hoffen, dass KI uns hilft, auf erneuerbare Energie umzusteigen, Nahrung in einem heißeren Klima anzubauen und Hochwasser und Brände vorherzusagen.' },
       { image: images.time, alt: 'Eine Lehrerin hilft einem Kind.', label: 'Unter einer Bedingung', title: 'Dieser Nutzen kommt nicht von allein.', copy: 'Er erreicht alle nur, wenn wir Regeln setzen: wer für Schäden verantwortlich ist und wie die Gewinne verteilt werden.' },
     ],
     band: [
@@ -106,18 +106,6 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: 'Bei geistiger Routinearbeit wird KI einfach alle ersetzen.', person: 'Geoffrey Hinton', role: 'Nobelpreisträger, der „Pate der KI“', source: sources.hintonDoac },
       { kind: 'quote', quote: 'Es wird noch lange dauern, bis sie bei körperlicher Geschicklichkeit so gut ist wie wir … eine gute Wette wäre, Klempner zu werden.', person: 'Geoffrey Hinton', role: 'Nobelpreisträger, der „Pate der KI“', source: sources.hintonDoac },
       {
-        kind: 'bars',
-        title: 'Wie viele Bewerber pro Stelle?',
-        subtitle: 'Beispiel USA: Beschäftigte je Beruf gegenüber offenen Klempnerstellen pro Jahr',
-        bars: [
-          { label: 'Kundenservice-Mitarbeiter', value: 2666000, display: '2,7 Mio.' },
-          { label: 'Klempner und Rohrinstallateure', value: 510600, display: '511.000' },
-          { label: 'Offene Klempnerstellen pro Jahr', value: 42000, display: '42.000', highlight: true },
-        ],
-        caption: 'Auf jede offene Klempnerstelle kommen mehr als 60 Kundenservice-Mitarbeiter. Selbst wenn sich nur jeder Zehnte bewirbt, sind das 6 Bewerber pro Stelle.',
-        source: sources.bls,
-      },
-      {
         kind: 'stats',
         items: [
           { value: '11 Std.', label: 'brauchte KI, um so viele Trainingsdaten für Roboter zu erzeugen, wie Menschen in 9 Monaten durch Vormachen liefern', source: sources.nvidia },
@@ -181,13 +169,11 @@ export const scenes: Scene[] = [
       },
       { kind: 'scissors', title: 'Die Haushaltszange', income: 'Steuereinnahmen', spending: 'Sozialausgaben', caption: 'Ein Schema, keine Daten. Bei Massenarbeitslosigkeit sinken die Einnahmen, während die Ausgaben steigen - zur selben Zeit.' },
       { kind: 'quote', quote: 'Zugleich wird eine Rezession auf dem Arbeitsmarkt die Steuereinnahmen einbrechen lassen, öffentliche Dienste beschädigen und Sozialprogramme genau dann infrage stellen, wenn sie am dringendsten gebraucht werden.', person: 'Mustafa Suleyman', role: '„The Coming Wave“, Kap. 10', source: sources.book },
-      { kind: 'quote', quote: 'Die Einnahmebasis der Bundesregierung ist im Grunde eine Steuer auf menschliche Zeit.', person: 'Citrini Research', role: 'Szenario „The 2028 Global Intelligence Crisis“, 2026', source: sources.citrini },
       {
         kind: 'stats',
         items: [
           { value: '24,9 %', label: 'Arbeitslosigkeit in den USA 1933 - 12,8 Millionen Menschen ohne Arbeit', source: sources.fdr },
           { value: '6 Mio.', label: 'Arbeitslose in Deutschland 1932 - etwa jeder vierte Arbeitnehmer', source: sources.germany },
-          { value: '<20 %', label: 'der Amerikaner vertrauten darauf, dass die Präsidenten Obama, Trump und Biden „das Richtige“ tun. Bei Eisenhower waren es über 70 %', source: sources.book },
         ],
       },
       {
@@ -248,7 +234,6 @@ export const scenes: Scene[] = [
         footnote: 'Fairerweise: Die Kundendaten von OpenAI waren sicher, niemand wurde körperlich verletzt, und bei Hugging Face gelangten nur begrenzt private Daten nach außen. Anthropic meldete etwa zur selben Zeit drei weniger schwere Vorfälle, bei denen seine Modelle versehentlich Internetzugang erhielten.',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
       },
-      { kind: 'quote', quote: 'Wenn KI ein Ziel hat und die Menschheit zufällig im Weg steht, wird sie die Menschheit ganz selbstverständlich vernichten, ohne auch nur darüber nachzudenken. Nichts Persönliches. Es ist so, als würden wir eine Straße bauen und zufällig ist ein Ameisenhaufen im Weg. Wir hassen Ameisen nicht, wir bauen nur eine Straße. Also: Auf Wiedersehen, Ameisenhaufen.', person: 'Elon Musk', role: 'Dokumentarfilm „Do You Trust This Computer?“, 2018', source: sources.muskAnthill },
       { kind: 'quote', quote: 'Wir betrachten diesen Vorfall als „Warnschuss“, dass die heutigen Fähigkeiten von Modellen die Möglichkeit von Kontrollverlust-Vorfällen mit sich bringen.', person: 'OpenAI', role: 'Bericht nach dem Vorfall, August 2026', source: sources.openaiRoad },
       {
         kind: 'evidence',
@@ -309,10 +294,10 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'Also Grundeinkommen? Wer zahlt?',
         items: [
-          { kicker: 'Elon Musk · 2023', value: 'Hohes Einkommen', text: '„Wir werden kein bedingungsloses Grundeinkommen haben, sondern ein bedingungsloses hohes Einkommen.“ Wer das bezahlen soll, sagt er nicht.', source: sources.musk },
+          { kicker: 'Elon Musk · 2023', value: 'Hohes Einkommen', text: '„Wir werden kein bedingungsloses Grundeinkommen haben, sondern ein bedingungsloses hohes Einkommen.“', source: sources.musk },
           { kicker: 'Sam Altman · 2021', value: '2,5 % pro Jahr', text: 'vom Wert der größten Unternehmen und von Grund und Boden - in einen gemeinsamen Fonds für alle Bürger. Ein Vorschlag.', source: sources.altmanFund },
           { kicker: 'OpenAI · 2026', value: 'Öffentlicher Fonds', text: 'KI-Erträge werden direkt an die Bürger verteilt; höhere Steuern auf Kapital. Ein Vorschlag.', source: sources.openaiPolicy },
-          { kicker: 'Bernie Sanders · 2026', value: '~1.000 $', text: 'pro Person und Jahr aus einem Fonds mit Aktien von KI-Firmen. Ein Gesetzentwurf mit geringen Chancen.', source: sources.sanders },
+          { kicker: 'Bernie Sanders · 2026', value: '~1.000 $', text: 'pro Person und Jahr aus einem Fonds mit Aktien von KI-Firmen - vorgeschlagen in einem Gesetzentwurf.', source: sources.sanders },
           { kicker: 'OpenResearch-Pilotprojekt · 3 Jahre', value: '1.000 $ / Monat', text: 'Die Menschen arbeiteten etwas weniger (im Schnitt 1,3 Stunden pro Woche). Die Qualität ihrer Jobs änderte sich nicht.', source: sources.openresearch },
         ],
       },
@@ -370,9 +355,9 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: 'Wenn ein menschlicher Arbeiter in einer Fabrik Arbeit im Wert von 50.000 Dollar leistet, wird dieses Einkommen besteuert. Wenn ein Roboter kommt und dasselbe tut, würde man meinen, dass wir den Roboter ähnlich hoch besteuern.', person: 'Bill Gates', role: 'Mitgründer von Microsoft · 2017', source: sources.gates },
       {
         kind: 'evidence',
-        title: 'In der Praxis: nach den 10 Schritten des Buches (Kap. 14)',
+        title: 'In der Praxis: meine Zusammenfassung, gestützt auf die 10 Schritte des Buches (Kap. 14)',
         items: [
-          { kicker: '01', value: 'Erst testen', text: 'Unabhängige Prüfungen, bevor ein System Millionen erreicht. Der Autor schlägt vor, mindestens 20 % der Budgets für Forschung und Entwicklung in Sicherheit zu stecken.', source: sources.book },
+          { kicker: '01', value: 'Erst testen', text: 'Unabhängige Prüfungen, bevor ein System Millionen erreicht. Die Autoren schlagen vor, mindestens 20 % der Budgets für Forschung und Entwicklung in Sicherheit zu stecken.', source: sources.book },
           { kicker: '02', value: 'Haftung', text: 'Klare Gesetze dazu, wer zahlt, wenn ein System Schaden anrichtet.', source: sources.book },
           { kicker: '03', value: 'Bremsen', text: 'Kontrollen für Chips, DNA-Synthesizer und die größten Trainingsläufe - um Zeit zu gewinnen.', source: sources.book },
           { kicker: '04', value: 'Faire Steuern', text: 'Automatisierung wird wie Arbeit besteuert, und die Gewinne der KI erreichen alle.', source: sources.book },
@@ -380,7 +365,7 @@ export const scenes: Scene[] = [
           { kicker: '06', value: 'Zusammenarbeit', text: 'Verträge und gemeinsame Regeln - denn KI kennt keine Grenzen.', source: sources.book },
         ],
       },
-      { kind: 'quote', quote: 'Bevor wir das tun, ist es jedoch entscheidend, eine zentrale Wahrheit anzuerkennen: Regulierung allein reicht nicht aus.', person: 'Mustafa Suleyman', role: '„The Coming Wave“, Kap. 13 - darum braucht es alle Schritte zugleich', source: sources.book },
+      { kind: 'quote', quote: 'Bevor wir das tun, ist es jedoch entscheidend, eine zentrale Wahrheit anzuerkennen: Regulierung allein reicht nicht aus.', person: 'Mustafa Suleyman', role: '„The Coming Wave“, Kap. 13', source: sources.book },
       ...calm.blocks,
     ],
   },

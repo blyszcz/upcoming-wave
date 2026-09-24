@@ -36,7 +36,7 @@ export const scenes: Scene[] = [
     ],
     explain: [
       { image: images.medicine, alt: 'AIが支援した検査画像について、医師が患者と話している。', label: '健康', title: 'より良く、より安い医療。', copy: 'AIの支援を受けた医師はより多くのがんを見つけ、AIは新薬を求めて何百万もの分子を調べます。' },
-      { image: images.energy, alt: '夜明けの太陽光発電所と風力発電所。', label: '地球', title: '政治が停滞するところに、助けを。', copy: '本書の著者は、AIが再生可能エネルギーへの移行、より暑い気候での食料生産、洪水や山火事の予測を助けることを期待しています。' },
+      { image: images.energy, alt: '夜明けの太陽光発電所と風力発電所。', label: '地球', title: '政治が停滞するところに、助けを。', copy: '本書の著者であるスレイマンとバスカーは、AIが再生可能エネルギーへの移行、より暑い気候での食料生産、洪水や山火事の予測を助けることを期待しています。' },
       { image: images.time, alt: '子どもを手伝う教師。', label: '条件がひとつ', title: 'この恩恵は、自然には届かない。', copy: 'すべての人に届くのは、ルールを決めたときだけです。誰が損害に責任を負い、利益をどう分けるのかというルールです。' },
     ],
     band: [
@@ -106,18 +106,6 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: 'ありふれた知的労働については、AIがすべての人に取って代わるだろう。', person: 'ジェフリー・ヒントン', role: 'ノーベル賞受賞者、「AIのゴッドファーザー」', source: sources.hintonDoac },
       { kind: 'quote', quote: '物理的な操作で人間並みになるには、まだ長い時間がかかる…だから配管工になるのは良い賭けだろう。', person: 'ジェフリー・ヒントン', role: 'ノーベル賞受賞者、「AIのゴッドファーザー」', source: sources.hintonDoac },
       {
-        kind: 'bars',
-        title: '求人1件に何人が応募する？',
-        subtitle: '米国の例：職種ごとの就業者数と、配管工の年間求人数',
-        bars: [
-          { label: 'カスタマーサービス担当者', value: 2666000, display: '270万' },
-          { label: '配管工・配管技能者', value: 510600, display: '51.1万' },
-          { label: '配管工の年間求人数', value: 42000, display: '4.2万', highlight: true },
-        ],
-        caption: '配管工の求人1件あたり、カスタマーサービス担当者は60人以上います。10人に1人しか応募しなくても、求人1件に6人の応募者です。',
-        source: sources.bls,
-      },
-      {
         kind: 'stats',
         items: [
           { value: '11時間', label: 'ロボット訓練用に、人間による実演9か月分に相当するデータをAIが作るのにかかった時間', source: sources.nvidia },
@@ -181,13 +169,11 @@ export const scenes: Scene[] = [
       },
       { kind: 'scissors', title: '圧迫される予算', income: '税収', spending: '支援のための支出', caption: 'データではなく概念図です。大量失業が起きると、税収が減ると同時に支出が増えます。' },
       { kind: 'quote', quote: '同時に、雇用不況は税収を激減させ、公共サービスを損ない、福祉制度が最も必要とされるまさにそのときに、その存続を危うくするだろう。', person: 'ムスタファ・スレイマン', role: '『The Coming Wave』第10章', source: sources.book },
-      { kind: 'quote', quote: '連邦政府の税収基盤は、本質的には人間の時間への課税である。', person: 'Citrini Research', role: 'シナリオ「The 2028 Global Intelligence Crisis」、2026年', source: sources.citrini },
       {
         kind: 'stats',
         items: [
           { value: '24.9%', label: '1933年の米国の失業率。1,280万人が職を失っていました', source: sources.fdr },
           { value: '600万人', label: '1932年のドイツの失業者数。労働者のおよそ4人に1人です', source: sources.germany },
-          { value: '20%未満', label: 'オバマ、トランプ、バイデン各大統領が「正しいこと」をすると信頼したアメリカ人の割合。アイゼンハワーのときは70%を超えていました', source: sources.book },
         ],
       },
       {
@@ -248,7 +234,6 @@ export const scenes: Scene[] = [
         footnote: '公平を期して言えば、OpenAIの顧客データは無事で、身体的な被害を受けた人はおらず、Hugging Faceから漏れた個人データも限られていました。Anthropicも同じ頃、より深刻度の低い3件のインシデントを公表しています。いずれも、同社のモデルに誤ってインターネット接続が与えられていたものです。',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
       },
-      { kind: 'quote', quote: 'AIに目標があって、たまたま人類がその邪魔になっていれば、AIは何も考えることなく、当然のこととして人類を滅ぼすだろう。恨みはない。道路を造っているときに、たまたまアリ塚が邪魔になっているようなものだ。私たちはアリを憎んでいるわけではない。ただ道路を造っているだけだ。だから、さよなら、アリ塚。', person: 'イーロン・マスク', role: 'ドキュメンタリー『Do You Trust This Computer?』、2018年', source: sources.muskAnthill },
       { kind: 'quote', quote: '私たちはこのインシデントを、今日のモデルの能力が制御喪失のインシデントを起こしうることを示す『警告射撃』と受け止めている。', person: 'OpenAI', role: 'インシデント後の報告書、2026年8月', source: sources.openaiRoad },
       {
         kind: 'evidence',
@@ -309,10 +294,10 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'では、ベーシックインカム？誰が払う？',
         items: [
-          { kicker: 'イーロン・マスク · 2023年', value: '高所得', text: '「ユニバーサル・ベーシックインカムではなく、ユニバーサル・ハイインカムになる」。誰が払うのかは語っていません。', source: sources.musk },
+          { kicker: 'イーロン・マスク · 2023年', value: '高所得', text: '「ユニバーサル・ベーシックインカムではなく、ユニバーサル・ハイインカムになる」。', source: sources.musk },
           { kicker: 'サム・アルトマン · 2021年', value: '年2.5%', text: '最大級の企業と土地の価値のうち、この割合を全市民のための共同基金に。提案です。', source: sources.altmanFund },
           { kicker: 'OpenAI · 2026年', value: '公的資産ファンド', text: 'AIの収益を市民に直接分配し、資本への課税を強化する。提案です。', source: sources.openaiPolicy },
-          { kicker: 'バーニー・サンダース · 2026年', value: '約1,000ドル', text: 'AI企業の株式による基金から、1人あたり年間に受け取る額。成立の見込みが薄い法案です。', source: sources.sanders },
+          { kicker: 'バーニー・サンダース · 2026年', value: '約1,000ドル', text: 'AI企業の株式による基金から、1人あたり年間に受け取る額。法案として提案されています。', source: sources.sanders },
           { kicker: 'OpenResearchの実証実験 · 3年間', value: '月1,000ドル', text: '人々の労働時間はわずかに減りました（平均で週1.3時間）。仕事の質は変わりませんでした。', source: sources.openresearch },
         ],
       },
@@ -370,9 +355,9 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: '人間の労働者が工場で5万ドル分の仕事をすれば、その所得には課税される。ロボットが来て同じことをするなら、ロボットにも同程度の課税をすべきだと考えるのが自然だろう。', person: 'ビル・ゲイツ', role: 'Microsoft共同創業者 · 2017年', source: sources.gates },
       {
         kind: 'evidence',
-        title: '実践編：本書の10のステップより（第14章）',
+        title: '実践編：本書の10のステップをもとにした私のまとめ（第14章）',
         items: [
-          { kicker: '01', value: '公開前の検証', text: 'システムが何百万人もの人に届く前の独立監査。著者は、研究開発予算の少なくとも20%を安全に充てることを提案しています。', source: sources.book },
+          { kicker: '01', value: '公開前の検証', text: 'システムが何百万人もの人に届く前の独立監査。著者たちは、研究開発予算の少なくとも20%を安全に充てることを提案しています。', source: sources.book },
           { kicker: '02', value: '賠償責任', text: 'システムが損害を与えたとき、誰が支払うのかを定める明確な法律。', source: sources.book },
           { kicker: '03', value: 'ブレーキ', text: '時間を稼ぐため、半導体チップ、DNA合成装置、最大規模の訓練を管理する。', source: sources.book },
           { kicker: '04', value: '公正な税', text: '自動化に労働と同じように課税し、AIの利益がすべての人に届くようにする。', source: sources.book },
@@ -380,7 +365,7 @@ export const scenes: Scene[] = [
           { kicker: '06', value: '協力', text: '条約と共通のルール。AIに国境はないからです。', source: sources.book },
         ],
       },
-      { kind: 'quote', quote: 'しかし、その前に、ある核心的な真実を認めておくことが不可欠だ。規制だけでは十分ではない。', person: 'ムスタファ・スレイマン', role: '『The Coming Wave』第13章。だからこそ、すべてのステップが同時に必要なのです', source: sources.book },
+      { kind: 'quote', quote: 'しかし、その前に、ある核心的な真実を認めておくことが不可欠だ。規制だけでは十分ではない。', person: 'ムスタファ・スレイマン', role: '『The Coming Wave』第13章', source: sources.book },
       ...calm.blocks,
     ],
   },

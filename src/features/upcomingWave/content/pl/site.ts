@@ -3,15 +3,15 @@ export const site = {
   meta: {
     siteName: 'Nadchodząca fala',
     home: {
-      title: 'AI może być najlepszą rzeczą, jaką stworzyliśmy - albo najgorszą',
-      description: 'Krótki wizualny przewodnik: co AI może zrobić z pracą, pieniędzmi i władzą, co może pójść dobrze i dlaczego jej twórcy proszą o zasady. Przy każdym fakcie źródło.',
+      title: 'Kto zapłaci za szkoły, gdy pracę przejmie AI?',
+      description: 'Wizualny przewodnik na 5 minut, oparty na książce „Nadchodząca fala”: co AI może naprawić, jakie prace i podatki może wymazać, test z lipca 2026 r., z którego AI się wydostała, i zasady, od których zależy, jaką przyszłość dostaniemy. Przy każdym fakcie źródło.',
     },
     sources: {
       title: 'Źródła i metoda - Nadchodząca fala',
       description: 'Wszystkie źródła liczb i cytatów na stronie „Nadchodząca fala” oraz to, jak je sprawdzam.',
     },
-    card: { lead: 'Who pays for schools', accent: 'when AI does the work?' },
-    ogAlt: 'AI może być najlepszą rzeczą, jaką stworzyliśmy - albo najgorszą. Ta sama fala, dwie przyszłości: ciemna nad miastem, złota nad parkiem.',
+    card: { lead: 'Kto zapłaci za szkoły,', accent: 'gdy pracę przejmie AI?' },
+    ogAlt: 'Kto zapłaci za szkoły, gdy pracę przejmie AI? Ta sama fala, dwie przyszłości: ciemna nad miastem, złota nad parkiem.',
   },
   sourcesPage: {
     title: 'Źródła i metoda',
