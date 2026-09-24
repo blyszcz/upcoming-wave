@@ -5,7 +5,7 @@
 .uw-sources-lead { max-width: 60ch; margin: 0; color: var(--muted); font-size: clamp(1.05rem, 1.4vw, 1.25rem); line-height: 1.5; }
 .uw-sources-method { display: grid; gap: 12px; margin: 0; padding-left: 20px; color: rgba(238, 236, 230, 0.86); font-size: 16px; line-height: 1.55; }
 .uw-sources-meta { margin: 18px 0 0; color: var(--muted); font-size: 14px; }
-.uw-sources-meta a, .uw-footer-link { color: var(--paper); text-decoration: none; border-bottom: 1px solid var(--line); }
+.uw-sources-meta a { color: var(--paper); text-decoration: none; border-bottom: 1px solid var(--line); }
 .uw-sources-group { padding: 26px 0; border-top: 1px solid var(--line); }
 .uw-sources-group h3 { margin: 0 0 14px; font-size: 18px; font-weight: 600; letter-spacing: -0.01em; }
 .uw-sources-group h3 a { color: inherit; text-decoration: none; }

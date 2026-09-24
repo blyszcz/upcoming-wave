@@ -10,12 +10,11 @@ export const SiteFooter = () => {
   return (
     <footer className="uw-footer">
       <div>
-        <p>{sources}</p>
+        <p>{sources} <a className="uw-footer-inline" href={paths.sources(ui.lang === 'pl' ? 'pl' : 'en')}>{site.footer.sourcesLink}</a></p>
         <p>{independence}</p>
-        <p><a className="uw-footer-link" href={paths.sources(ui.lang === 'pl' ? 'pl' : 'en')}>{site.footer.sourcesLink} →</a></p>
       </div>
       <p className="uw-footer-author">
-        {author.label} <a href={author.url} target="_blank" rel="noopener noreferrer">{author.handle} ↗</a>
+        {author.label} <a href={author.url} target="_blank" rel="noopener noreferrer">{author.handle} ↗</a>{author.with && ` ${author.with}`}
       </p>
     </footer>
   );
