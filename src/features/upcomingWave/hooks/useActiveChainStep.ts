@@ -7,26 +7,32 @@ import type { ChainStepId } from '@features/upcomingWave/types/scene.types';
 import { DOMINO_SHOW_AFTER_PX } from '@/constants';
 
 // Which domino step is in the middle of the screen, and whether the reader has started scrolling.
+// Queries `[data-chain]` on every frame so fact bands mounted later (after "Read more") count too.
 export const useActiveChainStep = (stepIds: ChainStepId[]) => {
   const [activeIndex, setActiveIndex] = useState(-1);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const nodes = Array.from(document.querySelectorAll<HTMLElement>('[data-chain]'));
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) setActiveIndex(stepIds.indexOf((entry.target as HTMLElement).dataset.chain as ChainStepId));
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const middle = window.innerHeight / 2;
+      let current: ChainStepId | undefined;
+      document.querySelectorAll<HTMLElement>('[data-chain]').forEach((node) => {
+        if (node.getBoundingClientRect().top <= middle) current = node.dataset.chain as ChainStepId;
       });
-    }, { rootMargin: '-50% 0px -50% 0px' });
-    nodes.forEach((node) => observer.observe(node));
-
-    const handleScroll = () => {
       setIsScrolled(window.scrollY > DOMINO_SHOW_AFTER_PX);
-      if (nodes[0] && nodes[0].getBoundingClientRect().top > window.innerHeight / 2) setActiveIndex(-1);
+      setActiveIndex(current ? stepIds.indexOf(current) : -1);
     };
-    handleScroll();
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => { observer.disconnect(); window.removeEventListener('scroll', handleScroll); };
+    const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
+    update();
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener('scroll', schedule);
+      window.removeEventListener('resize', schedule);
+    };
   }, [stepIds]);
 
   return { activeIndex, isScrolled };
