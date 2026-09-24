@@ -38,3 +38,7 @@ a { color: inherit; }
 section[id] { scroll-margin-top: 0; }
 
 .uw-archive-banner { position: fixed; z-index: 70; left: 50%; bottom: 14px; margin: 0; padding: 8px 14px; border-radius: 99px; background: var(--signal); color: var(--ink); font: 600 11px/1 var(--font-mono), monospace; letter-spacing: 0.1em; transform: translateX(-50%); }
+.uw-not-found { display: grid; align-content: center; justify-items: start; gap: 32px; min-height: 100svh; padding: 0 var(--gutter); }
+.uw-not-found .uw-title { max-width: 16ch; }
+.uw-not-found-links { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; }
+.uw-not-found-links .uw-text-button { text-decoration: none; }

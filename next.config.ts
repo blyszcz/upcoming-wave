@@ -11,6 +11,8 @@ const nextConfig: NextConfig = {
   pageExtensions: isDev ? ['dev.tsx', 'tsx', 'ts'] : ['tsx', 'ts'],
   trailingSlash: true,
   images: { unoptimized: true },
+  // One bilingual 404 for both root layouts (src/app/global-not-found.tsx).
+  experimental: { globalNotFound: true },
 };
 
 export default nextConfig;
