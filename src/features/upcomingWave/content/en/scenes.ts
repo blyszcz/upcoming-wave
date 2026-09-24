@@ -36,7 +36,7 @@ export const scenes: Scene[] = [
     ],
     explain: [
       { image: images.medicine, alt: 'A doctor discussing an AI-assisted scan with a patient.', label: 'Health', title: 'Better, cheaper care.', copy: 'Doctors assisted by AI find more cancers, and AI searches millions of molecules for new medicines.' },
-      { image: images.energy, alt: 'Solar and wind farms at dawn.', label: 'The planet', title: 'Help where politics is stuck.', copy: 'The book’s author hopes AI will help us switch to renewable energy, grow food in a hotter climate and predict floods and fires.' },
+      { image: images.energy, alt: 'Solar and wind farms at dawn.', label: 'The planet', title: 'Help where politics is stuck.', copy: 'The book’s authors, Suleyman and Bhaskar, hope AI will help us switch to renewable energy, grow food in a hotter climate and predict floods and fires.' },
       { image: images.time, alt: 'A teacher helping a child.', label: 'On one condition', title: 'These benefits won’t come by themselves.', copy: 'They reach everyone only if we set the rules: who is responsible for harm and how the gains are shared.' },
     ],
     band: [
@@ -106,18 +106,6 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: 'For mundane intellectual labor, AI is just going to replace everybody.', person: 'Geoffrey Hinton', role: 'Nobel laureate, the “godfather of AI”', source: sources.hintonDoac },
       { kind: 'quote', quote: 'It’s going to be a long time before it’s as good at physical manipulation as us… a good bet would be to be a plumber.', person: 'Geoffrey Hinton', role: 'Nobel laureate, the “godfather of AI”', source: sources.hintonDoac },
       {
-        kind: 'bars',
-        title: 'How many applicants per opening?',
-        subtitle: 'US example: workers per occupation vs. plumber openings per year',
-        bars: [
-          { label: 'Customer service representatives', value: 2666000, display: '2.7M' },
-          { label: 'Plumbers and pipefitters', value: 510600, display: '511K' },
-          { label: 'Plumber openings per year', value: 42000, display: '42K', highlight: true },
-        ],
-        caption: 'There are more than 60 customer service reps for every plumber opening. Even if only one in ten applied, that’s 6 applicants per opening.',
-        source: sources.bls,
-      },
-      {
         kind: 'stats',
         items: [
           { value: '11 h', label: 'is how long AI needed to create the equivalent of 9 months of human demonstrations for training robots', source: sources.nvidia },
@@ -181,13 +169,11 @@ export const scenes: Scene[] = [
       },
       { kind: 'scissors', title: 'The budget squeeze', income: 'tax revenue', spending: 'support spending', caption: 'A diagram, not data. With mass unemployment, revenue falls while spending rises - at the same moment.' },
       { kind: 'quote', quote: 'At the same time, a jobs recession will crater tax receipts, damaging public services and calling into question welfare programs just as they are most needed.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 10', source: sources.book },
-      { kind: 'quote', quote: 'The federal government’s revenue base is essentially a tax on human time.', person: 'Citrini Research', role: 'scenario “The 2028 Global Intelligence Crisis”, 2026', source: sources.citrini },
       {
         kind: 'stats',
         items: [
           { value: '24.9%', label: 'US unemployment in 1933 - 12.8 million people out of work', source: sources.fdr },
           { value: '6M', label: 'unemployed in Germany in 1932 - roughly one in four workers', source: sources.germany },
-          { value: '<20%', label: 'of Americans trusted Presidents Obama, Trump and Biden to do “what is right.” For Eisenhower, over 70% did', source: sources.book },
         ],
       },
       {
@@ -248,7 +234,6 @@ export const scenes: Scene[] = [
         footnote: 'To be fair: OpenAI customer data was safe, no one was physically harmed, and only limited private data leaked from Hugging Face. Anthropic disclosed three less serious incidents around the same time, in which its models were mistakenly given internet access.',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
       },
-      { kind: 'quote', quote: 'If AI has a goal and humanity just happens to be in the way, it will destroy humanity as a matter of course without even thinking about it. No hard feelings. It’s just like, if we’re building a road, and an anthill happens to be in the way. We don’t hate ants, we’re just building a road. So, goodbye, anthill.', person: 'Elon Musk', role: 'documentary “Do You Trust This Computer?”, 2018', source: sources.muskAnthill },
       { kind: 'quote', quote: 'We are taking this incident as a “warning shot” that today’s model capabilities present the possibility of loss-of-control incidents.', person: 'OpenAI', role: 'post-incident report, August 2026', source: sources.openaiRoad },
       {
         kind: 'evidence',
@@ -309,10 +294,10 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'So, basic income? Who pays?',
         items: [
-          { kicker: 'Elon Musk · 2023', value: 'High income', text: '“We won’t have universal basic income, we’ll have universal high income.” He doesn’t say who would pay for it.', source: sources.musk },
+          { kicker: 'Elon Musk · 2023', value: 'High income', text: '“We won’t have universal basic income, we’ll have universal high income.”', source: sources.musk },
           { kicker: 'Sam Altman · 2021', value: '2.5% a year', text: 'of the value of the largest companies and of land - into a common fund for all citizens. A proposal.', source: sources.altmanFund },
           { kicker: 'OpenAI · 2026', value: 'Public wealth fund', text: 'AI returns distributed directly to citizens; higher taxes on capital. A proposal.', source: sources.openaiPolicy },
-          { kicker: 'Bernie Sanders · 2026', value: '~$1,000', text: 'a year per person from a fund of AI company shares. A bill with little chance of passing.', source: sources.sanders },
+          { kicker: 'Bernie Sanders · 2026', value: '~$1,000', text: 'a year per person from a fund of AI company shares, in a proposed bill.', source: sources.sanders },
           { kicker: 'OpenResearch pilot · 3 years', value: '$1,000 / month', text: 'People worked slightly less (1.3 hours a week on average). The quality of their jobs didn’t change.', source: sources.openresearch },
         ],
       },
@@ -370,9 +355,9 @@ export const scenes: Scene[] = [
       { kind: 'quote', quote: 'If a human worker does $50,000 of work in a factory, that income is taxed. If a robot comes in to do the same thing, you’d think we’d tax the robot at a similar level.', person: 'Bill Gates', role: 'Microsoft co-founder · 2017', source: sources.gates },
       {
         kind: 'evidence',
-        title: 'In practice: based on the book’s 10 steps (ch. 14)',
+        title: 'In practice: my summary, drawing on the book’s 10 steps (ch. 14)',
         items: [
-          { kicker: '01', value: 'Test before launch', text: 'Independent audits before a system reaches millions. The author proposes spending at least 20% of R&D budgets on safety.', source: sources.book },
+          { kicker: '01', value: 'Test before launch', text: 'Independent audits before a system reaches millions. The authors propose spending at least 20% of R&D budgets on safety.', source: sources.book },
           { kicker: '02', value: 'Liability', text: 'Clear law on who pays when a system causes harm.', source: sources.book },
           { kicker: '03', value: 'Brakes', text: 'Controls on chips, DNA synthesizers and the biggest training runs - to buy time.', source: sources.book },
           { kicker: '04', value: 'Fair taxes', text: 'Automation is taxed like labor, and AI’s gains reach everyone.', source: sources.book },
@@ -380,7 +365,7 @@ export const scenes: Scene[] = [
           { kicker: '06', value: 'Cooperation', text: 'Treaties and shared rules - because AI knows no borders.', source: sources.book },
         ],
       },
-      { kind: 'quote', quote: 'Before we do that, however, it’s vital to acknowledge a central truth: regulation alone is not enough.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 13 - which is why all the steps are needed at once', source: sources.book },
+      { kind: 'quote', quote: 'Before we do that, however, it’s vital to acknowledge a central truth: regulation alone is not enough.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 13', source: sources.book },
       ...calm.blocks,
     ],
   },

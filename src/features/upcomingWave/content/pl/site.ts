@@ -10,6 +10,7 @@ export const site = {
       title: 'Źródła i metoda - Nadchodząca fala',
       description: 'Wszystkie źródła liczb i cytatów na stronie „Nadchodząca fala” oraz to, jak je sprawdzam.',
     },
+    card: { lead: 'Who pays for schools', accent: 'when AI does the work?' },
     ogAlt: 'AI może być najlepszą rzeczą, jaką stworzyliśmy - albo najgorszą. Ta sama fala, dwie przyszłości: ciemna nad miastem, złota nad parkiem.',
   },
   sourcesPage: {
@@ -34,6 +35,6 @@ export const site = {
     why: { title: 'Dlaczego ta strona?', text: 'Dużo rozmawiam z ludźmi o AI i ciągle widzę to samo: nie brakuje opinii, brakuje kontekstu - zrozumienia, o co naprawdę toczy się gra. Postanowiłem więc coś z tym zrobić i wytłumaczyć to prosto, obrazami. Przy każdym fakcie jest źródło.' },
     sources: 'Cytaty twórców AI i naukowców, badania oraz książka „Nadchodząca fala” (M. Suleyman, M. Bhaskar) - przy każdym fakcie link do źródła.',
     independence: 'Scenariusze to możliwe ryzyka, nie prognozy. Niezależny projekt - niepowiązany z autorami ani wydawcą książki.',
-    author: { label: 'Zrobili', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '& AI' },
+    author: { label: 'Zrobił', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };

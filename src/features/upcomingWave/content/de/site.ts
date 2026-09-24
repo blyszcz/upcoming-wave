@@ -10,6 +10,7 @@ export const site = {
       title: 'Quellen & Methode - Upcoming Wave',
       description: 'Alle Quellen hinter den Zahlen und Zitaten auf Upcoming Wave - und wie wir sie prüfen.',
     },
+    card: { lead: 'Who pays for schools', accent: 'when AI does the work?' },
     ogAlt: 'KI könnte das Beste werden, was wir je gebaut haben - oder das Schlimmste. Dieselbe Welle, zwei Zukünfte: dunkel über einer Stadt, golden über einem Park.',
   },
   sourcesPage: {
@@ -34,6 +35,6 @@ export const site = {
     why: { title: 'Warum diese Seite?', text: 'Ich spreche viel mit Menschen über KI und sehe immer wieder dasselbe: Es fehlen keine Meinungen, es fehlt Kontext - ein Verständnis dafür, was wirklich auf dem Spiel steht. Also wollte ich etwas dagegen tun und es einfach erklären, in Bildern. Jeder Fakt ist mit seiner Quelle verlinkt.' },
     sources: 'Zitate von Menschen, die KI entwickeln, und von Forschenden, dazu Studien und das Buch „The Coming Wave“ (M. Suleyman, M. Bhaskar) - jeder Fakt ist mit seiner Quelle verlinkt.',
     independence: 'Die Szenarien sind mögliche Risiken, keine Vorhersagen. Ein unabhängiges Projekt - nicht verbunden mit den Autoren oder dem Verlag des Buches.',
-    author: { label: 'Gemacht von', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '& KI' },
+    author: { label: 'Gemacht von', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };

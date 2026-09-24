@@ -10,6 +10,7 @@ export const site = {
       title: 'Fontes e método - Upcoming Wave',
       description: 'Todas as fontes por trás dos números e citações do Upcoming Wave, e como as verificamos.',
     },
+    card: { lead: 'Who pays for schools', accent: 'when AI does the work?' },
     ogAlt: 'A IA pode ser a melhor coisa que já criamos - ou a pior. A mesma onda, dois futuros: escura sobre uma cidade, dourada sobre um parque.',
   },
   sourcesPage: {
@@ -34,6 +35,6 @@ export const site = {
     why: { title: 'Por que esta página?', text: 'Converso muito com as pessoas sobre IA e vejo sempre a mesma coisa: o que falta não são opiniões, é contexto - entender o que realmente está em jogo. Então decidi fazer algo a respeito e explicar isso de forma simples, com imagens. Cada fato leva à sua fonte.' },
     sources: 'Citações de criadores da IA e de cientistas, pesquisas e o livro “The Coming Wave” (M. Suleyman, M. Bhaskar) - cada fato leva à sua fonte.',
     independence: 'Os cenários são riscos possíveis, não previsões. Um projeto independente - sem vínculo com os autores ou a editora do livro.',
-    author: { label: 'Feito por', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '& IA' },
+    author: { label: 'Feito por', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };

@@ -10,6 +10,7 @@ export const site = {
       title: '出典と検証方法 | Upcoming Wave',
       description: 'Upcoming Waveに掲載した数字と引用のすべての出典と、その確認方法。',
     },
+    card: { lead: 'Who pays for schools', accent: 'when AI does the work?' },
     ogAlt: 'AIは人類最高の発明にも、最悪の発明にもなりうる。同じ波と二つの未来。都市を覆う暗い波と、公園の上の黄金色の波。',
   },
   sourcesPage: {
@@ -34,6 +35,6 @@ export const site = {
     why: { title: 'なぜこのページを？', text: '私はAIについて多くの人と話しますが、いつも同じことに気づきます。足りないのは意見ではなく、文脈です。実際に何が懸かっているのかという理解です。そこで何かしようと決め、イラストを使ってわかりやすく説明することにしました。すべての事実に、出典へのリンクを付けています。' },
     sources: 'AIの開発者や科学者の言葉、研究、そして書籍『The Coming Wave』（M・スレイマン、M・バスカー）。すべての事実に、出典へのリンクを付けています。',
     independence: 'シナリオは起こりうるリスクであり、予測ではありません。独立したプロジェクトで、本書の著者や出版社とは関係ありません。',
-    author: { label: '制作', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '& AI' },
+    author: { label: '制作', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };

@@ -2,7 +2,7 @@
 # 1. python3 scripts/og-cards.py            -> writes /tmp/og-cards/og-<locale>.html
 # 2. screenshot each file at 1200x630 (e.g. Playwright, wait for document.fonts.ready)
 #    and save as public/og/upcoming-wave-og-<locale>.jpg (JPEG ~q86).
-# Headline and site name come from content/<locale>/site.ts (meta.home.title, meta.siteName); the
+# Text comes from content/<locale>/site.ts (meta.card, else meta.home.title) and meta.siteName; the
 # background is public/og/upcoming-wave-og.jpg. Fonts load from Google Fonts to match the site.
 import html
 import os
@@ -29,6 +29,9 @@ def page_copy(locale):
     meta = source[source.index('meta:'):]
     title = ts_string(meta[meta.index('home:'):], r'title:')
     name = ts_string(meta, r'siteName:')
+    if 'card:' in meta:  # explicit card text wins (white lead + orange accent)
+        card_src = meta[meta.index('card:'):]
+        return dict(lead=ts_string(card_src, r'lead:'), accent=ts_string(card_src, r'accent:'), brand=name, title=title)
     for dash in DASHES:
         if dash in title:
             lead, accent = title.split(dash, 1)
@@ -44,7 +47,7 @@ def card(locale, copy):
     sans = "'Noto Sans JP', sans-serif" if ja else "'Inter Tight', sans-serif"
     serif = "'Noto Serif JP', serif" if ja else "'Instrument Serif', serif"
     size = 60 if len(copy['title']) < 60 else 52 if len(copy['title']) < 80 else 46
-    accent_end = '' if copy['accent'].endswith(('.', '。', '!', '?')) or ja else '.'
+    accent_end = '' if copy['accent'].endswith(('.', '。', '!', '?', '？')) or ja else '.'
     return f'''<!doctype html><html lang="{locale}"><head><meta charset="utf-8">
 <link rel="stylesheet" href="{FONTS}">
 <style>

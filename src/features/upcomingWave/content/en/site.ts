@@ -3,14 +3,16 @@ export const site = {
   meta: {
     siteName: 'Upcoming Wave',
     home: {
-      title: 'AI could be the best thing we ever built - or the worst',
-      description: 'A short visual guide to what AI could do to work, money and power, what could go right, and why the people building it are asking for rules. Every fact is sourced.',
+      title: 'Who pays for schools when AI does the work?',
+      description: 'A 5-minute visual guide based on “The Coming Wave”: what AI could fix, which jobs and taxes it could erase, the July 2026 test that got out, and the rules that decide which future we get. Every fact is sourced.',
     },
     sources: {
       title: 'Sources & method - Upcoming Wave',
-      description: 'Every source behind the numbers and quotes on Upcoming Wave, and how we check them.',
+      description: 'Every source behind the numbers and quotes on Upcoming Wave, and how I check them.',
     },
-    ogAlt: 'AI could be the best thing we ever built - or the worst. The same wave, two futures: dark over a city, golden over a park.',
+    // Text baked into the link-preview image (scripts/og-cards.py): white lead, orange accent.
+    card: { lead: 'Who pays for schools', accent: 'when AI does the work?' },
+    ogAlt: 'Who pays for schools when AI does the work? The same wave, two futures: dark over a city, golden over a park.',
   },
   sourcesPage: {
     title: 'Sources & method',
@@ -34,6 +36,6 @@ export const site = {
     why: { title: 'Why this page?', text: 'I talk to people about AI a lot, and I keep seeing the same thing: what’s missing isn’t opinions, it’s context - an understanding of what’s actually at stake. So I decided to do something about it and explain it simply, in pictures. Every fact links to its source.' },
     sources: 'Quotes from AI’s creators and scientists, research, and the book “The Coming Wave” (M. Suleyman, M. Bhaskar) - every fact links to its source.',
     independence: 'Scenarios are possible risks, not predictions. An independent project - not affiliated with the book’s authors or publisher.',
-    author: { label: 'Made by', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '& AI' },
+    author: { label: 'Made by', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };

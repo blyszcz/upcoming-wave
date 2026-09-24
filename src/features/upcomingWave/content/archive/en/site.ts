@@ -10,6 +10,7 @@ export const site = {
       title: 'Sources & method — Upcoming Wave',
       description: 'Every source behind the numbers and quotes on Upcoming Wave, and how we check them.',
     },
+    card: { lead: 'AI could be the best thing we ever built -', accent: 'or the worst' },
     ogAlt: 'AI could be the best thing we ever built — or the worst. The same wave, two futures: dark over a city, golden over a park.',
   },
   sourcesPage: {

@@ -10,6 +10,7 @@ export const site = {
       title: 'Źródła i metoda — Nadchodząca fala',
       description: 'Wszystkie źródła liczb i cytatów na stronie „Nadchodząca fala” oraz to, jak je sprawdzamy.',
     },
+    card: { lead: 'AI could be the best thing we ever built -', accent: 'or the worst' },
     ogAlt: 'AI może być najlepszą rzeczą, jaką stworzyliśmy — albo najgorszą. Ta sama fala, dwie przyszłości: ciemna nad miastem, złota nad parkiem.',
   },
   sourcesPage: {
