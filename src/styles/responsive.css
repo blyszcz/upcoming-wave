@@ -64,8 +64,17 @@
   .uw-split-path::before { display: none; }
   .uw-split-half.is-right { order: 3; }
   .uw-evidence ul[data-count='6'] { grid-template-columns: 1fr; }
-  .uw-finale { align-items: flex-end; }
-  .uw-finale-shade { background: linear-gradient(0deg, rgba(7, 11, 16, 0.97) 35%, rgba(7, 11, 16, 0.5) 70%, rgba(7, 11, 16, 0.2)); }
+  /* Finale on phones: the photo is a band on top (like the hero), the copy sits below it on ink with room to breathe. */
+  .uw-finale { --finale-band: max(240px, 34svh); display: block; min-height: 0; }
+  .uw-finale .uw-hero-image, .uw-finale-shade { bottom: auto; height: var(--finale-band); }
+  .uw-finale-shade { background: linear-gradient(0deg, var(--ink) 0%, rgba(7, 11, 16, 0) 45%); }
+  .uw-finale-copy { gap: 30px; padding: calc(var(--finale-band) - 28px) var(--gutter) 72px; }
+  .uw-finale-line { font-size: 1.5rem; }
+  .uw-finale-lists { gap: 0; width: 100%; }
+  .uw-finale-lists > div { padding: 26px 0; border-top: 1px solid var(--line); }
+  .uw-finale-lists > div:last-child { padding-bottom: 0; }
+  .uw-finale-lists h3 { margin-bottom: 16px; }
+  .uw-finale-lists ol { gap: 14px; font-size: 16px; }
   .uw-tax-bar { height: 56px; }
   .uw-scene-copy { grid-template-columns: 1fr; padding: 88px var(--gutter) 32px; }
   .uw-title { font-size: clamp(2.5rem, 11vw, 4.2rem); }
