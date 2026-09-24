@@ -21,7 +21,8 @@ export const HeroCompare = ({ darkImage, darkAlt, hopeImage, hopeAlt, darkLabel,
     <>
       <div className="uw-compare" style={style}>
         <ResponsiveImage className="uw-hero-image" src={darkImage} alt={darkAlt} sizes="100vw" fetchPriority="high" />
-        <ResponsiveImage className="uw-hero-image uw-compare-hope" src={hopeImage} alt={hopeAlt} sizes="100vw" />
+        {/* The clip sits on an unscaled wrapper so its edge stays on the divider while the photo zooms. */}
+        <div className="uw-compare-hope"><ResponsiveImage className="uw-hero-image" src={hopeImage} alt={hopeAlt} sizes="100vw" fetchPriority="high" /></div>
       </div>
       <div className="uw-hero-shade" aria-hidden="true" />
       <div ref={trackRef} className="uw-compare-divider" style={style}>

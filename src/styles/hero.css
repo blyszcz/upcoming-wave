@@ -4,7 +4,7 @@
 .uw-hero-shade { position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgba(7, 11, 16, 0.94) 0%, rgba(7, 11, 16, 0.8) 38%, rgba(7, 11, 16, 0) 62%), linear-gradient(0deg, rgba(7, 11, 16, 0.7), transparent 26%); }
 .uw-compare { position: absolute; z-index: -2; inset: 0; overflow: hidden; }
 .uw-compare .uw-hero-image { z-index: 0; }
-.uw-compare-hope { clip-path: inset(0 0 0 var(--pos)); }
+.uw-compare-hope { position: absolute; z-index: 1; inset: 0; clip-path: inset(0 0 0 var(--pos)); }
 .uw-hero-shade { pointer-events: none; }
 .uw-compare-divider { position: absolute; z-index: 4; top: 0; bottom: 0; left: var(--pos); width: 0; pointer-events: none; }
 .uw-compare-divider::before { content: ''; position: absolute; top: 0; bottom: 0; left: -1px; width: 2px; background: linear-gradient(180deg, transparent, rgba(238, 236, 230, 0.85) 18%, rgba(238, 236, 230, 0.85) 82%, transparent); box-shadow: 0 0 18px rgba(255, 190, 120, 0.5); }
