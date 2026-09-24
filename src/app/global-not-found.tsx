@@ -5,7 +5,7 @@ import { paths } from '@routes/paths';
 
 import '@/styles/globals.css';
 
-export const metadata: Metadata = { title: '404 — Upcoming Wave', robots: { index: false, follow: false } };
+export const metadata: Metadata = { title: '404 - Upcoming Wave', robots: { index: false, follow: false } };
 
 // One bilingual 404 for both language roots (static export writes it to 404.html).
 export default function GlobalNotFound() {

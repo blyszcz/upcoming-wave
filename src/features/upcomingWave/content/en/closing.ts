@@ -28,7 +28,7 @@ export const split = {
     {
       kind: 'stats',
       items: [
-        { value: '44%', label: 'of world GDP — where Fortune’s Global 500 companies already are (ch. 11)', source: book },
+        { value: '44%', label: 'of world GDP - where Fortune’s Global 500 companies already are (ch. 11)', source: book },
       ],
     },
   ] satisfies BandBlock[],
@@ -41,7 +41,7 @@ export const finale = {
   label: 'WHAT CAN I DO',
   title: { lead: 'Don’t stop progress.', accent: 'Set its limits.' },
   quote: '“Technology is not the point of the future, or what’s really at stake. We are.”',
-  rules: { title: 'What good rules look like', items: ['Independent testing before AI reaches millions of people', 'Clear responsibility when an AI system causes harm', 'AI’s gains shared fairly — through taxes and a real safety net'] },
-  actions: { title: 'What you can do', items: ['Share this with one person who hasn’t thought about it yet', 'Ask the people who represent you where they stand on AI rules', 'When AI companies publish safety plans, read them — and ask questions'] },
+  rules: { title: 'What good rules look like', items: ['Independent testing before AI reaches millions of people', 'Clear responsibility when an AI system causes harm', 'AI’s gains shared fairly - through taxes and a real safety net'] },
+  actions: { title: 'What you can do', items: ['Share this with one person who hasn’t thought about it yet', 'Ask the people who represent you where they stand on AI rules', 'When AI companies publish safety plans, read them - and ask questions'] },
   quoteSource: 'Mustafa Suleyman, “The Coming Wave”',
 };

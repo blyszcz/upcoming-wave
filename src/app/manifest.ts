@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Upcoming Wave',
     short_name: 'Upcoming Wave',
-    description: 'Why the people building AI are asking for rules — explained simply, in pictures.',
+    description: 'Why the people building AI are asking for rules - explained simply, in pictures.',
     start_url: '/',
     display: 'browser',
     background_color: '#070b10',

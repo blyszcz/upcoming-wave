@@ -32,9 +32,9 @@ export const acceleration = {
   },
   chart: {
     title: 'Jak długie zadania AI zrobi sama',
-    subtitle: 'Od 2023 r. co około 4 miesiące — dwa razy dłuższe.',
+    subtitle: 'Od 2023 r. co około 4 miesiące - dwa razy dłuższe.',
     doublingMonths: 4.2,
-    note: 'Pomiary METR: jak długie zadania (liczone czasem pracy człowieka) najlepsze modele wykonują samodzielnie w połowie prób. Pomiary powyżej 16 godzin są niepewne — zadania testowe są za krótkie. Linia przerywana to scenariusz, nie pomiar.',
+    note: 'Pomiary METR: jak długie zadania (liczone czasem pracy człowieka) najlepsze modele wykonują samodzielnie w połowie prób. Pomiary powyżej 16 godzin są niepewne - zadania testowe są za krótkie. Linia przerywana to scenariusz, nie pomiar.',
     source: metr,
   },
   evidence: {
@@ -46,7 +46,7 @@ export const acceleration = {
     ] satisfies EvidenceItem[],
   },
   quotes: [
-    { quote: 'Od mniej więcej tego lata AI rozwija się drastycznie szybciej — głównie dlatego, że coraz lepiej buduje kolejną generację AI. To rekurencyjne samodoskonalenie i zaczyna się w całej branży.', person: 'Dario Amodei', role: 'CEO, Anthropic · wrzesień 2026', source: { label: 'We Must Pace the Frontier', url: 'https://darioamodei.com/post/we-must-pace-the-frontier' } },
-    { quote: 'Pierwsza ultrainteligentna maszyna będzie ostatnim wynalazkiem, jakiego człowiek potrzebuje — pod warunkiem, że będzie na tyle posłuszna, by powiedzieć nam, jak utrzymać ją pod kontrolą.', person: 'I. J. Good', role: 'matematyk, współpracownik Alana Turinga · 1965', source: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2022/01/04/ultraintelligent/' } },
+    { quote: 'Od mniej więcej tego lata AI rozwija się drastycznie szybciej - głównie dlatego, że coraz lepiej buduje kolejną generację AI. To rekurencyjne samodoskonalenie i zaczyna się w całej branży.', person: 'Dario Amodei', role: 'CEO, Anthropic · wrzesień 2026', source: { label: 'We Must Pace the Frontier', url: 'https://darioamodei.com/post/we-must-pace-the-frontier' } },
+    { quote: 'Pierwsza ultrainteligentna maszyna będzie ostatnim wynalazkiem, jakiego człowiek potrzebuje - pod warunkiem, że będzie na tyle posłuszna, by powiedzieć nam, jak utrzymać ją pod kontrolą.', person: 'I. J. Good', role: 'matematyk, współpracownik Alana Turinga · 1965', source: { label: 'Quote Investigator', url: 'https://quoteinvestigator.com/2022/01/04/ultraintelligent/' } },
   ],
 };

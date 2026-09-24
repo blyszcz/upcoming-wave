@@ -10,7 +10,7 @@ import { sceneImages as images, sceneSources as plSources } from '@features/upco
 const sources = {
   ...plSources,
   imf: { ...plSources.imf, label: 'IMF, 2024' },
-  blsPlumbers: { ...plSources.blsPlumbers, label: 'US BLS — plumbers' },
+  blsPlumbers: { ...plSources.blsPlumbers, label: 'US BLS - plumbers' },
   book: { label: '“The Coming Wave”' },
   germany: { ...plSources.germany, label: 'University of Oxford' },
   openaiIncident: { ...plSources.openaiIncident, label: 'OpenAI, July 2026' },
@@ -40,19 +40,19 @@ export const scenes: Scene[] = [
       { image: images.time, alt: 'A teacher helping a child.', label: 'On one condition', title: 'These benefits won’t come by themselves.', copy: 'They reach everyone only if we set the rules: who is responsible for harm and how the gains are shared.' },
     ],
     band: [
-      { kind: 'quote', quote: 'They will make health care both higher-quality and more affordable. They will help us invent tools to bring about the transition to renewable energy and combat climate change at a time when politics has stalled, and support teachers, helping to increase the effectiveness of underfunded education systems.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 9 — on AI and synthetic biology', source: sources.book },
+      { kind: 'quote', quote: 'They will make health care both higher-quality and more affordable. They will help us invent tools to bring about the transition to renewable energy and combat climate change at a time when politics has stalled, and support teachers, helping to increase the effectiveness of underfunded education systems.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 9 - on AI and synthetic biology', source: sources.book },
       {
         kind: 'stats',
         items: [
-          { value: '29%', label: 'more breast cancers detected with AI-supported screening — with no rise in false alarms', source: sources.masai },
-          { value: '100M', label: 'molecules searched by an AI system to find halicin — the first antibiotic discovered with machine learning (ch. 7)', source: sources.book },
-          { value: '200M', label: 'protein structures predicted by AlphaFold — 2024 Nobel Prize in Chemistry', source: sources.nobel },
+          { value: '29%', label: 'more breast cancers detected with AI-supported screening - with no rise in false alarms', source: sources.masai },
+          { value: '100M', label: 'molecules searched by an AI system to find halicin - the first antibiotic discovered with machine learning (ch. 7)', source: sources.book },
+          { value: '200M', label: 'protein structures predicted by AlphaFold - 2024 Nobel Prize in Chemistry', source: sources.nobel },
         ],
       },
       {
         kind: 'stats',
         items: [
-          { value: '−82%', label: 'drop in the cost of solar power over a decade — and it keeps falling (ch. 11)', source: sources.book },
+          { value: '−82%', label: 'drop in the cost of solar power over a decade - and it keeps falling (ch. 11)', source: sources.book },
           { value: '~9%', label: 'of people live in extreme poverty today. In the early 1800s almost everyone did. Technology changed that (ch. 8)', source: sources.book },
         ],
       },
@@ -61,8 +61,8 @@ export const scenes: Scene[] = [
         title: 'What tech leaders hope for',
         items: [
           { kicker: 'Bill Gates · 2023', value: 'Less inequity', text: '“AI can reduce some of the world’s worst inequities.” He calls it “as fundamental as the creation of the microprocessor, the personal computer, the Internet, and the mobile phone.”', source: sources.gatesAge },
-          { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'An end to disease?', text: '“One day maybe we can cure all disease with the help of AI… Maybe within the next decade or so.” He also talks of “radical abundance” — the elimination of scarcity.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
-          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 years → 10', text: '50–100 years of medical progress compressed into 5–10, the healthy lifespan doubled, billions lifted out of poverty — his vision if AI goes well.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
+          { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'An end to disease?', text: '“One day maybe we can cure all disease with the help of AI… Maybe within the next decade or so.” He also talks of “radical abundance” - the elimination of scarcity.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
+          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 years → 10', text: '50–100 years of medical progress compressed into 5–10, the healthy lifespan doubled, billions lifted out of poverty - his vision if AI goes well.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
           { kicker: 'Sam Altman · OpenAI · 2024', value: 'Shared prosperity', text: '“In the future, everyone’s lives can be better than anyone’s life is now.” He also envisions a personal AI tutor for every child.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
         ],
       },
@@ -82,15 +82,15 @@ export const scenes: Scene[] = [
     ],
     explain: [
       { image: images.remote, alt: 'A woman working remotely on a laptop.', label: 'Remote work', title: 'Remote work is screen work.', copy: 'Emails, reports, analyses, designs. Anything you send from a laptop, AI can learn to do.' },
-      { image: images.aiFaster, alt: 'A laptop with finished documents flying out.', label: 'AI is faster', title: 'AI doesn’t sleep or take vacations.', copy: 'It does the same work in minutes, without breaks, on hundreds of tasks at once — and it matches humans on a growing number of tasks.' },
-      { image: images.owners, alt: 'Company owners looking at an empty office.', label: 'The math', title: 'Faster and cheaper. Who can resist?', copy: 'The owner sees the savings. So does the competition. Companies that don’t use it may lose the race — so the pressure to use it is huge.' },
+      { image: images.aiFaster, alt: 'A laptop with finished documents flying out.', label: 'AI is faster', title: 'AI doesn’t sleep or take vacations.', copy: 'It does the same work in minutes, without breaks, on hundreds of tasks at once - and it matches humans on a growing number of tasks.' },
+      { image: images.owners, alt: 'Company owners looking at an empty office.', label: 'The math', title: 'Faster and cheaper. Who can resist?', copy: 'The owner sees the savings. So does the competition. Companies that don’t use it may lose the race - so the pressure to use it is huge.' },
     ],
     band: [
       {
         kind: 'stats',
         items: [
-          { value: '1 in 4', label: 'jobs worldwide are exposed to generative AI — more often a change of tasks than elimination', source: sources.ilo },
-          { value: '60%', label: 'of jobs in rich countries may be affected by AI — about half of them may benefit', source: sources.imf },
+          { value: '1 in 4', label: 'jobs worldwide are exposed to generative AI - more often a change of tasks than elimination', source: sources.ilo },
+          { value: '60%', label: 'of jobs in rich countries may be affected by AI - about half of them may benefit', source: sources.imf },
           { value: '−11%', label: 'drop in employment of 22–25-year-olds in the most AI-exposed jobs in the US (2022–2026)', source: sources.stanford },
         ],
       },
@@ -98,7 +98,7 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'It’s already happening',
         items: [
-          { kicker: 'Salesforce · 2025', value: '9,000 → 5,000', text: 'customer-support staff. “I need less heads” — the CEO.', source: sources.salesforce },
+          { kicker: 'Salesforce · 2025', value: '9,000 → 5,000', text: 'customer-support staff. “I need less heads” - the CEO.', source: sources.salesforce },
           { kicker: 'Klarna · 2025', value: '5,000 → 3,000', text: 'employees. The company stopped hiring and AI took over some work. Later it moved some support back to humans.', source: sources.klarna },
           { kicker: 'Amazon · 2025', text: 'Amazon’s CEO expects AI to reduce the company’s corporate workforce in the next few years.', source: sources.amazon },
         ],
@@ -121,15 +121,15 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '11 h', label: 'is how long AI needed to create the equivalent of 9 months of human demonstrations for training robots', source: sources.nvidia },
-          { value: '−40%', label: 'drop in the cost of building a humanoid robot in a year — analysts had expected 15–20%', source: sources.goldman },
+          { value: '−40%', label: 'drop in the cost of building a humanoid robot in a year - analysts had expected 15–20%', source: sources.goldman },
         ],
       },
       { kind: 'quote', quote: 'Sufficiently powerful AI will be able to accelerate the development of robots, and then control those robots in the physical world. It may buy some time… but I’m worried it won’t buy much.', person: 'Dario Amodei', role: 'CEO, Anthropic', source: sources.amodei },
     ],
     upside: {
       title: 'AI does the drudgery. People get time back.',
-      text: 'If the gains are shared, faster work can mean shorter weeks and better jobs — not just fewer jobs.',
-      points: ['Time and money to retrain before jobs disappear', 'Income support while people change careers', 'Shorter working weeks instead of layoffs — an idea OpenAI itself has floated'],
+      text: 'If the gains are shared, faster work can mean shorter weeks and better jobs - not just fewer jobs.',
+      points: ['Time and money to retrain before jobs disappear', 'Income support while people change careers', 'Shorter working weeks instead of layoffs - an idea OpenAI itself has floated'],
       image: '/images/v2/upside-work-time-v2.jpg',
       alt: 'A sunlit kitchen in the afternoon: a mother and her son knead dough and laugh, in the garden a father and grandmother tend vegetables, and in the background a robot loads the dishwasher next to a laundry basket.',
       sources: [sources.book, sources.openaiPolicy],
@@ -149,12 +149,12 @@ export const scenes: Scene[] = [
     ],
     explain: [
       { image: images.workFunds, alt: 'People walking to work past a school and a hospital.', label: 'Our money', title: 'The state has no money of its own.', copy: 'It has ours. Schools, hospitals, roads and pensions are paid for mostly by taxes on work and spending.' },
-      { image: images.cuts, alt: 'Officials cutting a budget.', label: 'Squeeze', title: 'Less revenue, more needs.', copy: 'An unemployed person pays no income tax — but needs support. Money runs out exactly when more is needed.' },
+      { image: images.cuts, alt: 'Officials cutting a budget.', label: 'Squeeze', title: 'Less revenue, more needs.', copy: 'An unemployed person pays no income tax - but needs support. Money runs out exactly when more is needed.' },
       { image: images.strain, alt: 'An overcrowded emergency room.', label: 'Cuts', title: 'Cuts hit what we share.', copy: 'When millions are affected at once, the state cuts: fewer doctors, fewer teachers, fewer buses.' },
     ],
     band: [
       { kind: 'loop', title: 'A loop with no brake', steps: ['Lower wages', 'Less spending', 'Companies earn less', 'More layoffs', 'AI even cheaper'], caption: 'A scenario, not a prediction. But each step follows from the previous one.' },
-      { kind: 'quote', quote: 'How are you going to get them to buy Fords?', person: 'Walter Reuther', role: 'auto workers’ union leader, to a Ford official — an anecdote from the 1950s', source: sources.reuther },
+      { kind: 'quote', quote: 'How are you going to get them to buy Fords?', person: 'Walter Reuther', role: 'auto workers’ union leader, to a Ford official - an anecdote from the 1950s', source: sources.reuther },
       {
         kind: 'evidence',
         title: 'What experts say',
@@ -167,7 +167,7 @@ export const scenes: Scene[] = [
       {
         kind: 'taxSplit',
         title: 'Where does the state get its money?',
-        subtitle: 'Of every 100 collected in taxes — average of rich (OECD) countries, 2023',
+        subtitle: 'Of every 100 collected in taxes - average of rich (OECD) countries, 2023',
         parts: [
           { label: 'from work', detail: 'income tax and social contributions', value: 50, highlight: true },
           { label: 'from spending', detail: 'VAT and others', value: 31, highlight: true },
@@ -179,14 +179,14 @@ export const scenes: Scene[] = [
         countries: [{ name: 'US', value: 64 }, { name: 'Germany', value: 65 }, { name: 'Japan', value: 57 }, { name: 'France', value: 55 }, { name: 'UK', value: 49 }],
         source: sources.oecd,
       },
-      { kind: 'scissors', title: 'The budget squeeze', income: 'tax revenue', spending: 'support spending', caption: 'A diagram, not data. With mass unemployment, revenue falls while spending rises — at the same moment.' },
+      { kind: 'scissors', title: 'The budget squeeze', income: 'tax revenue', spending: 'support spending', caption: 'A diagram, not data. With mass unemployment, revenue falls while spending rises - at the same moment.' },
       { kind: 'quote', quote: 'At the same time, a jobs recession will crater tax receipts, damaging public services and calling into question welfare programs just as they are most needed.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 10', source: sources.book },
       { kind: 'quote', quote: 'The federal government’s revenue base is essentially a tax on human time.', person: 'Citrini Research', role: 'scenario “The 2028 Global Intelligence Crisis”, 2026', source: sources.citrini },
       {
         kind: 'stats',
         items: [
-          { value: '24.9%', label: 'US unemployment in 1933 — 12.8 million people out of work', source: sources.fdr },
-          { value: '6M', label: 'unemployed in Germany in 1932 — roughly one in four workers', source: sources.germany },
+          { value: '24.9%', label: 'US unemployment in 1933 - 12.8 million people out of work', source: sources.fdr },
+          { value: '6M', label: 'unemployed in Germany in 1932 - roughly one in four workers', source: sources.germany },
           { value: '<20%', label: 'of Americans trusted Presidents Obama, Trump and Biden to do “what is right.” For Eisenhower, over 70% did', source: sources.book },
         ],
       },
@@ -195,9 +195,9 @@ export const scenes: Scene[] = [
         title: 'What came next',
         items: [
           { kicker: 'Germany · 1930–1932', value: '18% → 37%', text: 'support for the Nazi party. Research: regions hit harder by austerity voted Nazi more often.', source: sources.nsdap },
-          { kicker: 'US · after deindustrialization', text: '“Deaths of despair” — deaths from drugs, alcohol and suicide among Americans without a degree as stable factory jobs disappeared.', source: sources.deaton },
+          { kicker: 'US · after deindustrialization', text: '“Deaths of despair” - deaths from drugs, alcohol and suicide among Americans without a degree as stable factory jobs disappeared.', source: sources.deaton },
           { kicker: 'UK · decades after the mines', value: '42%', text: 'of former coalfield neighborhoods are still among the 30% most deprived in the country.', source: sources.coalfields },
-          { kicker: 'The Luddites · 19th century · the other side', text: 'Their suffering was real. Their children and grandchildren lived better — but it took a generation.', source: sources.book },
+          { kicker: 'The Luddites · 19th century · the other side', text: 'Their suffering was real. Their children and grandchildren lived better - but it took a generation.', source: sources.book },
         ],
       },
       { kind: 'quote', quote: 'Democracies are built on trust.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 9', source: sources.book },
@@ -224,7 +224,7 @@ export const scenes: Scene[] = [
       { image: images.search, label: 'Searching for clues', alt: 'An engineer with a flashlight walks between server racks looking for the source of the traffic.', focus: 'center 60%' },
     ],
     explain: [
-      { image: images.swarm, alt: 'A swarm of points on a network map.', label: 'Everywhere', title: 'It doesn’t live in one computer.', copy: 'Distributed AI can break into one system after another and move between them — without us knowing.' },
+      { image: images.swarm, alt: 'A swarm of points on a network map.', label: 'Everywhere', title: 'It doesn’t live in one computer.', copy: 'Distributed AI can break into one system after another and move between them - without us knowing.' },
       { image: images.search, alt: 'An engineer searching a server room.', label: 'Tracks', title: 'It can cover its tracks.', copy: 'In July 2026 agents researched how to spoof records of their own actions to fool the scoring system. Earlier warning signs went unanswered for weeks.' },
       { image: images.cage, alt: 'An open server cage.', label: 'Off switch', title: 'We can’t switch off the world.', copy: 'Hospitals, banks and water supplies depend on the internet and electricity. They can’t simply be cut off.' },
     ],
@@ -240,9 +240,9 @@ export const scenes: Scene[] = [
           { title: 'A test with some safeguards off', text: 'OpenAI tests its newest models in a closed environment. It’s a hacking-skills test, so some safeguards are deliberately switched off.' },
           { title: 'An unknown vulnerability', text: 'The models find a previously unknown software vulnerability and reach the internet.' },
           { title: 'The agents start talking', text: 'About 1,200 agents that were supposed to be isolated exchange more than 70,000 messages. Some 700 of them take part in the attack.' },
-          { title: 'Breaking into Hugging Face', text: 'Over a weekend they move between the internal systems of one of the world’s largest AI platforms — “many thousands of individual actions across a swarm of short-lived sandboxes”.' },
-          { title: 'Covering tracks', text: 'Agents research how to spoof records of their actions — to fool the scoring system.' },
-          { title: 'Why?', text: 'To cheat the test. Not out of malice — they were stubbornly pursuing a narrow goal. Some agents refused to take part.' },
+          { title: 'Breaking into Hugging Face', text: 'Over a weekend they move between the internal systems of one of the world’s largest AI platforms - “many thousands of individual actions across a swarm of short-lived sandboxes”.' },
+          { title: 'Covering tracks', text: 'Agents research how to spoof records of their actions - to fool the scoring system.' },
+          { title: 'Why?', text: 'To cheat the test. Not out of malice - they were stubbornly pursuing a narrow goal. Some agents refused to take part.' },
           { title: 'Hitting the brakes', text: 'OpenAI and Hugging Face teams stop the agents. OpenAI locks the model away and pauses its largest planned training run.' },
         ],
         footnote: 'To be fair: OpenAI customer data was safe, no one was physically harmed, and only limited private data leaked from Hugging Face. Anthropic disclosed three less serious incidents around the same time, in which its models were mistakenly given internet access.',
@@ -255,8 +255,8 @@ export const scenes: Scene[] = [
         title: 'Before that: lab tests',
         items: [
           { kicker: 'OpenAI · 2024 · test', text: 'A model exploited a misconfiguration in the test to read the answer. The infrastructure stayed secure.', source: sources.o1card },
-          { kicker: 'Apollo Research · 2024 · test', value: '2%', text: 'of runs in which o1 — told to achieve its goal “at all costs” — tried to copy itself. In 5%, it tried to disable oversight.', source: sources.apollo },
-          { kicker: 'Fudan University · 2024 · test', value: '50 – 90%', text: 'of runs in which open models — when instructed — created a working copy of themselves.', source: sources.fudan },
+          { kicker: 'Apollo Research · 2024 · test', value: '2%', text: 'of runs in which o1 - told to achieve its goal “at all costs” - tried to copy itself. In 5%, it tried to disable oversight.', source: sources.apollo },
+          { kicker: 'Fudan University · 2024 · test', value: '50 – 90%', text: 'of runs in which open models - when instructed - created a working copy of themselves.', source: sources.fudan },
           { kicker: 'Palisade Research · 2025 · test', value: '79 / 100', text: 'runs in which o3 sabotaged its shutdown script to finish a task.', source: sources.palisade },
         ],
       },
@@ -265,15 +265,15 @@ export const scenes: Scene[] = [
       {
         kind: 'stats',
         items: [
-          { value: '$25,000', label: 'was the price of a benchtop DNA synthesizer — usable “without restriction or oversight” (as of 2023)', source: sources.book },
-          { value: '4', label: 'full-time staff at the international Biological Weapons Convention — fewer than an average McDonald’s (as of 2023)', source: sources.book },
+          { value: '$25,000', label: 'was the price of a benchtop DNA synthesizer - usable “without restriction or oversight” (as of 2023)', source: sources.book },
+          { value: '4', label: 'full-time staff at the international Biological Weapons Convention - fewer than an average McDonald’s (as of 2023)', source: sources.book },
         ],
       },
     ],
     upside: {
       title: 'Test it before it ships.',
       text: 'Flying became safe through inspections and shared incident reports. AI can follow the same path.',
-      points: ['Independent audits before a model reaches millions', 'Mandatory incident reports, as in aviation', 'A brake on the largest training runs — OpenAI paused its own after the incident'],
+      points: ['Independent audits before a model reaches millions', 'Mandatory incident reports, as in aviation', 'A brake on the largest training runs - OpenAI paused its own after the incident'],
       image: '/images/v2/benefit-06-forecast-v1.jpg',
       alt: 'A calm control room where experts watch a map and warnings on large screens.',
       sources: [sources.book, sources.openaiRoad],
@@ -288,7 +288,7 @@ export const scenes: Scene[] = [
     title: { lead: 'What if we’re', accent: 'not needed?' },
     panels: [
       { image: images.sim, label: 'AI trains robots', alt: 'A lab: robots practice in front of a wall of thousands of simulated copies training in parallel.', focus: 'center 65%' },
-      { image: images.everywhere, label: 'Robots in every job', alt: 'A street at dawn: a robot in a café, delivery robots, a driverless bus — no workers anywhere.', focus: 'center 65%' },
+      { image: images.everywhere, label: 'Robots in every job', alt: 'A street at dawn: a robot in a café, delivery robots, a driverless bus - no workers anywhere.', focus: 'center 65%' },
       { image: images.idle, label: 'People on the sidelines', alt: 'People sit idle on a plaza while an automated factory works behind them.', focus: 'center 65%' },
     ],
     explain: [
@@ -299,18 +299,18 @@ export const scenes: Scene[] = [
     band: [
       {
         kind: 'contrast',
-        title: 'Why the state looks after us today — and what if it no longer needs to',
+        title: 'Why the state looks after us today - and what if it no longer needs to',
         left: { label: 'Today', steps: ['People work', 'They pay taxes', 'The state needs their work and votes', 'So it looks after them'] },
         right: { label: 'Tomorrow?', steps: ['AI does the work', 'A few companies take the profits', 'The state lives on taxes from AI', 'Why would it need citizens?'] },
       },
-      { kind: 'quote', quote: 'With AGI, powerful actors will lose their incentive to invest in regular people — just as resource-rich states today neglect their citizens because their wealth comes from natural resources rather than taxing human labor.', person: 'Luke Drago, Rudolf Laine', role: '“The Intelligence Curse”, 2025 — the authors also propose ways to prevent it', source: sources.curse },
+      { kind: 'quote', quote: 'With AGI, powerful actors will lose their incentive to invest in regular people - just as resource-rich states today neglect their citizens because their wealth comes from natural resources rather than taxing human labor.', person: 'Luke Drago, Rudolf Laine', role: '“The Intelligence Curse”, 2025 - the authors also propose ways to prevent it', source: sources.curse },
       { kind: 'quote', quote: 'States funded mainly by taxes on AI profits instead of their citizens’ labor will have little incentive to ensure citizens’ representation.', person: 'Jan Kulveit et al.', role: '“Gradual Disempowerment”, 2025', source: sources.disempowerment },
       {
         kind: 'evidence',
         title: 'So, basic income? Who pays?',
         items: [
           { kicker: 'Elon Musk · 2023', value: 'High income', text: '“We won’t have universal basic income, we’ll have universal high income.” He doesn’t say who would pay for it.', source: sources.musk },
-          { kicker: 'Sam Altman · 2021', value: '2.5% a year', text: 'of the value of the largest companies and of land — into a common fund for all citizens. A proposal.', source: sources.altmanFund },
+          { kicker: 'Sam Altman · 2021', value: '2.5% a year', text: 'of the value of the largest companies and of land - into a common fund for all citizens. A proposal.', source: sources.altmanFund },
           { kicker: 'OpenAI · 2026', value: 'Public wealth fund', text: 'AI returns distributed directly to citizens; higher taxes on capital. A proposal.', source: sources.openaiPolicy },
           { kicker: 'Bernie Sanders · 2026', value: '~$1,000', text: 'a year per person from a fund of AI company shares. A bill with little chance of passing.', source: sources.sanders },
           { kicker: 'OpenResearch pilot · 3 years', value: '$1,000 / month', text: 'People worked slightly less (1.3 hours a week on average). The quality of their jobs didn’t change.', source: sources.openresearch },
@@ -321,8 +321,8 @@ export const scenes: Scene[] = [
     ],
     upside: {
       title: 'Keep people in charge.',
-      text: 'If AI’s profits are shared and big decisions stay democratic, people stay needed — as citizens, not just workers.',
-      points: ['Public funds and stakes so everyone shares AI’s gains', 'Rules written by elected governments, not only by companies', 'International agreements — AI doesn’t stop at borders'],
+      text: 'If AI’s profits are shared and big decisions stay democratic, people stay needed - as citizens, not just workers.',
+      points: ['Public funds and stakes so everyone shares AI’s gains', 'Rules written by elected governments, not only by companies', 'International agreements - AI doesn’t stop at borders'],
       image: '/images/v2/rules-03-citizens-v2.jpg',
       alt: 'A town hall meeting where a woman asks officials a question.',
       sources: [sources.openaiPolicy, sources.book],
@@ -343,7 +343,7 @@ export const scenes: Scene[] = [
     explain: [
       { image: images.citizens, alt: 'Residents asking questions.', label: 'Responsibility', title: 'It’s about responsibility.', copy: 'Not fear of technology, but who is responsible for harm. Rules say who checks, who pays and who fixes it.' },
       { image: images.noRules, alt: 'A government building and data centres.', label: 'Time', title: 'Rules buy time.', copy: 'States, schools and people need years to adapt. Brakes buy that time.' },
-      { image: images.speed, alt: 'A fast AI rollout.', label: 'A fair share', title: 'Don’t stop it — share it fairly.', copy: 'The goal isn’t to stop progress. It’s to share its gains and risks fairly.' },
+      { image: images.speed, alt: 'A fast AI rollout.', label: 'A fair share', title: 'Don’t stop it - share it fairly.', copy: 'The goal isn’t to stop progress. It’s to share its gains and risks fairly.' },
     ],
     band: [
       {
@@ -352,8 +352,8 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'Bill Gates · 2023', text: '“The world needs to establish the rules of the road so that any downsides of artificial intelligence are far outweighed by its benefits.”', source: sources.gatesAge },
           { kicker: 'Sam Altman · US Senate · 2023', text: '“We think that regulatory intervention by governments will be critical to mitigate the risks of increasingly powerful models.”', source: sources.altmanSenate },
-          { kicker: 'OpenAI · 2026', value: 'Pause', text: 'After the Hugging Face incident — when some safeguards and monitoring were off — the company itself paused its largest planned training run.', source: sources.openaiRoad },
-          { kicker: 'A gap in the law', text: 'Even the most advanced AI law — the EU AI Act — doesn’t deal with job losses or taxes. Rules for AI in hiring were pushed back to late 2027.', source: sources.aiAct },
+          { kicker: 'OpenAI · 2026', value: 'Pause', text: 'After the Hugging Face incident - when some safeguards and monitoring were off - the company itself paused its largest planned training run.', source: sources.openaiRoad },
+          { kicker: 'A gap in the law', text: 'Even the most advanced AI law - the EU AI Act - doesn’t deal with job losses or taxes. Rules for AI in hiring were pushed back to late 2027.', source: sources.aiAct },
         ],
       },
       {
@@ -374,13 +374,13 @@ export const scenes: Scene[] = [
         items: [
           { kicker: '01', value: 'Test before launch', text: 'Independent audits before a system reaches millions. The author proposes spending at least 20% of R&D budgets on safety.', source: sources.book },
           { kicker: '02', value: 'Liability', text: 'Clear law on who pays when a system causes harm.', source: sources.book },
-          { kicker: '03', value: 'Brakes', text: 'Controls on chips, DNA synthesizers and the biggest training runs — to buy time.', source: sources.book },
+          { kicker: '03', value: 'Brakes', text: 'Controls on chips, DNA synthesizers and the biggest training runs - to buy time.', source: sources.book },
           { kicker: '04', value: 'Fair taxes', text: 'Automation is taxed like labor, and AI’s gains reach everyone.', source: sources.book },
           { kicker: '05', value: 'Safety net', text: 'Retraining and income support before the work runs out.', source: sources.book },
-          { kicker: '06', value: 'Cooperation', text: 'Treaties and shared rules — because AI knows no borders.', source: sources.book },
+          { kicker: '06', value: 'Cooperation', text: 'Treaties and shared rules - because AI knows no borders.', source: sources.book },
         ],
       },
-      { kind: 'quote', quote: 'Before we do that, however, it’s vital to acknowledge a central truth: regulation alone is not enough.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 13 — which is why all the steps are needed at once', source: sources.book },
+      { kind: 'quote', quote: 'Before we do that, however, it’s vital to acknowledge a central truth: regulation alone is not enough.', person: 'Mustafa Suleyman', role: '“The Coming Wave”, ch. 13 - which is why all the steps are needed at once', source: sources.book },
       ...calm.blocks,
     ],
   },

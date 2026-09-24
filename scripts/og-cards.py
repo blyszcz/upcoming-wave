@@ -15,8 +15,8 @@ def page_copy(path):
     page=open(path).read()
     title=htmlmod.unescape(re.search(r'<title>([^<]*)</title>',page).group(1))
     name=htmlmod.unescape(re.search(r'property="og:site_name" content="([^"]*)"',page).group(1))
-    lead,accent=title.split(' — ',1)
-    return dict(lead=lead+' —',accent=accent+'.',brand=name,size=62 if len(title)<60 else 56)
+    lead,accent=title.split(' - ',1)
+    return dict(lead=lead+' -',accent=accent+'.',brand=name,size=62 if len(title)<60 else 56)
 
 variants={'en':page_copy(f'{root}/index.html'),'pl':page_copy(f'{root}/pl/index.html')}
 for k,v in variants.items():

@@ -27,7 +27,7 @@ export const split = {
     {
       kind: 'stats',
       items: [
-        { value: '44%', label: 'światowego PKB — tyle wynoszą łączne przychody firm z listy Fortune Global 500 (rozdz. 11)', source: book },
+        { value: '44%', label: 'światowego PKB - tyle wynoszą łączne przychody firm z listy Fortune Global 500 (rozdz. 11)', source: book },
       ],
     },
   ] satisfies BandBlock[],
@@ -40,7 +40,7 @@ export const finale = {
   label: 'CO JA MOGĘ',
   title: { lead: 'Nie zatrzymać postępu.', accent: 'Ustalić granice.' },
   quote: '„To nie jej los właśnie się decyduje, tylko nasz.”',
-  rules: { title: 'Jak wyglądają dobre zasady', items: ['Niezależne testy, zanim AI trafi do milionów ludzi', 'Jasna odpowiedzialność, gdy system AI wyrządzi szkodę', 'Uczciwy podział zysków z AI — przez podatki i prawdziwą siatkę bezpieczeństwa'] },
-  actions: { title: 'Co możesz zrobić', items: ['Wyślij to jednej osobie, która jeszcze się nad tym nie zastanawiała', 'Zapytaj swoich przedstawicieli, co myślą o zasadach dla AI', 'Gdy firmy AI publikują plany bezpieczeństwa — czytaj je i zadawaj pytania'] },
+  rules: { title: 'Jak wyglądają dobre zasady', items: ['Niezależne testy, zanim AI trafi do milionów ludzi', 'Jasna odpowiedzialność, gdy system AI wyrządzi szkodę', 'Uczciwy podział zysków z AI - przez podatki i prawdziwą siatkę bezpieczeństwa'] },
+  actions: { title: 'Co możesz zrobić', items: ['Wyślij to jednej osobie, która jeszcze się nad tym nie zastanawiała', 'Zapytaj swoich przedstawicieli, co myślą o zasadach dla AI', 'Gdy firmy AI publikują plany bezpieczeństwa - czytaj je i zadawaj pytania'] },
   quoteSource: 'Mustafa Suleyman, „Nadchodząca fala”',
 };
