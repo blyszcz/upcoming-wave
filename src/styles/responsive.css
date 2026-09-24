@@ -32,11 +32,12 @@
   .uw-bars li { grid-template-columns: 1fr; gap: 8px; }
   .uw-loop-ring { display: none; }
   /* Hero on phones: the two-futures photo is a band on top, the copy sits below it on ink. */
-  /* The photo takes whatever the copy leaves free: ~54% on a 390x844 phone, more on taller screens, never under 300px. */
-  .uw-hero { --hero-band: max(300px, min(60svh, calc(100svh - 390px))); display: block; min-height: 100svh; }
-  .uw-compare, .uw-hero-shade { bottom: auto; height: var(--hero-band); }
+  /* A grid: row 1 is the photo band, row 2 the copy. The band takes whatever the copy leaves free on a
+     full screen, in every language (absolutely positioned children use their grid area as the box). */
+  .uw-hero { display: grid; grid-template-rows: minmax(240px, 1fr) auto; grid-template-columns: minmax(0, 1fr); min-height: 100svh; }
+  .uw-compare, .uw-hero-shade, .uw-compare-divider { grid-row: 1 / 2; grid-column: 1 / 2; top: 0; bottom: 0; height: auto; }
+  .uw-compare, .uw-hero-shade { left: 0; right: 0; }
   .uw-hero-shade { background: linear-gradient(0deg, var(--ink) 0%, rgba(7, 11, 16, 0) 38%); }
-  .uw-compare-divider { bottom: auto; height: var(--hero-band); }
   .uw-compare-divider::before { background: linear-gradient(180deg, transparent, rgba(238, 236, 230, 0.85) 20%, rgba(238, 236, 230, 0.85) 70%, transparent); }
   .uw-compare-handle { top: 52%; width: 46px; height: 46px; }
   /* Long translations wrap onto two lines instead of running past the screen edge (the handle rests at 50%). */
@@ -45,8 +46,8 @@
   .uw-compare-label.is-dark { right: 30px; }
   .uw-compare-label.is-hope { left: 30px; }
   /* At least one full screen: the copy fills the space under the photo and the button sits near the bottom. */
-  .uw-hero-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 22px; max-width: none; min-height: 100svh; padding: calc(var(--hero-band) + 6px) var(--gutter) max(36px, env(safe-area-inset-bottom)); }
-  .uw-hero-actions { margin-top: auto; padding-top: 10px; }
+  .uw-hero-copy { grid-row: 2; grid-column: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 22px; max-width: none; padding: 6px var(--gutter) max(36px, env(safe-area-inset-bottom)); }
+  .uw-hero-actions { padding-top: 10px; }
   .uw-hero-title { font-size: clamp(2.2rem, 9.8vw, 3.4rem); }
   .uw-hero-subtitle { margin-top: -6px; font-size: 1.05rem; }
   /* First screen on phones: headline, one line, the ask, and one button. The threats are covered in the chapters. */

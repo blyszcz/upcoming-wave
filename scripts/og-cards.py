@@ -56,7 +56,7 @@ html,body{{margin:0;width:1200px;height:630px;overflow:hidden;background:#070b10
 .og::after{{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,11,16,0) 28%,rgba(7,11,16,.8) 60%,rgba(7,11,16,.96) 100%)}}
 .copy{{position:absolute;z-index:1;left:56px;right:56px;bottom:44px;display:grid;gap:26px}}
 h1{{margin:0;max-width:1040px;color:#eeece6;font:600 {size}px/1.04 {sans};letter-spacing:{'0' if ja else '-0.04em'};text-wrap:balance}}
-h1 em{{color:#ff6b3d;font:{'500' if ja else 'italic 400'} 1.08em/0.95 {serif};letter-spacing:{'0' if ja else '-0.02em'}}}
+h1 em{{display:block;color:#ff6b3d;font:{'500' if ja else 'italic 400'} 1.08em/0.95 {serif};letter-spacing:{'0' if ja else '-0.02em'}}}
 .row{{display:flex;justify-content:space-between;align-items:center;color:rgba(238,236,230,.8);font:500 16px/1 'JetBrains Mono',monospace;letter-spacing:.16em;text-transform:uppercase}}
 .brand{{display:flex;align-items:center;gap:12px}}
 .brand i{{width:14px;height:14px;border-radius:50%;background:#ff6b3d;box-shadow:0 0 0 4px rgba(7,11,16,.8),0 0 0 6px rgba(238,236,230,.7)}}
