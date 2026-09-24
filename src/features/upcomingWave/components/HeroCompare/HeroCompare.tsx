@@ -10,18 +10,18 @@ import { useMediaQuery } from '@features/upcomingWave/hooks/useMediaQuery';
 
 // Two photos of the same wave: the dark future left of the handle, the hopeful one to the right.
 export const HeroCompare = ({ darkImage, darkAlt, hopeImage, hopeAlt, darkLabel, hopeLabel, aria }: HeroCompareProps) => {
-  const { position, trackRef, handlePointerDown, handlePointerMove, handlePointerUp, handleKeyDown } = useCompareSlider();
+  const { position, isReady, trackRef, handlePointerDown, handlePointerMove, handlePointerUp, handleKeyDown } = useCompareSlider();
   const isNarrow = useMediaQuery(MOBILE_QUERY);
   // Labels would cover the headline while the handle sits over the text column.
   const isOverText = position < COMPARE_TEXT_COLUMN && !isNarrow;
   const rounded = Math.round(position);
-  const style = { '--pos': `${position}%` } as CSSProperties;
+  const style = isReady ? ({ '--pos': `${position}%` } as CSSProperties) : undefined;
 
   return (
     <>
       <div className="uw-compare" style={style}>
         <ResponsiveImage className="uw-hero-image" src={darkImage} alt={darkAlt} sizes="100vw" fetchPriority="high" />
-        <ResponsiveImage className="uw-hero-image uw-compare-hope" src={hopeImage} alt={hopeAlt} sizes="100vw" />
+        <ResponsiveImage className="uw-hero-image uw-compare-hope" src={hopeImage} alt={hopeAlt} sizes="100vw" fetchPriority="high" />
       </div>
       <div className="uw-hero-shade" aria-hidden="true" />
       <div ref={trackRef} className="uw-compare-divider" style={style}>

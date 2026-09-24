@@ -18,8 +18,9 @@ export const COMPARE_LABEL_EDGE = 26;
 export const COMPARE_TEXT_COLUMN = 50;
 export const COMPARE_REST_DESKTOP = 62;
 export const COMPARE_REST_MOBILE = 50;
-export const COMPARE_INTRO_DELAY_MS = 900;
-export const COMPARE_INTRO_MS = 1600;
+export const COMPARE_HINT_DELAY_MS = 1400;
+export const COMPARE_HINT_MS = 1100;
+export const COMPARE_HINT_SWING = 6;
 
 // Lily-pond doubling animation
 export const POND_DAYS = 30;
