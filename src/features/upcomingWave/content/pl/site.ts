@@ -33,10 +33,10 @@ export const site = {
   },
   footer: {
     sourcesLink: 'Źródła i metoda',
-    code: { label: 'Kod na GitHubie', issue: 'zgłoś błąd' },
+    code: { label: 'GitHub', issue: 'Zgłoś błąd' },
     why: { title: 'Dlaczego ta strona?', text: 'Dużo rozmawiam z ludźmi o AI i ciągle widzę to samo: nie brakuje opinii, brakuje kontekstu - zrozumienia, o co naprawdę toczy się gra. Postanowiłem więc coś z tym zrobić i wytłumaczyć to prosto, obrazami. Przy każdym fakcie jest źródło.' },
-    sources: 'Cytaty twórców AI i naukowców, badania oraz książka „Nadchodząca fala” (M. Suleyman, M. Bhaskar) - przy każdym fakcie link do źródła.',
-    independence: 'Scenariusze to możliwe ryzyka, nie prognozy. Niezależny projekt - niepowiązany z autorami ani wydawcą książki.',
+    sources: 'Przy każdym fakcie jest źródło. Scenariusze to ryzyka, nie prognozy.',
+    independence: 'Niezależny projekt - niepowiązany z autorami ani wydawcą „Nadchodzącej fali”.',
     author: { label: 'Zrobił', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };

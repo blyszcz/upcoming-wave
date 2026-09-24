@@ -33,10 +33,10 @@ export const site = {
   },
   footer: {
     sourcesLink: 'Sources et méthode',
-    code: { label: 'Code source sur GitHub', issue: 'signaler une erreur' },
+    code: { label: 'GitHub', issue: 'Signaler une erreur' },
     why: { title: 'Pourquoi cette page ?', text: 'Je parle beaucoup d’IA avec les gens, et je constate toujours la même chose : ce qui manque, ce ne sont pas les opinions, c’est le contexte - comprendre ce qui est réellement en jeu. J’ai donc décidé d’agir et de l’expliquer simplement, en images. Chaque fait renvoie à sa source.' },
-    sources: 'Des citations des créateurs de l’IA et de scientifiques, des études, et le livre « The Coming Wave » (M. Suleyman, M. Bhaskar) - chaque fait renvoie à sa source.',
-    independence: 'Les scénarios sont des risques possibles, pas des prédictions. Un projet indépendant - sans lien avec les auteurs ni avec l’éditeur du livre.',
+    sources: 'Chaque fait renvoie à sa source. Les scénarios sont des risques, pas des prévisions.',
+    independence: 'Indépendant - sans lien avec les auteurs ni l’éditeur de « The Coming Wave ».',
     author: { label: 'Réalisé par', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };

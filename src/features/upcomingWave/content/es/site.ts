@@ -33,10 +33,10 @@ export const site = {
   },
   footer: {
     sourcesLink: 'Fuentes y método',
-    code: { label: 'Código abierto en GitHub', issue: 'informa de un error' },
+    code: { label: 'GitHub', issue: 'Informar de un error' },
     why: { title: '¿Por qué esta página?', text: 'Hablo mucho de IA con la gente y siempre veo lo mismo: no faltan opiniones, falta contexto - entender qué está realmente en juego. Así que decidí hacer algo al respecto y explicarlo de forma sencilla, con imágenes. Cada dato enlaza a su fuente.' },
-    sources: 'Citas de los creadores de la IA y de científicos, estudios y el libro «The Coming Wave» (M. Suleyman, M. Bhaskar) - cada dato enlaza a su fuente.',
-    independence: 'Los escenarios son riesgos posibles, no predicciones. Un proyecto independiente, sin relación con los autores ni con la editorial del libro.',
+    sources: 'Cada dato enlaza a su fuente. Los escenarios son riesgos, no predicciones.',
+    independence: 'Independiente: sin vínculo con los autores ni la editorial de «The Coming Wave».',
     author: { label: 'Hecho por', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };

@@ -33,10 +33,10 @@ export const site = {
   },
   footer: {
     sourcesLink: '出典と検証方法',
-    code: { label: 'GitHubでソースコードを公開', issue: '間違いを報告' },
+    code: { label: 'GitHub', issue: '間違いを報告' },
     why: { title: 'なぜこのページを？', text: '私はAIについて多くの人と話しますが、いつも同じことに気づきます。足りないのは意見ではなく、文脈です。実際に何が懸かっているのかという理解です。そこで何かしようと決め、イラストを使ってわかりやすく説明することにしました。すべての事実に、出典へのリンクを付けています。' },
-    sources: 'AIの開発者や科学者の言葉、研究、そして書籍『The Coming Wave』（M・スレイマン、M・バスカー）。すべての事実に、出典へのリンクを付けています。',
-    independence: 'シナリオは起こりうるリスクであり、予測ではありません。独立したプロジェクトで、本書の著者や出版社とは関係ありません。',
+    sources: 'すべての事実に出典リンクがあります。シナリオはリスクであり、予測ではありません。',
+    independence: '独立したプロジェクトです。『The Coming Wave』の著者・出版社とは関係ありません。',
     author: { label: '制作', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },
   },
 };
