@@ -6,6 +6,8 @@ import type { BandBlock } from '@features/upcomingWave/types/scene.types';
 import { BarCompare } from '@features/upcomingWave/components/BarCompare/BarCompare';
 import { Contrast } from '@features/upcomingWave/components/Contrast/Contrast';
 import { EvidenceGrid } from '@features/upcomingWave/components/EvidenceGrid/EvidenceGrid';
+import { GrowthChart } from '@features/upcomingWave/components/GrowthChart/GrowthChart';
+import { LilyPond } from '@features/upcomingWave/components/LilyPond/LilyPond';
 import { LoopDiagram } from '@features/upcomingWave/components/LoopDiagram/LoopDiagram';
 import { QuoteBand } from '@features/upcomingWave/components/QuoteBand/QuoteBand';
 import { Scissors } from '@features/upcomingWave/components/Scissors/Scissors';
@@ -20,6 +22,16 @@ export const BandBlocks = ({ blocks }: BandBlocksProps) => (
   <>{blocks.map((block, index) => <div key={`${block.kind}-${index}`} className={`uw-block is-${block.kind}`}>{renderBlock(block)}</div>)}</>
 );
 
+const AccelerationChart = () => {
+  const { acceleration, horizonPoints } = useContent();
+  return <GrowthChart {...acceleration.chart} points={horizonPoints} />;
+};
+
+const DoublingPond = () => {
+  const { acceleration } = useContent();
+  return <LilyPond {...acceleration.pond} />;
+};
+
 const renderBlock = (block: BandBlock) => {
   switch (block.kind) {
     case 'stats': return <StatRow items={block.items} />;
@@ -32,6 +44,8 @@ const renderBlock = (block: BandBlock) => {
     case 'timeline': return <Timeline {...block} />;
     case 'contrast': return <Contrast {...block} />;
     case 'statement': return <p className="uw-statement">{block.text}</p>;
+    case 'growth': return <AccelerationChart />;
+    case 'pond': return <DoublingPond />;
   }
 };
 

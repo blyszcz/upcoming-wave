@@ -1,6 +1,7 @@
 export type SceneStatus = 'today' | 'history' | 'incident' | 'possible' | 'possibleMany' | 'extreme' | 'answer';
 
-export type ChainStepId = 'work' | 'income' | 'shopping' | 'taxes' | 'trust' | 'ai' | 'control' | 'people' | 'state' | 'rules';
+// Chapter steps of the current page plus the older fine-grained steps kept for the archive.
+export type ChainStepId = 'stakes' | 'work' | 'money' | 'speed' | 'power' | 'rules' | 'income' | 'shopping' | 'taxes' | 'trust' | 'ai' | 'control' | 'people' | 'state';
 
 export type Source = { label: string; url?: string };
 
@@ -36,9 +37,13 @@ type BandBlockBody =
   | { kind: 'scissors'; title: string; income: string; spending: string; caption: string }
   | { kind: 'timeline'; title: string; steps: TimelineStep[]; footnote: string; sources: Source[] }
   | { kind: 'contrast'; title: string; left: { label: string; steps: string[] }; right: { label: string; steps: string[] } }
-  | { kind: 'statement'; text: string };
+  | { kind: 'statement'; text: string }
+  | { kind: 'growth' }
+  | { kind: 'pond' };
 
 export type BandBlock = BandBlockBody;
+
+export type Upside = { title: string; text: string; points: string[]; image: string; alt: string; sources: Source[] };
 
 export type Scene = {
   id: string;
@@ -50,4 +55,6 @@ export type Scene = {
   panels: ScenePanel[];
   explain: ExplainStep[];
   band?: BandBlock[];
+  // "If we get it right": how rules change this risk. Always visible, even when the chapter is collapsed.
+  upside?: Upside;
 };

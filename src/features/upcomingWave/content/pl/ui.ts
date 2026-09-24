@@ -20,6 +20,7 @@ export const ui = {
   why: 'Dlaczego?',
   copyLink: 'Kopiuj link do tej sekcji',
   facts: { moreVoices: (count: number) => `+${count} kolejne głosy`, lessVoices: 'Zwiń głosy' },
+  upside: { label: 'Jeśli zrobimy to dobrze' },
   readMore: 'Czytaj więcej',
   showLess: 'Zwiń sekcję',
   readingMode: { toShort: 'Skrót', toFull: 'Pełna wersja', aria: 'Przełącz między skrótem a pełną wersją' },

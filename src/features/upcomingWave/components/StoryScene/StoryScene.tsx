@@ -10,6 +10,7 @@ import { ExpandButton } from '@features/upcomingWave/components/ExpandButton/Exp
 import { ResponsiveImage } from '@features/upcomingWave/components/ResponsiveImage/ResponsiveImage';
 import { SceneBand } from '@features/upcomingWave/components/SceneBand/SceneBand';
 import { SectionAnchor } from '@features/upcomingWave/components/SectionAnchor/SectionAnchor';
+import { UpsideStrip } from '@features/upcomingWave/components/UpsideStrip/UpsideStrip';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 import { useDisclosure } from '@features/upcomingWave/hooks/useDisclosure';
 import { useInView } from '@features/upcomingWave/hooks/useInView';
@@ -66,6 +67,7 @@ export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
         )}
       </section>
       {isOpen && scene.band && <SceneBand id={factsId} chain={scene.chain} blocks={scene.band} />}
+      {scene.upside && <UpsideStrip upside={scene.upside} />}
     </>
   );
 };
