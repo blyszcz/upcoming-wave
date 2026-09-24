@@ -8,7 +8,11 @@ const SITE_NAME = { en: 'Upcoming Wave', pl: 'Nadchodząca fala' } as const;
 
 type LocaleMetadata = { locale: 'en' | 'pl'; title: string; description: string; page?: 'home' | 'sources' };
 
-const OG_IMAGE = { url: '/og/upcoming-wave-og.jpg', width: 1200, height: 630, alt: 'The same wave, two futures: a dark wave over a city on the left, a golden wave over a park on the right.' };
+// Link-preview card with the headline baked in (X shows only the image). Source: public/og/upcoming-wave-og.jpg.
+const OG_IMAGE = {
+  en: { url: '/og/upcoming-wave-og-en.jpg', width: 1200, height: 630, alt: 'AI could be the best thing we ever built — or the worst. The same wave, two futures: dark over a city, golden over a park.' },
+  pl: { url: '/og/upcoming-wave-og-pl.jpg', width: 1200, height: 630, alt: 'AI może być najlepszą rzeczą, jaką stworzyliśmy — albo najgorszą. Ta sama fala, dwie przyszłości: ciemna nad miastem, złota nad parkiem.' },
+} as const;
 
 // Shared metadata for both language roots: canonical, hreflang, Open Graph and X cards.
 export const buildMetadata = ({ locale, title, description, page = 'home' }: LocaleMetadata): Metadata => {
@@ -30,9 +34,9 @@ export const buildMetadata = ({ locale, title, description, page = 'home' }: Loc
     url: pathFor(locale),
     locale: locale === 'pl' ? 'pl_PL' : 'en_US',
     alternateLocale: locale === 'pl' ? ['en_US'] : ['pl_PL'],
-    images: [OG_IMAGE],
+    images: [OG_IMAGE[locale]],
   },
-  twitter: { card: 'summary_large_image', title, description, images: [OG_IMAGE.url], creator: '@blyzbyte' },
+  twitter: { card: 'summary_large_image', title, description, images: [OG_IMAGE[locale].url], creator: '@blyzbyte' },
   robots: { index: true, follow: true },
   };
 };
@@ -51,7 +55,7 @@ export const buildJsonLd = ({ locale, title, description }: LocaleMetadata): str
         description,
         url,
         inLanguage: locale,
-        image: new URL(OG_IMAGE.url, env.NEXT_PUBLIC_SITE_URL).toString(),
+        image: new URL(OG_IMAGE[locale].url, env.NEXT_PUBLIC_SITE_URL).toString(),
         author,
         publisher: author,
         isAccessibleForFree: true,
