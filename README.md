@@ -1,6 +1,6 @@
 # Upcoming Wave
 
-![AI will change your job. Who decides how?](public/og/upcoming-wave-og-en-v2.jpg)
+![AI will change your job. Who decides how?](public/og/upcoming-wave-og-en-v3.jpg)
 
 **[upcomingwave.org](https://upcomingwave.org)** · [Polski](https://upcomingwave.org/pl/) · [Español](https://upcomingwave.org/es/) · [Português](https://upcomingwave.org/pt/) · [Deutsch](https://upcomingwave.org/de/) · [Français](https://upcomingwave.org/fr/) · [日本語](https://upcomingwave.org/ja/)
 

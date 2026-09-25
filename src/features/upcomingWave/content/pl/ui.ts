@@ -38,7 +38,7 @@ export const ui = {
   voices: {
     eyebrow: 'Głosy · z wnętrza branży',
     titleLead: 'Zgadzają się w dwóch sprawach.',
-    titleAccent: 'To może być przełom. I potrzebne są zasady.',
+    titleAccent: 'To może być przełom. Potrzebne są regulacje.',
     text: 'Szefowie firm, które budują AI, i naukowcy, którzy byli jej pionierami. Każdy cytat ma link do źródła.',
     signedBy: 'Podpisali m.in.',
     source: 'Źródło:',

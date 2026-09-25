@@ -11,7 +11,7 @@ export const split = {
     image: '/images/v2/split-zombie-v2.jpg',
     alt: 'Opuszczony urząd: zamknięte okienka, puste krzesła, papiery na podłodze.',
     label: 'Puste państwo',
-    text: 'Urzędy i wybory wciąż są, ale państwo przestaje działać. Usługi kurczą się do minimum, rośnie chaos.',
+    text: 'Urzędy i wybory wciąż istnieją, ale państwo przestaje działać. Usługi kurczą się do minimum, rośnie chaos.',
     quote: '„twory podobne do zombie”',
   },
   right: {
@@ -40,8 +40,8 @@ export const finale = {
   label: 'CO MOGĘ ZROBIĆ',
   title: { lead: 'Nie zatrzymujmy postępu.', accent: 'Wyznaczmy mu granice.' },
   quote: 'Pasy zapinasz nie dlatego, że wiesz, że będzie wypadek. Zapinasz je, bo nie wiesz.',
-  rules: { title: 'Jak wyglądają dobre zasady', items: ['Niezależne testy, zanim AI trafi do milionów ludzi', 'Jasna odpowiedzialność, gdy system AI wyrządzi szkodę', 'Uczciwy podział zysków z AI - przez podatki i prawdziwą siatkę bezpieczeństwa'] },
-  actions: { title: 'Co możesz zrobić', items: ['Wyślij to jednej osobie, która jeszcze się nad tym nie zastanawiała', 'Zapytaj polityków, którzy cię reprezentują, jakie mają stanowisko w sprawie zasad dla AI', 'Gdy firmy AI publikują plany bezpieczeństwa - czytaj je i zadawaj pytania'] },
+  rules: { title: 'Jak wyglądają dobre regulacje', items: ['Niezależne testy, zanim AI trafi do milionów ludzi', 'Jasna odpowiedzialność, gdy system AI wyrządzi szkodę', 'Uczciwy podział zysków z AI - przez podatki i realną osłonę socjalną'] },
+  actions: { title: 'Co możesz zrobić', items: ['Wyślij to jednej osobie, która jeszcze się nad tym nie zastanawiała', 'Zapytaj swoich posłów, co sądzą o regulacji AI', 'Gdy firmy AI publikują plany bezpieczeństwa - czytaj je i zadawaj pytania'] },
   // Empty: the closing line is the page's own voice, not a quote.
   quoteSource: '',
 };
