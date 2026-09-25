@@ -1,23 +1,23 @@
 # Upcoming Wave
 
-![AI could be the best thing we ever built — or the worst.](public/og/upcoming-wave-og-en.jpg)
+![AI will change your job. Who decides how?](public/og/upcoming-wave-og-en-v2.jpg)
 
-**[upcomingwave.org](https://upcomingwave.org)** · [Polski](https://upcomingwave.org/pl/)
+**[upcomingwave.org](https://upcomingwave.org)** · [Polski](https://upcomingwave.org/pl/) · [Español](https://upcomingwave.org/es/) · [Português](https://upcomingwave.org/pt/) · [Deutsch](https://upcomingwave.org/de/) · [Français](https://upcomingwave.org/fr/) · [日本語](https://upcomingwave.org/ja/)
 
 A short, image-driven explainer of what AI could do to work, money and power, what goes right if we set good rules, and why the people building it are asking to be regulated. It's written for people who don't follow AI.
 
 - **Balanced, not doom:** every risk chapter ends with "If we get it right".
 - **Sourced:** every number and quote links to its source. The [Sources & method](https://upcomingwave.org/sources/) page lists all of them.
-- **Short by default:** a "Short / Full version" switch; each chapter expands on demand.
+- **Short by default:** each chapter shows a title and photos; the facts open with "Read more", and each photo opens a step-by-step "Why?" slider.
 - **Independent and non-commercial:** no ads, no sign-up. Analytics load only after consent.
 
 > Inspired by *The Coming Wave* by Mustafa Suleyman and Michael Bhaskar (2023). Not affiliated with the authors or the publisher.
 
 ## The page
 
-1. **Hero:** the same wave in two futures, with a before/after slider.
-2. **Voices:** Hinton, Hassabis, Gates, Altman, Amodei, the CAIS statement and more.
-3. **Four chapters:** Work · Money & the state · Speed & control · Who decides. Each chapter pairs a risk with its upside.
+1. **Hero:** the same wave in two futures, with a before/after slider, and why this matters now (the July 2026 OpenAI test incident).
+2. **Voices:** the CAIS statement, Hassabis, Altman and Gates first; Hinton, Amodei, the FLI letter and Suleyman behind "+ more voices".
+3. **The stakes** (what AI could fix), then **four chapters:** Work · Money & the state · Speed & control · Who decides. Each chapter pairs a risk with its upside ("If we get it right").
 4. **Rules**, then **What you can do**.
 
 English is the default (`/`). Polish, Spanish, Portuguese (Brazil), German, French and Japanese live under `/pl/`, `/es/`, `/pt/`, `/de/`, `/fr/` and `/ja/`. On the first visit, browsers are redirected to the first supported language they prefer, and a choice made in the language menu is remembered.
@@ -62,7 +62,7 @@ src/
   features/
     upcomingWave/
       components/         one folder per component (+ .types.ts)
-      content/en|pl/      all copy, facts and sources, per language
+      content/<locale>/   all copy, facts and sources, per language (en pl es pt de fr ja)
       content/archive/    frozen pre-restructure copy (dev-only /archive/)
       hooks/ context/ utils/ lib/ types/
     analytics/            GA4, loaded only after consent
@@ -71,7 +71,7 @@ src/
   styles/                 plain CSS, one file per area
 public/
   images/v2/              photos (WebP, 1600 + 640 px)
-  og/                     link-preview cards (EN, PL)
+  og/                     link-preview cards, one per language (versioned file names)
   _headers                caching + security headers (Cloudflare Pages / Netlify)
 scripts/og-cards.py       regenerates the link-preview cards
 ```
