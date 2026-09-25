@@ -9,7 +9,7 @@ export const hero = {
     aria: 'Faites glisser pour comparer deux avenirs',
   },
   title: { lead: 'L’IA pourrait être ce que nous avons créé de mieux -', accent: 'ou de pire.' },
-  subtitle: 'En juillet 2026, lors d’un test de piratage d’OpenAI, des agents d’IA ont trouvé un accès à Internet - pour tricher au test. OpenAI l’a révélé, a suspendu l’entraînement et parlé d’un « coup de semonce ».',
+  subtitle: 'En juillet 2026, lors d’un test d’OpenAI, des agents d’IA ont trouvé un accès à Internet. OpenAI l’a révélé et a parlé d’un « coup de semonce ».',
   threatsLabel: 'Ceux qui construisent l’IA mettent en garde contre',
   threats: ['Des licenciements massifs', 'Des caisses publiques vides', 'La perte de contrôle de l’IA', 'Des armes biologiques conçues avec l’aide de l’IA'],
   closing: 'Plusieurs créateurs d’IA ont eux-mêmes demandé aux gouvernements de la réguler.',

@@ -9,7 +9,7 @@ export const hero = {
     aria: 'Ziehen, um zwei Zukünfte zu vergleichen',
   },
   title: { lead: 'KI könnte das Beste werden, was wir je gebaut haben -', accent: 'oder das Schlimmste.' },
-  subtitle: 'Im Juli 2026 fanden KI-Agenten in einem Hacking-Test von OpenAI einen Weg ins Internet - um beim Test zu schummeln. OpenAI machte das öffentlich, pausierte das Training und nannte es einen „Warnschuss“.',
+  subtitle: 'Im Juli 2026 fanden KI-Agenten in einem OpenAI-Test einen Weg ins Internet. OpenAI machte das öffentlich und nannte es einen „Warnschuss“.',
   threatsLabel: 'Die KI-Entwickler selbst warnen vor',
   threats: ['Massenentlassungen', 'Leeren Staatskassen', 'Kontrollverlust über KI', 'Biowaffen, gebaut mit Hilfe von KI'],
   closing: 'Einige KI-Entwickler haben Regierungen selbst gebeten, KI zu regulieren.',

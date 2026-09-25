@@ -14,7 +14,6 @@
   .uw-voices-header { grid-template-columns: 1fr; }
   .uw-voice.is-statement { display: flex; }
   .uw-voice.is-statement .uw-voice-media { order: 0; aspect-ratio: 16 / 10; min-height: 0; }
-  .uw-hero-threats ol { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 820px) {
@@ -50,8 +49,7 @@
   .uw-hero-actions { padding-top: 10px; }
   .uw-hero-title { font-size: clamp(2.2rem, 9.8vw, 3.4rem); }
   .uw-hero-subtitle { margin-top: -6px; font-size: 1.05rem; }
-  /* First screen on phones: headline, one line, the ask, and one button. The threats are covered in the chapters. */
-  .uw-hero-threats { display: none; }
+  /* First screen on phones: headline, one line, the ask, and one button. */
   .uw-cta-long { display: none; }
   .uw-cta-short { display: inline; }
   .uw-hero-closing { font-size: 1.02rem; }

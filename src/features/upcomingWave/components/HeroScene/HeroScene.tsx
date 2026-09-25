@@ -21,12 +21,6 @@ export const HeroScene = () => {
     <div className="uw-hero-copy">
       <h1 id="hero-title" className="uw-title uw-hero-title">{hero.title.lead} <em>{hero.title.accent}</em></h1>
       <p className="uw-hero-subtitle">{hero.subtitle}</p>
-      <div className="uw-hero-threats">
-        <p>{hero.threatsLabel}:</p>
-        <ol>
-          {hero.threats.map((threat, index) => <li key={threat}><span>{String(index + 1).padStart(2, '0')}</span>{threat}</li>)}
-        </ol>
-      </div>
       <p className="uw-hero-closing">{hero.closing}</p>
       <div className="uw-hero-actions">
         {/* Phones show the short label (responsive.css); the hidden one is skipped by screen readers too. */}
