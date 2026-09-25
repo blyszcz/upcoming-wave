@@ -3,15 +3,15 @@ export const site = {
   meta: {
     siteName: 'Upcoming Wave',
     home: {
-      title: 'Qui paie les écoles quand l’IA fait le travail ?',
-      description: 'Un guide visuel de 5 minutes d’après « The Coming Wave » : ce que l’IA pourrait réparer, ce qu’elle pourrait faire aux emplois et aux budgets publics, ce qu’a révélé un test d’OpenAI en juillet 2026, et les règles qui décident de l’avenir que nous aurons. Chaque fait est sourcé.',
+      title: 'L’IA va changer votre travail. Qui décide comment ?',
+      description: 'Un guide visuel de 5 minutes : ce que l’IA pourrait réparer, ce qu’elle pourrait faire à l’emploi et aux budgets publics, et les règles qui décideront de notre avenir.',
     },
     sources: {
       title: 'Sources et méthode - Upcoming Wave',
       description: 'Toutes les sources des chiffres et des citations d’Upcoming Wave, et la façon dont je les vérifie.',
     },
-    card: { lead: 'Qui paie les écoles', accent: 'quand l’IA fait le travail ?' },
-    ogAlt: 'Qui paie les écoles quand l’IA fait le travail ? La même vague, deux avenirs : sombre au-dessus d’une ville, dorée au-dessus d’un parc.',
+    card: { lead: 'L’IA va changer votre travail.', accent: 'Qui décide comment ?' },
+    ogAlt: 'L’IA va changer votre travail. Qui décide comment ? Deux avenirs : un bureau vidé par l’automatisation, et une famille qui retrouve du temps pendant qu’un robot fait les tâches ménagères.',
   },
   sourcesPage: {
     title: 'Sources et méthode',

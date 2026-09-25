@@ -3,15 +3,15 @@ export const site = {
   meta: {
     siteName: 'Upcoming Wave',
     home: {
-      title: 'Quem paga as escolas quando a IA faz o trabalho?',
-      description: 'Um guia visual de 5 minutos baseado em “The Coming Wave”: o que a IA pode consertar, o que ela pode fazer com os empregos e os orçamentos públicos, o que um teste da OpenAI em julho de 2026 revelou e as regras que decidem qual futuro teremos. Todos os fatos têm fonte.',
+      title: 'A IA vai mudar seu trabalho. Quem decide como?',
+      description: 'Um guia visual de 5 minutos: o que a IA pode consertar, o que pode fazer com empregos e orçamentos públicos e as regras que vão decidir qual futuro teremos.',
     },
     sources: {
       title: 'Fontes e método - Upcoming Wave',
       description: 'Todas as fontes por trás dos números e citações do Upcoming Wave, e como as verifico.',
     },
-    card: { lead: 'Quem paga as escolas', accent: 'quando a IA faz o trabalho?' },
-    ogAlt: 'Quem paga as escolas quando a IA faz o trabalho? A mesma onda, dois futuros: escura sobre uma cidade, dourada sobre um parque.',
+    card: { lead: 'A IA vai mudar seu trabalho.', accent: 'Quem decide como?' },
+    ogAlt: 'A IA vai mudar seu trabalho. Quem decide como? Dois futuros: um escritório esvaziado pela automação e uma família com tempo livre enquanto um robô cuida da casa.',
   },
   sourcesPage: {
     title: 'Fontes e método',

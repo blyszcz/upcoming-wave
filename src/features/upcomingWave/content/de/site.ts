@@ -3,15 +3,15 @@ export const site = {
   meta: {
     siteName: 'Upcoming Wave',
     home: {
-      title: 'Wer zahlt für Schulen, wenn KI die Arbeit macht?',
-      description: 'Ein bebilderter 5-Minuten-Überblick nach „The Coming Wave“: was KI lösen könnte, was sie mit Jobs und öffentlichen Haushalten machen könnte, was ein OpenAI-Test im Juli 2026 gezeigt hat, und die Regeln, die entscheiden, welche Zukunft wir bekommen. Jeder Fakt mit Quelle.',
+      title: 'KI wird deine Arbeit verändern. Wer entscheidet, wie?',
+      description: 'Ein visueller 5-Minuten-Überblick: was KI verbessern kann, was sie mit Jobs und Staatshaushalten machen könnte und welche Regeln entscheiden, welche Zukunft wir bekommen.',
     },
     sources: {
       title: 'Quellen & Methode - Upcoming Wave',
       description: 'Alle Quellen hinter den Zahlen und Zitaten auf Upcoming Wave - und wie ich sie prüfe.',
     },
-    card: { lead: 'Wer zahlt für Schulen,', accent: 'wenn KI die Arbeit macht?' },
-    ogAlt: 'Wer zahlt für Schulen, wenn KI die Arbeit macht? Dieselbe Welle, zwei Zukünfte: dunkel über einer Stadt, golden über einem Park.',
+    card: { lead: 'KI wird deine Arbeit verändern.', accent: 'Wer entscheidet, wie?' },
+    ogAlt: 'KI wird deine Arbeit verändern. Wer entscheidet, wie? Zwei Zukünfte: ein durch Automatisierung geleertes Büro und eine Familie mit freier Zeit, während ein Roboter den Haushalt macht.',
   },
   sourcesPage: {
     title: 'Quellen & Methode',

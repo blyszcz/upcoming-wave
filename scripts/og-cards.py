@@ -3,14 +3,16 @@
 # 2. screenshot each file at 1200x630 (e.g. Playwright, wait for document.fonts.ready)
 #    and save as public/og/upcoming-wave-og-<locale>.jpg (JPEG ~q86).
 # Text comes from content/<locale>/site.ts (meta.card, else meta.home.title) and meta.siteName; the
-# background is public/og/upcoming-wave-og.jpg. Fonts load from Google Fonts to match the site.
+# background is two photos from public/images/v2 (LEFT / RIGHT below). Fonts load from Google Fonts to match the site.
 import html
 import os
 import re
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 CONTENT = os.path.join(ROOT, 'src/features/upcomingWave/content')
-BACKGROUND = os.path.abspath(os.path.join(ROOT, 'public/og/upcoming-wave-og.jpg'))
+# Two futures side by side: people laid off with their boxes, and a family with time back.
+LEFT = os.path.abspath(os.path.join(ROOT, 'public/images/v2/threat-02-layoffs-v1.webp'))
+RIGHT = os.path.abspath(os.path.join(ROOT, 'public/images/v2/upside-work-time-v2.webp'))
 OUT = '/tmp/og-cards'
 LOCALES = ['en', 'pl', 'es', 'pt', 'de', 'fr', 'ja']
 DASHES = [' - ', ' — ', ' – ']
@@ -52,7 +54,10 @@ def card(locale, copy):
 <link rel="stylesheet" href="{FONTS}">
 <style>
 html,body{{margin:0;width:1200px;height:630px;overflow:hidden;background:#070b10}}
-.og{{position:relative;width:1200px;height:630px;background:url('file://{BACKGROUND}') center/cover}}
+.og{{position:relative;width:1200px;height:630px;background:#070b10}}
+.half{{position:absolute;top:0;bottom:0;width:600px;background-repeat:no-repeat;background-size:cover}}
+.half.l{{left:0;background-image:url('file://{LEFT}');background-position:50% 100%;filter:brightness(1.1)}}
+.half.r{{right:0;background-image:url('file://{RIGHT}');background-position:88% 50%;border-left:2px solid rgba(238,236,230,.85);box-shadow:-10px 0 24px rgba(255,190,120,.35)}}
 .og::after{{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,11,16,0) 28%,rgba(7,11,16,.8) 60%,rgba(7,11,16,.96) 100%)}}
 .copy{{position:absolute;z-index:1;left:56px;right:56px;bottom:44px;display:grid;gap:26px}}
 h1{{margin:0;max-width:1040px;color:#eeece6;font:600 {size}px/1.04 {sans};letter-spacing:{'0' if ja else '-0.04em'};text-wrap:balance}}
@@ -61,7 +66,7 @@ h1 em{{display:block;color:#ff6b3d;font:{'500' if ja else 'italic 400'} 1.08em/0
 .brand{{display:flex;align-items:center;gap:12px}}
 .brand i{{width:14px;height:14px;border-radius:50%;background:#ff6b3d;box-shadow:0 0 0 4px rgba(7,11,16,.8),0 0 0 6px rgba(238,236,230,.7)}}
 .url{{text-transform:none;letter-spacing:.06em;color:#eeece6}}
-</style></head><body><div class="og"><div class="copy">
+</style></head><body><div class="og"><div class="half l"></div><div class="half r"></div><div class="copy">
 <h1>{html.escape(copy["lead"])} <em>{html.escape(copy["accent"])}{accent_end}</em></h1>
 <div class="row"><span class="brand"><i></i>{html.escape(copy["brand"])}</span><span class="url">upcomingwave.org</span></div>
 </div></div></body></html>'''

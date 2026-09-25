@@ -3,15 +3,15 @@ export const site = {
   meta: {
     siteName: 'Nadchodząca fala',
     home: {
-      title: 'Kto zapłaci za szkoły, gdy pracę przejmie AI?',
-      description: 'Wizualny przewodnik na 5 minut, oparty na książce „Nadchodząca fala”: co AI może naprawić, co może zrobić z pracą i budżetami publicznymi, co ujawnił test OpenAI z lipca 2026 r. i zasady, od których zależy, jaką przyszłość dostaniemy. Przy każdym fakcie źródło.',
+      title: 'AI zmieni Twoją pracę. Kto zdecyduje jak?',
+      description: '5-minutowy przewodnik w obrazach: co AI może naprawić, co może zrobić z pracą i budżetami państw i jakie zasady zdecydują, którą przyszłość dostaniemy.',
     },
     sources: {
       title: 'Źródła i metoda - Nadchodząca fala',
       description: 'Wszystkie źródła liczb i cytatów na stronie „Nadchodząca fala” oraz to, jak je sprawdzam.',
     },
-    card: { lead: 'Kto zapłaci za szkoły,', accent: 'gdy pracę przejmie AI?' },
-    ogAlt: 'Kto zapłaci za szkoły, gdy pracę przejmie AI? Ta sama fala, dwie przyszłości: ciemna nad miastem, złota nad parkiem.',
+    card: { lead: 'AI zmieni Twoją pracę.', accent: 'Kto zdecyduje jak?' },
+    ogAlt: 'AI zmieni Twoją pracę. Kto zdecyduje jak? Dwie przyszłości: biuro opustoszałe przez automatyzację i rodzina, która odzyskała czas, bo robot zajmuje się domem.',
   },
   sourcesPage: {
     title: 'Źródła i metoda',

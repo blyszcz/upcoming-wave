@@ -3,16 +3,16 @@ export const site = {
   meta: {
     siteName: 'Upcoming Wave',
     home: {
-      title: 'Who pays for schools when AI does the work?',
-      description: 'A 5-minute visual guide based on “The Coming Wave”: what AI could fix, what it could do to jobs and public budgets, what a July 2026 OpenAI test revealed, and the rules that decide which future we get. Every fact is sourced.',
+      title: 'AI will change your job. Who decides how?',
+      description: 'A 5-minute visual guide: what AI could fix, what it could do to jobs and public budgets, and the rules that decide which future we get.',
     },
     sources: {
       title: 'Sources & method - Upcoming Wave',
       description: 'Every source behind the numbers and quotes on Upcoming Wave, and how I check them.',
     },
     // Text baked into the link-preview image (scripts/og-cards.py): white lead, orange accent.
-    card: { lead: 'Who pays for schools', accent: 'when AI does the work?' },
-    ogAlt: 'Who pays for schools when AI does the work? The same wave, two futures: dark over a city, golden over a park.',
+    card: { lead: 'AI will change your job.', accent: 'Who decides how?' },
+    ogAlt: 'AI will change your job. Who decides how? Two futures: an office emptied by automation, and a family with time back while a robot does the chores.',
   },
   sourcesPage: {
     title: 'Sources & method',
