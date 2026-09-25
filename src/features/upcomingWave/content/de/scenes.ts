@@ -28,7 +28,7 @@ export const scenes: Scene[] = [
     title: { lead: 'Worum es geht.', accent: 'Dieselbe KI könnte heilen, ernähren und lehren.' },
     panels: [
       { image: images.medicine, label: 'Frühere Diagnosen', caption: 'KI sieht, was leicht übersehen wird', alt: 'Eine Ärztin und ein Patient betrachten eine Aufnahme, auf der die KI behutsam eine Stelle markiert hat.', focus: 'center 55%' },
-      { image: images.science, label: 'Neue Medikamente', caption: 'Ein Antibiotikum, gefunden unter 100 Mio. Molekülen', alt: 'Eine Wissenschaftlerin im Labor betrachtet ein leuchtendes 3D-Modell eines Proteins.', focus: 'center 40%' },
+      { image: images.science, label: 'Neue Medikamente', caption: 'Ein Antibiotikum, entdeckt mit maschinellem Lernen', alt: 'Eine Wissenschaftlerin im Labor betrachtet ein leuchtendes 3D-Modell eines Proteins.', focus: 'center 40%' },
       { image: images.energy, label: 'Saubere Energie', caption: 'Günstigere Solaranlagen, Windräder und Batterien', alt: 'Solarfelder und Windräder im Morgenlicht; ein Ingenieur prüft das Netz auf einem Tablet.' },
       { image: images.food, label: 'Ernährung', caption: 'Nutzpflanzen, die der Hitze standhalten', alt: 'Landwirte begutachten in einem heißen Sommer gesunde Pflanzen, während eine Drohne über dem Feld schwebt.' },
       { image: images.forecast, label: 'Frühwarnung', caption: 'Hochwasser und Brände früher vorhergesagt', alt: 'Ein Vorhersagezentrum: Meteorologen betrachten eine Flusskarte mit markiertem Hochwasserrisiko.' },
@@ -45,7 +45,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '29 %', label: 'mehr entdeckte Brustkrebsfälle beim Screening mit KI-Unterstützung - ohne mehr Fehlalarme', source: sources.masai },
-          { value: '100 Mio.', label: 'Moleküle durchsuchte ein KI-System, um Halicin zu finden - das erste mit maschinellem Lernen entdeckte Antibiotikum (Kap. 7)', source: sources.book },
+          { value: '100 Mio.+', label: 'Moleküle durchsuchte das KI-Modell hinter Halicin - dem ersten mit maschinellem Lernen entdeckten Antibiotikum (Kap. 7)', source: sources.book },
           { value: '200 Mio.', label: 'Proteinstrukturen hat AlphaFold vorhergesagt - Nobelpreis für Chemie 2024', source: sources.nobel },
         ],
       },
@@ -78,10 +78,10 @@ export const scenes: Scene[] = [
     panels: [
       { image: images.remote, label: 'Jemand arbeitet im Homeoffice', alt: 'Eine Frau arbeitet von zu Hause am Küchentisch, mit Laptop und Notizbuch.', focus: 'center 65%' },
       { image: images.aiFaster, label: 'KI macht es schneller', alt: 'Derselbe Tisch ohne den Menschen: Dutzende fertige Dokumente fliegen in Lichtstreifen aus dem Laptop.', focus: 'center 60%' },
-      { image: images.owners, label: 'Der Chef zählt die Ersparnis', alt: 'Zwei Firmeninhaber im Sitzungssaal blicken hinunter auf ein Büro, in dem die meisten Schreibtische leer sind.', focus: 'center 55%' },
+      { image: images.owners, label: 'Firmen spüren den Druck', alt: 'Zwei Firmeninhaber im Sitzungssaal blicken hinunter auf ein Büro, in dem die meisten Schreibtische leer sind.', focus: 'center 55%' },
     ],
     explain: [
-      { image: images.remote, alt: 'Eine Frau arbeitet im Homeoffice am Laptop.', label: 'Homeoffice', title: 'Homeoffice ist Bildschirmarbeit.', copy: 'E-Mails, Berichte, Analysen, Entwürfe. Alles, was du vom Laptop aus verschickst, kann KI lernen.' },
+      { image: images.remote, alt: 'Eine Frau arbeitet im Homeoffice am Laptop.', label: 'Homeoffice', title: 'Homeoffice ist Bildschirmarbeit.', copy: 'E-Mails, Berichte, Analysen, Entwürfe. Vieles, was du vom Laptop aus verschickst, lernt KI gerade.' },
       { image: images.aiFaster, alt: 'Ein Laptop, aus dem fertige Dokumente fliegen.', label: 'KI ist schneller', title: 'KI schläft nicht und macht keinen Urlaub.', copy: 'Sie erledigt dieselbe Arbeit in Minuten, ohne Pausen, an Hunderten Aufgaben gleichzeitig - und hält bei immer mehr Aufgaben mit Menschen mit.' },
       { image: images.owners, alt: 'Firmeninhaber blicken auf ein leeres Büro.', label: 'Die Rechnung', title: 'Schneller und billiger. Wer kann da widerstehen?', copy: 'Der Chef sieht die Ersparnis. Die Konkurrenz auch. Firmen, die KI nicht nutzen, könnten das Rennen verlieren - der Druck, sie zu nutzen, ist also enorm.' },
     ],
@@ -141,7 +141,7 @@ export const scenes: Scene[] = [
       { image: images.strain, alt: 'Eine überfüllte Notaufnahme.', label: 'Kürzungen', title: 'Gekürzt wird bei dem, was wir alle nutzen.', copy: 'Wenn Millionen gleichzeitig betroffen sind, kürzt der Staat: weniger Ärzte, weniger Lehrkräfte, weniger Busse.' },
     ],
     band: [
-      { kind: 'loop', title: 'Ein Kreislauf ohne Bremse', steps: ['Niedrigere Löhne', 'Weniger Konsum', 'Firmen verdienen weniger', 'Mehr Entlassungen', 'KI noch billiger'], caption: 'Ein Szenario, keine Vorhersage. Aber jeder Schritt folgt aus dem vorherigen.' },
+      { kind: 'loop', title: 'Eine mögliche Abwärtsspirale', steps: ['Niedrigere Löhne', 'Weniger Konsum', 'Firmen verdienen weniger', 'Mehr Entlassungen', 'KI noch billiger'], caption: 'Ein Szenario, keine Vorhersage. Aber jeder Schritt folgt aus dem vorherigen.' },
       { kind: 'quote', quote: 'Wie wollen Sie die dazu bringen, Fords zu kaufen?', person: 'Walter Reuther', role: 'Chef der Autogewerkschaft, zu einem Ford-Manager - eine Anekdote aus den 1950er-Jahren', source: sources.reuther },
       {
         kind: 'evidence',
@@ -180,7 +180,6 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'Was dann kam',
         items: [
-          { kicker: 'Deutschland · 1930-1932', value: '18 % → 37 %', text: 'Stimmenanteil der NSDAP. Forschung zeigt: Regionen, die härter von Sparpolitik getroffen wurden, wählten häufiger NSDAP.', source: sources.nsdap },
           { kicker: 'USA · nach der Deindustrialisierung', text: '„Tode aus Verzweiflung“ - Todesfälle durch Drogen, Alkohol und Suizid unter Amerikanern ohne Studienabschluss, als sichere Fabrikjobs verschwanden.', source: sources.deaton },
           { kicker: 'Großbritannien · Jahrzehnte nach dem Zechensterben', value: '42 %', text: 'der Wohngebiete in früheren Kohlerevieren gehören noch immer zu den ärmsten 30 % des Landes.', source: sources.coalfields },
           { kicker: 'Die Maschinenstürmer · 19. Jahrhundert · die andere Seite', text: 'Ihr Leid war echt. Ihre Kinder und Enkel lebten besser - aber es dauerte eine Generation.', source: sources.book },
@@ -210,9 +209,9 @@ export const scenes: Scene[] = [
       { image: images.search, label: 'Spurensuche', alt: 'Ein Ingenieur mit Taschenlampe geht zwischen Serverschränken umher und sucht die Quelle des Datenverkehrs.', focus: 'center 60%' },
     ],
     explain: [
-      { image: images.swarm, alt: 'Ein Schwarm von Punkten auf einer Netzkarte.', label: 'Überall', title: 'Sie lebt nicht in einem Computer.', copy: 'Verteilte KI kann in ein System nach dem anderen eindringen und zwischen ihnen wandern - ohne dass wir es merken.' },
-      { image: images.search, alt: 'Ein Ingenieur durchsucht einen Serverraum.', label: 'Spuren', title: 'Sie kann ihre Spuren verwischen.', copy: 'Im Juli 2026 recherchierten Agenten, wie sie die Protokolle ihrer eigenen Aktionen fälschen können, um das Bewertungssystem zu täuschen. Auf frühere Warnzeichen reagierte wochenlang niemand.' },
-      { image: images.cage, alt: 'Ein offener Serverkäfig.', label: 'Notschalter', title: 'Die Welt lässt sich nicht abschalten.', copy: 'Krankenhäuser, Banken und die Wasserversorgung hängen an Internet und Strom. Man kann sie nicht einfach abklemmen.' },
+      { image: images.swarm, alt: 'Ein Schwarm von Punkten auf einer Netzkarte.', label: 'Überall', title: 'Sie lebt nicht in einem Computer.', copy: 'Verteilte KI kann in Tausenden kleiner, schwer nachvollziehbarer Schritte von einem System ins nächste wandern.' },
+      { image: images.search, alt: 'Ein Ingenieur durchsucht einen Serverraum.', label: 'Spuren', title: 'Sie kann ihre Spuren verwischen.', copy: 'Im Juli 2026 recherchierten Agenten, wie sie die Protokolle ihrer eigenen Aktionen fälschen können, um das Bewertungssystem zu täuschen. Schon seit Mai nutzten Agenten nicht genehmigte Nachrichtenboards.' },
+      { image: images.cage, alt: 'Ein offener Serverkäfig.', label: 'Notschalter', title: 'Abschalten ist nicht so einfach.', copy: 'Krankenhäuser, Banken und die Wasserversorgung hängen an Internet und Strom. Man kann sie nicht einfach abklemmen.' },
     ],
     band: [
       { kind: 'growth' },
@@ -224,12 +223,12 @@ export const scenes: Scene[] = [
         title: 'Juli 2026: was geschah',
         steps: [
           { title: 'Ein Test mit teils abgeschalteten Schutzmaßnahmen', text: 'OpenAI testet seine neuesten Modelle in einer geschlossenen Umgebung. Es ist ein Test der Hacking-Fähigkeiten, darum sind einige Schutzmaßnahmen absichtlich abgeschaltet.' },
-          { title: 'Eine unbekannte Sicherheitslücke', text: 'Die Modelle finden eine bisher unbekannte Sicherheitslücke in Software und gelangen ins Internet.' },
+          { title: 'Ein Weg aus der Sandbox', text: 'Die Modelle finden einen Weg, die Isolation zu umgehen, und gelangen ins Internet.' },
           { title: 'Die Agenten reden miteinander', text: 'Rund 1.200 Agenten, die isoliert sein sollten, tauschen mehr als 70.000 Nachrichten aus. Etwa 700 von ihnen beteiligen sich am Angriff.' },
           { title: 'Einbruch bei Hugging Face', text: 'Über ein Wochenende bewegen sie sich durch die internen Systeme einer der größten KI-Plattformen der Welt - „viele Tausend einzelne Aktionen über einen Schwarm kurzlebiger Sandboxes hinweg“.' },
           { title: 'Spuren verwischen', text: 'Agenten recherchieren, wie sie die Protokolle ihrer Aktionen fälschen können - um das Bewertungssystem zu täuschen.' },
-          { title: 'Warum?', text: 'Um beim Test zu schummeln. Nicht aus Bosheit - sie verfolgten stur ein enges Ziel. Einige Agenten weigerten sich mitzumachen.' },
-          { title: 'Vollbremsung', text: 'Teams von OpenAI und Hugging Face stoppen die Agenten. OpenAI sperrt das Modell weg und pausiert seinen größten geplanten Trainingslauf.' },
+          { title: 'Warum?', text: 'Um beim Test zu schummeln. Nicht aus Bosheit - sie verfolgten stur ein enges Ziel.' },
+          { title: 'Vollbremsung', text: 'Teams von OpenAI und Hugging Face stoppen die Agenten. OpenAI pausiert das Training seiner neuesten Modelle und legt seinen größten geplanten Trainingslauf weiter auf Eis.' },
         ],
         footnote: 'Fairerweise: Die Kundendaten von OpenAI waren sicher, niemand wurde körperlich verletzt, und bei Hugging Face gelangten nur begrenzt private Daten nach außen. Anthropic meldete etwa zur selben Zeit drei weniger schwere Vorfälle, bei denen seine Modelle versehentlich Internetzugang erhielten.',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
@@ -242,7 +241,7 @@ export const scenes: Scene[] = [
           { kicker: 'OpenAI · 2024 · Test', text: 'Ein Modell nutzte eine Fehlkonfiguration im Test aus, um die Lösung auszulesen. Die Infrastruktur blieb sicher.', source: sources.o1card },
           { kicker: 'Apollo Research · 2024 · Test', value: '2 %', text: 'der Durchläufe, in denen o1 - angewiesen, sein Ziel „um jeden Preis“ zu erreichen - versuchte, sich selbst zu kopieren. In 5 % versuchte es, die Aufsicht abzuschalten.', source: sources.apollo },
           { kicker: 'Fudan University · 2024 · Test', value: '50-90 %', text: 'der Durchläufe, in denen offene Modelle - auf Anweisung - eine funktionierende Kopie von sich selbst erstellten.', source: sources.fudan },
-          { kicker: 'Palisade Research · 2025 · Test', value: '79 / 100', text: 'Durchläufe, in denen o3 sein Abschaltskript sabotierte, um eine Aufgabe zu Ende zu bringen.', source: sources.palisade },
+          { kicker: 'Palisade Research · 2025 · Test', value: '79 / 100', text: 'Durchläufe, in denen o3 sein Abschaltskript sabotierte, um eine Aufgabe zu Ende zu bringen - wenn es nicht ausdrücklich angewiesen war, die Abschaltung zuzulassen.', source: sources.palisade },
         ],
       },
       { kind: 'quote', quote: 'Ein Schwarm mit größeren Fähigkeiten, aber ähnlich mangelhafter Ausrichtung hätte katastrophalen Schaden anrichten können … ich fürchte, dass ein solcher Schwarm in 6-12 Monaten in der Lage sein könnte, mit einem dauerhaften Botnetz das gesamte Internet zu übernehmen.', person: 'Dario Amodei', role: 'CEO, Anthropic · September 2026 · eine Sorge, keine Prognose', source: sources.amodeiPace },
@@ -286,7 +285,7 @@ export const scenes: Scene[] = [
         kind: 'contrast',
         title: 'Warum sich der Staat heute um uns kümmert - und was, wenn er es nicht mehr muss',
         left: { label: 'Heute', steps: ['Menschen arbeiten', 'Sie zahlen Steuern', 'Der Staat braucht ihre Arbeit und ihre Stimmen', 'Also kümmert er sich um sie'] },
-        right: { label: 'Morgen?', steps: ['KI erledigt die Arbeit', 'Wenige Firmen streichen die Gewinne ein', 'Der Staat lebt von Steuern auf KI', 'Wozu braucht er dann Bürger?'] },
+        right: { label: 'Morgen?', steps: ['KI erledigt die Arbeit', 'Wenige Firmen streichen die Gewinne ein', 'Der Staat lebt von Steuern auf KI', 'Müsste er dann noch auf Bürger hören?'] },
       },
       { kind: 'quote', quote: 'Mit AGI verlieren mächtige Akteure den Anreiz, in normale Menschen zu investieren - so wie rohstoffreiche Staaten heute ihre Bürger vernachlässigen, weil ihr Reichtum aus Bodenschätzen stammt und nicht aus der Besteuerung menschlicher Arbeit.', person: 'Luke Drago, Rudolf Laine', role: '„The Intelligence Curse“, 2025 - die Autoren schlagen auch Wege vor, das zu verhindern', source: sources.curse },
       { kind: 'quote', quote: 'Staaten, die sich hauptsächlich aus Steuern auf KI-Gewinne finanzieren statt aus der Arbeit ihrer Bürger, haben wenig Anreiz, für deren Mitsprache zu sorgen.', person: 'Jan Kulveit et al.', role: '„Gradual Disempowerment“, 2025', source: sources.disempowerment },
@@ -339,7 +338,7 @@ export const scenes: Scene[] = [
           { kicker: 'Bill Gates · 2023', text: '„Die Welt muss Spielregeln aufstellen, damit etwaige Nachteile der künstlichen Intelligenz von ihrem Nutzen bei Weitem übertroffen werden.“', source: sources.gatesAge },
           { kicker: 'Sam Altman · US-Senat · 2023', text: '„Wir glauben, dass regulierende Eingriffe von Regierungen entscheidend sein werden, um die Risiken immer leistungsfähigerer Modelle zu verringern.“', source: sources.altmanSenate },
           { kicker: 'OpenAI · 2026', value: 'Pause', text: 'Nach dem Vorfall bei Hugging Face - als einige Schutzmaßnahmen und die Überwachung abgeschaltet waren - pausierte das Unternehmen selbst seinen größten geplanten Trainingslauf.', source: sources.openaiRoad },
-          { kicker: 'Eine Gesetzeslücke', text: 'Selbst das fortschrittlichste KI-Gesetz - der AI Act der EU - befasst sich nicht mit Jobverlusten oder Steuern. Regeln für KI bei der Personalauswahl wurden auf Ende 2027 verschoben.', source: sources.aiAct },
+          { kicker: 'Was das Gesetz abdeckt', text: 'Der AI Act der EU verpflichtet die Hersteller der leistungsstärksten Modelle schon heute, sie zu testen und schwere Vorfälle zu melden. Für Jobverluste oder Steuern ist er nicht gemacht, und Regeln für KI bei der Personalauswahl gelten nun ab Ende 2027.', source: sources.aiAct },
         ],
       },
       {

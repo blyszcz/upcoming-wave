@@ -28,7 +28,7 @@ export const split = {
     {
       kind: 'stats',
       items: [
-        { value: '44 %', label: 'du PIB mondial - c’est déjà le poids des entreprises du Fortune Global 500 (chap. 11)', source: book },
+        { value: '44 %', label: 'du PIB mondial - le chiffre d’affaires cumulé des entreprises du Fortune Global 500 (chap. 11)', source: book },
       ],
     },
   ] satisfies BandBlock[],

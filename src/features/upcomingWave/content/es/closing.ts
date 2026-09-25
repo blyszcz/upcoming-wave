@@ -28,7 +28,7 @@ export const split = {
     {
       kind: 'stats',
       items: [
-        { value: '44%', label: 'del PIB mundial: lo que ya representan las empresas del Fortune Global 500 (cap. 11)', source: book },
+        { value: '44%', label: 'del PIB mundial: los ingresos combinados de las empresas del Global 500 de Fortune (cap. 11)', source: book },
       ],
     },
   ] satisfies BandBlock[],

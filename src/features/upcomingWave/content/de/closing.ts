@@ -28,7 +28,7 @@ export const split = {
     {
       kind: 'stats',
       items: [
-        { value: '44 %', label: 'der weltweiten Wirtschaftsleistung - so viel machen die Global-500-Konzerne von Fortune bereits aus (Kap. 11)', source: book },
+        { value: '44 %', label: 'der weltweiten Wirtschaftsleistung - so viel beträgt der Gesamtumsatz der Global-500-Konzerne von Fortune (Kap. 11)', source: book },
       ],
     },
   ] satisfies BandBlock[],

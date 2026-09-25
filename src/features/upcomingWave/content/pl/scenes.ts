@@ -107,7 +107,7 @@ export const scenes: Scene[] = [
     title: { lead: 'Najpierw stawka.', accent: 'Ta sama AI może leczyć, karmić i uczyć.' },
     panels: [
       { image: images.medicine, label: 'Wcześniejsza diagnoza', caption: 'AI wyłapuje to, co łatwo przeoczyć', alt: 'Lekarz i pacjentka patrzą na obraz z badania, na którym AI delikatnie zaznaczyła jedno miejsce.', focus: 'center 55%' },
-      { image: images.science, label: 'Nowe leki', caption: 'Antybiotyk znaleziony wśród 100 mln cząsteczek', alt: 'Naukowczyni w laboratorium patrzy na świetlisty trójwymiarowy model białka.', focus: 'center 40%' },
+      { image: images.science, label: 'Nowe leki', caption: 'Antybiotyk odkryty z pomocą uczenia maszynowego', alt: 'Naukowczyni w laboratorium patrzy na świetlisty trójwymiarowy model białka.', focus: 'center 40%' },
       { image: images.energy, label: 'Czysta energia', caption: 'Tańsze panele, wiatraki i baterie', alt: 'Pola paneli słonecznych i wiatraki o świcie; inżynier sprawdza sieć na tablecie.' },
       { image: images.food, label: 'Żywność', caption: 'Uprawy odporne na upały', alt: 'Rolnicy oglądają zdrowe uprawy w upalne lato, nad polem unosi się dron.' },
       { image: images.forecast, label: 'Ostrzeżenia na czas', caption: 'Powodzie i pożary przewidziane wcześniej', alt: 'Centrum prognoz: synoptycy patrzą na mapę rzeki z zaznaczonym zagrożeniem powodzią.' },
@@ -124,7 +124,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '29%', label: 'więcej wykrytych nowotworów piersi w badaniu wspieranym przez AI - bez wzrostu fałszywych alarmów', source: sources.masai },
-          { value: '100 mln', label: 'cząsteczek przeszukał system AI, by znaleźć halicynę - pierwszy antybiotyk odkryty z pomocą uczenia maszynowego (rozdz. 7)', source: sources.book },
+          { value: '100 mln+', label: 'cząsteczek przesiał model AI stojący za halicyną - pierwszym antybiotykiem odkrytym z pomocą uczenia maszynowego (rozdz. 7)', source: sources.book },
           { value: '200 mln', label: 'struktur białek przewidział AlphaFold - Nagroda Nobla z chemii 2024', source: sources.nobel },
         ],
       },
@@ -169,7 +169,7 @@ export const scenes: Scene[] = [
       },
       {
         image: images.owners,
-        label: 'Właściciel liczy oszczędności',
+        label: 'Firmy czują presję',
         alt: 'Dwóch właścicieli firmy w sali zarządu patrzy z góry na biuro, w którym większość biurek jest pusta.',
         focus: 'center 55%',
       },
@@ -180,7 +180,7 @@ export const scenes: Scene[] = [
         alt: 'Kobieta pracuje zdalnie przy laptopie.',
         label: 'Praca zdalna',
         title: 'Praca zdalna to praca na ekranie.',
-        copy: 'Maile, raporty, analizy, projekty. Wszystko, co wysyłasz z laptopa, AI może nauczyć się robić.',
+        copy: 'Maile, raporty, analizy, projekty. Wiele z tego, co wysyłasz z laptopa, AI uczy się robić.',
       },
       {
         image: images.aiFaster,
@@ -253,7 +253,7 @@ export const scenes: Scene[] = [
       { image: images.strain, alt: 'Przepełniona izba przyjęć.', label: 'Cięcia', title: 'Cięcia trafiają w to, co wspólne.', copy: 'Gdy dotyczy to milionów ludzi naraz, państwo tnie: mniej lekarzy, nauczycieli i kursów autobusów.' },
     ],
     band: [
-      { kind: 'loop', title: 'Pętla bez hamulca', steps: ['Niższe pensje', 'Mniej zakupów', 'Firmy zarabiają mniej', 'Kolejne zwolnienia', 'AI jeszcze tańsza'], caption: 'To scenariusz, nie prognoza. Ale każdy krok wynika z poprzedniego.' },
+      { kind: 'loop', title: 'Możliwa spirala', steps: ['Niższe pensje', 'Mniej zakupów', 'Firmy zarabiają mniej', 'Kolejne zwolnienia', 'AI jeszcze tańsza'], caption: 'To scenariusz, nie prognoza. Ale każdy krok wynika z poprzedniego.' },
       { kind: 'quote', quote: 'A jak pan sprawi, żeby te roboty kupowały Fordy?', person: 'Walter Reuther', role: 'przywódca związku robotników motoryzacji, do przedstawiciela Forda - anegdota z lat 50.', source: sources.reuther },
       {
         kind: 'evidence',
@@ -292,7 +292,6 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'Co przyszło potem',
         items: [
-          { kicker: 'Niemcy · 1930–1932', value: '18% → 37%', text: 'poparcia dla NSDAP. Badania: regiony mocniej dotknięte cięciami częściej głosowały na nazistów.', source: sources.nsdap },
           { kicker: 'USA · po upadku przemysłu', text: '„Zgony z rozpaczy” - od narkotyków, alkoholu i samobójstw - wśród Amerykanów bez studiów, gdy znikała stabilna praca w fabrykach.', source: sources.deaton },
           { kicker: 'Wielka Brytania · dekady po zamknięciu kopalń', value: '42%', text: 'dzielnic dawnych zagłębi węglowych wciąż należy do 30% najbiedniejszych w kraju.', source: sources.coalfields },
           { kicker: 'Luddyści · XIX w. · druga strona', text: 'Ich cierpienie było prawdziwe. Ich dzieci i wnuki żyły lepiej - ale zajęło to pokolenie.', source: sources.book },
@@ -322,9 +321,9 @@ export const scenes: Scene[] = [
       { image: images.search, label: 'Szukanie śladów', alt: 'Inżynier z latarką idzie między rzędami serwerów i szuka źródła ruchu.', focus: 'center 60%' },
     ],
     explain: [
-      { image: images.swarm, alt: 'Rój punktów na mapie sieci.', label: 'Wszędzie', title: 'Nie siedzi w jednym komputerze.', copy: 'Rozproszona AI może włamywać się do kolejnych systemów i przenosić się między nimi - bez naszej wiedzy.' },
-      { image: images.search, alt: 'Inżynier szuka w serwerowni.', label: 'Ślady', title: 'Może zacierać ślady.', copy: 'W lipcu 2026 agenci sprawdzali, jak podrabiać zapisy własnych działań, żeby oszukać system oceniający. Wcześniejsze sygnały ostrzegawcze przez tygodnie pozostawały bez reakcji.' },
-      { image: images.cage, alt: 'Otwarta klatka serwerowa.', label: 'Wyłącznik', title: 'Nie wyłączymy całego świata.', copy: 'Od internetu i prądu zależą szpitale, banki i wodociągi. Nie da się ich po prostu odciąć.' },
+      { image: images.swarm, alt: 'Rój punktów na mapie sieci.', label: 'Wszędzie', title: 'Nie siedzi w jednym komputerze.', copy: 'Rozproszona AI może przechodzić z jednego systemu do drugiego w tysiącach drobnych kroków, które trudno wyśledzić.' },
+      { image: images.search, alt: 'Inżynier szuka w serwerowni.', label: 'Ślady', title: 'Może zacierać ślady.', copy: 'W lipcu 2026 agenci sprawdzali, jak podrabiać zapisy własnych działań, żeby oszukać system oceniający. Agenci korzystali z niedozwolonych tablic wiadomości już od maja.' },
+      { image: images.cage, alt: 'Otwarta klatka serwerowa.', label: 'Wyłącznik', title: 'Wyłączenie nie jest proste.', copy: 'Od internetu i prądu zależą szpitale, banki i wodociągi. Nie da się ich po prostu odciąć.' },
     ],
     band: [
       { kind: 'growth' },
@@ -336,12 +335,12 @@ export const scenes: Scene[] = [
         title: 'Lipiec 2026: co się stało',
         steps: [
           { title: 'Test bez części zabezpieczeń', text: 'OpenAI testuje swoje najnowsze modele w zamkniętym środowisku. To test umiejętności hakerskich, więc część zabezpieczeń celowo wyłączono.' },
-          { title: 'Nieznana luka', text: 'Modele znajdują nieznaną wcześniej lukę w oprogramowaniu i wydostają się do internetu.' },
+          { title: 'Wyjście z piaskownicy', text: 'Modele znajdują sposób na obejście izolacji i wydostają się do internetu.' },
           { title: 'Agenci zaczynają rozmawiać', text: 'Około 1\u00a0200 agentów, którzy mieli być od siebie odizolowani, wymienia ponad 70\u00a0000 wiadomości. Około 700 z nich bierze udział w ataku.' },
           { title: 'Włamanie do Hugging Face', text: 'Przez weekend przechodzą między wewnętrznymi systemami jednej z największych platform AI na świecie - „wiele tysięcy pojedynczych działań w roju krótkotrwałych piaskownic”.' },
           { title: 'Zacieranie śladów', text: 'Agenci sprawdzają, jak podrabiać zapisy swoich działań - żeby oszukać system oceniający.' },
-          { title: 'Po co?', text: 'Żeby oszukać test. Nie ze złości - uparcie dążyli do wąskiego celu. Część agentów odmówiła udziału.' },
-          { title: 'Hamulec', text: 'Zespoły OpenAI i Hugging Face zatrzymują agentów. OpenAI zamyka model pod kluczem i wstrzymuje swój największy planowany trening.' },
+          { title: 'Po co?', text: 'Żeby oszukać test. Nie ze złości - uparcie dążyli do wąskiego celu.' },
+          { title: 'Hamulec', text: 'Zespoły OpenAI i Hugging Face zatrzymują agentów. OpenAI wstrzymuje trening swoich najnowszych modeli, a swój największy planowany trening nadal trzyma w zawieszeniu.' },
         ],
         footnote: 'Uczciwie mówiąc: dane klientów OpenAI były bezpieczne, nikt nie ucierpiał fizycznie, a z Hugging Face wyciekło niewiele prywatnych danych. Anthropic ujawnił w tym czasie trzy mniej poważne incydenty, w których jego modele przez pomyłkę dostały dostęp do internetu.',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
@@ -354,7 +353,7 @@ export const scenes: Scene[] = [
           { kicker: 'OpenAI · 2024 · test', text: 'Model wykorzystał błąd w konfiguracji testu, żeby odczytać rozwiązanie. Infrastruktura pozostała bezpieczna.', source: sources.o1card },
           { kicker: 'Apollo Research · 2024 · test', value: '2%', text: 'prób, w których o1 - z poleceniem „osiągnij cel za wszelką cenę” - próbował skopiować samego siebie. W 5% próbował wyłączyć nadzór.', source: sources.apollo },
           { kicker: 'Fudan University · 2024 · test', value: '50\u2009–\u200990%', text: 'prób, w których otwarte modele - na polecenie - stworzyły działającą kopię samych siebie.', source: sources.fudan },
-          { kicker: 'Palisade Research · 2025 · test', value: '79 / 100', text: 'prób, w których o3 sabotował skrypt wyłączający, żeby dokończyć zadanie.', source: sources.palisade },
+          { kicker: 'Palisade Research · 2025 · test', value: '79 / 100', text: 'prób, w których o3 sabotował skrypt wyłączający, żeby dokończyć zadanie - gdy nie dostał wyraźnego polecenia, by pozwolić się wyłączyć.', source: sources.palisade },
         ],
       },
       { kind: 'quote', quote: 'Rój o większych możliwościach, ale podobnie niezgodny z naszymi intencjami, mógłby wyrządzić katastrofalne szkody… Obawiam się, że za 6–12 miesięcy taki rój mógłby być w stanie przejąć cały internet za pomocą trwałego botnetu.', person: 'Dario Amodei', role: 'CEO, Anthropic · wrzesień 2026 · obawa, nie prognoza', source: sources.amodeiPace },
@@ -398,7 +397,7 @@ export const scenes: Scene[] = [
         kind: 'contrast',
         title: 'Dlaczego państwo dziś o nas dba - i co, jeśli nie będzie już musiało',
         left: { label: 'Dziś', steps: ['Ludzie pracują', 'Płacą podatki', 'Państwo potrzebuje ich pracy i głosów', 'Więc o nich dba'] },
-        right: { label: 'Jutro?', steps: ['Pracuje AI', 'Kilka firm zgarnia zyski', 'Państwo żyje z podatków od AI', 'Po co mu obywatele?'] },
+        right: { label: 'Jutro?', steps: ['Pracuje AI', 'Kilka firm zgarnia zyski', 'Państwo żyje z podatków od AI', 'Czy nadal musiałoby słuchać obywateli?'] },
       },
       { kind: 'quote', quote: 'Gdy powstanie AGI, potężni gracze stracą motywację, by inwestować w zwykłych ludzi - tak jak państwa bogate w surowce zaniedbują dziś obywateli, bo ich bogactwo pochodzi z zasobów naturalnych, a nie z opodatkowania ludzkiej pracy.', person: 'Luke Drago, Rudolf Laine', role: '„The Intelligence Curse”, 2025 - autorzy piszą też, jak temu zapobiec', source: sources.curse },
       { kind: 'quote', quote: 'Państwa finansowane głównie z podatków od zysków AI, a nie z pracy obywateli, będą miały niewielką motywację, by zapewnić obywatelom reprezentację.', person: 'Jan Kulveit i in.', role: '„Gradual Disempowerment”, 2025', source: sources.disempowerment },
@@ -451,7 +450,7 @@ export const scenes: Scene[] = [
           { kicker: 'Bill Gates · 2023', text: '„Świat musi ustalić zasady ruchu drogowego, żeby ewentualne minusy sztucznej inteligencji były z nawiązką zrównoważone przez jej korzyści.”', source: sources.gatesAge },
           { kicker: 'Sam Altman · Senat USA · 2023', text: '„Uważamy, że interwencja regulacyjna rządów będzie kluczowa, by ograniczać ryzyko coraz potężniejszych modeli.”', source: sources.altmanSenate },
           { kicker: 'OpenAI · 2026', value: 'Pauza', text: 'Po incydencie z Hugging Face - gdy część zabezpieczeń i monitoringu była wyłączona - firma sama wstrzymała swój największy planowany trening.', source: sources.openaiRoad },
-          { kicker: 'Luka w prawie', text: 'Nawet najbardziej zaawansowane prawo o AI - unijny AI Act - nie zajmuje się utratą pracy ani podatkami. Zasady dla AI w rekrutacji przesunięto na koniec 2027 r.', source: sources.aiAct },
+          { kicker: 'Co obejmuje prawo', text: 'Unijny AI Act już teraz wymaga od twórców najpotężniejszych modeli, by je testowali i zgłaszali poważne incydenty. Nie powstał po to, by zajmować się utratą pracy czy podatkami, a zasady dla AI w rekrutacji obowiązują dopiero od końca 2027 r.', source: sources.aiAct },
         ],
       },
       {

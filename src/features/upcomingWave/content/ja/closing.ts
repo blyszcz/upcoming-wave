@@ -28,7 +28,7 @@ export const split = {
     {
       kind: 'stats',
       items: [
-        { value: '44%', label: 'フォーチュン・グローバル500企業がすでに占める、世界のGDPの割合（第11章）', source: book },
+        { value: '44%', label: 'フォーチュン・グローバル500企業の売上高の合計が、世界のGDPに占める割合（第11章）', source: book },
       ],
     },
   ] satisfies BandBlock[],

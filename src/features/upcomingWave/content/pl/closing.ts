@@ -27,7 +27,7 @@ export const split = {
     {
       kind: 'stats',
       items: [
-        { value: '44%', label: 'światowego PKB - tyle wynoszą już łączne przychody firm z listy Fortune Global 500 (rozdz. 11)', source: book },
+        { value: '44%', label: 'światowego PKB - tyle wynoszą już łączne przychody firm z listy Global 500 magazynu „Fortune” (rozdz. 11)', source: book },
       ],
     },
   ] satisfies BandBlock[],

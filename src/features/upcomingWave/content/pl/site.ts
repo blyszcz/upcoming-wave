@@ -4,7 +4,7 @@ export const site = {
     siteName: 'Nadchodząca fala',
     home: {
       title: 'Kto zapłaci za szkoły, gdy pracę przejmie AI?',
-      description: 'Wizualny przewodnik na 5 minut, oparty na książce „Nadchodząca fala”: co AI może naprawić, jakie prace i podatki może wymazać, test z lipca 2026 r., z którego AI się wydostała, i zasady, od których zależy, jaką przyszłość dostaniemy. Przy każdym fakcie źródło.',
+      description: 'Wizualny przewodnik na 5 minut, oparty na książce „Nadchodząca fala”: co AI może naprawić, co może zrobić z pracą i budżetami publicznymi, co ujawnił test OpenAI z lipca 2026 r. i zasady, od których zależy, jaką przyszłość dostaniemy. Przy każdym fakcie źródło.',
     },
     sources: {
       title: 'Źródła i metoda - Nadchodząca fala',
@@ -34,7 +34,7 @@ export const site = {
   footer: {
     sourcesLink: 'Źródła i metoda',
     code: { label: 'GitHub', issue: 'Zgłoś błąd' },
-    why: { title: 'Dlaczego ta strona?', text: 'Dużo rozmawiam z ludźmi o AI i ciągle widzę to samo: nie brakuje opinii, brakuje kontekstu - zrozumienia, o co naprawdę toczy się gra. Postanowiłem więc coś z tym zrobić i wytłumaczyć to prosto, obrazami. Przy każdym fakcie jest źródło.' },
+    why: { title: 'Dlaczego ta strona?', text: 'Dużo rozmawiam z ludźmi o AI i ciągle widzę to samo: nie brakuje opinii, brakuje kontekstu - zrozumienia, o co naprawdę toczy się gra. Postanowiłem więc coś z tym zrobić i wytłumaczyć to prosto, obrazami.' },
     sources: 'Przy każdym fakcie jest źródło. Scenariusze to ryzyka, nie prognozy.',
     independence: 'Niezależny, niekomercyjny projekt - niepowiązany z żadną firmą AI, autorem ani wydawcą.',
     author: { label: 'Zrobił', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },

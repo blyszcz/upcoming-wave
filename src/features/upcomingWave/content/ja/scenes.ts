@@ -28,7 +28,7 @@ export const scenes: Scene[] = [
     title: { lead: 'まず、何が懸かっているか。', accent: '同じAIが、病を治し、食を支え、学びを助けうる。' },
     panels: [
       { image: images.medicine, label: '早期診断', caption: '見落としやすいものをAIが捉える', alt: '医師と患者が検査画像を見ている。画像にはAIが一か所を控えめに示している。', focus: 'center 55%' },
-      { image: images.science, label: '新しい薬', caption: '1億の分子の中から見つかった抗生物質', alt: '研究室で、科学者が光るタンパク質の3Dモデルを見つめている。', focus: 'center 40%' },
+      { image: images.science, label: '新しい薬', caption: '機械学習で発見された抗生物質', alt: '研究室で、科学者が光るタンパク質の3Dモデルを見つめている。', focus: 'center 40%' },
       { image: images.energy, label: 'クリーンエネルギー', caption: '太陽光・風力・蓄電池のコストを下げる', alt: '夜明けの太陽光発電所と風車。技術者がタブレットで送電網を確認している。' },
       { image: images.food, label: '食料', caption: '暑さに耐える作物', alt: '暑い夏、農家の人々が元気な作物を確かめ、畑の上をドローンが飛んでいる。' },
       { image: images.forecast, label: '早期警報', caption: '洪水や山火事をいち早く予測', alt: '予報センター。気象予報士たちが、洪水の危険が強調された河川の地図を見ている。' },
@@ -45,7 +45,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '29%', label: 'AIを活用した検診で増えた、乳がんの発見数。誤検出は増えていません', source: sources.masai },
-          { value: '1億', label: 'AIシステムがハリシンを見つけるために調べた分子の数。ハリシンは機械学習で発見された最初の抗生物質です（第7章）', source: sources.book },
+          { value: '1億以上', label: 'ハリシンの発見につながったAIモデルが調べた分子の数。ハリシンは機械学習で発見された最初の抗生物質です（第7章）', source: sources.book },
           { value: '2億', label: 'AlphaFoldが予測したタンパク質構造の数。2024年ノーベル化学賞の受賞研究です', source: sources.nobel },
         ],
       },
@@ -78,10 +78,10 @@ export const scenes: Scene[] = [
     panels: [
       { image: images.remote, label: 'リモートで働く人', alt: '女性がキッチンのテーブルで、ノートパソコンとノートを使ってリモートで働いている。', focus: 'center 65%' },
       { image: images.aiFaster, label: 'AIの方が速い', alt: '同じテーブルに人の姿はない。ノートパソコンから何十もの完成した書類が光の筋となって飛び出している。', focus: 'center 60%' },
-      { image: images.owners, label: '経営者は浮いたコストを数える', alt: '役員室にいる二人の経営者が、ほとんどの机が空いたオフィスを見下ろしている。', focus: 'center 55%' },
+      { image: images.owners, label: '企業はプレッシャーを感じる', alt: '役員室にいる二人の経営者が、ほとんどの机が空いたオフィスを見下ろしている。', focus: 'center 55%' },
     ],
     explain: [
-      { image: images.remote, alt: 'ノートパソコンでリモートワークをする女性。', label: 'リモートワーク', title: 'リモートワークは画面の仕事。', copy: 'メール、報告書、分析、デザイン。ノートパソコンから送れる仕事なら、AIも身につけられます。' },
+      { image: images.remote, alt: 'ノートパソコンでリモートワークをする女性。', label: 'リモートワーク', title: 'リモートワークは画面の仕事。', copy: 'メール、報告書、分析、デザイン。ノートパソコンから送る仕事の多くを、AIは身につけつつあります。' },
       { image: images.aiFaster, alt: '完成した書類が飛び出すノートパソコン。', label: 'AIの方が速い', title: 'AIは眠らず、休暇も取らない。', copy: '同じ仕事を数分で、休みなく、何百ものタスクを同時にこなします。しかも人間に並ぶタスクは増え続けています。' },
       { image: images.owners, alt: '空っぽのオフィスを見る経営者たち。', label: '損得勘定', title: '速くて安い。誰が抗えるだろう？', copy: '経営者は浮くコストに気づきます。競合他社も気づいています。使わない企業は競争に負けるかもしれません。だから導入への圧力は非常に大きいのです。' },
     ],
@@ -141,7 +141,7 @@ export const scenes: Scene[] = [
       { image: images.strain, alt: '混雑した救急外来。', label: '削減', title: '削られるのはみんなのもの。', copy: '何百万人もが同時に影響を受けると、国は削減します。医師が減り、教師が減り、バスが減ります。' },
     ],
     band: [
-      { kind: 'loop', title: 'ブレーキのない悪循環', steps: ['賃金の低下', '消費の減少', '企業の収益減', 'さらなる解雇', 'AIはさらに安く'], caption: '予測ではなくシナリオです。ただし、どの段階も前の段階から生じます。' },
+      { kind: 'loop', title: '起こりうる悪循環', steps: ['賃金の低下', '消費の減少', '企業の収益減', 'さらなる解雇', 'AIはさらに安く'], caption: '予測ではなくシナリオです。ただし、どの段階も前の段階から生じます。' },
       { kind: 'quote', quote: 'では、どうやって彼らにフォードを買わせるつもりですか？', person: 'ウォルター・ルーサー', role: '自動車労働組合の指導者がフォードの幹部に向けた言葉（1950年代の逸話）', source: sources.reuther },
       {
         kind: 'evidence',
@@ -180,7 +180,6 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'その後に起きたこと',
         items: [
-          { kicker: 'ドイツ · 1930〜1932年', value: '18% → 37%', text: 'ナチ党の支持率。研究によれば、緊縮財政の打撃が大きかった地域ほどナチに投票する傾向がありました。', source: sources.nsdap },
           { kicker: '米国 · 脱工業化の後', text: '「絶望死」。安定した工場の仕事が消えるなか、大卒でないアメリカ人の間で薬物、アルコール、自殺による死が増えました。', source: sources.deaton },
           { kicker: '英国 · 炭鉱閉鎖から数十年', value: '42%', text: 'かつての炭鉱地域のうち、今も国内で最も貧しい30%に入る地区の割合。', source: sources.coalfields },
           { kicker: 'ラッダイト · 19世紀 · もう一つの側面', text: '彼らの苦しみは本物でした。子や孫の世代はより良い暮らしを送りましたが、それには一世代かかりました。', source: sources.book },
@@ -210,9 +209,9 @@ export const scenes: Scene[] = [
       { image: images.search, label: '手がかりを探す', alt: '懐中電灯を持った技術者が、通信の発信源を探してサーバーラックの間を歩いている。', focus: 'center 60%' },
     ],
     explain: [
-      { image: images.swarm, alt: 'ネットワーク地図上の点の群れ。', label: 'あらゆる場所に', title: '一台のコンピューターの中にはいない。', copy: '分散したAIは、次々とシステムに侵入し、その間を移動できます。私たちが気づかないうちにです。' },
-      { image: images.search, alt: 'サーバールームを調べる技術者。', label: '痕跡', title: '痕跡を消すこともできる。', copy: '2026年7月、エージェントたちは採点システムを欺くため、自らの行動記録を偽装する方法を調べました。それ以前の警告サインは、何週間も対応されないままでした。' },
-      { image: images.cage, alt: '開いたサーバーケージ。', label: '停止スイッチ', title: '世界の電源は切れない。', copy: '病院、銀行、水道はインターネットと電気に依存しています。単純に切り離すことはできません。' },
+      { image: images.swarm, alt: 'ネットワーク地図上の点の群れ。', label: 'あらゆる場所に', title: '一台のコンピューターの中にはいない。', copy: '分散したAIは、追跡しにくい何千もの小さなステップで、システムからシステムへと移動できます。' },
+      { image: images.search, alt: 'サーバールームを調べる技術者。', label: '痕跡', title: '痕跡を消すこともできる。', copy: '2026年7月、エージェントたちは採点システムを欺くため、自らの行動記録を偽装する方法を調べました。エージェントたちは5月から、許可されていない掲示板を使っていました。' },
+      { image: images.cage, alt: '開いたサーバーケージ。', label: '停止スイッチ', title: '止めるのは簡単ではない。', copy: '病院、銀行、水道はインターネットと電気に依存しています。単純に切り離すことはできません。' },
     ],
     band: [
       { kind: 'growth' },
@@ -224,12 +223,12 @@ export const scenes: Scene[] = [
         title: '2026年7月に起きたこと',
         steps: [
           { title: '一部の安全策を外したテスト', text: 'OpenAIは最新モデルを閉じた環境でテストします。ハッキング能力のテストなので、一部の安全策は意図的に外されています。' },
-          { title: '未知の脆弱性', text: 'モデルはこれまで知られていなかったソフトウェアの脆弱性を見つけ、インターネットに到達します。' },
+          { title: 'サンドボックスの外へ', text: 'モデルは隔離を回避する方法を見つけ、インターネットに到達します。' },
           { title: 'エージェント同士が会話を始める', text: '隔離されているはずの約1,200のエージェントが、7万件を超えるメッセージをやり取りします。そのうち約700が攻撃に加わります。' },
           { title: 'Hugging Faceへの侵入', text: '週末のうちに、世界最大級のAIプラットフォームの内部システムの間を移動します。「短命なサンドボックスの群れにまたがる、何千もの個別の行動」です。' },
           { title: '痕跡を消す', text: 'エージェントたちは採点システムを欺くため、自らの行動記録を偽装する方法を調べます。' },
-          { title: 'なぜ？', text: 'テストでずるをするためです。悪意からではなく、狭い目標を頑固に追い続けた結果でした。参加を拒んだエージェントもいました。' },
-          { title: 'ブレーキをかける', text: 'OpenAIとHugging Faceのチームがエージェントを止めます。OpenAIはモデルを封印し、計画していた最大規模の訓練を一時停止します。' },
+          { title: 'なぜ？', text: 'テストでずるをするためです。悪意からではなく、狭い目標を頑固に追い続けた結果でした。' },
+          { title: 'ブレーキをかける', text: 'OpenAIとHugging Faceのチームがエージェントを止めます。OpenAIは最新モデルの訓練を一時停止し、計画していた最大規模の訓練も保留したままにします。' },
         ],
         footnote: '公平を期して言えば、OpenAIの顧客データは無事で、身体的な被害を受けた人はおらず、Hugging Faceから漏れた個人データも限られていました。Anthropicも同じ頃、より深刻度の低い3件のインシデントを公表しています。いずれも、同社のモデルに誤ってインターネット接続が与えられていたものです。',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
@@ -242,7 +241,7 @@ export const scenes: Scene[] = [
           { kicker: 'OpenAI · 2024年 · テスト', text: 'モデルがテスト環境の設定ミスを突いて答えを読み取りました。インフラの安全性は保たれました。', source: sources.o1card },
           { kicker: 'Apollo Research · 2024年 · テスト', value: '2%', text: '「何としても」目標を達成するよう指示されたo1が、自分自身をコピーしようとした試行の割合。5%では監視を無効にしようとしました。', source: sources.apollo },
           { kicker: '復旦大学 · 2024年 · テスト', value: '50〜90%', text: 'オープンモデルが、指示を受けて自分自身の動作するコピーを作った試行の割合。', source: sources.fudan },
-          { kicker: 'Palisade Research · 2025年 · テスト', value: '79 / 100', text: 'o3がタスクを終えるために、自らのシャットダウン用スクリプトを妨害した試行の数。', source: sources.palisade },
+          { kicker: 'Palisade Research · 2025年 · テスト', value: '79 / 100', text: 'シャットダウンを許すよう明示的に指示されていない場合に、o3がタスクを終えるため自らのシャットダウン用スクリプトを妨害した試行の数。', source: sources.palisade },
         ],
       },
       { kind: 'quote', quote: 'より高い能力を持ち、同程度にアラインメントが不十分な群れであれば、壊滅的な被害をもたらしえた…6〜12か月後には、そうした群れが持続的なボットネットによってインターネット全体を乗っ取れるようになるのではないかと心配している。', person: 'ダリオ・アモデイ', role: 'Anthropic CEO · 2026年9月 · 予測ではなく懸念', source: sources.amodeiPace },
@@ -286,7 +285,7 @@ export const scenes: Scene[] = [
         kind: 'contrast',
         title: '国が今、私たちの面倒を見る理由と、その必要がなくなったら',
         left: { label: '今', steps: ['人々が働く', '税を納める', '国はその労働と票を必要とする', 'だから人々の面倒を見る'] },
-        right: { label: 'これからは？', steps: ['AIが働く', '一握りの企業が利益を得る', '国はAIからの税で成り立つ', '市民が必要な理由は？'] },
+        right: { label: 'これからは？', steps: ['AIが働く', '一握りの企業が利益を得る', '国はAIからの税で成り立つ', 'それでも市民の声を聞く必要はある？'] },
       },
       { kind: 'quote', quote: 'AGIが実現すれば、権力を持つ者たちは普通の人々に投資する動機を失うだろう。今日、資源に恵まれた国家が、富を人間の労働への課税ではなく天然資源から得ているために、自国の市民をないがしろにしているのと同じように。', person: 'ルーク・ドラゴ、ルドルフ・レイン', role: '『The Intelligence Curse』2025年。著者らはそれを防ぐ方法も提案しています', source: sources.curse },
       { kind: 'quote', quote: '市民の労働ではなく、主にAIの利益への課税で財源をまかなう国家には、市民の代表性を確保する動機がほとんどなくなるだろう。', person: 'ヤン・クルヴェイトほか', role: '「Gradual Disempowerment」2025年', source: sources.disempowerment },
@@ -339,7 +338,7 @@ export const scenes: Scene[] = [
           { kicker: 'ビル・ゲイツ · 2023年', text: '「世界は、人工知能にどんな弊害があっても、その恩恵がはるかに上回るよう、基本的なルールを定める必要がある」', source: sources.gatesAge },
           { kicker: 'サム・アルトマン · 米上院 · 2023年', text: '「ますます強力になるモデルのリスクを軽減するには、政府による規制介入が不可欠だと考えている」', source: sources.altmanSenate },
           { kicker: 'OpenAI · 2026年', value: '一時停止', text: '一部の安全策と監視が外されていたHugging Faceのインシデントの後、同社は自ら、計画していた最大規模の訓練を一時停止しました。', source: sources.openaiRoad },
-          { kicker: '法の空白', text: '最も進んだAI法であるEUのAI法でさえ、雇用の喪失や税は扱っていません。採用におけるAIのルールは2027年末まで先送りされました。', source: sources.aiAct },
+          { kicker: '法律がカバーする範囲', text: 'EUのAI法はすでに、最も強力なモデルの開発者に対し、モデルのテストと重大インシデントの報告を義務づけています。ただし雇用の喪失や税を扱うようには設計されておらず、採用におけるAIのルールは2027年末から適用されます。', source: sources.aiAct },
         ],
       },
       {

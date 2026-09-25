@@ -4,7 +4,7 @@ export const site = {
     siteName: 'Upcoming Wave',
     home: {
       title: 'Wer zahlt für Schulen, wenn KI die Arbeit macht?',
-      description: 'Ein bebilderter 5-Minuten-Überblick nach „The Coming Wave“: was KI lösen könnte, welche Jobs und Steuern sie auslöschen könnte, der Test vom Juli 2026, bei dem KI ausbrach, und die Regeln, die entscheiden, welche Zukunft wir bekommen. Jeder Fakt mit Quelle.',
+      description: 'Ein bebilderter 5-Minuten-Überblick nach „The Coming Wave“: was KI lösen könnte, was sie mit Jobs und öffentlichen Haushalten machen könnte, was ein OpenAI-Test im Juli 2026 gezeigt hat, und die Regeln, die entscheiden, welche Zukunft wir bekommen. Jeder Fakt mit Quelle.',
     },
     sources: {
       title: 'Quellen & Methode - Upcoming Wave',
@@ -34,7 +34,7 @@ export const site = {
   footer: {
     sourcesLink: 'Quellen & Methode',
     code: { label: 'GitHub', issue: 'Fehler melden' },
-    why: { title: 'Warum diese Seite?', text: 'Ich spreche viel mit Menschen über KI und sehe immer wieder dasselbe: Es fehlen keine Meinungen, es fehlt Kontext - ein Verständnis dafür, was wirklich auf dem Spiel steht. Also wollte ich etwas dagegen tun und es einfach erklären, in Bildern. Jeder Fakt ist mit seiner Quelle verlinkt.' },
+    why: { title: 'Warum diese Seite?', text: 'Ich spreche viel mit Menschen über KI und sehe immer wieder dasselbe: Es fehlen keine Meinungen, es fehlt Kontext - ein Verständnis dafür, was wirklich auf dem Spiel steht. Also wollte ich etwas dagegen tun und es einfach erklären, in Bildern.' },
     sources: 'Jede Angabe verlinkt ihre Quelle. Szenarien sind Risiken, keine Prognosen.',
     independence: 'Unabhängiges, nichtkommerzielles Projekt - nicht verbunden mit KI-Unternehmen, Autoren oder Verlagen.',
     author: { label: 'Gemacht von', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },

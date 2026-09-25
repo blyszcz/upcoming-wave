@@ -4,7 +4,7 @@ export const site = {
     siteName: 'Upcoming Wave',
     home: {
       title: '¿Quién paga las escuelas cuando la IA hace el trabajo?',
-      description: 'Una guía visual de 5 minutos basada en «The Coming Wave»: lo que la IA podría arreglar, qué empleos e impuestos podría borrar, la prueba de julio de 2026 que se escapó y las reglas que deciden qué futuro tendremos. Cada dato tiene su fuente.',
+      description: 'Una guía visual de 5 minutos basada en «The Coming Wave»: lo que la IA podría arreglar, lo que podría hacer con el empleo y los presupuestos públicos, lo que reveló una prueba de OpenAI en julio de 2026 y las reglas que deciden qué futuro tendremos. Cada dato tiene su fuente.',
     },
     sources: {
       title: 'Fuentes y método - Upcoming Wave',
@@ -34,7 +34,7 @@ export const site = {
   footer: {
     sourcesLink: 'Fuentes y método',
     code: { label: 'GitHub', issue: 'Informar de un error' },
-    why: { title: '¿Por qué esta página?', text: 'Hablo mucho de IA con la gente y siempre veo lo mismo: no faltan opiniones, falta contexto - entender qué está realmente en juego. Así que decidí hacer algo al respecto y explicarlo de forma sencilla, con imágenes. Cada dato enlaza a su fuente.' },
+    why: { title: '¿Por qué esta página?', text: 'Hablo mucho de IA con la gente y siempre veo lo mismo: no faltan opiniones, falta contexto - entender qué está realmente en juego. Así que decidí hacer algo al respecto y explicarlo de forma sencilla, con imágenes.' },
     sources: 'Cada dato enlaza a su fuente. Los escenarios son riesgos, no predicciones.',
     independence: 'Proyecto independiente y sin ánimo de lucro, sin vínculo con ninguna empresa de IA, autor ni editorial.',
     author: { label: 'Hecho por', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },

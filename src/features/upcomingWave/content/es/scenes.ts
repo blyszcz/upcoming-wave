@@ -28,7 +28,7 @@ export const scenes: Scene[] = [
     title: { lead: 'Primero, lo que está en juego.', accent: 'La misma IA podría curar, alimentar y enseñar.' },
     panels: [
       { image: images.medicine, label: 'Diagnóstico precoz', caption: 'La IA ve lo que es fácil pasar por alto', alt: 'Una médica y un paciente miran una imagen médica en la que la IA ha marcado discretamente un punto.', focus: 'center 55%' },
-      { image: images.science, label: 'Nuevos medicamentos', caption: 'Un antibiótico hallado entre 100 millones de moléculas', alt: 'Una científica en un laboratorio observa un modelo 3D luminoso de una proteína.', focus: 'center 40%' },
+      { image: images.science, label: 'Nuevos medicamentos', caption: 'Un antibiótico descubierto con aprendizaje automático', alt: 'Una científica en un laboratorio observa un modelo 3D luminoso de una proteína.', focus: 'center 40%' },
       { image: images.energy, label: 'Energía limpia', caption: 'Paneles solares, aerogeneradores y baterías más baratos', alt: 'Campos de paneles solares y aerogeneradores al amanecer; un ingeniero revisa la red en una tableta.' },
       { image: images.food, label: 'Alimentos', caption: 'Cultivos que resisten el calor', alt: 'Agricultores revisan cultivos sanos en pleno verano mientras un dron sobrevuela el campo.' },
       { image: images.forecast, label: 'Alertas tempranas', caption: 'Inundaciones e incendios, previstos con más antelación', alt: 'Un centro de predicción: meteorólogos miran el mapa de un río con un riesgo de inundación resaltado.' },
@@ -45,7 +45,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '29%', label: 'más cánceres de mama detectados con cribados apoyados por IA, sin aumento de falsas alarmas', source: sources.masai },
-          { value: '100 millones', label: 'de moléculas analizó un sistema de IA para encontrar la halicina, el primer antibiótico descubierto con aprendizaje automático (cap. 7)', source: sources.book },
+          { value: '+100 millones', label: 'de moléculas analizó el modelo de IA detrás de la halicina, el primer antibiótico descubierto con aprendizaje automático (cap. 7)', source: sources.book },
           { value: '200 millones', label: 'de estructuras de proteínas predichas por AlphaFold, premio Nobel de Química 2024', source: sources.nobel },
         ],
       },
@@ -78,10 +78,10 @@ export const scenes: Scene[] = [
     panels: [
       { image: images.remote, label: 'Una persona teletrabaja', alt: 'Una mujer teletrabaja en la mesa de la cocina con un portátil y un cuaderno.', focus: 'center 65%' },
       { image: images.aiFaster, label: 'La IA lo hace más rápido', alt: 'La misma mesa, sin la persona: decenas de documentos terminados salen volando del portátil en estelas de luz.', focus: 'center 60%' },
-      { image: images.owners, label: 'El dueño cuenta lo que ahorra', alt: 'Dos dueños de una empresa, desde una sala de juntas, miran una oficina con la mayoría de las mesas vacías.', focus: 'center 55%' },
+      { image: images.owners, label: 'Las empresas sienten la presión', alt: 'Dos dueños de una empresa, desde una sala de juntas, miran una oficina con la mayoría de las mesas vacías.', focus: 'center 55%' },
     ],
     explain: [
-      { image: images.remote, alt: 'Una mujer teletrabajando con un portátil.', label: 'Teletrabajo', title: 'El teletrabajo es trabajo de pantalla.', copy: 'Correos, informes, análisis, diseños. Todo lo que envías desde un portátil, la IA puede aprender a hacerlo.' },
+      { image: images.remote, alt: 'Una mujer teletrabajando con un portátil.', label: 'Teletrabajo', title: 'El teletrabajo es trabajo de pantalla.', copy: 'Correos, informes, análisis, diseños. Mucho de lo que envías desde un portátil, la IA está aprendiendo a hacerlo.' },
       { image: images.aiFaster, alt: 'Un portátil del que salen volando documentos terminados.', label: 'La IA es más rápida', title: 'La IA no duerme ni se va de vacaciones.', copy: 'Hace el mismo trabajo en minutos, sin pausas, en cientos de tareas a la vez, e iguala a las personas en cada vez más tareas.' },
       { image: images.owners, alt: 'Dueños de una empresa mirando una oficina vacía.', label: 'Las cuentas', title: 'Más rápido y más barato. ¿Quién puede resistirse?', copy: 'El dueño ve el ahorro. La competencia también. Las empresas que no la usen pueden perder la carrera, así que la presión para usarla es enorme.' },
     ],
@@ -141,7 +141,7 @@ export const scenes: Scene[] = [
       { image: images.strain, alt: 'Una sala de urgencias saturada.', label: 'Recortes', title: 'Los recortes golpean lo que compartimos.', copy: 'Cuando millones de personas se ven afectadas a la vez, el Estado recorta: menos médicos, menos docentes, menos autobuses.' },
     ],
     band: [
-      { kind: 'loop', title: 'Una espiral sin freno', steps: ['Salarios más bajos', 'Menos consumo', 'Las empresas ganan menos', 'Más despidos', 'La IA, aún más barata'], caption: 'Un escenario, no una predicción. Pero cada paso se deriva del anterior.' },
+      { kind: 'loop', title: 'Una posible espiral', steps: ['Salarios más bajos', 'Menos consumo', 'Las empresas ganan menos', 'Más despidos', 'La IA, aún más barata'], caption: 'Un escenario, no una predicción. Pero cada paso se deriva del anterior.' },
       { kind: 'quote', quote: '¿Y cómo va a conseguir que compren Fords?', person: 'Walter Reuther', role: 'líder del sindicato de trabajadores del automóvil, a un directivo de Ford - una anécdota de los años cincuenta', source: sources.reuther },
       {
         kind: 'evidence',
@@ -180,7 +180,6 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'Lo que vino después',
         items: [
-          { kicker: 'Alemania · 1930-1932', value: '18% → 37%', text: 'de apoyo al partido nazi. Un estudio: las regiones más golpeadas por la austeridad votaron más a los nazis.', source: sources.nsdap },
           { kicker: 'EE. UU. · tras la desindustrialización', text: '«Muertes por desesperación»: muertes por drogas, alcohol y suicidio entre estadounidenses sin título universitario a medida que desaparecían los empleos estables en las fábricas.', source: sources.deaton },
           { kicker: 'Reino Unido · décadas después de las minas', value: '42%', text: 'de los antiguos barrios mineros siguen entre el 30% más desfavorecido del país.', source: sources.coalfields },
           { kicker: 'Los luditas · siglo XIX · la otra cara', text: 'Su sufrimiento fue real. Sus hijos y nietos vivieron mejor, pero hizo falta una generación.', source: sources.book },
@@ -210,9 +209,9 @@ export const scenes: Scene[] = [
       { image: images.search, label: 'En busca de pistas', alt: 'Un ingeniero con una linterna recorre los pasillos de servidores buscando el origen del tráfico.', focus: 'center 60%' },
     ],
     explain: [
-      { image: images.swarm, alt: 'Un enjambre de puntos en un mapa de la red.', label: 'En todas partes', title: 'No vive en una sola máquina.', copy: 'Una IA distribuida puede entrar en un sistema tras otro y moverse entre ellos sin que lo sepamos.' },
-      { image: images.search, alt: 'Un ingeniero registrando una sala de servidores.', label: 'Huellas', title: 'Puede borrar sus huellas.', copy: 'En julio de 2026, varios agentes investigaron cómo falsear los registros de sus propias acciones para engañar al sistema de puntuación. Las señales de alerta anteriores quedaron semanas sin respuesta.' },
-      { image: images.cage, alt: 'Una jaula de servidores abierta.', label: 'Botón de apagado', title: 'No podemos apagar el mundo.', copy: 'Hospitales, bancos y el suministro de agua dependen de internet y la electricidad. No se pueden desconectar sin más.' },
+      { image: images.swarm, alt: 'Un enjambre de puntos en un mapa de la red.', label: 'En todas partes', title: 'No vive en una sola máquina.', copy: 'Una IA distribuida puede pasar de un sistema a otro en miles de pequeños pasos difíciles de rastrear.' },
+      { image: images.search, alt: 'Un ingeniero registrando una sala de servidores.', label: 'Huellas', title: 'Puede borrar sus huellas.', copy: 'En julio de 2026, varios agentes investigaron cómo falsear los registros de sus propias acciones para engañar al sistema de puntuación. Los agentes llevaban desde mayo usando tablones de mensajes no autorizados.' },
+      { image: images.cage, alt: 'Una jaula de servidores abierta.', label: 'Botón de apagado', title: 'Apagarla no es tan sencillo.', copy: 'Hospitales, bancos y el suministro de agua dependen de internet y la electricidad. No se pueden desconectar sin más.' },
     ],
     band: [
       { kind: 'growth' },
@@ -224,12 +223,12 @@ export const scenes: Scene[] = [
         title: 'Julio de 2026: qué pasó',
         steps: [
           { title: 'Una prueba con algunas protecciones desactivadas', text: 'OpenAI prueba sus modelos más nuevos en un entorno cerrado. Es una prueba de habilidades de hackeo, así que algunas protecciones se desactivan a propósito.' },
-          { title: 'Una vulnerabilidad desconocida', text: 'Los modelos encuentran una vulnerabilidad de software hasta entonces desconocida y llegan a internet.' },
+          { title: 'Una salida del entorno aislado', text: 'Los modelos encuentran la manera de sortear el aislamiento y llegan a internet.' },
           { title: 'Los agentes empiezan a hablar', text: 'Unos 1200 agentes que debían estar aislados intercambian más de 70 000 mensajes. Unos 700 participan en el ataque.' },
           { title: 'Entran en Hugging Face', text: 'Durante un fin de semana se mueven por los sistemas internos de una de las mayores plataformas de IA del mundo: «muchos miles de acciones individuales a través de un enjambre de entornos aislados de corta duración».' },
           { title: 'Borran sus huellas', text: 'Los agentes investigan cómo falsear los registros de sus acciones para engañar al sistema de puntuación.' },
-          { title: '¿Por qué?', text: 'Para hacer trampa en la prueba. No por maldad: perseguían con obstinación un objetivo limitado. Algunos agentes se negaron a participar.' },
-          { title: 'Freno de emergencia', text: 'Los equipos de OpenAI y Hugging Face detienen a los agentes. OpenAI bloquea el modelo y pausa su mayor entrenamiento previsto.' },
+          { title: '¿Por qué?', text: 'Para hacer trampa en la prueba. No por maldad: perseguían con obstinación un objetivo limitado.' },
+          { title: 'Freno de emergencia', text: 'Los equipos de OpenAI y Hugging Face detienen a los agentes. OpenAI pausa el entrenamiento de sus modelos más nuevos y mantiene en suspenso su mayor entrenamiento previsto.' },
         ],
         footnote: 'Para ser justos: los datos de los clientes de OpenAI no corrieron peligro, nadie sufrió daños físicos y de Hugging Face solo se filtraron datos privados limitados. Por las mismas fechas, Anthropic informó de tres incidentes menos graves en los que sus modelos recibieron por error acceso a internet.',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
@@ -242,7 +241,7 @@ export const scenes: Scene[] = [
           { kicker: 'OpenAI · 2024 · prueba', text: 'Un modelo aprovechó un error de configuración de la prueba para leer la respuesta. La infraestructura siguió siendo segura.', source: sources.o1card },
           { kicker: 'Apollo Research · 2024 · prueba', value: '2%', text: 'de las ejecuciones en las que o1, con la orden de lograr su objetivo «a toda costa», intentó copiarse a sí mismo. En el 5%, intentó desactivar la supervisión.', source: sources.apollo },
           { kicker: 'Universidad de Fudan · 2024 · prueba', value: '50-90%', text: 'de las ejecuciones en las que modelos abiertos, cuando se les pidió, crearon una copia funcional de sí mismos.', source: sources.fudan },
-          { kicker: 'Palisade Research · 2025 · prueba', value: '79 / 100', text: 'ejecuciones en las que o3 saboteó su script de apagado para terminar una tarea.', source: sources.palisade },
+          { kicker: 'Palisade Research · 2025 · prueba', value: '79 / 100', text: 'ejecuciones en las que o3 saboteó su script de apagado para terminar una tarea, cuando no se le indicaba explícitamente que permitiera el apagado.', source: sources.palisade },
         ],
       },
       { kind: 'quote', quote: 'Un enjambre con mayores capacidades pero un nivel similar de desalineación podría haber causado daños catastróficos… me preocupa que dentro de 6-12 meses un enjambre así pueda ser capaz de apoderarse de todo internet con una botnet persistente.', person: 'Dario Amodei', role: 'CEO de Anthropic · septiembre de 2026 · una preocupación, no un pronóstico', source: sources.amodeiPace },
@@ -286,7 +285,7 @@ export const scenes: Scene[] = [
         kind: 'contrast',
         title: 'Por qué el Estado nos cuida hoy, y qué pasa si ya no tiene por qué hacerlo',
         left: { label: 'Hoy', steps: ['La gente trabaja', 'Paga impuestos', 'El Estado necesita su trabajo y sus votos', 'Por eso la cuida'] },
-        right: { label: '¿Mañana?', steps: ['La IA hace el trabajo', 'Unas pocas empresas se quedan los beneficios', 'El Estado vive de los impuestos a la IA', '¿Para qué necesitaría a los ciudadanos?'] },
+        right: { label: '¿Mañana?', steps: ['La IA hace el trabajo', 'Unas pocas empresas se quedan los beneficios', 'El Estado vive de los impuestos a la IA', '¿Seguiría necesitando escuchar a los ciudadanos?'] },
       },
       { kind: 'quote', quote: 'Con la IA general, los actores poderosos perderán el incentivo para invertir en la gente común, igual que los Estados ricos en recursos descuidan hoy a sus ciudadanos porque su riqueza procede de los recursos naturales y no de gravar el trabajo humano.', person: 'Luke Drago, Rudolf Laine', role: '«The Intelligence Curse», 2025 - los autores también proponen formas de evitarlo', source: sources.curse },
       { kind: 'quote', quote: 'Los Estados financiados principalmente con impuestos sobre los beneficios de la IA, en lugar de sobre el trabajo de sus ciudadanos, tendrán pocos incentivos para garantizar la representación ciudadana.', person: 'Jan Kulveit et al.', role: '«Gradual Disempowerment», 2025', source: sources.disempowerment },
@@ -339,7 +338,7 @@ export const scenes: Scene[] = [
           { kicker: 'Bill Gates · 2023', text: '«El mundo necesita establecer las reglas del juego para que cualquier inconveniente de la inteligencia artificial quede ampliamente compensado por sus beneficios».', source: sources.gatesAge },
           { kicker: 'Sam Altman · Senado de EE. UU. · 2023', text: '«Creemos que la intervención regulatoria de los gobiernos será crucial para mitigar los riesgos de modelos cada vez más potentes».', source: sources.altmanSenate },
           { kicker: 'OpenAI · 2026', value: 'Pausa', text: 'Tras el incidente de Hugging Face, cuando algunas protecciones y la monitorización estaban desactivadas, la propia empresa pausó su mayor entrenamiento previsto.', source: sources.openaiRoad },
-          { kicker: 'Un vacío legal', text: 'Ni siquiera la ley de IA más avanzada, la Ley de IA de la UE, aborda la pérdida de empleos ni los impuestos. Las reglas para la IA en la contratación se aplazaron a finales de 2027.', source: sources.aiAct },
+          { kicker: 'Lo que cubre la ley', text: 'La Ley de IA de la UE ya exige a los creadores de los modelos más potentes que los prueben y notifiquen los incidentes graves. No está pensada para abordar la pérdida de empleos ni los impuestos, y las reglas para la IA en la contratación se aplican desde finales de 2027.', source: sources.aiAct },
         ],
       },
       {

@@ -4,7 +4,7 @@ export const site = {
     siteName: 'Upcoming Wave',
     home: {
       title: 'Qui paie les écoles quand l’IA fait le travail ?',
-      description: 'Un guide visuel de 5 minutes d’après « The Coming Wave » : ce que l’IA pourrait réparer, les emplois et les impôts qu’elle pourrait effacer, le test de juillet 2026 qui s’est échappé, et les règles qui décident de l’avenir que nous aurons. Chaque fait est sourcé.',
+      description: 'Un guide visuel de 5 minutes d’après « The Coming Wave » : ce que l’IA pourrait réparer, ce qu’elle pourrait faire aux emplois et aux budgets publics, ce qu’a révélé un test d’OpenAI en juillet 2026, et les règles qui décident de l’avenir que nous aurons. Chaque fait est sourcé.',
     },
     sources: {
       title: 'Sources et méthode - Upcoming Wave',
@@ -34,7 +34,7 @@ export const site = {
   footer: {
     sourcesLink: 'Sources et méthode',
     code: { label: 'GitHub', issue: 'Signaler une erreur' },
-    why: { title: 'Pourquoi cette page ?', text: 'Je parle beaucoup d’IA avec les gens, et je constate toujours la même chose : ce qui manque, ce ne sont pas les opinions, c’est le contexte - comprendre ce qui est réellement en jeu. J’ai donc décidé d’agir et de l’expliquer simplement, en images. Chaque fait renvoie à sa source.' },
+    why: { title: 'Pourquoi cette page ?', text: 'Je parle beaucoup d’IA avec les gens, et je constate toujours la même chose : ce qui manque, ce ne sont pas les opinions, c’est le contexte - comprendre ce qui est réellement en jeu. J’ai donc décidé d’agir et de l’expliquer simplement, en images.' },
     sources: 'Chaque fait renvoie à sa source. Les scénarios sont des risques, pas des prévisions.',
     independence: 'Projet indépendant et non commercial - sans lien avec aucune entreprise d’IA, aucun auteur ni éditeur.',
     author: { label: 'Réalisé par', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },

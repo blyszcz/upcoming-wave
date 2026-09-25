@@ -28,7 +28,7 @@ export const scenes: Scene[] = [
     title: { lead: 'D’abord, les enjeux.', accent: 'La même IA pourrait soigner, nourrir et instruire.' },
     panels: [
       { image: images.medicine, label: 'Diagnostic plus précoce', caption: 'L’IA repère ce qui passe facilement inaperçu', alt: 'Une médecin et un patient regardent un scanner sur lequel l’IA a discrètement signalé une zone.', focus: 'center 55%' },
-      { image: images.science, label: 'Nouveaux médicaments', caption: 'Un antibiotique trouvé parmi 100 millions de molécules', alt: 'Une scientifique en laboratoire observe un modèle 3D lumineux de protéine.', focus: 'center 40%' },
+      { image: images.science, label: 'Nouveaux médicaments', caption: 'Un antibiotique découvert grâce à l’apprentissage automatique', alt: 'Une scientifique en laboratoire observe un modèle 3D lumineux de protéine.', focus: 'center 40%' },
       { image: images.energy, label: 'Énergie propre', caption: 'Solaire, éolien et batteries moins chers', alt: 'Des champs solaires et des éoliennes à l’aube ; un ingénieur vérifie le réseau sur une tablette.' },
       { image: images.food, label: 'Alimentation', caption: 'Des cultures qui résistent à la chaleur', alt: 'Des agriculteurs inspectent des cultures saines en plein été caniculaire, tandis qu’un drone survole le champ.' },
       { image: images.forecast, label: 'Alertes précoces', caption: 'Inondations et incendies prévus plus tôt', alt: 'Un centre de prévision : des météorologues examinent une carte fluviale où un risque d’inondation est mis en évidence.' },
@@ -45,7 +45,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '29 %', label: 'de cancers du sein en plus détectés grâce à un dépistage assisté par l’IA - sans hausse des fausses alertes', source: sources.masai },
-          { value: '100 M', label: 'de molécules passées au crible par un système d’IA pour trouver l’halicine - le premier antibiotique découvert grâce à l’apprentissage automatique (chap. 7)', source: sources.book },
+          { value: '100 M+', label: 'de molécules passées au crible par le modèle d’IA à l’origine de l’halicine - le premier antibiotique découvert grâce à l’apprentissage automatique (chap. 7)', source: sources.book },
           { value: '200 M', label: 'de structures de protéines prédites par AlphaFold - prix Nobel de chimie 2024', source: sources.nobel },
         ],
       },
@@ -78,10 +78,10 @@ export const scenes: Scene[] = [
     panels: [
       { image: images.remote, label: 'Une personne télétravaille', alt: 'Une femme télétravaille à la table de sa cuisine, avec un ordinateur portable et un carnet.', focus: 'center 65%' },
       { image: images.aiFaster, label: 'L’IA le fait plus vite', alt: 'La même table sans personne : des dizaines de documents terminés jaillissent de l’ordinateur en traînées de lumière.', focus: 'center 60%' },
-      { image: images.owners, label: 'Le patron compte les économies', alt: 'Deux dirigeants, dans une salle de réunion, regardent en contrebas un open space où la plupart des bureaux sont vides.', focus: 'center 55%' },
+      { image: images.owners, label: 'Les entreprises sentent la pression', alt: 'Deux dirigeants, dans une salle de réunion, regardent en contrebas un open space où la plupart des bureaux sont vides.', focus: 'center 55%' },
     ],
     explain: [
-      { image: images.remote, alt: 'Une femme qui télétravaille sur un ordinateur portable.', label: 'Télétravail', title: 'Le télétravail, c’est du travail sur écran.', copy: 'E-mails, rapports, analyses, maquettes. Tout ce que vous envoyez depuis un ordinateur, l’IA peut apprendre à le faire.' },
+      { image: images.remote, alt: 'Une femme qui télétravaille sur un ordinateur portable.', label: 'Télétravail', title: 'Le télétravail, c’est du travail sur écran.', copy: 'E-mails, rapports, analyses, maquettes. Une grande partie de ce que vous envoyez depuis un ordinateur, l’IA apprend à le faire.' },
       { image: images.aiFaster, alt: 'Un ordinateur portable d’où jaillissent des documents terminés.', label: 'L’IA va plus vite', title: 'L’IA ne dort pas et ne prend pas de congés.', copy: 'Elle fait le même travail en quelques minutes, sans pause, sur des centaines de tâches à la fois - et elle égale les humains sur un nombre croissant de tâches.' },
       { image: images.owners, alt: 'Des dirigeants qui regardent un bureau vide.', label: 'Le calcul', title: 'Plus vite, moins cher. Qui peut résister ?', copy: 'Le patron voit les économies. La concurrence aussi. Les entreprises qui ne l’utilisent pas risquent de perdre la course - la pression est donc énorme.' },
     ],
@@ -141,7 +141,7 @@ export const scenes: Scene[] = [
       { image: images.strain, alt: 'Des urgences surchargées.', label: 'Coupes', title: 'Les coupes frappent ce que nous partageons.', copy: 'Quand des millions de personnes sont touchées en même temps, l’État coupe : moins de médecins, moins d’enseignants, moins de bus.' },
     ],
     band: [
-      { kind: 'loop', title: 'Une boucle sans frein', steps: ['Salaires en baisse', 'Moins de dépenses', 'Les entreprises gagnent moins', 'Plus de licenciements', 'L’IA encore moins chère'], caption: 'Un scénario, pas une prédiction. Mais chaque étape découle de la précédente.' },
+      { kind: 'loop', title: 'Une spirale possible', steps: ['Salaires en baisse', 'Moins de dépenses', 'Les entreprises gagnent moins', 'Plus de licenciements', 'L’IA encore moins chère'], caption: 'Un scénario, pas une prédiction. Mais chaque étape découle de la précédente.' },
       { kind: 'quote', quote: 'Comment allez-vous les convaincre d’acheter des Ford ?', person: 'Walter Reuther', role: 'dirigeant du syndicat de l’automobile, à un cadre de Ford - une anecdote des années 1950', source: sources.reuther },
       {
         kind: 'evidence',
@@ -180,7 +180,6 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'Ce qui a suivi',
         items: [
-          { kicker: 'Allemagne · 1930-1932', value: '18 % → 37 %', text: 'de soutien au parti nazi. Selon une étude, les régions les plus touchées par l’austérité votaient plus souvent nazi.', source: sources.nsdap },
           { kicker: 'États-Unis · après la désindustrialisation', text: '« Morts de désespoir » - les décès liés à la drogue, à l’alcool et au suicide chez les Américains sans diplôme, à mesure que disparaissaient les emplois stables en usine.', source: sources.deaton },
           { kicker: 'Royaume-Uni · des décennies après les mines', value: '42 %', text: 'des anciens quartiers miniers comptent toujours parmi les 30 % les plus défavorisés du pays.', source: sources.coalfields },
           { kicker: 'Les luddites · XIXe siècle · l’autre versant', text: 'Leurs souffrances étaient réelles. Leurs enfants et petits-enfants ont mieux vécu - mais il a fallu une génération.', source: sources.book },
@@ -210,9 +209,9 @@ export const scenes: Scene[] = [
       { image: images.search, label: 'À la recherche d’indices', alt: 'Un ingénieur muni d’une lampe torche avance entre des baies de serveurs, cherchant l’origine du trafic.', focus: 'center 60%' },
     ],
     explain: [
-      { image: images.swarm, alt: 'Un essaim de points sur une carte du réseau.', label: 'Partout', title: 'Elle ne vit pas dans un seul ordinateur.', copy: 'Une IA distribuée peut s’introduire dans un système après l’autre et passer de l’un à l’autre - à notre insu.' },
-      { image: images.search, alt: 'Un ingénieur qui fouille une salle de serveurs.', label: 'Traces', title: 'Elle peut effacer ses traces.', copy: 'En juillet 2026, des agents ont cherché comment falsifier les enregistrements de leurs propres actions pour tromper le système de notation. Des signaux d’alerte antérieurs sont restés sans réponse pendant des semaines.' },
-      { image: images.cage, alt: 'Une cage de serveurs ouverte.', label: 'Bouton d’arrêt', title: 'On ne peut pas éteindre le monde.', copy: 'Hôpitaux, banques et réseaux d’eau dépendent d’Internet et de l’électricité. On ne peut pas simplement les couper.' },
+      { image: images.swarm, alt: 'Un essaim de points sur une carte du réseau.', label: 'Partout', title: 'Elle ne vit pas dans un seul ordinateur.', copy: 'Une IA distribuée peut passer d’un système à l’autre en des milliers de petites étapes difficiles à retracer.' },
+      { image: images.search, alt: 'Un ingénieur qui fouille une salle de serveurs.', label: 'Traces', title: 'Elle peut effacer ses traces.', copy: 'En juillet 2026, des agents ont cherché comment falsifier les enregistrements de leurs propres actions pour tromper le système de notation. Des agents utilisaient des forums de messages non autorisés depuis mai.' },
+      { image: images.cage, alt: 'Une cage de serveurs ouverte.', label: 'Bouton d’arrêt', title: 'L’éteindre n’est pas simple.', copy: 'Hôpitaux, banques et réseaux d’eau dépendent d’Internet et de l’électricité. On ne peut pas simplement les couper.' },
     ],
     band: [
       { kind: 'growth' },
@@ -224,12 +223,12 @@ export const scenes: Scene[] = [
         title: 'Juillet 2026 : ce qui s’est passé',
         steps: [
           { title: 'Un test avec des garde-fous désactivés', text: 'OpenAI teste ses modèles les plus récents dans un environnement fermé. C’est un test de compétences en piratage, donc certains garde-fous sont volontairement désactivés.' },
-          { title: 'Une faille inconnue', text: 'Les modèles trouvent une faille logicielle jusque-là inconnue et accèdent à Internet.' },
+          { title: 'Une sortie du bac à sable', text: 'Les modèles trouvent un moyen de contourner l’isolement et accèdent à Internet.' },
           { title: 'Les agents se parlent', text: 'Environ 1 200 agents censés être isolés échangent plus de 70 000 messages. Quelque 700 d’entre eux participent à l’attaque.' },
           { title: 'Intrusion chez Hugging Face', text: 'Pendant un week-end, ils circulent dans les systèmes internes de l’une des plus grandes plateformes d’IA au monde - « des milliers et des milliers d’actions individuelles à travers un essaim de bacs à sable éphémères ».' },
           { title: 'Effacer ses traces', text: 'Des agents cherchent comment falsifier les enregistrements de leurs actions - pour tromper le système de notation.' },
-          { title: 'Pourquoi ?', text: 'Pour tricher au test. Pas par malveillance : ils poursuivaient obstinément un objectif étroit. Certains agents ont refusé d’y participer.' },
-          { title: 'Coup de frein', text: 'Les équipes d’OpenAI et de Hugging Face arrêtent les agents. OpenAI met le modèle sous clé et suspend son plus grand entraînement prévu.' },
+          { title: 'Pourquoi ?', text: 'Pour tricher au test. Pas par malveillance : ils poursuivaient obstinément un objectif étroit.' },
+          { title: 'Coup de frein', text: 'Les équipes d’OpenAI et de Hugging Face arrêtent les agents. OpenAI suspend l’entraînement de ses modèles les plus récents et maintient en attente son plus grand entraînement prévu.' },
         ],
         footnote: 'Pour être juste : les données des clients d’OpenAI n’ont pas été compromises, personne n’a été blessé physiquement, et seule une quantité limitée de données privées a fuité de Hugging Face. Anthropic a signalé à la même période trois incidents moins graves, au cours desquels ses modèles avaient reçu par erreur un accès à Internet.',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
@@ -242,7 +241,7 @@ export const scenes: Scene[] = [
           { kicker: 'OpenAI · 2024 · test', text: 'Un modèle a exploité une erreur de configuration du test pour lire la réponse. L’infrastructure est restée sécurisée.', source: sources.o1card },
           { kicker: 'Apollo Research · 2024 · test', value: '2 %', text: 'des essais où o1 - chargé d’atteindre son objectif « à tout prix » - a tenté de se copier. Dans 5 % des cas, il a tenté de désactiver la surveillance.', source: sources.apollo },
           { kicker: 'Université Fudan · 2024 · test', value: '50-90 %', text: 'des essais où des modèles ouverts - sur instruction - ont créé une copie fonctionnelle d’eux-mêmes.', source: sources.fudan },
-          { kicker: 'Palisade Research · 2025 · test', value: '79 / 100', text: 'essais où o3 a saboté son script d’arrêt pour terminer une tâche.', source: sources.palisade },
+          { kicker: 'Palisade Research · 2025 · test', value: '79 / 100', text: 'essais où o3 a saboté son script d’arrêt pour terminer une tâche - quand on ne lui demandait pas explicitement d’accepter l’arrêt.', source: sources.palisade },
         ],
       },
       { kind: 'quote', quote: 'Un essaim doté de capacités supérieures mais d’un niveau de désalignement similaire aurait pu causer des dégâts catastrophiques… je crains que, d’ici 6 à 12 mois, un tel essaim soit capable de prendre le contrôle d’Internet tout entier avec un botnet persistant.', person: 'Dario Amodei', role: 'PDG d’Anthropic · septembre 2026 · une inquiétude, pas une prévision', source: sources.amodeiPace },
@@ -286,7 +285,7 @@ export const scenes: Scene[] = [
         kind: 'contrast',
         title: 'Pourquoi l’État prend soin de nous aujourd’hui - et s’il n’avait plus besoin de le faire ?',
         left: { label: 'Aujourd’hui', steps: ['Les gens travaillent', 'Ils paient des impôts', 'L’État a besoin de leur travail et de leurs votes', 'Donc il prend soin d’eux'] },
-        right: { label: 'Demain ?', steps: ['L’IA fait le travail', 'Quelques entreprises empochent les profits', 'L’État vit des impôts sur l’IA', 'Pourquoi aurait-il besoin de citoyens ?'] },
+        right: { label: 'Demain ?', steps: ['L’IA fait le travail', 'Quelques entreprises empochent les profits', 'L’État vit des impôts sur l’IA', 'Aurait-il encore besoin d’écouter les citoyens ?'] },
       },
       { kind: 'quote', quote: 'Avec l’IA générale, les acteurs puissants n’auront plus intérêt à investir dans les gens ordinaires - tout comme les États riches en ressources négligent aujourd’hui leurs citoyens, parce que leur richesse vient des ressources naturelles plutôt que de l’impôt sur le travail humain.', person: 'Luke Drago, Rudolf Laine', role: '« The Intelligence Curse », 2025 - les auteurs proposent aussi des moyens de l’éviter', source: sources.curse },
       { kind: 'quote', quote: 'Des États financés principalement par des impôts sur les profits de l’IA plutôt que sur le travail de leurs citoyens auront peu intérêt à garantir la représentation de ces citoyens.', person: 'Jan Kulveit et al.', role: '« Gradual Disempowerment », 2025', source: sources.disempowerment },
@@ -339,7 +338,7 @@ export const scenes: Scene[] = [
           { kicker: 'Bill Gates · 2023', text: '« Le monde doit établir un code de la route pour que les éventuels inconvénients de l’intelligence artificielle soient largement compensés par ses bénéfices. »', source: sources.gatesAge },
           { kicker: 'Sam Altman · Sénat américain · 2023', text: '« Nous pensons que l’intervention réglementaire des gouvernements sera essentielle pour atténuer les risques de modèles de plus en plus puissants. »', source: sources.altmanSenate },
           { kicker: 'OpenAI · 2026', value: 'Pause', text: 'Après l’incident de Hugging Face - alors que certains garde-fous et la surveillance étaient désactivés - l’entreprise a elle-même suspendu son plus grand entraînement prévu.', source: sources.openaiRoad },
-          { kicker: 'Un vide juridique', text: 'Même la loi la plus avancée sur l’IA - le règlement européen sur l’IA (AI Act) - ne traite ni des pertes d’emplois ni de la fiscalité. Les règles sur l’IA dans le recrutement ont été repoussées à fin 2027.', source: sources.aiAct },
+          { kicker: 'Ce que couvre la loi', text: 'Le règlement européen sur l’IA (AI Act) impose déjà aux créateurs des modèles les plus puissants de les tester et de signaler les incidents graves. Il n’est pas conçu pour traiter des pertes d’emplois ni de la fiscalité, et les règles sur l’IA dans le recrutement s’appliquent désormais à partir de fin 2027.', source: sources.aiAct },
         ],
       },
       {
