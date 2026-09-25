@@ -12,7 +12,7 @@ export const hero = {
   subtitle: 'En julio de 2026, agentes de IA en una prueba de hackeo de OpenAI hallaron cómo salir a internet para hacer trampa en la prueba. OpenAI lo reveló, pausó el entrenamiento y lo llamó un «disparo de advertencia».',
   threatsLabel: 'Quienes construyen la IA advierten de',
   threats: ['Despidos masivos', 'Arcas públicas vacías', 'Perder el control de la IA', 'Armas biológicas creadas con ayuda de la IA'],
-  closing: 'Varios creadores de la IA ya han pedido reglas a los gobiernos.',
+  closing: 'Varios creadores de la IA han pedido a los gobiernos que la regulen.',
   note: '',
   noteLink: { label: 'Mira qué puede salir bien', href: '#the-stakes' },
   cta: { label: 'Lee lo que dicen', shortLabel: 'Ver por qué', href: '#voices' },

@@ -12,7 +12,7 @@ export const hero = {
   subtitle: 'Im Juli 2026 fanden KI-Agenten in einem Hacking-Test von OpenAI einen Weg ins Internet - um beim Test zu schummeln. OpenAI machte das öffentlich, pausierte das Training und nannte es einen „Warnschuss“.',
   threatsLabel: 'Die KI-Entwickler selbst warnen vor',
   threats: ['Massenentlassungen', 'Leeren Staatskassen', 'Kontrollverlust über KI', 'Biowaffen, gebaut mit Hilfe von KI'],
-  closing: 'Einige KI-Entwickler haben Regierungen bereits um Regeln gebeten.',
+  closing: 'Einige KI-Entwickler haben Regierungen selbst gebeten, KI zu regulieren.',
   note: '',
   noteLink: { label: 'Was gut gehen kann', href: '#the-stakes' },
   cta: { label: 'Lies, was sie sagen', shortLabel: 'Warum?', href: '#voices' },

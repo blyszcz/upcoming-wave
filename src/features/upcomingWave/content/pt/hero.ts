@@ -12,7 +12,7 @@ export const hero = {
   subtitle: 'Em julho de 2026, agentes de IA em um teste de hacking da OpenAI acharam um jeito de chegar à internet - para trapacear no teste. A OpenAI revelou o caso, pausou o treinamento e chamou isso de “tiro de advertência”.',
   threatsLabel: 'Os próprios criadores da IA alertam para',
   threats: ['Demissões em massa', 'Cofres públicos vazios', 'Perda de controle sobre a IA', 'Armas biológicas feitas com ajuda da IA'],
-  closing: 'Vários criadores da IA já pediram regras aos governos.',
+  closing: 'Vários criadores da IA já pediram aos governos que a regulem.',
   note: '',
   noteLink: { label: 'Veja o que pode dar certo', href: '#the-stakes' },
   cta: { label: 'Leia o que eles dizem', shortLabel: 'Veja por quê', href: '#voices' },

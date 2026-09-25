@@ -12,7 +12,7 @@ export const hero = {
   subtitle: 'In July 2026, AI agents in an OpenAI hacking test found a way onto the internet - to cheat on the test. OpenAI disclosed it, paused training and called it a “warning shot.”',
   threatsLabel: 'AI’s own builders warn about',
   threats: ['Mass layoffs', 'Empty public budgets', 'Losing control of AI', 'Bioweapons built with AI’s help'],
-  closing: 'Several of AI’s own builders have asked governments for rules.',
+  closing: 'Several of AI’s own builders have asked governments to regulate AI.',
   note: '',
   noteLink: { label: 'See what could go right', href: '#the-stakes' },
   cta: { label: 'Read their words', shortLabel: 'See why', href: '#voices' },

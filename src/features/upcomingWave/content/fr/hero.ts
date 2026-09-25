@@ -12,7 +12,7 @@ export const hero = {
   subtitle: 'En juillet 2026, lors d’un test de piratage d’OpenAI, des agents d’IA ont trouvé un accès à Internet - pour tricher au test. OpenAI l’a révélé, a suspendu l’entraînement et parlé d’un « coup de semonce ».',
   threatsLabel: 'Ceux qui construisent l’IA mettent en garde contre',
   threats: ['Des licenciements massifs', 'Des caisses publiques vides', 'La perte de contrôle de l’IA', 'Des armes biologiques conçues avec l’aide de l’IA'],
-  closing: 'Plusieurs créateurs d’IA ont déjà demandé des règles aux gouvernements.',
+  closing: 'Plusieurs créateurs d’IA ont eux-mêmes demandé aux gouvernements de la réguler.',
   note: '',
   noteLink: { label: 'Voir ce qui peut bien tourner', href: '#the-stakes' },
   cta: { label: 'Lire leurs propos', shortLabel: 'Voir pourquoi', href: '#voices' },
