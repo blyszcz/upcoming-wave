@@ -1,7 +1,7 @@
 # Link-preview cards (1200x630) with the headline baked in, one per language. No build needed.
 # 1. python3 scripts/og-cards.py            -> writes /tmp/og-cards/og-<locale>.html
 # 2. screenshot each file at 1200x630 (e.g. Playwright, wait for document.fonts.ready)
-#    and save as public/og/upcoming-wave-og-<locale>.jpg (JPEG ~q86).
+#    and save as public/og/upcoming-wave-og-<locale>-<version>.jpg (JPEG ~q86); bump OG_VERSION in src/app/siteMetadata.ts.
 # Text comes from content/<locale>/site.ts (meta.card, else meta.home.title) and meta.siteName; the
 # background is two photos from public/images/v2 (LEFT / RIGHT below). Fonts load from Google Fonts to match the site.
 import html

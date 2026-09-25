@@ -9,7 +9,9 @@ type Page = 'home' | 'sources';
 type PageMetadata = { locale: Locale; page?: Page };
 
 // Link-preview card with the headline baked in (X shows only the image). Regenerate with scripts/og-cards.py.
-const ogImageUrl = (locale: Locale) => `/og/upcoming-wave-og-${locale}.jpg`;
+// Bump the version whenever the image changes: Messenger/WhatsApp cache previews by URL.
+const OG_VERSION = 'v2';
+const ogImageUrl = (locale: Locale) => `/og/upcoming-wave-og-${locale}-${OG_VERSION}.jpg`;
 
 const pathFor = (locale: Locale, page: Page) => (page === 'sources' ? paths.sources(locale) : paths.home(locale));
 
