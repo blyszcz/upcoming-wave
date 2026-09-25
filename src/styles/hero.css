@@ -29,7 +29,11 @@
 /* "Drag me" hint until the first touch: the arrows nudge apart and a soft ring pulses. */
 .uw-compare-handle::after { content: ''; position: absolute; inset: -1px; border-radius: 50%; border: 1px solid rgba(255, 190, 120, 0.8); opacity: 0; pointer-events: none; }
 .uw-compare-handle[data-touched='false']::after { animation: uw-handle-ring 2.4s ease-out 3s infinite; }
-.uw-compare-handle[data-touched='false'] span { display: inline-block; animation: uw-handle-nudge 2.4s ease-in-out 3s infinite; }
+.uw-compare-arrows { display: flex; gap: 7px; letter-spacing: 0; }
+.uw-compare-arrows i { font-style: normal; }
+.uw-compare-handle[data-touched='false'] .uw-compare-arrows i:first-child { animation: uw-handle-left 2.4s ease-in-out 3s infinite; }
+.uw-compare-handle[data-touched='false'] .uw-compare-arrows i:last-child { animation: uw-handle-right 2.4s ease-in-out 3s infinite; }
 @keyframes uw-handle-ring { 0% { opacity: 0.9; transform: scale(1); } 70%, 100% { opacity: 0; transform: scale(1.7); } }
-@keyframes uw-handle-nudge { 0%, 55%, 100% { letter-spacing: 0.1em; } 20% { letter-spacing: 0.5em; } 35% { letter-spacing: 0.05em; } }
-@media (prefers-reduced-motion: reduce) { .uw-compare-handle::after, .uw-compare-handle span { animation: none !important; } }
+@keyframes uw-handle-left { 0%, 55%, 100% { transform: translateX(0); } 20% { transform: translateX(-4px); } 35% { transform: translateX(1px); } }
+@keyframes uw-handle-right { 0%, 55%, 100% { transform: translateX(0); } 20% { transform: translateX(4px); } 35% { transform: translateX(-1px); } }
+@media (prefers-reduced-motion: reduce) { .uw-compare-handle::after, .uw-compare-arrows i { animation: none !important; } }

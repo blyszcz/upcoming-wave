@@ -43,7 +43,7 @@ export const HeroCompare = ({ darkImage, darkAlt, hopeImage, hopeAlt, darkLabel,
           onPointerCancel={handlePointerUp}
           onKeyDown={handleKeyDown}
         >
-          <span aria-hidden="true">‹ ›</span>
+          <span className="uw-compare-arrows" aria-hidden="true"><i>‹</i><i>›</i></span>
         </div>
         <span className="uw-compare-label is-hope" data-hidden={position > 100 - COMPARE_LABEL_EDGE || isOverText} aria-hidden="true">{hopeLabel}</span>
       </div>
