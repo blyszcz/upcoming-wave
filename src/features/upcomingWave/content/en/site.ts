@@ -4,7 +4,7 @@ export const site = {
     siteName: 'Upcoming Wave',
     home: {
       title: 'Who pays for schools when AI does the work?',
-      description: 'A 5-minute visual guide based on “The Coming Wave”: what AI could fix, which jobs and taxes it could erase, the July 2026 test that got out, and the rules that decide which future we get. Every fact is sourced.',
+      description: 'A 5-minute visual guide based on “The Coming Wave”: what AI could fix, what it could do to jobs and public budgets, what a July 2026 OpenAI test revealed, and the rules that decide which future we get. Every fact is sourced.',
     },
     sources: {
       title: 'Sources & method - Upcoming Wave',
@@ -35,7 +35,7 @@ export const site = {
   footer: {
     sourcesLink: 'Sources & method',
     code: { label: 'GitHub', issue: 'Report a mistake' },
-    why: { title: 'Why this page?', text: 'I talk to people about AI a lot, and I keep seeing the same thing: what’s missing isn’t opinions, it’s context - an understanding of what’s actually at stake. So I decided to do something about it and explain it simply, in pictures. Every fact links to its source.' },
+    why: { title: 'Why this page?', text: 'I talk to people about AI a lot, and I keep seeing the same thing: what’s missing isn’t opinions, it’s context - an understanding of what’s actually at stake. So I decided to do something about it and explain it simply, in pictures.' },
     sources: 'Every fact links to its source. Scenarios are risks, not predictions.',
     independence: 'Independent, non-commercial project - not affiliated with any AI company, author or publisher.',
     author: { label: 'Made by', handle: '@blyzbyte', url: 'https://x.com/blyzbyte', with: '' },

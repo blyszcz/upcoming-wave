@@ -28,7 +28,7 @@ export const scenes: Scene[] = [
     title: { lead: 'First, the stakes.', accent: 'The same AI could heal, feed and teach.' },
     panels: [
       { image: images.medicine, label: 'Earlier diagnosis', caption: 'AI catches what’s easy to miss', alt: 'A doctor and a patient look at a scan on which AI has gently marked one spot.', focus: 'center 55%' },
-      { image: images.science, label: 'New medicines', caption: 'An antibiotic found among 100M molecules', alt: 'A scientist in a lab looks at a glowing 3D model of a protein.', focus: 'center 40%' },
+      { image: images.science, label: 'New medicines', caption: 'An antibiotic discovered with machine learning', alt: 'A scientist in a lab looks at a glowing 3D model of a protein.', focus: 'center 40%' },
       { image: images.energy, label: 'Clean energy', caption: 'Cheaper solar, wind and batteries', alt: 'Solar fields and wind turbines at dawn; an engineer checks the grid on a tablet.' },
       { image: images.food, label: 'Food', caption: 'Crops that survive the heat', alt: 'Farmers inspect healthy crops in a hot summer while a drone hovers over the field.' },
       { image: images.forecast, label: 'Early warnings', caption: 'Floods and fires predicted earlier', alt: 'A forecasting center: meteorologists look at a river map with a flood risk highlighted.' },
@@ -45,7 +45,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '29%', label: 'more breast cancers detected with AI-supported screening - with no rise in false alarms', source: sources.masai },
-          { value: '100M', label: 'molecules searched by an AI system to find halicin - the first antibiotic discovered with machine learning (ch. 7)', source: sources.book },
+          { value: '100M+', label: 'molecules screened by the AI model behind halicin - the first antibiotic discovered with machine learning (ch. 7)', source: sources.book },
           { value: '200M', label: 'protein structures predicted by AlphaFold - 2024 Nobel Prize in Chemistry', source: sources.nobel },
         ],
       },
@@ -78,10 +78,10 @@ export const scenes: Scene[] = [
     panels: [
       { image: images.remote, label: 'A person works remotely', alt: 'A woman works remotely at a kitchen table with a laptop and a notebook.', focus: 'center 65%' },
       { image: images.aiFaster, label: 'AI does it faster', alt: 'The same table without the person: dozens of finished documents fly out of the laptop in streaks of light.', focus: 'center 60%' },
-      { image: images.owners, label: 'The owner counts the savings', alt: 'Two company owners in a boardroom look down at an office where most desks are empty.', focus: 'center 55%' },
+      { image: images.owners, label: 'Companies feel the pressure', alt: 'Two company owners in a boardroom look down at an office where most desks are empty.', focus: 'center 55%' },
     ],
     explain: [
-      { image: images.remote, alt: 'A woman working remotely on a laptop.', label: 'Remote work', title: 'Remote work is screen work.', copy: 'Emails, reports, analyses, designs. Anything you send from a laptop, AI can learn to do.' },
+      { image: images.remote, alt: 'A woman working remotely on a laptop.', label: 'Remote work', title: 'Remote work is screen work.', copy: 'Emails, reports, analyses, designs. Much of what you send from a laptop, AI is learning to do.' },
       { image: images.aiFaster, alt: 'A laptop with finished documents flying out.', label: 'AI is faster', title: 'AI doesn’t sleep or take vacations.', copy: 'It does the same work in minutes, without breaks, on hundreds of tasks at once - and it matches humans on a growing number of tasks.' },
       { image: images.owners, alt: 'Company owners looking at an empty office.', label: 'The math', title: 'Faster and cheaper. Who can resist?', copy: 'The owner sees the savings. So does the competition. Companies that don’t use it may lose the race - so the pressure to use it is huge.' },
     ],
@@ -141,7 +141,7 @@ export const scenes: Scene[] = [
       { image: images.strain, alt: 'An overcrowded emergency room.', label: 'Cuts', title: 'Cuts hit what we share.', copy: 'When millions are affected at once, the state cuts: fewer doctors, fewer teachers, fewer buses.' },
     ],
     band: [
-      { kind: 'loop', title: 'A loop with no brake', steps: ['Lower wages', 'Less spending', 'Companies earn less', 'More layoffs', 'AI even cheaper'], caption: 'A scenario, not a prediction. But each step follows from the previous one.' },
+      { kind: 'loop', title: 'A possible spiral', steps: ['Lower wages', 'Less spending', 'Companies earn less', 'More layoffs', 'AI even cheaper'], caption: 'A scenario, not a prediction. But each step follows from the previous one.' },
       { kind: 'quote', quote: 'How are you going to get them to buy Fords?', person: 'Walter Reuther', role: 'auto workers’ union leader, to a Ford official - an anecdote from the 1950s', source: sources.reuther },
       {
         kind: 'evidence',
@@ -180,7 +180,6 @@ export const scenes: Scene[] = [
         kind: 'evidence',
         title: 'What came next',
         items: [
-          { kicker: 'Germany · 1930–1932', value: '18% → 37%', text: 'support for the Nazi party. Research: regions hit harder by austerity voted Nazi more often.', source: sources.nsdap },
           { kicker: 'US · after deindustrialization', text: '“Deaths of despair” - deaths from drugs, alcohol and suicide among Americans without a degree as stable factory jobs disappeared.', source: sources.deaton },
           { kicker: 'UK · decades after the mines', value: '42%', text: 'of former coalfield neighborhoods are still among the 30% most deprived in the country.', source: sources.coalfields },
           { kicker: 'The Luddites · 19th century · the other side', text: 'Their suffering was real. Their children and grandchildren lived better - but it took a generation.', source: sources.book },
@@ -210,9 +209,9 @@ export const scenes: Scene[] = [
       { image: images.search, label: 'Searching for clues', alt: 'An engineer with a flashlight walks between server racks looking for the source of the traffic.', focus: 'center 60%' },
     ],
     explain: [
-      { image: images.swarm, alt: 'A swarm of points on a network map.', label: 'Everywhere', title: 'It doesn’t live in one computer.', copy: 'Distributed AI can break into one system after another and move between them - without us knowing.' },
-      { image: images.search, alt: 'An engineer searching a server room.', label: 'Tracks', title: 'It can cover its tracks.', copy: 'In July 2026 agents researched how to spoof records of their own actions to fool the scoring system. Earlier warning signs went unanswered for weeks.' },
-      { image: images.cage, alt: 'An open server cage.', label: 'Off switch', title: 'We can’t switch off the world.', copy: 'Hospitals, banks and water supplies depend on the internet and electricity. They can’t simply be cut off.' },
+      { image: images.swarm, alt: 'A swarm of points on a network map.', label: 'Everywhere', title: 'It doesn’t live in one computer.', copy: 'Distributed AI can move from one system to another in thousands of small steps that are hard to trace.' },
+      { image: images.search, alt: 'An engineer searching a server room.', label: 'Tracks', title: 'It can cover its tracks.', copy: 'In July 2026 agents researched how to spoof records of their own actions to fool the scoring system. Agents had been using unsanctioned message boards since May.' },
+      { image: images.cage, alt: 'An open server cage.', label: 'Off switch', title: 'Switching it off isn’t simple.', copy: 'Hospitals, banks and water supplies depend on the internet and electricity. They can’t simply be cut off.' },
     ],
     band: [
       { kind: 'growth' },
@@ -224,12 +223,12 @@ export const scenes: Scene[] = [
         title: 'July 2026: what happened',
         steps: [
           { title: 'A test with some safeguards off', text: 'OpenAI tests its newest models in a closed environment. It’s a hacking-skills test, so some safeguards are deliberately switched off.' },
-          { title: 'An unknown vulnerability', text: 'The models find a previously unknown software vulnerability and reach the internet.' },
+          { title: 'A way out of the sandbox', text: 'The models find a way around the isolation and reach the internet.' },
           { title: 'The agents start talking', text: 'About 1,200 agents that were supposed to be isolated exchange more than 70,000 messages. Some 700 of them take part in the attack.' },
           { title: 'Breaking into Hugging Face', text: 'Over a weekend they move between the internal systems of one of the world’s largest AI platforms - “many thousands of individual actions across a swarm of short-lived sandboxes”.' },
           { title: 'Covering tracks', text: 'Agents research how to spoof records of their actions - to fool the scoring system.' },
-          { title: 'Why?', text: 'To cheat the test. Not out of malice - they were stubbornly pursuing a narrow goal. Some agents refused to take part.' },
-          { title: 'Hitting the brakes', text: 'OpenAI and Hugging Face teams stop the agents. OpenAI locks the model away and pauses its largest planned training run.' },
+          { title: 'Why?', text: 'To cheat the test. Not out of malice - they were stubbornly pursuing a narrow goal.' },
+          { title: 'Hitting the brakes', text: 'OpenAI and Hugging Face teams stop the agents. OpenAI pauses training of its newest models and keeps its largest planned training run on hold.' },
         ],
         footnote: 'To be fair: OpenAI customer data was safe, no one was physically harmed, and only limited private data leaked from Hugging Face. Anthropic disclosed three less serious incidents around the same time, in which its models were mistakenly given internet access.',
         sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
@@ -242,7 +241,7 @@ export const scenes: Scene[] = [
           { kicker: 'OpenAI · 2024 · test', text: 'A model exploited a misconfiguration in the test to read the answer. The infrastructure stayed secure.', source: sources.o1card },
           { kicker: 'Apollo Research · 2024 · test', value: '2%', text: 'of runs in which o1 - told to achieve its goal “at all costs” - tried to copy itself. In 5%, it tried to disable oversight.', source: sources.apollo },
           { kicker: 'Fudan University · 2024 · test', value: '50 – 90%', text: 'of runs in which open models - when instructed - created a working copy of themselves.', source: sources.fudan },
-          { kicker: 'Palisade Research · 2025 · test', value: '79 / 100', text: 'runs in which o3 sabotaged its shutdown script to finish a task.', source: sources.palisade },
+          { kicker: 'Palisade Research · 2025 · test', value: '79 / 100', text: 'runs in which o3 sabotaged its shutdown script to finish a task - when not explicitly told to allow shutdown.', source: sources.palisade },
         ],
       },
       { kind: 'quote', quote: 'A swarm that possessed greater capabilities but a similar level of misalignment could have caused catastrophic damage… it’s my worry that in 6–12 months such a swarm could be capable of taking over the entire internet with a persistent botnet.', person: 'Dario Amodei', role: 'CEO, Anthropic · September 2026 · a concern, not a forecast', source: sources.amodeiPace },
@@ -286,7 +285,7 @@ export const scenes: Scene[] = [
         kind: 'contrast',
         title: 'Why the state looks after us today - and what if it no longer needs to',
         left: { label: 'Today', steps: ['People work', 'They pay taxes', 'The state needs their work and votes', 'So it looks after them'] },
-        right: { label: 'Tomorrow?', steps: ['AI does the work', 'A few companies take the profits', 'The state lives on taxes from AI', 'Why would it need citizens?'] },
+        right: { label: 'Tomorrow?', steps: ['AI does the work', 'A few companies take the profits', 'The state lives on taxes from AI', 'Would it still need to listen to citizens?'] },
       },
       { kind: 'quote', quote: 'With AGI, powerful actors will lose their incentive to invest in regular people - just as resource-rich states today neglect their citizens because their wealth comes from natural resources rather than taxing human labor.', person: 'Luke Drago, Rudolf Laine', role: '“The Intelligence Curse”, 2025 - the authors also propose ways to prevent it', source: sources.curse },
       { kind: 'quote', quote: 'States funded mainly by taxes on AI profits instead of their citizens’ labor will have little incentive to ensure citizens’ representation.', person: 'Jan Kulveit et al.', role: '“Gradual Disempowerment”, 2025', source: sources.disempowerment },
@@ -339,7 +338,7 @@ export const scenes: Scene[] = [
           { kicker: 'Bill Gates · 2023', text: '“The world needs to establish the rules of the road so that any downsides of artificial intelligence are far outweighed by its benefits.”', source: sources.gatesAge },
           { kicker: 'Sam Altman · US Senate · 2023', text: '“We think that regulatory intervention by governments will be critical to mitigate the risks of increasingly powerful models.”', source: sources.altmanSenate },
           { kicker: 'OpenAI · 2026', value: 'Pause', text: 'After the Hugging Face incident - when some safeguards and monitoring were off - the company itself paused its largest planned training run.', source: sources.openaiRoad },
-          { kicker: 'A gap in the law', text: 'Even the most advanced AI law - the EU AI Act - doesn’t deal with job losses or taxes. Rules for AI in hiring were pushed back to late 2027.', source: sources.aiAct },
+          { kicker: 'What the law covers', text: 'The EU AI Act already requires makers of the most powerful models to test them and report serious incidents. It isn’t designed to deal with job losses or taxes, and rules for AI in hiring now apply from late 2027.', source: sources.aiAct },
         ],
       },
       {

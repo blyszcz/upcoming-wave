@@ -28,7 +28,7 @@ export const split = {
     {
       kind: 'stats',
       items: [
-        { value: '44%', label: 'of world GDP - where Fortune’s Global 500 companies already are (ch. 11)', source: book },
+        { value: '44%', label: 'of world GDP - the combined revenue of Fortune’s Global 500 companies (ch. 11)', source: book },
       ],
     },
   ] satisfies BandBlock[],
