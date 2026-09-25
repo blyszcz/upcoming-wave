@@ -22,7 +22,6 @@ export const ui = {
   readMore: 'Czytaj więcej',
   showLess: 'Zwiń sekcję',
   chapterEnd: 'Koniec rozdziału',
-  readingMode: { toShort: 'Skrót', toFull: 'Pełna wersja', aria: 'Przełącz między skrótem a pełną wersją' },
   stepsAria: 'Co się dzieje, krok po kroku',
   factsAria: 'Fakty i źródła',
   explain: {

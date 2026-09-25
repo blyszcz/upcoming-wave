@@ -6,11 +6,6 @@
 .uw-disclosure-body { display: grid; gap: clamp(64px, 8vw, 110px); animation: uw-rise 0.5s var(--ease-out) both; }
 .uw-disclosure-body[hidden] { display: none; }
 
-.uw-mode-toggle { display: inline-flex; padding: 3px; border: 1px solid var(--line); border-radius: 99px; background: rgba(7, 11, 16, 0.4); color: var(--muted); font: 500 10px/1 var(--font-mono), monospace; letter-spacing: 0.1em; text-transform: uppercase; pointer-events: auto; }
-.uw-mode-toggle span { padding: 6px 10px; border-radius: 99px; transition: background 0.2s ease, color 0.2s ease; }
-.uw-mode-toggle span.is-active { background: var(--paper); color: var(--ink); }
-@media (max-width: 1180px) { .uw-mode-toggle { display: none; } }
-
 /* collapsed sections (short version): title + a lower image strip + "Read more" */
 .uw-scene-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; }
 .uw-expand { padding: 16px 20px 16px 24px; }

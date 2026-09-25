@@ -22,7 +22,6 @@ export const ui = {
   readMore: '続きを読む',
   showLess: '閉じる',
   chapterEnd: '章の終わり',
-  readingMode: { toShort: '短縮版', toFull: '完全版', aria: '短縮版と完全版を切り替える' },
   stepsAria: '何が起こるか、段階ごとに',
   factsAria: '事実と出典',
   explain: {
