@@ -28,6 +28,11 @@ export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
   const isMosaic = scene.layout === 'mosaic';
   const { isOpen, toggle } = useDisclosure();
   const factsId = `${scene.id}-facts`;
+  // A photo opens the "Why?" slider at the step that shows the same picture (or at the start).
+  const openAt = (image: string, trigger: HTMLButtonElement) => {
+    const step = scene.explain.findIndex((item) => item.image === image);
+    onExplain(scene, trigger, Math.max(step, 0));
+  };
   // Scroll back only after the facts are gone: scrolling while the page shrinks lands in the wrong place on phones.
   const collapse = () => {
     toggle();
@@ -57,6 +62,7 @@ export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
             {scene.panels.map((panel, index) => (
               <li key={panel.image} className="uw-panel uw-tile" style={{ '--i': index } as CSSProperties}>
                 <PanelImage panel={panel} />
+                <button type="button" className="uw-panel-open" onClick={(event) => openAt(panel.image, event.currentTarget)} aria-label={`${ui.why} ${panel.label}`} />
                 <p className="uw-tile-label"><b>{panel.label}</b>{panel.caption && <span>{panel.caption}</span>}</p>
               </li>
             ))}
@@ -66,6 +72,7 @@ export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
             {scene.panels.map((panel, index) => (
               <li key={panel.image} className="uw-panel" style={{ '--i': index } as CSSProperties}>
                 <PanelImage panel={panel} />
+                <button type="button" className="uw-panel-open" onClick={(event) => openAt(panel.image, event.currentTarget)} aria-label={`${ui.why} ${panel.label}`} />
                 <p className="uw-panel-label"><span>{String(index + 1).padStart(2, '0')}</span>{panel.label}</p>
                 {index < scene.panels.length - 1 && <span className="uw-arrow" aria-hidden="true">→</span>}
               </li>

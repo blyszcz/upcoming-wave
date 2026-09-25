@@ -10,11 +10,11 @@ import { useContent } from '@features/upcomingWave/content/ContentProvider';
 import { useSliderControls } from '@features/upcomingWave/hooks/useSliderControls';
 import { formatIndex } from '@features/upcomingWave/utils/formatIndex';
 
-export const ExplainSlider = ({ scene, onClose }: ExplainSliderProps) => {
+export const ExplainSlider = ({ scene, onClose, startStep = 0 }: ExplainSliderProps) => {
   const { ui } = useContent();
   const dialogRef = useRef<HTMLDivElement>(null);
   const total = scene.explain.length;
-  const { active, isFirst, isLast, goTo, handlePointerDown, handlePointerUp } = useSliderControls({ count: total, dialogRef, onClose });
+  const { active, isFirst, isLast, goTo, handlePointerDown, handlePointerUp } = useSliderControls({ count: total, dialogRef, onClose, start: startStep });
   const titleId = `${scene.id}-explain-title`;
 
   return (

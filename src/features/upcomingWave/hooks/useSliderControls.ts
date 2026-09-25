@@ -6,11 +6,11 @@ import type { PointerEvent, RefObject } from 'react';
 
 import { SWIPE_THRESHOLD_PX } from '@/constants';
 
-type SliderControlsOptions = { count: number; dialogRef: RefObject<HTMLDivElement | null>; onClose: () => void };
+type SliderControlsOptions = { count: number; dialogRef: RefObject<HTMLDivElement | null>; onClose: () => void; start?: number };
 
 // Modal step slider: keyboard (arrows, Home/End, Escape), swipe, focus trap and scroll lock.
-export const useSliderControls = ({ count, dialogRef, onClose }: SliderControlsOptions) => {
-  const [active, setActive] = useState(0);
+export const useSliderControls = ({ count, dialogRef, onClose, start = 0 }: SliderControlsOptions) => {
+  const [active, setActive] = useState(Math.min(Math.max(start, 0), count - 1));
   const pointerStartX = useRef<number | null>(null);
   const lastIndex = count - 1;
 

@@ -68,3 +68,6 @@
 .uw-finale-lists h3 { margin: 0 0 12px; color: var(--signal); font: 500 11px/1 var(--font-mono), monospace; letter-spacing: 0.14em; text-transform: uppercase; }
 .uw-finale-lists ol { display: grid; gap: 10px; margin: 0; padding-left: 20px; color: rgba(238, 236, 230, 0.88); font-size: 15px; line-height: 1.45; }
 @media (max-width: 820px) { .uw-finale-lists { grid-template-columns: 1fr; } }
+.uw-panel-open { position: absolute; z-index: 3; inset: 0; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
+.uw-panel-open:focus-visible { outline: 2px solid var(--signal); outline-offset: -4px; }
+.uw-panel-label, .uw-tile-label, .uw-arrow { pointer-events: none; }
