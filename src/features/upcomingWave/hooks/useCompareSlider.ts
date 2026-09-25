@@ -24,6 +24,8 @@ export const useCompareSlider = () => {
   const trackRef = useRef<HTMLDivElement>(null);
   const isDragging = useRef(false);
   const hasInteracted = useRef(false);
+  // Drives the 'drag me' hint on the handle until the first touch.
+  const [isTouched, setIsTouched] = useState(false);
 
   useEffect(() => {
     const target = window.matchMedia(MOBILE_QUERY).matches ? COMPARE_REST_MOBILE : COMPARE_REST_DESKTOP;
@@ -49,6 +51,7 @@ export const useCompareSlider = () => {
 
   const handlePointerDown = (event: PointerEvent<HTMLElement>) => {
     hasInteracted.current = true;
+    setIsTouched(true);
     isDragging.current = true;
     event.currentTarget.setPointerCapture(event.pointerId);
     moveTo(event.clientX);
@@ -61,8 +64,9 @@ export const useCompareSlider = () => {
     if (!(event.key in moves)) return;
     event.preventDefault();
     hasInteracted.current = true;
+    setIsTouched(true);
     setPosition(clamp(moves[event.key]));
   };
 
-  return { position, trackRef, handlePointerDown, handlePointerMove, handlePointerUp, handleKeyDown };
+  return { position, isTouched, trackRef, handlePointerDown, handlePointerMove, handlePointerUp, handleKeyDown };
 };

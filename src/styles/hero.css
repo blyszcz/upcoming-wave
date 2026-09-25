@@ -31,3 +31,10 @@
 .uw-hero-closing { margin: 0; padding-left: 16px; border-left: 2px solid var(--signal); font-size: clamp(1.1rem, 1.5vw, 1.4rem); font-weight: 600; letter-spacing: -0.015em; }
 
 .uw-hero-subtitle { max-width: 36ch; margin: -10px 0 0; color: var(--paper); font-size: clamp(1.15rem, 1.6vw, 1.45rem); font-weight: 500; line-height: 1.35; letter-spacing: -0.01em; }
+/* "Drag me" hint until the first touch: the arrows nudge apart and a soft ring pulses. */
+.uw-compare-handle::after { content: ''; position: absolute; inset: -1px; border-radius: 50%; border: 1px solid rgba(255, 190, 120, 0.8); opacity: 0; pointer-events: none; }
+.uw-compare-handle[data-touched='false']::after { animation: uw-handle-ring 2.4s ease-out 3s infinite; }
+.uw-compare-handle[data-touched='false'] span { display: inline-block; animation: uw-handle-nudge 2.4s ease-in-out 3s infinite; }
+@keyframes uw-handle-ring { 0% { opacity: 0.9; transform: scale(1); } 70%, 100% { opacity: 0; transform: scale(1.7); } }
+@keyframes uw-handle-nudge { 0%, 55%, 100% { letter-spacing: 0.1em; } 20% { letter-spacing: 0.5em; } 35% { letter-spacing: 0.05em; } }
+@media (prefers-reduced-motion: reduce) { .uw-compare-handle::after, .uw-compare-handle span { animation: none !important; } }
