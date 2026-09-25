@@ -21,7 +21,10 @@ export const ExplainSlider = ({ scene, onClose, startStep = 0 }: ExplainSliderPr
     <div ref={dialogRef} className="uw-explain" role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} onPointerDown={handlePointerDown} onPointerUp={handlePointerUp}>
       <div className="uw-explain-top">
         <p id={titleId} className="uw-eyebrow">{ui.explain.eyebrow} · {scene.title.lead} {scene.title.accent}</p>
-        <button type="button" className="uw-round-button" onClick={onClose} aria-label={ui.explain.close}>×</button>
+        <button type="button" className="uw-round-button" onClick={onClose} aria-label={ui.explain.close}>
+          {/* An SVG cross sits exactly in the centre; the × glyph rides on the font baseline. */}
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>
+        </button>
       </div>
 
       <div className="uw-explain-progress" aria-hidden="true">
