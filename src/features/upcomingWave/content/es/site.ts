@@ -19,7 +19,7 @@ export const site = {
     methodTitle: 'Cómo trabajo',
     method: [
       'Cada dato tiene una fuente. Compruebo las citas en la fuente original; cuando no es accesible, me baso en medios fiables que las recogen.',
-      'Las etiquetas de cada sección dicen qué es cada cosa: «hoy» - ya está pasando; «historia» - ya ocurrió antes; «incidente» - un hecho real; «posible» y «escenario extremo» - riesgos, no predicciones.',
+      'Las etiquetas de cada sección dicen qué es cada cosa: «hoy» - ya está pasando; «escenario posible» y «escenario extremo» - riesgos, no predicciones; «un camino» - soluciones propuestas.',
       'Las pruebas de laboratorio se señalan como pruebas y nunca se mezclan con incidentes reales.',
       'Las citas de «The Coming Wave» son traducción propia de la edición en inglés (Crown, 2023). Las demás citas están traducidas de su idioma original.',
       'También muestro la otra cara: los beneficios de la IA y los argumentos de que los riesgos podrían estar exagerados.',

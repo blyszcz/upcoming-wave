@@ -19,7 +19,7 @@ export const site = {
     methodTitle: 'Ma méthode',
     method: [
       'Chaque fait a une source. Je vérifie les citations à la source primaire ; quand elle n’est pas accessible, je m’appuie sur des médias fiables qui les rapportent.',
-      'Les étiquettes des sections disent de quoi il s’agit : « aujourd’hui » - c’est déjà en cours ; « histoire » - c’est déjà arrivé ; « incident » - un événement réel ; « scénario possible » et « scénario extrême » - des risques, pas des prédictions.',
+      'Les étiquettes des sections disent de quoi il s’agit : « aujourd’hui » - c’est déjà en cours ; « scénario possible » et « scénario extrême » - des risques, pas des prévisions ; « une voie à suivre » - des solutions proposées.',
       'Les tests en laboratoire sont présentés comme des tests et jamais mélangés avec des incidents réels.',
       'Les citations de « The Coming Wave » sont ma traduction de l’édition anglaise (Crown, 2023). Les autres citations sont traduites de leur langue d’origine.',
       'Je montre aussi l’autre versant : les bénéfices de l’IA et les arguments selon lesquels les risques pourraient être surestimés.',

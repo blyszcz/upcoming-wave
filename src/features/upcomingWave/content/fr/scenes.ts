@@ -52,7 +52,7 @@ export const scenes: Scene[] = [
       {
         kind: 'stats',
         items: [
-          { value: '−82 %', label: 'de baisse du coût de l’énergie solaire en dix ans - et il continue de baisser (chap. 11)', source: sources.book },
+          { value: '−82 %', label: 'sur le coût de l’énergie solaire en dix ans - et il continue de baisser (chap. 11)', source: sources.book },
           { value: '~9 %', label: 'de la population vit aujourd’hui dans l’extrême pauvreté. Au début du XIXe siècle, c’était presque tout le monde. La technologie a changé cela (chap. 8)', source: sources.book },
         ],
       },
@@ -62,7 +62,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'Bill Gates · 2023', value: 'Moins d’inégalités', text: '« L’IA peut réduire certaines des pires inégalités du monde. » Il la juge « aussi fondamentale que la création du microprocesseur, de l’ordinateur personnel, d’Internet et du téléphone mobile ».', source: sources.gatesAge },
           { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'La fin des maladies ?', text: '« Un jour, peut-être, nous pourrons guérir toutes les maladies avec l’aide de l’IA… Peut-être d’ici une dizaine d’années. » Il parle aussi d’« abondance radicale » - la fin de la pénurie.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
-          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 ans → 10', text: '50 à 100 ans de progrès médicaux condensés en 5 à 10 ans, l’espérance de vie en bonne santé doublée, des milliards de personnes sorties de la pauvreté - sa vision si l’IA tourne bien.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
+          { kicker: 'Dario Amodei · Anthropic · 2024', value: '50–100 → 5–10', text: '50 à 100 ans de progrès médicaux condensés en 5 à 10 ans, l’espérance de vie en bonne santé doublée, des milliards de personnes sorties de la pauvreté - sa vision si l’IA tourne bien.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
           { kicker: 'Sam Altman · OpenAI · 2024', value: 'Prospérité partagée', text: '« À l’avenir, la vie de chacun pourra être meilleure que ne l’est aujourd’hui la vie de quiconque. » Il imagine aussi un tuteur IA personnel pour chaque enfant.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
         ],
       },
@@ -91,7 +91,7 @@ export const scenes: Scene[] = [
         items: [
           { value: '1 emploi sur 4', label: 'dans le monde est exposé à l’IA générative - plus souvent un changement de tâches qu’une suppression', source: sources.ilo },
           { value: '60 %', label: 'des emplois des pays riches pourraient être touchés par l’IA - environ la moitié pourrait en bénéficier', source: sources.imf },
-          { value: '−11 %', label: 'de baisse de l’emploi chez les 22-25 ans dans les métiers les plus exposés à l’IA aux États-Unis (2022-2026)', source: sources.stanford },
+          { value: '−11 %', label: 'sur l’emploi des 22-25 ans dans les métiers les plus exposés à l’IA aux États-Unis (2022-2026)', source: sources.stanford },
         ],
       },
       {
@@ -109,7 +109,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '11 h', label: 'c’est le temps qu’il a fallu à l’IA pour créer l’équivalent de 9 mois de démonstrations humaines pour entraîner des robots', source: sources.nvidia },
-          { value: '−40 %', label: 'de baisse du coût de fabrication d’un robot humanoïde en un an - les analystes attendaient 15-20 %', source: sources.goldman },
+          { value: '−40 %', label: 'sur le coût de fabrication d’un robot humanoïde en un an - les analystes attendaient 15-20 %', source: sources.goldman },
         ],
       },
       { kind: 'quote', quote: 'Une IA suffisamment puissante pourra accélérer le développement des robots, puis contrôler ces robots dans le monde physique. Cela nous fera peut-être gagner du temps… mais je crains que ce ne soit pas beaucoup.', person: 'Dario Amodei', role: 'PDG d’Anthropic', source: sources.amodei },
@@ -333,7 +333,7 @@ export const scenes: Scene[] = [
     band: [
       {
         kind: 'evidence',
-        title: 'Même les créateurs de l’IA disent qu’il faut des règles',
+        title: 'Même les géants de la tech disent qu’il faut des règles',
         items: [
           { kicker: 'Bill Gates · 2023', text: '« Le monde doit établir un code de la route pour que les éventuels inconvénients de l’intelligence artificielle soient largement compensés par ses bénéfices. »', source: sources.gatesAge },
           { kicker: 'Sam Altman · Sénat américain · 2023', text: '« Nous pensons que l’intervention réglementaire des gouvernements sera essentielle pour atténuer les risques de modèles de plus en plus puissants. »', source: sources.altmanSenate },

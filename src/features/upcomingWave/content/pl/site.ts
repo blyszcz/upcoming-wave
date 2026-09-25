@@ -19,7 +19,7 @@ export const site = {
     methodTitle: 'Jak pracuję',
     method: [
       'Każdy fakt ma źródło. Cytaty sprawdzam w źródle pierwotnym; gdy nie ma do niego dostępu, korzystam z renomowanych mediów, które je przytaczają.',
-      'Etykiety sekcji mówią, czym coś jest: „dziś” - to już się dzieje; „historia” - to już kiedyś się zdarzyło; „incydent” - prawdziwe zdarzenie; „możliwy scenariusz” i „skrajny scenariusz” - ryzyka, nie prognozy.',
+      'Etykiety sekcji mówią, czym coś jest: „dziś” - to już się dzieje; „możliwy scenariusz” i „skrajny scenariusz” - ryzyka, nie prognozy; „droga naprzód” - proponowane rozwiązania.',
       'Testy laboratoryjne oznaczam jako testy. Nie mieszam ich z prawdziwymi incydentami.',
       'Cytaty obcojęzyczne tłumaczę sam. Cytaty z „Nadchodzącej fali” pochodzą z polskiego wydania książki.',
       'Pokazuję też drugą stronę: korzyści z AI i argumenty, że ryzyka mogą być przesadzone.',

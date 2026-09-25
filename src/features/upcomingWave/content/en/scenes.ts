@@ -52,7 +52,7 @@ export const scenes: Scene[] = [
       {
         kind: 'stats',
         items: [
-          { value: '−82%', label: 'drop in the cost of solar power over a decade - and it keeps falling (ch. 11)', source: sources.book },
+          { value: '−82%', label: 'the cost of solar power over a decade - and it keeps falling (ch. 11)', source: sources.book },
           { value: '~9%', label: 'of people live in extreme poverty today. In the early 1800s almost everyone did. Technology changed that (ch. 8)', source: sources.book },
         ],
       },
@@ -62,7 +62,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'Bill Gates · 2023', value: 'Less inequity', text: '“AI can reduce some of the world’s worst inequities.” He calls it “as fundamental as the creation of the microprocessor, the personal computer, the Internet, and the mobile phone.”', source: sources.gatesAge },
           { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'An end to disease?', text: '“One day maybe we can cure all disease with the help of AI… Maybe within the next decade or so.” He also talks of “radical abundance” - the elimination of scarcity.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
-          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 years → 10', text: '50–100 years of medical progress compressed into 5–10, the healthy lifespan doubled, billions lifted out of poverty - his vision if AI goes well.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
+          { kicker: 'Dario Amodei · Anthropic · 2024', value: '50–100 → 5–10', text: '50–100 years of medical progress compressed into 5–10, the healthy lifespan doubled, billions lifted out of poverty - his vision if AI goes well.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
           { kicker: 'Sam Altman · OpenAI · 2024', value: 'Shared prosperity', text: '“In the future, everyone’s lives can be better than anyone’s life is now.” He also envisions a personal AI tutor for every child.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
         ],
       },
@@ -91,7 +91,7 @@ export const scenes: Scene[] = [
         items: [
           { value: '1 in 4', label: 'jobs worldwide are exposed to generative AI - more often a change of tasks than elimination', source: sources.ilo },
           { value: '60%', label: 'of jobs in rich countries may be affected by AI - about half of them may benefit', source: sources.imf },
-          { value: '−11%', label: 'drop in employment of 22–25-year-olds in the most AI-exposed jobs in the US (2022–2026)', source: sources.stanford },
+          { value: '−11%', label: 'employment of 22–25-year-olds in the most AI-exposed jobs in the US (2022–2026)', source: sources.stanford },
         ],
       },
       {
@@ -109,7 +109,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '11 h', label: 'is how long AI needed to create the equivalent of 9 months of human demonstrations for training robots', source: sources.nvidia },
-          { value: '−40%', label: 'drop in the cost of building a humanoid robot in a year - analysts had expected 15–20%', source: sources.goldman },
+          { value: '−40%', label: 'the cost of building a humanoid robot in a year - analysts had expected 15–20%', source: sources.goldman },
         ],
       },
       { kind: 'quote', quote: 'Sufficiently powerful AI will be able to accelerate the development of robots, and then control those robots in the physical world. It may buy some time… but I’m worried it won’t buy much.', person: 'Dario Amodei', role: 'CEO, Anthropic', source: sources.amodei },
@@ -333,7 +333,7 @@ export const scenes: Scene[] = [
     band: [
       {
         kind: 'evidence',
-        title: 'Even AI’s creators say we need rules',
+        title: 'Even tech leaders say AI needs rules',
         items: [
           { kicker: 'Bill Gates · 2023', text: '“The world needs to establish the rules of the road so that any downsides of artificial intelligence are far outweighed by its benefits.”', source: sources.gatesAge },
           { kicker: 'Sam Altman · US Senate · 2023', text: '“We think that regulatory intervention by governments will be critical to mitigate the risks of increasingly powerful models.”', source: sources.altmanSenate },

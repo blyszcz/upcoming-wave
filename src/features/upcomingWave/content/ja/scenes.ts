@@ -52,7 +52,7 @@ export const scenes: Scene[] = [
       {
         kind: 'stats',
         items: [
-          { value: '−82%', label: '10年間での太陽光発電のコストの低下。今も下がり続けています（第11章）', source: sources.book },
+          { value: '−82%', label: '10年間での太陽光発電のコスト。今も下がり続けています（第11章）', source: sources.book },
           { value: '約9%', label: '現在、極度の貧困の中で暮らす人の割合。1800年代初めには、ほぼ全員がそうでした。それを変えたのが技術です（第8章）', source: sources.book },
         ],
       },
@@ -62,7 +62,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'ビル・ゲイツ · 2023年', value: '不平等の縮小', text: '「AIは、世界で最も深刻な不平等のいくつかを減らすことができる」。彼はAIを「マイクロプロセッサ、パソコン、インターネット、携帯電話の誕生と同じくらい根本的なもの」と呼んでいます。', source: sources.gatesAge },
           { kicker: 'デミス・ハサビス · Google DeepMind · 2025年', value: '病気のない世界？', text: '「いつの日か、AIの助けを借りて、あらゆる病気を治せるかもしれない…おそらく今後10年ほどのうちに」。彼は「根本的な豊かさ」、つまり欠乏の解消についても語っています。', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
-          { kicker: 'ダリオ・アモデイ · Anthropic · 2024年', value: '100年 → 10年', text: '50〜100年分の医学の進歩を5〜10年に凝縮し、健康寿命を2倍にし、何十億人もの人を貧困から救い出す。AIがうまくいった場合の彼のビジョンです。', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
+          { kicker: 'ダリオ・アモデイ · Anthropic · 2024年', value: '50〜100年 → 5〜10年', text: '50〜100年分の医学の進歩を5〜10年に凝縮し、健康寿命を2倍にし、何十億人もの人を貧困から救い出す。AIがうまくいった場合の彼のビジョンです。', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
           { kicker: 'サム・アルトマン · OpenAI · 2024年', value: '共に豊かに', text: '「未来には、誰もが、今の誰の暮らしよりも良い暮らしを送れるようになる」。彼はすべての子どもに専属のAI家庭教師がつく未来も描いています。', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
         ],
       },
@@ -91,7 +91,7 @@ export const scenes: Scene[] = [
         items: [
           { value: '4つに1つ', label: '生成AIの影響を受ける、世界の仕事の割合。多くの場合、なくなるのではなく業務内容が変わります', source: sources.ilo },
           { value: '60%', label: 'AIの影響を受けうる、豊かな国々の仕事の割合。そのうち約半数は恩恵を受けうるとされます', source: sources.imf },
-          { value: '−11%', label: '米国で、AIの影響を最も受ける職種における22〜25歳の雇用の減少（2022〜2026年）', source: sources.stanford },
+          { value: '−11%', label: '米国で、AIの影響を最も受ける職種における22〜25歳の雇用（2022〜2026年）', source: sources.stanford },
         ],
       },
       {
@@ -109,7 +109,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '11時間', label: 'ロボット訓練用に、人間による実演9か月分に相当するデータをAIが作るのにかかった時間', source: sources.nvidia },
-          { value: '−40%', label: '1年間での人型ロボットの製造コストの低下。アナリストの予想は15〜20%でした', source: sources.goldman },
+          { value: '−40%', label: '1年間での人型ロボットの製造コスト。アナリストの予想は15〜20%でした', source: sources.goldman },
         ],
       },
       { kind: 'quote', quote: '十分に強力なAIは、ロボットの開発を加速させ、さらに物理世界でそのロボットを制御できるようになるだろう。それで多少の時間は稼げるかもしれない…だが、大して稼げないのではないかと心配している。', person: 'ダリオ・アモデイ', role: 'Anthropic CEO', source: sources.amodei },
@@ -333,7 +333,7 @@ export const scenes: Scene[] = [
     band: [
       {
         kind: 'evidence',
-        title: 'AIの開発者自身もルールが必要だと言う',
+        title: 'テック業界のリーダーたちも、AIにはルールが必要だと言う',
         items: [
           { kicker: 'ビル・ゲイツ · 2023年', text: '「世界は、人工知能にどんな弊害があっても、その恩恵がはるかに上回るよう、基本的なルールを定める必要がある」', source: sources.gatesAge },
           { kicker: 'サム・アルトマン · 米上院 · 2023年', text: '「ますます強力になるモデルのリスクを軽減するには、政府による規制介入が不可欠だと考えている」', source: sources.altmanSenate },

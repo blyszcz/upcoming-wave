@@ -19,7 +19,7 @@ export const site = {
     methodTitle: 'Wie ich arbeite',
     method: [
       'Jeder Fakt hat eine Quelle. Zitate prüfe ich an der Primärquelle; wo sie nicht zugänglich ist, stütze ich mich auf seriöse Medien, die darüber berichten.',
-      'Die Markierungen über den Abschnitten zeigen, worum es sich handelt: „heute“ - passiert bereits; „Geschichte“ - ist schon einmal passiert; „Vorfall“ - ein echtes Ereignis; „mögliches Szenario“ und „Extremszenario“ - Risiken, keine Vorhersagen.',
+      'Die Markierungen über den Abschnitten zeigen, worum es sich handelt: „heute“ - passiert bereits; „mögliches Szenario“ und „Extremszenario“ - Risiken, keine Prognosen; „ein Weg nach vorn“ - Lösungsvorschläge.',
       'Labortests sind als Tests gekennzeichnet und werden nie mit echten Vorfällen vermischt.',
       'Zitate aus „The Coming Wave“ sind unsere Übersetzung der englischen Ausgabe (Crown, 2023). Andere Zitate sind aus ihrer Originalsprache übersetzt.',
       'Ich zeige auch die andere Seite: den Nutzen von KI und die Argumente dafür, dass die Risiken überschätzt sein könnten.',

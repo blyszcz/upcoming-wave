@@ -62,7 +62,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'Bill Gates · 2023', value: 'Menos desigualdad', text: '«La IA puede reducir algunas de las peores desigualdades del mundo». La considera «tan fundamental como la creación del microprocesador, la computadora personal, internet y el teléfono móvil».', source: sources.gatesAge },
           { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: '¿El fin de las enfermedades?', text: '«Quizá algún día podamos curar todas las enfermedades con ayuda de la IA… Quizá en la próxima década, más o menos». También habla de una «abundancia radical»: el fin de la escasez.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
-          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 años → 10', text: '50-100 años de avances médicos comprimidos en 5-10, la esperanza de vida sana duplicada y miles de millones de personas fuera de la pobreza: su visión si todo sale bien con la IA.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
+          { kicker: 'Dario Amodei · Anthropic · 2024', value: '50–100 → 5–10', text: '50-100 años de avances médicos comprimidos en 5-10, la esperanza de vida sana duplicada y miles de millones de personas fuera de la pobreza: su visión si todo sale bien con la IA.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
           { kicker: 'Sam Altman · OpenAI · 2024', value: 'Prosperidad compartida', text: '«En el futuro, la vida de todos puede ser mejor que la vida de cualquiera hoy». También imagina un tutor personal de IA para cada niño.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
         ],
       },
@@ -333,7 +333,7 @@ export const scenes: Scene[] = [
     band: [
       {
         kind: 'evidence',
-        title: 'Hasta los creadores de la IA piden reglas',
+        title: 'Hasta los líderes tecnológicos piden reglas para la IA',
         items: [
           { kicker: 'Bill Gates · 2023', text: '«El mundo necesita establecer las reglas del juego para que cualquier inconveniente de la inteligencia artificial quede ampliamente compensado por sus beneficios».', source: sources.gatesAge },
           { kicker: 'Sam Altman · Senado de EE. UU. · 2023', text: '«Creemos que la intervención regulatoria de los gobiernos será crucial para mitigar los riesgos de modelos cada vez más potentes».', source: sources.altmanSenate },

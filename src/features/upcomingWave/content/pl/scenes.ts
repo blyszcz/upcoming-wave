@@ -141,7 +141,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'Bill Gates · 2023', value: 'Mniej nierówności', text: '„AI może zmniejszyć niektóre z największych nierówności na świecie.” Nazywa ją przełomem „równie fundamentalnym jak stworzenie mikroprocesora, komputera osobistego, internetu i telefonu komórkowego”.', source: sources.gatesAge },
           { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'Koniec chorób?', text: '„Może pewnego dnia z pomocą AI wyleczymy wszystkie choroby… Może mniej więcej w ciągu najbliższej dekady.” Mówi też o „radykalnej obfitości” - końcu niedostatku.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
-          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 lat → 10', text: 'Postęp medycyny, który zająłby 50–100 lat, w ciągu 5–10 lat, dwa razy dłuższe życie w zdrowiu, miliardy ludzi wyciągnięte z biedy - tak wygląda jego wizja, jeśli z AI wszystko pójdzie dobrze.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
+          { kicker: 'Dario Amodei · Anthropic · 2024', value: '50–100 → 5–10', text: 'Postęp medycyny, który zająłby 50–100 lat, w ciągu 5–10 lat, dwa razy dłuższe życie w zdrowiu, miliardy ludzi wyciągnięte z biedy - tak wygląda jego wizja, jeśli z AI wszystko pójdzie dobrze.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
           { kicker: 'Sam Altman · OpenAI · 2024', value: 'Wspólny dobrobyt', text: '„W przyszłości życie każdego może być lepsze niż dziś życie kogokolwiek.” Wyobraża sobie też osobistego korepetytora AI dla każdego dziecka.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
         ],
       },
@@ -203,7 +203,7 @@ export const scenes: Scene[] = [
         items: [
           { value: '1 na 4', label: 'miejsca pracy na świecie jest narażone na wpływ generatywnej AI - częściej chodzi o zmianę zadań niż likwidację', source: sources.ilo },
           { value: '60%', label: 'miejsc pracy w bogatych krajach może odczuć skutki AI - około połowa może na tym zyskać', source: sources.imf },
-          { value: '−11%', label: 'spadek zatrudnienia 22–25-latków w USA w zawodach najbardziej narażonych na AI (2022–2026)', source: sources.stanford },
+          { value: '−11%', label: 'zatrudnienie 22–25-latków w USA w zawodach najbardziej narażonych na AI (2022–2026)', source: sources.stanford },
         ],
       },
       {
@@ -445,7 +445,7 @@ export const scenes: Scene[] = [
     band: [
       {
         kind: 'evidence',
-        title: 'Nawet twórcy AI mówią: potrzebne są regulacje',
+        title: 'Nawet liderzy branży mówią: potrzebne są regulacje',
         items: [
           { kicker: 'Bill Gates · 2023', text: '„Świat musi ustalić reguły gry, tak aby korzyści ze sztucznej inteligencji zdecydowanie przeważały nad jej ewentualnymi wadami.”', source: sources.gatesAge },
           { kicker: 'Sam Altman · Senat USA · 2023', text: '„Uważamy, że regulacje wprowadzone przez rządy będą kluczowe, by ograniczyć ryzyko, jakie niosą coraz potężniejsze modele.”', source: sources.altmanSenate },

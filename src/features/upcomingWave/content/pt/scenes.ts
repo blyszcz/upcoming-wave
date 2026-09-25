@@ -52,7 +52,7 @@ export const scenes: Scene[] = [
       {
         kind: 'stats',
         items: [
-          { value: '−82%', label: 'de queda no custo da energia solar em uma década - e ele continua caindo (cap. 11)', source: sources.book },
+          { value: '−82%', label: 'no custo da energia solar em uma década - e ele continua caindo (cap. 11)', source: sources.book },
           { value: '~9%', label: 'das pessoas vivem hoje na pobreza extrema. No início do século XIX, quase todo mundo vivia nela. A tecnologia mudou isso (cap. 8)', source: sources.book },
         ],
       },
@@ -62,7 +62,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'Bill Gates · 2023', value: 'Menos desigualdade', text: '“A IA pode reduzir algumas das piores desigualdades do mundo.” Ele a considera “tão fundamental quanto a criação do microprocessador, do computador pessoal, da internet e do celular”.', source: sources.gatesAge },
           { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'O fim das doenças?', text: '“Um dia, talvez, possamos curar todas as doenças com a ajuda da IA… Talvez na próxima década, mais ou menos.” Ele também fala em “abundância radical” - o fim da escassez.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
-          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 anos → 10', text: '50–100 anos de progresso médico comprimidos em 5–10, a expectativa de vida saudável dobrada, bilhões de pessoas fora da pobreza - a visão dele se a IA der certo.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
+          { kicker: 'Dario Amodei · Anthropic · 2024', value: '50–100 → 5–10', text: '50–100 anos de progresso médico comprimidos em 5–10, a expectativa de vida saudável dobrada, bilhões de pessoas fora da pobreza - a visão dele se a IA der certo.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
           { kicker: 'Sam Altman · OpenAI · 2024', value: 'Prosperidade compartilhada', text: '“No futuro, a vida de todos pode ser melhor do que a de qualquer pessoa hoje.” Ele também imagina um tutor pessoal de IA para cada criança.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
         ],
       },
@@ -91,7 +91,7 @@ export const scenes: Scene[] = [
         items: [
           { value: '1 em cada 4', label: 'empregos no mundo está exposto à IA generativa - mais frequentemente uma mudança de tarefas do que a eliminação do posto', source: sources.ilo },
           { value: '60%', label: 'dos empregos nos países ricos podem ser afetados pela IA - cerca de metade deles pode se beneficiar', source: sources.imf },
-          { value: '−11%', label: 'de queda no emprego de jovens de 22–25 anos nas funções mais expostas à IA nos EUA (2022–2026)', source: sources.stanford },
+          { value: '−11%', label: 'no emprego de jovens de 22–25 anos nas funções mais expostas à IA nos EUA (2022–2026)', source: sources.stanford },
         ],
       },
       {
@@ -109,7 +109,7 @@ export const scenes: Scene[] = [
         kind: 'stats',
         items: [
           { value: '11 h', label: 'foi o tempo que a IA levou para criar o equivalente a 9 meses de demonstrações humanas para treinar robôs', source: sources.nvidia },
-          { value: '−40%', label: 'de queda em um ano no custo de construir um robô humanoide - analistas esperavam 15–20%', source: sources.goldman },
+          { value: '−40%', label: 'em um ano no custo de construir um robô humanoide - analistas esperavam 15–20%', source: sources.goldman },
         ],
       },
       { kind: 'quote', quote: 'Uma IA suficientemente poderosa será capaz de acelerar o desenvolvimento de robôs e depois controlar esses robôs no mundo físico. Isso pode nos dar algum tempo… mas temo que não muito.', person: 'Dario Amodei', role: 'CEO da Anthropic', source: sources.amodei },
@@ -333,7 +333,7 @@ export const scenes: Scene[] = [
     band: [
       {
         kind: 'evidence',
-        title: 'Até os criadores da IA dizem que precisamos de regras',
+        title: 'Até líderes da tecnologia dizem que a IA precisa de regras',
         items: [
           { kicker: 'Bill Gates · 2023', text: '“O mundo precisa estabelecer as regras do jogo para que quaisquer desvantagens da inteligência artificial sejam amplamente superadas por seus benefícios.”', source: sources.gatesAge },
           { kicker: 'Sam Altman · Senado dos EUA · 2023', text: '“Acreditamos que a intervenção regulatória dos governos será fundamental para mitigar os riscos de modelos cada vez mais poderosos.”', source: sources.altmanSenate },

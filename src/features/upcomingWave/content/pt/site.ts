@@ -19,7 +19,7 @@ export const site = {
     methodTitle: 'Como eu trabalho',
     method: [
       'Todo fato tem uma fonte. Confiro as citações na fonte primária; quando ela não está acessível, me baseio em veículos respeitáveis que as publicaram.',
-      'Os rótulos das seções dizem o que cada coisa é: “hoje” - já está acontecendo; “história” - já aconteceu antes; “incidente” - um fato real; “possível” e “cenário extremo” - riscos, não previsões.',
+      'Os rótulos das seções dizem o que cada coisa é: “hoje” - já está acontecendo; “cenário possível” e “cenário extremo” - riscos, não previsões; “um caminho” - soluções propostas.',
       'Testes de laboratório aparecem identificados como testes e nunca se misturam com incidentes reais.',
       'As citações de “The Coming Wave” são tradução nossa da edição em inglês (Crown, 2023). As demais citações foram traduzidas do idioma original.',
       'Mostro também o outro lado: os benefícios da IA e os argumentos de que os riscos podem estar exagerados.',

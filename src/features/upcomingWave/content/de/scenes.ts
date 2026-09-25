@@ -62,7 +62,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'Bill Gates · 2023', value: 'Weniger Ungerechtigkeit', text: '„KI kann einige der schlimmsten Ungerechtigkeiten der Welt verringern.“ Er nennt sie „so grundlegend wie die Erfindung des Mikroprozessors, des PCs, des Internets und des Mobiltelefons“.', source: sources.gatesAge },
           { kicker: 'Demis Hassabis · Google DeepMind · 2025', value: 'Das Ende der Krankheiten?', text: '„Vielleicht können wir eines Tages mit Hilfe von KI alle Krankheiten heilen … Vielleicht innerhalb des nächsten Jahrzehnts oder so.“ Er spricht auch von „radikalem Überfluss“ - dem Ende der Knappheit.', source: { label: 'CBS 60 Minutes, 2025', url: 'https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/' } },
-          { kicker: 'Dario Amodei · Anthropic · 2024', value: '100 Jahre → 10', text: '50-100 Jahre medizinischer Fortschritt in 5-10 Jahren, die gesunde Lebenszeit verdoppelt, Milliarden Menschen aus der Armut geholt - seine Vision, wenn es mit KI gut geht.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
+          { kicker: 'Dario Amodei · Anthropic · 2024', value: '50–100 → 5–10', text: '50-100 Jahre medizinischer Fortschritt in 5-10 Jahren, die gesunde Lebenszeit verdoppelt, Milliarden Menschen aus der Armut geholt - seine Vision, wenn es mit KI gut geht.', source: { label: 'Machines of Loving Grace', url: 'https://darioamodei.com/essay/machines-of-loving-grace' } },
           { kicker: 'Sam Altman · OpenAI · 2024', value: 'Wohlstand für alle', text: '„In Zukunft kann das Leben aller besser sein, als das Leben von irgendjemandem heute ist.“ Er stellt sich auch einen persönlichen KI-Tutor für jedes Kind vor.', source: { label: 'The Intelligence Age', url: 'https://ia.samaltman.com/' } },
         ],
       },
@@ -91,7 +91,7 @@ export const scenes: Scene[] = [
         items: [
           { value: '1 von 4', label: 'Jobs weltweit ist generativer KI ausgesetzt - häufiger ändern sich dabei die Aufgaben, als dass der Job wegfällt', source: sources.ilo },
           { value: '60 %', label: 'der Jobs in reichen Ländern könnten von KI betroffen sein - etwa die Hälfte davon könnte profitieren', source: sources.imf },
-          { value: '−11 %', label: 'weniger Beschäftigte zwischen 22 und 25 Jahren in den USA - in den Jobs, die KI am stärksten ausgesetzt sind (2022-2026)', source: sources.stanford },
+          { value: '−11 %', label: 'Beschäftigte zwischen 22 und 25 Jahren in den USA - in den Jobs, die KI am stärksten ausgesetzt sind (2022-2026)', source: sources.stanford },
         ],
       },
       {
@@ -333,7 +333,7 @@ export const scenes: Scene[] = [
     band: [
       {
         kind: 'evidence',
-        title: 'Selbst die Macher der KI fordern Regeln',
+        title: 'Selbst Tech-Größen fordern Regeln für KI',
         items: [
           { kicker: 'Bill Gates · 2023', text: '„Die Welt muss Spielregeln aufstellen, damit etwaige Nachteile der künstlichen Intelligenz von ihrem Nutzen bei Weitem übertroffen werden.“', source: sources.gatesAge },
           { kicker: 'Sam Altman · US-Senat · 2023', text: '„Wir glauben, dass regulierende Eingriffe von Regierungen entscheidend sein werden, um die Risiken immer leistungsfähigerer Modelle zu verringern.“', source: sources.altmanSenate },
