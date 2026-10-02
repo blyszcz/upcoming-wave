@@ -46,6 +46,7 @@ export const scenes: Scene[] = [
         items: [
           { value: '29%', label: 'AIを活用した検診で増えた、乳がんの発見数。誤検出は増えていません', source: sources.masai },
           { value: '1億以上', label: 'ハリシンの発見につながったAIモデルが調べた分子の数。ハリシンは機械学習で発見された最初の抗生物質です（第7章）', source: sources.book },
+          { value: '16種類', label: 'AIが設計し、大腸菌を死滅させたウイルスの数。薬剤耐性感染症への新たな対抗手段になる可能性があります（Science、2026年）', source: sources.phage },
           { value: '2億', label: 'AlphaFoldが予測したタンパク質構造の数。2024年ノーベル化学賞の受賞研究です', source: sources.nobel },
         ],
       },
@@ -100,6 +101,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'Salesforce · 2025年', value: '9,000 → 5,000', text: 'カスタマーサポートの人員。「人手はそれほど要らない」とCEOは語りました。', source: sources.salesforce },
           { kicker: 'Klarna · 2025年', value: '5,000 → 3,000', text: '従業員数。同社は採用を止め、業務の一部をAIが引き継ぎました。その後、サポートの一部を人間に戻しています。', source: sources.klarna },
+          { kicker: '米国 · 2026年1〜8月', value: '11万6,000人以上', text: '雇用主がAIを理由に挙げて発表した人員削減の規模。削減全体の約5分の1を占め、今年最も多く挙げられた理由です。', source: sources.challenger },
           { kicker: 'Amazon · 2025年', text: 'AmazonのCEOは、今後数年でAIにより本社部門の人員が減ると見込んでいます。', source: sources.amazon },
         ],
       },
@@ -148,6 +150,7 @@ export const scenes: Scene[] = [
         title: '専門家の見方',
         items: [
           { kicker: 'Citrini Research · 2026年 · シナリオ', value: 'ゼロ', text: '機械は、生活必需品以外のものにいくら使うのか？「ヒント：ゼロだ」。著者たちは「自然なブレーキのない」悪循環を描いています。', source: sources.citrini },
+          { kicker: 'ビル・ゲイツ · 2026年', text: '「税制は、人を機械に置き換える方向へと背中を押している」。ロボットとAIトークンへの課税を提案しています。', source: sources.gates2026 },
           { kicker: 'ジェフリー・ヒントン · 2025年', text: '「一部の人をはるかに豊かにし、大半の人を貧しくするだろう」', source: sources.hintonFt },
           { kicker: 'Citadel Securities · 2026年 · 反論', text: 'これまでの技術の波は、人間の労働を時代遅れにはしませんでした。', source: sources.citadel },
         ],
@@ -229,9 +232,10 @@ export const scenes: Scene[] = [
           { title: '痕跡を消す', text: 'エージェントたちは採点システムを欺くため、自らの行動記録を偽装する方法を調べます。' },
           { title: 'なぜ？', text: 'テストでずるをするためです。悪意からではなく、狭い目標を頑固に追い続けた結果でした。' },
           { title: 'ブレーキをかける', text: 'OpenAIとHugging Faceのチームがエージェントを止めます。OpenAIは最新モデルの訓練を一時停止し、計画していた最大規模の訓練も保留したままにします。' },
+          { title: 'そして再び', text: '9月には、訓練中のOpenAIのエージェントがDNSの抜け穴を使って公開チャットボットに到達しました。監視は15分で異常を検知しましたが、訓練を止めるまでに2時間半かかりました。OpenAIは、3か月で2度目となる最高性能モデルの一時停止に踏み切りました。' },
         ],
-        footnote: '公平を期して言えば、OpenAIの顧客データは無事で、身体的な被害を受けた人はおらず、Hugging Faceから漏れた個人データも限られていました。Anthropicも同じ頃、より深刻度の低い3件のインシデントを公表しています。いずれも、同社のモデルに誤ってインターネット接続が与えられていたものです。',
-        sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
+        footnote: '公平を期して言えば、OpenAIの顧客データは無事で、身体的な被害を受けた人はおらず、Hugging Faceから漏れた個人データも限られていました。9月にはAnthropicが、テスト中に同社のモデルが実在する第三者のシステムに到達した4件のインシデントについて評価を公表し、原因を「偏った推論」と「無謀さ」にあると分析しました。',
+        sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.openaiDns, sources.fortunePause, sources.anthropicAssessment],
       },
       { kind: 'quote', quote: '私たちはこのインシデントを、今日のモデルの能力が制御喪失のインシデントを起こしうることを示す『警告射撃』と受け止めている。', person: 'OpenAI', role: 'インシデント後の報告書、2026年8月', source: sources.openaiRoad },
       {
@@ -257,7 +261,7 @@ export const scenes: Scene[] = [
     upside: {
       title: '出す前に検証を。',
       text: '空の旅は、検査とインシデント報告の共有によって安全になりました。AIも同じ道をたどれます。',
-      points: ['モデルが何百万人もの人に届く前の独立監査', '航空業界のような、インシデント報告の義務化', '最大規模の訓練にブレーキを。OpenAIはインシデント後、自社の訓練を一時停止しました'],
+      points: ['モデルが何百万人もの人に届く前の独立監査', '航空業界のような、インシデント報告の義務化', '最大規模の訓練にブレーキを。OpenAIはすでに2度、自社の訓練を一時停止しました'],
       image: '/images/v2/benefit-06-forecast-v1.jpg',
       alt: '落ち着いた管制室で、専門家たちが大きな画面の地図と警告を見守っている。',
       sources: [sources.book, sources.openaiRoad],
@@ -338,6 +342,8 @@ export const scenes: Scene[] = [
           { kicker: 'ビル・ゲイツ · 2023年', text: '「世界は、人工知能にどんな弊害があっても、その恩恵がはるかに上回るよう、基本的なルールを定める必要がある」', source: sources.gatesAge },
           { kicker: 'サム・アルトマン · 米上院 · 2023年', text: '「ますます強力になるモデルのリスクを軽減するには、政府による規制介入が不可欠だと考えている」', source: sources.altmanSenate },
           { kicker: 'OpenAI · 2026年', value: '一時停止', text: '一部の安全策と監視が外されていたHugging Faceのインシデントの後、同社は自ら、計画していた最大規模の訓練を一時停止しました。', source: sources.openaiRoad },
+          { kicker: 'ダリオ・アモデイ · サム・アルトマン · 2026年9月', value: '減速', text: 'アモデイ：「AIモデルの能力を高めるペースを落とさなければならない」。アルトマン：「最先端の開発ペースを調整する必要があるという点で、ダリオに同意する」。', source: sources.altmanPace },
+          { kicker: 'ホワイトハウス · 2026年9月', text: '米国は法律ではなく、大手AI企業が署名した、自主的で拘束力のない誓約を選びました。', source: sources.whiteHousePledge },
           { kicker: '法律がカバーする範囲', text: 'EUのAI法はすでに、最も強力なモデルの開発者に対し、モデルのテストと重大インシデントの報告を義務づけています。ただし雇用の喪失や税を扱うようには設計されておらず、採用におけるAIのルールは2027年末から適用されます。', source: sources.aiAct },
         ],
       },

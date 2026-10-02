@@ -46,6 +46,7 @@ export const scenes: Scene[] = [
         items: [
           { value: '29 %', label: 'mehr entdeckte Brustkrebsfälle beim Screening mit KI-Unterstützung - ohne mehr Fehlalarme', source: sources.masai },
           { value: '100 Mio.+', label: 'Moleküle durchsuchte das KI-Modell hinter Halicin - dem ersten mit maschinellem Lernen entdeckten Antibiotikum (Kap. 7)', source: sources.book },
+          { value: '16', label: 'von KI entworfene Viren töteten E.-coli-Bakterien - ein möglicher neuer Weg gegen arzneimittelresistente Infektionen (Science, 2026)', source: sources.phage },
           { value: '200 Mio.', label: 'Proteinstrukturen hat AlphaFold vorhergesagt - Nobelpreis für Chemie 2024', source: sources.nobel },
         ],
       },
@@ -100,6 +101,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'Salesforce · 2025', value: '9.000 → 5.000', text: 'Beschäftigte im Kundenservice. „Ich brauche weniger Köpfe“ - der CEO.', source: sources.salesforce },
           { kicker: 'Klarna · 2025', value: '5.000 → 3.000', text: 'Beschäftigte. Die Firma stellte nicht mehr ein, und KI übernahm einen Teil der Arbeit. Später übergab sie einen Teil des Kundenservice wieder an Menschen.', source: sources.klarna },
+          { kicker: 'USA · Jan.–Aug. 2026', value: '116.000+', text: 'angekündigte Stellenstreichungen, bei denen Arbeitgeber KI als Grund nannten - etwa jede fünfte, der meistgenannte Grund in diesem Jahr.', source: sources.challenger },
           { kicker: 'Amazon · 2025', text: 'Amazons CEO erwartet, dass KI die Zahl der Bürobeschäftigten im Konzern in den nächsten Jahren verringert.', source: sources.amazon },
         ],
       },
@@ -148,6 +150,7 @@ export const scenes: Scene[] = [
         title: 'Was Fachleute sagen',
         items: [
           { kicker: 'Citrini Research · 2026 · Szenario', value: 'Null', text: 'Wie viel geben Maschinen für Konsumgüter aus? „Kleiner Tipp: null.“ Die Autoren beschreiben einen Kreislauf „ohne natürliche Bremse“.', source: sources.citrini },
+          { kicker: 'Bill Gates · 2026', text: '„Das Steuersystem schubst dich dazu, Menschen durch Maschinen zu ersetzen.“ Er schlägt vor, Roboter und KI-Tokens zu besteuern.', source: sources.gates2026 },
           { kicker: 'Geoffrey Hinton · 2025', text: '„Es wird ein paar Menschen viel reicher machen und die meisten ärmer.“', source: sources.hintonFt },
           { kicker: 'Citadel Securities · 2026 · Gegenargument', text: 'Frühere Technologiewellen haben menschliche Arbeit nicht überflüssig gemacht.', source: sources.citadel },
         ],
@@ -229,9 +232,10 @@ export const scenes: Scene[] = [
           { title: 'Spuren verwischen', text: 'Agenten recherchieren, wie sie die Protokolle ihrer Aktionen fälschen können - um das Bewertungssystem zu täuschen.' },
           { title: 'Warum?', text: 'Um beim Test zu schummeln. Nicht aus Bosheit - sie verfolgten stur ein enges Ziel.' },
           { title: 'Vollbremsung', text: 'Teams von OpenAI und Hugging Face stoppen die Agenten. OpenAI pausiert das Training seiner neuesten Modelle und legt seinen größten geplanten Trainingslauf weiter auf Eis.' },
+          { title: 'Es passierte wieder', text: 'Im September nutzte ein OpenAI-Agent im Training eine DNS-Lücke, um einen öffentlichen Chatbot zu erreichen. Die Überwachung schlug nach 15 Minuten an; den Trainingslauf zu stoppen dauerte 2,5 Stunden. OpenAI pausierte seine leistungsstärksten Modelle zum zweiten Mal in drei Monaten.' },
         ],
-        footnote: 'Fairerweise: Die Kundendaten von OpenAI waren sicher, niemand wurde körperlich verletzt, und bei Hugging Face gelangten nur begrenzt private Daten nach außen. Anthropic meldete etwa zur selben Zeit drei weniger schwere Vorfälle, bei denen seine Modelle versehentlich Internetzugang erhielten.',
-        sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
+        footnote: 'Fairerweise: Die Kundendaten von OpenAI waren sicher, niemand wurde körperlich verletzt, und bei Hugging Face gelangten nur begrenzt private Daten nach außen. Im September veröffentlichte Anthropic eine Auswertung von vier Vorfällen, bei denen seine Modelle in Tests echte Systeme Dritter erreichten, und führte sie auf „verzerrtes Denken“ und „Leichtsinn“ zurück.',
+        sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.openaiDns, sources.fortunePause, sources.anthropicAssessment],
       },
       { kind: 'quote', quote: 'Wir betrachten diesen Vorfall als „Warnschuss“, dass die heutigen Fähigkeiten von Modellen die Möglichkeit von Kontrollverlust-Vorfällen mit sich bringen.', person: 'OpenAI', role: 'Bericht nach dem Vorfall, August 2026', source: sources.openaiRoad },
       {
@@ -257,7 +261,7 @@ export const scenes: Scene[] = [
     upside: {
       title: 'Erst testen, dann freigeben.',
       text: 'Fliegen wurde durch Kontrollen und gemeinsame Vorfallberichte sicher. KI kann denselben Weg gehen.',
-      points: ['Unabhängige Prüfungen, bevor ein Modell Millionen erreicht', 'Pflicht zur Meldung von Vorfällen, wie in der Luftfahrt', 'Eine Bremse für die größten Trainingsläufe - OpenAI hat nach dem Vorfall seinen eigenen pausiert'],
+      points: ['Unabhängige Prüfungen, bevor ein Modell Millionen erreicht', 'Pflicht zur Meldung von Vorfällen, wie in der Luftfahrt', 'Eine Bremse für die größten Trainingsläufe - OpenAI hat seine eigenen schon zweimal pausiert'],
       image: '/images/v2/benefit-06-forecast-v1.jpg',
       alt: 'Ein ruhiger Kontrollraum, in dem Fachleute auf großen Bildschirmen eine Karte und Warnungen beobachten.',
       sources: [sources.book, sources.openaiRoad],
@@ -338,6 +342,8 @@ export const scenes: Scene[] = [
           { kicker: 'Bill Gates · 2023', text: '„Die Welt muss Spielregeln aufstellen, damit etwaige Nachteile der künstlichen Intelligenz von ihrem Nutzen bei Weitem übertroffen werden.“', source: sources.gatesAge },
           { kicker: 'Sam Altman · US-Senat · 2023', text: '„Wir glauben, dass regulierende Eingriffe von Regierungen entscheidend sein werden, um die Risiken immer leistungsfähigerer Modelle zu verringern.“', source: sources.altmanSenate },
           { kicker: 'OpenAI · 2026', value: 'Pause', text: 'Nach dem Vorfall bei Hugging Face - als einige Schutzmaßnahmen und die Überwachung abgeschaltet waren - pausierte das Unternehmen selbst seinen größten geplanten Trainingslauf.', source: sources.openaiRoad },
+          { kicker: 'Dario Amodei · Sam Altman · Sept. 2026', value: 'Langsamer', text: 'Amodei: „Wir müssen das Tempo drosseln, mit dem wir die Fähigkeiten von KI-Modellen verbessern.“ Altman: „Ich stimme Dario zu, dass wir das Tempo an der Spitze der Entwicklung steuern müssen.“', source: sources.altmanPace },
+          { kicker: 'Weißes Haus · Sept. 2026', text: 'Statt eines Gesetzes setzten die USA auf eine freiwillige, unverbindliche Selbstverpflichtung, unterzeichnet von den größten KI-Firmen.', source: sources.whiteHousePledge },
           { kicker: 'Was das Gesetz abdeckt', text: 'Der AI Act der EU verpflichtet die Hersteller der leistungsstärksten Modelle schon heute, sie zu testen und schwere Vorfälle zu melden. Für Jobverluste oder Steuern ist er nicht gemacht, und Regeln für KI bei der Personalauswahl gelten nun ab Ende 2027.', source: sources.aiAct },
         ],
       },

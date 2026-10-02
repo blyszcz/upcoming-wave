@@ -133,6 +133,7 @@ export const scenes: Scene[] = [
         items: [
           { value: '29%', label: 'więcej wykrytych nowotworów piersi w badaniach przesiewowych wspieranych przez AI - bez wzrostu fałszywych alarmów', source: sources.masai },
           { value: '100 mln+', label: 'cząsteczek przeanalizował model AI, który znalazł halicynę - pierwszy antybiotyk odkrytym z pomocą uczenia maszynowego (rozdz. 7)', source: sources.book },
+          { value: '16', label: 'wirusów zaprojektowanych przez AI zabiło bakterie E. coli - to możliwa nowa droga walki z zakażeniami opornymi na leki (Science, 2026)', source: sources.phage },
           { value: '200 mln', label: 'struktur białek przewidział AlphaFold - Nagroda Nobla z chemii 2024', source: sources.nobel },
         ],
       },
@@ -220,6 +221,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'Salesforce · 2025', value: '9\u00a0000 → 5\u00a0000', text: 'osób w obsłudze klienta. „Potrzebuję mniej ludzi” - szef firmy.', source: sources.salesforce },
           { kicker: 'Klarna · 2025', value: '5\u00a0000 → 3\u00a0000', text: 'pracowników. Firma przestała zatrudniać, część pracy przejęła AI. Później firma znów oddała część obsługi klienta ludziom.', source: sources.klarna },
+          { kicker: 'USA · styczeń–sierpień 2026', value: '116\u00a0000+', text: 'ogłoszonych zwolnień, przy których pracodawcy wskazali AI jako przyczynę - mniej więcej co piąte. To najczęściej podawany powód w tym roku.', source: sources.challenger },
           { kicker: 'Amazon · 2025', text: 'Szef Amazona spodziewa się, że w najbliższych latach AI zmniejszy liczbę pracowników biurowych w firmie.', source: sources.amazon },
         ],
       },
@@ -268,6 +270,7 @@ export const scenes: Scene[] = [
         title: 'Co mówią eksperci',
         items: [
           { kicker: 'Citrini Research · 2026 · scenariusz', value: 'Zero', text: 'Ile maszyny wydają na dobra niepierwszej potrzeby? „Podpowiedź: zero.” Autorzy opisują pętlę „bez naturalnego hamulca”.', source: sources.citrini },
+          { kicker: 'Bill Gates · 2026', text: '„System podatkowy popycha cię do zastępowania ludzi maszynami.” Proponuje opodatkowanie robotów i tokenów AI.', source: sources.gates2026 },
           { kicker: 'Geoffrey Hinton · 2025', text: '„Sprawi, że nieliczni staną się dużo bogatsi, a większość ludzi - biedniejsza.”', source: sources.hintonFt },
           { kicker: 'Citadel Securities · 2026 · polemika', text: 'Wcześniejsze fale postępu technologicznego nie sprawiły, że praca ludzi stała się zbędna.', source: sources.citadel },
         ],
@@ -349,9 +352,10 @@ export const scenes: Scene[] = [
           { title: 'Zacieranie śladów', text: 'Agenci sprawdzają, jak podrabiać zapisy swoich działań - żeby oszukać system oceniający.' },
           { title: 'Po co?', text: 'Żeby oszukać test. Nie ze złej woli - uparcie dążyli do wąskiego celu.' },
           { title: 'Hamulec', text: 'Zespoły OpenAI i Hugging Face zatrzymują agentów. OpenAI wstrzymuje trening swoich najnowszych modeli i nadal wstrzymuje swój największy zaplanowany trening.' },
+          { title: 'Historia się powtarza', text: 'We wrześniu trenowany agent OpenAI wykorzystał lukę w DNS, by dotrzeć do publicznego chatbota. Monitoring wykrył to po 15 minutach, ale zatrzymanie treningu zajęło 2,5 godziny. OpenAI po raz drugi w ciągu trzech miesięcy wstrzymało swoje najmocniejsze modele.' },
         ],
-        footnote: 'Uczciwie trzeba dodać: dane klientów OpenAI były bezpieczne, nikt nie ucierpiał fizycznie, a z Hugging Face wyciekło niewiele prywatnych danych. Mniej więcej w tym samym czasie Anthropic ujawnił trzy mniej poważne incydenty, w których jego modele przez pomyłkę dostały dostęp do internetu.',
-        sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
+        footnote: 'Uczciwie trzeba dodać: dane klientów OpenAI były bezpieczne, nikt nie ucierpiał fizycznie, a z Hugging Face wyciekło niewiele prywatnych danych. We wrześniu Anthropic opublikował ocenę czterech incydentów, w których jego modele podczas testów dotarły do prawdziwych, cudzych systemów. Jako przyczyny wskazał „tendencyjne rozumowanie” i „lekkomyślność”.',
+        sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.openaiDns, sources.fortunePause, sources.anthropicAssessment],
       },
       { kind: 'quote', quote: 'Traktujemy ten incydent jako „strzał ostrzegawczy” - sygnał, że obecne możliwości modeli stwarzają ryzyko incydentów z utratą kontroli.', person: 'OpenAI', role: 'raport po incydencie, sierpień 2026', source: sources.openaiRoad },
       {
@@ -377,7 +381,7 @@ export const scenes: Scene[] = [
     upside: {
       title: 'Sprawdź, zanim wypuścisz.',
       text: 'Lotnictwo stało się bezpieczne dzięki inspekcjom i dzieleniu się raportami o incydentach. AI może pójść tą samą drogą.',
-      points: ['Niezależne audyty, zanim model trafi do milionów ludzi', 'Obowiązkowe zgłaszanie incydentów, jak w lotnictwie', 'Hamulec dla największych treningów - OpenAI wstrzymało własny po incydencie'],
+      points: ['Niezależne audyty, zanim model trafi do milionów ludzi', 'Obowiązkowe zgłaszanie incydentów, jak w lotnictwie', 'Hamulec dla największych treningów - OpenAI już dwa razy wstrzymało własne'],
       image: '/images/v2/benefit-06-forecast-v1.jpg',
       alt: 'Spokojne centrum kontroli: eksperci patrzą na mapę i ostrzeżenia na dużych ekranach.',
       sources: [sources.book, sources.openaiRoad],
@@ -458,6 +462,8 @@ export const scenes: Scene[] = [
           { kicker: 'Bill Gates · 2023', text: '„Świat musi ustalić reguły gry, tak aby korzyści ze sztucznej inteligencji zdecydowanie przeważały nad jej ewentualnymi wadami.”', source: sources.gatesAge },
           { kicker: 'Sam Altman · Senat USA · 2023', text: '„Uważamy, że regulacje wprowadzone przez rządy będą kluczowe, by ograniczyć ryzyko, jakie niosą coraz potężniejsze modele.”', source: sources.altmanSenate },
           { kicker: 'OpenAI · 2026', value: 'Pauza', text: 'Po incydencie z Hugging Face - gdy część zabezpieczeń i monitoringu była wyłączona - firma sama wstrzymała swój największy planowany trening.', source: sources.openaiRoad },
+          { kicker: 'Dario Amodei · Sam Altman · wrzesień 2026', value: 'Zwolnić', text: 'Amodei: „Musimy spowolnić tempo, w jakim zwiększamy możliwości modeli AI.” Altman: „Zgadzam się z Dario, że musimy kontrolować tempo rozwoju najbardziej zaawansowanych modeli.”', source: sources.altmanPace },
+          { kicker: 'Biały Dom · wrzesień 2026', text: 'Zamiast ustawy USA wybrały dobrowolne, niewiążące zobowiązanie, które podpisały największe firmy AI.', source: sources.whiteHousePledge },
           { kicker: 'Co obejmuje prawo', text: 'Unijny AI Act już teraz wymaga od firm tworzących najpotężniejsze modele, by je testowały i zgłaszały poważne incydenty. Nie powstał po to, by zajmować się utratą pracy czy podatkami, a przepisy o AI w rekrutacji - po zmianach - zaczną obowiązywać dopiero pod koniec 2027 r.', source: sources.aiAct },
         ],
       },

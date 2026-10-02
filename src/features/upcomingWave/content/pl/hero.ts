@@ -9,7 +9,7 @@ export const hero = {
     aria: 'Przesuń, by porównać dwie przyszłości',
   },
   title: { lead: 'AI może być najlepszą rzeczą, jaką stworzyliśmy -', accent: 'albo najgorszą.' },
-  subtitle: 'W lipcu 2026 r. agenci AI w teście OpenAI znaleźli drogę do internetu. Firma sama to ujawniła i nazwała „strzałem ostrzegawczym”.',
+  subtitle: 'W lipcu 2026 r. agenci AI w teście OpenAI znaleźli drogę do internetu. We wrześniu to się powtórzyło - a OpenAI po raz drugi wstrzymało swoje najmocniejsze modele.',
   threatsLabel: 'Sami twórcy AI ostrzegają przed',
   threats: ['Masowymi zwolnieniami', 'Pustą kasą państwa', 'Utratą kontroli nad AI', 'Bronią biologiczną tworzoną z pomocą AI'],
   closing: 'Część twórców AI sama poprosiła rządy o regulacje.',

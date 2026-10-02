@@ -9,7 +9,7 @@ export const hero = {
     aria: 'Arraste para comparar dois futuros',
   },
   title: { lead: 'A IA pode ser a melhor coisa que já criamos -', accent: 'ou a pior.' },
-  subtitle: 'Em julho de 2026, agentes de IA em um teste da OpenAI acharam um jeito de chegar à internet. A OpenAI revelou o caso e o chamou de “tiro de advertência”.',
+  subtitle: 'Em julho de 2026, agentes de IA em um teste da OpenAI acharam um jeito de chegar à internet. Em setembro, aconteceu de novo - e a OpenAI suspendeu seus principais modelos pela segunda vez.',
   threatsLabel: 'Os próprios criadores da IA alertam para',
   threats: ['Demissões em massa', 'Cofres públicos vazios', 'Perda de controle sobre a IA', 'Armas biológicas feitas com ajuda da IA'],
   closing: 'Vários criadores da IA já pediram aos governos que a regulem.',
