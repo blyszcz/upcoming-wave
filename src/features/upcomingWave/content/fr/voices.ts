@@ -4,6 +4,21 @@ import type { Voice } from '@features/upcomingWave/types/voice.types';
 // The Suleyman line is our translation of the English edition (ch. 7).
 export const voices: Voice[] = [
   {
+    id: 'un',
+    featured: true,
+    variant: 'statement',
+    image: '/images/v2/voice-un-v1.jpg',
+    imageAlt: 'Une salle du conseil silencieuse, avec une table en fer à cheval et des micros, dans la lumière du soir.',
+    quotes: [
+      'Nous ne devrions pas entraîner de modèles si nous ne pouvons pas démontrer de façon très solide que nous pourrons les garder sous contrôle humain.',
+      'Si l’IA doit être démocratique, les décisions les plus importantes ne peuvent pas être prises par les seuls laboratoires de San Francisco.',
+    ],
+    person: 'Sam Altman',
+    role: 'PDG d’OpenAI · devant le Conseil de sécurité de l’ONU',
+    context: 'Conseil de sécurité de l’ONU · septembre 2026',
+    source: { label: 'Compte rendu de l’ONU', url: 'https://transcripts.un.org/en/sc/10228' },
+  },
+  {
     id: 'cais',
     featured: true,
     variant: 'statement',
@@ -45,7 +60,6 @@ export const voices: Voice[] = [
   },
   {
     id: 'altman',
-    featured: true,
     variant: 'statement',
     image: '/images/v2/voice-altman-v1.jpg',
     imageAlt: 'Une salle d’audition vide du Sénat américain : une table de témoin avec un micro, face à l’estrade des sénateurs.',

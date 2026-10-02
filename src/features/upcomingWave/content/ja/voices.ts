@@ -4,6 +4,21 @@ import type { Voice } from '@features/upcomingWave/types/voice.types';
 // The Suleyman line is translated from the English edition (ch. 7).
 export const voices: Voice[] = [
   {
+    id: 'un',
+    featured: true,
+    variant: 'statement',
+    image: '/images/v2/voice-un-v1.jpg',
+    imageAlt: '夕方の光が差す、静かな会議場。馬蹄形のテーブルとマイクが並んでいます。',
+    quotes: [
+      '人間の管理下に置き続けられると、きわめて強い根拠をもって示せないモデルは、訓練すべきではない。',
+      'AIが民主的であるべきなら、最も重要な決定をサンフランシスコの研究所だけで下すことはできない。',
+    ],
+    person: 'Sam Altman',
+    role: 'OpenAI CEO · 国連安全保障理事会で演説',
+    context: '国連安全保障理事会 · 2026年9月',
+    source: { label: '国連の議事録', url: 'https://transcripts.un.org/en/sc/10228' },
+  },
+  {
     id: 'cais',
     featured: true,
     variant: 'statement',
@@ -45,7 +60,6 @@ export const voices: Voice[] = [
   },
   {
     id: 'altman',
-    featured: true,
     variant: 'statement',
     image: '/images/v2/voice-altman-v1.jpg',
     imageAlt: '誰もいない米上院の公聴会室。マイクの置かれた証人席が、上院議員の壇席と向き合っている。',

@@ -4,6 +4,21 @@ import type { Voice } from '@features/upcomingWave/types/voice.types';
 // unless it comes from the Polish edition of the book.
 export const voices: Voice[] = [
   {
+    id: 'un',
+    featured: true,
+    variant: 'statement',
+    image: '/images/v2/voice-un-v1.jpg',
+    imageAlt: 'Cicha sala obrad ze stołem w kształcie podkowy i mikrofonami, w wieczornym świetle.',
+    quotes: [
+      'Nie powinniśmy trenować modeli, jeśli nie umiemy bardzo mocno wykazać, że zdołamy utrzymać je pod kontrolą człowieka.',
+      'Jeśli AI ma być demokratyczna, najważniejszych decyzji nie mogą podejmować same laboratoria w San Francisco.',
+    ],
+    person: 'Sam Altman',
+    role: 'CEO OpenAI · wystąpienie w Radzie Bezpieczeństwa ONZ',
+    context: 'Rada Bezpieczeństwa ONZ · wrzesień 2026',
+    source: { label: 'Stenogram ONZ', url: 'https://transcripts.un.org/en/sc/10228' },
+  },
+  {
     id: 'cais',
     featured: true,
     variant: 'statement',
@@ -47,7 +62,6 @@ export const voices: Voice[] = [
   },
   {
     id: 'altman',
-    featured: true,
     variant: 'statement',
     image: '/images/v2/voice-altman-v1.jpg',
     imageAlt: 'Pusta sala przesłuchań Senatu USA: stolik świadka z mikrofonem naprzeciw ławy senatorów.',
