@@ -51,10 +51,11 @@
   .uw-voices-grid.is-featured .uw-signatories li { display: inline; padding: 0; border: 0; }
   .uw-voices-grid.is-featured .uw-signatories li:not(:last-child)::after { content: ', '; }
   .uw-voices-grid.is-featured > .uw-voice:nth-child(4) { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
-  .uw-voices-grid.is-featured > .uw-voice:nth-child(4) .uw-voice-media { position: relative; aspect-ratio: auto; min-height: 220px; }
-  .uw-voices-grid.is-featured > .uw-voice:nth-child(4) .uw-voice-media img { position: absolute; inset: 0; }
+  .uw-voices-grid.is-featured > .uw-voice:nth-child(4) .uw-voice-media { position: relative; aspect-ratio: auto; min-height: 380px; }
+  .uw-voices-grid.is-featured > .uw-voice:nth-child(4) .uw-voice-media img { position: absolute; inset: 0; object-position: center 72%; }
+  .uw-voices-grid.is-featured > .uw-voice:nth-child(4) .uw-voice-body { justify-content: center; }
   .uw-voices-grid.is-featured > .uw-voice:nth-child(4) .uw-voice-body { gap: 18px; padding: clamp(22px, 2vw, 32px); }
-  .uw-voices-grid.is-featured > .uw-voice:nth-child(4) .uw-voice-quotes blockquote { font-size: clamp(1.2rem, 1.5vw, 1.5rem); }
+  .uw-voices-grid.is-featured > .uw-voice:nth-child(4) .uw-voice-quotes blockquote { max-width: 40ch; font-size: clamp(1.4rem, 1.9vw, 1.9rem); line-height: 1.2; }
 }
 
 /* "More" on voice cards and "How?" on upside strips: small text toggles that keep the default view short. */
