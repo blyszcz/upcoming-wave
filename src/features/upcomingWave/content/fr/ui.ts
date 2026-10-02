@@ -21,6 +21,7 @@ export const ui = {
   upside: { label: 'Si nous faisons les bons choix', how: 'Comment ?' },
   readMore: 'Lire la suite',
   showLess: 'Réduire',
+  factsCount: (count: number) => `${count} faits et citations`,
   chapterEnd: 'Fin du chapitre',
   stepsAria: 'Ce qui se passe, étape par étape',
   factsAria: 'Faits et sources',

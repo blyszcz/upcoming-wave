@@ -21,6 +21,7 @@ export const ui = {
   upside: { label: 'Se fizermos do jeito certo', how: 'Como?' },
   readMore: 'Ler mais',
   showLess: 'Mostrar menos',
+  factsCount: (count: number) => `${count} fatos e citações`,
   chapterEnd: 'Fim do capítulo',
   stepsAria: 'O que acontece, passo a passo',
   factsAria: 'Fatos e fontes',

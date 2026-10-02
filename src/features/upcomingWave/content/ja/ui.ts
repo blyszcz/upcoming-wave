@@ -21,6 +21,7 @@ export const ui = {
   upside: { label: 'うまくいけば', how: 'どうやって？' },
   readMore: '続きを読む',
   showLess: '閉じる',
+  factsCount: (count: number) => `事実と引用 ${count}件`,
   chapterEnd: '章の終わり',
   stepsAria: '何が起こるか、段階ごとに',
   factsAria: '事実と出典',
