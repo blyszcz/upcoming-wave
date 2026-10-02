@@ -310,7 +310,7 @@ export const scenes: Scene[] = [
     ],
     upside: {
       title: 'Que las personas sigan al mando.',
-      text: 'Si los beneficios de la IA se reparten y las grandes decisiones siguen siendo democráticas, las personas siguen siendo necesarias: como ciudadanos, no solo como trabajadores.',
+      text: 'Si los beneficios de la IA se reparten y las grandes decisiones siguen siendo democráticas, las personas siguen contando: como ciudadanos y votantes, aunque las máquinas hagan el trabajo.',
       points: ['Fondos y participaciones públicas para que todos compartan las ganancias de la IA', 'Reglas escritas por gobiernos elegidos, no solo por empresas', 'Acuerdos internacionales: la IA no se detiene en las fronteras'],
       image: '/images/v2/rules-03-citizens-v2.jpg',
       alt: 'Una reunión vecinal en la que una mujer hace una pregunta a los responsables públicos.',

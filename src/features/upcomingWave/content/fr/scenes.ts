@@ -310,7 +310,7 @@ export const scenes: Scene[] = [
     ],
     upside: {
       title: 'Garder les gens aux commandes.',
-      text: 'Si les profits de l’IA sont partagés et que les grandes décisions restent démocratiques, on a toujours besoin des gens - comme citoyens, pas seulement comme travailleurs.',
+      text: 'Si les profits de l’IA sont partagés et que les grandes décisions restent démocratiques, les gens comptent toujours - comme citoyens et électeurs, même quand les machines font le travail.',
       points: ['Des fonds et des participations publics pour que chacun profite des gains de l’IA', 'Des règles écrites par des gouvernements élus, pas seulement par des entreprises', 'Des accords internationaux - l’IA ne s’arrête pas aux frontières'],
       image: '/images/v2/rules-03-citizens-v2.jpg',
       alt: 'Une réunion publique en mairie où une femme pose une question aux élus.',

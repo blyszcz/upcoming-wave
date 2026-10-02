@@ -310,7 +310,7 @@ export const scenes: Scene[] = [
     ],
     upside: {
       title: 'Keep people in charge.',
-      text: 'If AI’s profits are shared and big decisions stay democratic, people stay needed - as citizens, not just workers.',
+      text: 'If AI’s profits are shared and big decisions stay democratic, people still count - as citizens and voters, even when machines do the work.',
       points: ['Public funds and stakes so everyone shares AI’s gains', 'Rules written by elected governments, not only by companies', 'International agreements - AI doesn’t stop at borders'],
       image: '/images/v2/rules-03-citizens-v2.jpg',
       alt: 'A town hall meeting where a woman asks officials a question.',

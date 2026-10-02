@@ -433,7 +433,7 @@ export const scenes: Scene[] = [
     ],
     upside: {
       title: 'Ludzie zostają u steru.',
-      text: 'Jeśli zyski z AI są dzielone, a ważne decyzje zapadają demokratycznie, ludzie nadal są potrzebni - jako obywatele, nie tylko pracownicy.',
+      text: 'Jeśli zyski z AI są dzielone, a ważne decyzje zapadają demokratycznie, ludzie wciąż się liczą - jako obywatele i wyborcy, nawet gdy pracę wykonują maszyny.',
       points: ['Publiczne fundusze i udziały, żeby wszyscy korzystali z zysków AI', 'Zasady ustalane przez demokratycznie wybrane władze, nie tylko przez firmy', 'Porozumienia międzynarodowe - AI nie zatrzymuje się na granicach'],
       image: '/images/v2/rules-03-citizens-v2.jpg',
       alt: 'Zebranie mieszkańców: kobieta zadaje pytanie urzędnikom.',

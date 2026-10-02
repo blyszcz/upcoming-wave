@@ -310,7 +310,7 @@ export const scenes: Scene[] = [
     ],
     upside: {
       title: 'Manter as pessoas no comando.',
-      text: 'Se os lucros da IA forem divididos e as grandes decisões continuarem democráticas, as pessoas continuam necessárias - como cidadãos, não só como trabalhadores.',
+      text: 'Se os lucros da IA forem divididos e as grandes decisões continuarem democráticas, as pessoas continuam contando - como cidadãos e eleitores, mesmo quando as máquinas fazem o trabalho.',
       points: ['Fundos e participações públicas para que todos dividam os ganhos da IA', 'Regras escritas por governos eleitos, não só pelas empresas', 'Acordos internacionais - a IA não para nas fronteiras'],
       image: '/images/v2/rules-03-citizens-v2.jpg',
       alt: 'Uma audiência pública em que uma mulher faz uma pergunta às autoridades.',

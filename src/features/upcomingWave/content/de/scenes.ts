@@ -310,7 +310,7 @@ export const scenes: Scene[] = [
     ],
     upside: {
       title: 'Menschen behalten das Sagen.',
-      text: 'Wenn KI-Gewinne geteilt werden und große Entscheidungen demokratisch bleiben, bleiben Menschen gebraucht - als Bürger, nicht nur als Arbeitskräfte.',
+      text: 'Wenn KI-Gewinne geteilt werden und große Entscheidungen demokratisch bleiben, zählen Menschen weiterhin - als Bürger und Wähler, auch wenn Maschinen die Arbeit machen.',
       points: ['Öffentliche Fonds und Beteiligungen, damit alle an den KI-Gewinnen teilhaben', 'Regeln, die gewählte Regierungen schreiben, nicht nur Unternehmen', 'Internationale Abkommen - KI macht an Grenzen nicht halt'],
       image: '/images/v2/rules-03-citizens-v2.jpg',
       alt: 'Eine Bürgerversammlung, bei der eine Frau Amtsträgern eine Frage stellt.',
