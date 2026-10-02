@@ -18,7 +18,7 @@ export const ui = {
   why: 'Dlaczego?',
   copyLink: 'Kopiuj link do tej sekcji',
   facts: { moreVoices: (count: number) => `+${count} ${count === 1 ? 'kolejny głos' : count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 12 || count % 100 > 14) ? 'kolejne głosy' : 'kolejnych głosów'}`, lessVoices: 'Zwiń głosy' },
-  upside: { label: 'Jeśli zrobimy to dobrze' },
+  upside: { label: 'Jeśli zrobimy to dobrze', how: 'Jak?' },
   readMore: 'Czytaj więcej',
   showLess: 'Zwiń sekcję',
   chapterEnd: 'Koniec rozdziału',
@@ -36,6 +36,7 @@ export const ui = {
     stepOf: (index: number, total: number) => `Krok ${index} z ${total}`,
   },
   voices: {
+    more: 'Więcej',
     eyebrow: 'Głosy · z wnętrza branży',
     titleLead: 'Zgadzają się w dwóch sprawach.',
     titleAccent: 'To może być przełom. Potrzebne są regulacje.',

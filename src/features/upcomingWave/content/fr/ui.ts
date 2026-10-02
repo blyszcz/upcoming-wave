@@ -18,7 +18,7 @@ export const ui = {
   why: 'Pourquoi ?',
   copyLink: 'Copier le lien vers cette section',
   facts: { moreVoices: (count: number) => `+${count} autres voix`, lessVoices: 'Afficher moins de voix' },
-  upside: { label: 'Si nous faisons les bons choix' },
+  upside: { label: 'Si nous faisons les bons choix', how: 'Comment ?' },
   readMore: 'Lire la suite',
   showLess: 'Réduire',
   chapterEnd: 'Fin du chapitre',
@@ -36,6 +36,7 @@ export const ui = {
     stepOf: (index: number, total: number) => `Étape ${index} sur ${total}`,
   },
   voices: {
+    more: 'Plus',
     eyebrow: 'Voix · de l’intérieur du secteur',
     titleLead: 'Ils s’accordent sur deux points.',
     titleAccent: 'L’enjeu peut être immense. Il faut des règles.',

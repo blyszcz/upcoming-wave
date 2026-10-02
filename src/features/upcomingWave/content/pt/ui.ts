@@ -18,7 +18,7 @@ export const ui = {
   why: 'Por quê?',
   copyLink: 'Copiar link desta seção',
   facts: { moreVoices: (count: number) => `+${count} outras vozes`, lessVoices: 'Mostrar menos vozes' },
-  upside: { label: 'Se fizermos do jeito certo' },
+  upside: { label: 'Se fizermos do jeito certo', how: 'Como?' },
   readMore: 'Ler mais',
   showLess: 'Mostrar menos',
   chapterEnd: 'Fim do capítulo',
@@ -36,6 +36,7 @@ export const ui = {
     stepOf: (index: number, total: number) => `Passo ${index} de ${total}`,
   },
   voices: {
+    more: 'Mais',
     eyebrow: 'Vozes · de dentro do setor',
     titleLead: 'Eles concordam em duas coisas.',
     titleAccent: 'Pode ser enorme. E precisa de regras.',

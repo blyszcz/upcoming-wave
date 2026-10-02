@@ -18,7 +18,7 @@ export const ui = {
   why: 'Why?',
   copyLink: 'Copy link to this section',
   facts: { moreVoices: (count: number) => `+${count} more voices`, lessVoices: 'Show fewer voices' },
-  upside: { label: 'If we get it right' },
+  upside: { label: 'If we get it right', how: 'How?' },
   readMore: 'Read more',
   showLess: 'Show less',
   chapterEnd: 'End of chapter',
@@ -36,6 +36,7 @@ export const ui = {
     stepOf: (index: number, total: number) => `Step ${index} of ${total}`,
   },
   voices: {
+    more: 'More',
     eyebrow: 'Voices · from inside the industry',
     titleLead: 'It’s not us saying this.',
     titleAccent: 'It’s them.',

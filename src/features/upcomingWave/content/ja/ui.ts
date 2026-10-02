@@ -18,7 +18,7 @@ export const ui = {
   why: 'なぜ？',
   copyLink: 'このセクションへのリンクをコピー',
   facts: { moreVoices: (count: number) => `ほか${count}人の声を見る`, lessVoices: '声の表示を減らす' },
-  upside: { label: 'うまくいけば' },
+  upside: { label: 'うまくいけば', how: 'どうやって？' },
   readMore: '続きを読む',
   showLess: '閉じる',
   chapterEnd: '章の終わり',
@@ -36,6 +36,7 @@ export const ui = {
     stepOf: (index: number, total: number) => `ステップ ${index}/${total}`,
   },
   voices: {
+    more: '詳しく',
     eyebrow: '業界の内側からの声',
     titleLead: '一致しているのは二つの点。',
     titleAccent: '影響は巨大になりうる。ルールが必要だ。',

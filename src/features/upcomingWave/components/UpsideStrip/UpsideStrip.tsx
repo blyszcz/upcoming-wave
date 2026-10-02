@@ -17,10 +17,14 @@ export const UpsideStrip = ({ upside }: UpsideStripProps) => {
         <p className="uw-upside-label"><span aria-hidden="true" />{ui.upside.label}</p>
         <h3>{upside.title}</h3>
         <p className="uw-upside-text">{upside.text}</p>
-        <ul>
-          {upside.points.map((point) => <li key={point}>{point}</li>)}
-        </ul>
-        <div className="uw-source-list">{upside.sources.map((source) => <SourceLink key={source.url ?? source.label} source={source} />)}</div>
+        {/* The concrete steps and sources open on demand, so the strip stays a headline and one line. */}
+        <details className="uw-upside-more">
+          <summary>{ui.upside.how}</summary>
+          <ul>
+            {upside.points.map((point) => <li key={point}>{point}</li>)}
+          </ul>
+          <div className="uw-source-list">{upside.sources.map((source) => <SourceLink key={source.url ?? source.label} source={source} />)}</div>
+        </details>
       </div>
     </aside>
   );
