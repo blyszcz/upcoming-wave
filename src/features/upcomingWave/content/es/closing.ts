@@ -44,5 +44,6 @@ export const finale = {
   rules: { title: 'Cómo son las buenas reglas', items: ['Pruebas independientes antes de que la IA llegue a millones de personas', 'Responsabilidad clara cuando un sistema de IA causa daños', 'Que las ganancias de la IA se repartan de forma justa: con impuestos y una red de protección real'] },
   actions: { title: 'Qué puedes hacer tú', items: ['Compártelo con alguien que aún no haya pensado en esto', 'Pregunta a tus representantes qué opinan de las reglas para la IA', 'Cuando las empresas de IA publiquen sus planes de seguridad, léelos y haz preguntas'] },
   // Empty: the closing line is the page's own voice, not a quote.
+  poll: { text: 'El 86% de los estadounidenses quiere que las empresas de IA cumplan normas de seguridad independientes, aunque eso frene la IA.', source: { label: 'Quinnipiac, 2026', url: 'https://poll.qu.edu/poll-release?releaseid=3969' } },
   quoteSource: '',
 };

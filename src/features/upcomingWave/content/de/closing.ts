@@ -44,5 +44,6 @@ export const finale = {
   rules: { title: 'So sehen gute Regeln aus', items: ['Unabhängige Tests, bevor KI Millionen Menschen erreicht', 'Klare Verantwortung, wenn ein KI-System Schaden anrichtet', 'Faire Verteilung der KI-Gewinne - über Steuern und ein echtes soziales Netz'] },
   actions: { title: 'Was du tun kannst', items: ['Teile das mit einer Person, die noch nicht darüber nachgedacht hat', 'Frag deine Abgeordneten, wie sie zu Regeln für KI stehen', 'Wenn KI-Firmen Sicherheitspläne veröffentlichen, lies sie - und stell Fragen'] },
   // Empty: the closing line is the page's own voice, not a quote.
+  poll: { text: '86 % der Amerikaner wollen, dass KI-Firmen unabhängige Sicherheitsstandards erfüllen müssen, auch wenn das die KI verlangsamt.', source: { label: 'Quinnipiac, 2026', url: 'https://poll.qu.edu/poll-release?releaseid=3969' } },
   quoteSource: '',
 };

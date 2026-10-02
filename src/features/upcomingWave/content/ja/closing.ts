@@ -44,5 +44,6 @@ export const finale = {
   rules: { title: '良いルールとは', items: ['AIが何百万人もの人に届く前の、独立した検証', 'AIシステムが損害を与えたときの、明確な責任', '税と実効性のあるセーフティネットによる、AIの利益の公正な分配'] },
   actions: { title: 'あなたにできること', items: ['まだこのことを考えたことのない人に、一人だけでいいので共有する', 'あなたの代表である議員に、AIのルールについての立場を尋ねる', 'AI企業が安全計画を公表したら、読んで質問する'] },
   // Empty: the closing line is the page's own voice, not a quote.
+  poll: { text: '米国人の86%が、AIの開発が遅れるとしても、AI企業に独立した安全基準を課すべきだと考えています。', source: { label: 'Quinnipiac, 2026', url: 'https://poll.qu.edu/poll-release?releaseid=3969' } },
   quoteSource: '',
 };

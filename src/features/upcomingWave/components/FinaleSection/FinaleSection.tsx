@@ -3,6 +3,7 @@
 import type { NumberedSectionProps } from '@features/upcomingWave/types/section.types';
 
 import { ResponsiveImage } from '@features/upcomingWave/components/ResponsiveImage/ResponsiveImage';
+import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
 export const FinaleSection = ({ number }: NumberedSectionProps) => {
@@ -18,6 +19,8 @@ export const FinaleSection = ({ number }: NumberedSectionProps) => {
         {finale.quoteSource
           ? <figure className="uw-finale-quote"><blockquote>{finale.quote}</blockquote><figcaption>{finale.quoteSource}</figcaption></figure>
           : <p className="uw-finale-quote uw-finale-line">{finale.quote}</p>}
+        {/* One line of public opinion: wanting rules is the mainstream view, not a niche one. */}
+        <p className="uw-finale-poll">{finale.poll.text} <SourceLink source={finale.poll.source} /></p>
         <div className="uw-finale-lists">
           {[finale.rules, finale.actions].map((list) => (
             <div key={list.title}>

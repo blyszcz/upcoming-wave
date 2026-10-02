@@ -42,5 +42,6 @@ export const finale = {
   quote: '„To nie jej los właśnie się decyduje, tylko nasz.”',
   rules: { title: 'Jak wyglądają dobre zasady', items: ['Niezależne testy, zanim AI trafi do milionów ludzi', 'Jasna odpowiedzialność, gdy system AI wyrządzi szkodę', 'Uczciwy podział zysków z AI — przez podatki i prawdziwą siatkę bezpieczeństwa'] },
   actions: { title: 'Co możesz zrobić', items: ['Wyślij to jednej osobie, która jeszcze się nad tym nie zastanawiała', 'Zapytaj swoich przedstawicieli, co myślą o zasadach dla AI', 'Gdy firmy AI publikują plany bezpieczeństwa — czytaj je i zadawaj pytania'] },
+  poll: { text: '86% Amerykanów chce, by firmy AI spełniały niezależne normy bezpieczeństwa, nawet jeśli spowolni to rozwój AI.', source: { label: 'Quinnipiac, 2026', url: 'https://poll.qu.edu/poll-release?releaseid=3969' } },
   quoteSource: 'Mustafa Suleyman, „Nadchodząca fala”',
 };

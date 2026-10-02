@@ -44,5 +44,6 @@ export const finale = {
   rules: { title: 'À quoi ressemblent de bonnes règles', items: ['Des tests indépendants avant que l’IA n’atteigne des millions de personnes', 'Une responsabilité claire quand un système d’IA cause un préjudice', 'Des gains de l’IA partagés équitablement - par l’impôt et un vrai filet de sécurité'] },
   actions: { title: 'Ce que vous pouvez faire', items: ['Partagez cette page avec quelqu’un qui n’y a pas encore réfléchi', 'Demandez à vos élus quelle est leur position sur les règles de l’IA', 'Quand les entreprises d’IA publient leurs plans de sécurité, lisez-les - et posez des questions'] },
   // Empty: the closing line is the page's own voice, not a quote.
+  poll: { text: '86 % des Américains veulent que les entreprises d’IA respectent des normes de sécurité indépendantes, même si cela ralentit l’IA.', source: { label: 'Quinnipiac, 2026', url: 'https://poll.qu.edu/poll-release?releaseid=3969' } },
   quoteSource: '',
 };

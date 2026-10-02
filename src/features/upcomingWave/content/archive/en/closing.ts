@@ -43,5 +43,6 @@ export const finale = {
   quote: '“Technology is not the point of the future, or what’s really at stake. We are.”',
   rules: { title: 'What good rules look like', items: ['Independent testing before AI reaches millions of people', 'Clear responsibility when an AI system causes harm', 'AI’s gains shared fairly — through taxes and a real safety net'] },
   actions: { title: 'What you can do', items: ['Share this with one person who hasn’t thought about it yet', 'Ask the people who represent you where they stand on AI rules', 'When AI companies publish safety plans, read them — and ask questions'] },
+  poll: { text: '86% of Americans want AI companies held to independent safety standards, even if it slows AI down.', source: { label: 'Quinnipiac, 2026', url: 'https://poll.qu.edu/poll-release?releaseid=3969' } },
   quoteSource: 'Mustafa Suleyman, “The Coming Wave”',
 };

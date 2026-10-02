@@ -43,5 +43,6 @@ export const finale = {
   rules: { title: 'Jak wyglądają dobre regulacje', items: ['Niezależne testy, zanim AI trafi do milionów ludzi', 'Jasna odpowiedzialność, gdy system AI wyrządzi szkodę', 'Uczciwy podział zysków z AI - przez podatki i realną osłonę socjalną'] },
   actions: { title: 'Co możesz zrobić', items: ['Wyślij to jednej osobie, która jeszcze się nad tym nie zastanawiała', 'Zapytaj swoich posłów, co sądzą o regulacji AI', 'Gdy firmy AI publikują plany bezpieczeństwa - czytaj je i zadawaj pytania'] },
   // Empty: the closing line is the page's own voice, not a quote.
+  poll: { text: '86% Amerykanów chce, by firmy AI spełniały niezależne normy bezpieczeństwa, nawet jeśli spowolni to rozwój AI.', source: { label: 'Quinnipiac, 2026', url: 'https://poll.qu.edu/poll-release?releaseid=3969' } },
   quoteSource: '',
 };

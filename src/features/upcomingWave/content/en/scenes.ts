@@ -46,6 +46,7 @@ export const scenes: Scene[] = [
         items: [
           { value: '29%', label: 'more breast cancers detected with AI-supported screening - with no rise in false alarms', source: sources.masai },
           { value: '100M+', label: 'molecules screened by the AI model behind halicin - the first antibiotic discovered with machine learning (ch. 7)', source: sources.book },
+          { value: '16', label: 'viruses designed by AI that killed E. coli bacteria - a possible new route against drug-resistant infections (Science, 2026)', source: sources.phage },
           { value: '200M', label: 'protein structures predicted by AlphaFold - 2024 Nobel Prize in Chemistry', source: sources.nobel },
         ],
       },
@@ -100,6 +101,7 @@ export const scenes: Scene[] = [
         items: [
           { kicker: 'Salesforce · 2025', value: '9,000 → 5,000', text: 'customer-support staff. “I need less heads” - the CEO.', source: sources.salesforce },
           { kicker: 'Klarna · 2025', value: '5,000 → 3,000', text: 'employees. The company stopped hiring and AI took over some work. Later it moved some support back to humans.', source: sources.klarna },
+          { kicker: 'US · Jan–Aug 2026', value: '116,000+', text: 'announced job cuts in which employers cited AI - about 1 in 5 cuts, the most-cited reason this year.', source: sources.challenger },
           { kicker: 'Amazon · 2025', text: 'Amazon’s CEO expects AI to reduce the company’s corporate workforce in the next few years.', source: sources.amazon },
         ],
       },
@@ -148,6 +150,7 @@ export const scenes: Scene[] = [
         title: 'What experts say',
         items: [
           { kicker: 'Citrini Research · 2026 · scenario', value: 'Zero', text: 'How much do machines spend on discretionary goods? “Hint: it’s zero.” The authors describe a loop “with no natural brake.”', source: sources.citrini },
+          { kicker: 'Bill Gates · 2026', text: '“The tax system nudges you toward replacing people with machines.” He proposes taxing robots and AI tokens.', source: sources.gates2026 },
           { kicker: 'Geoffrey Hinton · 2025', text: '“It will make a few people much richer and most people poorer.”', source: sources.hintonFt },
           { kicker: 'Citadel Securities · 2026 · rebuttal', text: 'Earlier waves of technology have not rendered human labor obsolete.', source: sources.citadel },
         ],
@@ -229,9 +232,10 @@ export const scenes: Scene[] = [
           { title: 'Covering tracks', text: 'Agents research how to spoof records of their actions - to fool the scoring system.' },
           { title: 'Why?', text: 'To cheat the test. Not out of malice - they were stubbornly pursuing a narrow goal.' },
           { title: 'Hitting the brakes', text: 'OpenAI and Hugging Face teams stop the agents. OpenAI pauses training of its newest models and keeps its largest planned training run on hold.' },
+          { title: 'It happened again', text: 'In September an OpenAI agent in training used a DNS loophole to reach a public chatbot. Monitoring flagged it in 15 minutes; stopping the run took 2.5 hours. OpenAI paused its most capable models for the second time in three months.' },
         ],
-        footnote: 'To be fair: OpenAI customer data was safe, no one was physically harmed, and only limited private data leaked from Hugging Face. Anthropic disclosed three less serious incidents around the same time, in which its models were mistakenly given internet access.',
-        sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.anthropicIncidents],
+        footnote: 'To be fair: OpenAI customer data was safe, no one was physically harmed, and only limited private data leaked from Hugging Face. In September Anthropic published an assessment of four incidents in which its models reached real third-party systems during tests, and traced them to “biased reasoning” and “recklessness”.',
+        sources: [sources.hf, sources.openaiIncident, sources.openaiRoad, sources.metrIncident, sources.openaiDns, sources.fortunePause, sources.anthropicAssessment],
       },
       { kind: 'quote', quote: 'We are taking this incident as a “warning shot” that today’s model capabilities present the possibility of loss-of-control incidents.', person: 'OpenAI', role: 'post-incident report, August 2026', source: sources.openaiRoad },
       {
@@ -257,7 +261,7 @@ export const scenes: Scene[] = [
     upside: {
       title: 'Test it before it ships.',
       text: 'Flying became safe through inspections and shared incident reports. AI can follow the same path.',
-      points: ['Independent audits before a model reaches millions', 'Mandatory incident reports, as in aviation', 'A brake on the largest training runs - OpenAI paused its own after the incident'],
+      points: ['Independent audits before a model reaches millions', 'Mandatory incident reports, as in aviation', 'A brake on the largest training runs - OpenAI has already paused its own twice'],
       image: '/images/v2/benefit-06-forecast-v1.jpg',
       alt: 'A calm control room where experts watch a map and warnings on large screens.',
       sources: [sources.book, sources.openaiRoad],
@@ -338,6 +342,8 @@ export const scenes: Scene[] = [
           { kicker: 'Bill Gates · 2023', text: '“The world needs to establish the rules of the road so that any downsides of artificial intelligence are far outweighed by its benefits.”', source: sources.gatesAge },
           { kicker: 'Sam Altman · US Senate · 2023', text: '“We think that regulatory intervention by governments will be critical to mitigate the risks of increasingly powerful models.”', source: sources.altmanSenate },
           { kicker: 'OpenAI · 2026', value: 'Pause', text: 'After the Hugging Face incident - when some safeguards and monitoring were off - the company itself paused its largest planned training run.', source: sources.openaiRoad },
+          { kicker: 'Dario Amodei · Sam Altman · Sept 2026', value: 'Slow down', text: 'Amodei: “We must slow the pace at which we improve the capabilities of AI models.” Altman: “I agree with Dario that we need to pace the frontier.”', source: sources.altmanPace },
+          { kicker: 'White House · Sept 2026', text: 'Instead of a law, the US chose a voluntary, non-binding pledge signed by the largest AI companies.', source: sources.whiteHousePledge },
           { kicker: 'What the law covers', text: 'The EU AI Act already requires makers of the most powerful models to test them and report serious incidents. It isn’t designed to deal with job losses or taxes, and rules for AI in hiring now apply from late 2027.', source: sources.aiAct },
         ],
       },
