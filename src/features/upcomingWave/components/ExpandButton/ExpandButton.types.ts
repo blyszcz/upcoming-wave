@@ -1,1 +1,1 @@
-export type ExpandButtonProps = { isOpen: boolean; controls: string; onToggle: () => void; count?: number; variant?: 'primary' };
+export type ExpandButtonProps = { isOpen: boolean; controls: string; onToggle: () => void };

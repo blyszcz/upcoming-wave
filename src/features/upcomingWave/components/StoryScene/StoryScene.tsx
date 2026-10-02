@@ -14,7 +14,6 @@ import { UpsideStrip } from '@features/upcomingWave/components/UpsideStrip/Upsid
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 import { useDisclosure } from '@features/upcomingWave/hooks/useDisclosure';
 import { useInView } from '@features/upcomingWave/hooks/useInView';
-import { countFacts } from '@features/upcomingWave/utils/countFacts';
 
 
 const PanelImage = ({ panel }: { panel: ScenePanel }) => (
@@ -29,7 +28,6 @@ export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
   const isMosaic = scene.layout === 'mosaic';
   const { isOpen, toggle } = useDisclosure();
   const factsId = `${scene.id}-facts`;
-  const factCount = countFacts(scene.band);
   // A photo opens the "Why?" slider at the step that shows the same picture (or at the start).
   const openAt = (image: string, trigger: HTMLButtonElement) => {
     const step = scene.explain.findIndex((item) => item.image === image);
@@ -55,7 +53,7 @@ export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
                 {ui.why} <span aria-hidden="true">→</span>
               </button>
             )}
-            <ExpandButton isOpen={isOpen} controls={factsId} onToggle={toggle} count={factCount} />
+            <ExpandButton isOpen={isOpen} controls={factsId} onToggle={toggle} />
           </div>
         </div>
 
@@ -81,8 +79,13 @@ export const StoryScene = ({ scene, number, onExplain }: StorySceneProps) => {
             ))}
           </ol>
         )}
+        {/* Under the photos, where the eye lands: a quiet full-width row that opens the chapter's facts. */}
         {!isOpen && scene.band && (
-          <div className="uw-scene-more"><ExpandButton isOpen={false} controls={factsId} onToggle={toggle} count={factCount} variant="primary" /></div>
+          <button type="button" className="uw-more-row" aria-expanded={false} aria-controls={factsId} onClick={toggle}>
+            <span className="uw-more-row-label">{ui.readMore}</span>
+            <span className="uw-more-row-hint">{ui.factsHint}</span>
+            <i aria-hidden="true">+</i>
+          </button>
         )}
       </section>
       {isOpen && scene.band && (

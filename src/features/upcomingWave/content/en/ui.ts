@@ -21,7 +21,7 @@ export const ui = {
   upside: { label: 'If we get it right', how: 'How?' },
   readMore: 'Read more',
   showLess: 'Show less',
-  factsCount: (count: number) => `${count} facts & quotes`,
+  factsHint: 'Facts, data and sources',
   chapterEnd: 'End of chapter',
   stepsAria: 'What happens, step by step',
   factsAria: 'Facts and sources',

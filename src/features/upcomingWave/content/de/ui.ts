@@ -21,7 +21,7 @@ export const ui = {
   upside: { label: 'Wenn wir es richtig machen', how: 'Wie?' },
   readMore: 'Weiterlesen',
   showLess: 'Weniger zeigen',
-  factsCount: (count: number) => `${count} Fakten & Zitate`,
+  factsHint: 'Fakten, Daten und Quellen',
   chapterEnd: 'Ende des Kapitels',
   stepsAria: 'Was passiert, Schritt für Schritt',
   factsAria: 'Fakten und Quellen',
