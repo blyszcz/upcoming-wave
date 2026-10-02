@@ -330,9 +330,9 @@ export const scenes: Scene[] = [
       { image: images.citizens, label: 'Qui est responsable ?', alt: 'Une réunion publique en mairie : une femme au micro pose une question aux élus sur l’estrade.', focus: 'center 65%' },
     ],
     explain: [
-      { image: images.speed, alt: 'Un déploiement rapide de l’IA.', label: 'Une juste part', title: 'Ne pas l’arrêter - la partager équitablement.', copy: 'Le but n’est pas d’arrêter le progrès. C’est d’en partager équitablement les gains et les risques.' },
-      { image: images.noRules, alt: 'Un bâtiment gouvernemental et des centres de données.', label: 'Du temps', title: 'Les règles font gagner du temps.', copy: 'Les États, les écoles et les gens ont besoin d’années pour s’adapter. Les freins leur donnent ce temps.' },
-      { image: images.citizens, alt: 'Des habitants qui posent des questions.', label: 'Responsabilité', title: 'Une question de responsabilité.', copy: 'Pas la peur de la technologie, mais la question de savoir qui répond des préjudices. Les règles disent qui contrôle, qui paie et qui répare.' },
+      { image: images.speed, alt: 'Un déploiement rapide de l’IA.', label: 'La course', title: 'Personne ne freine seul.', copy: 'Chaque entreprise a peur d’être dépassée, alors aucune ne peut freiner seule. C’est pourquoi leurs propres dirigeants demandent aujourd’hui des règles communes.' },
+      { image: images.noRules, alt: 'Un bâtiment gouvernemental et des centres de données.', label: 'Trop lent', title: 'Les lois ont des années de retard.', copy: 'L’IA change en quelques mois, les lois mettent des années. Les règles donnent le temps de s’adapter - et un frein quand quelque chose tourne mal.' },
+      { image: images.citizens, alt: 'Des habitants qui posent des questions.', label: 'Qui décide', title: 'Pas seulement quelques laboratoires.', copy: 'Les grands choix sur l’IA doivent aussi être les nôtres : des tests indépendants avant le lancement, des rapports publics en cas d’incident et quelqu’un à qui demander des comptes.' },
     ],
     band: [
       {

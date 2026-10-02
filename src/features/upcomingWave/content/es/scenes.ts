@@ -330,9 +330,9 @@ export const scenes: Scene[] = [
       { image: images.citizens, label: '¿Quién es responsable?', alt: 'Una reunión vecinal: una mujer al micrófono hace una pregunta a los responsables públicos en el estrado.', focus: 'center 65%' },
     ],
     explain: [
-      { image: images.speed, alt: 'Un despliegue rápido de IA.', label: 'Un reparto justo', title: 'No frenarla: repartirla con justicia.', copy: 'El objetivo no es detener el progreso. Es repartir con justicia sus ganancias y sus riesgos.' },
-      { image: images.noRules, alt: 'Un edificio gubernamental y centros de datos.', label: 'Tiempo', title: 'Las reglas dan tiempo.', copy: 'Los Estados, las escuelas y las personas necesitan años para adaptarse. Los frenos dan ese tiempo.' },
-      { image: images.citizens, alt: 'Vecinos haciendo preguntas.', label: 'Responsabilidad', title: 'Se trata de responsabilidad.', copy: 'No de miedo a la tecnología, sino de quién responde por los daños. Las reglas dicen quién comprueba, quién paga y quién lo arregla.' },
+      { image: images.speed, alt: 'Un despliegue rápido de IA.', label: 'La carrera', title: 'Nadie frena solo.', copy: 'Cada empresa teme quedarse atrás, así que ninguna puede frenar por su cuenta. Por eso sus propios directivos piden ahora reglas comunes.' },
+      { image: images.noRules, alt: 'Un edificio gubernamental y centros de datos.', label: 'Demasiado lento', title: 'Las leyes van años por detrás.', copy: 'La IA cambia en meses; las leyes tardan años. Las reglas dan tiempo para adaptarse, y un freno cuando algo sale mal.' },
+      { image: images.citizens, alt: 'Vecinos haciendo preguntas.', label: 'Quién decide', title: 'No solo unos pocos laboratorios.', copy: 'Las grandes decisiones sobre la IA también deberían ser nuestras: pruebas independientes antes del lanzamiento, informes públicos cuando algo falla y alguien a quien pedir cuentas.' },
     ],
     band: [
       {

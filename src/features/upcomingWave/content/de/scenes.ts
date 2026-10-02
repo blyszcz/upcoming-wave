@@ -330,9 +330,9 @@ export const scenes: Scene[] = [
       { image: images.citizens, label: 'Wer trägt die Verantwortung?', alt: 'Eine Bürgerversammlung: Eine Frau am Mikrofon stellt Amtsträgern auf der Bühne eine Frage.', focus: 'center 65%' },
     ],
     explain: [
-      { image: images.speed, alt: 'Eine schnelle KI-Einführung.', label: 'Ein fairer Anteil', title: 'Nicht stoppen - fair teilen.', copy: 'Das Ziel ist nicht, den Fortschritt aufzuhalten. Sondern seine Gewinne und Risiken fair zu verteilen.' },
-      { image: images.noRules, alt: 'Ein Regierungsgebäude und Rechenzentren.', label: 'Zeit', title: 'Regeln verschaffen Zeit.', copy: 'Staaten, Schulen und Menschen brauchen Jahre, um sich anzupassen. Bremsen verschaffen diese Zeit.' },
-      { image: images.citizens, alt: 'Bürgerinnen und Bürger stellen Fragen.', label: 'Verantwortung', title: 'Es geht um Verantwortung.', copy: 'Nicht um Angst vor Technik, sondern darum, wer für Schäden verantwortlich ist. Regeln legen fest, wer prüft, wer zahlt und wer den Schaden behebt.' },
+      { image: images.speed, alt: 'Eine schnelle KI-Einführung.', label: 'Das Rennen', title: 'Keiner bremst allein.', copy: 'Jede Firma fürchtet, von der Konkurrenz überholt zu werden - also kann keine allein bremsen. Deshalb fordern ihre eigenen Chefs jetzt gemeinsame Regeln.' },
+      { image: images.noRules, alt: 'Ein Regierungsgebäude und Rechenzentren.', label: 'Zu langsam', title: 'Gesetze hinken Jahre hinterher.', copy: 'KI verändert sich in Monaten, Gesetze brauchen Jahre. Regeln geben Zeit, sich anzupassen - und eine Bremse, wenn etwas schiefgeht.' },
+      { image: images.citizens, alt: 'Bürgerinnen und Bürger stellen Fragen.', label: 'Wer entscheidet', title: 'Nicht nur ein paar Labore.', copy: 'Die großen Entscheidungen über KI sollten auch unsere sein: unabhängige Tests vor dem Start, öffentliche Berichte, wenn etwas schiefgeht, und jemand, den man zur Verantwortung ziehen kann.' },
     ],
     band: [
       {

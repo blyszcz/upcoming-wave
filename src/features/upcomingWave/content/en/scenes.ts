@@ -330,9 +330,9 @@ export const scenes: Scene[] = [
       { image: images.citizens, label: 'Who is responsible?', alt: 'A town hall meeting: a woman at a microphone asks officials on stage a question.', focus: 'center 65%' },
     ],
     explain: [
-      { image: images.speed, alt: 'A fast AI rollout.', label: 'A fair share', title: 'Don’t stop it - share it fairly.', copy: 'The goal isn’t to stop progress. It’s to share its gains and risks fairly.' },
-      { image: images.noRules, alt: 'A government building and data centres.', label: 'Time', title: 'Rules buy time.', copy: 'States, schools and people need years to adapt. Brakes buy that time.' },
-      { image: images.citizens, alt: 'Residents asking questions.', label: 'Responsibility', title: 'It’s about responsibility.', copy: 'Not fear of technology, but who is responsible for harm. Rules say who checks, who pays and who fixes it.' },
+      { image: images.speed, alt: 'A fast AI rollout.', label: 'The race', title: 'Nobody slows down alone.', copy: 'Each company fears falling behind its rivals, so none can brake on its own. That’s why their own CEOs now ask for shared rules.' },
+      { image: images.noRules, alt: 'A government building and data centres.', label: 'Too slow', title: 'Laws are years behind.', copy: 'AI changes in months, laws take years. Rules give people time to adapt - and a brake when something goes wrong.' },
+      { image: images.citizens, alt: 'Residents asking questions.', label: 'Who decides', title: 'Not just a few labs.', copy: 'The biggest choices about AI should be ours too: independent tests before launch, public reports when things go wrong, and someone we can hold to account.' },
     ],
     band: [
       {

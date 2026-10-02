@@ -453,9 +453,9 @@ export const scenes: Scene[] = [
       { image: images.citizens, label: 'Kto odpowiada?', alt: 'Zebranie mieszkańców: kobieta przy mikrofonie zadaje pytanie urzędnikom na scenie.', focus: 'center 65%' },
     ],
     explain: [
-      { image: images.speed, alt: 'Szybkie wdrożenie AI.', label: 'Uczciwy podział', title: 'Nie zatrzymujmy - dzielmy uczciwie.', copy: 'Celem nie jest zatrzymanie postępu, tylko sprawiedliwy podział jego zysków i ryzyk.' },
-      { image: images.noRules, alt: 'Gmach rządu i centra danych.', label: 'Czas', title: 'Regulacje dają czas.', copy: 'Państwa, szkoły i ludzie potrzebują lat, żeby się dostosować. Hamulce pozwalają zyskać ten czas.' },
-      { image: images.citizens, alt: 'Mieszkańcy zadają pytania.', label: 'Odpowiedzialność', title: 'Chodzi o odpowiedzialność.', copy: 'Nie o strach przed technologią, tylko o to, kto odpowiada za szkody. Przepisy określają, kto sprawdza, kto płaci i kto naprawia.' },
+      { image: images.speed, alt: 'Szybkie wdrożenie AI.', label: 'Wyścig', title: 'Nikt nie zwolni sam.', copy: 'Każda firma boi się, że wyprzedzi ją konkurencja, więc żadna nie zahamuje sama. Dlatego szefowie tych firm sami proszą dziś o wspólne zasady.' },
+      { image: images.noRules, alt: 'Gmach rządu i centra danych.', label: 'Za wolno', title: 'Prawo jest lata w tyle.', copy: 'AI zmienia się w miesiące, a przepisy powstają latami. Regulacje dają ludziom czas, by się przygotować - i hamulec, gdy coś pójdzie nie tak.' },
+      { image: images.citizens, alt: 'Mieszkańcy zadają pytania.', label: 'Kto decyduje', title: 'Nie tylko kilka laboratoriów.', copy: 'O najważniejszych sprawach dotyczących AI powinniśmy decydować także my: niezależne testy przed premierą, jawne raporty, gdy coś pójdzie nie tak, i ktoś, kogo można rozliczyć.' },
     ],
     band: [
       {

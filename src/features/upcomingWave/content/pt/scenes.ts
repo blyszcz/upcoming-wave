@@ -330,9 +330,9 @@ export const scenes: Scene[] = [
       { image: images.citizens, label: 'Quem é responsável?', alt: 'Uma audiência pública: uma mulher ao microfone faz uma pergunta às autoridades no palco.', focus: 'center 65%' },
     ],
     explain: [
-      { image: images.speed, alt: 'A rápida implantação da IA.', label: 'Divisão justa', title: 'Não parar - dividir com justiça.', copy: 'O objetivo não é parar o progresso. É dividir seus ganhos e riscos de forma justa.' },
-      { image: images.noRules, alt: 'Um prédio do governo e data centers.', label: 'Tempo', title: 'Regras ganham tempo.', copy: 'Estados, escolas e pessoas precisam de anos para se adaptar. Os freios garantem esse tempo.' },
-      { image: images.citizens, alt: 'Moradores fazendo perguntas.', label: 'Responsabilidade', title: 'É uma questão de responsabilidade.', copy: 'Não é medo da tecnologia, e sim saber quem responde pelos danos. As regras dizem quem fiscaliza, quem paga e quem conserta.' },
+      { image: images.speed, alt: 'A rápida implantação da IA.', label: 'A corrida', title: 'Ninguém freia sozinho.', copy: 'Cada empresa tem medo de ficar para trás, então nenhuma consegue frear sozinha. Por isso os próprios chefes dessas empresas agora pedem regras comuns.' },
+      { image: images.noRules, alt: 'Um prédio do governo e data centers.', label: 'Devagar demais', title: 'As leis estão anos atrasadas.', copy: 'A IA muda em meses; as leis levam anos. Regras dão tempo para as pessoas se adaptarem - e um freio quando algo dá errado.' },
+      { image: images.citizens, alt: 'Moradores fazendo perguntas.', label: 'Quem decide', title: 'Não só alguns laboratórios.', copy: 'As grandes decisões sobre a IA também devem ser nossas: testes independentes antes do lançamento, relatórios públicos quando algo dá errado e alguém para responder por isso.' },
     ],
     band: [
       {
