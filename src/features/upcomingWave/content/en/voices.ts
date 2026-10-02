@@ -4,6 +4,21 @@ import type { Voice } from '@features/upcomingWave/types/voice.types';
 // The Suleyman line uses the English edition's wording (ch. 7).
 export const voices: Voice[] = [
   {
+    id: 'un',
+    featured: true,
+    variant: 'statement',
+    image: '/images/v2/voice-un-v1.jpg',
+    imageAlt: 'A quiet council chamber with a horseshoe-shaped table and microphones, in evening light.',
+    quotes: [
+      'We should not train models that we cannot make an extremely strong case they will be able to keep under human control.',
+      'If AI is to be democratic, the most important decisions cannot be made by labs in San Francisco alone.',
+    ],
+    person: 'Sam Altman',
+    role: 'CEO, OpenAI · speaking at the UN Security Council',
+    context: 'UN Security Council · September 2026',
+    source: { label: 'UN transcript', url: 'https://transcripts.un.org/en/sc/10228' },
+  },
+  {
     id: 'cais',
     featured: true,
     variant: 'statement',
@@ -45,7 +60,6 @@ export const voices: Voice[] = [
   },
   {
     id: 'altman',
-    featured: true,
     variant: 'statement',
     image: '/images/v2/voice-altman-v1.jpg',
     imageAlt: 'An empty US Senate hearing room: a witness table with a microphone facing the senators’ dais.',
