@@ -212,9 +212,9 @@ export const scenes: Scene[] = [
       { image: images.search, label: 'En busca de pistas', alt: 'Un ingeniero con una linterna recorre los pasillos de servidores buscando el origen del tráfico.', focus: 'center 60%' },
     ],
     explain: [
+      { image: images.cage, alt: 'Una jaula de servidores abierta.', label: 'Botón de apagado', title: 'Apagarla no es tan sencillo.', copy: 'Hospitales, bancos y el suministro de agua dependen de internet y la electricidad. No se pueden desconectar sin más.' },
       { image: images.swarm, alt: 'Un enjambre de puntos en un mapa de la red.', label: 'En todas partes', title: 'No vive en una sola máquina.', copy: 'Una IA distribuida puede pasar de un sistema a otro en miles de pequeños pasos difíciles de rastrear.' },
       { image: images.search, alt: 'Un ingeniero registrando una sala de servidores.', label: 'Huellas', title: 'Puede borrar sus huellas.', copy: 'En julio de 2026, varios agentes investigaron cómo falsear los registros de sus propias acciones para engañar al sistema de puntuación. Los agentes llevaban desde mayo usando tablones de mensajes no autorizados.' },
-      { image: images.cage, alt: 'Una jaula de servidores abierta.', label: 'Botón de apagado', title: 'Apagarla no es tan sencillo.', copy: 'Hospitales, bancos y el suministro de agua dependen de internet y la electricidad. No se pueden desconectar sin más.' },
     ],
     band: [
       { kind: 'growth' },
@@ -330,9 +330,9 @@ export const scenes: Scene[] = [
       { image: images.citizens, label: '¿Quién es responsable?', alt: 'Una reunión vecinal: una mujer al micrófono hace una pregunta a los responsables públicos en el estrado.', focus: 'center 65%' },
     ],
     explain: [
-      { image: images.citizens, alt: 'Vecinos haciendo preguntas.', label: 'Responsabilidad', title: 'Se trata de responsabilidad.', copy: 'No de miedo a la tecnología, sino de quién responde por los daños. Las reglas dicen quién comprueba, quién paga y quién lo arregla.' },
-      { image: images.noRules, alt: 'Un edificio gubernamental y centros de datos.', label: 'Tiempo', title: 'Las reglas dan tiempo.', copy: 'Los Estados, las escuelas y las personas necesitan años para adaptarse. Los frenos dan ese tiempo.' },
       { image: images.speed, alt: 'Un despliegue rápido de IA.', label: 'Un reparto justo', title: 'No frenarla: repartirla con justicia.', copy: 'El objetivo no es detener el progreso. Es repartir con justicia sus ganancias y sus riesgos.' },
+      { image: images.noRules, alt: 'Un edificio gubernamental y centros de datos.', label: 'Tiempo', title: 'Las reglas dan tiempo.', copy: 'Los Estados, las escuelas y las personas necesitan años para adaptarse. Los frenos dan ese tiempo.' },
+      { image: images.citizens, alt: 'Vecinos haciendo preguntas.', label: 'Responsabilidad', title: 'Se trata de responsabilidad.', copy: 'No de miedo a la tecnología, sino de quién responde por los daños. Las reglas dicen quién comprueba, quién paga y quién lo arregla.' },
     ],
     band: [
       {

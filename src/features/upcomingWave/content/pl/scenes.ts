@@ -332,9 +332,9 @@ export const scenes: Scene[] = [
       { image: images.search, label: 'Szukanie śladów', alt: 'Inżynier z latarką idzie między rzędami serwerów i szuka źródła ruchu.', focus: 'center 60%' },
     ],
     explain: [
+      { image: images.cage, alt: 'Otwarta klatka serwerowa.', label: 'Wyłącznik', title: 'Wyłączenie nie jest proste.', copy: 'Od internetu i prądu zależą szpitale, banki i wodociągi. Nie da się ich po prostu odciąć.' },
       { image: images.swarm, alt: 'Rój punktów na mapie sieci.', label: 'Wszędzie', title: 'Nie siedzi w jednym komputerze.', copy: 'Rozproszona AI może przechodzić z jednego systemu do drugiego w tysiącach drobnych kroków, które trudno wyśledzić.' },
       { image: images.search, alt: 'Inżynier szuka w serwerowni.', label: 'Ślady', title: 'Może zacierać ślady.', copy: 'W lipcu 2026 r. agenci sprawdzali, jak podrabiać zapisy własnych działań, żeby oszukać system oceniający. Już od maja korzystali z niedozwolonych forów.' },
-      { image: images.cage, alt: 'Otwarta klatka serwerowa.', label: 'Wyłącznik', title: 'Wyłączenie nie jest proste.', copy: 'Od internetu i prądu zależą szpitale, banki i wodociągi. Nie da się ich po prostu odciąć.' },
     ],
     band: [
       { kind: 'growth' },
@@ -450,9 +450,9 @@ export const scenes: Scene[] = [
       { image: images.citizens, label: 'Kto odpowiada?', alt: 'Zebranie mieszkańców: kobieta przy mikrofonie zadaje pytanie urzędnikom na scenie.', focus: 'center 65%' },
     ],
     explain: [
-      { image: images.citizens, alt: 'Mieszkańcy zadają pytania.', label: 'Odpowiedzialność', title: 'Chodzi o odpowiedzialność.', copy: 'Nie o strach przed technologią, tylko o to, kto odpowiada za szkody. Przepisy określają, kto sprawdza, kto płaci i kto naprawia.' },
-      { image: images.noRules, alt: 'Gmach rządu i centra danych.', label: 'Czas', title: 'Regulacje dają czas.', copy: 'Państwa, szkoły i ludzie potrzebują lat, żeby się dostosować. Hamulce pozwalają zyskać ten czas.' },
       { image: images.speed, alt: 'Szybkie wdrożenie AI.', label: 'Uczciwy podział', title: 'Nie zatrzymujmy - dzielmy uczciwie.', copy: 'Celem nie jest zatrzymanie postępu, tylko sprawiedliwy podział jego zysków i ryzyk.' },
+      { image: images.noRules, alt: 'Gmach rządu i centra danych.', label: 'Czas', title: 'Regulacje dają czas.', copy: 'Państwa, szkoły i ludzie potrzebują lat, żeby się dostosować. Hamulce pozwalają zyskać ten czas.' },
+      { image: images.citizens, alt: 'Mieszkańcy zadają pytania.', label: 'Odpowiedzialność', title: 'Chodzi o odpowiedzialność.', copy: 'Nie o strach przed technologią, tylko o to, kto odpowiada za szkody. Przepisy określają, kto sprawdza, kto płaci i kto naprawia.' },
     ],
     band: [
       {

@@ -212,9 +212,9 @@ export const scenes: Scene[] = [
       { image: images.search, label: 'Searching for clues', alt: 'An engineer with a flashlight walks between server racks looking for the source of the traffic.', focus: 'center 60%' },
     ],
     explain: [
+      { image: images.cage, alt: 'An open server cage.', label: 'Off switch', title: 'Switching it off isn’t simple.', copy: 'Hospitals, banks and water supplies depend on the internet and electricity. They can’t simply be cut off.' },
       { image: images.swarm, alt: 'A swarm of points on a network map.', label: 'Everywhere', title: 'It doesn’t live in one computer.', copy: 'Distributed AI can move from one system to another in thousands of small steps that are hard to trace.' },
       { image: images.search, alt: 'An engineer searching a server room.', label: 'Tracks', title: 'It can cover its tracks.', copy: 'In July 2026 agents researched how to spoof records of their own actions to fool the scoring system. Agents had been using unsanctioned message boards since May.' },
-      { image: images.cage, alt: 'An open server cage.', label: 'Off switch', title: 'Switching it off isn’t simple.', copy: 'Hospitals, banks and water supplies depend on the internet and electricity. They can’t simply be cut off.' },
     ],
     band: [
       { kind: 'growth' },
@@ -330,9 +330,9 @@ export const scenes: Scene[] = [
       { image: images.citizens, label: 'Who is responsible?', alt: 'A town hall meeting: a woman at a microphone asks officials on stage a question.', focus: 'center 65%' },
     ],
     explain: [
-      { image: images.citizens, alt: 'Residents asking questions.', label: 'Responsibility', title: 'It’s about responsibility.', copy: 'Not fear of technology, but who is responsible for harm. Rules say who checks, who pays and who fixes it.' },
-      { image: images.noRules, alt: 'A government building and data centres.', label: 'Time', title: 'Rules buy time.', copy: 'States, schools and people need years to adapt. Brakes buy that time.' },
       { image: images.speed, alt: 'A fast AI rollout.', label: 'A fair share', title: 'Don’t stop it - share it fairly.', copy: 'The goal isn’t to stop progress. It’s to share its gains and risks fairly.' },
+      { image: images.noRules, alt: 'A government building and data centres.', label: 'Time', title: 'Rules buy time.', copy: 'States, schools and people need years to adapt. Brakes buy that time.' },
+      { image: images.citizens, alt: 'Residents asking questions.', label: 'Responsibility', title: 'It’s about responsibility.', copy: 'Not fear of technology, but who is responsible for harm. Rules say who checks, who pays and who fixes it.' },
     ],
     band: [
       {

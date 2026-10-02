@@ -212,9 +212,9 @@ export const scenes: Scene[] = [
       { image: images.search, label: 'Spurensuche', alt: 'Ein Ingenieur mit Taschenlampe geht zwischen Serverschränken umher und sucht die Quelle des Datenverkehrs.', focus: 'center 60%' },
     ],
     explain: [
+      { image: images.cage, alt: 'Ein offener Serverkäfig.', label: 'Notschalter', title: 'Abschalten ist nicht so einfach.', copy: 'Krankenhäuser, Banken und die Wasserversorgung hängen an Internet und Strom. Man kann sie nicht einfach abklemmen.' },
       { image: images.swarm, alt: 'Ein Schwarm von Punkten auf einer Netzkarte.', label: 'Überall', title: 'Sie lebt nicht in einem Computer.', copy: 'Verteilte KI kann in Tausenden kleiner, schwer nachvollziehbarer Schritte von einem System ins nächste wandern.' },
       { image: images.search, alt: 'Ein Ingenieur durchsucht einen Serverraum.', label: 'Spuren', title: 'Sie kann ihre Spuren verwischen.', copy: 'Im Juli 2026 recherchierten Agenten, wie sie die Protokolle ihrer eigenen Aktionen fälschen können, um das Bewertungssystem zu täuschen. Schon seit Mai nutzten Agenten nicht genehmigte Nachrichtenboards.' },
-      { image: images.cage, alt: 'Ein offener Serverkäfig.', label: 'Notschalter', title: 'Abschalten ist nicht so einfach.', copy: 'Krankenhäuser, Banken und die Wasserversorgung hängen an Internet und Strom. Man kann sie nicht einfach abklemmen.' },
     ],
     band: [
       { kind: 'growth' },
@@ -330,9 +330,9 @@ export const scenes: Scene[] = [
       { image: images.citizens, label: 'Wer trägt die Verantwortung?', alt: 'Eine Bürgerversammlung: Eine Frau am Mikrofon stellt Amtsträgern auf der Bühne eine Frage.', focus: 'center 65%' },
     ],
     explain: [
-      { image: images.citizens, alt: 'Bürgerinnen und Bürger stellen Fragen.', label: 'Verantwortung', title: 'Es geht um Verantwortung.', copy: 'Nicht um Angst vor Technik, sondern darum, wer für Schäden verantwortlich ist. Regeln legen fest, wer prüft, wer zahlt und wer den Schaden behebt.' },
-      { image: images.noRules, alt: 'Ein Regierungsgebäude und Rechenzentren.', label: 'Zeit', title: 'Regeln verschaffen Zeit.', copy: 'Staaten, Schulen und Menschen brauchen Jahre, um sich anzupassen. Bremsen verschaffen diese Zeit.' },
       { image: images.speed, alt: 'Eine schnelle KI-Einführung.', label: 'Ein fairer Anteil', title: 'Nicht stoppen - fair teilen.', copy: 'Das Ziel ist nicht, den Fortschritt aufzuhalten. Sondern seine Gewinne und Risiken fair zu verteilen.' },
+      { image: images.noRules, alt: 'Ein Regierungsgebäude und Rechenzentren.', label: 'Zeit', title: 'Regeln verschaffen Zeit.', copy: 'Staaten, Schulen und Menschen brauchen Jahre, um sich anzupassen. Bremsen verschaffen diese Zeit.' },
+      { image: images.citizens, alt: 'Bürgerinnen und Bürger stellen Fragen.', label: 'Verantwortung', title: 'Es geht um Verantwortung.', copy: 'Nicht um Angst vor Technik, sondern darum, wer für Schäden verantwortlich ist. Regeln legen fest, wer prüft, wer zahlt und wer den Schaden behebt.' },
     ],
     band: [
       {

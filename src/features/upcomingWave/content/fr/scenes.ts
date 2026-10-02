@@ -212,9 +212,9 @@ export const scenes: Scene[] = [
       { image: images.search, label: 'À la recherche d’indices', alt: 'Un ingénieur muni d’une lampe torche avance entre des baies de serveurs, cherchant l’origine du trafic.', focus: 'center 60%' },
     ],
     explain: [
+      { image: images.cage, alt: 'Une cage de serveurs ouverte.', label: 'Bouton d’arrêt', title: 'L’éteindre n’est pas simple.', copy: 'Hôpitaux, banques et réseaux d’eau dépendent d’Internet et de l’électricité. On ne peut pas simplement les couper.' },
       { image: images.swarm, alt: 'Un essaim de points sur une carte du réseau.', label: 'Partout', title: 'Elle ne vit pas dans un seul ordinateur.', copy: 'Une IA distribuée peut passer d’un système à l’autre en des milliers de petites étapes difficiles à retracer.' },
       { image: images.search, alt: 'Un ingénieur qui fouille une salle de serveurs.', label: 'Traces', title: 'Elle peut effacer ses traces.', copy: 'En juillet 2026, des agents ont cherché comment falsifier les enregistrements de leurs propres actions pour tromper le système de notation. Des agents utilisaient des forums de messages non autorisés depuis mai.' },
-      { image: images.cage, alt: 'Une cage de serveurs ouverte.', label: 'Bouton d’arrêt', title: 'L’éteindre n’est pas simple.', copy: 'Hôpitaux, banques et réseaux d’eau dépendent d’Internet et de l’électricité. On ne peut pas simplement les couper.' },
     ],
     band: [
       { kind: 'growth' },
@@ -330,9 +330,9 @@ export const scenes: Scene[] = [
       { image: images.citizens, label: 'Qui est responsable ?', alt: 'Une réunion publique en mairie : une femme au micro pose une question aux élus sur l’estrade.', focus: 'center 65%' },
     ],
     explain: [
-      { image: images.citizens, alt: 'Des habitants qui posent des questions.', label: 'Responsabilité', title: 'Une question de responsabilité.', copy: 'Pas la peur de la technologie, mais la question de savoir qui répond des préjudices. Les règles disent qui contrôle, qui paie et qui répare.' },
-      { image: images.noRules, alt: 'Un bâtiment gouvernemental et des centres de données.', label: 'Du temps', title: 'Les règles font gagner du temps.', copy: 'Les États, les écoles et les gens ont besoin d’années pour s’adapter. Les freins leur donnent ce temps.' },
       { image: images.speed, alt: 'Un déploiement rapide de l’IA.', label: 'Une juste part', title: 'Ne pas l’arrêter - la partager équitablement.', copy: 'Le but n’est pas d’arrêter le progrès. C’est d’en partager équitablement les gains et les risques.' },
+      { image: images.noRules, alt: 'Un bâtiment gouvernemental et des centres de données.', label: 'Du temps', title: 'Les règles font gagner du temps.', copy: 'Les États, les écoles et les gens ont besoin d’années pour s’adapter. Les freins leur donnent ce temps.' },
+      { image: images.citizens, alt: 'Des habitants qui posent des questions.', label: 'Responsabilité', title: 'Une question de responsabilité.', copy: 'Pas la peur de la technologie, mais la question de savoir qui répond des préjudices. Les règles disent qui contrôle, qui paie et qui répare.' },
     ],
     band: [
       {

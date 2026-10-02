@@ -212,9 +212,9 @@ export const scenes: Scene[] = [
       { image: images.search, label: '手がかりを探す', alt: '懐中電灯を持った技術者が、通信の発信源を探してサーバーラックの間を歩いている。', focus: 'center 60%' },
     ],
     explain: [
+      { image: images.cage, alt: '開いたサーバーケージ。', label: '停止スイッチ', title: '止めるのは簡単ではない。', copy: '病院、銀行、水道はインターネットと電気に依存しています。単純に切り離すことはできません。' },
       { image: images.swarm, alt: 'ネットワーク地図上の点の群れ。', label: 'あらゆる場所に', title: '一台のコンピューターの中にはいない。', copy: '分散したAIは、追跡しにくい何千もの小さなステップで、システムからシステムへと移動できます。' },
       { image: images.search, alt: 'サーバールームを調べる技術者。', label: '痕跡', title: '痕跡を消すこともできる。', copy: '2026年7月、エージェントたちは採点システムを欺くため、自らの行動記録を偽装する方法を調べました。エージェントたちは5月から、許可されていない掲示板を使っていました。' },
-      { image: images.cage, alt: '開いたサーバーケージ。', label: '停止スイッチ', title: '止めるのは簡単ではない。', copy: '病院、銀行、水道はインターネットと電気に依存しています。単純に切り離すことはできません。' },
     ],
     band: [
       { kind: 'growth' },
@@ -330,9 +330,9 @@ export const scenes: Scene[] = [
       { image: images.citizens, label: '誰が責任を負う？', alt: '住民集会。マイクの前に立つ女性が、壇上の担当者たちに質問している。', focus: 'center 65%' },
     ],
     explain: [
-      { image: images.citizens, alt: '質問する住民たち。', label: '責任', title: '問題は責任だ。', copy: '技術への恐れではなく、損害に誰が責任を負うかの問題です。ルールは、誰が検証し、誰が支払い、誰が直すのかを定めます。' },
-      { image: images.noRules, alt: '政府庁舎とデータセンター。', label: '時間', title: 'ルールは時間を稼ぐ。', copy: '国も学校も人々も、適応するには何年もかかります。ブレーキがその時間を生みます。' },
       { image: images.speed, alt: '急速なAIの展開。', label: '公正な分配', title: '止めずに、公正に分ける。', copy: '目的は進歩を止めることではありません。その利益とリスクを公正に分け合うことです。' },
+      { image: images.noRules, alt: '政府庁舎とデータセンター。', label: '時間', title: 'ルールは時間を稼ぐ。', copy: '国も学校も人々も、適応するには何年もかかります。ブレーキがその時間を生みます。' },
+      { image: images.citizens, alt: '質問する住民たち。', label: '責任', title: '問題は責任だ。', copy: '技術への恐れではなく、損害に誰が責任を負うかの問題です。ルールは、誰が検証し、誰が支払い、誰が直すのかを定めます。' },
     ],
     band: [
       {
