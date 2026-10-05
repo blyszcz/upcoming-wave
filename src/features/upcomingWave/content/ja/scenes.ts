@@ -344,7 +344,7 @@ export const scenes: Scene[] = [
           { kicker: 'OpenAI · 2026年', value: '一時停止', text: '一部の安全策と監視が外されていたHugging Faceのインシデントの後、同社は自ら、計画していた最大規模の訓練を一時停止しました。', source: sources.openaiRoad },
           { kicker: 'ダリオ・アモデイ · サム・アルトマン · 2026年9月', value: '減速', text: 'アモデイ：「AIモデルの能力を高めるペースを落とさなければならない」。アルトマン：「最先端の開発ペースを調整する必要があるという点で、ダリオに同意する」。', source: sources.altmanPace },
           { kicker: '30か国以上 · 2026年9月', value: '国際機関を？', text: '30か国以上とEUが、最も強力なAIの基準を定めてチェックする国際機関を求めました。米国、中国、英国、日本、インド、ポーランドは署名していません。', source: sources.callForControl },
-          { kicker: '言葉と行動 · 2026年9月', text: '米国では、同じ企業が罰則のない自主的な誓約に署名しただけです。さらにOpenAIの社長は、州のAI規制に反対する団体に資金を出しています。', source: sources.superPac },
+          { kicker: '言葉と行動 · 2026年10月', text: 'OpenAIが国連で減速を表明した直後、同社の安全性報告書を率いていた人物が辞職し、AI企業は「まったく十分に慎重ではない」と書きました。米国では、企業は罰則のない自主的な誓約に署名しただけです。', source: sources.robinson, moreSources: [sources.whiteHousePledge] },
           { kicker: '法律がカバーする範囲', text: 'EUのAI法はすでに、最も強力なモデルの開発者に対し、モデルのテストと重大インシデントの報告を義務づけています。ただし雇用の喪失や税を扱うようには設計されておらず、採用におけるAIのルールは2027年末から適用されます。', source: sources.aiAct },
         ],
       },

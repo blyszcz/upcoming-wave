@@ -6,8 +6,8 @@ export type SourceGroup = { id: string; title: string; sources: Source[] };
 const blockSources = (block: BandBlock, content: Content): Source[] => {
   switch (block.kind) {
     case 'growth': return [content.acceleration.chart.source];
-    case 'stats':
-    case 'evidence': return block.items.map((item) => item.source);
+    case 'stats': return block.items.map((item) => item.source);
+    case 'evidence': return block.items.flatMap((item) => [item.source, ...(item.moreSources ?? [])]);
     case 'quote':
     case 'bars':
     case 'taxSplit': return [block.source];

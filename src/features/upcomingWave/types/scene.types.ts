@@ -22,7 +22,7 @@ export type ExplainStep = {
 };
 
 export type StatItem = { value: string; label: string; source: Source };
-export type EvidenceItem = { kicker: string; value?: string; text: string; source: Source };
+export type EvidenceItem = { kicker: string; value?: string; text: string; source: Source; moreSources?: Source[] };
 export type BarItem = { label: string; value: number; display: string; highlight?: boolean };
 export type TaxPart = { label: string; detail?: string; value: number; highlight?: boolean };
 export type TimelineStep = { title: string; text: string };
