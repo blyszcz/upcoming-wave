@@ -17,6 +17,7 @@ export const ui = {
   quoteMarks: { open: '「', close: '」' },
   why: 'なぜ？',
   copyLink: 'このセクションへのリンクをコピー',
+  share: { label: 'シェア', copy: 'リンクをコピー', copied: 'コピーしました', text: 'AIは、あなたの仕事を変える。どう変えるかは、誰が決める？ 5分でわかるビジュアルガイド：' },
   facts: { moreVoices: (count: number) => `ほか${count}人の声を見る`, lessVoices: '声の表示を減らす' },
   upside: { label: 'うまくいけば', how: 'どうやって？' },
   readMore: '続きを読む',

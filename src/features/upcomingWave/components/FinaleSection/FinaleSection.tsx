@@ -4,6 +4,7 @@ import type { NumberedSectionProps } from '@features/upcomingWave/types/section.
 
 import { ResponsiveImage } from '@features/upcomingWave/components/ResponsiveImage/ResponsiveImage';
 import { SourceLink } from '@features/upcomingWave/components/SceneBand/SourceLink';
+import { ShareBar } from '@features/upcomingWave/components/ShareBar/ShareBar';
 import { useContent } from '@features/upcomingWave/content/ContentProvider';
 
 export const FinaleSection = ({ number }: NumberedSectionProps) => {
@@ -29,6 +30,7 @@ export const FinaleSection = ({ number }: NumberedSectionProps) => {
             </div>
           ))}
         </div>
+        <ShareBar />
       </div>
     </section>
   );

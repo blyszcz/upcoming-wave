@@ -17,6 +17,7 @@ export const ui = {
   quoteMarks: { open: '« ', close: ' »' },
   why: 'Pourquoi ?',
   copyLink: 'Copier le lien vers cette section',
+  share: { label: 'Partager', copy: 'Copier le lien', copied: 'Lien copié', text: 'L’IA va changer votre travail. Qui décide comment ? Un guide visuel de 5 minutes :' },
   facts: { moreVoices: (count: number) => `+${count} autres voix`, lessVoices: 'Afficher moins de voix' },
   upside: { label: 'Si nous faisons les bons choix', how: 'Comment ?' },
   readMore: 'Lire la suite',

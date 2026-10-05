@@ -17,6 +17,7 @@ export const ui = {
   quoteMarks: { open: '“', close: '”' },
   why: 'Why?',
   copyLink: 'Copy link to this section',
+  share: { label: 'Share', copy: 'Copy link', copied: 'Link copied', text: 'AI will change your job. Who decides how? A 5-minute visual guide:' },
   facts: { moreVoices: (count: number) => `+${count} more voices`, lessVoices: 'Show fewer voices' },
   upside: { label: 'If we get it right', how: 'How?' },
   readMore: 'Read more',

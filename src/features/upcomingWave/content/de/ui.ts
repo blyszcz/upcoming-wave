@@ -17,6 +17,7 @@ export const ui = {
   quoteMarks: { open: '„', close: '“' },
   why: 'Warum?',
   copyLink: 'Link zu diesem Abschnitt kopieren',
+  share: { label: 'Teilen', copy: 'Link kopieren', copied: 'Kopiert', text: 'KI wird deine Arbeit verändern. Wer entscheidet, wie? Ein visueller 5-Minuten-Überblick:' },
   facts: { moreVoices: (count: number) => `+${count} weitere Stimmen`, lessVoices: 'Weniger Stimmen zeigen' },
   upside: { label: 'Wenn wir es richtig machen', how: 'Wie?' },
   readMore: 'Weiterlesen',
