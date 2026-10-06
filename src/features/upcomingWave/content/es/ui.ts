@@ -17,7 +17,7 @@ export const ui = {
   quoteMarks: { open: '«', close: '»' },
   why: '¿Por qué?',
   copyLink: 'Copiar enlace a esta sección',
-  share: { label: 'Compartir', copy: 'Copiar enlace', copied: 'Enlace copiado', text: 'La IA cambiará tu trabajo. ¿Quién decide cómo? Una guía visual de 5 minutos:' },
+  share: { label: 'Compartir', copied: 'Enlace copiado', follow: 'Sigue las novedades', text: 'La IA cambiará tu trabajo. ¿Quién decide cómo? Una guía visual de 5 minutos:' },
   facts: { moreVoices: (count: number) => `+${count} voces más`, lessVoices: 'Mostrar menos voces' },
   upside: { label: 'Si lo hacemos bien', how: '¿Cómo?' },
   readMore: 'Leer más',
