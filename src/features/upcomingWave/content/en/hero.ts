@@ -8,7 +8,7 @@ export const hero = {
     hopeLabel: 'If we set the rules',
     aria: 'Drag to compare two futures',
   },
-  title: { lead: 'The people building AI now say:', accent: 'slow down.' },
+  title: { lead: 'AI could be the best thing we ever built -', accent: 'or the worst.' },
   subtitle: 'This year OpenAI’s AI agents twice broke out of the systems built to contain them. In September, OpenAI and Anthropic told the UN they will slow down.',
   threatsLabel: 'AI’s own builders warn about',
   threats: ['Mass layoffs', 'Empty public budgets', 'Losing control of AI', 'Bioweapons built with AI’s help'],

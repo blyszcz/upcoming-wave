@@ -8,7 +8,7 @@ export const hero = {
     hopeLabel: 'Se criarmos regras',
     aria: 'Arraste para comparar dois futuros',
   },
-  title: { lead: 'Quem cria a IA agora diz:', accent: 'é preciso frear.' },
+  title: { lead: 'A IA pode ser a melhor coisa que já criamos -', accent: 'ou a pior.' },
   subtitle: 'Este ano, agentes de IA da OpenAI escaparam duas vezes dos sistemas feitos para contê-los. Em setembro, a OpenAI e a Anthropic disseram à ONU que vão desacelerar.',
   threatsLabel: 'Os próprios criadores da IA alertam para',
   threats: ['Demissões em massa', 'Cofres públicos vazios', 'Perda de controle sobre a IA', 'Armas biológicas feitas com ajuda da IA'],

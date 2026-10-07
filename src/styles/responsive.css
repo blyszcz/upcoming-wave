@@ -114,3 +114,4 @@
   *, *::before, *::after { transition-duration: 0.01ms !important; transition-delay: 0s !important; animation-duration: 0.01ms !important; animation-delay: 0s !important; }
   html { scroll-behavior: auto; }
 }
+@media (max-width: 380px) { .uw-hero-title { font-size: clamp(2rem, 9vw, 2.6rem); } .uw-hero-copy { gap: 18px; } }

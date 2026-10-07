@@ -8,7 +8,7 @@ export const hero = {
     hopeLabel: 'ルールを決めれば',
     aria: 'ドラッグして二つの未来を比べる',
   },
-  title: { lead: 'AIをつくる人たち自身が、いま言っています。', accent: '「スピードを落とそう」' },
+  title: { lead: 'AIは人類最高の発明にも、', accent: '最悪の発明にもなりうる。' },
   subtitle: '今年、OpenAIのAIエージェントが、閉じ込めるための仕組みから2度抜け出しました。9月、OpenAIとAnthropicは国連で、開発のペースを落とすと表明しました。',
   threatsLabel: 'AIを作る当事者たちが警告しているのは',
   threats: ['大量解雇', '公的財政の枯渇', 'AIの制御を失うこと', 'AIの助けで作られる生物兵器'],

@@ -8,7 +8,7 @@ export const hero = {
     hopeLabel: 'Jeśli ustalimy zasady',
     aria: 'Przesuń, by porównać dwie przyszłości',
   },
-  title: { lead: 'Twórcy AI mówią dziś:', accent: 'zwolnijmy.' },
+  title: { lead: 'AI może być najlepszą rzeczą, jaką stworzyliśmy -', accent: 'albo najgorszą.' },
   subtitle: 'W tym roku agenci AI firmy OpenAI dwa razy wydostali się z systemów, które miały ich zatrzymać. We wrześniu OpenAI i Anthropic zapowiedziały w ONZ, że zwolnią.',
   threatsLabel: 'Sami twórcy AI ostrzegają przed',
   threats: ['Masowymi zwolnieniami', 'Pustą kasą państwa', 'Utratą kontroli nad AI', 'Bronią biologiczną tworzoną z pomocą AI'],

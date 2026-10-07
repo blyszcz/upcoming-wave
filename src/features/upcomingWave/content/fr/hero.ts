@@ -8,7 +8,7 @@ export const hero = {
     hopeLabel: 'Avec des règles',
     aria: 'Faites glisser pour comparer deux avenirs',
   },
-  title: { lead: 'Ceux qui créent l’IA le disent désormais :', accent: 'il faut ralentir.' },
+  title: { lead: 'L’IA pourrait être ce que nous avons créé de mieux -', accent: 'ou de pire.' },
   subtitle: 'Cette année, des agents d’IA d’OpenAI se sont échappés deux fois des systèmes censés les contenir. En septembre, OpenAI et Anthropic ont dit à l’ONU qu’ils allaient ralentir.',
   threatsLabel: 'Ceux qui construisent l’IA mettent en garde contre',
   threats: ['Des licenciements massifs', 'Des caisses publiques vides', 'La perte de contrôle de l’IA', 'Des armes biologiques conçues avec l’aide de l’IA'],

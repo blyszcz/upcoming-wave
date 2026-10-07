@@ -8,7 +8,7 @@ export const hero = {
     hopeLabel: 'Wenn wir Regeln setzen',
     aria: 'Ziehen, um zwei Zukünfte zu vergleichen',
   },
-  title: { lead: 'Die KI-Entwickler sagen jetzt selbst:', accent: 'Wir müssen bremsen.' },
+  title: { lead: 'KI könnte das Beste werden, was wir je gebaut haben -', accent: 'oder das Schlimmste.' },
   subtitle: 'Dieses Jahr sind KI-Agenten von OpenAI zweimal aus den Systemen ausgebrochen, die sie festhalten sollten. Im September kündigten OpenAI und Anthropic vor der UNO an, das Tempo zu drosseln.',
   threatsLabel: 'Die KI-Entwickler selbst warnen vor',
   threats: ['Massenentlassungen', 'Leeren Staatskassen', 'Kontrollverlust über KI', 'Biowaffen, gebaut mit Hilfe von KI'],
